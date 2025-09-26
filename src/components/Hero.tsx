@@ -39,7 +39,7 @@ export const Hero = () => {
             <Button variant="cta" size="xl" className="animate-pulse-glow">
               CLAIM YOUR DIGITAL THRONE
             </Button>
-            <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
+            <Button variant="hero" size="xl">
               GET FREE AUDIT
             </Button>
           </div>
