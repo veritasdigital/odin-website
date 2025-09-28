@@ -77,6 +77,12 @@ export default {
         "smooth": "var(--transition-smooth)",
         "bounce": "var(--transition-bounce)",
       },
+      fontFamily: {
+        'inter': ['Inter', 'system-ui', 'sans-serif'],
+        'playfair': ['Playfair Display', 'Georgia', 'serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'serif': ['Playfair Display', 'Georgia', 'serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

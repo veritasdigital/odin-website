@@ -58,12 +58,13 @@ export const Services = () => {
     <section id="services" className="py-24 bg-gradient-to-b from-background to-muted">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Your Arsenal for 
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Digital Warfare</span>
+          <h2 className="text-4xl md:text-5xl font-black mb-6 font-playfair">
+            Strategic Marketing 
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Excellence</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dominate your market with our comprehensive suite of battle-tested digital marketing weapons
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-inter">
+            Deploy our comprehensive suite of performance-driven digital marketing solutions 
+            engineered for exponential business growth and market dominance
           </p>
         </div>
 
@@ -81,9 +82,9 @@ export const Services = () => {
                 </div>
                 
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-primary font-semibold mb-4">{service.subtitle}</p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <h3 className="text-2xl font-bold mb-2 font-playfair">{service.title}</h3>
+                  <p className="text-primary font-semibold mb-4 font-inter">{service.subtitle}</p>
+                  <p className="text-muted-foreground mb-6 leading-relaxed font-inter">
                     {service.description}
                   </p>
                   
@@ -96,8 +97,8 @@ export const Services = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="outline" className="group-hover:border-primary group-hover:text-primary">
-                    Learn More
+                  <Button variant="outline" className="group-hover:border-primary group-hover:text-primary font-inter font-medium">
+                    Explore Solution
                   </Button>
                 </div>
               </div>
