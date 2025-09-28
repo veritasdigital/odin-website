@@ -17,12 +17,12 @@ export const Hero = () => {
           <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-3 lg:mb-4">Accelerate Your</span>
-                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+              <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight tracking-tight">
+                <span className="block mb-2">Accelerate Your</span>
+                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2 mb-2">
                   Digital Growth
                 </span>
-                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl">
+                <span className="block text-3xl md:text-4xl xl:text-5xl">
                   with Strategic Marketing Excellence
                 </span>
               </h1>
