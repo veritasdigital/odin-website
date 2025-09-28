@@ -8,7 +8,7 @@ export const Credibility = () => {
     },
     {
       number: "540%",
-      label: "average return on advertising investment"
+      label: "average return on investment for advertising spend. For every $1 in advertising $5.40 came back in IMMEDIATE revenue."
     },
     {
       number: "283+",
