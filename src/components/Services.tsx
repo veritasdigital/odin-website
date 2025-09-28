@@ -88,7 +88,7 @@ export const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" size="sm" className="border-charcoal/20 hover:bg-charcoal/5">
+                  <Button variant="default" size="sm">
                     Learn More
                   </Button>
                 </div>
