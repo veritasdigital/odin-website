@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import odinLogo from "@/assets/odin-logo.png";
+import odinLogo from "@/assets/odin-digital-logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +11,8 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <img src={odinLogo} alt="Odin Digital" className="h-10 w-auto" />
-            <span className="text-charcoal font-bold text-xl">Odin Digital</span>
+          <div className="flex items-center space-x-3">
+            <img src={odinLogo} alt="Odin Digital" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

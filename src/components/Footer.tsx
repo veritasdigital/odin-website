@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import odinLogo from "@/assets/odin-logo.png";
+import odinLogo from "@/assets/odin-digital-logo.png";
 
 export const Footer = () => {
   return (
@@ -10,7 +10,6 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img src={odinLogo} alt="Odin Digital" className="h-8 w-auto" />
-              <span className="text-white font-bold text-xl">Odin Digital</span>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Where Ancient Wisdom Meets Modern Marketing. Empowering ambitious brands to achieve exponential growth and build the future together.
