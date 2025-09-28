@@ -3,7 +3,7 @@ import odinLogo from "@/assets/odin-digital-logo.png";
 
 export const Footer = () => {
   return (
-    <footer id="contact" className="bg-accent text-white py-16">
+    <footer data-nav-contrast="dark" id="contact" className="bg-accent text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Company Info */}

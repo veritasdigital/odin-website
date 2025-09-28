@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const CTA = () => {
   return (
-    <section className="py-24 gradient-hero relative overflow-hidden">
+    <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
       <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />

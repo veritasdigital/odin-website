@@ -14,29 +14,31 @@ export const Header = () => {
   const [isOverDarkSection, setIsOverDarkSection] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      
-      // Simple detection based on scroll position and known dark sections
-      // You can adjust these values based on your actual section heights
-      const heroHeight = 600; // Approximate hero section height
-      const credibilityStart = heroHeight;
-      const servicesStart = credibilityStart + 400;
-      const resultsStart = servicesStart + 800;
-      const ctaStart = resultsStart + 600;
-      
-      // Determine if we're over a dark section
-      const isDark = 
-        (scrollY < heroHeight) || // Hero section has dark background
-        (scrollY >= ctaStart); // CTA section has dark background
-      
-      setIsOverDarkSection(isDark);
+    const updateContrast = () => {
+      const header = document.querySelector('header');
+      if (!header) return;
+
+      const rect = header.getBoundingClientRect();
+      const x = Math.min(Math.max(rect.left + rect.width / 2, 0), window.innerWidth - 1);
+      const y = Math.min(Math.max(rect.top + rect.height / 2, 0), window.innerHeight - 1);
+
+      const elements = document.elementsFromPoint(x, y);
+      const overDark = elements.some((el) => {
+        if (el === header) return false;
+        return (el as HTMLElement).closest('[data-nav-contrast="dark"]');
+      });
+
+      setIsOverDarkSection(!!overDark);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial state
-    
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', updateContrast, { passive: true } as AddEventListenerOptions);
+    window.addEventListener('resize', updateContrast);
+    updateContrast();
+
+    return () => {
+      window.removeEventListener('scroll', updateContrast as EventListener);
+      window.removeEventListener('resize', updateContrast as EventListener);
+    };
   }, []);
 
   return (
