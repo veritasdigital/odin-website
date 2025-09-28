@@ -11,7 +11,6 @@ import { Leadership } from "@/components/Leadership";
 import { Industries } from "@/components/Industries";
 import { Team } from "@/components/Team";
 import { Process } from "@/components/Process";
-import { Investment } from "@/components/Investment";
 import { Assurance } from "@/components/Assurance";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -33,7 +32,6 @@ const Index = () => {
       <Industries />
       <Team />
       <Process />
-      <Investment />
       <Assurance />
       <CTA />
       <Footer />
