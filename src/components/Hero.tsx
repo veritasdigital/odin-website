@@ -106,13 +106,11 @@ export const Hero = () => {
             <div className="pt-6">
               {!selectedOption ? (
                 <div className="flex items-center gap-4">
-                  <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
-                    Get An Obligation Free Quote
-                  </Button>
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                      <Button variant="outline" size="xl" className="px-4 py-4 border-charcoal/20">
-                        <ChevronDown className="h-5 w-5" />
+                      <Button variant="outline" size="xl" className="px-6 py-4 border-charcoal/20 text-charcoal">
+                        {quoteOptions[0]}
+                        <ChevronDown className="ml-2 h-5 w-5" />
                       </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="w-80 bg-white/95 backdrop-blur-lg border border-white/20 shadow-lg">
@@ -127,6 +125,9 @@ export const Hero = () => {
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
+                  <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
+                    Get An Obligation Free Quote
+                  </Button>
                 </div>
               ) : (
                 <Card className="w-full max-w-lg bg-white/95 backdrop-blur-lg border border-white/20 shadow-lg">
