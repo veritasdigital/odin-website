@@ -43,30 +43,6 @@ export const Results = () => {
       title: "Founder",
       location: "Sydney, Australia",
       image: krushOrganics
-    },
-    {
-      company: "TechFlow Solutions",
-      result: "Significant Revenue Growth",
-      quote: "Odin Digital's strategic approach to lead generation transformed our business development process. We experienced substantial growth in monthly recurring revenue over an 18-month partnership. Their systematic methodology and execution capabilities are exceptional.",
-      author: "Marcus Chen",
-      title: "CEO",
-      location: "San Francisco, USA"
-    },
-    {
-      company: "Luxe Lifestyle",
-      result: "Substantial Revenue Increase",
-      quote: "The team at Odin Digital completely redesigned our advertising strategy, resulting in significant improvements in return on ad spend and overall revenue growth. Their expertise and strategic thinking have been invaluable to our business expansion.",
-      author: "Sarah Martinez",
-      title: "Founder",
-      location: "Miami, USA"
-    },
-    {
-      company: "Elite Consulting Group",
-      result: "Enhanced Lead Generation",
-      quote: "Our lead generation capabilities improved dramatically within six months of partnering with Odin Digital. They don't just execute campaigns – they build comprehensive growth systems that scale effectively with business development.",
-      author: "David Thompson",
-      title: "Managing Partner",
-      location: "London, UK"
     }
   ];
 
@@ -82,8 +58,8 @@ export const Results = () => {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
-          <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+        <div className="relative max-w-6xl mx-auto">
+          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: true }}>
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4">
@@ -131,8 +107,8 @@ export const Results = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            <CarouselPrevious className="-left-16 top-1/2" />
+            <CarouselNext className="-right-16 top-1/2" />
           </Carousel>
         </div>
       </div>
