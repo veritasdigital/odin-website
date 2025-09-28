@@ -125,7 +125,7 @@ export const Hero = () => {
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
-                  <Button variant="ghost" size="xl" className="shadow-none text-lg px-10 py-4 font-bold text-white bg-primary hover:bg-primary/90 rounded-none justify-center items-center">
+                  <Button variant="ghost" size="xl" className="shadow-none text-lg px-12 py-4 font-bold text-white bg-primary hover:bg-primary/90 rounded-none justify-center items-center">
                     Get An Obligation Free Quote
                   </Button>
                 </div>
