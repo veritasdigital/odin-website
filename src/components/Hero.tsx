@@ -210,7 +210,7 @@ export const Hero = () => {
             {/* Trust Indicators */}
             <div className="grid grid-cols-3 gap-6 lg:gap-8 pt-8 mt-8 border-t border-charcoal/10">
               <div className="text-left space-y-1">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">200+</div>
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">283+</div>
                 <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Trusted Businesses</div>
               </div>
               <div className="text-left space-y-1">
