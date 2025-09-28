@@ -1,5 +1,5 @@
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
-import marketingTeam from "@/assets/marketing-team-expertise.jpg";
+import marketingTeam from "@/assets/odin-team-real.jpg";
 
 export const Leadership = () => {
   return (
