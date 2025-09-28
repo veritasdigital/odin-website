@@ -105,7 +105,7 @@ export const Hero = () => {
             {/* Action Button or Form */}
             <div className="pt-6">
               {!selectedOption ? (
-                <div className="flex items-center bg-white rounded-lg shadow-lg border border-charcoal/20">
+                <div className="inline-flex items-center bg-white rounded-lg shadow-lg border border-charcoal/20">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                     <Button variant="ghost" size="xl" className="px-6 py-4 text-charcoal rounded-none border-r border-charcoal/20 hover:bg-primary/5 justify-center items-center shrink-0 whitespace-nowrap">
