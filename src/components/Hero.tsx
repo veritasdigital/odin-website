@@ -3,10 +3,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-accent/30">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-grid-slate-100 bg-[size:20px_20px]" />
+    <section className="relative min-h-screen flex items-center justify-center bg-white">
+      {/* Subtle Background Pattern */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
       </div>
       
       {/* Content */}
@@ -14,12 +14,12 @@ export const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-charcoal mb-8 leading-tight tracking-tight">
             <span className="block">Conquer Your</span>
-            <span className="block bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Digital Landscape
             </span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-charcoal/80 font-semibold mb-8 max-w-4xl mx-auto">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-charcoal/80 font-bold mb-8 max-w-4xl mx-auto">
             Strategic Digital Marketing That Delivers Measurable Growth
           </h2>
           
@@ -29,10 +29,10 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-semibold">
+            <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
               Start Your Growth
             </Button>
-            <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-semibold border-charcoal/20 hover:bg-charcoal/5">
+            <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5">
               Get Free Strategy Audit
             </Button>
           </div>
