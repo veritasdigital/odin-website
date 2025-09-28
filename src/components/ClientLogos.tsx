@@ -105,24 +105,24 @@ export const ClientLogos = () => {
               >
                 {/* First set of logos */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
+                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-8 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[220px] h-28">
                     <div className="flex items-center justify-center h-full">
                       <img 
                         src={client.logo} 
                         alt={client.alt}
-                        className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                        className="w-32 h-16 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                       />
                     </div>
                   </Card>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
+                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-8 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[220px] h-28">
                     <div className="flex items-center justify-center h-full">
                       <img 
                         src={client.logo} 
                         alt={client.alt}
-                        className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                        className="w-32 h-16 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                       />
                     </div>
                   </Card>
