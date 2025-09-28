@@ -98,7 +98,7 @@ export const Hero = () => {
               </h2>
               
               <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
-                At Odin Digital, we partner with ambitious businesses to develop and execute comprehensive digital marketing strategies that drive sustainable growth. Our evidence-based approach and proven methodologies have contributed to generating over $50 million in client revenue across diverse industries.
+                At Odin Digital, we partner with ambitious businesses to develop and execute comprehensive digital marketing strategies that drive sustainable growth. Our evidence-based approach and proven methodologies have contributed to generating over $574 million in client revenue across diverse industries.
               </p>
             </div>
             
