@@ -17,8 +17,8 @@ export const Hero = () => {
           <div className="space-y-12 lg:space-y-16 animate-slide-up max-w-2xl">
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="relative z-30 overflow-visible text-5xl md:text-6xl xl:text-8xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-4 lg:mb-6">Conquer Your</span>
+              <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                <span className="block mb-3 lg:mb-4">Conquer Your</span>
                 <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   Digital Landscape
                 </span>
@@ -27,11 +27,11 @@ export const Hero = () => {
             
             {/* Subtitle and Description */}
             <div className="space-y-6 lg:space-y-8">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-charcoal/90 font-bold leading-tight max-w-xl">
+              <h2 className="text-xl md:text-2xl lg:text-3xl text-charcoal/90 font-bold leading-tight max-w-xl">
                 Strategic Digital Marketing That Delivers Measurable Growth
               </h2>
               
-              <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed max-w-xl font-light">
+              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-xl font-light">
                 We combine data-driven strategies with creative innovation to deliver measurable results. 
                 Our proven methodologies have generated over $50M in client revenue.
               </p>
@@ -39,10 +39,10 @@ export const Hero = () => {
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 pt-6">
-              <Button variant="default" size="xl" className="shadow-primary text-xl px-12 py-6 font-bold min-h-[60px]">
+              <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
                 Start Your Growth
               </Button>
-              <Button variant="outline" size="xl" className="text-xl px-12 py-6 font-bold border-charcoal/20 hover:bg-charcoal/5 min-h-[60px]">
+              <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5">
                 Get Free Strategy Audit
               </Button>
             </div>
