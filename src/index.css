@@ -185,7 +185,7 @@
   }
 
   .animate-pulse-glow {
-    animation: pulse-glow 4s ease-in-out infinite;
+    animation: pulse-glow 8s ease-in-out infinite;
   }
 
   .animate-slide-up {
