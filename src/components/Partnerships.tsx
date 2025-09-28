@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import googlePartner from "@/assets/partners/google-partner-2022.png";
 import metaPartner from "@/assets/partners/meta-partner-2023.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
@@ -10,8 +8,6 @@ import tiktokPartner from "@/assets/partners/tiktok-partner.svg";
 import linkedinPartner from "@/assets/partners/linkedin-marketing-partner.svg";
 
 export const Partnerships = () => {
-  const carouselRef = useRef<HTMLDivElement>(null);
-
   const partners = [
     {
       name: "Google Premier Partner 2022",
@@ -55,34 +51,8 @@ export const Partnerships = () => {
     }
   ];
 
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (!carousel) return;
-
-    const autoScroll = () => {
-      const nextButton = carousel.querySelector('[data-testid="carousel-next"]') as HTMLButtonElement;
-      if (nextButton) {
-        nextButton.click();
-      }
-    };
-
-    const interval = setInterval(autoScroll, 3000);
-
-    const handleMouseEnter = () => clearInterval(interval);
-    const handleMouseLeave = () => {
-      clearInterval(interval);
-      setInterval(autoScroll, 3000);
-    };
-
-    carousel.addEventListener('mouseenter', handleMouseEnter);
-    carousel.addEventListener('mouseleave', handleMouseLeave);
-
-    return () => {
-      clearInterval(interval);
-      carousel.removeEventListener('mouseenter', handleMouseEnter);
-      carousel.removeEventListener('mouseleave', handleMouseLeave);
-    };
-  }, []);
+  // Duplicate the partners array for seamless loop
+  const duplicatedPartners = [...partners, ...partners];
 
   return (
     <section className="py-16 bg-background">
@@ -93,30 +63,21 @@ export const Partnerships = () => {
           </h2>
         </div>
 
-        <div ref={carouselRef} className="relative">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-6xl mx-auto"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {partners.map((partner, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-                  <div className="flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-charcoal/10 hover:border-primary/20 transition-colors">
-                    <img
-                      src={partner.logo}
-                      alt={partner.alt}
-                      className="max-h-16 max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="-left-12 bg-white border-charcoal/20 hover:bg-primary hover:text-white hover:border-primary" />
-            <CarouselNext data-testid="carousel-next" className="-right-12 bg-white border-charcoal/20 hover:bg-primary hover:text-white hover:border-primary" />
-          </Carousel>
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll hover:pause-animation">
+            {duplicatedPartners.map((partner, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-60 mx-4 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-charcoal/10"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.alt}
+                  className="max-h-16 max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
