@@ -24,7 +24,7 @@ export const Leadership = () => {
           {/* Content - Right */}
           <div className="order-1 lg:order-2">
             <div className="mb-6">
-              <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-4">
+              <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
                 A Message from Our CEO
               </h2>
               <h3 className="text-2xl font-bold text-primary mb-6">Lucas Durante</h3>
