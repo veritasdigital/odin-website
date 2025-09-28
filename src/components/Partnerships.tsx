@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import googlePartner from "@/assets/partners/google-partner-2022.png";
 import metaPartner from "@/assets/partners/meta-partner-2023.png";
@@ -9,6 +10,8 @@ import tiktokPartner from "@/assets/partners/tiktok-partner.svg";
 import linkedinPartner from "@/assets/partners/linkedin-marketing-partner.svg";
 
 export const Partnerships = () => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
   const partners = [
     {
       name: "Google Premier Partner 2022",
@@ -52,6 +55,35 @@ export const Partnerships = () => {
     }
   ];
 
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (!carousel) return;
+
+    const autoScroll = () => {
+      const nextButton = carousel.querySelector('[data-testid="carousel-next"]') as HTMLButtonElement;
+      if (nextButton) {
+        nextButton.click();
+      }
+    };
+
+    const interval = setInterval(autoScroll, 3000);
+
+    const handleMouseEnter = () => clearInterval(interval);
+    const handleMouseLeave = () => {
+      clearInterval(interval);
+      setInterval(autoScroll, 3000);
+    };
+
+    carousel.addEventListener('mouseenter', handleMouseEnter);
+    carousel.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      clearInterval(interval);
+      carousel.removeEventListener('mouseenter', handleMouseEnter);
+      carousel.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
   return (
     <section className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -61,7 +93,7 @@ export const Partnerships = () => {
           </h2>
         </div>
 
-        <div className="relative">
+        <div ref={carouselRef} className="relative">
           <Carousel
             opts={{
               align: "start",
@@ -83,7 +115,7 @@ export const Partnerships = () => {
               ))}
             </CarouselContent>
             <CarouselPrevious className="-left-12 bg-white border-charcoal/20 hover:bg-primary hover:text-white hover:border-primary" />
-            <CarouselNext className="-right-12 bg-white border-charcoal/20 hover:bg-primary hover:text-white hover:border-primary" />
+            <CarouselNext data-testid="carousel-next" className="-right-12 bg-white border-charcoal/20 hover:bg-primary hover:text-white hover:border-primary" />
           </Carousel>
         </div>
       </div>
