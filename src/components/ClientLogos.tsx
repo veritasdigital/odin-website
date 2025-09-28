@@ -24,6 +24,18 @@ import totallySmiles from "@/assets/logos/totally-smiles.png";
 import doomJuice from "@/assets/logos/doom-juice.png";
 import theBanyans from "@/assets/logos/the-banyans.png";
 
+// Import actual client logos - Row 3
+import elevateDental from "@/assets/logos/elevate-dental.png";
+import adaptiveChiropractic from "@/assets/logos/adaptive-chiropractic.png";
+import growthForum from "@/assets/logos/growth-forum.png";
+import sal from "@/assets/logos/sal.png";
+import removify from "@/assets/logos/removify.png";
+import turbosoftAlt from "@/assets/logos/turbosoft-alt.png";
+import gemcutterAnalytics from "@/assets/logos/gemcutter-analytics.png";
+import duttonGroup from "@/assets/logos/dutton-group.png";
+import poseidonEquine from "@/assets/logos/poseidon-equine.png";
+import birthBeat from "@/assets/logos/birth-beat.png";
+
 export const ClientLogos = () => {
   // Client logos with actual images
   const clientLogos = [
@@ -53,16 +65,18 @@ export const ClientLogos = () => {
       { logo: doomJuice, alt: "Doom Juice" },
       { logo: theBanyans, alt: "The Banyans" },
     ],
-    // Row 3 - Placeholder colored boxes
+    // Row 3 - Real client logos
     [
-      { placeholder: "Creative Studios", color: "bg-orange-500" },
-      { placeholder: "Construction Pro", color: "bg-gray-500" },
-      { placeholder: "Travel Masters", color: "bg-cyan-500" },
-      { placeholder: "Security Sol", color: "bg-emerald-500" },
-      { placeholder: "Media Group", color: "bg-violet-500" },
-      { placeholder: "Transport Co", color: "bg-rose-500" },
-      { placeholder: "Beauty Brands", color: "bg-fuchsia-500" },
-      { placeholder: "Sports Elite", color: "bg-lime-500" },
+      { logo: elevateDental, alt: "Elevate Dental" },
+      { logo: adaptiveChiropractic, alt: "Adaptive Chiropractic" },
+      { logo: growthForum, alt: "Growth Forum" },
+      { logo: sal, alt: "SAL" },
+      { logo: removify, alt: "Removify" },
+      { logo: turbosoftAlt, alt: "Turbosoft" },
+      { logo: gemcutterAnalytics, alt: "Gemcutter Analytics" },
+      { logo: duttonGroup, alt: "Dutton Group" },
+      { logo: poseidonEquine, alt: "Poseidon Equine" },
+      { logo: birthBeat, alt: "Birth Beat" },
     ],
   ];
 
@@ -93,19 +107,11 @@ export const ClientLogos = () => {
                 {row.map((client, index) => (
                   <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
                     <div className="flex items-center justify-center h-full">
-                      {client.logo ? (
-                        <img 
-                          src={client.logo} 
-                          alt={client.alt}
-                          className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                        />
-                      ) : (
-                        <div className={`w-16 h-16 ${client.color} rounded-lg flex items-center justify-center`}>
-                          <span className="text-white font-bold text-sm">
-                            {client.placeholder?.substring(0, 2)}
-                          </span>
-                        </div>
-                      )}
+                      <img 
+                        src={client.logo} 
+                        alt={client.alt}
+                        className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                      />
                     </div>
                   </Card>
                 ))}
@@ -113,19 +119,11 @@ export const ClientLogos = () => {
                 {row.map((client, index) => (
                   <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
                     <div className="flex items-center justify-center h-full">
-                      {client.logo ? (
-                        <img 
-                          src={client.logo} 
-                          alt={client.alt}
-                          className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
-                        />
-                      ) : (
-                        <div className={`w-16 h-16 ${client.color} rounded-lg flex items-center justify-center`}>
-                          <span className="text-white font-bold text-sm">
-                            {client.placeholder?.substring(0, 2)}
-                          </span>
-                        </div>
-                      )}
+                      <img 
+                        src={client.logo} 
+                        alt={client.alt}
+                        className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                      />
                     </div>
                   </Card>
                 ))}
