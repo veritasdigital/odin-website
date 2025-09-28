@@ -1,10 +1,18 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Credibility } from "@/components/Credibility";
+import { Problem } from "@/components/Problem";
 import { Services } from "@/components/Services";
+import { Methodology } from "@/components/Methodology";
 import { Results } from "@/components/Results";
+import { Industries } from "@/components/Industries";
+import { Team } from "@/components/Team";
+import { Process } from "@/components/Process";
+import { Investment } from "@/components/Investment";
+import { Assurance } from "@/components/Assurance";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { Closing } from "@/components/Closing";
 
 const Index = () => {
   return (
@@ -12,10 +20,18 @@ const Index = () => {
       <Header />
       <Hero />
       <Credibility />
+      <Problem />
       <Services />
+      <Methodology />
       <Results />
+      <Industries />
+      <Team />
+      <Process />
+      <Investment />
+      <Assurance />
       <CTA />
       <Footer />
+      <Closing />
     </div>
   );
 };

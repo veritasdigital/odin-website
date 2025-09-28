@@ -14,52 +14,51 @@ export const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
           
           {/* Left Side - Text Content */}
-          <div className="space-y-12 lg:space-y-16 animate-slide-up max-w-2xl">
+          <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-3 lg:mb-4">Conquer Your</span>
+                <span className="block mb-3 lg:mb-4">Accelerate Your</span>
                 <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Digital Landscape
+                  Digital Growth
+                </span>
+                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl">
+                  with Strategic Marketing Excellence
                 </span>
               </h1>
             </div>
             
             {/* Subtitle and Description */}
             <div className="space-y-6 lg:space-y-8">
-              <h2 className="text-xl md:text-2xl lg:text-3xl text-charcoal/90 font-bold leading-tight max-w-xl">
-                Strategic Digital Marketing That Delivers Measurable Growth
+              <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                Data-Driven Digital Marketing Solutions That Deliver Measurable Business Results
               </h2>
               
-              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-xl font-light">
-                We combine data-driven strategies with creative innovation to deliver measurable results. 
-                Our proven methodologies have generated over $50M in client revenue.
+              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                At Odin Digital, we partner with ambitious businesses to develop and execute comprehensive digital marketing strategies that drive sustainable growth. Our evidence-based approach and proven methodologies have contributed to generating over $50 million in client revenue across diverse industries.
               </p>
             </div>
             
-            {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 pt-6">
+            {/* Action Button */}
+            <div className="pt-6">
               <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
-                Start Your Growth
-              </Button>
-              <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5">
-                Get Free Strategy Audit
+                Schedule Strategic Consultation
               </Button>
             </div>
             
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-8 lg:gap-12 pt-12 mt-12 border-t border-charcoal/10">
-              <div className="text-left space-y-2">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">200+</div>
-                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">Businesses</div>
+            <div className="grid grid-cols-3 gap-6 lg:gap-8 pt-8 mt-8 border-t border-charcoal/10">
+              <div className="text-left space-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">200+</div>
+                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Trusted Businesses</div>
               </div>
-              <div className="text-left space-y-2">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">$50M+</div>
-                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">Revenue</div>
+              <div className="text-left space-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">$50M+</div>
+                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Client Revenue</div>
               </div>
-              <div className="text-left space-y-2">
-                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">340%</div>
-                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">ROI</div>
+              <div className="text-left space-y-1">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">340%</div>
+                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Average ROI</div>
               </div>
             </div>
           </div>

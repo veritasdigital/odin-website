@@ -11,22 +11,18 @@ export const CTA = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
-          Ready to Conquer Your Market?
+          Begin Your Digital Marketing Transformation
         </h2>
         
         <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-4xl mx-auto leading-relaxed">
-          The digital battlefield rewards the bold and punishes the hesitant. While your competitors struggle with outdated tactics, you can dominate with proven strategies that deliver real results.
-        </p>
-        
-        <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
-          Schedule your strategic consultation or get your free digital audit today.
+          The digital marketplace continues to evolve rapidly, creating new opportunities for businesses that implement strategic, data-driven marketing approaches. Companies that invest in comprehensive digital marketing strategies today position themselves for sustainable competitive advantages.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white">
-            <h3 className="text-2xl font-bold mb-4">Strategic Consultation</h3>
+            <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
             <p className="text-white/80 mb-6">
-              Speak with one of our senior strategists to discuss your goals and discover how Odin Digital can accelerate your growth.
+              Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>
             <Button variant="cta" size="lg" className="w-full">
               SCHEDULE CONSULTATION
@@ -34,23 +30,14 @@ export const CTA = () => {
           </Card>
 
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white">
-            <h3 className="text-2xl font-bold mb-4">Free Digital Audit</h3>
+            <h3 className="text-2xl font-bold mb-4">Request Your Complimentary Assessment</h3>
             <p className="text-white/80 mb-6">
-              Receive a comprehensive analysis of your current digital marketing performance and strategic recommendations.
+              Receive a comprehensive analysis of your current digital marketing performance along with strategic recommendations for improvement and growth opportunities.
             </p>
             <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10">
-              GET FREE AUDIT
+              REQUEST ASSESSMENT
             </Button>
           </Card>
-        </div>
-
-        <div className="border-t border-white/20 pt-8">
-          <p className="text-white/70 mb-2">
-            <strong>P.S.</strong> Every day you delay is another day your competitors gain ground. The businesses that dominate tomorrow are the ones that take strategic action today.
-          </p>
-          <p className="text-white/60 text-sm">
-            <strong>P.P.S.</strong> Our client roster is selective. We only work with businesses that are serious about growth and committed to implementing winning strategies. If that's you, let's talk.
-          </p>
         </div>
       </div>
     </section>

@@ -7,96 +7,88 @@ export const Services = () => {
     {
       icon: Target,
       title: "Strategic Paid Advertising",
-      subtitle: "Precision-targeted campaigns that convert prospects into profits",
-      description: "We craft and optimize high-performance advertising campaigns across Google, Facebook, LinkedIn, and emerging platforms. Every dollar spent is tracked, measured, and optimized for maximum return.",
+      subtitle: "Performance-focused campaigns designed for optimal return on investment",
+      description: "We develop and manage sophisticated advertising campaigns across Google Ads, Facebook, LinkedIn, and emerging platforms. Our approach emphasizes precise targeting, continuous optimization, and transparent performance tracking to maximize your marketing investment.",
       features: [
-        "Advanced audience targeting and segmentation",
-        "Conversion rate optimization and A/B testing", 
-        "Multi-platform campaign management",
-        "Real-time performance monitoring and optimization"
+        "Advanced audience segmentation and targeting strategies",
+        "Comprehensive A/B testing and conversion rate optimization",
+        "Multi-platform campaign coordination and management",
+        "Real-time performance monitoring and strategic adjustments"
       ]
     },
     {
       icon: Search,
       title: "Search Engine Optimization",
-      subtitle: "Dominate search results and claim your digital territory",
-      description: "Our SEO strategies are built for long-term dominance. We don't just improve rankings – we establish your brand as the undisputed authority in your industry.",
+      subtitle: "Long-term organic visibility and authority building",
+      description: "Our SEO strategies focus on establishing your business as a recognized authority in your industry while driving qualified organic traffic. We implement comprehensive optimization techniques that deliver sustainable results over time.",
       features: [
-        "Comprehensive keyword research and strategy",
-        "Technical SEO and site optimization",
-        "Content strategy and creation",
-        "Local SEO and Google My Business optimization"
+        "In-depth keyword research and competitive analysis",
+        "Technical SEO audits and website optimization",
+        "Content strategy development and implementation",
+        "Local SEO and Google Business Profile optimization"
       ]
     },
     {
       icon: TrendingUp,
-      title: "Conversion Optimization",
-      subtitle: "Transform visitors into customers with surgical precision",
-      description: "Your website should be a revenue-generating machine. We analyze user behavior, identify conversion barriers, and implement strategic improvements that dramatically increase your bottom line.",
+      title: "Conversion Rate Optimization",
+      subtitle: "Systematic improvement of website performance and user experience",
+      description: "We analyze user behavior patterns and implement data-driven improvements to increase conversion rates and maximize the value of your existing traffic. Our systematic approach identifies and addresses conversion barriers throughout the customer journey.",
       features: [
-        "Landing page design and optimization",
-        "User experience analysis and improvement",
-        "Sales funnel development and optimization", 
-        "Advanced analytics and conversion tracking"
+        "Landing page design and optimization testing",
+        "User experience analysis and improvement recommendations",
+        "Sales funnel development and optimization",
+        "Advanced analytics implementation and conversion tracking"
       ]
     },
     {
       icon: Zap,
       title: "Marketing Automation",
-      subtitle: "Scale your growth with intelligent systems",
-      description: "We build sophisticated marketing automation systems that nurture leads, retain customers, and scale your business without scaling your workload.",
+      subtitle: "Scalable systems for lead nurturing and customer retention",
+      description: "We design and implement sophisticated marketing automation systems that nurture leads, retain customers, and scale your marketing efforts efficiently. Our automation strategies help you maintain consistent communication while reducing manual workload.",
       features: [
-        "Email marketing automation and sequences",
-        "Lead scoring and nurturing systems",
-        "Customer retention and loyalty programs",
-        "CRM integration and optimization"
+        "Email marketing automation and lead nurturing sequences",
+        "Lead scoring and qualification systems",
+        "Customer retention and loyalty program development",
+        "CRM integration and workflow optimization"
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-b from-background to-muted">
+    <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Your Arsenal for 
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"> Digital Warfare</span>
+          <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+            Comprehensive Digital Marketing Solutions
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Dominate your market with our comprehensive suite of battle-tested digital marketing weapons
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="p-8 shadow-card hover:shadow-primary transition-smooth border-0 bg-card/80 backdrop-blur-sm group hover:scale-[1.02]"
-            >
+            <Card key={index} className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
               <div className="flex items-start space-x-6">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-lg gradient-primary flex items-center justify-center group-hover:animate-pulse-glow">
-                    <service.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <service.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
-                
-                <div className="flex-grow">
-                  <h3 className="text-2xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-primary font-semibold mb-4">{service.subtitle}</p>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-charcoal mb-2">{service.title}</h3>
+                  <p className="text-primary font-semibold mb-4 text-sm uppercase tracking-wider">
+                    {service.subtitle}
+                  </p>
+                  <p className="text-charcoal/70 leading-relaxed mb-6">
                     {service.description}
                   </p>
-                  
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start space-x-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      <li key={featureIndex} className="text-charcoal/70 flex items-start">
+                        <span className="text-primary mr-2 mt-1.5">•</span>
+                        {feature}
                       </li>
                     ))}
                   </ul>
-                  
-                  <Button variant="outline" className="group-hover:border-primary group-hover:text-primary">
+                  <Button variant="outline" size="sm" className="border-charcoal/20 hover:bg-charcoal/5">
                     Learn More
                   </Button>
                 </div>

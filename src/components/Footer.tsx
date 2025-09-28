@@ -12,16 +12,16 @@ export const Footer = () => {
               <img src={odinLogo} alt="Odin Digital" className="h-8 w-auto" />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
-              Where Ancient Wisdom Meets Modern Marketing. Empowering ambitious brands to achieve exponential growth and build the future together.
+              Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
             </p>
             <Button variant="hero" size="lg">
-              Join the Ranks of Digital Victors
+              Connect with Our Digital Marketing Experts
             </Button>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-xl font-bold mb-6">Connect with Our Digital Marketing Experts</h3>
             <div className="space-y-4 text-white/80">
               <div>
                 <p className="font-semibold text-white">Phone:</p>
@@ -33,7 +33,7 @@ export const Footer = () => {
               </div>
               <div>
                 <p className="font-semibold text-white">Address:</p>
-                <p>Your Business Address</p>
+                <p>[Your Business Address]</p>
               </div>
             </div>
           </div>
@@ -65,8 +65,8 @@ export const Footer = () => {
               © 2024 Odin Digital. All rights reserved.
             </p>
             <p className="text-white/60 text-sm text-center md:text-right">
-              All client results are verified and represent actual outcomes achieved through our strategic campaigns. 
-              Individual results may vary based on industry, market conditions, and implementation of recommended strategies.
+              Results vary based on industry, market conditions, and implementation of recommended strategies. 
+              All performance metrics represent verified client data and collaborative achievements.
             </p>
           </div>
         </div>
