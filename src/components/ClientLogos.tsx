@@ -1,40 +1,54 @@
 import { Card } from "@/components/ui/card";
 
+// Import actual client logos
+import lifeInsuranceDirect from "@/assets/logos/life-insurance-direct.png";
+import onyaThinkReusable from "@/assets/logos/onya-think-reusable.png";
+import mCube from "@/assets/logos/m-cube.png";
+import pw from "@/assets/logos/pw.png";
+import smilesOfRyde from "@/assets/logos/smiles-of-ryde.png";
+import renudeLaserClinic from "@/assets/logos/renude-laser-clinic.png";
+import derwentValleyCouncil from "@/assets/logos/derwent-valley-council.png";
+import bulkBuys from "@/assets/logos/bulk-buys.png";
+import astonLegalGroup from "@/assets/logos/aston-legal-group.png";
+import adriatic from "@/assets/logos/adriatic.png";
+
 export const ClientLogos = () => {
-  // Sample client logos - these would be replaced with actual logo images
+  // Client logos with actual images
   const clientLogos = [
-    // Row 1
+    // Row 1 - Real client logos
     [
-      { name: "TechFlow Solutions", industry: "Technology" },
-      { name: "Luxe Lifestyle", industry: "E-commerce" },
-      { name: "Elite Consulting", industry: "Professional Services" },
-      { name: "Industrial Solutions", industry: "Manufacturing" },
-      { name: "Green Energy Co", industry: "Energy" },
-      { name: "Financial Partners", industry: "Finance" },
-      { name: "Health Plus", industry: "Healthcare" },
-      { name: "Retail Giants", industry: "Retail" },
+      { logo: lifeInsuranceDirect, alt: "Life Insurance Direct" },
+      { logo: onyaThinkReusable, alt: "Onya Think Reusable" },
+      { logo: mCube, alt: "M Cube" },
+      { logo: pw, alt: "PW" },
+      { logo: smilesOfRyde, alt: "Smiles of Ryde" },
+      { logo: renudeLaserClinic, alt: "Renude Laser Clinic" },
+      { logo: derwentValleyCouncil, alt: "Derwent Valley Council" },
+      { logo: bulkBuys, alt: "Bulk Buys" },
+      { logo: astonLegalGroup, alt: "Aston Legal Group" },
+      { logo: adriatic, alt: "Adriatic" },
     ],
-    // Row 2
+    // Row 2 - Placeholder colored boxes
     [
-      { name: "Smart Analytics", industry: "Technology" },
-      { name: "Premier Hotels", industry: "Hospitality" },
-      { name: "Urban Development", industry: "Real Estate" },
-      { name: "Fitness Revolution", industry: "Health & Fitness" },
-      { name: "Legal Experts", industry: "Legal Services" },
-      { name: "Auto Excellence", industry: "Automotive" },
-      { name: "Food Network", industry: "Food & Beverage" },
-      { name: "Education First", industry: "Education" },
+      { placeholder: "Tech Solutions", color: "bg-blue-500" },
+      { placeholder: "Premier Hotels", color: "bg-green-500" },
+      { placeholder: "Urban Dev", color: "bg-purple-500" },
+      { placeholder: "Fitness Rev", color: "bg-red-500" },
+      { placeholder: "Legal Experts", color: "bg-indigo-500" },
+      { placeholder: "Auto Excellence", color: "bg-yellow-500" },
+      { placeholder: "Food Network", color: "bg-pink-500" },
+      { placeholder: "Education First", color: "bg-teal-500" },
     ],
-    // Row 3
+    // Row 3 - Placeholder colored boxes
     [
-      { name: "Creative Studios", industry: "Creative" },
-      { name: "Construction Pro", industry: "Construction" },
-      { name: "Travel Masters", industry: "Travel" },
-      { name: "Security Solutions", industry: "Security" },
-      { name: "Media Group", industry: "Media" },
-      { name: "Transport Co", industry: "Logistics" },
-      { name: "Beauty Brands", industry: "Beauty" },
-      { name: "Sports Elite", industry: "Sports" },
+      { placeholder: "Creative Studios", color: "bg-orange-500" },
+      { placeholder: "Construction Pro", color: "bg-gray-500" },
+      { placeholder: "Travel Masters", color: "bg-cyan-500" },
+      { placeholder: "Security Sol", color: "bg-emerald-500" },
+      { placeholder: "Media Group", color: "bg-violet-500" },
+      { placeholder: "Transport Co", color: "bg-rose-500" },
+      { placeholder: "Beauty Brands", color: "bg-fuchsia-500" },
+      { placeholder: "Sports Elite", color: "bg-lime-500" },
     ],
   ];
 
@@ -63,29 +77,41 @@ export const ClientLogos = () => {
               >
                 {/* First set of logos */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[280px]">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl font-black text-primary">
-                          {client.name.split(' ').map(word => word.charAt(0)).join('')}
-                        </span>
-                      </div>
-                      <h3 className="font-bold text-charcoal text-lg mb-1">{client.name}</h3>
-                      <p className="text-sm text-charcoal/60">{client.industry}</p>
+                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
+                    <div className="flex items-center justify-center h-full">
+                      {client.logo ? (
+                        <img 
+                          src={client.logo} 
+                          alt={client.alt}
+                          className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                      ) : (
+                        <div className={`w-16 h-16 ${client.color} rounded-lg flex items-center justify-center`}>
+                          <span className="text-white font-bold text-sm">
+                            {client.placeholder?.substring(0, 2)}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </Card>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[280px]">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl font-black text-primary">
-                          {client.name.split(' ').map(word => word.charAt(0)).join('')}
-                        </span>
-                      </div>
-                      <h3 className="font-bold text-charcoal text-lg mb-1">{client.name}</h3>
-                      <p className="text-sm text-charcoal/60">{client.industry}</p>
+                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-6 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[200px] h-24">
+                    <div className="flex items-center justify-center h-full">
+                      {client.logo ? (
+                        <img 
+                          src={client.logo} 
+                          alt={client.alt}
+                          className="max-w-full max-h-full object-contain opacity-70 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                      ) : (
+                        <div className={`w-16 h-16 ${client.color} rounded-lg flex items-center justify-center`}>
+                          <span className="text-white font-bold text-sm">
+                            {client.placeholder?.substring(0, 2)}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </Card>
                 ))}
