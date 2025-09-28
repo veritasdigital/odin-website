@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
+import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 
 export const Results = () => {
   const testimonials = [
@@ -13,6 +14,15 @@ export const Results = () => {
       title: "Founder",
       location: "Gold Coast, Australia",
       image: yclJewelry
+    },
+    {
+      company: "Adriatic Furniture",
+      result: "Brand & Business Excellence",
+      quote: "They really took the time to understand our business, our brand and our priorities and have consistently delivered exceptional results. Can't recommend them highly enough",
+      author: "Lenny Catalano",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: adriaticFurniture
     },
     {
       company: "TechFlow Solutions",
