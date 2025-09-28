@@ -7,7 +7,7 @@ export const Credibility = () => {
       label: "in verified client revenue contribution"
     },
     {
-      number: "340%",
+      number: "540%",
       label: "average return on advertising investment"
     },
     {
