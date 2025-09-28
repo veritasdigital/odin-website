@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
@@ -7,6 +8,9 @@ import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
 import krushOrganics from "@/assets/krush-organics.png";
 
 export const Results = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
+
   const testimonials = [
     {
       company: "YCL Jewels",
@@ -46,6 +50,21 @@ export const Results = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    const updateCurrentSlide = () => {
+      setCurrentSlide(carouselApi.selectedScrollSnap());
+    };
+
+    carouselApi.on("select", updateCurrentSlide);
+    updateCurrentSlide();
+
+    return () => {
+      carouselApi.off("select", updateCurrentSlide);
+    };
+  }, [carouselApi]);
+
   return (
     <section id="results" className="py-24 bg-gradient-to-br from-accent/5 to-primary/5">
       <div className="max-w-7xl mx-auto px-6">
@@ -59,7 +78,11 @@ export const Results = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
-          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: true }}>
+          <Carousel 
+            className="w-full max-w-4xl mx-auto" 
+            opts={{ align: "start", loop: true }}
+            setApi={setCarouselApi}
+          >
             <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-2 md:pl-4">
@@ -110,6 +133,22 @@ export const Results = () => {
             <CarouselPrevious className="-left-16 top-1/2" />
             <CarouselNext className="-right-16 top-1/2" />
           </Carousel>
+
+          {/* Pagination Dots */}
+          <div className="flex justify-center mt-8 gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => carouselApi?.scrollTo(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-primary shadow-glow scale-125' 
+                    : 'bg-charcoal/20 hover:bg-primary/50'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
