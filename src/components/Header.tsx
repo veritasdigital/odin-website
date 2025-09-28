@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
@@ -11,32 +11,9 @@ import odinLogo from "@/assets/odin-digital-logo.png";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkSection, setIsDarkSection] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      
-      // Check if we're in the hero section (dark background)
-      // Assuming hero is approximately first viewport height
-      const isInHeroSection = scrollY < windowHeight * 0.8;
-      
-      setIsDarkSection(isInHeroSection);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check initial position
-    
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b transition-all duration-300 ${
-        isDarkSection 
-          ? 'bg-charcoal/95 border-white/10' 
-          : 'bg-white/98 border-charcoal/10'
-      }`}>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-lg border-b border-charcoal/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -47,11 +24,7 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className={`flex items-center space-x-1 font-medium transition-colors cursor-pointer ${
-                isDarkSection 
-                  ? 'text-white/70 hover:text-primary' 
-                  : 'text-charcoal/70 hover:text-primary'
-              }`}>
+              <DropdownMenuTrigger className="flex items-center space-x-1 text-charcoal/70 hover:text-primary font-medium transition-colors cursor-pointer">
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
@@ -76,32 +49,16 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="#about" className={`font-medium transition-colors ${
-              isDarkSection 
-                ? 'text-white/70 hover:text-primary' 
-                : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="#about" className="text-charcoal/70 hover:text-primary font-medium transition-colors">
               About
             </a>
-            <a href="#results" className={`font-medium transition-colors ${
-              isDarkSection 
-                ? 'text-white/70 hover:text-primary' 
-                : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="#results" className="text-charcoal/70 hover:text-primary font-medium transition-colors">
               Results
             </a>
-            <a href="#blog" className={`font-medium transition-colors ${
-              isDarkSection 
-                ? 'text-white/70 hover:text-primary' 
-                : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="#blog" className="text-charcoal/70 hover:text-primary font-medium transition-colors">
               Blog
             </a>
-            <a href="#contact" className={`font-medium transition-colors ${
-              isDarkSection 
-                ? 'text-white/70 hover:text-primary' 
-                : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="#contact" className="text-charcoal/70 hover:text-primary font-medium transition-colors">
               Contact
             </a>
           </nav>
@@ -116,9 +73,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              isDarkSection ? 'text-white' : 'text-charcoal'
-            }`}
+            className="md:hidden text-charcoal p-2"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
