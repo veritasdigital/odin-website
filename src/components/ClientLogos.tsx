@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 
-// Import actual client logos
+// Import actual client logos - Row 1
 import lifeInsuranceDirect from "@/assets/logos/life-insurance-direct.png";
 import onyaThinkReusable from "@/assets/logos/onya-think-reusable.png";
 import mCube from "@/assets/logos/m-cube.png";
@@ -11,6 +11,18 @@ import derwentValleyCouncil from "@/assets/logos/derwent-valley-council.png";
 import bulkBuys from "@/assets/logos/bulk-buys.png";
 import astonLegalGroup from "@/assets/logos/aston-legal-group.png";
 import adriatic from "@/assets/logos/adriatic.png";
+
+// Import actual client logos - Row 2
+import turbosoft from "@/assets/logos/turbosoft.png";
+import hardmanCommunications from "@/assets/logos/hardman-communications.png";
+import sphere from "@/assets/logos/sphere.png";
+import adacsSecurity from "@/assets/logos/adacs-security.png";
+import aletheiaAndPhos from "@/assets/logos/aletheia-phos.png";
+import ycl from "@/assets/logos/ycl.png";
+import chiropracticLife from "@/assets/logos/chiropractic-life.png";
+import totallySmiles from "@/assets/logos/totally-smiles.png";
+import doomJuice from "@/assets/logos/doom-juice.png";
+import theBanyans from "@/assets/logos/the-banyans.png";
 
 export const ClientLogos = () => {
   // Client logos with actual images
@@ -28,16 +40,18 @@ export const ClientLogos = () => {
       { logo: astonLegalGroup, alt: "Aston Legal Group" },
       { logo: adriatic, alt: "Adriatic" },
     ],
-    // Row 2 - Placeholder colored boxes
+    // Row 2 - Real client logos
     [
-      { placeholder: "Tech Solutions", color: "bg-blue-500" },
-      { placeholder: "Premier Hotels", color: "bg-green-500" },
-      { placeholder: "Urban Dev", color: "bg-purple-500" },
-      { placeholder: "Fitness Rev", color: "bg-red-500" },
-      { placeholder: "Legal Experts", color: "bg-indigo-500" },
-      { placeholder: "Auto Excellence", color: "bg-yellow-500" },
-      { placeholder: "Food Network", color: "bg-pink-500" },
-      { placeholder: "Education First", color: "bg-teal-500" },
+      { logo: turbosoft, alt: "Turbosoft" },
+      { logo: hardmanCommunications, alt: "Hardman Communications" },
+      { logo: sphere, alt: "Sphere" },
+      { logo: adacsSecurity, alt: "ADACS Security" },
+      { logo: aletheiaAndPhos, alt: "Aletheia & Phos" },
+      { logo: ycl, alt: "YCL" },
+      { logo: chiropracticLife, alt: "Chiropractic Life" },
+      { logo: totallySmiles, alt: "Totally Smiles" },
+      { logo: doomJuice, alt: "Doom Juice" },
+      { logo: theBanyans, alt: "The Banyans" },
     ],
     // Row 3 - Placeholder colored boxes
     [
