@@ -15,6 +15,7 @@ import { Assurance } from "@/components/Assurance";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 import { Closing } from "@/components/Closing";
+import { SideTab } from "@/components/SideTab";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
       <CTA />
       <Footer />
       <Closing />
+      <SideTab />
     </div>
   );
 };
