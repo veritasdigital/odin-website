@@ -219,7 +219,7 @@ export const Hero = () => {
               </div>
               <div className="text-left space-y-1">
                 <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">174 Years+</div>
-                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">In Business</div>
+                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Team Marketing Expertise</div>
               </div>
             </div>
           </div>
