@@ -18,18 +18,22 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 17%;
 
-    /* Primary Magenta - Bold and Energetic */
-    --primary: 336 100% 56%;
+    /* Primary Magenta #FF1B6B - Bold and Energetic */
+    --primary: 335 100% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 336 100% 70%;
+    --primary-glow: 335 100% 70%;
 
-    /* Secondary - Deep Red for Authority */
+    /* Secondary Red #8B0000 - Authority */
     --secondary: 0 100% 27%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Dark Purple for Depth */
-    --accent: 314 68% 17%;
+    /* Dark Purple #4A0E2B - Depth */
+    --accent: 331 68% 17%;
     --accent-foreground: 0 0% 100%;
+
+    /* Charcoal Black #2C2C2C - Professional */
+    --charcoal: 0 0% 17%;
+    --charcoal-foreground: 0 0% 100%;
 
     /* Supporting Colors */
     --muted: 0 0% 96%;
