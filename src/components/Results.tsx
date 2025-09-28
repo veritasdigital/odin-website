@@ -4,6 +4,7 @@ import { Star } from "lucide-react";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
+import krushOrganics from "@/assets/krush-organics.png";
 
 export const Results = () => {
   const testimonials = [
@@ -33,6 +34,15 @@ export const Results = () => {
       title: "Director",
       location: "Melbourne, Australia",
       image: bulkBuysAustralia
+    },
+    {
+      company: "Krush Organics",
+      result: "$100k First Month + 5x ROI",
+      quote: "We started marketing with Odin when we were just launching our brand and we did over $100k in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys and can't recommend them highly enough",
+      author: "Liam C",
+      title: "Founder",
+      location: "Sydney, Australia",
+      image: krushOrganics
     },
     {
       company: "TechFlow Solutions",
