@@ -74,10 +74,10 @@ export const Hero = () => {
       
       {/* Split Screen Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
           
           {/* Left Side - Text Content */}
-          <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
+          <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl lg:col-span-2">
             {/* Main Headline */}
             <div className="space-y-6">
               <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
@@ -225,7 +225,7 @@ export const Hero = () => {
           </div>
           
           {/* Right Side - Person Image */}
-          <div className="relative flex items-center justify-center lg:justify-end">
+          <div className="relative flex items-center justify-center lg:justify-end lg:col-span-1">
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
               <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
