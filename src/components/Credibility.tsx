@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 export const Credibility = () => {
   const stats = [
     {
-      number: "$50,000,000+",
+      number: "$574 Million +",
       label: "in verified client revenue contribution"
     },
     {
