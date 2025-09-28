@@ -11,7 +11,7 @@ export const Credibility = () => {
       label: "average return on advertising investment"
     },
     {
-      number: "200+",
+      number: "283+",
       label: "successful campaigns across multiple industries"
     },
     {
