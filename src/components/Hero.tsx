@@ -108,7 +108,7 @@ export const Hero = () => {
                 <div className="flex items-center bg-white rounded-lg shadow-lg border border-charcoal/20 overflow-hidden">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                      <Button variant="ghost" size="xl" className="px-6 py-4 text-charcoal rounded-none border-r border-charcoal/20 hover:bg-primary/5">
+                      <Button variant="ghost" size="xl" className="px-6 py-4 text-charcoal rounded-none border-r border-charcoal/20 hover:bg-primary/5 justify-center items-center">
                         {quoteOptions[0]}
                         <ChevronDown className="ml-2 h-5 w-5" />
                       </Button>
@@ -125,7 +125,7 @@ export const Hero = () => {
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
-                  <Button variant="ghost" size="xl" className="shadow-none text-lg px-10 py-4 font-bold text-white bg-primary hover:bg-primary/90 rounded-none">
+                  <Button variant="ghost" size="xl" className="shadow-none text-lg px-10 py-4 font-bold text-white bg-primary hover:bg-primary/90 rounded-none justify-center items-center">
                     Get An Obligation Free Quote
                   </Button>
                 </div>
