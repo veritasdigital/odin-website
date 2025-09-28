@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroPerson from "@/assets/hero-person.webp";
 
 export const Hero = () => {
   return (
@@ -57,17 +57,16 @@ export const Hero = () => {
             </div>
           </div>
           
-          {/* Right Side - Image Placeholder */}
+          {/* Right Side - Person Image */}
           <div className="relative flex items-center justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
-              {/* Placeholder for person image */}
-              <div className="aspect-[3/4] bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl border-2 border-dashed border-primary/30 flex items-center justify-center">
-                <div className="text-center text-charcoal/50">
-                  <div className="text-6xl mb-4">👤</div>
-                  <p className="text-lg font-medium">Person Image</p>
-                  <p className="text-sm">Friendly face, company t-shirt</p>
-                  <p className="text-xs mt-2">Torso cropped</p>
-                </div>
+              {/* Person Image */}
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
+                <img 
+                  src={heroPerson} 
+                  alt="Friendly team member" 
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
               
               {/* Decorative elements around image */}
