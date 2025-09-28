@@ -78,7 +78,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           <div className="w-2/5 bg-gradient-hero text-white flex flex-col justify-center decorative-circles relative">
             <button
               onClick={onClose}
-              className="absolute top-4 left-2 sm:top-4 sm:left-2 md:top-5 md:left-3 text-white hover:text-primary transition-colors"
+              className="absolute top-10 left-2 sm:top-12 sm:left-2 md:top-14 md:left-3 text-white hover:text-primary transition-colors"
             >
               <X className="w-6 h-6" />
             </button>
