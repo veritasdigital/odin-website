@@ -12,8 +12,8 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center py-20">
         <div className="animate-slide-up">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-charcoal mb-8 leading-tight tracking-tight">
-            <span className="block">Conquer Your</span>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-charcoal mb-12 leading-[1.1] tracking-tight">
+            <span className="block mb-4">Conquer Your</span>
             <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Digital Landscape
             </span>
