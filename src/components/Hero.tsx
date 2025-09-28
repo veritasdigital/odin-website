@@ -12,9 +12,9 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center py-20">
         <div className="animate-slide-up">
-          <h1 className="relative z-20 text-5xl md:text-7xl lg:text-8xl font-black text-charcoal mb-12 leading-[1.15] tracking-tight pb-1">
+          <h1 className="relative z-30 overflow-visible text-5xl md:text-7xl lg:text-8xl font-black text-charcoal mb-16 leading-[1.25] tracking-tight pb-3">
             <span className="block mb-4">Conquer Your</span>
-            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent py-1">
               Digital Landscape
             </span>
           </h1>
