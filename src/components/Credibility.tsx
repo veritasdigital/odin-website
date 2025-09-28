@@ -16,7 +16,7 @@ export const Credibility = () => {
     },
     {
       number: "95%",
-      label: "client retention rate over 24-month periods"
+      label: "client retention rate (our clients stay because they love us, we have NO lock in contracts)"
     }
   ];
 
