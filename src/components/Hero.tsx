@@ -105,10 +105,10 @@ export const Hero = () => {
             {/* Action Button or Form */}
             <div className="pt-6">
               {!selectedOption ? (
-                <div className="flex items-center gap-4">
+                <div className="flex items-center bg-white rounded-lg shadow-lg border border-charcoal/20 overflow-hidden">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                      <Button variant="outline" size="xl" className="px-6 py-4 border-charcoal/20 text-charcoal">
+                      <Button variant="ghost" size="xl" className="px-6 py-4 text-charcoal rounded-none border-r border-charcoal/20 hover:bg-primary/5">
                         {quoteOptions[0]}
                         <ChevronDown className="ml-2 h-5 w-5" />
                       </Button>
@@ -125,7 +125,7 @@ export const Hero = () => {
                       ))}
                     </DropdownMenuContent>
                   </DropdownMenu>
-                  <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
+                  <Button variant="ghost" size="xl" className="shadow-none text-lg px-10 py-4 font-bold text-white bg-primary hover:bg-primary/90 rounded-none">
                     Get An Obligation Free Quote
                   </Button>
                 </div>
