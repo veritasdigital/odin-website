@@ -3,6 +3,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Star } from "lucide-react";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
+import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
 
 export const Results = () => {
   const testimonials = [
@@ -23,6 +24,15 @@ export const Results = () => {
       title: "Founder",
       location: "Melbourne, Australia",
       image: adriaticFurniture
+    },
+    {
+      company: "Bulk Buys Australia",
+      result: "Excellent Results in Short Time",
+      quote: "We've been working with them for the last couple of months and have been extremely pleased with the results the team has achieved in such a short time. Results and services provided by the team has been excellent!",
+      author: "Eda",
+      title: "Director",
+      location: "Melbourne, Australia",
+      image: bulkBuysAustralia
     },
     {
       company: "TechFlow Solutions",
