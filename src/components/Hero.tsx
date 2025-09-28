@@ -61,19 +61,19 @@ export const Hero = () => {
           <div className="relative flex items-center justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg relative">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
                 <img 
                   src={heroPerson} 
                   alt="Alexa Blake, Odin Digital General Manager" 
                   className="w-full h-full object-cover object-center"
                 />
-                
-                {/* Glassy Banner */}
-                <div className="absolute bottom-0 left-0 right-0 bg-white/20 backdrop-blur-md border-t border-white/30 p-4">
-                  <div className="text-white text-center">
-                    <h3 className="font-bold text-lg">Alexa Blake</h3>
-                    <p className="text-sm opacity-90">Odin Digital General Manager</p>
-                  </div>
+              </div>
+              
+              {/* Floating Glassy Banner */}
+              <div className="absolute bottom-8 -left-4 right-8 bg-white/80 backdrop-blur-lg border border-white/40 rounded-xl shadow-lg p-4 z-10">
+                <div className="text-charcoal">
+                  <h3 className="font-bold text-lg">Alexa Blake</h3>
+                  <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
                 </div>
               </div>
               
