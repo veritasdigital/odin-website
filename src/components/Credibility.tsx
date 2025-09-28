@@ -21,7 +21,7 @@ export const Credibility = () => {
   ];
 
   return (
-    <section className="py-24 bg-accent/5">
+    <section className="py-24 bg-accent/5 decorative-circles">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">

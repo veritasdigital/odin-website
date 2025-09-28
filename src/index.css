@@ -234,6 +234,73 @@
   animation: scroll 20s linear infinite;
 }
 
-.pause-animation:hover {
-  animation-play-state: paused;
-}
+  .pause-animation:hover {
+    animation-play-state: paused;
+  }
+
+  /* Decorative Circle Elements */
+  .decorative-circles {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .decorative-circles::before,
+  .decorative-circles::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .decorative-circles::before {
+    width: 200px;
+    height: 200px;
+    background: hsl(var(--primary) / 0.08);
+    top: -100px;
+    right: -50px;
+  }
+
+  .decorative-circles::after {
+    width: 120px;
+    height: 120px;
+    background: hsl(var(--accent) / 0.06);
+    bottom: -60px;
+    left: -30px;
+  }
+
+  .decorative-circles-alt {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .decorative-circles-alt::before,
+  .decorative-circles-alt::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .decorative-circles-alt::before {
+    width: 160px;
+    height: 160px;
+    background: hsl(var(--primary) / 0.05);
+    top: 20%;
+    left: -80px;
+  }
+
+  .decorative-circles-alt::after {
+    width: 100px;
+    height: 100px;
+    background: hsl(var(--accent) / 0.08);
+    bottom: 15%;
+    right: -50px;
+  }
+
+  .decorative-circles > *,
+  .decorative-circles-alt > * {
+    position: relative;
+    z-index: 1;
+  }
