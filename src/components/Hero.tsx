@@ -10,49 +10,56 @@ export const Hero = () => {
       </div>
       
       {/* Split Screen Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
           
           {/* Left Side - Text Content */}
-          <div className="space-y-8 animate-slide-up">
-            <h1 className="relative z-30 overflow-visible text-4xl md:text-6xl xl:text-7xl font-black text-charcoal leading-[1.1] tracking-tight">
-              <span className="block mb-2">Conquer Your</span>
-              <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent py-1">
-                Digital Landscape
-              </span>
-            </h1>
+          <div className="space-y-12 lg:space-y-16 animate-slide-up max-w-2xl">
+            {/* Main Headline */}
+            <div className="space-y-6">
+              <h1 className="relative z-30 overflow-visible text-5xl md:text-6xl xl:text-8xl font-black text-charcoal leading-[0.95] tracking-tight">
+                <span className="block mb-4 lg:mb-6">Conquer Your</span>
+                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  Digital Landscape
+                </span>
+              </h1>
+            </div>
             
-            <h2 className="text-xl md:text-2xl text-charcoal/80 font-bold max-w-lg">
-              Strategic Digital Marketing That Delivers Measurable Growth
-            </h2>
+            {/* Subtitle and Description */}
+            <div className="space-y-6 lg:space-y-8">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl text-charcoal/90 font-bold leading-tight max-w-xl">
+                Strategic Digital Marketing That Delivers Measurable Growth
+              </h2>
+              
+              <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed max-w-xl font-light">
+                We combine data-driven strategies with creative innovation to deliver measurable results. 
+                Our proven methodologies have generated over $50M in client revenue.
+              </p>
+            </div>
             
-            <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-lg">
-              We combine data-driven strategies with creative innovation to deliver measurable results. 
-              Our proven methodologies have generated over $50M in client revenue.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 pt-6">
+              <Button variant="default" size="xl" className="shadow-primary text-xl px-12 py-6 font-bold min-h-[60px]">
                 Start Your Growth
               </Button>
-              <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5">
+              <Button variant="outline" size="xl" className="text-xl px-12 py-6 font-bold border-charcoal/20 hover:bg-charcoal/5 min-h-[60px]">
                 Get Free Strategy Audit
               </Button>
             </div>
             
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-charcoal/10">
-              <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">200+</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">Businesses</div>
+            <div className="grid grid-cols-3 gap-8 lg:gap-12 pt-12 mt-12 border-t border-charcoal/10">
+              <div className="text-left space-y-2">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">200+</div>
+                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">Businesses</div>
               </div>
-              <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">$50M+</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">Revenue</div>
+              <div className="text-left space-y-2">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">$50M+</div>
+                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">Revenue</div>
               </div>
-              <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">340%</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">ROI</div>
+              <div className="text-left space-y-2">
+                <div className="text-3xl md:text-4xl lg:text-5xl font-black mb-2 text-primary">340%</div>
+                <div className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider">ROI</div>
               </div>
             </div>
           </div>
