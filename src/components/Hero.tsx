@@ -15,45 +15,44 @@ export const Hero = () => {
           
           {/* Left Side - Text Content */}
           <div className="space-y-8 animate-slide-up">
-            <h1 className="relative z-30 overflow-visible text-4xl md:text-6xl xl:text-7xl font-black text-charcoal leading-[1.1] tracking-tight font-inter">
+            <h1 className="relative z-30 overflow-visible text-4xl md:text-6xl xl:text-7xl font-black text-charcoal leading-[1.1] tracking-tight">
               <span className="block mb-2">Conquer Your</span>
               <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent py-1">
                 Digital Landscape
               </span>
             </h1>
             
-            <h2 className="text-xl md:text-2xl text-charcoal/80 font-bold max-w-lg font-playfair">
-              Performance-Driven Digital Marketing Excellence
+            <h2 className="text-xl md:text-2xl text-charcoal/80 font-bold max-w-lg">
+              Strategic Digital Marketing That Delivers Measurable Growth
             </h2>
             
-            <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-lg font-inter">
-              We deploy data-driven marketing strategies engineered for exponential growth. 
-              Our battle-tested methodologies have generated over $50M in verified client revenue 
-              with an average ROI of 340%.
+            <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-lg">
+              We combine data-driven strategies with creative innovation to deliver measurable results. 
+              Our proven methodologies have generated over $50M in client revenue.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold font-inter">
-                Deploy Your Growth Strategy
+              <Button variant="default" size="xl" className="shadow-primary text-lg px-10 py-4 font-bold">
+                Start Your Growth
               </Button>
-              <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5 font-inter">
-                Request Strategic Audit
+              <Button variant="outline" size="xl" className="text-lg px-10 py-4 font-bold border-charcoal/20 hover:bg-charcoal/5">
+                Get Free Strategy Audit
               </Button>
             </div>
             
-            {/* Performance Metrics */}
+            {/* Trust Indicators */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-charcoal/10">
               <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary font-playfair">200+</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide font-inter">Enterprise Clients</div>
+                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">200+</div>
+                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">Businesses</div>
               </div>
               <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary font-playfair">$50M+</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide font-inter">Revenue Generated</div>
+                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">$50M+</div>
+                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">Revenue</div>
               </div>
               <div className="text-left">
-                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary font-playfair">340%</div>
-                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide font-inter">Average ROI</div>
+                <div className="text-2xl md:text-3xl font-bold mb-1 text-primary">340%</div>
+                <div className="text-xs font-medium text-charcoal/70 uppercase tracking-wide">ROI</div>
               </div>
             </div>
           </div>
@@ -70,11 +69,11 @@ export const Hero = () => {
                 />
               </div>
               
-              {/* Executive Leadership Banner */}
-              <div className="absolute bottom-8 -left-4 right-8 bg-white/85 backdrop-blur-lg border border-white/50 rounded-xl shadow-lg p-4 z-10">
+              {/* Floating Glassy Banner */}
+              <div className="absolute bottom-8 -left-4 right-8 bg-white/80 backdrop-blur-lg border border-white/40 rounded-xl shadow-lg p-4 z-10">
                 <div className="text-charcoal">
-                  <h3 className="font-bold text-lg font-playfair">Alexa Blake</h3>
-                  <p className="text-sm text-charcoal/70 font-inter">General Manager, Strategic Operations</p>
+                  <h3 className="font-bold text-lg">Alexa Blake</h3>
+                  <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
                 </div>
               </div>
               
