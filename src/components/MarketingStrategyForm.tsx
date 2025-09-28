@@ -75,7 +75,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
       <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl">
         <div className="flex h-full">
           {/* Left Side - Copy & Proof */}
-          <div className="w-2/5 bg-gradient-hero text-white flex flex-col justify-center decorative-circles relative">
+          <div className="w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative">
             <button
               onClick={onClose}
               className="absolute top-10 left-2 sm:top-12 sm:left-2 md:top-14 md:left-3 text-white hover:text-primary transition-colors z-50 cursor-pointer"
@@ -83,7 +83,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               <X className="w-6 h-6" />
             </button>
             
-            <div className="p-8 sm:p-12 md:p-16 space-y-8">
+            <div className="p-8 sm:p-12 md:p-16 space-y-8 decorative-circles">
               <div>
                 <h2 className="text-3xl font-bold mb-4">
                   Get Your FREE Marketing Strategy
