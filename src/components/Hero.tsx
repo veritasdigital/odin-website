@@ -61,12 +61,20 @@ export const Hero = () => {
           <div className="relative flex items-center justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg relative">
                 <img 
                   src={heroPerson} 
-                  alt="Friendly team member" 
+                  alt="Alexa Blake, Odin Digital General Manager" 
                   className="w-full h-full object-cover object-center"
                 />
+                
+                {/* Glassy Banner */}
+                <div className="absolute bottom-0 left-0 right-0 bg-white/20 backdrop-blur-md border-t border-white/30 p-4">
+                  <div className="text-white text-center">
+                    <h3 className="font-bold text-lg">Alexa Blake</h3>
+                    <p className="text-sm opacity-90">Odin Digital General Manager</p>
+                  </div>
+                </div>
               </div>
               
               {/* Decorative elements around image */}
