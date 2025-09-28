@@ -23,7 +23,7 @@ export const Hero = () => {
                   Digital Growth
                 </span>
                 <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl">
-                  with Strategic Marketing Excellence
+                  With Strategic Marketing Excellence
                 </span>
               </h1>
             </div>
