@@ -68,12 +68,12 @@ export const Partnerships = () => {
             {duplicatedPartners.map((partner, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-60 mx-4 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-charcoal/10"
+                className="flex-shrink-0 w-60 mx-4 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-charcoal/10 hover:shadow-glow transition-all duration-300"
               >
                 <img
                   src={partner.logo}
                   alt={partner.alt}
-                  className="max-h-16 max-w-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="max-h-16 max-w-full object-contain transition-all duration-300 hover:scale-105"
                 />
               </div>
             ))}
