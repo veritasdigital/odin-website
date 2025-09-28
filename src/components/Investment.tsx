@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
 export const Investment = () => {
+  const { openForm } = useMarketingForm();
   const packages = [{
     title: "Growth Acceleration Program",
     subtitle: "Comprehensive digital marketing for established businesses",
@@ -57,7 +59,7 @@ export const Investment = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full" variant={pkg.featured ? "default" : "outline"}>
+              <Button className="w-full" variant={pkg.featured ? "default" : "outline"} onClick={openForm}>
                 Get Started
               </Button>
             </Card>

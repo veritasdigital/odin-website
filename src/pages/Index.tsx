@@ -16,6 +16,7 @@ import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 import { Closing } from "@/components/Closing";
 import { SideTab } from "@/components/SideTab";
+import { MarketingFormModal } from "@/components/MarketingFormModal";
 
 const Index = () => {
   return (
@@ -38,6 +39,7 @@ const Index = () => {
       <Footer />
       <Closing />
       <SideTab />
+      <MarketingFormModal />
     </div>
   );
 };

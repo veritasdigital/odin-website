@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +11,7 @@ import {
 import odinLogo from "@/assets/odin-digital-logo.png";
 
 export const Header = () => {
+  const { openForm } = useMarketingForm();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOverDarkSection, setIsOverDarkSection] = useState(false);
 
@@ -102,9 +104,8 @@ export const Header = () => {
             </a>
           </nav>
 
-          {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="cta" size="lg" className="font-medium">
+            <Button variant="cta" size="lg" className="font-medium" onClick={openForm}>
               Free Marketing Strategy
             </Button>
           </div>
@@ -139,7 +140,7 @@ export const Header = () => {
               <a href="#results" className="text-charcoal/70 hover:text-primary font-medium py-2">Results</a>
               <a href="/blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="#contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
-              <Button variant="cta" size="lg" className="mt-4 w-full font-medium">
+              <Button variant="cta" size="lg" className="mt-4 w-full font-medium" onClick={openForm}>
                 Free Marketing Strategy
               </Button>
             </nav>
