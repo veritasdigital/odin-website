@@ -15,41 +15,22 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector('header');
-      if (!header) return;
-
-      const headerRect = header.getBoundingClientRect();
-      const headerCenter = headerRect.top + headerRect.height / 2;
-
-      // Check if header is over dark sections
-      const elementsAtPoint = document.elementsFromPoint(window.innerWidth / 2, headerCenter);
+      const scrollY = window.scrollY;
       
-      for (const element of elementsAtPoint) {
-        if (element === header) continue;
-        
-        const computedStyle = window.getComputedStyle(element);
-        const bgColor = computedStyle.backgroundColor;
-        const bgImage = computedStyle.backgroundImage;
-        
-        // Check for dark backgrounds or specific dark sections
-        const isDark = 
-          bgColor.includes('rgb(0, 0, 0)') || // black
-          bgColor.includes('rgba(0, 0, 0') || // black with alpha
-          bgImage.includes('gradient') && bgImage.includes('rgb(0') || // dark gradients
-          element.classList.contains('bg-charcoal') ||
-          element.classList.contains('bg-black') ||
-          element.classList.contains('bg-primary') ||
-          element.closest('.bg-charcoal') ||
-          element.closest('.bg-black') ||
-          element.closest('.bg-primary');
-        
-        if (isDark) {
-          setIsOverDarkSection(true);
-          return;
-        }
-      }
+      // Simple detection based on scroll position and known dark sections
+      // You can adjust these values based on your actual section heights
+      const heroHeight = 600; // Approximate hero section height
+      const credibilityStart = heroHeight;
+      const servicesStart = credibilityStart + 400;
+      const resultsStart = servicesStart + 800;
+      const ctaStart = resultsStart + 600;
       
-      setIsOverDarkSection(false);
+      // Determine if we're over a dark section
+      const isDark = 
+        (scrollY < heroHeight) || // Hero section has dark background
+        (scrollY >= ctaStart); // CTA section has dark background
+      
+      setIsOverDarkSection(isDark);
     };
 
     window.addEventListener('scroll', handleScroll);
