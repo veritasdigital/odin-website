@@ -12,7 +12,7 @@ export const Credibility = () => {
     },
     {
       number: "283+",
-      label: "successful campaigns across multiple industries"
+      label: "successful campaigns run for happy business owners across dozens of industries and 6 countries!"
     },
     {
       number: "95%",
