@@ -17,9 +17,9 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <a href="/" className="flex items-center space-x-3">
             <img src={odinLogo} alt="Odin Digital" className="h-14 w-auto" />
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -65,7 +65,7 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="default" size="lg" className="font-medium">
+            <Button variant="cta" size="lg" className="font-medium">
               Free Marketing Strategy
             </Button>
           </div>
@@ -98,7 +98,7 @@ export const Header = () => {
               <a href="#results" className="text-charcoal/70 hover:text-primary font-medium py-2">Results</a>
               <a href="#blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="#contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
-              <Button variant="default" size="lg" className="mt-4 w-full font-medium">
+              <Button variant="cta" size="lg" className="mt-4 w-full font-medium">
                 Free Marketing Strategy
               </Button>
             </nav>
