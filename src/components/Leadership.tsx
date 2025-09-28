@@ -16,7 +16,7 @@ export const Leadership = () => {
                 className="w-full max-w-md mx-auto rounded-lg shadow-card object-cover"
               />
               <div className="absolute -bottom-4 -right-4 bg-white/20 backdrop-blur-md border border-white/30 text-primary px-6 py-3 rounded-lg font-bold text-sm shadow-xl">
-                CEO & Founder
+                Odin Digital CEO & Founder
               </div>
             </div>
           </div>
