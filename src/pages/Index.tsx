@@ -24,8 +24,8 @@ const Index = () => {
       <Credibility />
       <Problem />
       <Services />
-      <Methodology />
       <Results />
+      <Methodology />
       <Industries />
       <Team />
       <Process />
