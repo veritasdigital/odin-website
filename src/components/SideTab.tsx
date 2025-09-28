@@ -10,12 +10,14 @@ export const SideTab = () => {
       <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50">
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-gradient-primary text-white px-6 py-4 rounded-l-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 animate-pulse-glow flex flex-col items-center"
+          className="bg-gradient-primary text-white px-6 py-4 rounded-l-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 animate-pulse-glow flex flex-col items-center text-center"
         >
           <MessageSquare className="w-5 h-5 mb-2" />
-          <span className="font-bold text-sm tracking-wider whitespace-nowrap">
-            FREE MARKETING STRATEGY
-          </span>
+          <div className="font-bold text-sm tracking-wider leading-tight">
+            <div>FREE</div>
+            <div>MARKETING</div>
+            <div>STRATEGY</div>
+          </div>
         </button>
       </div>
       
