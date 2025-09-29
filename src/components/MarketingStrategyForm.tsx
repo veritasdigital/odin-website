@@ -136,7 +136,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           {/* Right Side - Multi-Step Form */}
           <div className="w-full md:w-3/5 flex flex-col overflow-hidden">
             <div className="p-4 md:p-8 overflow-y-auto flex-1">
-            {/* Progress Bar */}
+              {/* Progress Bar */}
             <div className="mb-8">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-medium text-muted-foreground">
