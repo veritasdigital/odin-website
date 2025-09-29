@@ -35,12 +35,22 @@ export const AboutUs = () => {
         {/* CEO Message */}
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="relative">
               <img 
                 src="/src/assets/lucas-durante-real.jpg" 
                 alt="Lucas Durante, CEO & Founder of Odin Digital" 
                 className="w-full rounded-lg shadow-lg"
               />
+              {/* Glassy signature bubble that runs off the picture */}
+              <div className="absolute -bottom-6 -right-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-6 shadow-2xl">
+                <div className="flex items-center">
+                  <div className="w-12 h-1 bg-primary mr-4"></div>
+                  <div>
+                    <p className="font-bold text-charcoal">Lucas Durante</p>
+                    <p className="text-charcoal/80 text-sm">Chief Executive Officer</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div>
               <h3 className="text-3xl font-black text-charcoal mb-6">
@@ -53,13 +63,6 @@ export const AboutUs = () => {
                 <br /><br />
                 When you work with us, you're not just getting an agency - you're getting a partner who genuinely cares about your success."
               </blockquote>
-              <div className="flex items-center">
-                <div className="w-12 h-1 bg-primary mr-4"></div>
-                <div>
-                  <p className="font-bold text-charcoal">Lucas Durante</p>
-                  <p className="text-charcoal/60">CEO & Founder</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
