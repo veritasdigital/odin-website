@@ -1,15 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useMarketingForm } from "@/contexts/MarketingFormContext";
-
 export const CTA = () => {
-  const { openForm } = useMarketingForm();
-  return (
-    <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
+  return <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-      <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
+      animationDelay: '3s'
+    }} />
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{
+      animationDelay: '1s'
+    }} />
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
@@ -26,22 +26,19 @@ export const CTA = () => {
             <p className="text-white/80 mb-6">
               Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>
-            <Button variant="cta" size="lg" className="w-full" onClick={openForm}>
+            <Button variant="cta" size="lg" className="w-full">
               SCHEDULE CONSULTATION
             </Button>
           </Card>
 
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white">
             <h3 className="text-2xl font-bold mb-4">Request Your Complimentary Assessment</h3>
-            <p className="text-white/80 mb-6">
-              Receive a comprehensive analysis of your current digital marketing performance along with strategic recommendations for improvement and growth opportunities.
-            </p>
-            <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10" onClick={openForm}>
+            
+            <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10">
               REQUEST ASSESSMENT
             </Button>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
