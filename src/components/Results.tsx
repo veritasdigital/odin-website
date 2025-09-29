@@ -133,7 +133,16 @@ export const Results = () => {
                             {testimonial.result}
                           </p>
                           <blockquote className="text-charcoal/80 leading-relaxed text-lg italic">
-                            "{testimonial.quote}"
+                            "{testimonial.company === 'Imperial Wealth' ? (
+                              <>
+                                Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.
+                                <br />
+                                <br />
+                                He went way beyond just handling SEO and ads - he dropped so much knowledge on me about pricing, funnels, and how to actually structure things to scale. If you're serious about your business, working with Lucas is a high leverage move.
+                              </>
+                            ) : (
+                              testimonial.quote
+                            )}"
                           </blockquote>
                         </div>
                         
