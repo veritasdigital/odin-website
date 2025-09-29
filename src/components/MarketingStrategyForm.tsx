@@ -73,7 +73,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center md:justify-end">
       <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl mx-0 md:mx-0 my-0 md:my-4 rounded-none md:rounded-lg overflow-hidden">
-        <div className="flex flex-col md:flex-row h-full">
+        <div className="flex flex-col md:flex-row h-full overflow-y-auto md:overflow-hidden">
           {/* Left Side - Copy & Proof */}
           <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 md:min-h-full">
             <button
@@ -134,8 +134,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           </div>
 
           {/* Right Side - Multi-Step Form */}
-          <div className="w-full md:w-3/5 flex flex-col overflow-hidden">
-            <div className="p-4 md:p-8 overflow-y-auto flex-1">
+          <div className="w-full md:w-3/5 flex flex-col md:overflow-hidden">
+            <div className="p-4 md:p-8 md:overflow-y-auto flex-1">
               {/* Progress Bar */}
             <div className="mb-8">
               <div className="flex items-center justify-between mb-4">
