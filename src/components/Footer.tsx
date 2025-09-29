@@ -53,6 +53,8 @@ export const Footer = () => {
                 <a href="#services" className="block text-white/80 hover:text-white transition-smooth">Services</a>
                 <a href="#results" className="block text-white/80 hover:text-white transition-smooth">Results</a>
                 <a href="#methodology" className="block text-white/80 hover:text-white transition-smooth">Methodology</a>
+                <a href="/about" className="block text-white/80 hover:text-white transition-smooth">About</a>
+                <a href="/blog" className="block text-white/80 hover:text-white transition-smooth">Blog</a>
               </div>
             </div>
           </div>
@@ -60,11 +62,17 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-white/60 text-sm mb-4 md:mb-0">
-              © 2024 Odin Digital. All rights reserved.
-            </p>
-            <p className="text-white/60 text-sm text-center md:text-right">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+              <p className="text-white/60 text-sm">
+                © 2024 Odin Digital. All rights reserved.
+              </p>
+              <div className="flex space-x-4 text-sm">
+                <a href="/privacy" className="text-white/60 hover:text-white transition-smooth">Privacy Policy</a>
+                <a href="/terms" className="text-white/60 hover:text-white transition-smooth">Terms of Service</a>
+              </div>
+            </div>
+            <p className="text-white/60 text-sm text-center md:text-right max-w-md">
               Results vary based on industry, market conditions, and implementation of recommended strategies. 
               All performance metrics represent verified client data and collaborative achievements.
             </p>
