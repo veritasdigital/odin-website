@@ -47,7 +47,11 @@ export const AboutUs = () => {
                 A Message from Our CEO
               </h3>
               <blockquote className="text-lg text-charcoal/90 leading-relaxed mb-6 italic">
-                "I founded Odin Digital to be the antidote to the traditional agency model. We're not here to sell you services; we're here to build your empire. Our success is a direct reflection of our clients' success, and that's the only metric that truly matters."
+                "At Odin Digital, we believe that every business deserves marketing that actually works. We're not here to sell you on fancy theories or complicated strategies that sound impressive but don't deliver results.
+                <br /><br />
+                Our mission is simple: to help ambitious business owners like you achieve the growth you've been working towards. We do this by cutting through the noise, focusing on what actually moves the needle, and delivering results you can measure.
+                <br /><br />
+                When you work with us, you're not just getting an agency - you're getting a partner who genuinely cares about your success."
               </blockquote>
               <div className="flex items-center">
                 <div className="w-12 h-1 bg-primary mr-4"></div>
