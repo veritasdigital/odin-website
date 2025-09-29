@@ -97,45 +97,37 @@ export const Results = () => {
           </p>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
-          {/* Pagination Dots */}
-          <div className="flex justify-center mb-8 gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => carouselApi?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-primary shadow-glow scale-125' 
-                    : 'bg-charcoal/20 hover:bg-primary/50'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
+        <div className="relative max-w-5xl mx-auto">
           <Carousel 
-            className="w-full max-w-5xl mx-auto" 
-            opts={{ align: "center", loop: true }}
+            className="w-full" 
+            opts={{ align: "start", loop: true }}
             setApi={setCarouselApi}
           >
-            <CarouselContent className="-ml-4 md:-ml-6">
+            <CarouselContent className="-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-4 md:pl-6 md:basis-4/5 lg:basis-3/4">
-                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-xl">
+                <CarouselItem key={index} className="pl-4">
+                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group">
                     <div className="flex flex-col lg:flex-row">
                       {/* Image Section */}
                       {testimonial.image && (
-                        <div className="lg:w-1/2 h-64 lg:h-auto">
+                        <div className="lg:w-1/2 h-64 lg:h-auto relative overflow-hidden">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-full object-contain"
+                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                           />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
                       )}
                       
                       {/* Content Section */}
-                      <div className={`p-8 ${testimonial.image ? 'lg:w-1/2' : 'w-full'} flex flex-col justify-center`}>
+                      <div className={`p-8 ${testimonial.image ? 'lg:w-1/2' : 'w-full'} flex flex-col justify-center relative`}>
+                        <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                          <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                            <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                          </svg>
+                        </div>
+                        
                         <div className="flex items-center mb-6">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
@@ -144,9 +136,9 @@ export const Results = () => {
                         
                         <div className="mb-6">
                           <h3 className="text-2xl font-bold text-charcoal mb-2">{testimonial.company}</h3>
-                          <p className="text-primary font-bold text-lg mb-4">
+                          <div className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-full font-bold text-sm mb-4">
                             {testimonial.result}
-                          </p>
+                          </div>
                           <blockquote className="text-charcoal/80 leading-relaxed text-lg italic">
                             "{testimonial.company === 'Imperial Wealth' ? (
                               <>
@@ -174,10 +166,25 @@ export const Results = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="-left-16 top-1/2" />
-            <CarouselNext className="-right-16 top-1/2" />
+            <CarouselPrevious className="-left-12 top-1/2 h-12 w-12 border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300" />
+            <CarouselNext className="-right-12 top-1/2 h-12 w-12 border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300" />
           </Carousel>
 
+          {/* Enhanced Pagination Dots */}
+          <div className="flex justify-center mt-8 gap-3">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => carouselApi?.scrollTo(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'w-8 bg-primary shadow-glow' 
+                    : 'w-2 bg-charcoal/20 hover:bg-primary/50 hover:w-4'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
