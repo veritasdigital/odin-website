@@ -6,6 +6,7 @@ import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
 import krushOrganics from "@/assets/krush-organics.png";
+import evanTsaboukos from "@/assets/evan-tsaboukos.webp";
 
 export const Results = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -47,6 +48,15 @@ export const Results = () => {
       title: "Founder",
       location: "Sydney, Australia",
       image: krushOrganics
+    },
+    {
+      company: "Imperial Wealth",
+      result: "From $20k to $100k+ Monthly Revenue",
+      quote: "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month. He went way beyond just handling SEO and ads - he dropped so much knowledge on me about pricing, funnels, and how to actually structure things to scale. If you're serious about your business, working with Lucas is a high leverage move.",
+      author: "Evan Tsaboukos",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: evanTsaboukos
     }
   ];
 
