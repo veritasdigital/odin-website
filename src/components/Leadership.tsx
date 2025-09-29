@@ -1,7 +1,7 @@
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
+import matteoBanzon from "@/assets/matteo-banzon.png";
 import { Card } from "@/components/ui/card";
-import { Mail, Linkedin, Phone } from "lucide-react";
 
 const leadershipTeam = [
   {
@@ -42,6 +42,14 @@ const leadershipTeam = [
     image: lucasDurante, // Using placeholder
     bio: "David oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
     email: "david@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Matteo Banzon",
+    title: "Head Of Partnerships",
+    image: matteoBanzon,
+    bio: "Matteo has over 5 years in digital marketing experience working with multi-national brands with particular expertise in top level marketing strategy.",
+    email: "matteo@odindigital.com.au",
     linkedin: "#"
   }
 ];
@@ -183,21 +191,6 @@ export const Leadership = () => {
                     {leader.bio}
                   </p>
 
-                  {/* Contact Links */}
-                  <div className="flex justify-center space-x-4">
-                    <a
-                      href={`mailto:${leader.email}`}
-                      className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200"
-                    >
-                      <Mail size={16} />
-                    </a>
-                    <a
-                      href={leader.linkedin}
-                      className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200"
-                    >
-                      <Linkedin size={16} />
-                    </a>
-                  </div>
                 </div>
               </Card>
             ))}
