@@ -98,6 +98,21 @@ export const Results = () => {
         </div>
 
         <div className="relative max-w-6xl mx-auto">
+          {/* Pagination Dots */}
+          <div className="flex justify-center mb-8 gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => carouselApi?.scrollTo(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-primary shadow-glow scale-125' 
+                    : 'bg-charcoal/20 hover:bg-primary/50'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
           <Carousel 
             className="w-full max-w-4xl mx-auto" 
             opts={{ align: "start", loop: true }}
@@ -163,21 +178,6 @@ export const Results = () => {
             <CarouselNext className="-right-16 top-1/2" />
           </Carousel>
 
-          {/* Pagination Dots */}
-          <div className="flex justify-center mt-8 gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => carouselApi?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-primary shadow-glow scale-125' 
-                    : 'bg-charcoal/20 hover:bg-primary/50'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
