@@ -1,5 +1,50 @@
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
+import { Card } from "@/components/ui/card";
+import { Mail, Linkedin, Phone } from "lucide-react";
+
+const leadershipTeam = [
+  {
+    name: "Lucas Durante",
+    title: "Chief Executive Officer & Founder",
+    image: lucasDurante,
+    bio: "Lucas founded Odin Digital with the vision of helping businesses achieve real, measurable growth through digital marketing. With over 15 years of experience in the industry, he leads our team with passion and expertise.",
+    email: "lucas@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Sarah Mitchell",
+    title: "Chief Marketing Officer",
+    image: lucasDurante, // Using placeholder
+    bio: "Sarah brings 12+ years of strategic marketing expertise, specializing in data-driven campaigns that deliver exceptional ROI. She oversees all client strategy and campaign optimization.",
+    email: "sarah@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Michael Chen",
+    title: "Head of Operations",
+    image: lucasDurante, // Using placeholder
+    bio: "Michael ensures our operations run smoothly and efficiently. With a background in project management and digital systems, he keeps our team and clients on track for success.",
+    email: "michael@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Emma Thompson",
+    title: "Creative Director",
+    image: lucasDurante, // Using placeholder
+    bio: "Emma leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
+    email: "emma@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "David Rodriguez",
+    title: "Technical Director",
+    image: lucasDurante, // Using placeholder
+    bio: "David oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
+    email: "david@odindigital.com.au",
+    linkedin: "#"
+  }
+];
 
 export const Leadership = () => {
   return (
@@ -99,6 +144,63 @@ export const Leadership = () => {
               alt="Odin Digital marketing team collaboration"
               className="w-full rounded-lg shadow-card object-cover"
             />
+          </div>
+        </div>
+
+        {/* Leadership Team Panel */}
+        <div className="mt-32">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+              Meet Our Leadership Team
+            </h2>
+            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+              Our experienced leaders bring together decades of expertise in digital marketing, strategy, and business growth.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {leadershipTeam.map((leader, index) => (
+              <Card key={index} className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300 group">
+                <div className="text-center">
+                  {/* Profile Image */}
+                  <div className="relative mb-6">
+                    <img
+                      src={leader.image}
+                      alt={leader.name}
+                      className="w-32 h-32 mx-auto rounded-full object-cover shadow-md group-hover:shadow-xl transition-shadow duration-300"
+                    />
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                      {leader.title.split(' ')[0]}
+                    </div>
+                  </div>
+
+                  {/* Name and Title */}
+                  <h3 className="text-xl font-bold text-charcoal mb-2">{leader.name}</h3>
+                  <p className="text-primary font-medium mb-4">{leader.title}</p>
+
+                  {/* Bio */}
+                  <p className="text-charcoal/70 text-sm leading-relaxed mb-6">
+                    {leader.bio}
+                  </p>
+
+                  {/* Contact Links */}
+                  <div className="flex justify-center space-x-4">
+                    <a
+                      href={`mailto:${leader.email}`}
+                      className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200"
+                    >
+                      <Mail size={16} />
+                    </a>
+                    <a
+                      href={leader.linkedin}
+                      className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200"
+                    >
+                      <Linkedin size={16} />
+                    </a>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
