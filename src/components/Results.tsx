@@ -53,7 +53,7 @@ export const Results = () => {
     {
       company: "Krush Organics",
       result: "$100k First Month + 5x ROI",
-      quote: "We started marketing with Odin when we were just launching our brand and we did over $100k in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys and can't recommend them highly enough",
+      quote: "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys and can't recommend them highly enough",
       author: "Liam C",
       title: "Founder",
       location: "Sydney, Australia",
