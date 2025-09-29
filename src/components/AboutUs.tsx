@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import lucasDuranteImage from "@/assets/lucas-durante-new.png";
+import odinTeamReal from "@/assets/odin-team-real.jpg";
 
 export const AboutUs = () => {
   const values = [
@@ -68,19 +69,54 @@ export const AboutUs = () => {
           </div>
         </div>
 
-        {/* Team Experience */}
+        {/* Team Experience Section */}
         <div className="mb-20">
-          <Card className="p-12 bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
-            <div className="text-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content - Left Side */}
+            <div>
               <h3 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
                 182+ Years of Combined 
                 <span className="text-primary block">Digital Marketing Expertise</span>
               </h3>
-              <p className="text-xl text-charcoal/80 max-w-3xl mx-auto leading-relaxed">
-                Our leadership team brings together decades of experience from the world's most demanding digital marketing environments. This isn't just knowledge—it's battle-tested expertise that drives results.
-              </p>
+              <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
+                <p>
+                  Our team isn't just experienced - we're specialists who live and breathe digital marketing. With over 182 years of combined expertise across every aspect of digital advertising, we've seen every challenge, mastered every platform, and perfected every strategy.
+                </p>
+                <p>
+                  This isn't a side hustle or part-time focus for us. Digital marketing is all we do, all day, every day. While other agencies spread themselves thin across multiple services, we've dedicated our entire operation to mastering the art and science of growing businesses online.
+                </p>
+                <p>
+                  When you partner with Odin Digital, you're tapping into nearly two centuries of specialized knowledge, focused entirely on making your advertising more effective and your business more profitable.
+                </p>
+              </div>
+              
+              {/* Stats */}
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="text-center md:text-left">
+                  <div className="text-3xl font-black text-primary mb-1">182+</div>
+                  <div className="text-sm font-medium text-charcoal/70">Years Combined Experience</div>
+                </div>
+                <div className="text-center md:text-left">
+                  <div className="text-3xl font-black text-primary mb-1">100%</div>
+                  <div className="text-sm font-medium text-charcoal/70">Digital Marketing Focus</div>
+                </div>
+                <div className="text-center md:text-left">
+                  <div className="text-3xl font-black text-primary mb-1">24/7</div>
+                  <div className="text-sm font-medium text-charcoal/70">Dedicated Expertise</div>
+                </div>
+              </div>
             </div>
-          </Card>
+            
+            {/* Image - Right Side */}
+            <div className="relative">
+              <img 
+                src={odinTeamReal}
+                alt="Odin Digital marketing team" 
+                className="w-full rounded-lg shadow-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-lg"></div>
+            </div>
+          </div>
         </div>
 
         {/* Core Values */}
