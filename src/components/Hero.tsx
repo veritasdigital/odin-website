@@ -40,7 +40,7 @@ export const Hero = () => {
             </div>
             
             {/* Action Button */}
-            <div className="pt-6">
+            <div className="pt-2">
               <Button 
                 variant="hero" 
                 size="lg" 
