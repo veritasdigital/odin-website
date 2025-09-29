@@ -63,22 +63,22 @@ export const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2">
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#google-ads" className="w-full">Google Ads</a>
+                  <a href="/services/google-ads" className="w-full">Google Ads</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#seo" className="w-full">SEO</a>
+                  <a href="/services/seo" className="w-full">SEO</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#social-media" className="w-full">Social Media Marketing</a>
+                  <a href="/services/social-media" className="w-full">Social Media Marketing</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#website-design" className="w-full">Website Design</a>
+                  <a href="/services/website-design" className="w-full">Website Design</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#funnel-development" className="w-full">Funnel Development</a>
+                  <a href="/services/funnel-development" className="w-full">Funnel Development</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services#marketing-consulting" className="w-full">Marketing Consulting</a>
+                  <a href="/services/marketing-consulting" className="w-full">Marketing Consulting</a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -128,12 +128,12 @@ export const Header = () => {
               <div>
                 <div className="text-charcoal font-medium py-2 mb-2">Services</div>
                 <div className="pl-4 space-y-2">
-                  <a href="/services#google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
-                  <a href="/services#seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
-                  <a href="/services#social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
-                  <a href="/services#website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
-                  <a href="/services#funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
-                  <a href="/services#marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
+                  <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
+                  <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
+                  <a href="/services/social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
+                  <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
+                  <a href="/services/funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
+                  <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
                 </div>
               </div>
               <a href="/about" className="text-charcoal/70 hover:text-primary font-medium py-2">About</a>

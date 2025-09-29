@@ -13,6 +13,12 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import GoogleAds from "./pages/services/GoogleAds";
+import SEO from "./pages/services/SEO";
+import SocialMedia from "./pages/services/SocialMedia";
+import WebsiteDesign from "./pages/services/WebsiteDesign";
+import FunnelDevelopment from "./pages/services/FunnelDevelopment";
+import MarketingConsulting from "./pages/services/MarketingConsulting";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +33,12 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/google-ads" element={<GoogleAds />} />
+            <Route path="/services/seo" element={<SEO />} />
+            <Route path="/services/social-media" element={<SocialMedia />} />
+            <Route path="/services/website-design" element={<WebsiteDesign />} />
+            <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
+            <Route path="/services/marketing-consulting" element={<MarketingConsulting />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
