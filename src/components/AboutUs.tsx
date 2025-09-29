@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import lucasDuranteImage from "@/assets/lucas-durante-real.jpg";
+import lucasDuranteImage from "@/assets/lucas-durante-new.png";
 
 export const AboutUs = () => {
   const values = [
