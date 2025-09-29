@@ -26,9 +26,9 @@ const Index = () => {
       <ClientLogos />
       <Credibility />
       <Problem />
-      <Partnerships />
       <Services />
       <Results />
+      <Partnerships />
       <AboutUs />
       <Methodology />
       <Industries />
