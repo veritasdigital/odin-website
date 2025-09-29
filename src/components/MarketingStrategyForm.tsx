@@ -71,24 +71,24 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-end">
-      <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl">
-        <div className="flex h-full">
+    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center md:justify-end">
+      <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl mx-4 md:mx-0 my-4 md:my-0 rounded-lg md:rounded-none overflow-hidden">
+        <div className="flex flex-col md:flex-row h-full">
           {/* Left Side - Copy & Proof */}
-          <div className="w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative">
+          <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative min-h-[40vh] md:min-h-full">
             <button
               onClick={onClose}
-              className="absolute top-10 left-2 sm:top-12 sm:left-2 md:top-14 md:left-3 text-white hover:text-primary transition-colors z-50 cursor-pointer"
+              className="absolute top-4 right-4 md:top-10 md:left-2 text-white hover:text-primary transition-colors z-50 cursor-pointer"
             >
               <X className="w-6 h-6" />
             </button>
             
-            <div className="p-8 sm:p-12 md:p-16 space-y-8 decorative-circles">
+            <div className="p-6 md:p-8 lg:p-16 space-y-6 md:space-y-8 decorative-circles">
               <div>
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Get Your FREE Marketing Strategy
                 </h2>
-                <p className="text-lg opacity-90">
+                <p className="text-base md:text-lg opacity-90">
                   Our expert team will analyze your business and create a custom marketing roadmap designed to 10x your leads and revenue.
                 </p>
               </div>
@@ -132,7 +132,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           </div>
 
           {/* Right Side - Multi-Step Form */}
-          <div className="w-3/5 p-8 overflow-y-auto">
+          <div className="w-full md:w-3/5 p-4 md:p-8 overflow-y-auto flex-1">
             {/* Progress Bar */}
             <div className="mb-8">
               <div className="flex items-center justify-between mb-4">
@@ -154,9 +154,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
             {/* Step 1: Basic Information */}
             {currentStep === 1 && (
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-charcoal">Let's start with the basics</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-charcoal">Let's start with the basics</h3>
                 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="firstName">First Name *</Label>
                     <Input
@@ -213,7 +213,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
             {/* Step 2: Business Details */}
             {currentStep === 2 && (
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-charcoal">Tell us about your business</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-charcoal">Tell us about your business</h3>
                 
                 <div>
                   <Label htmlFor="industry">Industry *</Label>
@@ -236,7 +236,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
                 <div>
                   <Label>Current Marketing Methods (select all that apply)</Label>
-                  <div className="grid grid-cols-2 gap-3 mt-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2">
                     {['Google Ads', 'Facebook Ads', 'SEO', 'Email Marketing', 'Content Marketing', 'Referrals'].map((method) => (
                       <label key={method} className="flex items-center space-x-2">
                         <input
@@ -272,7 +272,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
             {/* Step 3: Goals & Challenges */}
             {currentStep === 3 && (
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-charcoal">What are your goals?</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-charcoal">What are your goals?</h3>
                 
                 <div>
                   <Label htmlFor="primaryGoal">Primary Marketing Goal *</Label>
@@ -315,12 +315,12 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
             )}
 
             {/* Navigation Buttons */}
-            <div className="flex justify-between mt-8 pt-8 border-t border-gray-200">
+            <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 mt-8 pt-8 border-t border-gray-200">
               <Button
                 variant="outline"
                 onClick={prevStep}
                 disabled={currentStep === 1}
-                className="flex items-center space-x-2"
+                className="flex items-center justify-center space-x-2 w-full md:w-auto"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>Previous</span>
@@ -329,7 +329,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               {currentStep < 3 ? (
                 <Button
                   onClick={nextStep}
-                  className="bg-gradient-primary text-white flex items-center space-x-2"
+                  className="bg-gradient-primary text-white flex items-center justify-center space-x-2 w-full md:w-auto"
                 >
                   <span>Continue</span>
                   <ArrowRight className="w-4 h-4" />
@@ -337,7 +337,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               ) : (
                 <Button
                   onClick={handleSubmit}
-                  className="bg-gradient-primary text-white flex items-center space-x-2"
+                  className="bg-gradient-primary text-white flex items-center justify-center space-x-2 w-full md:w-auto"
                 >
                   <span>Get My Strategy</span>
                   <CheckCircle className="w-4 h-4" />
