@@ -72,10 +72,10 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center md:justify-end">
-      <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl mx-4 md:mx-0 my-4 md:my-0 rounded-lg md:rounded-none overflow-hidden">
+      <div className="bg-white h-full w-full max-w-5xl animate-slide-in-right shadow-2xl mx-0 md:mx-0 my-0 md:my-4 rounded-none md:rounded-lg overflow-hidden">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Side - Copy & Proof */}
-          <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative min-h-[40vh] md:min-h-full">
+          <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 md:min-h-full">
             <button
               onClick={onClose}
               className="absolute top-4 right-4 md:top-10 md:left-2 text-white hover:text-primary transition-colors z-50 cursor-pointer"
@@ -83,56 +83,59 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               <X className="w-6 h-6" />
             </button>
             
-            <div className="p-6 md:p-8 lg:p-16 space-y-6 md:space-y-8 decorative-circles">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                  Get Your FREE Marketing Strategy
-                </h2>
-                <p className="text-base md:text-lg opacity-90">
-                  Our expert team will analyze your business and create a custom marketing roadmap designed to 10x your leads and revenue.
-                </p>
-              </div>
+            <div className="p-6 md:p-8 lg:p-16 space-y-4 md:space-y-8">
+              <div className="decorative-circles">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                    Get Your FREE Marketing Strategy
+                  </h2>
+                  <p className="text-base md:text-lg opacity-90">
+                    Our expert team will analyze your business and create a custom marketing roadmap designed to 10x your leads and revenue.
+                  </p>
+                </div>
 
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary/20 p-3 rounded-full">
-                    <Target className="w-6 h-6 text-primary-glow" />
+                <div className="space-y-4 md:space-y-6">
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <Target className="w-6 h-6 text-primary-glow" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Targeted Strategy</h3>
+                      <p className="text-sm opacity-80">Custom approach for your industry</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold">Targeted Strategy</h3>
-                    <p className="text-sm opacity-80">Custom approach for your industry</p>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <Users className="w-6 h-6 text-primary-glow" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Expert Analysis</h3>
+                      <p className="text-sm opacity-80">From our award-winning team</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-4">
+                    <div className="bg-primary/20 p-3 rounded-full">
+                      <TrendingUp className="w-6 h-6 text-primary-glow" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Proven Results</h3>
+                      <p className="text-sm opacity-80">Based on 300+ successful campaigns</p>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary/20 p-3 rounded-full">
-                    <Users className="w-6 h-6 text-primary-glow" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Expert Analysis</h3>
-                    <p className="text-sm opacity-80">From our award-winning team</p>
-                  </div>
+                <div className="bg-white/10 p-4 rounded-lg">
+                  <p className="text-sm font-medium">💡 This strategy session is completely FREE with no obligations.</p>
                 </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="bg-primary/20 p-3 rounded-full">
-                    <TrendingUp className="w-6 h-6 text-primary-glow" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold">Proven Results</h3>
-                    <p className="text-sm opacity-80">Based on 300+ successful campaigns</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="text-sm font-medium">💡 This strategy session is completely FREE with no obligations.</p>
               </div>
             </div>
           </div>
 
           {/* Right Side - Multi-Step Form */}
-          <div className="w-full md:w-3/5 p-4 md:p-8 overflow-y-auto flex-1">
+          <div className="w-full md:w-3/5 flex flex-col overflow-hidden">
+            <div className="p-4 md:p-8 overflow-y-auto flex-1">
             {/* Progress Bar */}
             <div className="mb-8">
               <div className="flex items-center justify-between mb-4">
@@ -343,6 +346,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                   <CheckCircle className="w-4 h-4" />
                 </Button>
               )}
+            </div>
             </div>
           </div>
         </div>
