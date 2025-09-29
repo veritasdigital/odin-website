@@ -110,6 +110,80 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* Recent Acquisitions */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+              Strategic Acquisitions: <span className="text-primary">Expanding Our Expertise</span>
+            </h3>
+            <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+              We've strategically acquired specialized agencies to bring you unparalleled expertise across every industry and marketing channel.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-primary font-black text-lg">AC</span>
+                </div>
+                <h4 className="text-xl font-bold text-charcoal mb-2">Agent Conquest</h4>
+                <p className="text-charcoal/80 leading-relaxed">
+                  Specialized agency focused on helping real estate agents dominate their local markets and generate quality leads.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-primary font-black text-lg">CL</span>
+                </div>
+                <h4 className="text-xl font-bold text-charcoal mb-2">Conquered Leads</h4>
+                <p className="text-charcoal/80 leading-relaxed">
+                  Email marketing specialists who excel at turning subscribers into customers through sophisticated automation and segmentation.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-primary font-black text-lg">PC</span>
+                </div>
+                <h4 className="text-xl font-bold text-charcoal mb-2">Practice Conquest</h4>
+                <p className="text-charcoal/80 leading-relaxed">
+                  Healthcare marketing experts specializing in helping medical practices generate more patients and grow their practice.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-primary font-black text-lg">NAM</span>
+                </div>
+                <h4 className="text-xl font-bold text-charcoal mb-2">New Age Marketing</h4>
+                <p className="text-charcoal/80 leading-relaxed">
+                  Full-service digital agency bringing fresh perspectives and innovative strategies across diverse industries.
+                </p>
+              </div>
+            </Card>
+
+            <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300 md:col-span-2 lg:col-span-1">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <span className="text-primary font-black text-lg">VD</span>
+                </div>
+                <h4 className="text-xl font-bold text-charcoal mb-2">Veritas Digital</h4>
+                <p className="text-charcoal/80 leading-relaxed">
+                  7 years of proven excellence working with billion-dollar enterprise clients, bringing enterprise-level expertise to every project.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+
         {/* Key Differentiators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="p-6 bg-background border border-border text-center">
