@@ -114,7 +114,7 @@ export const Results = () => {
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       )}
