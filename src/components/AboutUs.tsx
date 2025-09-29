@@ -185,6 +185,19 @@ export const AboutUs = () => {
           </div>
         </div>
 
+        {/* What Makes Us Different */}
+        <div className="text-center mb-16">
+          <h3 className="text-3xl md:text-4xl font-black text-charcoal mb-6">
+            What Actually Makes Us <span className="text-primary">Different</span>
+          </h3>
+          <p className="text-xl text-charcoal/80 max-w-4xl mx-auto leading-relaxed mb-4">
+            While other agencies make bold promises and lock you into long contracts, we've built our entire business model around one simple principle: <strong>earn your trust every single month.</strong>
+          </p>
+          <p className="text-lg text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+            These aren't just marketing statements—they're the operational realities that define how we work with every single client.
+          </p>
+        </div>
+
         {/* Key Differentiators */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="p-6 bg-background border border-border text-center">
