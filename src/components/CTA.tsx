@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
 export const CTA = () => {
+  const { openForm } = useMarketingForm();
+
   return <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
@@ -26,7 +29,7 @@ export const CTA = () => {
             <p className="text-white/80 mb-6">
               Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>
-            <Button variant="cta" size="lg" className="w-full">
+            <Button variant="cta" size="lg" className="w-full" onClick={openForm}>
               SCHEDULE CONSULTATION
             </Button>
           </Card>
