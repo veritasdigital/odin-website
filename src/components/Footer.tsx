@@ -9,7 +9,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src={odinLogo} alt="Odin Digital" className="h-8 w-auto" />
+              <img src={odinLogo} alt="Odin Digital" className="h-14 w-auto" />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
