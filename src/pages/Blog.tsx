@@ -1,131 +1,262 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MarketingFormModal } from "@/components/MarketingFormModal";
+import { SideTab } from "@/components/SideTab";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Calendar, Clock, ArrowRight, User, TrendingUp } from "lucide-react";
 import contentMatrixImage from "@/assets/content-marketing-matrix.jpg";
 
 const Blog = () => {
+  const { openForm } = useMarketingForm();
+
+  const blogPosts = [
+    {
+      id: 1,
+      title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
+      excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
+      image: contentMatrixImage,
+      author: "Odin Digital Team",
+      date: "March 15, 2024",
+      readTime: "8 min read",
+      category: "Content Marketing",
+      featured: true
+    },
+    {
+      id: 2,
+      title: "Google Ads Performance Max: The Complete Guide for 2024",
+      excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
+      image: "/api/placeholder/600/400",
+      author: "Lucas Durante",
+      date: "March 10, 2024",
+      readTime: "12 min read",
+      category: "Paid Advertising"
+    },
+    {
+      id: 3,
+      title: "Local SEO Strategies That Actually Work in 2024",
+      excerpt: "Essential local SEO tactics that help businesses dominate their local market and attract more customers from their area.",
+      image: "/api/placeholder/600/400",
+      author: "Sarah Marketing",
+      date: "March 5, 2024",
+      readTime: "10 min read",
+      category: "SEO"
+    },
+    {
+      id: 4,
+      title: "Social Media Marketing Trends: What's Working Now",
+      excerpt: "Stay ahead of the curve with the latest social media marketing trends and strategies that are driving engagement and conversions.",
+      image: "/api/placeholder/600/400",
+      author: "Digital Team",
+      date: "February 28, 2024",
+      readTime: "7 min read",
+      category: "Social Media"
+    },
+    {
+      id: 5,
+      title: "Email Marketing Automation: From Setup to Scale",
+      excerpt: "Build email marketing funnels that nurture leads and convert prospects into loyal customers with proven automation strategies.",
+      image: "/api/placeholder/600/400",
+      author: "Marketing Automation",
+      date: "February 22, 2024",
+      readTime: "15 min read",
+      category: "Email Marketing"
+    },
+    {
+      id: 6,
+      title: "Conversion Rate Optimization: The Complete Blueprint",
+      excerpt: "Turn more visitors into customers with data-driven CRO strategies that have increased conversion rates by up to 300%.",
+      image: "/api/placeholder/600/400",
+      author: "CRO Specialist",
+      date: "February 15, 2024",
+      readTime: "11 min read",
+      category: "CRO"
+    }
+  ];
+
+  const categories = ["All", "Content Marketing", "Paid Advertising", "SEO", "Social Media", "Email Marketing", "CRO"];
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
+      <MarketingFormModal />
+      <SideTab />
       
-      <main className="container mx-auto px-4 py-16">
-        <article className="max-w-4xl mx-auto">
-          {/* Hero Section */}
-          <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts
-            </h1>
-            <div className="flex items-center gap-4 text-muted-foreground mb-8">
-              <span>By Odin Digital</span>
-              <span>•</span>
-              <time>Marketing Strategy</time>
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 gradient-hero">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+            Digital Marketing Insights
+          </h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Stay ahead of the curve with expert insights, proven strategies, and actionable tips from Australia's leading digital marketing agency.
+          </p>
+          <Button variant="cta" size="xl" onClick={openForm}>
+            Get Your Free Marketing Strategy
+          </Button>
+        </div>
+      </section>
+
+      {/* Featured Post */}
+      {blogPosts.filter(post => post.featured).map(post => (
+        <section key={post.id} className="py-16 bg-background">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <Badge variant="secondary" className="mb-4">Featured Article</Badge>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Latest Insights</h2>
             </div>
-            <img 
-              src={contentMatrixImage} 
-              alt="Content Marketing Matrix Framework" 
-              className="w-full rounded-lg shadow-lg"
-            />
+            
+            <Card className="overflow-hidden hover:shadow-glow transition-all duration-300">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-full object-cover min-h-[300px]"
+                  />
+                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
+                    {post.category}
+                  </Badge>
+                </div>
+                <div className="p-8 flex flex-col justify-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 leading-tight">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-6">
+                    <div className="flex items-center space-x-1">
+                      <User className="w-4 h-4" />
+                      <span>{post.author}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Calendar className="w-4 h-4" />
+                      <span>{post.date}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Clock className="w-4 h-4" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <Button variant="outline" className="w-fit group">
+                    Read Full Article
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </div>
+              </div>
+            </Card>
           </div>
+        </section>
+      ))}
 
-          {/* Article Content */}
-          <div className="prose prose-lg max-w-none">
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Content marketing can often feel like a chaotic, never-ending treadmill. You're constantly creating, publishing, and promoting, but are you getting the results you deserve? For many businesses, the answer is a frustrating "no." The problem isn't a lack of effort; it's a lack of strategy.
-            </p>
-
-            <p className="mb-6">
-              Without a clear framework, content creation becomes a reactive, tactical exercise rather than a strategic, results-driven one. To solve this, we at Odin Digital have developed <strong>The Content Marketing Matrix</strong>, a simple yet powerful framework designed to bring clarity, focus, and strategic intent to your content efforts.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">Understanding the Two Dimensions of the Matrix</h2>
-            
-            <p className="mb-4">The Content Marketing Matrix is built on two key dimensions:</p>
-            
-            <ol className="list-decimal list-inside mb-6 space-y-2">
-              <li><strong>The Customer Journey:</strong> This axis maps the stages a potential customer goes through, from initial awareness of a problem to the final purchase decision and beyond. We break this down into four key stages: Awareness, Consideration, Decision, and Loyalty.</li>
-              <li><strong>The Content Format:</strong> This axis represents the different types of content you can create, categorized by their primary purpose. We simplify this into two broad categories: Emotional (content that connects and builds brand) and Rational (content that educates and provides logical reasons to buy).</li>
-            </ol>
-
-            <p className="mb-8">By plotting these two dimensions on a grid, we create a powerful tool for strategic content planning.</p>
-
-            <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">The Four Quadrants of the Content Marketing Matrix</h2>
-
-            <div className="grid md:grid-cols-2 gap-8 my-8">
-              <div className="bg-card p-6 rounded-lg border">
-                <h3 className="text-xl font-semibold text-primary mb-3">Quadrant 1: Attract (Awareness + Emotional)</h3>
-                <p className="text-sm text-muted-foreground mb-4"><strong>Goal:</strong> To capture the attention of a broad audience and make them aware of your brand.</p>
-                <p className="mb-4">In this quadrant, the goal is to create highly shareable, emotionally resonant content that introduces your brand to new audiences.</p>
-                <p className="text-sm font-medium">Content Examples:</p>
-                <ul className="text-sm list-disc list-inside space-y-1 mt-2">
-                  <li>Viral Videos</li>
-                  <li>Inspirational Social Media Posts</li>
-                  <li>Brand Storytelling</li>
-                </ul>
-              </div>
-
-              <div className="bg-card p-6 rounded-lg border">
-                <h3 className="text-xl font-semibold text-primary mb-3">Quadrant 2: Educate (Awareness + Rational)</h3>
-                <p className="text-sm text-muted-foreground mb-4"><strong>Goal:</strong> To provide value and establish your brand as a credible authority.</p>
-                <p className="mb-4">Here, you are still targeting a top-of-funnel audience, but the approach is more educational.</p>
-                <p className="text-sm font-medium">Content Examples:</p>
-                <ul className="text-sm list-disc list-inside space-y-1 mt-2">
-                  <li>Comprehensive "How-To" Guides</li>
-                  <li>Informative Infographics</li>
-                  <li>Educational Webinars</li>
-                </ul>
-              </div>
-
-              <div className="bg-card p-6 rounded-lg border">
-                <h3 className="text-xl font-semibold text-primary mb-3">Quadrant 3: Convince (Consideration/Decision + Rational)</h3>
-                <p className="text-sm text-muted-foreground mb-4"><strong>Goal:</strong> To help potential customers logically justify a purchase decision.</p>
-                <p className="mb-4">As prospects move deeper into the funnel, they need proof. This quadrant provides hard data and logical arguments.</p>
-                <p className="text-sm font-medium">Content Examples:</p>
-                <ul className="text-sm list-disc list-inside space-y-1 mt-2">
-                  <li>Detailed Case Studies</li>
-                  <li>Product Comparison Guides</li>
-                  <li>ROI Calculators</li>
-                </ul>
-              </div>
-
-              <div className="bg-card p-6 rounded-lg border">
-                <h3 className="text-xl font-semibold text-primary mb-3">Quadrant 4: Delight (Decision/Loyalty + Emotional)</h3>
-                <p className="text-sm text-muted-foreground mb-4"><strong>Goal:</strong> To turn customers into loyal fans and brand advocates.</p>
-                <p className="mb-4">Your content marketing doesn't stop after the sale. This quadrant focuses on reinforcing the customer's decision.</p>
-                <p className="text-sm font-medium">Content Examples:</p>
-                <ul className="text-sm list-disc list-inside space-y-1 mt-2">
-                  <li>Exclusive Customer-Only Content</li>
-                  <li>Customer Success Stories</li>
-                  <li>Personalized Thank-You Videos</li>
-                </ul>
-              </div>
-            </div>
-
-            <h2 className="text-2xl font-semibold text-foreground mt-8 mb-4">How to Use the Matrix</h2>
-            
-            <ol className="list-decimal list-inside mb-6 space-y-4">
-              <li><strong>Audit Your Existing Content:</strong> Take all of your existing content and plot it on the matrix. This will quickly reveal gaps in your strategy. Are you creating a lot of "Attract" content but nothing to "Convince"? Are you neglecting your existing customers in the "Delight" quadrant?</li>
-              <li><strong>Brainstorm New Content Ideas:</strong> Use the matrix as a brainstorming tool. Challenge your team to come up with at least three new content ideas for each of the four quadrants.</li>
-              <li><strong>Build a Balanced Content Calendar:</strong> As you plan your content calendar, ensure you have a healthy mix of content from all four quadrants. This will ensure you are constantly attracting new prospects, nurturing them through the funnel, and delighting your existing customers.</li>
-            </ol>
-
-            <div className="bg-primary/5 border-l-4 border-primary p-6 my-8">
-              <p className="text-foreground">
-                The Content Marketing Matrix is not a rigid set of rules; it's a flexible framework for strategic thinking. By using it to guide your content creation, you can move from a state of chaotic content creation to one of strategic, purposeful, and ultimately, profitable content marketing.
-              </p>
-            </div>
-
-            <div className="text-center bg-card p-8 rounded-lg border mt-12">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Ready to build a content strategy that drives real results?</h3>
-              <p className="text-muted-foreground mb-6">Contact Odin Digital today, and let's map out your matrix for success.</p>
-              <a 
-                href="/#contact" 
-                className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-primary-foreground bg-primary rounded-md hover:bg-primary/90 transition-colors"
+      {/* Category Filter */}
+      <section className="py-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-wrap justify-center gap-4">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={category === "All" ? "default" : "outline"}
+                size="sm"
+                className="rounded-full"
               >
-                Get Started Today
-              </a>
-            </div>
+                {category}
+              </Button>
+            ))}
           </div>
-        </article>
-      </main>
+        </div>
+      </section>
+
+      {/* Blog Grid */}
+      <section className="py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.filter(post => !post.featured).map((post) => (
+              <Card key={post.id} className="overflow-hidden hover:shadow-glow transition-all duration-300 group">
+                <div className="relative">
+                  <img 
+                    src={post.image} 
+                    alt={post.title}
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
+                    {post.category}
+                  </Badge>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                    {post.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-4">
+                    <div className="flex items-center space-x-1">
+                      <User className="w-3 h-3" />
+                      <span>{post.author}</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <Clock className="w-3 h-3" />
+                      <span>{post.readTime}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">{post.date}</span>
+                    <Button variant="ghost" size="sm" className="group/btn">
+                      Read More
+                      <ArrowRight className="w-3 h-3 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Signup */}
+      <section className="py-24 gradient-hero">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <TrendingUp className="w-16 h-16 text-white mx-auto mb-6" />
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+            Stay Ahead of the Competition
+          </h2>
+          <p className="text-xl text-white/90 mb-12 leading-relaxed">
+            Get the latest digital marketing insights, strategies, and industry updates delivered directly to your inbox.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-8">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="flex-1 px-4 py-3 rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/30"
+            />
+            <Button variant="cta" size="lg">
+              Subscribe
+            </Button>
+          </div>
+          <p className="text-sm text-white/70">
+            Join 5,000+ business owners getting weekly marketing insights
+          </p>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-background">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            Ready to Implement These Strategies?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+            Our team of digital marketing experts can help you implement these proven strategies for your business.
+          </p>
+          <Button variant="cta" size="xl" onClick={openForm}>
+            Schedule Your Free Strategy Session
+          </Button>
+        </div>
+      </section>
 
       <Footer />
     </div>
