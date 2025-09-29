@@ -15,6 +15,15 @@ export const Results = () => {
 
   const testimonials = [
     {
+      company: "Adriatic Furniture",
+      result: "Brand & Business Excellence",
+      quote: "They really took the time to understand our business, our brand and our priorities and have consistently delivered exceptional results. Can't recommend them highly enough",
+      author: "Lenny Catalano",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: adriaticFurniture
+    },
+    {
       company: "YCL Jewels",
       result: "292% Revenue Growth",
       quote: "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
@@ -24,13 +33,13 @@ export const Results = () => {
       image: yclJewelry
     },
     {
-      company: "Adriatic Furniture",
-      result: "Brand & Business Excellence",
-      quote: "They really took the time to understand our business, our brand and our priorities and have consistently delivered exceptional results. Can't recommend them highly enough",
-      author: "Lenny Catalano",
+      company: "Mining Store",
+      result: "Outstanding Service & Results",
+      quote: "They're great",
+      author: "Will Wright",
       title: "Founder",
       location: "Melbourne, Australia",
-      image: adriaticFurniture
+      image: willWrightMiningStore
     },
     {
       company: "Bulk Buys Australia",
@@ -58,15 +67,6 @@ export const Results = () => {
       title: "Founder",
       location: "Melbourne, Australia",
       image: evanTsaboukos
-    },
-    {
-      company: "Mining Store",
-      result: "Outstanding Service & Results",
-      quote: "They're great",
-      author: "Will Wright",
-      title: "Founder",
-      location: "Melbourne, Australia",
-      image: willWrightMiningStore
     }
   ];
 
