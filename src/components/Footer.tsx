@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import odinLogo from "@/assets/odin-digital-logo.png";
+import odinLogo from "@/assets/odin-logo-footer.png";
 
 export const Footer = () => {
   return (
