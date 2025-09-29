@@ -97,7 +97,7 @@ export const Results = () => {
           </p>
         </div>
 
-        <div className="relative max-w-6xl mx-auto">
+        <div className="relative max-w-7xl mx-auto">
           {/* Pagination Dots */}
           <div className="flex justify-center mb-8 gap-2">
             {testimonials.map((_, index) => (
@@ -114,13 +114,13 @@ export const Results = () => {
             ))}
           </div>
           <Carousel 
-            className="w-full max-w-4xl mx-auto" 
-            opts={{ align: "start", loop: true }}
+            className="w-full max-w-5xl mx-auto" 
+            opts={{ align: "center", loop: true }}
             setApi={setCarouselApi}
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-4 md:-ml-6">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4">
+                <CarouselItem key={index} className="pl-4 md:pl-6 md:basis-4/5 lg:basis-3/4">
                   <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-xl">
                     <div className="flex flex-col lg:flex-row">
                       {/* Image Section */}
