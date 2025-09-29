@@ -185,6 +185,7 @@ export const Results = () => {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
+          </div>
         </div>
 
         {/* Team Experience Section */}
@@ -236,7 +237,6 @@ export const Results = () => {
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
   );
