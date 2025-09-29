@@ -83,7 +83,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               <X className="w-6 h-6" />
             </button>
             
-            <div className="p-6 md:p-8 lg:p-16 space-y-4 md:space-y-8">
+            <div className="p-8 md:p-12 lg:p-20 space-y-8 md:space-y-12">
               <div className="decorative-circles">
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -94,7 +94,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                   </p>
                 </div>
 
-                <div className="space-y-4 md:space-y-6">
+                <div className="space-y-6 md:space-y-8">
                   <div className="flex items-center space-x-4">
                     <div className="bg-primary/20 p-3 rounded-full">
                       <Target className="w-6 h-6 text-primary-glow" />
@@ -135,9 +135,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
           {/* Right Side - Multi-Step Form */}
           <div className="w-full md:w-3/5 flex flex-col md:overflow-hidden">
-            <div className="p-4 md:p-8 md:overflow-y-auto flex-1">
+            <div className="p-6 md:p-10 lg:p-12 md:overflow-y-auto flex-1">
               {/* Progress Bar */}
-            <div className="mb-8">
+            <div className="mb-10 md:mb-12">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-medium text-muted-foreground">
                   Step {currentStep} of 3
@@ -156,10 +156,10 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
             {/* Step 1: Basic Information */}
             {currentStep === 1 && (
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <h3 className="text-xl md:text-2xl font-bold text-charcoal">Let's start with the basics</h3>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="firstName">First Name *</Label>
                     <Input
@@ -215,7 +215,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
             {/* Step 2: Business Details */}
             {currentStep === 2 && (
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <h3 className="text-xl md:text-2xl font-bold text-charcoal">Tell us about your business</h3>
                 
                 <div>
@@ -239,7 +239,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
                 <div>
                   <Label>Current Marketing Methods (select all that apply)</Label>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     {['Google Ads', 'Facebook Ads', 'SEO', 'Email Marketing', 'Content Marketing', 'Referrals'].map((method) => (
                       <label key={method} className="flex items-center space-x-2">
                         <input
@@ -274,7 +274,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
             {/* Step 3: Goals & Challenges */}
             {currentStep === 3 && (
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <h3 className="text-xl md:text-2xl font-bold text-charcoal">What are your goals?</h3>
                 
                 <div>
@@ -318,7 +318,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
             )}
 
             {/* Navigation Buttons */}
-            <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 mt-8 pt-8 border-t border-gray-200">
+            <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 mt-10 pt-8 border-t border-gray-200">
               <Button
                 variant="outline"
                 onClick={prevStep}
