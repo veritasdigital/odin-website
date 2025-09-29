@@ -167,7 +167,7 @@ const About = () => {
 
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 p-2">
+                  <div className="w-20 h-20 flex items-center justify-center mb-4">
                     <img src={newAgeMarketingLogo} alt="New Age Marketing" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">New Age Marketing</h3>
