@@ -37,7 +37,7 @@ export const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="/src/assets/lucas-durante-ceo.jpg" 
+                src="/src/assets/lucas-durante-real.jpg" 
                 alt="Lucas Durante, CEO & Founder of Odin Digital" 
                 className="w-full rounded-lg shadow-lg"
               />
