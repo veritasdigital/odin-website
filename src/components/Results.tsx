@@ -184,8 +184,23 @@ export const Results = () => {
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
-          </div>
         </div>
+
+        {/* Team Experience Section */}
+        <div className="mt-20">
+          <Card className="p-12 bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
+            <div className="text-center">
+              <h3 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+                182+ Years of Combined 
+                <span className="text-primary block">Digital Marketing Expertise</span>
+              </h3>
+              <p className="text-xl text-charcoal/80 max-w-3xl mx-auto leading-relaxed">
+                Our leadership team brings together decades of experience from the world's most demanding digital marketing environments. This isn't just knowledge—it's battle-tested expertise that drives results.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
       </div>
     </section>
   );
