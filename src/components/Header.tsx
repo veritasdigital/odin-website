@@ -61,23 +61,23 @@ export const Header = () => {
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-white border border-charcoal/10 shadow-lg z-50">
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+              <DropdownMenuContent className="w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   Google Ads
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   SEO
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   Social Media Marketing
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   Website Design
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   Funnel Development
                 </DropdownMenuItem>
-                <DropdownMenuItem className="text-charcoal hover:text-primary hover:bg-accent/10 cursor-pointer">
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   Marketing Consulting
                 </DropdownMenuItem>
               </DropdownMenuContent>
