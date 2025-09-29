@@ -7,6 +7,7 @@ import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
 import krushOrganics from "@/assets/krush-organics.png";
 import evanTsaboukos from "@/assets/evan-tsaboukos.webp";
+import willWrightMiningStore from "@/assets/will-wright-mining-store.webp";
 
 export const Results = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,6 +58,15 @@ export const Results = () => {
       title: "Founder",
       location: "Melbourne, Australia",
       image: evanTsaboukos
+    },
+    {
+      company: "Mining Store",
+      result: "Outstanding Service & Results",
+      quote: "They're great",
+      author: "Will Wright",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: willWrightMiningStore
     }
   ];
 
