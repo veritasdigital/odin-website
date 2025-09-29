@@ -20,22 +20,14 @@ export const CTA = () => {
           The digital marketplace continues to evolve rapidly, creating new opportunities for businesses that implement strategic, data-driven marketing approaches. Companies that invest in comprehensive digital marketing strategies today position themselves for sustainable competitive advantages.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white">
+        <div className="flex justify-center mb-12">
+          <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white max-w-md">
             <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
             <p className="text-white/80 mb-6">
               Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>
             <Button variant="cta" size="lg" className="w-full">
               SCHEDULE CONSULTATION
-            </Button>
-          </Card>
-
-          <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white">
-            <h3 className="text-2xl font-bold mb-4">Request Your Complimentary Assessment</h3>
-            
-            <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10">
-              REQUEST ASSESSMENT
             </Button>
           </Card>
         </div>
