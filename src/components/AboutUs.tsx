@@ -32,18 +32,45 @@ export const AboutUs = () => {
           </p>
         </div>
 
-        {/* Founder Quote */}
+        {/* CEO Message */}
         <div className="mb-20">
-          <Card className="p-8 bg-primary/5 border-primary/20 max-w-4xl mx-auto">
-            <blockquote className="text-xl italic text-charcoal/90 leading-relaxed mb-6 text-center">
-              "I founded Odin Digital to be the antidote to the traditional agency model. We're not here to sell you services; we're here to build your empire. Our success is a direct reflection of our clients' success, and that's the only metric that truly matters."
-            </blockquote>
-            <div className="flex items-center justify-center">
-              <div className="w-16 h-1 bg-primary mr-4"></div>
-              <div>
-                <p className="font-bold text-charcoal">Lucas Durante</p>
-                <p className="text-charcoal/60">CEO & Founder</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="/src/assets/lucas-durante-ceo.jpg" 
+                alt="Lucas Durante, CEO & Founder of Odin Digital" 
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+            <div>
+              <h3 className="text-3xl font-black text-charcoal mb-6">
+                A Message from Our CEO
+              </h3>
+              <blockquote className="text-lg text-charcoal/90 leading-relaxed mb-6 italic">
+                "I founded Odin Digital to be the antidote to the traditional agency model. We're not here to sell you services; we're here to build your empire. Our success is a direct reflection of our clients' success, and that's the only metric that truly matters."
+              </blockquote>
+              <div className="flex items-center">
+                <div className="w-12 h-1 bg-primary mr-4"></div>
+                <div>
+                  <p className="font-bold text-charcoal">Lucas Durante</p>
+                  <p className="text-charcoal/60">CEO & Founder</p>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Experience */}
+        <div className="mb-20">
+          <Card className="p-12 bg-gradient-to-r from-primary/5 to-primary/10 border-primary/20">
+            <div className="text-center">
+              <h3 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+                182+ Years of Combined 
+                <span className="text-primary block">Digital Marketing Expertise</span>
+              </h3>
+              <p className="text-xl text-charcoal/80 max-w-3xl mx-auto leading-relaxed">
+                Our leadership team brings together decades of experience from the world's most demanding digital marketing environments. This isn't just knowledge—it's battle-tested expertise that drives results.
+              </p>
             </div>
           </Card>
         </div>
