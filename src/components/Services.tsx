@@ -14,7 +14,8 @@ export const Services = () => {
         "Comprehensive A/B testing and conversion rate optimization",
         "Multi-platform campaign coordination and management",
         "Real-time performance monitoring and strategic adjustments"
-      ]
+      ],
+      url: "/services/google-ads"
     },
     {
       icon: Search,
@@ -26,7 +27,8 @@ export const Services = () => {
         "Technical SEO audits and website optimization",
         "Content strategy development and implementation",
         "Local SEO and Google Business Profile optimization"
-      ]
+      ],
+      url: "/services/seo"
     },
     {
       icon: TrendingUp,
@@ -38,7 +40,8 @@ export const Services = () => {
         "User experience analysis and improvement recommendations",
         "Sales funnel development and optimization",
         "Advanced analytics implementation and conversion tracking"
-      ]
+      ],
+      url: "/services/funnel-development"
     },
     {
       icon: Zap,
@@ -50,7 +53,8 @@ export const Services = () => {
         "Lead scoring and qualification systems",
         "Customer retention and loyalty program development",
         "CRM integration and workflow optimization"
-      ]
+      ],
+      url: "/services/marketing-consulting"
     }
   ];
 
@@ -88,8 +92,8 @@ export const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="default" size="sm">
-                    Learn More
+                  <Button variant="default" size="sm" asChild>
+                    <a href={service.url}>Learn More</a>
                   </Button>
                 </div>
               </div>
