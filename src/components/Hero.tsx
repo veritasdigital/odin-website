@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroPerson from "@/assets/hero-person.webp";
+import fox40Logo from "@/assets/media/fox40-logo.png";
+import msnLogo from "@/assets/media/msn-logo.png";
+import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
+import businessInsiderLogo from "@/assets/media/business-insider-logo.png";
+import digitalJournalLogo from "@/assets/media/digital-journal-logo.png";
 export const Hero = () => {
   const { openForm } = useMarketingForm();
   return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
@@ -51,19 +56,49 @@ export const Hero = () => {
               </Button>
             </div>
             
-            {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-6 lg:gap-8 pt-8 mt-8 border-t border-charcoal/10">
-              <div className="text-left space-y-1">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">283+</div>
-                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Trusted Businesses</div>
+            {/* As Seen In Media Logos */}
+            <div className="pt-8 mt-8 border-t border-charcoal/10">
+              <div className="text-center mb-6">
+                <h3 className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
+                  As Featured In
+                </h3>
               </div>
-              <div className="text-left space-y-1">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">$574M+</div>
-                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Client Revenue</div>
-              </div>
-              <div className="text-left space-y-1">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-black mb-1 text-primary">182 Yrs+</div>
-                <div className="text-xs font-semibold text-charcoal/70 uppercase tracking-wider">Team Marketing Expertise</div>
+              <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={fox40Logo}
+                    alt="FOX40 News"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={msnLogo}
+                    alt="MSN"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={yahooFinanceLogo}
+                    alt="Yahoo Finance"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={businessInsiderLogo}
+                    alt="Business Insider"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={digitalJournalLogo}
+                    alt="Digital Journal"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
               </div>
             </div>
           </div>
