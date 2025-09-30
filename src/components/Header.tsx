@@ -87,11 +87,6 @@ export const Header = () => {
             }`}>
               About
             </a>
-            <a href="#results" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
-            }`}>
-              Results
-            </a>
             <a href="/blog" className={`font-medium transition-colors ${
               isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
             }`}>
@@ -137,7 +132,6 @@ export const Header = () => {
                 </div>
               </div>
               <a href="/about" className="text-charcoal/70 hover:text-primary font-medium py-2">About</a>
-              <a href="#results" className="text-charcoal/70 hover:text-primary font-medium py-2">Results</a>
               <a href="/blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="/contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
               <Button variant="cta" size="lg" className="mt-4 w-full font-medium" onClick={openForm}>
