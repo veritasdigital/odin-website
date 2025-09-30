@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import newAgeMarketingLogo from "@/assets/logos/new-age-marketing.png";
 import veritasLogo from "@/assets/logos/veritas-logo.png";
+import agentConquestLogo from "@/assets/logos/agent-conquest.png";
 
 const About = () => {
   return (
@@ -132,8 +133,8 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-primary font-black text-lg">AC</span>
+                  <div className="w-20 h-20 flex items-center justify-center mb-4">
+                    <img src={agentConquestLogo} alt="Agent Conquest" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Agent Conquest</h3>
                   <p className="text-charcoal/80 leading-relaxed">
