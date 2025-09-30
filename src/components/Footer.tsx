@@ -25,15 +25,15 @@ export const Footer = () => {
             <div className="space-y-4 text-white/80">
               <div>
                 <p className="font-semibold text-white">Phone:</p>
-                <p>1-800-ODIN-DIGITAL</p>
+                <p>03 9498 3170</p>
               </div>
               <div>
                 <p className="font-semibold text-white">Email:</p>
-                <p>hello@odindigital.com</p>
+                <p>hello@odindigital.com.au</p>
               </div>
               <div>
                 <p className="font-semibold text-white">Address:</p>
-                <p>[Your Business Address]</p>
+                <p>11 Wilson Street<br />South Yarra VIC 3141</p>
               </div>
             </div>
           </div>
@@ -42,9 +42,8 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6">Business Hours</h3>
             <div className="space-y-2 text-white/80">
-              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 2:00 PM</p>
-              <p>Sunday: Closed</p>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p>Saturday - Sunday: Closed</p>
             </div>
             
             <div className="mt-8">

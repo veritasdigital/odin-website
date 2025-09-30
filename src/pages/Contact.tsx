@@ -21,9 +21,9 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Call Us",
-      description: "+61 (0) 413 995 040",
+      description: "03 9498 3170",
       action: "Call Now",
-      href: "tel:+61413995040"
+      href: "tel:0394983170"
     },
     {
       icon: Mail,
@@ -36,16 +36,10 @@ export default function Contact() {
 
   const offices = [
     {
-      city: "Sydney",
-      address: "Level 12, 1 Pacific Highway, North Sydney NSW 2060",
-      phone: "+61 (0) 413 995 040",
-      email: "sydney@odindigital.com.au"
-    },
-    {
       city: "Melbourne",
-      address: "Suite 405, 350 Collins Street, Melbourne VIC 3000",
-      phone: "+61 (0) 413 995 040",
-      email: "melbourne@odindigital.com.au"
+      address: "11 Wilson Street, South Yarra VIC 3141",
+      phone: "03 9498 3170",
+      email: "hello@odindigital.com.au"
     }
   ];
 
@@ -145,9 +139,8 @@ export default function Contact() {
                   <div className="flex items-start space-x-3">
                     <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div className="text-muted-foreground">
-                      <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                      <p>Saturday: 10:00 AM - 2:00 PM</p>
-                      <p>Sunday: Closed</p>
+                      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                      <p>Saturday - Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
