@@ -6,6 +6,8 @@ import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
 import businessInsiderLogo from "@/assets/media/business-insider-logo.png";
 import digitalJournalLogo from "@/assets/media/digital-journal-logo.png";
+import chronicleJournalLogo from "@/assets/media/chronicle-journal-logo.png";
+import ncnLogo from "@/assets/media/ncn-logo.png";
 export const Hero = () => {
   const { openForm } = useMarketingForm();
   return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
@@ -96,6 +98,20 @@ export const Hero = () => {
                   <img
                     src={digitalJournalLogo}
                     alt="Digital Journal"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={chronicleJournalLogo}
+                    alt="The Chronicle Journal"
+                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+                <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                  <img
+                    src={ncnLogo}
+                    alt="NCN"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
