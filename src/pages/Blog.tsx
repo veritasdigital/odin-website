@@ -15,6 +15,17 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
+      excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
+      image: "/api/placeholder/600/400",
+      author: "Odin Digital Team",
+      date: "March 20, 2024",
+      readTime: "12 min read",
+      category: "SEO",
+      featured: true
+    },
+    {
+      id: 2,
       title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
       excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
       image: contentMatrixImage,
@@ -22,10 +33,10 @@ const Blog = () => {
       date: "March 15, 2024",
       readTime: "8 min read",
       category: "Content Marketing",
-      featured: true
+      featured: false
     },
     {
-      id: 2,
+      id: 3,
       title: "Google Ads Performance Max: The Complete Guide for 2024",
       excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
       image: "/api/placeholder/600/400",
@@ -35,7 +46,7 @@ const Blog = () => {
       category: "Paid Advertising"
     },
     {
-      id: 3,
+      id: 4,
       title: "Local SEO Strategies That Actually Work in 2024",
       excerpt: "Essential local SEO tactics that help businesses dominate their local market and attract more customers from their area.",
       image: "/api/placeholder/600/400",
@@ -45,7 +56,7 @@ const Blog = () => {
       category: "SEO"
     },
     {
-      id: 4,
+      id: 5,
       title: "Social Media Marketing Trends: What's Working Now",
       excerpt: "Stay ahead of the curve with the latest social media marketing trends and strategies that are driving engagement and conversions.",
       image: "/api/placeholder/600/400",
@@ -55,7 +66,7 @@ const Blog = () => {
       category: "Social Media"
     },
     {
-      id: 5,
+      id: 6,
       title: "Email Marketing Automation: From Setup to Scale",
       excerpt: "Build email marketing funnels that nurture leads and convert prospects into loyal customers with proven automation strategies.",
       image: "/api/placeholder/600/400",
@@ -65,7 +76,7 @@ const Blog = () => {
       category: "Email Marketing"
     },
     {
-      id: 6,
+      id: 7,
       title: "Conversion Rate Optimization: The Complete Blueprint",
       excerpt: "Turn more visitors into customers with data-driven CRO strategies that have increased conversion rates by up to 300%.",
       image: "/api/placeholder/600/400",
