@@ -40,6 +40,13 @@ export default function Contact() {
       address: "11 Wilson Street, South Yarra VIC 3141",
       phone: "03 9498 3170",
       email: "hello@odindigital.com.au"
+    },
+    {
+      city: "Sydney",
+      address: "Opening Soon",
+      phone: "03 9498 3170",
+      email: "hello@odindigital.com.au",
+      openingSoon: true
     }
   ];
 
@@ -114,7 +121,10 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {offices.map((office, index) => (
               <Card key={index} className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-6">{office.city} Office</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-6">
+                  {office.city} Office
+                  {office.openingSoon && <span className="text-lg text-muted-foreground font-normal ml-2">- Opening Soon</span>}
+                </h3>
                 
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
