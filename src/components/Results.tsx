@@ -35,7 +35,7 @@ export const Results = () => {
     {
       company: "Mining Store",
       result: "Outstanding Service & Results",
-      quote: "They're great",
+      quote: "We've been working with Lucas and the team since 2021, before we partnered up we'd been with a lot of agencies that didn't take the time to understand our business properly, we had a LOT of ad account and ad rejection issues and were constantly frustrated with the general \"agency experience\". But things have never been better, we have details and in depth understanding of our analytics and data, and even when things aren't perfect, they tell it like it is so we can do something about it instead of giving us the run around which is super refreshing.",
       author: "Will Wright",
       title: "Founder",
       location: "Melbourne, Australia",
