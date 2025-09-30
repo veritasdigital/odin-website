@@ -99,7 +99,7 @@ export default function WebsiteDesign() {
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">Web Development</Badge>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
-              Website Design & Development
+              Your Website Should Be Your Best Salesperson
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
               Create stunning, conversion-optimized websites that drive results and provide exceptional user experiences across all devices.

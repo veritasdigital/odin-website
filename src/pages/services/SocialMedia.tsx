@@ -86,7 +86,7 @@ export default function SocialMedia() {
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">Social Media Marketing</Badge>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
-              Social Media Marketing
+              Stop Posting Into the Void
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
               Build brand awareness and engage your audience across all major social platforms with content that drives real business results.
