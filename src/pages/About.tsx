@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import newAgeMarketingLogo from "@/assets/logos/new-age-marketing.png";
 import veritasLogo from "@/assets/logos/veritas-logo.png";
 import agentConquestLogo from "@/assets/logos/agent-conquest.png";
+import practiceConquestLogo from "@/assets/logos/practice-conquest.png";
 
 const About = () => {
   return (
@@ -157,8 +158,8 @@ const About = () => {
 
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-primary font-black text-lg">PC</span>
+                  <div className="w-20 h-20 flex items-center justify-center mb-4">
+                    <img src={practiceConquestLogo} alt="Practice Conquest" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Practice Conquest</h3>
                   <p className="text-charcoal/80 leading-relaxed">
