@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
+import { AsSeenIn } from "@/components/AsSeenIn";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
@@ -167,6 +168,9 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* As Seen In Section */}
+      <AsSeenIn />
 
       {/* CTA Section */}
       <section className="py-24 gradient-hero">
