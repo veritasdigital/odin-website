@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import heroPerson from "@/assets/hero-person.webp";
+import heroPerson from "@/assets/hero-person-new.png";
 import fox40Logo from "@/assets/media/fox40-logo.png";
 import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
