@@ -95,7 +95,7 @@ export default function SocialMedia() {
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Social Media Strategy
               </Button>
-              <Button variant="cta" size="xl" className="bg-white text-primary hover:bg-white/90">
+              <Button variant="hero" size="xl">
                 View Our Work
               </Button>
             </div>
