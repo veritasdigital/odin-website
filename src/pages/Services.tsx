@@ -119,7 +119,7 @@ export default function Services() {
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
             Comprehensive digital marketing solutions designed to drive growth, increase revenue, and establish your brand as the market leader.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm}>
+          <Button variant="cta" size="xl" onClick={openForm} className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto">
             Get Your Free Strategy Session
           </Button>
         </div>
@@ -159,7 +159,7 @@ export default function Services() {
                     <p className="text-primary font-semibold">{service.benefits}</p>
                   </div>
                   
-                  <Button variant="outline" className="w-full" onClick={openForm}>
+                  <Button variant="outline" className="w-full text-sm md:text-base" onClick={openForm}>
                     Learn More About This Service
                   </Button>
                 </Card>
@@ -181,7 +181,7 @@ export default function Services() {
           <p className="text-xl text-white/90 mb-12 leading-relaxed">
             Let's discuss which services will drive the biggest impact for your business. Schedule your free strategy session today.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm}>
+          <Button variant="cta" size="xl" onClick={openForm} className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto">
             Schedule My Free Consultation
           </Button>
         </div>
