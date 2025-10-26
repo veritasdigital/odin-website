@@ -14,7 +14,7 @@ export const Footer = () => {
             <p className="text-white/80 mb-6 leading-relaxed">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
             </p>
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" className="text-sm md:text-base px-4 md:px-8 w-full md:w-auto">
               Connect with Our Digital Marketing Experts
             </Button>
           </div>
