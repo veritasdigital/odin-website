@@ -49,9 +49,9 @@ export const Footer = () => {
             <div className="mt-8">
               <h4 className="font-semibold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a href="#services" className="block text-white/80 hover:text-white transition-smooth">Services</a>
-                <a href="#results" className="block text-white/80 hover:text-white transition-smooth">Results</a>
-                <a href="#methodology" className="block text-white/80 hover:text-white transition-smooth">Methodology</a>
+                <a href="/services" className="block text-white/80 hover:text-white transition-smooth">Services</a>
+                <a href="/#results" className="block text-white/80 hover:text-white transition-smooth">Results</a>
+                <a href="/#methodology" className="block text-white/80 hover:text-white transition-smooth">Methodology</a>
                 <a href="/about" className="block text-white/80 hover:text-white transition-smooth">About</a>
                 <a href="/blog" className="block text-white/80 hover:text-white transition-smooth">Blog</a>
               </div>
