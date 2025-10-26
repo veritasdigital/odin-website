@@ -1,11 +1,53 @@
 import { Button } from "@/components/ui/button";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 import odinLogo from "@/assets/odin-logo-footer.png";
 
 export const Footer = () => {
+  const [openIndustries, setOpenIndustries] = useState<string[]>([]);
+
+  const toggleIndustry = (industry: string) => {
+    setOpenIndustries(prev => 
+      prev.includes(industry) 
+        ? prev.filter(i => i !== industry)
+        : [...prev, industry]
+    );
+  };
+
+  const industries = [
+    {
+      title: "High-End Lifestyle Services",
+      items: ["Private gyms & personal trainers"]
+    },
+    {
+      title: "Home Improvement & Trades",
+      items: [
+        "Electricians",
+        "Plumbers",
+        "Roofers & builders",
+        "Landscapers",
+        "Pool builders",
+        "Renovation companies",
+        "Pest control"
+      ]
+    },
+    {
+      title: "Legal & Professional Services",
+      items: [
+        "Law firms (personal injury, family law, conveyancing, immigration)",
+        "Accounting firms & tax agents",
+        "Financial planners",
+        "Insurance brokers",
+        "Migration agents"
+      ]
+    }
+  ];
+
   return (
     <footer data-nav-contrast="dark" id="contact" className="bg-accent text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -55,6 +97,36 @@ export const Footer = () => {
                 <a href="/about" className="block text-white/80 hover:text-white transition-smooth">About</a>
                 <a href="/blog" className="block text-white/80 hover:text-white transition-smooth">Blog</a>
               </div>
+            </div>
+          </div>
+
+          {/* Industries */}
+          <div>
+            <h3 className="text-xl font-bold mb-6">Industries we work with</h3>
+            <div className="space-y-4">
+              {industries.map((industry) => (
+                <Collapsible
+                  key={industry.title}
+                  open={openIndustries.includes(industry.title)}
+                  onOpenChange={() => toggleIndustry(industry.title)}
+                >
+                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth">
+                    <span className="font-semibold">{industry.title}</span>
+                    <ChevronDown 
+                      className={`h-4 w-4 transition-transform ${
+                        openIndustries.includes(industry.title) ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="mt-2 space-y-2 pl-2">
+                    {industry.items.map((item, idx) => (
+                      <p key={idx} className="text-sm text-white/60">
+                        {item}
+                      </p>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
+              ))}
             </div>
           </div>
         </div>
