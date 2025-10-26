@@ -108,7 +108,7 @@ export default function WebsiteDesign() {
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Website Quote
               </Button>
-              <Button variant="outline" size="xl" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button variant="outline" size="xl" className="text-primary border-white hover:bg-white">
                 View Portfolio
               </Button>
             </div>
