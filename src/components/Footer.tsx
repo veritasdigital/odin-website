@@ -41,6 +41,24 @@ export const Footer = () => {
         "Insurance brokers",
         "Migration agents"
       ]
+    },
+    {
+      title: "Dentists",
+      items: [
+        "Cosmetic Dentists",
+        "Orthodontists",
+        "Dental Implants",
+        "General & Family Dentists"
+      ]
+    },
+    {
+      title: "Allied Health",
+      items: [
+        "Physiotherapists",
+        "Psychologists",
+        "Chiropractors",
+        "Podiatrists"
+      ]
     }
   ];
 
