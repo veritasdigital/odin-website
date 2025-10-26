@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const BrisbaneSEO = () => {
   const { openForm } = useMarketingForm();
@@ -281,10 +282,10 @@ const BrisbaneSEO = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                onClick={openForm}
+                asChild
                 className="mb-4"
               >
-                Get Your FREE SEO Audit →
+                <Link to="/contact">Get Your FREE SEO Audit →</Link>
               </Button>
               <p className="text-sm text-muted-foreground">
                 No credit card required • See what's holding you back in 48 hours
@@ -336,8 +337,8 @@ const BrisbaneSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" onClick={openForm}>
-                Book Your Free SEO Strategy Call →
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/contact">Book Your Free SEO Strategy Call →</Link>
               </Button>
             </div>
           </div>
@@ -384,8 +385,8 @@ const BrisbaneSEO = () => {
               </Card>
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="lg" onClick={openForm}>
-                See More Success Stories →
+              <Button variant="cta" size="lg" asChild>
+                <Link to="/contact">See More Success Stories →</Link>
               </Button>
             </div>
           </div>
@@ -431,8 +432,8 @@ const BrisbaneSEO = () => {
                         <span className="text-muted-foreground">{service.perfectFor}</span>
                       </p>
                     </div>
-                    <Button variant="cta" className="w-full" onClick={openForm}>
-                      {service.cta}
+                    <Button variant="cta" className="w-full" asChild>
+                      <Link to="/contact">{service.cta}</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -463,8 +464,8 @@ const BrisbaneSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" onClick={openForm}>
-                Claim Your Free SEO Strategy Session →
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/contact">Claim Your Free SEO Strategy Session →</Link>
               </Button>
             </div>
           </div>
@@ -502,8 +503,8 @@ const BrisbaneSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" onClick={openForm}>
-                Start Ranking Higher Today →
+              <Button variant="cta" size="xl" asChild>
+                <Link to="/contact">Start Ranking Higher Today →</Link>
               </Button>
             </div>
           </div>
@@ -548,10 +549,10 @@ const BrisbaneSEO = () => {
             <Button 
               variant="secondary" 
               size="xl" 
-              onClick={openForm}
+              asChild
               className="mb-4 text-lg h-16 px-12 hover:scale-105 transition-transform"
             >
-              Book Your Free SEO Strategy Call →
+              <Link to="/contact">Book Your Free SEO Strategy Call →</Link>
             </Button>
             <p className="text-sm opacity-90 mt-6">
               Limited strategy sessions available this month • No obligation • No sales pitch • Just honest advice
@@ -582,8 +583,8 @@ const BrisbaneSEO = () => {
             </Accordion>
             <div className="text-center mt-12">
               <p className="text-muted-foreground mb-6">Still have questions?</p>
-              <Button variant="cta" size="lg" onClick={openForm}>
-                Book a Free Call →
+              <Button variant="cta" size="lg" asChild>
+                <Link to="/contact">Book a Free Call →</Link>
               </Button>
             </div>
           </div>
