@@ -109,7 +109,25 @@ export const Footer = () => {
             <div className="mt-8">
               <h4 className="font-semibold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a href="/services" className="block text-white/80 hover:text-white transition-smooth">Services</a>
+                <Collapsible
+                  open={openIndustries.includes("Services")}
+                  onOpenChange={() => toggleIndustry("Services")}
+                >
+                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth">
+                    <span>Services</span>
+                    <ChevronDown 
+                      className={`h-4 w-4 transition-transform ${
+                        openIndustries.includes("Services") ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="mt-2 space-y-2 pl-2">
+                    <a href="/services/google-ads" className="block text-sm text-white/60 hover:text-white transition-smooth">Google Ads</a>
+                    <a href="/services/seo" className="block text-sm text-white/60 hover:text-white transition-smooth">SEO</a>
+                    <a href="/services/social-media" className="block text-sm text-white/60 hover:text-white transition-smooth">Social Media</a>
+                    <a href="/services/website-design" className="block text-sm text-white/60 hover:text-white transition-smooth">Website Design</a>
+                  </CollapsibleContent>
+                </Collapsible>
                 <a href="/#results" className="block text-white/80 hover:text-white transition-smooth">Results</a>
                 <a href="/#methodology" className="block text-white/80 hover:text-white transition-smooth">Methodology</a>
                 <a href="/about" className="block text-white/80 hover:text-white transition-smooth">About</a>
