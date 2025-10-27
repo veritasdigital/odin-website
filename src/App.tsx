@@ -46,6 +46,7 @@ const App = () => (
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
+            <Route path="/local-seo" element={<LocalSEO />} />
             <Route path="/services/social-media" element={<SocialMedia />} />
             <Route path="/services/website-design" element={<WebsiteDesign />} />
             <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
