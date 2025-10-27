@@ -261,7 +261,7 @@ const PerthSEO = () => {
                 variant="cta" 
                 size="xl" 
                 asChild
-                className="mb-4"
+                className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8"
               >
                 <Link to="/contact">Get Your FREE SEO Audit →</Link>
               </Button>
@@ -315,7 +315,7 @@ const PerthSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="cta" size="xl" asChild className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8">
                 <Link to="/contact">Book Your Free SEO Strategy Call →</Link>
               </Button>
             </div>
@@ -351,7 +351,7 @@ const PerthSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="lg" asChild>
+              <Button variant="cta" size="lg" asChild className="w-full sm:w-auto text-sm sm:text-base px-6 sm:px-8">
                 <Link to="/contact">See More Success Stories →</Link>
               </Button>
             </div>
@@ -388,7 +388,7 @@ const PerthSEO = () => {
                         <span className="text-muted-foreground">{service.perfectFor}</span>
                       </p>
                     </div>
-                    <Button variant="cta" className="w-full" asChild>
+                    <Button variant="cta" className="w-full text-sm sm:text-base px-4 sm:px-6" asChild>
                       <Link to="/contact">{service.cta}</Link>
                     </Button>
                   </CardContent>
@@ -420,7 +420,7 @@ const PerthSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="cta" size="xl" asChild className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8">
                 <Link to="/contact">Claim Your Free SEO Strategy Session →</Link>
               </Button>
             </div>
@@ -456,7 +456,7 @@ const PerthSEO = () => {
               ))}
             </div>
             <div className="text-center mt-12">
-              <Button variant="cta" size="xl" asChild>
+              <Button variant="cta" size="xl" asChild className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8">
                 <Link to="/contact">Start Ranking Higher Today →</Link>
               </Button>
             </div>
@@ -498,7 +498,7 @@ const PerthSEO = () => {
               variant="secondary" 
               size="xl" 
               asChild
-              className="mb-4 text-lg h-16 px-12 hover:scale-105 transition-transform"
+              className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg h-14 sm:h-16 px-6 sm:px-12 hover:scale-105 transition-transform"
             >
               <Link to="/contact">Book Your Free SEO Strategy Call →</Link>
             </Button>
@@ -533,7 +533,7 @@ const PerthSEO = () => {
             </Accordion>
             <div className="text-center mt-12">
               <p className="text-muted-foreground mb-6">Still have questions?</p>
-              <Button variant="cta" size="lg" asChild>
+              <Button variant="cta" size="lg" asChild className="w-full sm:w-auto text-sm sm:text-base px-6 sm:px-8">
                 <Link to="/contact">Book a Free Call →</Link>
               </Button>
             </div>
