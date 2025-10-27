@@ -31,6 +31,7 @@ import {
   BarChart
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Footer } from "@/components/Footer";
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
@@ -712,6 +713,9 @@ const AdelaideSEO = () => {
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );
