@@ -317,9 +317,10 @@ const EcommerceSEO = () => {
               <p className="text-lg md:text-xl mb-10 text-muted-foreground">
                 At Odin Digital, we are an E-commerce SEO Agency built differently. We don't care about driving traffic to your blog. We care about driving revenue to your bank account. Every keyword we target, every page we optimize, and every link we build is designed with one goal: to increase your online sales.
               </p>
-              <Button onClick={handleCTAClick} size="xl" variant="cta" className="group">
-                Get Your FREE E-commerce SEO Strategy
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button onClick={handleCTAClick} size="xl" variant="cta" className="group w-full md:w-auto text-sm md:text-lg px-6 md:px-12">
+                <span className="hidden sm:inline">Get Your FREE E-commerce SEO Strategy</span>
+                <span className="sm:hidden">Get FREE SEO Strategy</span>
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
@@ -418,9 +419,9 @@ const EcommerceSEO = () => {
                   <div className="mb-6">{service.icon}</div>
                   <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-muted-foreground mb-6">{service.description}</p>
-                  <Button onClick={handleCTAClick} variant="outline" className="w-full group">
-                    {service.cta}
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  <Button onClick={handleCTAClick} variant="outline" className="w-full group text-xs sm:text-sm">
+                    <span className="truncate">{service.cta}</span>
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                   </Button>
                 </Card>
               ))}
@@ -517,9 +518,10 @@ const EcommerceSEO = () => {
               <p className="text-xl mb-10 text-white/90">
                 Your online store has massive untapped potential. The only question is: are you ready to unlock it? Partner with an E-commerce SEO Agency that is obsessed with your revenue, not our ego. No lock-in contracts. Just results.
               </p>
-              <Button onClick={handleCTAClick} size="xl" className="bg-white text-primary hover:bg-white/90 group">
-                Get Your FREE E-commerce SEO Strategy
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <Button onClick={handleCTAClick} size="xl" className="bg-white text-primary hover:bg-white/90 group w-full md:w-auto text-sm md:text-lg px-6 md:px-12">
+                <span className="hidden sm:inline">Get Your FREE E-commerce SEO Strategy</span>
+                <span className="sm:hidden">Get FREE SEO Strategy</span>
+                <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
