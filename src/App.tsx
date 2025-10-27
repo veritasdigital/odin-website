@@ -14,6 +14,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import GoogleAds from "./pages/services/GoogleAds";
+import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
 import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
@@ -43,6 +44,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/google-ads" element={<GoogleAds />} />
+            <Route path="/google-ads-management" element={<GoogleAdsManagement />} />
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
