@@ -634,31 +634,51 @@ const GoogleAdsManagement = () => {
         </section>
 
         {/* Section 8: Why Choose Us Section */}
-        <section className="py-20 px-4 bg-muted/30">
-          <div className="container mx-auto max-w-6xl">
+        <section className="py-20 px-4 bg-gradient-to-br from-accent/5 to-primary/5 decorative-circles-alt relative overflow-hidden">
+          <div className="container mx-auto max-w-6xl relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-foreground">
               Why Odin Digital is the Smartest Investment for Your Google Ads Budget
             </h2>
-            <div className="space-y-8">
-              <div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-card p-8 rounded-lg shadow-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-primary group">
+                <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">We Focus on Your Bottom Line, Not Our Commission</h3>
                 <p className="text-lg text-muted-foreground">
                   Unlike percentage-based agencies, we're only successful when you're profitable. This alignment of incentives means every decision we make is designed to increase your ROAS and reduce your CPA, not to inflate your ad spend.
                 </p>
               </div>
-              <div>
+              <div className="bg-card p-8 rounded-lg shadow-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-primary group">
+                <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">No Lock-In Contracts = Maximum Accountability</h3>
                 <p className="text-lg text-muted-foreground">
                   We reject the standard agency model of trapping clients in long contracts. Our month-to-month agreement forces us to deliver exceptional results every single month, or we lose your business. This accountability is your guarantee of performance.
                 </p>
               </div>
-              <div>
+              <div className="bg-card p-8 rounded-lg shadow-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-primary group">
+                <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">Proven Track Record of 540% Average ROI</h3>
                 <p className="text-lg text-muted-foreground">
                   We've generated over $574M in verified client revenue. Our 95% client retention rate proves that we don't just promise results—we deliver them, month after month, year after year.
                 </p>
               </div>
-              <div>
+              <div className="bg-card p-8 rounded-lg shadow-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-primary group">
+                <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                  <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                    <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                  </svg>
+                </div>
                 <h3 className="text-2xl font-bold mb-3 text-foreground">Integrated Strategy with SEO for Total Market Domination</h3>
                 <p className="text-lg text-muted-foreground">
                   We're not just a Google Ads agency. Our expertise in SEO, PPC, and web design allows us to create a unified strategy that dominates both paid and organic search, maximizing your overall market share and revenue.
