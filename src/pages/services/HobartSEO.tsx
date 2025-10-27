@@ -586,11 +586,11 @@ const HobartSEO = () => {
                     <CardDescription className="text-base">
                       {service.description}
                     </CardDescription>
-                    <Button asChild variant="hero" size="sm" className="w-full group text-xs sm:text-sm md:text-base">
-                      <Link to="/contact" className="px-2 sm:px-4">
-                        <span className="hidden md:inline">{service.cta}</span>
-                        <span className="hidden sm:inline md:hidden">Free Audit →</span>
-                        <span className="sm:hidden">Audit →</span>
+                    <Button asChild variant="hero" size="sm" className="w-full group text-xs sm:text-sm md:text-base whitespace-normal break-words text-center leading-tight px-2 sm:px-4">
+                      <Link to="/contact" className="block w-full max-w-full">
+                        <span className="hidden md:inline break-words">{service.cta}</span>
+                        <span className="hidden sm:inline md:hidden break-words">Free Audit →</span>
+                        <span className="sm:hidden break-words">Audit →</span>
                       </Link>
                     </Button>
                   </CardContent>
