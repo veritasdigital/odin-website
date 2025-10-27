@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { useEffect, useRef, useState } from "react";
 import { 
   TrendingUp, 
   Target, 
@@ -22,13 +24,76 @@ import {
 } from "lucide-react";
 
 const SydneySEO = () => {
+  // Count-up animation hook
+  const useCountUp = (end: number, duration: number = 2000) => {
+    const [count, setCount] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        },
+        { threshold: 0.1 }
+      );
+
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      };
+    }, []);
+
+    useEffect(() => {
+      if (!isVisible) return;
+
+      let startTime: number | null = null;
+      const animate = (currentTime: number) => {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        
+        setCount(Math.floor(progress * end));
+        
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      };
+      
+      requestAnimationFrame(animate);
+    }, [isVisible, end, duration]);
+
+    return { count, ref };
+  };
+
   // Social Proof Metrics
   const metrics = [
-    { number: "$574M+", label: "Client Revenue Generated" },
-    { number: "540%", label: "Average ROI Across All Services" },
-    { number: "95%", label: "Client Retention Rate" },
-    { number: "283+", label: "Successful Campaigns Delivered" }
+    { number: 574, suffix: "M+", prefix: "$", label: "Client Revenue Generated" },
+    { number: 540, suffix: "%", prefix: "", label: "Average ROI Across All Services" },
+    { number: 95, suffix: "%", prefix: "", label: "Client Retention Rate" },
+    { number: 283, suffix: "+", prefix: "", label: "Successful Campaigns Delivered" }
   ];
+
+  const MetricCard = ({ metric }: { metric: typeof metrics[0] }) => {
+    const { count, ref } = useCountUp(metric.number);
+    
+    return (
+      <div ref={ref} className="animate-fade-in">
+        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2">
+          {metric.prefix}{count}{metric.suffix}
+        </div>
+        <div className="text-xs sm:text-sm md:text-base text-muted-foreground px-2">
+          {metric.label}
+        </div>
+      </div>
+    );
+  };
 
   // Problem Cards
   const problems = [
@@ -302,6 +367,35 @@ const SydneySEO = () => {
         <Header />
         <SideTab />
 
+        {/* Breadcrumb Navigation */}
+        <div className="container mx-auto px-4 py-4">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/">Home</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services">Services</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/services/seo">SEO</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>Sydney</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
+
         {/* Hero Section */}
         <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -335,14 +429,7 @@ const SydneySEO = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
               {metrics.map((metric, index) => (
-                <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2">
-                    {metric.number}
-                  </div>
-                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground px-2">
-                    {metric.label}
-                  </div>
-                </div>
+                <MetricCard key={index} metric={metric} />
               ))}
             </div>
             <p className="text-center text-sm md:text-base text-muted-foreground mt-8 max-w-3xl mx-auto px-4">
@@ -633,6 +720,42 @@ const SydneySEO = () => {
           </Link>
         </div>
       </div>
+
+      {/* BreadcrumbList Schema */}
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://odindigital.com.au/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://odindigital.com.au/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "SEO",
+                "item": "https://odindigital.com.au/services/seo"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Sydney",
+                "item": "https://odindigital.com.au/seo-sydney"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
     </>
   );
 };
