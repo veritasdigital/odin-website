@@ -25,6 +25,7 @@ import SydneySEO from "./pages/services/SydneySEO";
 import AdelaideSEO from "./pages/services/AdelaideSEO";
 import HobartSEO from "./pages/services/HobartSEO";
 import MelbourneSEO from "./pages/services/MelbourneSEO";
+import SEOAgency from "./pages/services/SEOAgency";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/services/google-ads" element={<GoogleAds />} />
             <Route path="/services/seo" element={<SEO />} />
+            <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/services/social-media" element={<SocialMedia />} />
             <Route path="/services/website-design" element={<WebsiteDesign />} />
             <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
