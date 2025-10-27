@@ -588,9 +588,9 @@ const HobartSEO = () => {
                     </CardDescription>
                     <Button asChild variant="hero" size="sm" className="w-full group text-xs sm:text-sm md:text-base">
                       <Link to="/contact" className="px-2 sm:px-4">
-                        <span className="hidden md:inline">{service.cta}</span>
-                        <span className="hidden sm:inline md:hidden">Free Audit →</span>
-                        <span className="sm:hidden">Audit →</span>
+                        <span className="hidden md:inline">Claim Your FREE Audit →</span>
+                        <span className="hidden sm:inline md:hidden">Claim FREE Audit</span>
+                        <span className="sm:hidden">Claim Audit</span>
                       </Link>
                     </Button>
                   </CardContent>
