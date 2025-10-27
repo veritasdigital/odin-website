@@ -278,10 +278,10 @@ const PerthSEO = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {metrics.map((metric, index) => (
                 <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                  <div className="text-5xl md:text-6xl font-black text-primary mb-2">
+                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2">
                     {metric.number}
                   </div>
-                  <div className="text-sm md:text-base text-muted-foreground">
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     {metric.label}
                   </div>
                 </div>
