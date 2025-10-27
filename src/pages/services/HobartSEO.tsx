@@ -590,7 +590,7 @@ const HobartSEO = () => {
                       <Link to="/contact" className="px-2 sm:px-4">
                         <span className="hidden md:inline">Claim Your FREE Audit →</span>
                         <span className="hidden sm:inline md:hidden">Claim FREE Audit</span>
-                        <span className="sm:hidden">Claim Audit</span>
+                        <span className="sm:hidden">Get FREE Audit Now</span>
                       </Link>
                     </Button>
                   </CardContent>
