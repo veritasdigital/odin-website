@@ -499,9 +499,10 @@ const HobartSEO = () => {
               <p className="text-lg md:text-xl mb-8 text-foreground/90">
                 At Odin Digital, we do things differently. We're a performance-focused SEO company in Hobart that measures success by one thing only: <strong>your bottom line</strong>. We don't care about vanity metrics. We care about leads, sales, and revenue. And we back it up with a no-lock-in-contract guarantee.
               </p>
-              <Button asChild size="xl" variant="cta" className="group">
+              <Button asChild size="xl" variant="cta" className="group text-base md:text-lg">
                 <Link to="/contact">
-                  Get Your FREE Hobart SEO Strategy
+                  <span className="hidden sm:inline">Get Your FREE Hobart SEO Strategy</span>
+                  <span className="sm:hidden">Get FREE Strategy</span>
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -585,9 +586,10 @@ const HobartSEO = () => {
                     <CardDescription className="text-base">
                       {service.description}
                     </CardDescription>
-                    <Button asChild variant="hero" className="w-full group">
+                    <Button asChild variant="hero" className="w-full group text-sm md:text-base">
                       <Link to="/contact">
-                        {service.cta}
+                        <span className="hidden sm:inline">{service.cta}</span>
+                        <span className="sm:hidden">Get FREE Audit</span>
                       </Link>
                     </Button>
                   </CardContent>
@@ -688,9 +690,10 @@ const HobartSEO = () => {
               <p className="text-xl md:text-2xl mb-8 opacity-90">
                 Stop wasting money on agencies that don't deliver. Book your free, no-obligation SEO strategy call today and discover exactly how we can transform your online presence into a revenue-generating machine. No sales pitch. No BS. Just a clear, actionable roadmap to dominate your market.
               </p>
-              <Button asChild size="xl" variant="secondary" className="group shadow-lg hover:shadow-xl">
+              <Button asChild size="xl" variant="secondary" className="group shadow-lg hover:shadow-xl text-base md:text-lg">
                 <Link to="/contact">
-                  Get Your FREE Hobart SEO Strategy
+                  <span className="hidden sm:inline">Get Your FREE Hobart SEO Strategy</span>
+                  <span className="sm:hidden">Get FREE Strategy</span>
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -739,11 +742,12 @@ const HobartSEO = () => {
         </section>
 
         {/* Sticky Mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t md:hidden z-50">
-          <Button asChild size="lg" variant="cta" className="w-full group">
+        <div className="fixed bottom-0 left-0 right-0 p-3 bg-background/95 backdrop-blur-sm border-t md:hidden z-50">
+          <Button asChild size="lg" variant="cta" className="w-full group text-sm">
             <Link to="/contact">
-              Get Your FREE SEO Strategy
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <span className="hidden xs:inline">Get Your FREE SEO Strategy</span>
+              <span className="xs:hidden">FREE Strategy</span>
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
         </div>
