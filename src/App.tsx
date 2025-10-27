@@ -20,6 +20,7 @@ import WebsiteDesign from "./pages/services/WebsiteDesign";
 import FunnelDevelopment from "./pages/services/FunnelDevelopment";
 import MarketingConsulting from "./pages/services/MarketingConsulting";
 import BrisbaneSEO from "./pages/services/BrisbaneSEO";
+import PerthSEO from "./pages/services/PerthSEO";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
             <Route path="/services/marketing-consulting" element={<MarketingConsulting />} />
             <Route path="/seo-brisbane" element={<BrisbaneSEO />} />
+            <Route path="/seo-perth" element={<PerthSEO />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
