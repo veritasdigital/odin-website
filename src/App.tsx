@@ -30,6 +30,7 @@ import MelbourneSEO from "./pages/services/MelbourneSEO";
 import SEOAgency from "./pages/services/SEOAgency";
 import EcommerceSEO from "./pages/services/EcommerceSEO";
 import LocalSEO from "./pages/services/LocalSEO";
+import Dermatologists from "./pages/industries/Dermatologists";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const App = () => (
             <Route path="/seo-adelaide" element={<AdelaideSEO />} />
             <Route path="/seo-hobart" element={<HobartSEO />} />
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
+            <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
