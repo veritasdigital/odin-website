@@ -307,7 +307,7 @@ const SydneySEO = () => {
           <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 mt-8 leading-tight animate-fade-in">
                 Stop Paying for SEO That Doesn't Deliver Results
               </h1>
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
