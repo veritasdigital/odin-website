@@ -27,6 +27,7 @@ import HobartSEO from "./pages/services/HobartSEO";
 import MelbourneSEO from "./pages/services/MelbourneSEO";
 import SEOAgency from "./pages/services/SEOAgency";
 import EcommerceSEO from "./pages/services/EcommerceSEO";
+import LocalSEO from "./pages/services/LocalSEO";
 
 const queryClient = new QueryClient();
 
