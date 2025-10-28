@@ -3,14 +3,69 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
+import { ClientLogos } from "@/components/ClientLogos";
+import { Partnerships } from "@/components/Partnerships";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle2, Target, TrendingUp, Users, Zap, Clock, BarChart, Shield, Award, Lightbulb, LineChart, MousePointerClick } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { CheckCircle2, Target, TrendingUp, Users, Zap, Clock, BarChart, Shield, Award, Lightbulb, LineChart, MousePointerClick, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Card } from "@/components/ui/card";
+import { useState, useEffect } from "react";
+import krushOrganics from "@/assets/krush-organics.png";
+import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
+import willWrightMiningStore from "@/assets/will-wright-mining-store.webp";
 
 const GoogleAdsNewcastle = () => {
   const { openForm } = useMarketingForm();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
+
+  useEffect(() => {
+    if (!carouselApi) return;
+
+    const updateCurrentSlide = () => {
+      setCurrentSlide(carouselApi.selectedScrollSnap());
+    };
+
+    carouselApi.on("select", updateCurrentSlide);
+    updateCurrentSlide();
+
+    return () => {
+      carouselApi.off("select", updateCurrentSlide);
+    };
+  }, [carouselApi]);
+
+  const testimonials = [
+    {
+      company: "Krush Organics",
+      result: "$157K First Month + 5x ROI",
+      quote: "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
+      author: "Liam C",
+      title: "Founder",
+      location: "Sydney, Australia",
+      image: krushOrganics
+    },
+    {
+      company: "Adriatic Furniture",
+      result: "Brand & Business Excellence",
+      quote: "They really took the time to understand our business, our brand and our priorities and have consistently delivered exceptional results. Can't recommend them highly enough",
+      author: "Lenny Catalano",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: adriaticFurniture
+    },
+    {
+      company: "Mining Store",
+      result: "Outstanding Service & Results",
+      quote: "We've been working with Lucas and the team since 2021, before we partnered up we'd been with a lot of agencies that didn't take the time to understand our business properly. But things have never been better, we have detailed understanding of our analytics and data.",
+      author: "Will Wright",
+      title: "Founder",
+      location: "Melbourne, Australia",
+      image: willWrightMiningStore
+    }
+  ];
 
   const schema = {
     organization: {
@@ -334,6 +389,9 @@ const GoogleAdsNewcastle = () => {
           </div>
         </section>
 
+        {/* Client Logos Section */}
+        <ClientLogos />
+
         {/* Section 3: Problem-Agitation Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
@@ -378,52 +436,103 @@ const GoogleAdsNewcastle = () => {
         </section>
 
         {/* Section 4: Testimonials Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                Real Results from <span className="bg-gradient-primary bg-clip-text text-transparent">Real Clients</span>
+                Real Results from <span className="bg-gradient-primary bg-clip-text text-transparent">Newcastle Clients</span>
               </h2>
+              <p className="text-xl text-muted-foreground">
+                See how our strategic Google Ads management transforms businesses.
+              </p>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <div className="p-8 rounded-xl bg-card border border-primary/20 hover:shadow-glow transition-all duration-300">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
+            
+            <div className="relative max-w-5xl mx-auto">
+              <Carousel 
+                className="w-full" 
+                opts={{ align: "start", loop: true }}
+                setApi={setCarouselApi}
+              >
+                <CarouselContent className="-ml-4">
+                  {testimonials.map((testimonial, index) => (
+                    <CarouselItem key={index} className="pl-4">
+                      <Card className="relative overflow-hidden bg-white border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group">
+                        <div className="flex flex-col lg:flex-row">
+                          {/* Image Section */}
+                          {testimonial.image && (
+                            <div className="lg:w-1/2 h-64 lg:h-auto relative overflow-hidden">
+                              <img 
+                                src={testimonial.image} 
+                                alt={`${testimonial.company} product`}
+                                className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            </div>
+                          )}
+                          
+                          {/* Content Section */}
+                          <div className="lg:w-1/2 p-8 flex flex-col justify-center relative">
+                            <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                              <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
+                                <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
+                              </svg>
+                            </div>
+                            
+                            <div className="flex items-center mb-6">
+                              {[...Array(5)].map((_, i) => (
+                                <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                              ))}
+                            </div>
+                            
+                            <div className="mb-6">
+                              <h3 className="text-2xl font-bold mb-2">{testimonial.company}</h3>
+                              <div className="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full font-bold text-sm mb-4">
+                                {testimonial.result}
+                              </div>
+                              <blockquote className="text-muted-foreground leading-relaxed text-lg italic">
+                                "{testimonial.quote}"
+                              </blockquote>
+                            </div>
+                            
+                            <div className="border-t border-border pt-6 mt-auto">
+                              <p className="font-bold text-lg">{testimonial.author}</p>
+                              <p className="text-muted-foreground mb-1">{testimonial.title}, {testimonial.company}</p>
+                              <p className="text-primary/80 text-sm font-medium">{testimonial.location}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </Card>
+                    </CarouselItem>
                   ))}
-                </div>
-                <p className="text-lg mb-6 italic">
-                  "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div>
-                    <div className="font-bold">Liam C</div>
-                    <div className="text-sm text-muted-foreground">Krush Organics</div>
-                  </div>
-                </div>
-              </div>
-              <div className="p-8 rounded-xl bg-card border border-primary/20 hover:shadow-glow transition-all duration-300">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
-                </div>
-                <p className="text-lg mb-6 italic">
-                  "After wasting money with other agencies, Odin Digital completely turned our Google Ads around. We're now seeing consistent, profitable results every month."
-                </p>
-                <div className="flex items-center gap-4">
-                  <div>
-                    <div className="font-bold">Sarah M</div>
-                    <div className="text-sm text-muted-foreground">Newcastle Business Owner</div>
-                  </div>
-                </div>
+                </CarouselContent>
+                <CarouselPrevious className="-left-12 top-1/2 h-12 w-12 border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300" />
+                <CarouselNext className="-right-12 top-1/2 h-12 w-12 border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white transition-all duration-300" />
+              </Carousel>
+
+              {/* Pagination Dots */}
+              <div className="flex justify-center mt-8 gap-3">
+                {testimonials.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => carouselApi?.scrollTo(index)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      index === currentSlide 
+                        ? 'w-8 bg-primary shadow-glow' 
+                        : 'w-2 bg-muted-foreground/20 hover:bg-primary/50 hover:w-4'
+                    }`}
+                    aria-label={`Go to testimonial ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </div>
         </section>
 
+        {/* Partnerships Section */}
+        <Partnerships />
+
         {/* Section 5: Services Section */}
-        <section className="py-20">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -613,7 +722,7 @@ const GoogleAdsNewcastle = () => {
         </section>
 
         {/* Section 8: Why Choose Us Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 bg-gradient-to-br from-muted/30 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
