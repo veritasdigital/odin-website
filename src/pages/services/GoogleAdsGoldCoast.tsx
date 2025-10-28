@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -9,6 +10,7 @@ import { ArrowRight, Target, TrendingUp, Users, Award, CheckCircle, Shield, Zap,
 
 const GoogleAdsGoldCoast = () => {
   const { openForm } = useMarketingForm();
+  const navigate = useNavigate();
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -314,6 +316,16 @@ const GoogleAdsGoldCoast = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        {/* Mobile Sticky CTA */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
+          <Button 
+            onClick={() => navigate('/contact')}
+            size="lg" 
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold"
+          >
+            Get FREE Strategy Session
+          </Button>
+        </div>
         
         {/* Hero Section */}
         <section className="pt-28 pb-20 md:py-32 px-4">
