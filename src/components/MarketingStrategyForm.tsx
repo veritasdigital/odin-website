@@ -7,6 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { z } from "zod";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 interface MarketingStrategyFormProps {
   isOpen: boolean;
@@ -133,11 +134,31 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
     setCurrentStep(prev => Math.max(prev - 1, 1));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (validateStep(3)) {
-      console.log('Form submitted:', formData);
-      toast.success("Thank you! We'll be in touch soon with your marketing strategy.");
-      onClose();
+      try {
+        const { error } = await supabase.from('form_submissions').insert([{
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          industry: formData.industry,
+          current_marketing: formData.currentMarketing,
+          monthly_budget: formData.monthlyBudget,
+          primary_goal: formData.primaryGoal,
+          target_audience: formData.targetAudience,
+          current_challenges: formData.currentChallenges,
+        }]);
+
+        if (error) throw error;
+
+        toast.success("Thank you! We'll be in touch soon with your marketing strategy.");
+        onClose();
+      } catch (error) {
+        console.error('Form submission failed:', error instanceof Error ? error.message : 'Unknown error');
+        toast.error('Submission failed. Please try again.');
+      }
     }
   };
 
