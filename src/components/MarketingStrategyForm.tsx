@@ -165,17 +165,18 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-0 md:p-4 overflow-hidden">
+      <button
+        onClick={onClose}
+        className="absolute top-3 left-3 bg-white/80 hover:bg-white text-foreground rounded-full p-2 shadow-card border border-border z-[60]"
+        aria-label="Close form"
+      >
+        <X className="w-5 h-5" />
+      </button>
       <div className="bg-white h-screen w-full md:max-w-5xl animate-slide-in-right shadow-2xl rounded-none md:rounded-lg flex flex-col">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Side - Copy & Proof */}
           <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 max-h-full overflow-y-auto no-scrollbar">
-            <button
-              onClick={onClose}
-              className="absolute top-4 left-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 text-white transition-all z-50 cursor-pointer border border-white/30 flex items-center justify-center"
-              aria-label="Close form"
-            >
-              <X className="w-6 h-6" />
-            </button>
+            {/* Close button moved to overlay container */}
             
             <div className="p-6 md:p-8 space-y-4 md:space-y-6">
               <div className="decorative-circles">
