@@ -492,17 +492,17 @@ const MelbourneSEO = () => {
                 const MetricCounter = () => {
                   const { count, countRef } = useCountUp(metric.value);
                   return (
-                    <div ref={countRef} className="text-5xl md:text-6xl font-bold text-primary mb-2">
+                    <div ref={countRef} className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 break-words">
                       ${count}{metric.suffix}
                     </div>
                   );
                 };
 
                 return (
-                  <Card key={index} className="text-center p-6">
-                    <CardContent className="pt-6">
+                  <Card key={index} className="text-center p-4 md:p-6">
+                    <CardContent className="pt-4 md:pt-6">
                       <MetricCounter />
-                      <p className="text-muted-foreground">{metric.label}</p>
+                      <p className="text-sm md:text-base text-muted-foreground break-words">{metric.label}</p>
                     </CardContent>
                   </Card>
                 );
