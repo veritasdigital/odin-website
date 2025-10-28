@@ -266,8 +266,10 @@ const GoogleAdsAdelaide = () => {
               If you're an Adelaide business owner throwing thousands into Google Ads each month with little to show for it, you're not alone. Most PPC agencies treat your budget like a bottomless pit, padding their retainers while your ROAS remains abysmal. We're different. We're a precision-focused adwords management adelaide team that treats your ad spend like our own—because your success is our reputation.
             </p>
             <Link to="/contact">
-              <Button size="lg" className="w-full md:w-auto justify-center text-sm md:text-lg px-4 md:px-8 py-4 md:py-6 bg-accent hover:bg-accent/90">
-                Get Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="w-full md:w-auto justify-center text-xs md:text-lg px-3 md:px-8 py-4 md:py-6 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+                <span className="hidden md:inline">Get Your FREE Adelaide PPC Strategy Session</span>
+                <span className="md:hidden">Get Your FREE PPC Strategy Session</span>
+                <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </Link>
             <div className="mt-12 flex flex-wrap justify-center gap-8 text-center">
@@ -334,10 +336,10 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="w-full md:w-auto justify-center text-xs md:text-base px-3 md:px-6 py-3 md:py-4 bg-accent hover:bg-accent/90">
+                <Button size="lg" className="w-full md:w-auto justify-center text-xs md:text-base px-3 md:px-6 py-3 md:py-4 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem] md:min-h-0">
                   <span className="hidden md:inline">Stop the Budget Bleed: Talk to a PPC Expert</span>
                   <span className="md:hidden">Talk to a PPC Expert</span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                 </Button>
               </Link>
             </div>
@@ -387,8 +389,10 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="w-full md:w-auto justify-center text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
-                  See Our Adelaide PPC Management Packages <ArrowRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="w-full md:w-auto justify-center text-xs md:text-base px-3 md:px-6 py-4 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+                  <span className="hidden md:inline">See Our Adelaide PPC Management Packages</span>
+                  <span className="md:hidden">See Our PPC Packages</span>
+                  <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                 </Button>
               </Link>
             </div>
@@ -438,8 +442,10 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="w-full md:w-auto justify-center text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
-                  Ready for a Custom Google Ads Strategy? Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="w-full md:w-auto justify-center text-xs md:text-base px-3 md:px-6 py-4 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+                  <span className="hidden md:inline">Ready for a Custom Google Ads Strategy? Contact Us</span>
+                  <span className="md:hidden">Get Custom Strategy</span>
+                  <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                 </Button>
               </Link>
             </div>
@@ -561,8 +567,10 @@ const GoogleAdsAdelaide = () => {
               Stop guessing with your ppc adelaide budget. Start working with ppc experts adelaide who deliver precision, transparency, and profit.
             </p>
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="w-full md:w-auto justify-center text-sm md:text-lg px-4 md:px-8 py-4 md:py-6">
-                Claim Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" variant="secondary" className="w-full md:w-auto justify-center text-xs md:text-lg px-3 md:px-8 py-4 md:py-6 whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+                <span className="hidden md:inline">Claim Your FREE Adelaide PPC Strategy Session</span>
+                <span className="md:hidden">Claim Your FREE Strategy Session</span>
+                <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </Link>
           </div>
@@ -572,8 +580,8 @@ const GoogleAdsAdelaide = () => {
         {showStickyButton && (
           <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border md:hidden z-50 shadow-lg">
             <Link to="/contact" className="block">
-              <Button size="lg" className="w-full justify-center text-sm px-4 py-3 bg-accent hover:bg-accent/90">
-                Get Your FREE Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="w-full justify-center text-xs px-3 py-3 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem]">
+                Get Your FREE Strategy Session <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </Link>
           </div>
