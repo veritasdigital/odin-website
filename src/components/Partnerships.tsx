@@ -55,29 +55,27 @@ export const Partnerships = () => {
   const duplicatedPartners = [...partners, ...partners];
 
   return (
-    <section className="py-16 bg-background">
+    <section className="py-8 bg-background border-y border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
-            We're verified and trusted by the best, here are some of our partnerships
-          </h2>
+        <div className="text-center mb-6">
+          <h3 className="text-lg font-bold text-muted-foreground mb-4">
+            Certified Partners
+          </h3>
         </div>
 
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll hover:pause-animation">
-            {duplicatedPartners.map((partner, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-60 mx-4 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-charcoal/10 hover:shadow-glow transition-all duration-300"
-              >
-                <img
-                  src={partner.logo}
-                  alt={partner.alt}
-                  className="max-h-16 max-w-full object-contain transition-all duration-300 hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          {partners.map((partner, index) => (
+            <div
+              key={index}
+              className="flex-shrink-0 w-32 flex items-center justify-center h-20 p-3 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
+            >
+              <img
+                src={partner.logo}
+                alt={partner.alt}
+                className="max-h-12 max-w-full object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

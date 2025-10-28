@@ -389,6 +389,9 @@ const GoogleAdsNewcastle = () => {
           </div>
         </section>
 
+        {/* Partnerships Section */}
+        <Partnerships />
+
         {/* Client Logos Section */}
         <ClientLogos />
 
@@ -528,8 +531,6 @@ const GoogleAdsNewcastle = () => {
           </div>
         </section>
 
-        {/* Partnerships Section */}
-        <Partnerships />
 
         {/* Section 5: Services Section */}
         <section className="py-20 bg-background">
