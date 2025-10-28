@@ -156,7 +156,6 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
         toast.success("Thank you! We'll be in touch soon with your marketing strategy.");
         onClose();
       } catch (error) {
-        console.error('Form submission failed:', error instanceof Error ? error.message : 'Unknown error');
         toast.error('Submission failed. Please try again.');
       }
     }
