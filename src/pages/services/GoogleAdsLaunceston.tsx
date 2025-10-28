@@ -370,7 +370,7 @@ const GoogleAdsLaunceston = () => {
             <div className="text-center">
               <Button 
                 variant="cta" 
-                size="lg"
+                size="default"
                 onClick={() => navigate('/contact')}
               >
                 Stop the Budget Bleed: Talk to a PPC Expert →
