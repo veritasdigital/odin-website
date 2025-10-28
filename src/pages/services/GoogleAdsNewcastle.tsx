@@ -5,7 +5,7 @@ import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
 import googleLogo from "@/assets/partners/google-logo.png";
-import metaPartner from "@/assets/partners/meta-partner-2024.png";
+import metaLogo from "@/assets/partners/meta-logo.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
 import hubspotPartner from "@/assets/partners/hubspot-certified-agency-partner.png";
 import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
@@ -375,7 +375,7 @@ const GoogleAdsNewcastle = () => {
                     <img src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={metaPartner} alt="Meta Business Partner 2024" className="max-h-8 max-w-full object-contain" />
+                    <img src={metaLogo} alt="Meta" className="max-h-8 max-w-full object-contain" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
                     <img src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" />
