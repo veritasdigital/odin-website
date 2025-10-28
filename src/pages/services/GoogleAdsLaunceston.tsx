@@ -273,7 +273,7 @@ const GoogleAdsLaunceston = () => {
               <Button 
                 variant="cta" 
                 size="lg"
-                className="text-base sm:text-lg px-6 sm:px-10 py-6 sm:py-8"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-5 sm:py-6 md:py-8 whitespace-normal leading-tight"
                 onClick={() => navigate('/contact')}
               >
                 <span className="sm:hidden">Get FREE Strategy →</span>
@@ -371,9 +371,11 @@ const GoogleAdsLaunceston = () => {
               <Button 
                 variant="cta" 
                 size="default"
+                className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 whitespace-normal leading-tight"
                 onClick={() => navigate('/contact')}
               >
-                Stop the Budget Bleed: Talk to a PPC Expert →
+                <span className="sm:hidden">Talk to PPC Expert →</span>
+                <span className="hidden sm:inline">Stop the Budget Bleed: Talk to a PPC Expert →</span>
               </Button>
             </div>
           </div>
@@ -642,10 +644,11 @@ const GoogleAdsLaunceston = () => {
             <Button 
               variant="cta" 
               size="lg"
-              className="text-lg px-10 py-8"
+              className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-5 sm:py-6 md:py-8 whitespace-normal leading-tight"
               onClick={() => navigate('/contact')}
             >
-              Claim Your FREE Launceston PPC Strategy Session →
+              <span className="sm:hidden">FREE Strategy Session →</span>
+              <span className="hidden sm:inline">Claim Your FREE Launceston PPC Strategy Session →</span>
             </Button>
           </div>
         </section>
