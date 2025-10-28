@@ -313,7 +313,7 @@ const GoogleAdsNewcastle = () => {
         {/* Section 2: Social Proof Metrics */}
         <section className="py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center p-6 rounded-xl bg-gradient-to-br from-background to-primary/5 border border-primary/10 hover:shadow-primary transition-all duration-300">
                 <div className="text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">540%</div>
                 <div className="text-muted-foreground">Average ROI</div>
