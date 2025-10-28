@@ -10,6 +10,7 @@ import shopifyPartner from "@/assets/partners/shopify-partner.svg";
 import hubspotPartner from "@/assets/partners/hubspot-certified-agency-partner.png";
 import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
 import microsoftLogo from "@/assets/partners/microsoft-logo.png";
+import instagramLogo from "@/assets/partners/instagram-logo.jpg";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -388,6 +389,9 @@ const GoogleAdsNewcastle = () => {
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
                     <img src={microsoftLogo} alt="Microsoft" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={instagramLogo} alt="Instagram" className="max-h-8 max-w-full object-contain" />
                   </div>
                 </div>
               </div>
