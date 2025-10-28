@@ -1,15 +1,15 @@
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { SideTab } from "@/components/SideTab";
 import { Target, Calendar, TrendingUp, Award, MapPin, BarChart3, Filter, Zap } from "lucide-react";
 
 const GoogleAdsDarwin = () => {
-  const { openForm } = useMarketingForm();
+  const navigate = useNavigate();
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -267,7 +267,7 @@ const GoogleAdsDarwin = () => {
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
           <Button 
-            onClick={openForm}
+            onClick={() => navigate('/contact')}
             size="lg" 
             className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold"
           >
@@ -297,7 +297,7 @@ const GoogleAdsDarwin = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
-                  onClick={openForm}
+                  onClick={() => navigate('/contact')}
                   size="xl" 
                   variant="cta"
                   className="group"
@@ -393,7 +393,7 @@ const GoogleAdsDarwin = () => {
 
               <div className="text-center mt-12">
                 <Button 
-                  onClick={openForm}
+                  onClick={() => navigate('/contact')}
                   size="xl" 
                   variant="cta"
                 >
@@ -469,7 +469,7 @@ const GoogleAdsDarwin = () => {
 
               <div className="text-center mt-12">
                 <Button 
-                  onClick={openForm}
+                  onClick={() => navigate('/contact')}
                   size="xl" 
                   variant="cta"
                 >
@@ -537,7 +537,7 @@ const GoogleAdsDarwin = () => {
 
               <div className="text-center mt-12">
                 <Button 
-                  onClick={openForm}
+                  onClick={() => navigate('/contact')}
                   size="xl" 
                   variant="cta"
                 >
@@ -592,7 +592,7 @@ const GoogleAdsDarwin = () => {
                 Stop guessing with your ppc darwin budget. Start working with ppc experts darwin who deliver precision, transparency, and profit in Darwin's unique market.
               </p>
               <Button 
-                onClick={openForm}
+                onClick={() => navigate('/contact')}
                 size="xl" 
                 className="bg-white text-primary hover:bg-white/90 font-bold text-lg"
               >
