@@ -16,6 +16,7 @@ import NotFound from "./pages/NotFound";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
 import GoogleAdsCanberra from "./pages/services/GoogleAdsCanberra";
+import GoogleAdsAdelaide from "./pages/services/GoogleAdsAdelaide";
 import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/services/google-ads" element={<GoogleAds />} />
             <Route path="/google-ads-management" element={<GoogleAdsManagement />} />
             <Route path="/google-ads-canberra" element={<GoogleAdsCanberra />} />
+            <Route path="/google-ads-adelaide" element={<GoogleAdsAdelaide />} />
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
