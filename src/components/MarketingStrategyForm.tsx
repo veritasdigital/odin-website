@@ -171,7 +171,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 md:min-h-full">
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 md:top-10 md:left-2 text-white hover:text-primary transition-colors z-50 cursor-pointer"
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-2 text-white transition-all z-50 cursor-pointer border border-white/30"
+              aria-label="Close form"
             >
               <X className="w-6 h-6" />
             </button>
