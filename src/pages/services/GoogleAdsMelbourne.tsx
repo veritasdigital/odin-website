@@ -617,12 +617,12 @@ export default function GoogleAdsMelbourne() {
             </div>
             <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-6 md:p-8 hover:shadow-glow transition-all duration-300">
+                <Card key={index} className="p-6 md:p-8 hover:shadow-glow transition-all duration-300 flex flex-col">
                   <MessageSquare className="w-8 h-8 text-[#D91C5C] mb-4" />
-                  <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                  <p className="text-muted-foreground mb-6 leading-relaxed italic flex-grow">
                     "{testimonial.text}"
                   </p>
-                  <div className="border-t pt-4">
+                  <div className="border-t pt-4 mt-auto">
                     <p className="font-bold">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
