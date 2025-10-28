@@ -390,7 +390,7 @@ export default function GoogleAdsHobart() {
         <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
+              <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
                 Hobart Google Ads Agency: Stop Wasting Your Budget. Start Dominating Tasmania's Market.
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 md:mb-6 text-foreground">
