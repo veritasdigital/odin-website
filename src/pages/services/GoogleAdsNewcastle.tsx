@@ -291,7 +291,7 @@ const GoogleAdsNewcastle = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-primary opacity-5 rounded-full blur-3xl" />
           </div>
 
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-4 relative z-10 mt-16">
             <div className="max-w-4xl mx-auto text-center space-y-8">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">Newcastle's #1</span>
