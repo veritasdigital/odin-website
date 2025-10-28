@@ -262,7 +262,10 @@ const GoogleAdsDarwin = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
-        <SideTab />
+        {/* Hide SideTab on mobile since we have a sticky CTA */}
+        <div className="hidden md:block">
+          <SideTab />
+        </div>
         
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
