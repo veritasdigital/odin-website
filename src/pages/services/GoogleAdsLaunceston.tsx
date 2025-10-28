@@ -249,7 +249,7 @@ const GoogleAdsLaunceston = () => {
           <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '3s' }} />
 
           <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-8 mt-16 md:mt-20">
               Google Ads Agency Launceston
             </h1>
             
