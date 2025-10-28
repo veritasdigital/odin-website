@@ -206,10 +206,10 @@ export const MarketingStrategyForm = ({
                       <p className="text-sm opacity-80">Based on 300+ successful campaigns</p>
                     </div>
                   </div>
-                </div>
 
-                <div className="bg-white/10 p-4 rounded-lg">
-                  <p className="text-sm font-medium">💡 This strategy session is completely FREE with no obligations.</p>
+                  <div className="bg-white/10 p-4 rounded-lg mt-6">
+                    <p className="text-sm font-medium">💡 This strategy session is completely FREE with no obligations.</p>
+                  </div>
                 </div>
               </div>
             </div>
