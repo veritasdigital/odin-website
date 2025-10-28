@@ -55,9 +55,7 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className={`flex items-center space-x-1 font-medium transition-colors cursor-pointer ${
-                isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
-              }`}>
+              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary">
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
@@ -82,19 +80,13 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/about" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary">
               About
             </a>
-            <a href="/blog" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="/blog" className="font-medium transition-colors text-foreground hover:text-primary">
               Blog
             </a>
-            <a href="/contact" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-charcoal/70 hover:text-primary'
-            }`}>
+            <a href="/contact" className="font-medium transition-colors text-foreground hover:text-primary">
               Contact
             </a>
           </nav>
