@@ -366,7 +366,7 @@ const GoogleAdsBrisbane = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden gradient-hero">
+        <section className="relative pt-24 pb-16 md:py-24 lg:py-32 overflow-hidden gradient-hero">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-20 right-20 w-64 h-64 bg-primary rounded-full blur-3xl animate-pulse-glow" />
             <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent rounded-full blur-3xl animate-pulse-glow" />
@@ -402,9 +402,9 @@ const GoogleAdsBrisbane = () => {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-primary transition-smooth w-full sm:w-auto"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight"
               >
-                Get Your FREE Brisbane PPC Strategy Session →
+                Get FREE Strategy Session →
               </Button>
             </div>
           </div>
@@ -573,9 +573,9 @@ const GoogleAdsBrisbane = () => {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-primary transition-smooth w-full sm:w-auto"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight"
               >
-                Claim Your FREE Brisbane PPC Strategy Session →
+                Claim FREE Strategy Session →
               </Button>
             </div>
           </div>
