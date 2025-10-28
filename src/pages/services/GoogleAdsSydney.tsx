@@ -453,7 +453,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight whitespace-normal break-words text-center h-auto min-h-[3rem]"
               >
                 Get FREE Sydney PPC Strategy →
               </Button>
@@ -496,7 +496,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight h-auto min-h-[3rem]"
               >
                 Stop the Budget Bleed: Talk to a PPC Expert →
               </Button>
@@ -535,7 +535,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight h-auto min-h-[3rem]"
               >
                 See Our Sydney PPC Packages →
               </Button>
@@ -574,7 +574,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-4 md:px-6 lg:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-4 md:px-6 lg:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight h-auto min-h-[3rem]"
               >
                 Ready for a Custom Strategy? →
               </Button>
@@ -613,7 +613,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight h-auto min-h-[3rem]"
               >
                 Talk to a Sydney PPC Specialist →
               </Button>
@@ -663,7 +663,7 @@ const GoogleAdsSydney = () => {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight whitespace-normal break-words text-center h-auto min-h-[3rem]"
               >
                 Claim FREE Sydney PPC Strategy →
               </Button>
@@ -679,7 +679,7 @@ const GoogleAdsSydney = () => {
         <div className="fixed bottom-0 left-0 right-0 z-50 p-3 bg-white shadow-lg md:hidden border-t border-border">
           <Button 
             onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary text-sm py-5"
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary text-sm py-5 whitespace-normal break-words text-center leading-tight h-auto min-h-[3rem]"
           >
             Get FREE Strategy Session →
           </Button>
