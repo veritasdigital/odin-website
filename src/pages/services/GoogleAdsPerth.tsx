@@ -432,8 +432,8 @@ export default function GoogleAdsPerth() {
         <SideTab />
 
         {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 py-4">
-          <nav className="text-sm text-muted-foreground">
+        <div className="container mx-auto px-4 md:px-6 py-3 md:py-4">
+          <nav className="text-xs sm:text-sm text-muted-foreground">
             <Link to="/" className="hover:text-primary">Home</Link>
             {" > "}
             <Link to="/services" className="hover:text-primary">Services</Link>
@@ -445,16 +445,16 @@ export default function GoogleAdsPerth() {
         </div>
 
         {/* Section 1: Hero Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-          <div className="container mx-auto px-4">
+        <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
                 Stop Wasting Money. Start Maximizing ROI. The Perth Google Ads Agency Focused on Profit.
               </h1>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 text-foreground">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 md:mb-6 text-foreground">
                 Tired of Perth's high Cost-Per-Click eating your budget with zero return?
               </h2>
-              <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
                 Look, running Google Ads in Perth is a high-stakes game. You need more than just clicks; you need a strategy that turns your high ad spend into predictable, profitable revenue. At Odin Digital, we specialize in performance-focused PPC management. We're not a generic, set-and-forget agency—we're a dedicated partner with a proven track record of delivering massive returns for businesses just like yours. With no lock-in contracts, we earn your business every single month.
               </p>
               <Button 
@@ -470,12 +470,12 @@ export default function GoogleAdsPerth() {
 
         {/* Section 2: Social Proof Metrics */}
         <section className="py-12 md:py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2">The Proof Is in the Performance</h2>
-              <p className="text-muted-foreground">We're not just making promises; we're delivering verified results.</p>
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-6 md:mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">The Proof Is in the Performance</h2>
+              <p className="text-sm md:text-base text-muted-foreground">We're not just making promises; we're delivering verified results.</p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
               {socialProofMetrics.map((metric, index) => (
                 <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#D91C5C] mb-2">
@@ -492,16 +492,16 @@ export default function GoogleAdsPerth() {
 
         {/* Section 3: Problem-Agitation */}
         <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 Does This Sound Familiar? Your Perth PPC Isn't Working.
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 You've invested heavily in Google Ads, but the results are nowhere to be found. Let's be honest, it's frustrating.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-10">
               {problemPoints.map((point, index) => (
                 <Card key={index} className="p-6 md:p-8 hover:shadow-glow transition-all duration-300">
                   <div className="mb-4">{point.icon}</div>
@@ -515,9 +515,9 @@ export default function GoogleAdsPerth() {
 
         {/* Section 4: Testimonials */}
         <section className="py-12 md:py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 What Our Clients Say
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
@@ -543,16 +543,16 @@ export default function GoogleAdsPerth() {
 
         {/* Section 5: Services */}
         <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 Perth Google Ads Services Designed for Maximum ROI
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We offer a complete suite of professional PPC management services to help your Perth business dominate the search results.
               </p>
             </div>
-            <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto mb-10">
               {services.map((service, index) => (
                 <Card key={index} className="p-6 md:p-8 hover:shadow-glow transition-all duration-300 flex flex-col">
                   <div className="mb-4">{service.icon}</div>
@@ -573,16 +573,16 @@ export default function GoogleAdsPerth() {
 
         {/* Section 6: Differentiators */}
         <section className="py-12 md:py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 The Odin Digital Difference: Why We're the Best PPC Agency Perth
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Why choose us as your Perth PPC agency? Because we do things differently.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
               {differentiators.map((diff, index) => (
                 <Card key={index} className="p-6 hover:shadow-glow transition-all duration-300">
                   <div className="mb-4">{diff.icon}</div>
@@ -596,16 +596,16 @@ export default function GoogleAdsPerth() {
 
         {/* Section 7: Process */}
         <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 Our Proven 4-Step PPC Management Process
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We follow a simple, effective process to deliver consistent, measurable results.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
               {processSteps.map((step, index) => (
                 <Card key={index} className="p-6 hover:shadow-glow transition-all duration-300">
                   <div className="text-4xl font-bold text-[#D91C5C] mb-4">{step.number}</div>
@@ -619,16 +619,16 @@ export default function GoogleAdsPerth() {
 
         {/* Section 8: Why Choose Us */}
         <section className="py-12 md:py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                 Why Choose Odin Digital as Your Perth PPC Partner?
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 You have a lot of choices when it comes to PPC agencies. Here's why we're the right choice for your Perth business.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
               {whyChoosePoints.map((point, index) => (
                 <Card key={index} className="p-6 hover:shadow-glow transition-all duration-300">
                   <div className="mb-4">{point.icon}</div>
@@ -642,15 +642,15 @@ export default function GoogleAdsPerth() {
 
         {/* Section 9: Final CTA */}
         <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                 Ready to Turn Your Google Ads into a Profit Machine?
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 Stop wasting money on ineffective PPC and start investing in a strategy that delivers real, measurable ROI. Let us show you what's possible.
               </p>
-              <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
                 Take the first step towards unlocking your business's true growth potential. Schedule your FREE, no-obligation Google Ads strategy audit with one of our senior strategists today. We'll analyze your current account, identify your biggest opportunities, and show you exactly how we can help you achieve a 540% average ROI. What do you have to lose?
               </p>
               <Button 
@@ -666,10 +666,10 @@ export default function GoogleAdsPerth() {
 
         {/* Section 10: FAQ */}
         <section className="py-12 md:py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <div className="text-center mb-8 md:mb-12">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4">
                   Frequently Asked Questions About PPC in Perth
                 </h2>
               </div>
