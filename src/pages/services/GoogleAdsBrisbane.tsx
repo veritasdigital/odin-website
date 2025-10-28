@@ -523,7 +523,7 @@ const GoogleAdsBrisbane = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-4 md:px-6 lg:px-8 py-4 md:py-5 whitespace-normal break-words text-center leading-tight"
               >
                 Ready for a Custom Google Ads Strategy? Contact Us →
               </Button>
