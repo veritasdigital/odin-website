@@ -366,7 +366,7 @@ const GoogleAdsBrisbane = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden gradient-hero">
+        <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden gradient-hero">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-20 right-20 w-64 h-64 bg-primary rounded-full blur-3xl animate-pulse-glow" />
             <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent rounded-full blur-3xl animate-pulse-glow" />
@@ -374,35 +374,35 @@ const GoogleAdsBrisbane = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-slide-up">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 animate-slide-up leading-tight">
                 Brisbane Google Ads Agency: Stop Wasting Your Budget. Start Driving Real Revenue.
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground/90 mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary-foreground/90 mb-4 md:mb-6 leading-snug">
                 The PPC Agency Brisbane Businesses Trust for Maximum ROI in Australia's Most Competitive Market.
               </h2>
-              <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-primary-foreground/80 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
                 Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
               </p>
               
-              <div className="flex flex-wrap justify-center gap-4 mb-12">
-                <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-white">$574M+</p>
-                  <p className="text-sm text-primary-foreground/80">Client Revenue</p>
+              <div className="flex flex-wrap justify-center gap-3 md:gap-4 mb-8 md:mb-12">
+                <div className="bg-white/10 backdrop-blur-sm px-4 md:px-6 py-2 md:py-3 rounded-lg">
+                  <p className="text-2xl md:text-3xl font-bold text-white">$574M+</p>
+                  <p className="text-xs md:text-sm text-primary-foreground/80">Client Revenue</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-white">95%</p>
-                  <p className="text-sm text-primary-foreground/80">Client Retention</p>
+                <div className="bg-white/10 backdrop-blur-sm px-4 md:px-6 py-2 md:py-3 rounded-lg">
+                  <p className="text-2xl md:text-3xl font-bold text-white">95%</p>
+                  <p className="text-xs md:text-sm text-primary-foreground/80">Client Retention</p>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm px-6 py-3 rounded-lg">
-                  <p className="text-3xl font-bold text-white">10+</p>
-                  <p className="text-sm text-primary-foreground/80">Years Experience</p>
+                <div className="bg-white/10 backdrop-blur-sm px-4 md:px-6 py-2 md:py-3 rounded-lg">
+                  <p className="text-2xl md:text-3xl font-bold text-white">10+</p>
+                  <p className="text-xs md:text-sm text-primary-foreground/80">Years Experience</p>
                 </div>
               </div>
 
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-lg px-12 py-6 shadow-primary transition-smooth"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-primary transition-smooth w-full sm:w-auto"
               >
                 Get Your FREE Brisbane PPC Strategy Session →
               </Button>
@@ -411,29 +411,29 @@ const GoogleAdsBrisbane = () => {
         </section>
 
         {/* Problem/Agitation Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 The Problem: Why Most Adwords Management Brisbane Agencies Fail
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 Brisbane businesses face intense competition that generic adwords agency brisbane providers don't know how to navigate.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
               {problemPoints.map((point, index) => {
                 const Icon = point.icon;
                 return (
-                  <Card key={index} className="p-8 shadow-card hover:shadow-primary transition-smooth bg-card">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-primary" />
+                  <Card key={index} className="p-5 md:p-6 lg:p-8 shadow-card hover:shadow-primary transition-smooth bg-card">
+                    <div className="flex items-start gap-3 md:gap-4">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-foreground mb-3">{point.title}</h3>
-                        <p className="text-muted-foreground leading-relaxed">{point.description}</p>
+                        <h3 className="text-lg md:text-xl font-bold text-foreground mb-2 md:mb-3">{point.title}</h3>
+                        <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{point.description}</p>
                       </div>
                     </div>
                   </Card>
@@ -441,11 +441,11 @@ const GoogleAdsBrisbane = () => {
               })}
             </div>
 
-            <div className="text-center mt-12">
+            <div className="text-center mt-8 md:mt-12">
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
               >
                 Stop the Budget Bleed: Talk to a PPC Expert →
               </Button>
@@ -454,37 +454,37 @@ const GoogleAdsBrisbane = () => {
         </section>
 
         {/* Solution Section */}
-        <section className="py-20">
+        <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 The Odin Digital Solution: Precision-Focused PPC Management Brisbane
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 We are the adwords management brisbane team that eliminates waste and maximizes every dollar of your ad spend.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
               {solutions.map((solution, index) => {
                 const Icon = solution.icon;
                 return (
-                  <Card key={index} className="p-6 shadow-card hover:shadow-primary transition-smooth bg-card">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-primary" />
+                  <Card key={index} className="p-5 md:p-6 shadow-card hover:shadow-primary transition-smooth bg-card">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3 md:mb-4">
+                      <Icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground mb-3">{solution.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{solution.description}</p>
+                    <h3 className="text-base md:text-lg font-bold text-foreground mb-2 md:mb-3 leading-snug">{solution.title}</h3>
+                    <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{solution.description}</p>
                   </Card>
                 );
               })}
             </div>
 
-            <div className="text-center mt-12">
+            <div className="text-center mt-8 md:mt-12">
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
               >
                 See Our Brisbane PPC Management Packages →
               </Button>
@@ -493,37 +493,37 @@ const GoogleAdsBrisbane = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 Our Google Ads Services: Built for Brisbane Businesses
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 As a leading google agency brisbane wide, we offer a full spectrum of PPC services designed to dominate your local market.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <Card key={index} className="p-6 shadow-card hover:shadow-primary transition-smooth bg-card">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-primary" />
+                  <Card key={index} className="p-5 md:p-6 shadow-card hover:shadow-primary transition-smooth bg-card">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3 md:mb-4">
+                      <Icon className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                     </div>
-                    <h3 className="text-lg font-bold text-foreground mb-3">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                    <h3 className="text-base md:text-lg font-bold text-foreground mb-2 md:mb-3 leading-snug">{service.title}</h3>
+                    <p className="text-muted-foreground text-xs md:text-sm leading-relaxed">{service.description}</p>
                   </Card>
                 );
               })}
             </div>
 
-            <div className="text-center mt-12">
+            <div className="text-center mt-8 md:mt-12">
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full sm:w-auto text-sm md:text-base px-6 md:px-8"
               >
                 Ready for a Custom Google Ads Strategy? Contact Us →
               </Button>
@@ -532,25 +532,25 @@ const GoogleAdsBrisbane = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20">
+        <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 md:mb-6 leading-tight">
                 FAQs: Your Questions About Google Ads in Brisbane Answered
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                 We know you have specific concerns about ad spend and agency performance. Here are clear, honest answers.
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-3 md:space-y-4">
                 {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg px-6 shadow-card">
-                    <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg px-4 md:px-6 shadow-card">
+                    <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary text-sm md:text-base py-4">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                    <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -561,19 +561,19 @@ const GoogleAdsBrisbane = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 gradient-hero">
+        <section className="py-12 md:py-16 lg:py-20 gradient-hero">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
                 Ready to Stop Wasting Budget and Start Driving Sales?
               </h2>
-              <p className="text-xl text-primary-foreground/90 mb-8">
+              <p className="text-lg md:text-xl text-primary-foreground/90 mb-6 md:mb-8 leading-relaxed">
                 Stop guessing with your ppc brisbane budget. Start working with ppc experts brisbane who deliver precision, transparency, and profit.
               </p>
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-lg px-12 py-6 shadow-primary transition-smooth"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-base md:text-lg px-8 md:px-12 py-5 md:py-6 shadow-primary transition-smooth w-full sm:w-auto"
               >
                 Claim Your FREE Brisbane PPC Strategy Session →
               </Button>
@@ -586,10 +586,10 @@ const GoogleAdsBrisbane = () => {
 
       {/* Sticky Mobile CTA */}
       {showStickyButton && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white shadow-lg md:hidden">
+        <div className="fixed bottom-0 left-0 right-0 z-50 p-3 bg-white shadow-lg md:hidden border-t border-border">
           <Button 
             onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary"
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary text-sm py-5"
           >
             Get FREE Strategy Session →
           </Button>
