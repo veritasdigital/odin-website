@@ -5,6 +5,8 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { z } from "zod";
+import { toast } from "sonner";
 
 interface MarketingStrategyFormProps {
   isOpen: boolean;
@@ -30,6 +32,26 @@ interface FormData {
   currentChallenges: string;
 }
 
+// Validation schemas for each step
+const step1Schema = z.object({
+  firstName: z.string().trim().min(1, "First name is required").max(50, "First name must be less than 50 characters"),
+  lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name must be less than 50 characters"),
+  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
+  phone: z.string().trim().min(1, "Phone number is required").regex(/^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/, "Invalid phone number format"),
+  company: z.string().trim().min(1, "Company name is required").max(100, "Company name must be less than 100 characters"),
+});
+
+const step2Schema = z.object({
+  industry: z.string().min(1, "Please select an industry"),
+  monthlyBudget: z.string().min(1, "Please select a budget range"),
+});
+
+const step3Schema = z.object({
+  primaryGoal: z.string().min(1, "Please select a primary goal"),
+  targetAudience: z.string().trim().min(1, "Target audience is required").max(500, "Target audience description must be less than 500 characters"),
+  currentChallenges: z.string().trim().max(1000, "Challenges description must be less than 1000 characters"),
+});
+
 export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyFormProps) => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
@@ -45,6 +67,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
     targetAudience: "",
     currentChallenges: "",
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const updateFormData = (field: keyof FormData, value: string | string[]) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -59,13 +82,63 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
     }
   };
 
-  const nextStep = () => setCurrentStep(prev => Math.min(prev + 1, 3));
-  const prevStep = () => setCurrentStep(prev => Math.max(prev - 1, 1));
+  const validateStep = (step: number): boolean => {
+    setErrors({});
+    
+    try {
+      if (step === 1) {
+        step1Schema.parse({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+        });
+      } else if (step === 2) {
+        step2Schema.parse({
+          industry: formData.industry,
+          monthlyBudget: formData.monthlyBudget,
+        });
+      } else if (step === 3) {
+        step3Schema.parse({
+          primaryGoal: formData.primaryGoal,
+          targetAudience: formData.targetAudience,
+          currentChallenges: formData.currentChallenges,
+        });
+      }
+      return true;
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        const fieldErrors: Record<string, string> = {};
+        error.errors.forEach((err) => {
+          if (err.path[0]) {
+            fieldErrors[err.path[0] as string] = err.message;
+          }
+        });
+        setErrors(fieldErrors);
+        toast.error("Please fix the errors before continuing");
+      }
+      return false;
+    }
+  };
+
+  const nextStep = () => {
+    if (validateStep(currentStep)) {
+      setCurrentStep(prev => Math.min(prev + 1, 3));
+    }
+  };
+  
+  const prevStep = () => {
+    setErrors({});
+    setCurrentStep(prev => Math.max(prev - 1, 1));
+  };
 
   const handleSubmit = () => {
-    console.log('Form submitted:', formData);
-    // Handle form submission
-    onClose();
+    if (validateStep(3)) {
+      console.log('Form submitted:', formData);
+      toast.success("Thank you! We'll be in touch soon with your marketing strategy.");
+      onClose();
+    }
   };
 
   if (!isOpen) return null;
@@ -167,7 +240,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                       value={formData.firstName}
                       onChange={(e) => updateFormData('firstName', e.target.value)}
                       placeholder="John"
+                      className={errors.firstName ? "border-red-500" : ""}
                     />
+                    {errors.firstName && <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>}
                   </div>
                   <div>
                     <Label htmlFor="lastName">Last Name *</Label>
@@ -176,7 +251,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                       value={formData.lastName}
                       onChange={(e) => updateFormData('lastName', e.target.value)}
                       placeholder="Smith"
+                      className={errors.lastName ? "border-red-500" : ""}
                     />
+                    {errors.lastName && <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>}
                   </div>
                 </div>
 
@@ -188,7 +265,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                     value={formData.email}
                     onChange={(e) => updateFormData('email', e.target.value)}
                     placeholder="john@company.com"
+                    className={errors.email ? "border-red-500" : ""}
                   />
+                  {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                 </div>
 
                 <div>
@@ -198,7 +277,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                     value={formData.phone}
                     onChange={(e) => updateFormData('phone', e.target.value)}
                     placeholder="+1 (555) 123-4567"
+                    className={errors.phone ? "border-red-500" : ""}
                   />
+                  {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                 </div>
 
                 <div>
@@ -208,7 +289,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                     value={formData.company}
                     onChange={(e) => updateFormData('company', e.target.value)}
                     placeholder="Your Company LLC"
+                    className={errors.company ? "border-red-500" : ""}
                   />
+                  {errors.company && <p className="text-red-500 text-sm mt-1">{errors.company}</p>}
                 </div>
               </div>
             )}
@@ -220,8 +303,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                 
                 <div>
                   <Label htmlFor="industry">Industry *</Label>
-                  <Select onValueChange={(value) => updateFormData('industry', value)}>
-                    <SelectTrigger>
+                  <Select onValueChange={(value) => updateFormData('industry', value)} value={formData.industry}>
+                    <SelectTrigger className={errors.industry ? "border-red-500" : ""}>
                       <SelectValue placeholder="Select your industry" />
                     </SelectTrigger>
                     <SelectContent>
@@ -235,6 +318,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                       <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
+                  {errors.industry && <p className="text-red-500 text-sm mt-1">{errors.industry}</p>}
                 </div>
 
                 <div>
@@ -256,8 +340,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
                 <div>
                   <Label htmlFor="budget">Monthly Marketing Budget *</Label>
-                  <Select onValueChange={(value) => updateFormData('monthlyBudget', value)}>
-                    <SelectTrigger>
+                  <Select onValueChange={(value) => updateFormData('monthlyBudget', value)} value={formData.monthlyBudget}>
+                    <SelectTrigger className={errors.monthlyBudget ? "border-red-500" : ""}>
                       <SelectValue placeholder="Select your budget range" />
                     </SelectTrigger>
                     <SelectContent>
@@ -268,6 +352,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                       <SelectItem value="50k-plus">$50,000+</SelectItem>
                     </SelectContent>
                   </Select>
+                  {errors.monthlyBudget && <p className="text-red-500 text-sm mt-1">{errors.monthlyBudget}</p>}
                 </div>
               </div>
             )}
@@ -279,8 +364,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                 
                 <div>
                   <Label htmlFor="primaryGoal">Primary Marketing Goal *</Label>
-                  <Select onValueChange={(value) => updateFormData('primaryGoal', value)}>
-                    <SelectTrigger>
+                  <Select onValueChange={(value) => updateFormData('primaryGoal', value)} value={formData.primaryGoal}>
+                    <SelectTrigger className={errors.primaryGoal ? "border-red-500" : ""}>
                       <SelectValue placeholder="Select your primary goal" />
                     </SelectTrigger>
                     <SelectContent>
@@ -291,6 +376,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                       <SelectItem value="expand-market">Expand to New Markets</SelectItem>
                     </SelectContent>
                   </Select>
+                  {errors.primaryGoal && <p className="text-red-500 text-sm mt-1">{errors.primaryGoal}</p>}
                 </div>
 
                 <div>
@@ -301,7 +387,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                     onChange={(e) => updateFormData('targetAudience', e.target.value)}
                     placeholder="Describe your ideal customers (age, location, interests, etc.)"
                     rows={3}
+                    className={errors.targetAudience ? "border-red-500" : ""}
                   />
+                  {errors.targetAudience && <p className="text-red-500 text-sm mt-1">{errors.targetAudience}</p>}
                 </div>
 
                 <div>
@@ -312,7 +400,9 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
                     onChange={(e) => updateFormData('currentChallenges', e.target.value)}
                     placeholder="What marketing challenges are you currently facing?"
                     rows={3}
+                    className={errors.currentChallenges ? "border-red-500" : ""}
                   />
+                  {errors.currentChallenges && <p className="text-red-500 text-sm mt-1">{errors.currentChallenges}</p>}
                 </div>
               </div>
             )}
