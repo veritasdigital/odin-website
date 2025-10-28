@@ -298,12 +298,12 @@ const GoogleAdsDarwin = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
                   onClick={() => navigate('/contact')}
-                  size="xl" 
+                  size="lg" 
                   variant="cta"
-                  className="group"
+                  className="group w-full sm:w-auto text-base sm:text-lg"
                 >
                   Get Your FREE Darwin PPC Strategy Session
-                  <Target className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
+                  <Target className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:rotate-12 transition-transform" />
                 </Button>
               </div>
               <div className="mt-12 grid grid-cols-2 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
