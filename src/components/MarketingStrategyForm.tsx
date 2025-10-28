@@ -36,7 +36,9 @@ const step1Schema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(50, "First name must be less than 50 characters"),
   lastName: z.string().trim().min(1, "Last name is required").max(50, "Last name must be less than 50 characters"),
   email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
-  phone: z.string().trim().min(1, "Phone number is required").regex(/^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,9}$/, "Invalid phone number format"),
+  phone: z.string().trim()
+    .min(10, "Phone number must be at least 10 digits")
+    .regex(/^[+]?[0-9]{1,4}[\s.-]?[(]?[0-9]{1,4}[)]?[\s.-]?[0-9]{3,4}[\s.-]?[0-9]{3,4}$/, "Please enter a valid phone number"),
   company: z.string().trim().min(1, "Company name is required").max(100, "Company name must be less than 100 characters")
 });
 const step2Schema = z.object({
@@ -149,8 +151,16 @@ export const MarketingStrategyForm = ({
         if (error) throw error;
         toast.success("Thank you! We'll be in touch soon with your marketing strategy.");
         onClose();
-      } catch (error) {
-        toast.error('Submission failed. Please try again.');
+      } catch (error: any) {
+        console.error('Form submission error:', error);
+        
+        if (error.message?.includes('row-level security') || error.message?.includes('policy')) {
+          toast.error('Unable to submit form. Please contact support at info@odindigital.com.au');
+        } else if (error.message?.includes('network') || error.message?.includes('fetch')) {
+          toast.error('Network error. Please check your connection and try again.');
+        } else {
+          toast.error('Submission failed. Please try again or contact support.');
+        }
       }
     }
   };
