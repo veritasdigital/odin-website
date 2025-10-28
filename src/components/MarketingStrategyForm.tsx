@@ -171,7 +171,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
           <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 max-h-full overflow-y-auto no-scrollbar">
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-2 text-white transition-all z-50 cursor-pointer border border-white/30"
+              className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-3 text-white transition-all z-50 cursor-pointer border border-white/30 flex items-center justify-center"
               aria-label="Close form"
             >
               <X className="w-6 h-6" />
@@ -428,17 +428,27 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               </div>
             )}
 
-            {/* Navigation Buttons */}
-            <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 mt-10 pt-8 border-t border-gray-200">
-              <Button
-                variant="outline"
-                onClick={prevStep}
-                disabled={currentStep === 1}
-                className="flex items-center justify-center space-x-2 w-full md:w-auto"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>Previous</span>
-              </Button>
+             {/* Navigation Buttons */}
+             <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-0 mt-10 pt-8 border-t border-gray-200">
+               <div className="flex gap-3 w-full md:w-auto">
+                 <Button
+                   variant="outline"
+                   onClick={onClose}
+                   className="flex items-center justify-center space-x-2 w-full md:w-auto border-destructive text-destructive hover:bg-destructive hover:text-white"
+                 >
+                   <X className="w-4 h-4" />
+                   <span>Exit</span>
+                 </Button>
+                 <Button
+                   variant="outline"
+                   onClick={prevStep}
+                   disabled={currentStep === 1}
+                   className="flex items-center justify-center space-x-2 w-full md:w-auto"
+                 >
+                   <ArrowLeft className="w-4 h-4" />
+                   <span>Previous</span>
+                 </Button>
+               </div>
 
               {currentStep < 3 ? (
                 <Button
