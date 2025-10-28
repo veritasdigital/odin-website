@@ -316,10 +316,10 @@ const GoogleAdsGoldCoast = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="py-20 md:py-32 px-4">
+        <section className="pt-28 pb-20 md:py-32 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center space-y-8">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 Google Ads Agency Gold Coast
               </h1>
               <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary leading-snug">
