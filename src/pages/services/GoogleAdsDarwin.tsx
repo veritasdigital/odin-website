@@ -272,7 +272,7 @@ const GoogleAdsDarwin = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
                 Google Ads Agency Darwin
               </h1>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+              <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary leading-tight pb-2">
                 Stop Wasting Your Budget. Start Dominating Your Market.
               </p>
               <p className="text-lg md:text-xl text-muted-foreground mb-6">
