@@ -164,8 +164,8 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center md:justify-end p-4">
-      <div className="bg-white h-full md:h-[95vh] w-full max-w-5xl animate-slide-in-right shadow-2xl rounded-lg overflow-hidden flex flex-col">
+    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-0 md:p-4">
+      <div className="bg-white h-full md:h-[90vh] w-full md:max-w-5xl animate-slide-in-right shadow-2xl rounded-none md:rounded-lg overflow-hidden flex flex-col">
         <div className="flex flex-col md:flex-row h-full overflow-hidden">
           {/* Left Side - Copy & Proof */}
           <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 overflow-y-auto">
@@ -177,18 +177,18 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
               <X className="w-6 h-6" />
             </button>
             
-            <div className="p-6 md:p-8 lg:p-12 space-y-6 md:space-y-8">
+            <div className="p-6 md:p-8 space-y-4 md:space-y-6">
               <div className="decorative-circles">
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  <h2 className="text-xl md:text-2xl font-bold mb-3">
                     Get Your FREE Marketing Strategy
                   </h2>
-                  <p className="text-base md:text-lg opacity-90">
+                  <p className="text-sm md:text-base opacity-90">
                     Our expert team will analyze your business and create a custom marketing roadmap designed to 10x your leads and revenue.
                   </p>
                 </div>
 
-                <div className="space-y-6 md:space-y-8">
+                <div className="space-y-4 md:space-y-5">
                   <div className="flex items-center space-x-4">
                     <div className="bg-primary/20 p-3 rounded-full">
                       <Target className="w-6 h-6 text-primary-glow" />
@@ -229,7 +229,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
           {/* Right Side - Multi-Step Form */}
           <div className="w-full md:w-3/5 flex flex-col overflow-hidden">
-            <div className="p-6 md:p-8 lg:p-10 overflow-y-auto flex-1">
+            <div className="p-6 md:p-8 overflow-y-auto flex-1">
               {/* Progress Bar */}
             <div className="mb-10 md:mb-12">
               <div className="flex items-center justify-between mb-4">
