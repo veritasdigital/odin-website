@@ -81,48 +81,48 @@ export const ClientLogos = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-slate-50 to-white border-b border-charcoal/5">
+    <section className="py-12 bg-gradient-to-br from-slate-50 to-white border-b border-charcoal/5">
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-charcoal mb-6 leading-tight">
-            Trusted by Leading Australian Businesses From Startups To Billion Dollar Companies
+        <div className="text-center mb-8">
+          <h2 className="text-xl md:text-2xl font-black text-charcoal mb-4 leading-tight">
+            Trusted by Leading Australian Businesses
           </h2>
-          <p className="text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
-            Join 283+ companies that have transformed their marketing with our proven strategies that produce tangible outcomes
+          <p className="text-base text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+            Join 283+ companies that have transformed their marketing
           </p>
         </div>
 
         {/* Scrolling Logo Rows */}
-        <div className="space-y-8 overflow-hidden">
+        <div className="space-y-4 overflow-hidden">
           {clientLogos.map((row, rowIndex) => (
             <div key={rowIndex} className="relative">
               <div 
-                className={`flex gap-8 ${rowIndex % 2 === 0 ? 'animate-scroll-right' : 'animate-scroll-left'}`}
+                className={`flex gap-4 ${rowIndex % 2 === 0 ? 'animate-scroll-right' : 'animate-scroll-left'}`}
                 style={{
                   width: 'calc(200% + 2rem)',
                 }}
               >
                 {/* First set of logos */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-8 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[220px] h-28">
+                  <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-4 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[160px] h-20">
                     <div className="flex items-center justify-center h-full">
                       <img 
                         src={client.logo} 
                         alt={client.alt}
-                        className="w-32 h-16 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
+                        className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                       />
                     </div>
                   </Card>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {row.map((client, index) => (
-                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-8 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[220px] h-28">
+                  <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-4 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[160px] h-20">
                     <div className="flex items-center justify-center h-full">
                       <img 
                         src={client.logo} 
                         alt={client.alt}
-                        className="w-32 h-16 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
+                        className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                       />
                     </div>
                   </Card>
