@@ -322,7 +322,7 @@ const GoogleAdsBallarat = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="pt-32 pb-20 px-6 bg-gradient-hero">
+        <section data-nav-contrast="dark" className="pt-32 pb-20 px-6 bg-gradient-hero">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-4xl">
               <Badge className="mb-6 bg-primary/20 text-primary border-primary/30">
