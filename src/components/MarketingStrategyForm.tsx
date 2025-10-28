@@ -165,10 +165,10 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
   return (
     <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-0 md:p-4 overflow-hidden">
-      <div className="bg-white h-full md:h-[90vh] w-full md:max-w-5xl animate-slide-in-right shadow-2xl rounded-none md:rounded-lg flex flex-col">
+      <div className="bg-white h-screen w-full md:max-w-5xl animate-slide-in-right shadow-2xl rounded-none md:rounded-lg flex flex-col">
         <div className="flex flex-col md:flex-row h-full">
           {/* Left Side - Copy & Proof */}
-          <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 max-h-full overflow-y-auto">
+          <div className="w-full md:w-2/5 bg-gradient-hero text-white flex flex-col justify-center relative flex-shrink-0 max-h-full overflow-y-auto no-scrollbar">
             <button
               onClick={onClose}
               className="absolute top-4 right-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-full p-2 text-white transition-all z-50 cursor-pointer border border-white/30"
@@ -229,7 +229,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
 
           {/* Right Side - Multi-Step Form */}
           <div className="w-full md:w-3/5 flex flex-col max-h-full">
-            <div className="p-6 md:p-8 overflow-y-auto flex-1 max-h-full">
+            <div className="p-6 md:p-8 overflow-y-auto no-scrollbar flex-1 max-h-full">
               {/* Progress Bar */}
             <div className="mb-10 md:mb-12">
               <div className="flex items-center justify-between mb-4">

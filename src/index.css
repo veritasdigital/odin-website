@@ -193,6 +193,10 @@
   }
 }
 
+/* Utility: hide scrollbars but keep scroll functionality */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* Client Logos Carousel Animations */
 @keyframes scroll-right {
   from {
