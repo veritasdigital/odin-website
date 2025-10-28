@@ -534,7 +534,7 @@ export default function GoogleAdsMelbourne() {
         <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
                 Google Ads Agency Melbourne: Stop Wasting Budget. Start Converting.
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6 text-foreground">
