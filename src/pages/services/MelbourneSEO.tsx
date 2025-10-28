@@ -492,7 +492,7 @@ const MelbourneSEO = () => {
                 const MetricCounter = () => {
                   const { count, countRef } = useCountUp(metric.value);
                   return (
-                    <div ref={countRef} className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 break-words">
+                    <div ref={countRef} className="text-3xl md:text-4xl font-bold text-primary mb-2 break-words">
                       ${count}{metric.suffix}
                     </div>
                   );
