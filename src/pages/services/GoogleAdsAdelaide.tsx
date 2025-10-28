@@ -253,21 +253,21 @@ const GoogleAdsAdelaide = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-20 px-4 bg-gradient-subtle">
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
               Adelaide Google Ads Agency: Stop Wasting Your Budget. Start Driving Sales.
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-6 text-primary">
               The PPC Agency Adelaide Businesses Trust for Maximum ROI and Zero Wasted Spend.
             </h2>
-            <p className="text-xl mb-4 text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base md:text-xl mb-4 text-muted-foreground max-w-3xl mx-auto">
               Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
             </p>
-            <p className="text-lg mb-8 text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-sm md:text-lg mb-8 text-muted-foreground max-w-3xl mx-auto">
               If you're an Adelaide business owner throwing thousands into Google Ads each month with little to show for it, you're not alone. Most PPC agencies treat your budget like a bottomless pit, padding their retainers while your ROAS remains abysmal. We're different. We're a precision-focused adwords management adelaide team that treats your ad spend like our own—because your success is our reputation.
             </p>
             <Link to="/contact">
-              <Button size="lg" className="text-lg px-8 py-6 bg-accent hover:bg-accent/90">
-                Get Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2" />
+              <Button size="lg" className="text-sm md:text-lg px-4 md:px-8 py-4 md:py-6 bg-accent hover:bg-accent/90">
+                Get Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
             <div className="mt-12 flex flex-wrap justify-center gap-8 text-center">
@@ -287,10 +287,10 @@ const GoogleAdsAdelaide = () => {
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
                 The Problem: Why Most Adwords Management Adelaide Agencies Fail
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Adelaide businesses have unique challenges that generic national adwords agency adelaide providers don't understand.
               </p>
             </div>
@@ -334,8 +334,8 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Stop the Budget Bleed: Talk to a PPC Expert <ArrowRight className="ml-2" />
+                <Button size="lg" className="text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
+                  Stop the Budget Bleed: Talk to a PPC Expert <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
@@ -346,10 +346,10 @@ const GoogleAdsAdelaide = () => {
         <section className="py-20 px-4 bg-gradient-subtle">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
                 The Odin Digital Solution: Precision-Focused PPC Management Adelaide
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We are the adwords management adelaide team that eliminates waste and maximizes every dollar of your ad spend.
               </p>
             </div>
@@ -385,8 +385,8 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  See Our Adelaide PPC Management Packages <ArrowRight className="ml-2" />
+                <Button size="lg" className="text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
+                  See Our Adelaide PPC Management Packages <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
@@ -397,10 +397,10 @@ const GoogleAdsAdelaide = () => {
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
                 Our Google Ads Services: Built for Adelaide Businesses
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 As a leading google agency adelaide wide, we offer a full spectrum of PPC services designed to dominate your local market.
               </p>
             </div>
@@ -436,8 +436,8 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90">
-                  Ready for a Custom Google Ads Strategy? Contact Us <ArrowRight className="ml-2" />
+                <Button size="lg" className="text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
+                  Ready for a Custom Google Ads Strategy? Contact Us <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
@@ -448,10 +448,10 @@ const GoogleAdsAdelaide = () => {
         <section className="py-20 px-4 bg-gradient-subtle">
           <div className="container mx-auto max-w-4xl">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
                 FAQs: Your Questions About Google Ads in Adelaide Answered
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-base md:text-xl text-muted-foreground">
                 We know you have specific concerns about ad spend and agency performance. Here are clear, honest answers.
               </p>
             </div>
@@ -552,15 +552,15 @@ const GoogleAdsAdelaide = () => {
         {/* Final CTA Section */}
         <section className="py-20 px-4 bg-primary text-primary-foreground">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6">
               Ready to Stop Wasting Budget and Start Driving Sales?
             </h2>
-            <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+            <p className="text-base md:text-xl mb-8 max-w-3xl mx-auto opacity-90">
               Stop guessing with your ppc adelaide budget. Start working with ppc experts adelaide who deliver precision, transparency, and profit.
             </p>
             <Link to="/contact">
-              <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-                Claim Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2" />
+              <Button size="lg" variant="secondary" className="text-sm md:text-lg px-4 md:px-8 py-4 md:py-6">
+                Claim Your FREE Adelaide PPC Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
@@ -570,8 +570,8 @@ const GoogleAdsAdelaide = () => {
         {showStickyButton && (
           <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border md:hidden z-50 shadow-lg">
             <Link to="/contact" className="block">
-              <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
-                Get Your FREE Strategy Session <ArrowRight className="ml-2" />
+              <Button size="lg" className="w-full text-sm px-4 py-3 bg-accent hover:bg-accent/90">
+                Get Your FREE Strategy Session <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
