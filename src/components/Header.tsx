@@ -14,11 +14,15 @@ export const Header = () => {
   const { openForm } = useMarketingForm();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isOverDarkSection, setIsOverDarkSection] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const updateContrast = () => {
       const header = document.querySelector('header');
       if (!header) return;
+
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
 
       const rect = header.getBoundingClientRect();
       const x = Math.min(Math.max(rect.left + rect.width / 2, 0), window.innerWidth - 1);
@@ -55,7 +59,9 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-charcoal hover:text-primary">
+              <DropdownMenuTrigger className={`flex items-center space-x-1 font-medium transition-colors cursor-pointer ${
+                isScrolled ? 'text-charcoal hover:text-primary' : 'text-white hover:text-white/80'
+              }`}>
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
@@ -80,13 +86,19 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/about" className="font-medium transition-colors text-charcoal hover:text-primary">
+            <a href="/about" className={`font-medium transition-colors ${
+              isScrolled ? 'text-charcoal hover:text-primary' : 'text-white hover:text-white/80'
+            }`}>
               About
             </a>
-            <a href="/blog" className="font-medium transition-colors text-charcoal hover:text-primary">
+            <a href="/blog" className={`font-medium transition-colors ${
+              isScrolled ? 'text-charcoal hover:text-primary' : 'text-white hover:text-white/80'
+            }`}>
               Blog
             </a>
-            <a href="/contact" className="font-medium transition-colors text-charcoal hover:text-primary">
+            <a href="/contact" className={`font-medium transition-colors ${
+              isScrolled ? 'text-charcoal hover:text-primary' : 'text-white hover:text-white/80'
+            }`}>
               Contact
             </a>
           </nav>
