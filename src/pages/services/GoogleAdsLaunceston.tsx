@@ -241,32 +241,32 @@ const GoogleAdsLaunceston = () => {
         </div>
 
         {/* Hero Section */}
-        <section data-nav-contrast="dark" className="relative min-h-[90vh] gradient-hero overflow-hidden flex items-center">
+        <section className="relative min-h-[90vh] bg-background overflow-hidden flex items-center">
           {/* Floating Background Elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-          <div className="absolute bottom-32 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
-          <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+          <div className="absolute top-20 left-10 w-32 h-32 border border-primary/10 rounded-full animate-float" />
+          <div className="absolute bottom-32 right-20 w-24 h-24 border border-primary/10 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+          <div className="absolute bottom-1/4 right-1/3 w-20 h-20 bg-primary/5 rounded-full animate-float" style={{ animationDelay: '3s' }} />
 
           <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8 mt-16 md:mt-20">
+            <h1 className="text-5xl md:text-7xl font-black text-foreground mb-8 mt-16 md:mt-20">
               Google Ads Agency Launceston
             </h1>
             
-            <p className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
+            <p className="text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
               Stop Wasting Your Budget on Clicks That Don't Convert. Start Dominating Tasmania's Second-Largest Market.
             </p>
 
-            <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-4xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground/90 mb-6 max-w-4xl mx-auto">
               The PPC Agency Launceston Businesses Trust for Maximum ROI in a Tight-Knit Regional Market.
             </p>
 
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-4xl mx-auto">
               Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
             </p>
 
-            <p className="text-base md:text-lg text-white/70 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Launceston is Tasmania's second-largest city, with a unique competitive landscape that requires precision targeting and an understanding of regional market dynamics. Generic, mainland-designed Google Ads strategies fail here because they ignore the reality of Northern Tasmania's tight-knit business community, the distinct competition with Hobart, and the importance of local reputation in a regional market. Odin Digital is the <strong className="text-white">adwords agency launceston</strong> that delivers hyper-local precision and statewide competitive strategy, ensuring every dollar of your ad spend generates maximum return.
+            <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+              Launceston is Tasmania's second-largest city, with a unique competitive landscape that requires precision targeting and an understanding of regional market dynamics. Generic, mainland-designed Google Ads strategies fail here because they ignore the reality of Northern Tasmania's tight-knit business community, the distinct competition with Hobart, and the importance of local reputation in a regional market. Odin Digital is the <strong className="text-foreground">adwords agency launceston</strong> that delivers hyper-local precision and statewide competitive strategy, ensuring every dollar of your ad spend generates maximum return.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -283,17 +283,17 @@ const GoogleAdsLaunceston = () => {
 
             {/* Trust Signals */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">$574M+</div>
-                <div className="text-white/80">Client Revenue Generated</div>
+              <Card className="p-6 bg-card border-border">
+                <div className="text-4xl font-black text-foreground mb-2">$574M+</div>
+                <div className="text-muted-foreground">Client Revenue Generated</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">95%</div>
-                <div className="text-white/80">Client Retention Rate</div>
+              <Card className="p-6 bg-card border-border">
+                <div className="text-4xl font-black text-foreground mb-2">95%</div>
+                <div className="text-muted-foreground">Client Retention Rate</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">0</div>
-                <div className="text-white/80">Lock-In Contracts</div>
+              <Card className="p-6 bg-card border-border">
+                <div className="text-4xl font-black text-foreground mb-2">0</div>
+                <div className="text-muted-foreground">Lock-In Contracts</div>
               </Card>
             </div>
           </div>
