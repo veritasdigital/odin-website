@@ -1,23 +1,23 @@
-import googlePartner from "@/assets/partners/google-partner-2022.png";
-import metaPartner from "@/assets/partners/meta-partner-2023.png";
+import googlePartner from "@/assets/partners/google-partner-2024.png";
+import metaPartner from "@/assets/partners/meta-partner-2024.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
 import hubspotPartner from "@/assets/partners/hubspot-certified-agency-partner.png";
 import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
-import microsoftPartner from "@/assets/partners/microsoft-bing-partner.svg";
+import microsoftPartner from "@/assets/partners/microsoft-partner-2024.png";
 import tiktokPartner from "@/assets/partners/tiktok-partner.svg";
 import linkedinPartner from "@/assets/partners/linkedin-marketing-partner.svg";
 
 export const Partnerships = () => {
   const partners = [
     {
-      name: "Google Premier Partner 2022",
+      name: "Google Premier Partner 2024",
       logo: googlePartner,
-      alt: "Google Premier Partner 2022 Badge"
+      alt: "Google Premier Partner 2024 Badge"
     },
     {
-      name: "Meta Business Partner 2023",
+      name: "Meta Business Partner 2024",
       logo: metaPartner,
-      alt: "Meta Business Partner 2023 Badge"
+      alt: "Meta Business Partner 2024 Badge"
     },
     {
       name: "Shopify Partner",
@@ -35,9 +35,9 @@ export const Partnerships = () => {
       alt: "Klaviyo Partner Badge"
     },
     {
-      name: "Microsoft Bing Partner",
+      name: "Microsoft Advertising Partner",
       logo: microsoftPartner,
-      alt: "Microsoft Bing Partner Badge"
+      alt: "Microsoft Advertising Partner Badge"
     },
     {
       name: "TikTok Partner",
@@ -63,16 +63,16 @@ export const Partnerships = () => {
           </h3>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          {partners.map((partner, index) => (
+        <div className="flex items-center justify-center gap-4 overflow-x-auto">
+          {partners.slice(0, 6).map((partner, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-32 flex items-center justify-center h-20 p-3 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
+              className="flex-shrink-0 w-24 flex items-center justify-center h-14 p-2 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
             >
               <img
                 src={partner.logo}
                 alt={partner.alt}
-                className="max-h-12 max-w-full object-contain"
+                className="max-h-10 max-w-full object-contain"
               />
             </div>
           ))}
