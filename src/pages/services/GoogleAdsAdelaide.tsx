@@ -576,16 +576,6 @@ const GoogleAdsAdelaide = () => {
           </div>
         </section>
 
-        {/* Mobile Sticky CTA */}
-        {showStickyButton && (
-          <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border md:hidden z-50 shadow-lg">
-            <Link to="/contact" className="block">
-              <Button size="lg" className="w-full justify-center text-xs px-3 py-3 bg-accent hover:bg-accent/90 whitespace-normal h-auto min-h-[3rem]">
-                Get Your FREE Strategy Session <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
-              </Button>
-            </Link>
-          </div>
-        )}
 
         <Footer />
       </div>
