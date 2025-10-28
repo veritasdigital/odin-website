@@ -334,8 +334,10 @@ const GoogleAdsAdelaide = () => {
             </div>
             <div className="text-center mt-12">
               <Link to="/contact">
-                <Button size="lg" className="text-sm md:text-base px-4 md:px-6 py-4 bg-accent hover:bg-accent/90">
-                  Stop the Budget Bleed: Talk to a PPC Expert <ArrowRight className="ml-2 h-4 w-4" />
+                <Button size="lg" className="text-xs md:text-base px-3 md:px-6 py-3 md:py-4 bg-accent hover:bg-accent/90">
+                  <span className="hidden md:inline">Stop the Budget Bleed: Talk to a PPC Expert</span>
+                  <span className="md:hidden">Talk to a PPC Expert</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
