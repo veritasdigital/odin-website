@@ -395,10 +395,12 @@ const GoogleAdsDarwin = () => {
               <div className="text-center mt-12">
                 <Button 
                   onClick={() => navigate('/contact')}
-                  size="xl" 
+                  size="lg"
                   variant="cta"
+                  className="w-full sm:w-auto text-sm sm:text-lg"
                 >
-                  Stop the Budget Bleed: Talk to a PPC Expert
+                  <span className="hidden sm:inline">Stop the Budget Bleed: Talk to a PPC Expert</span>
+                  <span className="sm:hidden">Talk to a PPC Expert</span>
                 </Button>
               </div>
             </div>
@@ -471,10 +473,12 @@ const GoogleAdsDarwin = () => {
               <div className="text-center mt-12">
                 <Button 
                   onClick={() => navigate('/contact')}
-                  size="xl" 
+                  size="lg"
                   variant="cta"
+                  className="w-full sm:w-auto text-sm sm:text-lg"
                 >
-                  See Our Darwin PPC Management Packages
+                  <span className="hidden sm:inline">See Our Darwin PPC Management Packages</span>
+                  <span className="sm:hidden">See Our PPC Packages</span>
                 </Button>
               </div>
             </div>
@@ -539,10 +543,12 @@ const GoogleAdsDarwin = () => {
               <div className="text-center mt-12">
                 <Button 
                   onClick={() => navigate('/contact')}
-                  size="xl" 
+                  size="lg"
                   variant="cta"
+                  className="w-full sm:w-auto text-sm sm:text-lg"
                 >
-                  Ready for a Custom Google Ads Strategy? Contact Us
+                  <span className="hidden sm:inline">Ready for a Custom Google Ads Strategy? Contact Us</span>
+                  <span className="sm:hidden">Get Custom Strategy</span>
                 </Button>
               </div>
             </div>
@@ -594,10 +600,11 @@ const GoogleAdsDarwin = () => {
               </p>
               <Button 
                 onClick={() => navigate('/contact')}
-                size="xl" 
-                className="bg-white text-primary hover:bg-white/90 font-bold text-lg"
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90 font-bold w-full sm:w-auto text-sm sm:text-lg"
               >
-                Claim Your FREE Darwin PPC Strategy Session
+                <span className="hidden sm:inline">Claim Your FREE Darwin PPC Strategy Session</span>
+                <span className="sm:hidden">Get FREE Strategy Session</span>
               </Button>
             </div>
           </div>
