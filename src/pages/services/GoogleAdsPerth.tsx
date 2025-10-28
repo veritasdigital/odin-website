@@ -460,7 +460,7 @@ export default function GoogleAdsPerth() {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight whitespace-normal break-words text-center h-auto min-h-[3rem]"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-snug whitespace-normal text-center h-auto min-h-[3rem]"
               >
                 Get Your FREE Google Ads Strategy Audit →
               </Button>
@@ -561,7 +561,7 @@ export default function GoogleAdsPerth() {
                   <Button 
                     onClick={openForm}
                     size="lg"
-                    className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full text-sm"
+                    className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-primary transition-smooth w-full text-xs sm:text-sm h-auto py-3 leading-snug whitespace-normal"
                   >
                     {service.cta}
                   </Button>
@@ -656,7 +656,7 @@ export default function GoogleAdsPerth() {
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm md:text-base lg:text-lg px-4 md:px-8 lg:px-12 py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-tight whitespace-normal break-words text-center h-auto min-h-[3rem]"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 shadow-primary transition-smooth w-full sm:w-auto leading-snug whitespace-normal text-center h-auto min-h-[3rem]"
               >
                 Get Your FREE Google Ads Strategy Audit →
               </Button>
@@ -699,7 +699,7 @@ export default function GoogleAdsPerth() {
           <Button
             onClick={openForm}
             size="lg"
-            className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-2xl px-8 py-6 text-base font-semibold animate-pulse-glow"
+            className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-2xl px-6 py-4 text-sm font-semibold animate-pulse-glow whitespace-normal leading-snug h-auto"
           >
             Get FREE Audit →
           </Button>
