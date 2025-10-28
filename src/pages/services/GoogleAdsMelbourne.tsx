@@ -167,6 +167,110 @@ export default function GoogleAdsMelbourne() {
               "@type": "Answer",
               "text": "The cost to hire an adwords management company Melbourne can vary widely, but our pricing is based on a percentage of your ad spend, ensuring our success is directly tied to yours. We don't offer cheap, fixed-price packages because they rarely work. Our custom strategies are built to deliver maximum ROI, not minimum cost. The best way to determine the exact investment is through a free strategy session. We'll analyze your goals and current spend, and provide a transparent proposal that details both the management fee and the expected return, ensuring you see us as a profit centre, not a cost."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see results from a PPC agency Melbourne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike SEO, which can take 6-12 months, Google Ads delivers immediate visibility. You'll start seeing traffic and data within days of launch. However, optimal performance requires ongoing optimization. Most Melbourne businesses see meaningful improvements in CPA and ROAS within the first 60-90 days as we refine targeting, ad copy, and bidding strategies based on real conversion data. The key is partnering with a PPC agency Melbourne that actively manages and optimizes your campaigns daily, not quarterly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What industries do you specialize in for Google Ads management Melbourne?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We work with a diverse range of Melbourne-based businesses, including e-commerce, professional services (legal, accounting, medical), home services (plumbing, HVAC, landscaping), B2B SaaS, and retail. Our approach is customized for each industry, focusing on your specific customer journey, competitive landscape, and profit margins. Whether you're a local service provider or a national brand targeting Melbourne customers, we have the expertise to drive results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you only do Google Ads, or do you offer other services like SEO and Meta Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While we specialize in Google Ads and PPC management Melbourne, we also offer comprehensive digital marketing services including SEO, Meta Ads (Facebook/Instagram), LinkedIn Ads, and custom web design. Our integrated approach ensures all your marketing channels work together to maximize overall ROI. Many of our clients start with Google Ads and expand into other services as they see results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you ensure my Google Ads budget isn't wasted?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Budget efficiency is our top priority. We use a combination of precise keyword targeting (eliminating wasteful broad match keywords), geographic targeting (ensuring ads only show to Melbourne-area customers), negative keyword lists (blocking irrelevant searches), conversion tracking (only bidding on actions that drive revenue), and daily performance monitoring. Unlike agencies that 'set and forget,' we actively review and optimize your campaigns daily to ensure every dollar is working toward your goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes Odin Digital different from other PPC management Melbourne agencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three core differences: (1) No Lock-In Contracts – We earn your business every month. (2) 100% Transparency – You own your Google Ads account, and we give you full access and weekly updates. (3) ROI Obsession – We're not satisfied with 'good enough.' Our 540% average ROI and 95% client retention rate prove we're maniacally focused on driving actual revenue, not just clicks. We're a boutique agency that treats your business like our own."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you take over my existing Google Ads campaigns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. In fact, most of our clients come to us after poor experiences with other agencies or DIY attempts. We'll conduct a comprehensive audit of your existing campaigns, identify what's working (and what's not), and implement immediate improvements. Typically, we can reduce wasted spend by 30-50% in the first month while simultaneously improving lead quality and conversion rates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you measure success for Google Ads campaigns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We focus on business outcomes, not vanity metrics. The key performance indicators (KPIs) we track include: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Conversion Rate, Revenue Generated, and Customer Lifetime Value (CLV). Our goal is simple: ensure you're making more money than you're spending. Every optimization decision is made with these ROI-focused metrics in mind."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you require a minimum ad spend budget?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While we can work with budgets as low as $2,000/month, we recommend a minimum of $3,000-$5,000/month for Melbourne businesses to see meaningful results in competitive industries. Google Ads requires enough budget to gather statistically significant data and test multiple ad variations. During your free strategy session, we'll provide an honest assessment of what budget is needed to achieve your specific goals in your market."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is your contract length and cancellation policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We operate on a month-to-month basis with no long-term lock-in contracts. You can cancel with 30 days' written notice at any time. We believe in earning your business every single month through results and exceptional service. Our 95% client retention rate shows that when you're seeing a strong ROI, there's no reason to leave."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often will I receive reports and updates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You'll receive weekly email updates with key performance metrics and a comprehensive monthly report detailing campaign performance, optimizations made, and strategic recommendations. You'll also have 24/7 access to your Google Ads account and our custom reporting dashboard. Plus, your dedicated account manager is available via phone or email for questions anytime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with landing page design for my Google Ads campaigns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. In fact, we insist on it for many clients. A poorly designed landing page can kill an otherwise great Google Ads campaign. We offer custom landing page design and optimization as part of our service, ensuring your ads send traffic to high-converting pages that are optimized for mobile, load fast, and have a clear call-to-action (CTA). This is a key differentiator from agencies that only focus on the ads themselves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer Google Ads services in other Australian cities?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, while we specialize in Melbourne, we also provide expert Google Ads management for businesses across Australia. If you're based in another city, we can tailor our strategies to your local market."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the first step to get started with Odin Digital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Simple: Book a free, no-obligation strategy session. We'll audit your current Google Ads setup (or analyze your competitive landscape if you're starting fresh), identify immediate opportunities, and provide a clear, transparent proposal outlining expected costs and ROI. There's zero pressure, and you'll walk away with actionable insights whether you hire us or not."
+            }
           }
         ]
       },
@@ -241,7 +345,7 @@ export default function GoogleAdsMelbourne() {
     {
       icon: <Search className="w-10 h-10 text-[#D91C5C]" />,
       title: "Google Ads Management Melbourne",
-      description: "Full-service campaign setup, optimization, and ongoing management with a laser focus on ROI. We handle Search, Display, Shopping, and YouTube campaigns."
+      description: "Full-service campaign setup, optimization, and ongoing management with a laser focus on ROI. We handle Search, Display, Shopping, and YouTube campaigns. We also offer comprehensive <a href='/services/seo' class='text-[#D91C5C] underline hover:text-[#D91C5C]/80'>SEO</a> services to complement your paid strategy."
     },
     {
       icon: <BarChart className="w-10 h-10 text-[#D91C5C]" />,
@@ -251,12 +355,12 @@ export default function GoogleAdsMelbourne() {
     {
       icon: <Laptop className="w-10 h-10 text-[#D91C5C]" />,
       title: "Custom Landing Page Design",
-      description: "High-converting, mobile-first landing pages built specifically for your Google Ads campaigns to maximize your conversion rate."
+      description: "High-converting, mobile-first landing pages built specifically for your Google Ads campaigns to maximize your conversion rate. Learn more about our <a href='/services/web-design' class='text-[#D91C5C] underline hover:text-[#D91C5C]/80'>web design</a> services."
     },
     {
       icon: <Target className="w-10 h-10 text-[#D91C5C]" />,
       title: "Retargeting & Remarketing",
-      description: "Sophisticated retargeting campaigns across Google Display and YouTube to re-engage visitors who didn't convert the first time."
+      description: "Sophisticated retargeting campaigns across Google Display and YouTube to re-engage visitors who didn't convert the first time. We also run <a href='/services/meta-ads' class='text-[#D91C5C] underline hover:text-[#D91C5C]/80'>Meta Ads</a> for multi-channel retargeting."
     }
   ];
 
@@ -544,7 +648,7 @@ export default function GoogleAdsMelbourne() {
                 <Card key={index} className="p-6 md:p-8 hover:shadow-glow transition-all duration-300">
                   <div className="mb-4">{service.icon}</div>
                   <h3 className="text-xl md:text-2xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <p className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: service.description }} />
                 </Card>
               ))}
             </div>
