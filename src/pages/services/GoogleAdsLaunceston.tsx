@@ -449,9 +449,11 @@ const GoogleAdsLaunceston = () => {
               <Button 
                 variant="cta" 
                 size="lg"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight"
                 onClick={() => navigate('/contact')}
               >
-                See Our Launceston PPC Management Packages →
+                <span className="sm:hidden">See Packages →</span>
+                <span className="hidden sm:inline">See Our Launceston PPC Management Packages →</span>
               </Button>
             </div>
           </div>
@@ -513,9 +515,11 @@ const GoogleAdsLaunceston = () => {
               <Button 
                 variant="cta" 
                 size="lg"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight"
                 onClick={() => navigate('/contact')}
               >
-                Ready for a Custom Google Ads Strategy? Contact Us →
+                <span className="sm:hidden">Get Custom Strategy →</span>
+                <span className="hidden sm:inline">Ready for a Custom Google Ads Strategy? Contact Us →</span>
               </Button>
             </div>
           </div>
