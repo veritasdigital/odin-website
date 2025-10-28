@@ -8,6 +8,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Target, TrendingUp, Eye, MapPin, BarChart, DollarSign, Shield, RefreshCw, Zap, Award } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { MarketingFormModal } from "@/components/MarketingFormModal";
 
 const GoogleAdsBrisbane = () => {
   const { openForm } = useMarketingForm();
@@ -595,6 +596,8 @@ const GoogleAdsBrisbane = () => {
           </Button>
         </div>
       )}
+
+      <MarketingFormModal />
     </>
   );
 };
