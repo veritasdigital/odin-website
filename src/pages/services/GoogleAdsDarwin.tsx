@@ -263,9 +263,20 @@ const GoogleAdsDarwin = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <SideTab />
+        
+        {/* Mobile Sticky CTA */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
+          <Button 
+            onClick={openForm}
+            size="lg" 
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold"
+          >
+            Get FREE Strategy Session
+          </Button>
+        </div>
 
         {/* Hero Section */}
-        <section className="relative pt-28 md:pt-32 pb-20 md:pb-32 overflow-hidden decorative-circles">
+        <section className="relative pt-28 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-0 overflow-hidden decorative-circles">
           <div className="absolute inset-0 gradient-hero opacity-5"></div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
@@ -310,7 +321,7 @@ const GoogleAdsDarwin = () => {
         </section>
 
         {/* Problem/Agitation Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 mb-20 md:mb-0 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
@@ -394,7 +405,7 @@ const GoogleAdsDarwin = () => {
         </section>
 
         {/* Solution Section */}
-        <section className="py-20">
+        <section className="py-20 mb-20 md:mb-0">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
@@ -470,7 +481,7 @@ const GoogleAdsDarwin = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-20 mb-20 md:mb-0 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
@@ -538,7 +549,7 @@ const GoogleAdsDarwin = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20">
+        <section className="py-20 mb-20 md:mb-0">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
@@ -567,7 +578,7 @@ const GoogleAdsDarwin = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 gradient-hero text-white relative overflow-hidden">
+        <section className="py-20 mb-20 md:mb-0 gradient-hero text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
