@@ -18,6 +18,7 @@ import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
 import GoogleAdsCanberra from "./pages/services/GoogleAdsCanberra";
 import GoogleAdsAdelaide from "./pages/services/GoogleAdsAdelaide";
 import GoogleAdsNewcastle from "./pages/services/GoogleAdsNewcastle";
+import GoogleAdsBrisbane from "./pages/services/GoogleAdsBrisbane";
 import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="/google-ads-canberra" element={<GoogleAdsCanberra />} />
             <Route path="/google-ads-adelaide" element={<GoogleAdsAdelaide />} />
             <Route path="/google-ads-newcastle" element={<GoogleAdsNewcastle />} />
+            <Route path="/google-ads-brisbane" element={<GoogleAdsBrisbane />} />
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
