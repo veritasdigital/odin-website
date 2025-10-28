@@ -164,7 +164,7 @@ export const MarketingStrategyForm = ({ isOpen, onClose }: MarketingStrategyForm
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-0 md:p-4 overflow-hidden">
+    <div className="fixed inset-0 bg-black/50 z-[100] flex items-center justify-center p-0 md:p-4 overflow-hidden">
       <button
         onClick={onClose}
         className="absolute top-3 left-3 bg-white/80 hover:bg-white text-foreground rounded-full p-2 shadow-card border border-border z-[60]"
