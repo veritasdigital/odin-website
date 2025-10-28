@@ -485,15 +485,6 @@ const GoogleAdsNewcastle = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="p-8 rounded-xl bg-card border border-primary/20 hover:shadow-glow transition-all duration-300">
-                  {testimonial.image && (
-                    <div className="mb-6 h-32 rounded-lg overflow-hidden">
-                      <img 
-                        src={testimonial.image} 
-                        alt={`${testimonial.company} product`}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  )}
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-primary text-primary" />
@@ -505,12 +496,19 @@ const GoogleAdsNewcastle = () => {
                   <p className="text-lg mb-6 italic">
                     "{testimonial.quote}"
                   </p>
-                  <div className="flex items-center gap-4">
-                    <div>
-                      <div className="font-bold">{testimonial.author}</div>
-                      <div className="text-sm text-muted-foreground">{testimonial.company}</div>
-                    </div>
+                  <div className="mb-4">
+                    <div className="font-bold">{testimonial.author}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
                   </div>
+                  {testimonial.image && (
+                    <div className="h-32 rounded-lg overflow-hidden">
+                      <img 
+                        src={testimonial.image} 
+                        alt={`${testimonial.company} product`}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
