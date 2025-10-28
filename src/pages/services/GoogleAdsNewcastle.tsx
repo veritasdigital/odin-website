@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
-import googlePartner from "@/assets/partners/google-partner-2024.png";
+import googleLogo from "@/assets/partners/google-logo.png";
 import metaPartner from "@/assets/partners/meta-partner-2024.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
 import hubspotPartner from "@/assets/partners/hubspot-certified-agency-partner.png";
@@ -372,7 +372,7 @@ const GoogleAdsNewcastle = () => {
                 <p className="text-sm text-muted-foreground mb-4">Certified Partners</p>
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={googlePartner} alt="Google Premier Partner 2024" className="max-h-8 max-w-full object-contain" />
+                    <img src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
                     <img src={metaPartner} alt="Meta Business Partner 2024" className="max-h-8 max-w-full object-contain" />
