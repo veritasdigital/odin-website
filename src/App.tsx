@@ -41,6 +41,7 @@ import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
 import GoogleAdsHobart from "./pages/services/GoogleAdsHobart";
 import GoogleAdsGoldCoast from "./pages/services/GoogleAdsGoldCoast";
 import GoogleAdsDarwin from "./pages/services/GoogleAdsDarwin";
+import GoogleAdsLaunceston from "./pages/services/GoogleAdsLaunceston";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,7 @@ const App = () => (
             <Route path="/google-ads-hobart" element={<GoogleAdsHobart />} />
             <Route path="/google-ads-gold-coast" element={<GoogleAdsGoldCoast />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
+            <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/services/seo" element={<SEO />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
