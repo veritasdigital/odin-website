@@ -300,9 +300,10 @@ const GoogleAdsDarwin = () => {
                   onClick={() => navigate('/contact')}
                   size="lg" 
                   variant="cta"
-                  className="group w-full sm:w-auto text-base sm:text-lg"
+                  className="group w-full sm:w-auto text-sm sm:text-lg px-4 sm:px-8"
                 >
-                  Get Your FREE Darwin PPC Strategy Session
+                  <span className="hidden sm:inline">Get Your FREE Darwin PPC Strategy Session</span>
+                  <span className="sm:hidden">Get FREE PPC Strategy Session</span>
                   <Target className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:rotate-12 transition-transform" />
                 </Button>
               </div>
