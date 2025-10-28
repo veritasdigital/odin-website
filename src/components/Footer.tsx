@@ -3,9 +3,11 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/component
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import odinLogo from "@/assets/odin-logo-footer.png";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
 export const Footer = () => {
   const [openIndustries, setOpenIndustries] = useState<string[]>([]);
+  const { openForm } = useMarketingForm();
 
   const toggleIndustry = (industry: string) => {
     setOpenIndustries(prev => 
@@ -74,7 +76,7 @@ export const Footer = () => {
             <p className="text-white/80 mb-6 leading-relaxed">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
             </p>
-            <Button variant="hero" size="lg" className="text-sm md:text-base px-4 md:px-8 w-full md:w-auto whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+            <Button variant="hero" size="lg" onClick={openForm} className="text-sm md:text-base px-4 md:px-8 w-full md:w-auto whitespace-normal h-auto min-h-[3rem] md:min-h-0">
               Get Your Free Strategy Session
             </Button>
           </div>
