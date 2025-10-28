@@ -4,7 +4,12 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
-import { Partnerships } from "@/components/Partnerships";
+import googlePartner from "@/assets/partners/google-partner-2024.png";
+import metaPartner from "@/assets/partners/meta-partner-2024.png";
+import shopifyPartner from "@/assets/partners/shopify-partner.svg";
+import hubspotPartner from "@/assets/partners/hubspot-certified-agency-partner.png";
+import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
+import microsoftPartner from "@/assets/partners/microsoft-partner-2024.png";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -361,6 +366,31 @@ const GoogleAdsNewcastle = () => {
                   GET YOUR FREE AUDIT
                 </Button>
               </div>
+              
+              {/* Partnership Badges */}
+              <div className="pt-8 border-t border-border/30 mt-12">
+                <p className="text-sm text-muted-foreground mb-4">Certified Partners</p>
+                <div className="flex items-center justify-center gap-4 flex-wrap">
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={googlePartner} alt="Google Premier Partner 2024" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={metaPartner} alt="Meta Business Partner 2024" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={hubspotPartner} alt="HubSpot Partner" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={klaviyoPartner} alt="Klaviyo Partner" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                  <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
+                    <img src={microsoftPartner} alt="Microsoft Advertising Partner" className="max-h-8 max-w-full object-contain" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -389,8 +419,6 @@ const GoogleAdsNewcastle = () => {
           </div>
         </section>
 
-        {/* Partnerships Section */}
-        <Partnerships />
 
         {/* Client Logos Section */}
         <ClientLogos />
