@@ -299,28 +299,28 @@ const FacebookAdvertising = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-background">
+        <section className="relative isolate overflow-hidden min-h-[90vh] md:min-h-[85vh] flex items-center bg-background pb-20 md:pb-0">
           {/* Subtle Background Pattern */}
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
 
           {/* Floating Circles */}
-          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-float blur-xl"></div>
-          <div className="absolute bottom-32 right-20 w-40 h-40 bg-secondary/10 rounded-full animate-float blur-xl" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-accent/10 rounded-full animate-float blur-xl" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full animate-float blur-xl hidden md:block"></div>
+          <div className="absolute bottom-32 right-20 w-40 h-40 bg-secondary/10 rounded-full animate-float blur-xl hidden md:block" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-accent/10 rounded-full animate-float blur-xl hidden md:block" style={{ animationDelay: '4s' }}></div>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-8 lg:px-12 py-24 text-center">
-            <div className="space-y-8 animate-slide-up">
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-black text-foreground leading-tight">
+          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
+            <div className="space-y-6 md:space-y-8 animate-slide-up">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black text-foreground leading-tight">
                 Facebook Advertising Agency
               </h1>
               
-              <p className="text-3xl md:text-4xl font-bold text-foreground/90 leading-tight max-w-4xl mx-auto">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground/90 leading-tight max-w-4xl mx-auto">
                 Stop Burning Money on Facebook Ads That Don't Convert. Start Scaling Profitably with Campaigns That Actually Work.
               </p>
 
-              <div className="space-y-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <div className="space-y-3 md:space-y-4 text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
                 <p className="font-semibold text-foreground">
                   The Facebook Marketing Agency Australia Trusts for Maximum ROAS and Predictable Growth.
                 </p>
@@ -335,23 +335,23 @@ const FacebookAdvertising = () => {
                 </p>
               </div>
 
-              <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="pt-4 md:pt-6 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button 
                   variant="cta" 
                   size="xl"
                   onClick={openForm}
-                  className="w-full sm:w-auto"
+                  className="w-full sm:w-auto text-sm md:text-base"
                 >
                   Get Your FREE Facebook Ads Strategy Session →
                 </Button>
               </div>
 
               {/* Trust Signals */}
-              <div className="pt-8 flex flex-wrap justify-center gap-8 text-sm font-bold text-foreground/80">
+              <div className="pt-6 md:pt-8 flex flex-wrap justify-center gap-4 md:gap-8 text-xs md:text-sm font-bold text-foreground/80">
                 <div>$574M+ in Client Revenue</div>
-                <div>•</div>
+                <div className="hidden sm:block">•</div>
                 <div>95% Client Retention</div>
-                <div>•</div>
+                <div className="hidden sm:block">•</div>
                 <div>No Lock-In Contracts</div>
               </div>
             </div>
@@ -359,26 +359,26 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Problem Section */}
-        <section className="py-24 px-8 bg-muted/30">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-muted/30">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-4xl md:text-5xl font-black text-foreground">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground">
                 Why Most Facebook Advertising Agencies Fail to Deliver Real Results
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Australian businesses waste millions every year on facebook ads australia campaigns that look good on paper but deliver nothing to the bottom line. Here's why most agencies fail.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
               {painPoints.map((point, index) => (
                 <Card key={index} className="hover:shadow-glow transition-all duration-300 border-2">
                   <CardHeader>
                     <div className="text-primary mb-4">{point.icon}</div>
-                    <CardTitle className="text-xl">{point.title}</CardTitle>
+                    <CardTitle className="text-lg md:text-xl">{point.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{point.description}</p>
+                    <p className="text-sm md:text-base text-muted-foreground">{point.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -389,6 +389,7 @@ const FacebookAdvertising = () => {
                 variant="cta" 
                 size="lg"
                 onClick={openForm}
+                className="w-full sm:w-auto text-sm md:text-base"
               >
                 Stop the Budget Bleed: Talk to a Facebook Ads Expert →
               </Button>
@@ -397,26 +398,26 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Solution Section */}
-        <section className="py-24 px-8 bg-background">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-background">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-4xl md:text-5xl font-black text-foreground">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground">
                 How We Turn Facebook Ads into a Predictable Revenue Engine
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We are the best facebook marketing agency that eliminates waste and builds campaigns designed to scale profitably.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
               {solutions.map((solution, index) => (
                 <Card key={index} className="hover:shadow-primary transition-all duration-300">
                   <CardHeader>
                     <div className="text-primary mb-4">{solution.icon}</div>
-                    <CardTitle className="text-lg">{solution.title}</CardTitle>
+                    <CardTitle className="text-base md:text-lg">{solution.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{solution.description}</p>
+                    <p className="text-sm md:text-base text-muted-foreground">{solution.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -427,6 +428,7 @@ const FacebookAdvertising = () => {
                 variant="cta" 
                 size="lg"
                 onClick={openForm}
+                className="w-full sm:w-auto text-sm md:text-base"
               >
                 See Our Facebook Ads Management Packages →
               </Button>
@@ -435,23 +437,23 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-24 px-8 bg-muted/30">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-muted/30">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-4xl md:text-5xl font-black text-foreground">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground">
                 Our Facebook Advertising Services: Built to Scale Your Business
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 As a leading digital agency facebook wide, we offer a full spectrum of Meta advertising services designed to dominate your market.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8 md:mb-12">
               {services.map((service, index) => (
                 <Card key={index} className="hover:shadow-glow transition-all duration-300 text-center">
                   <CardHeader>
                     <div className="text-primary mb-4 flex justify-center">{service.icon}</div>
-                    <CardTitle className="text-lg">{service.title}</CardTitle>
+                    <CardTitle className="text-base md:text-lg">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">{service.description}</p>
@@ -465,6 +467,7 @@ const FacebookAdvertising = () => {
                 variant="cta" 
                 size="lg"
                 onClick={openForm}
+                className="w-full sm:w-auto text-sm md:text-base"
               >
                 Ready for a Custom Facebook Ads Strategy? Contact Us →
               </Button>
@@ -473,23 +476,23 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-24 px-8 bg-background">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-background">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-4xl md:text-5xl font-black text-foreground">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground">
                 Why Australian Businesses Choose Odin Digital for Facebook Advertising
               </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We are not a generalist agency that dabbles in Facebook ads. We are specialists who understand the unique challenges of scaling profitably on Meta platforms.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-8 md:mb-12">
               {whyChooseUs.map((reason, index) => (
                 <Card key={index} className="hover:shadow-primary transition-all duration-300 text-center">
                   <CardHeader>
                     <div className="text-primary mb-4 flex justify-center">{reason.icon}</div>
-                    <CardTitle className="text-lg">{reason.title}</CardTitle>
+                    <CardTitle className="text-base md:text-lg">{reason.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">{reason.description}</p>
@@ -503,6 +506,7 @@ const FacebookAdvertising = () => {
                 variant="cta" 
                 size="lg"
                 onClick={openForm}
+                className="w-full sm:w-auto text-sm md:text-base"
               >
                 Talk to a Facebook Ads Specialist →
               </Button>
@@ -511,24 +515,24 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 px-8 bg-muted/30">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-muted/30">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16 space-y-4">
-              <h2 className="text-4xl md:text-5xl font-black text-foreground">
+            <div className="text-center mb-12 md:mb-16 space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground">
                 FAQs: Your Questions About Facebook Advertising Answered
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground">
                 We know you have specific concerns about ad spend and agency performance. Here are clear, honest answers.
               </p>
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-card border rounded-lg px-6">
-                  <AccordionTrigger className="text-left font-semibold hover:text-primary">
+                <AccordionItem key={index} value={`item-${index}`} className="bg-card border rounded-lg px-4 md:px-6">
+                  <AccordionTrigger className="text-left text-sm md:text-base font-semibold hover:text-primary py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
+                  <AccordionContent className="text-sm md:text-base text-muted-foreground">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -538,24 +542,24 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 px-8 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
+        <section className="py-16 md:py-24 px-4 sm:px-8 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden mb-20 md:mb-0">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-10 left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
             <div className="absolute bottom-10 right-10 w-56 h-56 bg-white rounded-full blur-3xl"></div>
           </div>
 
-          <div className="max-w-4xl mx-auto text-center relative z-10 space-y-8">
-            <h2 className="text-4xl md:text-5xl font-black">
+          <div className="max-w-4xl mx-auto text-center relative z-10 space-y-6 md:space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black">
               Ready to Stop Burning Money and Start Scaling Profitably?
             </h2>
-            <p className="text-xl md:text-2xl">
+            <p className="text-lg md:text-xl lg:text-2xl">
               Stop guessing with your facebook advertising budget. Start working with facebook ads expert specialists who deliver precision, transparency, and profit.
             </p>
             <Button 
               variant="default" 
               size="xl"
               onClick={openForm}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105"
+              className="bg-white text-primary hover:bg-white/90 hover:scale-105 w-full sm:w-auto text-sm md:text-base"
             >
               Claim Your FREE Facebook Ads Strategy Session →
             </Button>
@@ -563,12 +567,12 @@ const FacebookAdvertising = () => {
         </section>
 
         {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-4 shadow-glow">
+        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-3 shadow-glow">
           <Button 
-            variant="hero" 
+            variant="default" 
             size="lg"
             onClick={openForm}
-            className="w-full bg-white text-primary hover:bg-white/90"
+            className="w-full bg-white text-primary hover:bg-white/90 font-bold text-sm"
           >
             Get FREE Strategy Session →
           </Button>
