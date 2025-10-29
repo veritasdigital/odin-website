@@ -76,6 +76,9 @@ export const Header = () => {
                   <a href="/services/social-media" className="w-full">Social Media Marketing</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/social-media-advertising-adelaide" className="w-full">Social Media Ads Adelaide</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/website-design" className="w-full">Website Design</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
@@ -130,6 +133,7 @@ export const Header = () => {
                   <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
                   <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
                   <a href="/services/social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
+                  <a href="/social-media-advertising-adelaide" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Adelaide</a>
                   <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
                   <a href="/services/funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
                   <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
