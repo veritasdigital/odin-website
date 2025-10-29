@@ -373,10 +373,12 @@ const WebDesignAdelaide = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8 border-border/50 bg-card">
-                  <p className="text-muted-foreground mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
-                  <div className="font-semibold text-foreground">{testimonial.author}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                <Card key={index} className="p-8 border-border/50 bg-card flex flex-col">
+                  <p className="text-muted-foreground mb-6 italic leading-relaxed flex-grow">"{testimonial.quote}"</p>
+                  <div className="mt-auto">
+                    <div className="font-semibold text-foreground">{testimonial.author}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                  </div>
                 </Card>
               ))}
             </div>
