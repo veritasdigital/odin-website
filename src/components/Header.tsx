@@ -65,7 +65,7 @@ export const Header = () => {
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2">
+              <DropdownMenuContent className="z-50 w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2 max-h-[70vh] overflow-y-auto">
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/google-ads" className="w-full">Google Ads</a>
                 </DropdownMenuItem>
