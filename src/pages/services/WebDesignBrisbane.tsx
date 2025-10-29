@@ -58,13 +58,13 @@ const WebDesignBrisbane = () => {
     {
       icon: Search,
       title: "SEO-Optimized Web Development Brisbane",
-      description: "A beautiful website that no one can find is a wasted investment. We build sites with clean code, fast loading speeds, mobile-first design, and proper technical SEO structure from the ground up. We integrate seamlessly with our in-house <a href='/services/seo' class='text-primary hover:underline'>SEO</a> team to ensure your site ranks and drives organic traffic from day one. We don't just build sites—we build sites that get found.",
+      description: "A beautiful website that no one can find is a wasted investment. We build sites with clean code, fast loading speeds, mobile-first design, and proper technical SEO structure from the ground up. We integrate seamlessly with our in-house SEO team to ensure your site ranks and drives organic traffic from day one. We don't just build sites—we build sites that get found.",
       cta: "Get Your FREE Brisbane SEO Website Audit"
     },
     {
       icon: ShoppingBag,
       title: "eCommerce Website Brisbane Solutions",
-      description: "Selling online? We specialize in high-performance ecommerce website brisbane solutions (Shopify, WooCommerce, custom platforms) that reduce cart abandonment and increase average order value. Our sites integrate with your marketing stack (<a href='/services/google-ads' class='text-primary hover:underline'>Google Ads</a>, <a href='/services/meta-ads' class='text-primary hover:underline'>Meta Ads</a>, email) to create a seamless customer journey from first click to final sale.",
+      description: "Selling online? We specialize in high-performance ecommerce website brisbane solutions (Shopify, WooCommerce, custom platforms) that reduce cart abandonment and increase average order value. Our sites integrate with your marketing stack to create a seamless customer journey from first click to final sale.",
       cta: "Get Your FREE Brisbane eCommerce Website Quote"
     },
     {
@@ -94,7 +94,7 @@ const WebDesignBrisbane = () => {
     {
       icon: Smartphone,
       title: "Integrated Marketing Ecosystem",
-      description: "Your website doesn't exist in a vacuum. We integrate it seamlessly with your broader <a href='/services' class='text-primary hover:underline'>digital marketing</a> strategy—<a href='/services/ppc' class='text-primary hover:underline'>PPC</a>, SEO, email, social. This creates a unified customer journey that maximizes lifetime value and reduces customer acquisition costs. We're not just building a site; we're building your growth engine."
+      description: "Your website doesn't exist in a vacuum. We integrate it seamlessly with your broader digital marketing strategy—PPC, SEO, email, social. This creates a unified customer journey that maximizes lifetime value and reduces customer acquisition costs. We're not just building a site; we're building your growth engine."
     }
   ];
 
@@ -163,7 +163,7 @@ const WebDesignBrisbane = () => {
     },
     {
       question: "Can you integrate my new website with Google Ads and SEO campaigns?",
-      answer: "Yes, this is one of our core strengths. We have in-house <a href='/services/google-ads' class='text-primary hover:underline'>Google Ads</a> and <a href='/services/seo' class='text-primary hover:underline'>SEO</a> experts who work alongside our web development team. We ensure proper tracking pixels, conversion tracking, landing page optimization, and technical SEO implementation from day one. This integration ensures your paid and organic traffic converts at the highest possible rate, maximizing your ROI across all channels."
+      answer: "Yes, this is one of our core strengths. We have in-house Google Ads and SEO experts who work alongside our web development team. We ensure proper tracking pixels, conversion tracking, landing page optimization, and technical SEO implementation from day one. This integration ensures your paid and organic traffic converts at the highest possible rate, maximizing your ROI across all channels."
     },
     {
       question: "What platforms do you use for ecommerce website brisbane projects?",
@@ -484,7 +484,7 @@ const WebDesignBrisbane = () => {
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale flex flex-col">
                     <Icon className="h-12 w-12 mb-6 text-primary" />
                     <h3 className="text-2xl font-bold mb-4 text-foreground break-words hyphens-auto">{service.title}</h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed flex-grow" dangerouslySetInnerHTML={{ __html: service.description }} />
+                    <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">{service.description}</p>
                     <Button
                       variant="cta"
                       className="w-full h-auto py-3 px-4 whitespace-normal break-words text-center mt-auto"
@@ -518,7 +518,7 @@ const WebDesignBrisbane = () => {
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                     <Icon className="h-10 w-10 mb-4 text-primary" />
                     <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{item.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: item.description }} />
+                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                   </Card>
                 );
               })}
@@ -622,7 +622,9 @@ const WebDesignBrisbane = () => {
                     <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                      {faq.answer}
+                    </AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion>
