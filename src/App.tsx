@@ -35,6 +35,7 @@ import SEOAgency from "./pages/services/SEOAgency";
 import EcommerceSEO from "./pages/services/EcommerceSEO";
 import LocalSEO from "./pages/services/LocalSEO";
 import Dermatologists from "./pages/industries/Dermatologists";
+import Dentists from "./pages/industries/Dentists";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -106,6 +107,7 @@ const App = () => (
             <Route path="/seo-hobart" element={<HobartSEO />} />
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
+            <Route path="/industries/dentists" element={<Dentists />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
