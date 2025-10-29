@@ -311,7 +311,7 @@ const FacebookAdvertising = () => {
           <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-accent/10 rounded-full animate-float blur-xl hidden md:block" style={{ animationDelay: '4s' }}></div>
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
-            <div className="space-y-6 md:space-y-8 animate-slide-up">
+            <div className="space-y-6 md:space-y-8 animate-slide-up break-words overflow-visible">
               <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-snug break-words">
                 Facebook Advertising Agency
               </h1>
