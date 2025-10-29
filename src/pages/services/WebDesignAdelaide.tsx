@@ -333,8 +333,8 @@ const WebDesignAdelaide = () => {
                 return (
                   <Card key={index} className="p-8 text-center hover-scale border-border/50 bg-card">
                     <Icon className="h-12 w-12 mx-auto mb-4 text-primary" />
-                    <div className="text-4xl md:text-5xl font-bold mb-2 text-foreground">{metric.value}</div>
-                    <div className="text-sm text-muted-foreground">{metric.label}</div>
+                    <div className="text-4xl font-bold mb-2 text-foreground">{metric.value}</div>
+                    <div className="text-sm font-medium text-muted-foreground">{metric.label}</div>
                   </Card>
                 );
               })}
