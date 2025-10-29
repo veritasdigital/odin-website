@@ -273,7 +273,7 @@ const InstagramAdvertising = () => {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 py-8 md:py-16 text-center">
             <div className="space-y-4 md:space-y-8 animate-slide-up break-words">
-              <h1 className="text-[8vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-tight tracking-tight break-words px-2">
+              <h1 className="text-[8vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-tight tracking-tight break-words px-2 mt-8 md:mt-12">
                 Instagram Ads Agency
               </h1>
               
