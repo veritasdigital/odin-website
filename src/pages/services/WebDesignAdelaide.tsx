@@ -279,7 +279,7 @@ const WebDesignAdelaide = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background overflow-x-hidden">
         <Header />
         <SideTab />
 
@@ -294,23 +294,23 @@ const WebDesignAdelaide = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 pb-2">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 pb-2 break-words hyphens-auto">
                 Web Design Agency Adelaide
               </h1>
-              <p className="hero-sub-headline text-4xl md:text-5xl font-bold mb-8 text-foreground/90">
+              <p className="hero-sub-headline text-4xl md:text-5xl font-bold mb-8 text-foreground/90 break-words hyphens-auto">
                 Your Website Should Generate Leads, Not Headaches.
               </p>
-              <p className="text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed">
+              <p className="text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed break-words hyphens-auto">
                 Is your outdated, slow, or DIY website costing you customers? It's time for a professional Adelaide web design agency that builds high-converting websites designed to grow your business.
               </p>
-              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed">
+              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words hyphens-auto">
                 In the competitive Adelaide market, your website is your most important sales tool. A slow, unprofessional, or broken site doesn't just look bad—it actively drives potential customers to your competitors. At Odin Digital, we don't just build pretty websites; we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment. With no lock-in contracts and a focus on radical transparency, we're the Adelaide web design partner you can trust. Ready to turn your website into a revenue-generating machine?
               </p>
               <Button
                 variant="cta"
                 size="lg"
                 onClick={() => window.location.href = '/contact'}
-                className="text-base md:text-lg h-14 px-8"
+                className="text-base md:text-lg h-14 px-8 whitespace-normal break-words text-center"
               >
                 Get Your FREE Adelaide Web Design Quote <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -322,7 +322,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Proof Is in the Performance</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">The Proof Is in the Performance</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 We're not just making promises; we're delivering verified results. Here's a snapshot of what our clients have achieved.
               </p>
@@ -346,7 +346,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Does This Sound Familiar? Your Adelaide Website Isn't Working.</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Does This Sound Familiar? Your Adelaide Website Isn't Working.</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 You have a website, but it's not generating the leads or sales you need. It's a common and costly problem for Adelaide businesses.
               </p>
@@ -366,7 +366,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">What Our Clients Say</h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Don't just take our word for it. Here's what business owners are saying about working with Odin Digital.
               </p>
@@ -387,7 +387,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Web Design Services for Adelaide Businesses</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Web Design Services for Adelaide Businesses</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We offer a complete suite of professional web design and development services to help your Adelaide business succeed online.
               </p>
@@ -398,11 +398,11 @@ const WebDesignAdelaide = () => {
                 return (
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                     <Icon className="h-12 w-12 mb-6 text-primary" />
-                    <h3 className="text-2xl font-bold mb-4 text-foreground">{service.title}</h3>
+                    <h3 className="text-2xl font-bold mb-4 text-foreground break-words hyphens-auto">{service.title}</h3>
                     <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                     <Button
                       variant="cta"
-                      className="w-full"
+                      className="w-full whitespace-normal break-words text-center"
                       onClick={() => window.location.href = '/contact'}
                     >
                       {service.cta} <ArrowRight className="ml-2 h-4 w-4" />
@@ -418,7 +418,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Odin Digital Difference: Your Adelaide Web Design Agency</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">The Odin Digital Difference: Your Adelaide Web Design Agency</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Why choose us as your web design agency in Adelaide? Because we build websites that actually make you money.
               </p>
@@ -429,7 +429,7 @@ const WebDesignAdelaide = () => {
                 return (
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                     <Icon className="h-10 w-10 mb-4 text-primary" />
-                    <h3 className="text-xl font-bold mb-4 text-foreground">{item.title}</h3>
+                    <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{item.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                   </Card>
                 );
@@ -442,7 +442,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Proven 4-Step Web Design Process</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Our Proven 4-Step Web Design Process</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We follow a simple, effective process to deliver high-quality websites on time and on budget for our Adelaide clients.
               </p>
@@ -451,7 +451,7 @@ const WebDesignAdelaide = () => {
               {processSteps.map((step, index) => (
                 <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                   <div className="text-5xl font-bold text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground">{step.title}</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{step.description}</p>
                 </Card>
               ))}
@@ -463,7 +463,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Odin Digital as Your Adelaide Web Design Partner?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Why Choose Odin Digital as Your Adelaide Web Design Partner?</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 You have a lot of choices when it comes to web design agencies in Adelaide. Here's why we're the right choice for your business.
               </p>
@@ -472,7 +472,7 @@ const WebDesignAdelaide = () => {
               {whyChooseUs.map((item, index) => (
                 <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                   <CheckCircle2 className="h-10 w-10 mb-4 text-primary" />
-                  <h3 className="text-xl font-bold mb-4 text-foreground">{item.title}</h3>
+                  <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{item.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">{item.description}</p>
                 </Card>
               ))}
@@ -484,7 +484,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-accent/10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to Build a Website That Grows Your Business in Adelaide?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 break-words hyphens-auto">Ready to Build a Website That Grows Your Business in Adelaide?</h2>
               <p className="text-lg md:text-xl mb-10 text-muted-foreground leading-relaxed">
                 Stop losing customers to an outdated, slow, or unprofessional website. It's time to invest in a high-converting website that generates a measurable return on investment.
               </p>
@@ -495,7 +495,7 @@ const WebDesignAdelaide = () => {
                 variant="cta"
                 size="lg"
                 onClick={() => window.location.href = '/contact'}
-                className="text-base md:text-lg h-14 px-8"
+                className="text-base md:text-lg h-14 px-8 whitespace-normal break-words text-center"
               >
                 Get Your FREE Adelaide Web Design Quote <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -507,7 +507,7 @@ const WebDesignAdelaide = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions About Web Design in Adelaide</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Frequently Asked Questions About Web Design in Adelaide</h2>
             </div>
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
@@ -527,7 +527,7 @@ const WebDesignAdelaide = () => {
                   variant="cta"
                   size="lg"
                   onClick={() => window.location.href = '/contact'}
-                  className="text-base md:text-lg h-14 px-8"
+                  className="text-base md:text-lg h-14 px-8 whitespace-normal break-words text-center"
                 >
                   Get Your FREE Adelaide Web Design Quote <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
