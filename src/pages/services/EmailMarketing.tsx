@@ -404,7 +404,7 @@ const EmailMarketing = () => {
                   effort. Just email marketing that drives measurable ROI.
                 </p>
               </div>
-              <Button asChild variant="hero" size="lg" className="text-lg px-12 py-6 shadow-glow">
+              <Button asChild variant="hero" size="lg" className="text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 shadow-glow">
                 <Link to="/contact">Book Your Free Consultation</Link>
               </Button>
             </div>
