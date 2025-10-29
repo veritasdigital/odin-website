@@ -371,19 +371,19 @@ const WebDesignSydney = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 break-words hyphens-auto">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 break-words overflow-wrap-anywhere">
                 Web design Sydney
               </h1>
-              <p className="hero-sub-headline text-4xl md:text-5xl font-bold mb-8 text-foreground/90 break-words hyphens-auto">
+              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-foreground/90 break-words overflow-wrap-anywhere leading-tight">
                 Your website isn't converting because it's not designed for conversions.
               </p>
-              <p className="text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed break-words hyphens-auto">
+              <p className="text-base sm:text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
                 Stop settling for outdated, slow, non-converting websites. At Odin Digital, we design and develop websites that look beautiful, load fast, and drive real business results. We've helped 283+ businesses across Australia transform their online presence from a liability into their most powerful sales tool.
               </p>
-              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words hyphens-auto">
+              <p className="text-sm sm:text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
                 From e-commerce platforms to professional services websites, we build websites that work as hard as you do. Modern design. User-centric experience. Lightning-fast performance. Built for conversions.
               </p>
-              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words hyphens-auto font-semibold">
+              <p className="text-sm sm:text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere font-semibold">
                 No templates. No shortcuts. Just strategic, results-driven web design.
               </p>
               <Button
@@ -420,7 +420,7 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Why Your Website Isn't Working</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Why Your Website Isn't Working</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 If any of these sound familiar, it's time for a change.
               </p>
@@ -428,8 +428,8 @@ const WebDesignSydney = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {problems.map((problem, index) => (
                 <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
-                  <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{problem.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold mb-4 text-foreground break-words overflow-wrap-anywhere">{problem.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">{problem.description}</p>
                 </Card>
               ))}
             </div>
@@ -450,7 +450,7 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Web Design That Drives Results</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Web Design That Drives Results</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We solve every pain point with strategic, conversion-focused web design.
               </p>
@@ -461,8 +461,8 @@ const WebDesignSydney = () => {
                 return (
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                     <Icon className="h-10 w-10 mb-4 text-primary" />
-                    <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{solution.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4 text-foreground break-words overflow-wrap-anywhere">{solution.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">{solution.description}</p>
                   </Card>
                 );
               })}
@@ -474,7 +474,7 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Our Web Design and Development Services</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Our Web Design and Development Services</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Comprehensive web design solutions tailored to your business needs.
               </p>
@@ -485,8 +485,8 @@ const WebDesignSydney = () => {
                 return (
                   <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                     <Icon className="h-10 w-10 mb-4 text-primary" />
-                    <h3 className="text-lg font-bold mb-4 text-foreground break-words hyphens-auto">{service.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
+                    <h3 className="text-base sm:text-lg font-bold mb-4 text-foreground break-words overflow-wrap-anywhere">{service.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">{service.description}</p>
                   </Card>
                 );
               })}
@@ -508,7 +508,7 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Why Sydney Businesses Choose Odin Digital</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Why Sydney Businesses Choose Odin Digital</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Results that speak for themselves.
               </p>
@@ -517,7 +517,7 @@ const WebDesignSydney = () => {
               {whyChooseUs.map((reason, index) => (
                 <Card key={index} className="p-6 border-border/50 bg-card hover-scale text-center">
                   <CheckCircle2 className="h-8 w-8 mx-auto mb-3 text-primary" />
-                  <p className="font-semibold text-foreground">{reason}</p>
+                  <p className="text-sm sm:text-base font-semibold text-foreground break-words overflow-wrap-anywhere">{reason}</p>
                 </Card>
               ))}
             </div>
@@ -528,7 +528,7 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Our Web Design Process</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Our Web Design Process</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 A transparent, collaborative process that delivers results.
               </p>
@@ -537,8 +537,8 @@ const WebDesignSydney = () => {
               {processSteps.map((step, index) => (
                 <Card key={index} className="p-8 border-border/50 bg-card hover-scale">
                   <div className="text-5xl font-bold text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-4 text-foreground break-words hyphens-auto">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold mb-4 text-foreground break-words overflow-wrap-anywhere">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">{step.description}</p>
                 </Card>
               ))}
             </div>
@@ -549,16 +549,16 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 break-words hyphens-auto">Frequently Asked Questions</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 break-words overflow-wrap-anywhere">Frequently Asked Questions</h2>
             </div>
             <div className="max-w-4xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-lg px-6 bg-card">
-                    <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                    <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:text-primary break-words overflow-wrap-anywhere">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                    <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed pt-2 break-words overflow-wrap-anywhere">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -572,11 +572,11 @@ const WebDesignSydney = () => {
         <section className="py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-accent/10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 break-words hyphens-auto">Ready to Build a Website That Actually Converts?</h2>
-              <p className="text-lg md:text-xl mb-10 text-muted-foreground leading-relaxed">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 break-words overflow-wrap-anywhere">Ready to Build a Website That Actually Converts?</h2>
+              <p className="text-base sm:text-lg md:text-xl mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
                 Stop settling for outdated, non-converting websites. Let's build a website that drives real business results.
               </p>
-              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
                 Book a free consultation with one of our web design strategists. We'll discuss your goals, audit your current situation (if you have a website), and show you exactly how we can help.
               </p>
               <Button
