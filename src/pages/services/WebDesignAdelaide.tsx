@@ -279,7 +279,7 @@ const WebDesignAdelaide = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-background overflow-x-hidden">
+      <div className="min-h-screen bg-background overflow-x-hidden pb-24 md:pb-0">
         <Header />
         <SideTab />
 
@@ -542,11 +542,11 @@ const WebDesignAdelaide = () => {
         </section>
 
         {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden z-50">
+        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden z-50 safe-area-inset-bottom">
           <Button
             variant="cta"
             size="lg"
-            className="w-full"
+            className="w-full h-12"
             onClick={() => window.location.href = '/contact'}
           >
             Get FREE Quote <ArrowRight className="ml-2 h-4 w-4" />
