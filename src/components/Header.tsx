@@ -73,6 +73,9 @@ export const Header = () => {
                   <a href="/services/seo" className="w-full">SEO</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/services/facebook-ads" className="w-full">Facebook Ads</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/social-media" className="w-full">Social Media Marketing</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
