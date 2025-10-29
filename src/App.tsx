@@ -55,6 +55,7 @@ import WebDesignAdelaide from "./pages/services/WebDesignAdelaide";
 import WebDesignBrisbane from "./pages/services/WebDesignBrisbane";
 import WebDesignSydney from "./pages/services/WebDesignSydney";
 import WebDesignMelbourne from "./pages/services/WebDesignMelbourne";
+import WebDesignPerth from "./pages/services/WebDesignPerth";
 
 const queryClient = new QueryClient();
 
