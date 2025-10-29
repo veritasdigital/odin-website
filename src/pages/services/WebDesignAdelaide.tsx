@@ -404,10 +404,13 @@ const WebDesignAdelaide = () => {
                     <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
                     <Button
                       variant="cta"
-                      className="w-full whitespace-normal break-words text-center"
+                      className="w-full whitespace-normal break-words text-center h-auto py-3 px-4"
                       onClick={() => window.location.href = '/contact'}
                     >
-                      {service.cta} <ArrowRight className="ml-2 h-4 w-4" />
+                      <span className="flex items-center justify-center gap-2 flex-wrap">
+                        <span>{service.cta}</span>
+                        <ArrowRight className="h-4 w-4 shrink-0" />
+                      </span>
                     </Button>
                   </Card>
                 );
