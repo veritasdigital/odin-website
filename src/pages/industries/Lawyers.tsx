@@ -630,7 +630,7 @@ const Lawyers = () => {
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base whitespace-normal break-words"
             >
               See Our Law Firm Website Design Packages →
             </Button>
