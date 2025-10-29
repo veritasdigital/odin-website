@@ -312,11 +312,11 @@ const FacebookAdvertising = () => {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
             <div className="space-y-6 md:space-y-8 animate-slide-up break-words overflow-visible">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-snug break-words">
+              <h1 className="text-[9.5vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-snug tracking-tight break-words">
                 Facebook Advertising Agency
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-4xl font-bold text-foreground/90 leading-snug break-words max-w-4xl mx-auto">
+              <p className="text-[5vw] sm:text-2xl md:text-4xl font-bold text-foreground/90 leading-snug tracking-tight break-words max-w-4xl mx-auto">
                 Stop Burning Money on Facebook Ads That Don't Convert. Start Scaling Profitably with Campaigns That Actually Work.
               </p>
 
@@ -340,7 +340,7 @@ const FacebookAdvertising = () => {
                   variant="cta" 
                   size="xl"
                   onClick={openForm}
-                  className="w-full sm:w-auto text-sm md:text-base"
+                  className="w-full sm:w-auto text-sm md:text-base whitespace-normal break-words"
                 >
                   Get Your FREE Facebook Ads Strategy Session →
                 </Button>
