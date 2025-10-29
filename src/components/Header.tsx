@@ -110,6 +110,11 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
+            <a href="/web-design-perth" className={`font-medium transition-colors ${
+              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
+            }`}>
+              Web Design
+            </a>
             <a href="/about" className={`font-medium transition-colors ${
               isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
             }`}>
@@ -167,6 +172,7 @@ export const Header = () => {
                   <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
                 </div>
               </div>
+              <a href="/web-design-perth" className="text-charcoal/70 hover:text-primary font-medium py-2">Web Design</a>
               <a href="/about" className="text-charcoal/70 hover:text-primary font-medium py-2">About</a>
               <a href="/blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="/contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
