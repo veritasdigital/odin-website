@@ -107,7 +107,6 @@ const App = () => (
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
-            <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
             <Route path="/social-media-advertising-brisbane" element={<SocialMediaAdvertisingBrisbane />} />
@@ -125,7 +124,8 @@ const App = () => (
             <Route path="/facebook-ads-sydney" element={<FacebookAdsSydney />} />
           <Route path="/facebook-ads-melbourne" element={<FacebookAdsMelbourne />} />
           <Route path="/facebook-ads-perth" element={<FacebookAdsPerth />} />
-          <Route path="/services/email-marketing" element={<EmailMarketing />} />
+            <Route path="/services/email-marketing" element={<EmailMarketing />} />
+            <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
