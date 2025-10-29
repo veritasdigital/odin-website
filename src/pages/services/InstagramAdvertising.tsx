@@ -508,9 +508,9 @@ const InstagramAdvertising = () => {
             </p>
             <Button 
               variant="cta" 
-              size="xl"
+              size="lg"
               onClick={() => window.location.href = '/contact'}
-              className="shadow-glow"
+              className="shadow-glow w-full sm:w-auto min-h-[48px] whitespace-normal break-words text-sm md:text-base px-4 md:px-6"
             >
               Get Your FREE Instagram Ads Strategy Audit →
             </Button>
