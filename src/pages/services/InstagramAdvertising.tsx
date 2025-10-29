@@ -263,7 +263,7 @@ const InstagramAdvertising = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-white py-16 md:py-24">
+        <section className="relative overflow-hidden bg-white py-12 md:py-24">
           {/* Floating decorative circles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 right-10 w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/10 animate-float"></div>
@@ -271,31 +271,31 @@ const InstagramAdvertising = () => {
             <div className="absolute top-1/2 left-1/3 w-16 h-16 md:w-24 md:h-24 rounded-full bg-primary-glow/10 animate-float" style={{ animationDelay: '4s' }}></div>
           </div>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
-            <div className="space-y-6 md:space-y-8 animate-slide-up break-words">
-              <h1 className="text-[9.5vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-snug tracking-tight break-words">
+          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 py-8 md:py-16 text-center">
+            <div className="space-y-4 md:space-y-8 animate-slide-up break-words">
+              <h1 className="text-[8vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-tight tracking-tight break-words px-2">
                 Instagram Ads Agency
               </h1>
               
-              <p className="text-[5vw] sm:text-2xl md:text-4xl font-bold text-gray-800 leading-snug tracking-tight break-words max-w-4xl mx-auto hero-sub-headline">
+              <p className="text-[4.5vw] sm:text-2xl md:text-4xl font-bold text-gray-800 leading-tight tracking-tight break-words max-w-4xl mx-auto hero-sub-headline px-2">
                 Your Instagram Ads Should Drive Sales, Not Just Likes.
               </p>
 
-              <div className="prose prose-lg mx-auto text-gray-700 max-w-3xl break-words">
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed break-words">
+              <div className="prose prose-lg mx-auto text-gray-700 max-w-3xl break-words px-2">
+                <p className="text-sm sm:text-base md:text-xl leading-relaxed break-words mb-4">
                   Are you boosting posts and getting nothing but vanity metrics? It's time for a professional Instagram ads agency that turns your visual content into a high-performance revenue stream. We deliver a 540% average ROI by focusing on what matters: sales and leads.
                 </p>
-                <p className="text-base sm:text-lg leading-relaxed break-words">
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed break-words">
                   Instagram is the most powerful visual marketing platform on the planet, but it's also one of the most competitive. Simply boosting a post isn't a strategy—it's a waste of money. To succeed, you need scroll-stopping creative, sophisticated targeting, and a deep understanding of the Meta Ads platform. At Odin Digital, we're not just social media managers; we're a full-service creative and performance agency. We build data-driven Instagram advertising campaigns that deliver predictable, profitable growth. Ready to unlock the true potential of your Instagram presence?
                 </p>
               </div>
 
-              <div className="pt-4">
+              <div className="pt-2 px-2">
                 <Button 
                   variant="cta" 
-                  size="xl"
+                  size="lg"
                   onClick={() => window.location.href = '/contact'}
-                  className="w-full sm:w-auto text-sm md:text-base whitespace-normal break-words"
+                  className="w-full sm:w-auto text-sm sm:text-base whitespace-normal break-words min-h-[48px]"
                 >
                   Get Your FREE Instagram Ads Strategy Audit →
                 </Button>
@@ -545,14 +545,14 @@ const InstagramAdvertising = () => {
         </div>
 
         {/* Mobile Sticky CTA */}
-        <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background border-t shadow-lg z-50">
+        <div className="md:hidden fixed bottom-0 left-0 right-0 p-3 bg-white border-t shadow-lg z-50">
           <Button 
             variant="cta" 
             size="lg"
             onClick={() => window.location.href = '/contact'}
-            className="w-full"
+            className="w-full min-h-[48px] text-sm font-semibold"
           >
-            Get Your FREE Strategy Audit →
+            Get FREE Strategy Audit →
           </Button>
         </div>
       </div>
