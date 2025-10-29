@@ -364,14 +364,16 @@ const InstagramAdvertising = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="shadow-card">
-                  <CardContent className="pt-6">
+                <Card key={index} className="shadow-card flex flex-col">
+                  <CardContent className="pt-6 flex-1 flex flex-col">
                     <div className="mb-4 text-primary">
                       <Award className="w-10 h-10" />
                     </div>
-                    <p className="text-base italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
-                    <div className="font-semibold">{testimonial.author}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                    <p className="text-base italic mb-4 leading-relaxed flex-1">"{testimonial.quote}"</p>
+                    <div className="mt-auto">
+                      <div className="font-semibold">{testimonial.author}</div>
+                      <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
