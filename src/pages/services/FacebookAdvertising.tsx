@@ -552,10 +552,10 @@ const FacebookAdvertising = () => {
               Stop guessing with your facebook advertising budget. Start working with facebook ads expert specialists who deliver precision, transparency, and profit.
             </p>
             <Button 
-              variant="hero" 
+              variant="default" 
               size="xl"
               onClick={openForm}
-              className="bg-white text-primary hover:bg-white/90 hover:scale-105"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105"
             >
               Claim Your FREE Facebook Ads Strategy Session →
             </Button>
