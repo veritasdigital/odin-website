@@ -263,7 +263,7 @@ const InstagramAdvertising = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-hero py-16 md:py-24">
+        <section className="relative overflow-hidden bg-white py-16 md:py-24">
           {/* Floating decorative circles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 right-10 w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/10 animate-float"></div>
@@ -273,15 +273,15 @@ const InstagramAdvertising = () => {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
             <div className="space-y-6 md:space-y-8 animate-slide-up break-words">
-              <h1 className="text-[9.5vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-snug tracking-tight break-words">
+              <h1 className="text-[9.5vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-snug tracking-tight break-words">
                 Instagram Ads Agency
               </h1>
               
-              <p className="text-[5vw] sm:text-2xl md:text-4xl font-bold text-foreground/90 leading-snug tracking-tight break-words max-w-4xl mx-auto hero-sub-headline">
+              <p className="text-[5vw] sm:text-2xl md:text-4xl font-bold text-gray-800 leading-snug tracking-tight break-words max-w-4xl mx-auto hero-sub-headline">
                 Your Instagram Ads Should Drive Sales, Not Just Likes.
               </p>
 
-              <div className="prose prose-lg mx-auto text-foreground/80 max-w-3xl break-words">
+              <div className="prose prose-lg mx-auto text-gray-700 max-w-3xl break-words">
                 <p className="text-base sm:text-lg md:text-xl leading-relaxed break-words">
                   Are you boosting posts and getting nothing but vanity metrics? It's time for a professional Instagram ads agency that turns your visual content into a high-performance revenue stream. We deliver a 540% average ROI by focusing on what matters: sales and leads.
                 </p>
