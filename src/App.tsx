@@ -112,6 +112,7 @@ const App = () => (
             <Route path="/web-design-brisbane" element={<WebDesignBrisbane />} />
             <Route path="/web-design-sydney" element={<WebDesignSydney />} />
             <Route path="/web-design-melbourne" element={<WebDesignMelbourne />} />
+            <Route path="/web-design-perth" element={<WebDesignPerth />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
