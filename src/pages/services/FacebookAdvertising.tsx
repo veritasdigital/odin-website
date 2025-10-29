@@ -348,7 +348,7 @@ const FacebookAdvertising = () => {
                   No generic campaigns. No vanity metrics. No wasted budget. Just Facebook ads management that drives measurable revenue.
                 </p>
               </div>
-              <Button asChild variant="hero" size="lg" className="text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 shadow-glow">
+              <Button asChild variant="hero" size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center text-sm sm:text-base md:text-lg px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 shadow-glow">
                 <Link to="/contact">Get Your FREE Facebook Ads Audit →</Link>
               </Button>
             </div>
@@ -365,7 +365,7 @@ const FacebookAdvertising = () => {
               <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 Australian businesses waste millions every year on facebook ads management that looks good on paper but delivers nothing to the bottom line. Here's why most providers fail.
               </p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {painPoints.map((point, index) => {
                   const Icon = point.icon;
                   return (
@@ -378,7 +378,7 @@ const FacebookAdvertising = () => {
                 })}
               </div>
               <div className="text-center mt-10">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center">
                   <Link to="/contact">Stop the Budget Bleed: Talk to a Facebook Ads Expert →</Link>
                 </Button>
               </div>
@@ -396,7 +396,7 @@ const FacebookAdvertising = () => {
               <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 We provide facebook ads management that eliminates waste and builds campaigns designed to scale profitably.
               </p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {solutions.map((solution, index) => {
                   const Icon = solution.icon;
                   return (
@@ -409,7 +409,7 @@ const FacebookAdvertising = () => {
                 })}
               </div>
               <div className="text-center mt-10">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center">
                   <Link to="/contact">See Our Facebook Ads Management Packages →</Link>
                 </Button>
               </div>
@@ -427,7 +427,7 @@ const FacebookAdvertising = () => {
               <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 As a leading facebook advertising agency, we offer comprehensive facebook ads services designed to dominate your market.
               </p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, index) => {
                   const Icon = service.icon;
                   return (
@@ -440,7 +440,7 @@ const FacebookAdvertising = () => {
                 })}
               </div>
               <div className="text-center mt-12">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center">
                   <Link to="/contact">Ready for Expert Facebook Ads Management? Contact Us →</Link>
                 </Button>
               </div>
@@ -458,7 +458,7 @@ const FacebookAdvertising = () => {
               <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 We are not a generalist agency that dabbles in Facebook ads. We are specialists who understand the unique challenges of scaling profitably on Meta platforms.
               </p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {whyChooseUs.map((item, index) => {
                   const Icon = item.icon;
                   return (
@@ -471,7 +471,7 @@ const FacebookAdvertising = () => {
                 })}
               </div>
               <div className="text-center mt-10">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center">
                   <Link to="/contact">Talk to a Facebook Ads Specialist →</Link>
                 </Button>
               </div>
@@ -496,7 +496,7 @@ const FacebookAdvertising = () => {
                     value={`item-${index}`} 
                     className="border rounded-lg px-6 bg-background"
                   >
-                    <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+                    <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline break-words whitespace-normal">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground text-base leading-relaxed">
@@ -506,7 +506,7 @@ const FacebookAdvertising = () => {
                 ))}
               </Accordion>
               <div className="text-center mt-10">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto whitespace-normal break-words text-center">
                   <Link to="/contact">Book Your Free Consultation</Link>
                 </Button>
               </div>
@@ -534,7 +534,7 @@ const FacebookAdvertising = () => {
                 asChild
                 size="lg"
                 variant="secondary"
-                className="text-lg px-8 py-6"
+                className="w-full sm:w-auto whitespace-normal break-words text-center text-lg px-8 py-6"
               >
                 <Link to="/contact">Claim Your FREE Facebook Ads Audit →</Link>
               </Button>
