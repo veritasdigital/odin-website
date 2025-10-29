@@ -356,9 +356,9 @@ const EmailMarketing = () => {
 
       <>
       <Header />
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background pt-20">
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden bg-white py-20 md:py-32">
+        <section className="relative isolate overflow-hidden bg-white py-12 md:py-32 px-4">
           {/* Subtle Background Pattern */}
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
@@ -373,14 +373,14 @@ const EmailMarketing = () => {
 
           <div className="container mx-auto px-6 lg:px-12 relative z-10">
             <div className="max-w-4xl mx-auto text-center animate-slide-up">
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight tracking-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight tracking-tight mb-6 break-words">
                 Email marketing services
               </h1>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal/90 mb-8 leading-tight">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal/90 mb-8 leading-tight break-words">
                 Your emails aren't working because you don't have a strategy.
                 Let's change that.
               </p>
-              <div className="text-lg md:text-xl text-charcoal/70 mb-10 space-y-4 leading-relaxed font-light">
+              <div className="text-base sm:text-lg md:text-xl text-charcoal/70 mb-10 space-y-4 leading-relaxed font-light break-words">
                 <p>
                   Email marketing is one of the highest-ROI channels available.
                   When done right, it drives engagement, conversions, and
@@ -412,13 +412,13 @@ const EmailMarketing = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 bg-muted/30 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Why Your Email Marketing Isn't Working
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 Most businesses struggle with email marketing because they're
                 making the same critical mistakes. Sound familiar?
               </p>
@@ -437,13 +437,13 @@ const EmailMarketing = () => {
         </section>
 
         {/* Solution Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Email Marketing That Drives Results
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 We fix every pain point with a comprehensive, strategic approach
                 to email marketing.
               </p>
@@ -465,13 +465,13 @@ const EmailMarketing = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 bg-muted/30 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Our Email Marketing Services
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 Comprehensive email marketing services to drive engagement,
                 conversions, and revenue.
               </p>
@@ -499,14 +499,14 @@ const EmailMarketing = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Why Australian Businesses Choose Odin Digital for Email
                 Marketing
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 Proven results, strategic approach, and transparent reporting
                 you can trust.
               </p>
@@ -626,13 +626,13 @@ const EmailMarketing = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 bg-muted/30 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Our Email Marketing Process
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 max-w-3xl mx-auto break-words">
                 A proven 7-step process to deliver high-performing email
                 marketing campaigns.
               </p>
@@ -666,13 +666,13 @@ const EmailMarketing = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
+        <section className="py-12 md:py-20 px-4">
+          <div className="container mx-auto px-4 sm:px-6">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold text-center mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 break-words">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-center text-muted-foreground mb-12">
+              <p className="text-base sm:text-lg md:text-xl text-center text-muted-foreground mb-8 sm:mb-12 break-words">
                 Get answers to common questions about email marketing services.
               </p>
               <Accordion type="single" collapsible className="space-y-4">
@@ -701,19 +701,19 @@ const EmailMarketing = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 bg-gradient-primary text-white relative overflow-hidden">
+        <section className="py-12 md:py-20 bg-gradient-primary text-white relative overflow-hidden px-4">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl" />
-          <div className="container mx-auto px-6 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 break-words">
                 Ready to Transform Your Email Marketing?
               </h2>
-              <p className="text-xl mb-8 opacity-90 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl mb-8 opacity-90 leading-relaxed break-words">
                 Let's build an email marketing strategy that actually works.
                 We'll drive engagement, conversions, and measurable ROI.
               </p>
-              <p className="text-lg mb-10 opacity-90">
+              <p className="text-sm sm:text-base md:text-lg mb-10 opacity-90 break-words">
                 Book a free consultation with one of our email marketing
                 strategists. We'll review your current email marketing (if you
                 have any), identify opportunities, and show you exactly how we
