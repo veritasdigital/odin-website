@@ -57,6 +57,7 @@ import WebDesignSydney from "./pages/services/WebDesignSydney";
 import WebDesignMelbourne from "./pages/services/WebDesignMelbourne";
 import WebDesignPerth from "./pages/services/WebDesignPerth";
 import FacebookAdsAdelaide from "./pages/services/FacebookAdsAdelaide";
+import FacebookAdsBrisbane from "./pages/services/FacebookAdsBrisbane";
 
 const queryClient = new QueryClient();
 
@@ -115,6 +116,7 @@ const App = () => (
             <Route path="/web-design-melbourne" element={<WebDesignMelbourne />} />
             <Route path="/web-design-perth" element={<WebDesignPerth />} />
             <Route path="/facebook-ads-adelaide" element={<FacebookAdsAdelaide />} />
+            <Route path="/facebook-ads-brisbane" element={<FacebookAdsBrisbane />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
