@@ -45,6 +45,7 @@ import GoogleAdsLaunceston from "./pages/services/GoogleAdsLaunceston";
 import GoogleAdsBallarat from "./pages/services/GoogleAdsBallarat";
 import FacebookAdvertising from "./pages/services/FacebookAdvertising";
 import InstagramAdvertising from "./pages/services/InstagramAdvertising";
+import SocialMediaAdvertisingAdelaide from "./pages/services/SocialMediaAdvertisingAdelaide";
 
 const queryClient = new QueryClient();
 
@@ -91,6 +92,7 @@ const App = () => (
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
+            <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
