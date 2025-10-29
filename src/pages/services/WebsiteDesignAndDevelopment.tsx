@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { ArrowRight, Zap, Smartphone, TrendingUp, Code, Shield, Target, LayoutTemplate, Loader, Banknote, Award, Users, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -303,7 +305,8 @@ const WebsiteDesignAndDevelopment = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <Header />
+      <div className="min-h-screen bg-background pt-20">
         {/* Breadcrumb Navigation */}
         <div className="bg-muted/30 py-3 px-6">
           <div className="max-w-7xl mx-auto">
@@ -596,6 +599,8 @@ const WebsiteDesignAndDevelopment = () => {
           </Button>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
