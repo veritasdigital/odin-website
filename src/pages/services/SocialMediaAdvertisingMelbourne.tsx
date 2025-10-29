@@ -529,7 +529,7 @@ const SocialMediaAdvertisingMelbourne = () => {
                 variant="cta" 
                 size="lg"
                 onClick={() => window.location.href = '/contact'}
-                className="w-full sm:w-auto min-h-[48px]"
+                className="w-full sm:w-auto min-h-[48px] text-xs sm:text-sm"
               >
                 Get Your Free Meta Ads Audit
               </Button>
@@ -626,7 +626,7 @@ const SocialMediaAdvertisingMelbourne = () => {
                 variant="cta" 
                 size="lg"
                 onClick={() => window.location.href = '/contact'}
-                className="w-full sm:w-auto min-h-[48px]"
+                className="w-full sm:w-auto min-h-[48px] text-xs sm:text-sm"
               >
                 Get Your Free Meta Ads Audit
               </Button>
