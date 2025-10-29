@@ -469,7 +469,7 @@ const SocialMediaAdvertisingSydney = () => {
               {stats.map((stat, index) => (
                 <Card key={index} className="text-center shadow-card">
                   <CardContent className="pt-6">
-                    <div className="text-3xl md:text-5xl font-black text-primary mb-2">{stat.number}</div>
+                    <div className="text-3xl md:text-5xl font-black text-primary mb-2 whitespace-nowrap">{stat.number}</div>
                     <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
                   </CardContent>
                 </Card>
