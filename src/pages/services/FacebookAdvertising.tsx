@@ -299,7 +299,7 @@ const FacebookAdvertising = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden flex items-center bg-background pt-24 pb-16 md:pt-0 md:pb-0 md:min-h-[85vh]">
+        <section className="relative isolate overflow-visible md:overflow-hidden flex items-center bg-background pt-28 pb-16 md:pt-0 md:pb-0 md:min-h-[85vh]">
           {/* Subtle Background Pattern */}
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
@@ -312,11 +312,11 @@ const FacebookAdvertising = () => {
 
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 py-16 md:py-24 text-center">
             <div className="space-y-6 md:space-y-8 animate-slide-up">
-              <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl xl:text-7xl font-black text-foreground leading-snug break-words">
                 Facebook Advertising Agency
               </h1>
               
-              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground/90 leading-tight max-w-4xl mx-auto">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground/90 leading-snug break-words max-w-4xl mx-auto">
                 Stop Burning Money on Facebook Ads That Don't Convert. Start Scaling Profitably with Campaigns That Actually Work.
               </p>
 
