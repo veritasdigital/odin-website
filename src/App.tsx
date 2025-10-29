@@ -107,6 +107,7 @@ const App = () => (
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
+            <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
             <Route path="/social-media-advertising-brisbane" element={<SocialMediaAdvertisingBrisbane />} />
