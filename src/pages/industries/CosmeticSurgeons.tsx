@@ -426,7 +426,7 @@ const CosmeticSurgeons = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="p-6 border-charcoal/10 shadow-card">
+            <Card className="p-6 border-charcoal/10 shadow-card flex flex-col h-full">
               <div className="flex items-center gap-1 mb-4">
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
@@ -434,10 +434,10 @@ const CosmeticSurgeons = () => {
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
               </div>
-              <p className="text-charcoal/80 leading-relaxed mb-4">
+              <p className="text-charcoal/80 leading-relaxed mb-4 flex-grow">
                 "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
               </p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mt-auto">
                 <div>
                   <div className="font-bold text-charcoal">Liam C</div>
                   <div className="text-sm text-charcoal/70">Krush Organics</div>
@@ -445,7 +445,7 @@ const CosmeticSurgeons = () => {
               </div>
             </Card>
 
-            <Card className="p-6 border-charcoal/10 shadow-card">
+            <Card className="p-6 border-charcoal/10 shadow-card flex flex-col h-full">
               <div className="flex items-center gap-1 mb-4">
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
@@ -453,10 +453,10 @@ const CosmeticSurgeons = () => {
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
               </div>
-              <p className="text-charcoal/80 leading-relaxed mb-4">
+              <p className="text-charcoal/80 leading-relaxed mb-4 flex-grow">
                 "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
               </p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mt-auto">
                 <div>
                   <div className="font-bold text-charcoal">Fabienne Costa</div>
                   <div className="text-sm text-charcoal/70">YCL Jewels</div>
@@ -464,7 +464,7 @@ const CosmeticSurgeons = () => {
               </div>
             </Card>
 
-            <Card className="p-6 border-charcoal/10 shadow-card">
+            <Card className="p-6 border-charcoal/10 shadow-card flex flex-col h-full">
               <div className="flex items-center gap-1 mb-4">
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
@@ -472,10 +472,10 @@ const CosmeticSurgeons = () => {
                 <Star className="h-5 w-5 fill-primary text-primary" />
                 <Star className="h-5 w-5 fill-primary text-primary" />
               </div>
-              <p className="text-charcoal/80 leading-relaxed mb-4">
+              <p className="text-charcoal/80 leading-relaxed mb-4 flex-grow">
                 "Odin Digital has been instrumental in scaling our practice with compliant, high-converting campaigns. Their understanding of AHPRA regulations gives us complete peace of mind."
               </p>
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mt-auto">
                 <div>
                   <div className="font-bold text-charcoal">Dr. Sarah M</div>
                   <div className="text-sm text-charcoal/70">Cosmetic Surgery Practice</div>
