@@ -125,13 +125,13 @@ const Dentists = () => {
         <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20">
-          <div className="max-w-4xl animate-slide-up">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20 pt-32">
+          <div className="max-w-4xl mx-auto animate-slide-up text-center">
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-6">
               Dental Marketing Agency for Growing Practices
             </h1>
             
-            <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-8 max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-8 max-w-3xl mx-auto font-light">
               Your dental practice deserves more than generic marketing. You need a partner who understands the unique challenges dentists face—patient acquisition costs that eat into your margins, appointment no-shows that waste your chair time, and competition from corporate dental chains that have ten times your budget. At Odin Digital, we've helped over 283 dental practices across Australia acquire more patients, improve retention, and grow revenue by an average of 540%.
             </p>
             
