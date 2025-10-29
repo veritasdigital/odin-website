@@ -161,8 +161,8 @@ export const Header = () => {
                 <div className="pl-4 space-y-2">
                   <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
                   <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
+                  <a href="/services/facebook-ads" className="block text-charcoal/70 hover:text-primary py-1">Facebook Ads</a>
                   <a href="/services/social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
-                  <a href="/social-media-advertising-adelaide" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Adelaide</a>
                   <a href="/social-media-advertising-brisbane" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Brisbane</a>
                   <a href="/social-media-advertising-sydney" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Sydney</a>
                   <a href="/social-media-advertising-melbourne" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Melbourne</a>
