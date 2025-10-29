@@ -21,8 +21,8 @@ export const SideTab = () => {
       </button>
     </div>
 
-    {/* Mobile positioning - bottom of screen */}
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
+    {/* Mobile positioning - hidden */}
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 hidden">
       <button
         onClick={openForm}
         className="bg-gradient-primary text-white px-8 py-4 rounded-full shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 animate-pulse-glow flex items-center space-x-3 text-center"
