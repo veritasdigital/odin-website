@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -352,6 +354,8 @@ const EmailMarketing = () => {
         </script>
       </Helmet>
 
+      <>
+      <Header />
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="relative isolate overflow-hidden bg-white py-20 md:py-32">
@@ -727,6 +731,8 @@ const EmailMarketing = () => {
           </div>
         </section>
       </div>
+      <Footer />
+      </>
     </>
   );
 };
