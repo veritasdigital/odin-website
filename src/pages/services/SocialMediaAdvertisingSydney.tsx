@@ -302,7 +302,7 @@ const SocialMediaAdvertisingSydney = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-white py-12 md:py-24">
+        <section className="relative overflow-hidden bg-white py-10 md:py-24">
           {/* Floating decorative circles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 right-10 w-32 h-32 md:w-48 md:h-48 rounded-full bg-primary/10 animate-float"></div>
@@ -310,31 +310,31 @@ const SocialMediaAdvertisingSydney = () => {
             <div className="absolute top-1/2 left-1/3 w-16 h-16 md:w-24 md:h-24 rounded-full bg-primary-glow/10 animate-float" style={{ animationDelay: '4s' }}></div>
           </div>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 py-8 md:py-16 text-center">
-            <div className="space-y-4 md:space-y-8 animate-slide-up break-words">
-              <h1 className="text-[8vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-tight tracking-tight break-words px-2 mt-8 md:mt-12">
+          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12 py-6 md:py-16 text-center">
+            <div className="space-y-3 md:space-y-8 animate-slide-up break-words">
+              <h1 className="text-[7.5vw] sm:text-4xl md:text-6xl xl:text-7xl font-black text-gray-900 leading-tight tracking-tight break-words px-2 mt-6 md:mt-12">
                 Social media ad agency Sydney
               </h1>
               
-              <p className="text-[4.5vw] sm:text-2xl md:text-4xl font-bold text-gray-800 leading-tight tracking-tight break-words max-w-4xl mx-auto hero-sub-headline px-2">
+              <p className="text-[4vw] sm:text-2xl md:text-4xl font-bold text-gray-800 leading-tight tracking-tight break-words max-w-4xl mx-auto hero-sub-headline px-2">
                 Your social media ads aren't converting because your agency is optimising for clicks, not leads.
               </p>
 
               <div className="prose prose-lg mx-auto text-gray-700 max-w-3xl break-words px-2">
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed break-words">
+                <p className="text-xs sm:text-sm md:text-lg leading-relaxed break-words mb-3">
                   Stop wasting money on low-quality clicks and vanity metrics. At Odin Digital, we're a social media ad agency in Sydney that focuses on one thing: driving qualified leads and measurable ROI. We've helped 283+ businesses across Australia transform their social media advertising from a cost centre into a profit centre.
                 </p>
-                <p className="text-sm sm:text-base md:text-lg leading-relaxed break-words">
+                <p className="text-xs sm:text-sm md:text-lg leading-relaxed break-words">
                   No lock-in contracts. No jargon. Just transparent, performance-driven results.
                 </p>
               </div>
 
-              <div className="pt-2 px-2">
+              <div className="pt-1 px-2">
                 <Button 
                   variant="cta" 
                   size="lg"
                   onClick={() => window.location.href = '/contact'}
-                  className="w-full sm:w-auto text-sm sm:text-base whitespace-normal break-words min-h-[48px]"
+                  className="w-full sm:w-auto text-xs sm:text-sm md:text-base whitespace-normal break-words min-h-[48px] px-4"
                 >
                   Book Your Free Consultation
                 </Button>
@@ -344,7 +344,7 @@ const SocialMediaAdvertisingSydney = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-12 md:py-20 bg-muted/30">
+        <section className="py-10 md:py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-8 md:mb-12 px-2">
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 break-words">
@@ -469,8 +469,8 @@ const SocialMediaAdvertisingSydney = () => {
               {stats.map((stat, index) => (
                 <Card key={index} className="text-center shadow-card">
                   <CardContent className="pt-6">
-                    <div className="text-3xl md:text-5xl font-black text-primary mb-2 whitespace-nowrap">{stat.number}</div>
-                    <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
+                    <div className="text-2xl md:text-4xl lg:text-5xl font-black text-primary mb-2 whitespace-nowrap">{stat.number}</div>
+                    <div className="text-xs md:text-sm lg:text-base text-muted-foreground">{stat.label}</div>
                   </CardContent>
                 </Card>
               ))}
@@ -592,7 +592,7 @@ const SocialMediaAdvertisingSydney = () => {
             variant="cta" 
             size="lg"
             onClick={() => window.location.href = '/contact'}
-            className="w-full min-h-[48px] text-sm font-semibold"
+            className="w-full min-h-[48px] text-xs sm:text-sm font-semibold"
           >
             Book Free Consultation →
           </Button>
