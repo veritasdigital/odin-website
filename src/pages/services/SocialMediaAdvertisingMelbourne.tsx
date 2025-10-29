@@ -431,9 +431,9 @@ const SocialMediaAdvertisingMelbourne = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               {stats.map((stat, index) => (
                 <Card key={index} className="text-center shadow-card">
-                  <CardContent className="pt-6">
+                  <CardContent className="pt-6 px-3">
                     <div className="text-2xl md:text-4xl lg:text-5xl font-black text-primary mb-2 whitespace-nowrap">{stat.number}</div>
-                    <div className="text-xs md:text-sm lg:text-base text-muted-foreground">{stat.label}</div>
+                    <div className="text-xs md:text-sm lg:text-base text-muted-foreground whitespace-nowrap">{stat.label}</div>
                   </CardContent>
                 </Card>
               ))}
