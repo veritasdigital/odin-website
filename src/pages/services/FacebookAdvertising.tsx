@@ -566,18 +566,6 @@ const FacebookAdvertising = () => {
           </div>
         </section>
 
-        {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary p-3 shadow-glow">
-          <Button 
-            variant="default" 
-            size="lg"
-            onClick={openForm}
-            className="w-full bg-white text-primary hover:bg-white/90 font-bold text-sm"
-          >
-            Get FREE Strategy Session →
-          </Button>
-        </div>
-
         <Footer />
         <SideTab />
       </div>
