@@ -354,23 +354,29 @@ const EmailMarketing = () => {
 
       <div className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-          {/* Floating Circles - Homepage Design Elements */}
-          <div className="absolute top-20 right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
-          <div className="absolute top-1/2 left-1/4 w-32 h-32 border-2 border-primary/20 rounded-full" />
-          <div className="absolute bottom-1/4 right-1/3 w-24 h-24 border-2 border-accent/20 rounded-full" />
+        <section className="relative isolate overflow-hidden bg-white py-20 md:py-32">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
 
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          {/* Floating Circles - Homepage Design Elements */}
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/3 right-1/4 w-32 h-32 border-2 border-primary/20 rounded-full animate-float" />
+          <div className="absolute bottom-1/4 left-1/3 w-24 h-24 border-2 border-accent/20 rounded-full animate-float" style={{ animationDelay: '4s' }} />
+          <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-primary/5 rounded-full animate-float" style={{ animationDelay: '6s' }} />
+
+          <div className="container mx-auto px-6 lg:px-12 relative z-10">
+            <div className="max-w-4xl mx-auto text-center animate-slide-up">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight tracking-tight mb-6">
                 Email marketing services
               </h1>
-              <p className="hero-sub-headline text-3xl md:text-4xl font-semibold mb-8 text-foreground">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal/90 mb-8 leading-tight">
                 Your emails aren't working because you don't have a strategy.
                 Let's change that.
               </p>
-              <div className="text-lg md:text-xl text-muted-foreground mb-10 space-y-4 leading-relaxed">
+              <div className="text-lg md:text-xl text-charcoal/70 mb-10 space-y-4 leading-relaxed font-light">
                 <p>
                   Email marketing is one of the highest-ROI channels available.
                   When done right, it drives engagement, conversions, and
@@ -389,12 +395,12 @@ const EmailMarketing = () => {
                   everything. Senior expertise. Customised strategy. Transparent
                   reporting. Real results.
                 </p>
-                <p className="font-semibold text-foreground">
+                <p className="font-semibold text-charcoal">
                   No generic templates. No spray-and-pray campaigns. No wasted
                   effort. Just email marketing that drives measurable ROI.
                 </p>
               </div>
-              <Button asChild size="lg" className="text-lg px-8 py-6">
+              <Button asChild variant="hero" size="lg" className="text-lg px-12 py-6 shadow-glow">
                 <Link to="/contact">Book Your Free Consultation</Link>
               </Button>
             </div>
