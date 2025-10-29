@@ -54,6 +54,7 @@ import WebsiteDesignAndDevelopment from "./pages/services/WebsiteDesignAndDevelo
 import WebDesignAdelaide from "./pages/services/WebDesignAdelaide";
 import WebDesignBrisbane from "./pages/services/WebDesignBrisbane";
 import WebDesignSydney from "./pages/services/WebDesignSydney";
+import WebDesignMelbourne from "./pages/services/WebDesignMelbourne";
 
 const queryClient = new QueryClient();
 
@@ -109,6 +110,7 @@ const App = () => (
             <Route path="/web-design-adelaide" element={<WebDesignAdelaide />} />
             <Route path="/web-design-brisbane" element={<WebDesignBrisbane />} />
             <Route path="/web-design-sydney" element={<WebDesignSydney />} />
+            <Route path="/web-design-melbourne" element={<WebDesignMelbourne />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />
