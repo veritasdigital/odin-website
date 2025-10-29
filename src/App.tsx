@@ -49,6 +49,7 @@ import SocialMediaAdvertisingAdelaide from "./pages/services/SocialMediaAdvertis
 import SocialMediaAdvertisingBrisbane from "./pages/services/SocialMediaAdvertisingBrisbane";
 import SocialMediaAdvertisingSydney from "./pages/services/SocialMediaAdvertisingSydney";
 import SocialMediaAdvertisingMelbourne from "./pages/services/SocialMediaAdvertisingMelbourne";
+import LinkedInAdvertising from "./pages/services/LinkedInAdvertising";
 
 const queryClient = new QueryClient();
 
@@ -99,6 +100,7 @@ const App = () => (
             <Route path="/social-media-advertising-brisbane" element={<SocialMediaAdvertisingBrisbane />} />
             <Route path="/social-media-advertising-sydney" element={<SocialMediaAdvertisingSydney />} />
             <Route path="/social-media-advertising-melbourne" element={<SocialMediaAdvertisingMelbourne />} />
+            <Route path="/linkedin-advertising" element={<LinkedInAdvertising />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/privacy" element={<Privacy />} />

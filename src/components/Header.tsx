@@ -88,6 +88,9 @@ export const Header = () => {
                   <a href="/social-media-advertising-melbourne" className="w-full">Social Media Ads Melbourne</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/linkedin-advertising" className="w-full">LinkedIn Advertising</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/website-design" className="w-full">Website Design</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
@@ -146,6 +149,7 @@ export const Header = () => {
                   <a href="/social-media-advertising-brisbane" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Brisbane</a>
                   <a href="/social-media-advertising-sydney" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Sydney</a>
                   <a href="/social-media-advertising-melbourne" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Melbourne</a>
+                  <a href="/linkedin-advertising" className="block text-charcoal/70 hover:text-primary py-1">LinkedIn Advertising</a>
                   <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
                   <a href="/services/funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
                   <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
