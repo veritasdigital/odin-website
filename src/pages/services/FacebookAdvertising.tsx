@@ -316,7 +316,7 @@ const FacebookAdvertising = () => {
                 Facebook Advertising Agency
               </h1>
               
-              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground/90 leading-snug break-words max-w-4xl mx-auto">
+              <p className="text-xl sm:text-2xl md:text-4xl font-bold text-foreground/90 leading-snug break-words max-w-4xl mx-auto">
                 Stop Burning Money on Facebook Ads That Don't Convert. Start Scaling Profitably with Campaigns That Actually Work.
               </p>
 
@@ -567,7 +567,9 @@ const FacebookAdvertising = () => {
         </section>
 
         <Footer />
-        <SideTab />
+        <div className="hidden md:block">
+          <SideTab />
+        </div>
       </div>
     </>
   );
