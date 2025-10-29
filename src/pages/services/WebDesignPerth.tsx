@@ -352,7 +352,7 @@ const WebDesignPerth = () => {
               <Button
                 onClick={openForm}
                 size="lg"
-                className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 whitespace-normal h-auto"
               >
                 Get Your FREE Perth Web Design Quote →
               </Button>
@@ -475,7 +475,7 @@ const WebDesignPerth = () => {
                   </p>
                   <Button
                     onClick={openForm}
-                    className="bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow w-full"
+                    className="bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow w-full whitespace-normal h-auto"
                   >
                     {service.cta}
                   </Button>
@@ -582,7 +582,7 @@ const WebDesignPerth = () => {
             <Button
               onClick={openForm}
               size="lg"
-              className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 whitespace-normal h-auto"
             >
               Get Your FREE Perth Web Design Quote →
             </Button>
@@ -617,7 +617,7 @@ const WebDesignPerth = () => {
         <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t z-50">
           <Button
             onClick={openForm}
-            className="w-full bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow"
+            className="w-full bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow whitespace-normal h-auto"
             size="lg"
           >
             Get Your Free Quote
