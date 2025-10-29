@@ -214,11 +214,11 @@ const Lawyers = () => {
       <Header />
 
       {/* Mobile Sticky CTA */}
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
+      <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
         <Button
           onClick={openForm}
           variant="hero"
-          className="shadow-glow"
+          className="shadow-glow w-full text-sm"
         >
           Get Your FREE Marketing Audit
         </Button>
@@ -235,45 +235,45 @@ const Lawyers = () => {
         <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
         <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20 pt-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-20 pt-24 sm:pt-32">
           <div className="max-w-4xl mx-auto animate-slide-up text-center">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-4 sm:mb-6">
               Digital Marketing for Lawyers
             </h1>
             
-            <p className="text-2xl md:text-3xl text-charcoal font-bold leading-tight mb-6">
+            <p className="text-lg sm:text-2xl md:text-3xl text-charcoal font-bold leading-tight mb-4 sm:mb-6 px-2">
               Stop Paying for Legal Marketing That Doesn't Deliver High-Value Clients. Start Attracting Premium Cases with Proven Digital Marketing Built for Law Firms.
             </p>
 
-            <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-4 max-w-3xl mx-auto font-light">
+            <p className="text-base sm:text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-3 sm:mb-4 max-w-3xl mx-auto font-light px-2">
               The Digital Marketing Agency Australian Law Firms Trust for High-Value Client Acquisition and Predictable Growth.
             </p>
 
-            <p className="text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-8 max-w-3xl mx-auto font-light">
+            <p className="text-base sm:text-xl md:text-2xl text-charcoal/70 leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto font-light px-2">
               Partner with Odin Digital and Watch Your Law Firm Dominate Google, Attract Premium Clients, and Scale Profitably.
             </p>
             
-            <div className="pt-2">
+            <div className="pt-2 px-4">
               <Button
                 onClick={openForm}
                 variant="hero"
                 size="lg"
-                className="shadow-glow"
+                className="shadow-glow w-full sm:w-auto text-sm sm:text-base"
               >
                 Get Your FREE Law Firm Marketing Audit →
               </Button>
             </div>
 
             {/* Trust Signals */}
-            <div className="mt-12 pt-8 border-t border-charcoal/10">
-              <div className="flex flex-wrap justify-center items-center gap-8 text-charcoal/70">
+            <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-charcoal/10">
+              <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 text-charcoal/70 px-4">
                 <div className="text-center">
-                  <div className="text-3xl font-black text-primary">$574M+</div>
-                  <div className="text-sm">Client Revenue</div>
+                  <div className="text-2xl sm:text-3xl font-black text-primary">$574M+</div>
+                  <div className="text-xs sm:text-sm">Client Revenue</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-black text-primary">95%</div>
-                  <div className="text-sm">Client Retention</div>
+                  <div className="text-2xl sm:text-3xl font-black text-primary">95%</div>
+                  <div className="text-xs sm:text-sm">Client Retention</div>
                 </div>
               </div>
             </div>
@@ -282,13 +282,13 @@ const Lawyers = () => {
       </section>
 
       {/* 2. Problem/Agitation Section */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               Why Most Legal Marketing Agencies Fail Law Firms
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               Australian law firms waste millions every year on lawyer marketing that looks good on paper but delivers nothing to the bottom line. Here's why most agencies fail.
             </p>
           </div>
@@ -343,12 +343,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               Stop the Marketing Bleed: Talk to a Legal Marketing Expert →
             </Button>
@@ -357,13 +357,13 @@ const Lawyers = () => {
       </section>
 
       {/* 3. Four Core Services */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-white decorative-circles">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               How We Attract High-Value Clients for Law Firms
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We provide law firm marketing that eliminates waste and builds campaigns designed to attract premium clients, reduce cost per case, and scale profitably.
             </p>
           </div>
@@ -405,13 +405,13 @@ const Lawyers = () => {
       </section>
 
       {/* 4. SEO for Lawyers (Detailed) */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               SEO for Lawyers: Dominating Page 1 for High-Value Legal Searches
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We build lawyer SEO strategies that get your firm to Page 1 for the exact searches your ideal clients are using.
             </p>
           </div>
@@ -453,12 +453,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               See Our SEO Packages for Law Firms →
             </Button>
@@ -467,13 +467,13 @@ const Lawyers = () => {
       </section>
 
       {/* 5. Google Ads for Law Firms (Detailed) */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-white decorative-circles">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               Google Ads for Law Firms: Attracting High-Value Clients Immediately
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We build Google Ads for lawyers campaigns that deliver immediate, high-quality case inquiries while your SEO builds momentum.
             </p>
           </div>
@@ -515,12 +515,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               See Our Google Ads Packages for Law Firms →
             </Button>
@@ -529,13 +529,13 @@ const Lawyers = () => {
       </section>
 
       {/* 6. Meta Ads for Law Firms (Detailed) */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               Meta Ads (Facebook & Instagram) for Law Firms: Building Awareness and Nurturing Leads
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We build Facebook ads for lawyers and Instagram campaigns that build awareness, establish trust, and nurture potential clients through the decision-making process.
             </p>
           </div>
@@ -570,12 +570,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               See Our Meta Ads Packages for Law Firms →
             </Button>
@@ -584,13 +584,13 @@ const Lawyers = () => {
       </section>
 
       {/* 7. Law Firm Website Design (Detailed) */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-white decorative-circles">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               Law Firm Website Design: High-Converting Websites That Attract Premium Clients
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We build lawyer website design that positions your firm as the premium choice and converts visitors into case inquiries at the highest possible rate.
             </p>
           </div>
@@ -625,12 +625,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               See Our Law Firm Website Design Packages →
             </Button>
@@ -639,13 +639,13 @@ const Lawyers = () => {
       </section>
 
       {/* 8. Why Law Firms Choose Odin Digital */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               Why Law Firms Choose Odin Digital
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-charcoal/70 max-w-3xl mx-auto px-4">
               We are not a generalist agency that dabbles in legal marketing. We are specialists who understand the unique challenges of marketing for law firms.
             </p>
           </div>
@@ -692,12 +692,12 @@ const Lawyers = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12 px-4">
             <Button
               onClick={openForm}
               variant="default"
               size="lg"
-              className="shadow-primary"
+              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
             >
               Talk to a Legal Marketing Specialist →
             </Button>
@@ -706,13 +706,13 @@ const Lawyers = () => {
       </section>
 
       {/* 9. FAQ Section */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-20 bg-white decorative-circles">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4 px-2">
               FAQs: Your Questions About Legal Marketing Answered
             </h2>
-            <p className="text-xl text-charcoal/70">
+            <p className="text-base sm:text-xl text-charcoal/70 px-4">
               We know you have specific concerns about cost, compliance, and lead quality. Here are clear, honest answers.
             </p>
           </div>
