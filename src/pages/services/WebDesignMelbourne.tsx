@@ -421,7 +421,7 @@ const WebDesignMelbourne = () => {
               <Button
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-base sm:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
               >
                 Get Your Free Website Audit
               </Button>
@@ -459,7 +459,7 @@ const WebDesignMelbourne = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {problems.map((problem, index) => (
                 <Card key={index} className="p-6 hover:shadow-xl transition-shadow">
-                  <problem.icon className="w-12 h-12 text-[#D91C5C] mb-4" />
+                  <problem.icon className="w-12 h-12 text-primary mb-4" />
                   <h3 className="text-xl sm:text-2xl font-bold mb-3 break-words overflow-wrap-anywhere">
                     {problem.title}
                   </h3>
@@ -506,7 +506,7 @@ const WebDesignMelbourne = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <Card key={index} className="p-6 hover:shadow-xl transition-shadow">
-                  <service.icon className="w-12 h-12 text-[#D91C5C] mb-4" />
+                  <service.icon className="w-12 h-12 text-primary mb-4" />
                   <h3 className="text-xl sm:text-2xl font-bold mb-3 break-words overflow-wrap-anywhere">
                     {service.title}
                   </h3>
@@ -523,7 +523,7 @@ const WebDesignMelbourne = () => {
               <Button
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+                className="bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow"
               >
                 Book Your Free Consultation
               </Button>
@@ -540,7 +540,7 @@ const WebDesignMelbourne = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {differentiators.map((diff, index) => (
                 <Card key={index} className="p-6 text-center hover:shadow-xl transition-shadow">
-                  <diff.icon className="w-12 h-12 text-[#D91C5C] mb-4 mx-auto" />
+                  <diff.icon className="w-12 h-12 text-primary mb-4 mx-auto" />
                   <h3 className="text-lg sm:text-xl font-bold mb-3 break-words overflow-wrap-anywhere">
                     {diff.title}
                   </h3>
@@ -566,7 +566,7 @@ const WebDesignMelbourne = () => {
               {processSteps.map((step, index) => (
                 <div key={index} className="relative">
                   <Card className="p-6 hover:shadow-xl transition-shadow h-full">
-                    <div className="text-4xl sm:text-5xl font-bold text-[#D91C5C]/20 mb-4 break-words overflow-wrap-anywhere">
+                    <div className="text-4xl sm:text-5xl font-bold text-primary/20 mb-4 break-words overflow-wrap-anywhere">
                       {step.number}
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold mb-3 break-words overflow-wrap-anywhere">
@@ -618,7 +618,7 @@ const WebDesignMelbourne = () => {
             <Button
               onClick={openForm}
               size="lg"
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-base sm:text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
             >
               Get Your Free Website Audit
             </Button>
@@ -669,7 +669,7 @@ const WebDesignMelbourne = () => {
         <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t z-50">
           <Button
             onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+            className="w-full bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow"
             size="lg"
           >
             Get Your Free Audit
