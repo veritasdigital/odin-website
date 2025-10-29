@@ -384,25 +384,25 @@ const InstagramAdvertising = () => {
         {/* Services Section */}
         <section className="py-16 md:py-20 decorative-circles-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">Instagram Advertising Services Built for E-commerce & Lead Generation</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-2">
+              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-4 break-words">Instagram Advertising Services Built for E-commerce & Lead Generation</h2>
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto break-words">
                 We offer a complete suite of Instagram advertising services designed to turn your visual content into a high-performance sales machine.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300">
+                <Card key={index} className="shadow-card hover:shadow-glow transition-all duration-300 flex flex-col">
                   <CardHeader>
                     <div className="mb-4">{service.icon}</div>
-                    <CardTitle className="text-xl md:text-2xl">{service.title}</CardTitle>
+                    <CardTitle className="text-lg md:text-xl lg:text-2xl break-words">{service.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
+                  <CardContent className="space-y-4 flex-1 flex flex-col">
+                    <CardDescription className="text-sm md:text-base leading-relaxed break-words flex-1">{service.description}</CardDescription>
                     <Button 
                       variant="outline" 
-                      className="w-full"
+                      className="w-full whitespace-normal break-words min-h-[48px] text-xs md:text-sm leading-tight py-2"
                       onClick={() => window.location.href = '/contact'}
                     >
                       {service.cta}
