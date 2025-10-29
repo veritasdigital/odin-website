@@ -468,7 +468,7 @@ const FacebookAdsBrisbane = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 mt-12 break-words overflow-wrap-anywhere">
-                Facebook ads agency Brisbane
+                Facebook Ads Agency Brisbane
               </h1>
               
               <p className="hero-sub-headline text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground break-words overflow-wrap-anywhere">
