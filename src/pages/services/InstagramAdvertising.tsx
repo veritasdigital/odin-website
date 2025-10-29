@@ -497,13 +497,13 @@ const InstagramAdvertising = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 md:py-24 bg-gradient-hero text-center decorative-circles">
+        <section className="py-16 md:py-24 bg-white text-center decorative-circles">
           <div className="max-w-4xl mx-auto px-4 sm:px-8">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">Ready to Turn Your Instagram into a Profit Machine?</h2>
-            <p className="text-lg md:text-xl text-foreground/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">Ready to Turn Your Instagram into a Profit Machine?</h2>
+            <p className="text-lg md:text-xl text-gray-800 mb-8 leading-relaxed max-w-3xl mx-auto">
               Stop wasting money on ineffective Instagram ads and start investing in a strategy that delivers real, measurable ROI. Let us show you what's possible.
             </p>
-            <p className="text-base md:text-lg text-foreground/80 mb-8 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-700 mb-8 leading-relaxed">
               Take the first step towards unlocking your business's true growth potential. Schedule your FREE, no-obligation Instagram advertising strategy audit with one of our senior strategists today. We'll analyze your current accounts, identify your biggest opportunities, and show you exactly how we can help you achieve a 540% average ROI. What do you have to lose?
             </p>
             <Button 
