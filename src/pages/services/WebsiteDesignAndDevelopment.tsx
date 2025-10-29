@@ -488,9 +488,12 @@ const WebsiteDesignAndDevelopment = () => {
                 variant="cta" 
                 size="lg"
                 onClick={() => window.location.href = '/contact'}
-                className="w-full sm:w-auto min-h-[48px] text-xs sm:text-sm"
+                className="w-full sm:w-auto min-h-[48px] text-[10px] xs:text-xs sm:text-sm px-4 sm:px-6"
               >
-                Ready for a Custom Website Strategy? Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                <span className="whitespace-normal sm:whitespace-nowrap">
+                  Ready for a Custom Website Strategy? Contact Us
+                </span>
+                <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </div>
           </div>
