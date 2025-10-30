@@ -347,7 +347,7 @@ const FacebookAdsGoldCoast = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 pt-32">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 pt-32 pb-24 md:pb-0">
           {/* Floating circles - pulled from home page design */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
@@ -357,15 +357,15 @@ const FacebookAdsGoldCoast = () => {
 
           <div className="container mx-auto px-4 py-20 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent break-words">
                 Facebook Ads Gold Coast
               </h1>
               
-              <p className="hero-sub-headline text-2xl md:text-4xl font-bold text-foreground leading-tight">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-4xl font-bold text-foreground leading-tight break-words">
                 Stop Wasting Your Gold Coast Business Budget on Facebook Ads That Don't Convert. Start Scaling with Expert Facebook Ads Management Built for the Gold Coast Market.
               </p>
 
-              <div className="space-y-4 text-lg text-muted-foreground max-w-3xl mx-auto">
+              <div className="space-y-4 text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words">
                 <p className="text-xl font-semibold text-foreground">
                   The Facebook Ads Agency Gold Coast Businesses Trust for Maximum ROAS and Profitable Growth.
                 </p>
@@ -385,7 +385,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   onClick={openForm}
-                  className="text-lg"
+                  className="text-base sm:text-lg whitespace-normal break-words"
                 >
                   Get Your FREE Gold Coast Facebook Ads Audit →
                 </Button>
@@ -418,7 +418,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 break-words">
                   Why Most Facebook Ads Agencies Fail Gold Coast Businesses
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -445,6 +445,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   onClick={openForm}
+                  className="whitespace-normal break-words"
                 >
                   Stop the Budget Bleed: Talk to a Gold Coast Facebook Ads Expert →
                 </Button>
@@ -458,7 +459,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 break-words">
                   How We Dominate Facebook Ads for Gold Coast Businesses
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -485,6 +486,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   asChild
+                  className="whitespace-normal break-words"
                 >
                   <Link to="/contact">See Our Gold Coast Facebook Ads Packages →</Link>
                 </Button>
@@ -498,7 +500,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 break-words">
                   Our Gold Coast Facebook Ads Services
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -525,6 +527,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   asChild
+                  className="whitespace-normal break-words"
                 >
                   <Link to="/contact">Ready for Expert Gold Coast Facebook Ads Management? Contact Us →</Link>
                 </Button>
@@ -538,7 +541,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 break-words">
                   Why Gold Coast Businesses Choose Odin Digital
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -565,6 +568,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   onClick={openForm}
+                  className="whitespace-normal break-words"
                 >
                   Talk to a Gold Coast Facebook Ads Specialist →
                 </Button>
@@ -578,7 +582,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 break-words">
                   FAQs: Your Questions About Gold Coast Facebook Ads Answered
                 </h2>
                 <p className="text-xl text-muted-foreground">
@@ -607,7 +611,7 @@ const FacebookAdsGoldCoast = () => {
           <div className="absolute inset-0 bg-grid-white/10" />
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
+              <h2 className="text-4xl md:text-5xl font-bold text-white break-words">
                 Ready to Stop Wasting Money and Start Dominating the Gold Coast Market?
               </h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
@@ -617,7 +621,7 @@ const FacebookAdsGoldCoast = () => {
                 size="xl" 
                 variant="secondary"
                 onClick={openForm}
-                className="text-lg"
+                className="text-base sm:text-lg whitespace-normal break-words"
               >
                 Claim Your FREE Gold Coast Facebook Ads Audit →
               </Button>
@@ -630,7 +634,7 @@ const FacebookAdsGoldCoast = () => {
           <Button 
             size="lg" 
             variant="cta" 
-            className="w-full"
+            className="w-full whitespace-normal break-words"
             onClick={openForm}
           >
             Get FREE Audit →
