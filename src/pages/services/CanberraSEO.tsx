@@ -168,6 +168,10 @@ const CanberraSEO = () => {
       title: "Integrated Digital Strategy",
       description: "We align your SEO with Google Ads, social media, and your sales process. Everything works together to drive growth.",
     },
+    {
+      title: "Data-Driven Decision Making",
+      description: "Every strategy is backed by data and analytics. We track performance, identify opportunities, and continuously optimise based on real results.",
+    },
   ];
 
   const services = [
