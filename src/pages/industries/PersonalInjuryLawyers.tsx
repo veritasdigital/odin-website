@@ -279,33 +279,33 @@ const PersonalInjuryLawyers = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Low-Quality Leads & High Costs</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Low-Quality Leads & High Costs</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Your PPC budget is bleeding money on unqualified leads. You're paying $300+ per click only to get time-wasters, frivolous claims, or people who aren't ready to hire.
                 </p>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Shield className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Compliance Nightmare</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Compliance Nightmare</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   You're terrified of violating legal advertising rules. Other agencies don't understand the restrictions, putting your firm's reputation and licence at risk.
                 </p>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border border-border hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Clock className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Aggregator Dependency</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Aggregator Dependency</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   You're stuck buying overpriced, shared leads from aggregators. You have no control over lead quality, and you're competing with 5 other firms for the same case.
                 </p>
               </div>
@@ -316,49 +316,49 @@ const PersonalInjuryLawyers = () => {
         {/* Section 4: Testimonials Section */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
-              <p className="text-xl text-white">Real results from real law firm partners</p>
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+              <p className="text-lg md:text-xl text-white">Real results from real law firm partners</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="p-8 bg-card rounded-lg shadow-lg border">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 italic">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <p className="font-semibold">Liam C</p>
-                <p className="text-sm text-muted-foreground">Krush Organics</p>
+                <p className="font-semibold text-sm md:text-base">Liam C</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Krush Organics</p>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-lg border">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 italic">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "Finally, an agency that understands legal advertising compliance AND delivers results. Our case quality has improved dramatically, and we're attracting clients who actually have viable claims."
                 </p>
-                <p className="font-semibold">Michael T</p>
-                <p className="text-sm text-muted-foreground">Personal Injury Partner, Sydney</p>
+                <p className="font-semibold text-sm md:text-base">Michael T</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Personal Injury Partner, Sydney</p>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-lg border">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 italic">
+                <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "The ROI speaks for itself. We've cut our dependence on lead aggregators by 70% while tripling our high-value case inquiries. Best investment we've made."
                 </p>
-                <p className="font-semibold">Sarah K</p>
-                <p className="text-sm text-muted-foreground">Law Firm Director, Melbourne</p>
+                <p className="font-semibold text-sm md:text-base">Sarah K</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Law Firm Director, Melbourne</p>
               </div>
             </div>
           </div>
@@ -367,132 +367,132 @@ const PersonalInjuryLawyers = () => {
         {/* Section 5: Services Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Our Integrated Services for Personal Injury Firms</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Integrated Services for Personal Injury Firms</h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Compliant, high-value case acquisition across every channel
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Search className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">SEO for Law Firms</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">SEO for Law Firms</h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-6 flex-grow">
                   Dominate local search results for high-value case types. We build authority and trust through compliant content that positions your firm as the go-to expert.
                 </p>
                 <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Case-type-specific landing pages</span>
+                    <span className="text-xs md:text-sm">Case-type-specific landing pages</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Compliance-focused content strategy</span>
+                    <span className="text-xs md:text-sm">Compliance-focused content strategy</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Local SEO domination</span>
+                    <span className="text-xs md:text-sm">Local SEO domination</span>
                   </li>
                 </ul>
                 <Button 
                   variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
+                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
                   asChild
                 >
                   <a href="/seo-agency">Learn More</a>
                 </Button>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <MousePointerClick className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">PPC for Personal Injury</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">PPC for Personal Injury</h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-6 flex-grow">
                   High-intent Google Ads campaigns that pre-qualify cases and filter out time-wasters. Only pay for clients who have viable, high-value claims.
                 </p>
                 <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Case pre-qualification funnels</span>
+                    <span className="text-xs md:text-sm">Case pre-qualification funnels</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Negative keyword sculpting</span>
+                    <span className="text-xs md:text-sm">Negative keyword sculpting</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Case-type-specific landing pages</span>
+                    <span className="text-xs md:text-sm">Case-type-specific landing pages</span>
                   </li>
                 </ul>
                 <Button 
                   variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
+                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
                   asChild
                 >
                   <a href="/ppc-agency">Learn More</a>
                 </Button>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Share2 className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Social Media for Lawyers</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">Social Media for Lawyers</h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-6 flex-grow">
                   Build brand authority and nurture prospects through compliant social media campaigns. Stay top-of-mind throughout the long decision cycle.
                 </p>
                 <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Educational content funnels</span>
+                    <span className="text-xs md:text-sm">Educational content funnels</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Compliant retargeting campaigns</span>
+                    <span className="text-xs md:text-sm">Compliant retargeting campaigns</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Brand awareness strategies</span>
+                    <span className="text-xs md:text-sm">Brand awareness strategies</span>
                   </li>
                 </ul>
                 <Button 
                   variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
+                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
                   asChild
                 >
                   <a href="/meta-ads-agency">Learn More</a>
                 </Button>
               </div>
 
-              <div className="p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
+              <div className="p-6 md:p-8 bg-card rounded-lg shadow-md border hover:shadow-xl transition-all flex flex-col">
                 <div className="w-12 h-12 bg-[#D91C5C]/10 rounded-lg flex items-center justify-center mb-4">
                   <Palette className="w-6 h-6 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Web Design for Law Firms</h3>
-                <p className="text-muted-foreground mb-6 flex-grow">
+                <h3 className="text-xl md:text-2xl font-bold mb-3">Web Design for Law Firms</h3>
+                <p className="text-sm md:text-base text-muted-foreground mb-6 flex-grow">
                   Professional, conversion-optimized websites that build trust and drive case submissions. Fully compliant with seamless intake integration.
                 </p>
                 <ul className="space-y-2 mb-6 flex-grow">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Trust-building, authoritative design</span>
+                    <span className="text-xs md:text-sm">Trust-building, authoritative design</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Case intake integration</span>
+                    <span className="text-xs md:text-sm">Case intake integration</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="w-5 h-5 text-[#D91C5C] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm">Mobile-optimized for conversions</span>
+                    <span className="text-xs md:text-sm">Mobile-optimized for conversions</span>
                   </li>
                 </ul>
                 <Button 
                   variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
+                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
                   asChild
                 >
                   <a href="/web-design-agency">Learn More</a>
@@ -505,48 +505,48 @@ const PersonalInjuryLawyers = () => {
         {/* Section 6: Differentiators Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Why Personal Injury Firms Choose Odin Digital</h2>
-              <p className="text-xl text-muted-foreground">The only agency built specifically for compliant, high-value case acquisition</p>
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Personal Injury Firms Choose Odin Digital</h2>
+              <p className="text-lg md:text-xl text-muted-foreground">The only agency built specifically for compliant, high-value case acquisition</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-              <div className="text-center p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+              <div className="text-center p-4 md:p-6">
                 <div className="w-16 h-16 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Compliance-First Methodology</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Compliance-First Methodology</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Every campaign, ad, and landing page is vetted against legal advertising rules before launch. Protect your licence while maximizing results.
                 </p>
               </div>
 
-              <div className="text-center p-6">
+              <div className="text-center p-4 md:p-6">
                 <div className="w-16 h-16 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="w-8 h-8 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Case Pre-Qualification Systems</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Case Pre-Qualification Systems</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   We filter out frivolous claims before they reach your intake team. Only high-intent, viable cases make it through.
                 </p>
               </div>
 
-              <div className="text-center p-6">
+              <div className="text-center p-4 md:p-6">
                 <div className="w-16 h-16 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-8 h-8 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Proprietary Case Pipeline</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Proprietary Case Pipeline</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   Build your own case acquisition system instead of relying on expensive, shared aggregator leads.
                 </p>
               </div>
 
-              <div className="text-center p-6">
+              <div className="text-center p-4 md:p-6">
                 <div className="w-16 h-16 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BarChart3 className="w-8 h-8 text-[#D91C5C]" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Performance-Based Accountability</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-lg md:text-xl font-semibold mb-3">Performance-Based Accountability</h3>
+                <p className="text-sm md:text-base text-muted-foreground">
                   No lock-in contracts. We earn your business every month through transparent reporting and measurable ROI.
                 </p>
               </div>
@@ -557,9 +557,9 @@ const PersonalInjuryLawyers = () => {
         {/* Section 7: Process Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Our Proven 4-Step Process</h2>
-              <p className="text-xl text-muted-foreground">From audit to optimization, we deliver results fast</p>
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Proven 4-Step Process</h2>
+              <p className="text-lg md:text-xl text-muted-foreground">From audit to optimization, we deliver results fast</p>
             </div>
 
             <div className="max-w-4xl mx-auto">
@@ -619,9 +619,9 @@ const PersonalInjuryLawyers = () => {
         {/* Section 8: Why Choose Us Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">The Odin Digital Advantage</h2>
-              <p className="text-xl text-muted-foreground">Built for high-value, compliance-heavy industries</p>
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Odin Digital Advantage</h2>
+              <p className="text-lg md:text-xl text-muted-foreground">Built for high-value, compliance-heavy industries</p>
             </div>
 
             <div className="max-w-6xl mx-auto space-y-12">
@@ -714,11 +714,11 @@ const PersonalInjuryLawyers = () => {
         {/* Section 10: Related Industry & Service Links */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Explore More Industry Solutions</h2>
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Explore More Industry Solutions</h2>
               
               <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-4">Related Industries</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-4">Related Industries</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <a href="/industries" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
                     <span className="text-foreground hover:text-[#D91C5C]">All Industries</span>
@@ -736,7 +736,7 @@ const PersonalInjuryLawyers = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-4">Core Services</h3>
+                <h3 className="text-lg md:text-xl font-semibold mb-4">Core Services</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <a href="/seo-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
                     <span className="text-foreground hover:text-[#D91C5C]">SEO Agency</span>
@@ -759,9 +759,9 @@ const PersonalInjuryLawyers = () => {
         {/* Section 11: FAQ Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
-              <p className="text-xl text-muted-foreground mb-12 text-center">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
+              <p className="text-lg md:text-xl text-muted-foreground mb-12 text-center">
                 Everything you need to know about personal injury lawyer marketing
               </p>
 
