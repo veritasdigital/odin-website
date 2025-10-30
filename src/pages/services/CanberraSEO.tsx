@@ -729,8 +729,8 @@ const CanberraSEO = () => {
                 <Card key={index} className="p-6 sm:p-8 overflow-hidden">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
-                        <span className="text-xl sm:text-2xl font-black text-primary break-words">{reason.stat}</span>
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-2">
+                        <span className="text-sm sm:text-lg font-black text-primary break-words text-center leading-tight">{reason.stat}</span>
                       </div>
                     </div>
                     <div>
