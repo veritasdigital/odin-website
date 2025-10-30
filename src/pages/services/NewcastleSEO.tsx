@@ -570,7 +570,7 @@ const NewcastleSEO = () => {
 
             <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 overflow-hidden bg-background">
+                <Card key={index} className="p-4 sm:p-6 md:p-8 overflow-hidden bg-background flex flex-col">
                   <div className="flex gap-1 mb-3 sm:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <svg key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-primary fill-current" viewBox="0 0 20 20">
@@ -578,8 +578,8 @@ const NewcastleSEO = () => {
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 break-words leading-relaxed italic">"{testimonial.text}"</p>
-                  <div>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 break-words leading-relaxed italic flex-grow">"{testimonial.text}"</p>
+                  <div className="mt-auto">
                     <p className="text-sm sm:text-base font-bold text-foreground break-words">{testimonial.name}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground break-words">{testimonial.company}</p>
                   </div>
