@@ -686,7 +686,7 @@ const SocialMediaAdvertising = () => {
                   <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-1.5 sm:p-2">
-                        <span className="text-[10px] sm:text-xs md:text-sm lg:text-lg font-black text-primary text-center leading-tight">{reason.stat}</span>
+                        <span className="text-[10px] sm:text-xs md:text-sm lg:text-lg font-black text-primary text-center leading-tight break-all">{reason.stat}</span>
                       </div>
                     </div>
                     <div className="flex-1 min-w-0">
