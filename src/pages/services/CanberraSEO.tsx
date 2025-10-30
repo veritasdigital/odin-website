@@ -215,6 +215,11 @@ const CanberraSEO = () => {
       title: "Ongoing Optimisation",
       description: "Continuous monitoring, testing, and optimisation. We adapt to algorithm changes, competitive moves, and market shifts.",
     },
+    {
+      icon: <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />,
+      title: "Competitive Analysis",
+      description: "In-depth analysis of your competitors' SEO strategies. We identify gaps, opportunities, and develop tactics to outrank them in the Canberra market.",
+    },
   ];
 
   const whyChooseUs = [
