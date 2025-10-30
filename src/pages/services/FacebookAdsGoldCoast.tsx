@@ -445,7 +445,7 @@ const FacebookAdsGoldCoast = () => {
                   size="xl" 
                   variant="cta"
                   onClick={openForm}
-                  className="whitespace-normal break-words"
+                  className="w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight"
                 >
                   Stop the Budget Bleed: Talk to a Gold Coast Facebook Ads Expert →
                 </Button>
