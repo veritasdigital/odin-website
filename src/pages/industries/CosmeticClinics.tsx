@@ -226,7 +226,7 @@ const CosmeticClinics = () => {
                 <span className="text-foreground">Cosmetic Clinics</span>
               </nav>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D91C5C] to-primary bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D91C5C] to-primary bg-clip-text text-transparent inline-block pb-2">
                 Cosmetic Clinic Marketing Agency
               </h1>
               
