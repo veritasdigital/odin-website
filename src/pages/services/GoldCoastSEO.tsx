@@ -377,7 +377,7 @@ const GoldCoastSEO = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 leading-tight break-words">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 mt-8 sm:mt-12 md:mt-16 leading-tight break-words">
                 Tired of SEO Companies That Promise the World But Deliver Nothing?
               </h1>
               
