@@ -50,6 +50,7 @@ import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
 import GoogleAdsHobart from "./pages/services/GoogleAdsHobart";
 import GoogleAdsGoldCoast from "./pages/services/GoogleAdsGoldCoast";
+import GoldCoastSEO from "./pages/services/GoldCoastSEO";
 import GoogleAdsDarwin from "./pages/services/GoogleAdsDarwin";
 import GoogleAdsLaunceston from "./pages/services/GoogleAdsLaunceston";
 import GoogleAdsBallarat from "./pages/services/GoogleAdsBallarat";
@@ -97,7 +98,8 @@ const App = () => (
             <Route path="/google-ads-melbourne" element={<GoogleAdsMelbourne />} />
             <Route path="/google-ads-perth" element={<GoogleAdsPerth />} />
             <Route path="/google-ads-hobart" element={<GoogleAdsHobart />} />
-            <Route path="/google-ads-gold-coast" element={<GoogleAdsGoldCoast />} />
+          <Route path="/google-ads-gold-coast" element={<GoogleAdsGoldCoast />} />
+          <Route path="/seo-gold-coast" element={<GoldCoastSEO />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
