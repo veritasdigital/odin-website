@@ -345,35 +345,41 @@ const FertilityClinics = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Fertility Clinic Owners Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-muted/30 p-6 rounded-lg">
+            <div className="bg-muted/30 p-6 rounded-lg flex flex-col">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Award key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-4">"Working with Odin Digital transformed our patient flow. We went from inconsistent inquiries to 40+ qualified consultations per month. Their understanding of the fertility patient journey is exceptional."</p>
-              <div className="font-semibold">Dr. Sarah Mitchell</div>
-              <div className="text-sm text-muted-foreground">Sydney Fertility Specialists</div>
+              <p className="text-muted-foreground mb-4 flex-grow">"Working with Odin Digital transformed our patient flow. We went from inconsistent inquiries to 40+ qualified consultations per month. Their understanding of the fertility patient journey is exceptional."</p>
+              <div className="mt-auto">
+                <div className="font-semibold">Dr. Sarah Mitchell</div>
+                <div className="text-sm text-muted-foreground">Sydney Fertility Specialists</div>
+              </div>
             </div>
-            <div className="bg-muted/30 p-6 rounded-lg">
+            <div className="bg-muted/30 p-6 rounded-lg flex flex-col">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Award key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-4">"Our cost per patient acquisition dropped from $6,200 to $2,800 within six months. The ROI is incredible. Odin Digital understands how to attract high-quality patients, not just clicks."</p>
-              <div className="font-semibold">James Chen</div>
-              <div className="text-sm text-muted-foreground">Melbourne IVF Centre</div>
+              <p className="text-muted-foreground mb-4 flex-grow">"Our cost per patient acquisition dropped from $6,200 to $2,800 within six months. The ROI is incredible. Odin Digital understands how to attract high-quality patients, not just clicks."</p>
+              <div className="mt-auto">
+                <div className="font-semibold">James Chen</div>
+                <div className="text-sm text-muted-foreground">Melbourne IVF Centre</div>
+              </div>
             </div>
-            <div className="bg-muted/30 p-6 rounded-lg">
+            <div className="bg-muted/30 p-6 rounded-lg flex flex-col">
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Award key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-4">"As a regional clinic competing against large networks, we needed a marketing edge. Odin Digital's local SEO and patient education content positioned us as the trusted local choice. Patient volume is up 320%."</p>
-              <div className="font-semibold">Dr. Emma Thompson</div>
-              <div className="text-sm text-muted-foreground">Brisbane Reproductive Health</div>
+              <p className="text-muted-foreground mb-4 flex-grow">"As a regional clinic competing against large networks, we needed a marketing edge. Odin Digital's local SEO and patient education content positioned us as the trusted local choice. Patient volume is up 320%."</p>
+              <div className="mt-auto">
+                <div className="font-semibold">Dr. Emma Thompson</div>
+                <div className="text-sm text-muted-foreground">Brisbane Reproductive Health</div>
+              </div>
             </div>
           </div>
         </div>
