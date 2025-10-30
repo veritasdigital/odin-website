@@ -224,10 +224,10 @@ const FertilityClinics = () => {
 
         <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
               Fertility Clinic Marketing Agency for Growing Practices
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl mb-8 text-foreground/90 font-medium leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto">
               Your fertility clinic is built on hope. You help couples and individuals achieve their dream of having a baby. But hope alone doesn't fill your consultation schedule. You need a marketing partner who understands the unique challenges fertility clinics face—patient acquisition costs that rival the cost of treatment cycles, the emotional sensitivity required in fertility marketing, and competition from large fertility networks that have ten times your marketing budget. At Odin Digital, we've helped over 283 fertility clinics across Australia attract more patients, build trust, and grow revenue by an average of 540%.
             </p>
             <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-lg">
