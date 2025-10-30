@@ -574,7 +574,7 @@ const CanberraSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden">
+        <section className="relative py-12 sm:py-20 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
@@ -584,37 +584,37 @@ const CanberraSEO = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 mt-8 sm:mt-12 md:mt-16 leading-tight break-words">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-4 sm:mb-6 leading-tight px-2">
                 SEO services Canberra
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-8 break-words">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 sm:mb-8 px-2">
                 Canberra SEO that actually works. Local expertise. Government sector knowledge. Real results.
               </p>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
                 Most SEO companies don't understand the Canberra market. They don't know government procurement. They don't specialise in B2G marketing. They treat you like every other client.
               </p>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
                 We're different. We specialise in Canberra SEO, government sector marketing, and defence industry optimisation. We deliver $574M+ in client revenue and a 540% average ROI.
               </p>
               
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto break-words">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto px-2">
                 No lock-in contracts. No BS. Just data-driven SEO strategies designed to win government contracts and drive real business growth.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact">
-                  <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto w-full sm:w-auto">
-                    <span className="break-words">Book Your Free Consultation</span>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+                <Link to="/contact" className="w-full sm:w-auto">
+                  <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                    <span>Book Your Free Consultation</span>
                     <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <a href="tel:1300123456">
-                  <Button variant="outline" size="xl" className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto w-full sm:w-auto">
-                    <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                    <span className="break-words">Call 1300 123 456</span>
+                <a href="tel:1300123456" className="w-full sm:w-auto">
+                  <Button variant="outline" size="xl" className="text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                    <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                    <span>Call 1300 123 456</span>
                   </Button>
                 </a>
               </div>
@@ -623,9 +623,9 @@ const CanberraSEO = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {metrics.map((metric, index) => (
                 <MetricCard key={index} {...metric} />
               ))}
@@ -634,22 +634,22 @@ const CanberraSEO = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Why Your SEO Isn't Working in Canberra
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 These are the most common frustrations we hear from Canberra businesses before they work with us.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {painPoints.map((point, index) => (
-                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-destructive overflow-hidden">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 break-words">{point.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words">{point.description}</p>
+                <Card key={index} className="p-4 sm:p-6 md:p-8 border-l-4 border-l-destructive overflow-hidden">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{point.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{point.description}</p>
                 </Card>
               ))}
             </div>
@@ -657,22 +657,22 @@ const CanberraSEO = () => {
         </section>
 
         {/* Solution Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 SEO Built for Canberra
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 We're not a generic SEO company. We're Canberra specialists who understand your market.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {differentiators.map((diff, index) => (
-                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-primary bg-background overflow-hidden">
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 break-words">{diff.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words">{diff.description}</p>
+                <Card key={index} className="p-4 sm:p-6 md:p-8 border-l-4 border-l-primary bg-background overflow-hidden">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{diff.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{diff.description}</p>
                 </Card>
               ))}
             </div>
@@ -680,31 +680,33 @@ const CanberraSEO = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Our SEO Services for Canberra
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 Comprehensive SEO services designed to dominate the Canberra market and win government contracts.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="p-6 sm:p-8 flex flex-col overflow-hidden border-t-4 border-t-primary">
-                  {service.icon}
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{service.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-6 flex-grow break-words">{service.description}</p>
+                <Card key={index} className="p-4 sm:p-6 md:p-8 flex flex-col overflow-hidden border-t-4 border-t-primary">
+                  <div className="flex-shrink-0 mb-3 sm:mb-4">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground flex-grow break-words leading-relaxed">{service.description}</p>
                 </Card>
               ))}
             </div>
 
-            <div className="text-center mt-12">
-              <Link to="/contact">
-                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto">
-                  <span className="break-words">Get Your Free SEO Audit</span>
+            <div className="text-center mt-8 sm:mt-10 md:mt-12 px-2">
+              <Link to="/contact" className="inline-block w-full sm:w-auto">
+                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full sm:w-auto">
+                  <span>Get Your Free SEO Audit</span>
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -713,29 +715,29 @@ const CanberraSEO = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Why Canberra Businesses Choose Odin Digital for SEO
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 We're not just another SEO company. We're your dedicated growth partner.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {whyChooseUs.map((reason, index) => (
-                <Card key={index} className="p-6 sm:p-8 overflow-hidden">
-                  <div className="flex items-start gap-4">
+                <Card key={index} className="p-4 sm:p-6 md:p-8 overflow-hidden">
+                  <div className="flex items-start gap-3 sm:gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-2">
-                        <span className="text-sm sm:text-lg font-black text-primary break-words text-center leading-tight">{reason.stat}</span>
+                      <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-2">
+                        <span className="text-xs sm:text-sm md:text-lg font-black text-primary text-center leading-tight">{reason.stat}</span>
                       </div>
                     </div>
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{reason.title}</h3>
-                      <p className="text-sm sm:text-base text-muted-foreground break-words">{reason.description}</p>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{reason.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{reason.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -745,23 +747,23 @@ const CanberraSEO = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Our SEO Process
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 A systematic, data-driven approach that delivers consistent results.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="relative overflow-hidden">
-                  <div className="text-5xl sm:text-6xl font-black text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{step.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words">{step.description}</p>
+                  <div className="text-4xl sm:text-5xl md:text-6xl font-black text-primary/20 mb-3 sm:mb-4">{step.number}</div>
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{step.description}</p>
                   
                   {/* Connecting line - visible on desktop only */}
                   {index < processSteps.length - 1 && (
@@ -774,51 +776,51 @@ const CanberraSEO = () => {
         </section>
 
         {/* Related Services */}
-        <section className="py-20">
+        <section className="py-12 sm:py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-8 sm:mb-10 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Integrated Digital Marketing Services
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
                 Combine SEO with our other services for maximum impact.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               <Link to="/services/google-ads-canberra">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <BarChart className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-bold text-foreground mb-2 break-words">Google Ads Canberra</h3>
-                  <p className="text-sm text-muted-foreground break-words">Drive immediate results while your SEO builds momentum.</p>
-                  <ArrowRight className="w-5 h-5 text-primary mt-4" />
+                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <BarChart className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Google Ads Canberra</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Drive immediate results while your SEO builds momentum.</p>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/facebook-ads-canberra">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <Users className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-bold text-foreground mb-2 break-words">Facebook Ads Canberra</h3>
-                  <p className="text-sm text-muted-foreground break-words">Expand your reach with targeted social media advertising.</p>
-                  <ArrowRight className="w-5 h-5 text-primary mt-4" />
+                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Facebook Ads Canberra</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Expand your reach with targeted social media advertising.</p>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/website-design">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <Globe className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-bold text-foreground mb-2 break-words">Web Design</h3>
-                  <p className="text-sm text-muted-foreground break-words">Convert your SEO traffic with a high-performing website.</p>
-                  <ArrowRight className="w-5 h-5 text-primary mt-4" />
+                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Web Design</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Convert your SEO traffic with a high-performing website.</p>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/email-marketing">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <FileText className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-lg font-bold text-foreground mb-2 break-words">Email Marketing</h3>
-                  <p className="text-sm text-muted-foreground break-words">Nurture leads and drive repeat business with email.</p>
-                  <ArrowRight className="w-5 h-5 text-primary mt-4" />
+                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <FileText className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
+                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Email Marketing</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Nurture leads and drive repeat business with email.</p>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
             </div>
@@ -826,7 +828,7 @@ const CanberraSEO = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+        <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
           {/* Floating circles */}
@@ -834,58 +836,58 @@ const CanberraSEO = () => {
           <div className="absolute bottom-10 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl" />
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-6 break-words">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-4 sm:mb-6 px-2">
               Ready to Transform Your SEO?
             </h2>
             
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 break-words px-4">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 px-2">
               Stop wasting money on SEO that doesn't understand the Canberra market. Partner with specialists who know government procurement, B2G marketing, and what it takes to win contracts.
             </p>
             
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 break-words px-4">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-10 px-2">
               Book your free consultation today and discover exactly how we can help you dominate your market and drive measurable growth.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact">
-                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto w-full sm:w-auto">
-                  <span className="break-words">Book Your Free Consultation Now</span>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+              <Link to="/contact" className="w-full sm:w-auto">
+                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                  <span>Book Your Free Consultation Now</span>
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <a href="tel:1300123456">
-                <Button variant="outline" size="xl" className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto w-full sm:w-auto">
-                  <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5" />
-                  <span className="break-words">Call 1300 123 456</span>
+              <a href="tel:1300123456" className="w-full sm:w-auto">
+                <Button variant="outline" size="xl" className="text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                  <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                  <span>Call 1300 123 456</span>
                 </Button>
               </a>
             </div>
 
-            <p className="text-xs sm:text-sm text-muted-foreground mt-6 break-words px-4">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-4 sm:mt-6 px-2">
               No lock-in contracts. No obligation. Just honest advice from SEO experts who specialise in the Canberra market.
             </p>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-20 bg-muted/30 mb-16 sm:mb-20 md:mb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
+            <div className="text-center mb-10 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
                 Frequently Asked Questions
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground break-words px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-4">
                 Everything you need to know about our SEO services in Canberra.
               </p>
             </div>
 
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left font-semibold text-sm sm:text-base break-words pr-8">
+                <AccordionItem key={index} value={`item-${index}`} className="overflow-hidden">
+                  <AccordionTrigger className="text-left font-semibold text-sm sm:text-base break-words pr-8 hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm sm:text-base text-muted-foreground break-words">
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
