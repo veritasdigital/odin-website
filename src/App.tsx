@@ -52,6 +52,7 @@ import GoogleAdsHobart from "./pages/services/GoogleAdsHobart";
 import GoogleAdsGoldCoast from "./pages/services/GoogleAdsGoldCoast";
 import GoldCoastSEO from "./pages/services/GoldCoastSEO";
 import CanberraSEO from "./pages/services/CanberraSEO";
+import NewcastleSEO from "./pages/services/NewcastleSEO";
 import GoogleAdsDarwin from "./pages/services/GoogleAdsDarwin";
 import GoogleAdsLaunceston from "./pages/services/GoogleAdsLaunceston";
 import GoogleAdsBallarat from "./pages/services/GoogleAdsBallarat";
@@ -102,6 +103,7 @@ const App = () => (
           <Route path="/google-ads-gold-coast" element={<GoogleAdsGoldCoast />} />
           <Route path="/seo-gold-coast" element={<GoldCoastSEO />} />
           <Route path="/seo-canberra" element={<CanberraSEO />} />
+          <Route path="/seo-newcastle" element={<NewcastleSEO />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
