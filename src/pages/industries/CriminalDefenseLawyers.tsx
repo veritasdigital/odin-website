@@ -390,7 +390,7 @@ export default function CriminalDefenseLawyers() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
               {/* SEO Service */}
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <Search className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">SEO for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -399,20 +399,20 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
                   In today's digital world, your potential clients are turning to Google to find a criminal defense lawyer. If you're not on the first page of the search results, you're invisible. Our team of criminal defense SEO specialists will build a comprehensive SEO strategy that is designed to rank you for the keywords that matter most, from high-value practice area keywords (e.g., "DUI lawyer," "drug possession lawyer") to long-tail keywords that capture clients in crisis.
                 </p>
-                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed flex-grow">
                   We'll optimize your website, build high-quality backlinks, and create compelling content that positions you as the leading criminal defense lawyer in your area. Our goal is to build a long-term, sustainable lead generation machine that delivers a consistent flow of high-value cases, so you can stop relying on referrals and take control of your case flow.
                 </p>
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base"
+                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
                 >
                   <span className="text-center">Get Your FREE Criminal Defense SEO Quote →</span>
                 </Button>
               </Card>
 
               {/* PPC Service */}
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <MousePointerClick className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">PPC for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -421,20 +421,20 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
                   When a potential client is arrested, they need a lawyer now. They're not going to spend hours researching their options; they're going to click on the first result they see. With our targeted PPC campaigns, you can be that first result. We'll build and manage high-converting Google Ads campaigns that put you in front of potential clients at the exact moment they need you most.
                 </p>
-                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed flex-grow">
                   We'll handle everything from keyword research and ad copywriting to bid management and landing page optimization. Our team of Google Ads specialists will work tirelessly to reduce your cost per lead, increase your conversion rate, and maximize your ROI. We'll track every dollar you spend and show you exactly how much revenue it's generating for your practice.
                 </p>
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base"
+                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
                 >
                   <span className="text-center">Get Your FREE Criminal Defense PPC Quote →</span>
                 </Button>
               </Card>
 
               {/* Meta Ads Service */}
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <Share2 className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Meta Ads for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -443,20 +443,20 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
                   While Google Ads is great for capturing clients in crisis, Meta Ads is a powerful tool for building your brand, reaching potential clients before they need you, and staying top-of-mind with your target audience. We'll create and manage strategic Meta Ads campaigns that are designed to build your brand, generate leads, and drive traffic to your website.
                 </p>
-                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed flex-grow">
                   We'll use advanced targeting to reach potential clients based on their demographics, interests, and online behavior. We'll create compelling ad creative that positions you as a trusted authority in your field. And we'll track your results to ensure you're getting a positive return on your investment.
                 </p>
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base"
+                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
                 >
                   <span className="text-center">Get Your FREE Criminal Defense Meta Ads Quote →</span>
                 </Button>
               </Card>
 
               {/* Web Design Service */}
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <Palette className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Web Design for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -465,13 +465,13 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
                   In the legal industry, trust and credibility are everything. Your website is often the first impression a potential client will have of your practice. If it's outdated, unprofessional, or difficult to navigate, you're losing cases to your competitors. We'll build you a modern, mobile-friendly website that is designed to convert visitors into clients.
                 </p>
-                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed flex-grow">
                   Our team of web design specialists will create a custom website that reflects the professionalism and expertise of your practice. We'll write compelling copy that tells your story and positions you as the leading criminal defense lawyer in your area. And we'll optimize your website for conversions, so you can turn more visitors into paying clients.
                 </p>
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base"
+                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
                 >
                   <span className="text-center">Get Your FREE Criminal Defense Web Design Quote →</span>
                 </Button>
