@@ -531,7 +531,7 @@ const PlasticSurgeons = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* SEO Service */}
-            <Card className="p-8 border-charcoal/10 shadow-card">
+            <Card className="p-8 border-charcoal/10 shadow-card flex flex-col h-full">
               <Search className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-2xl font-bold text-charcoal mb-4">Cosmetic Surgery SEO</h3>
               
@@ -569,7 +569,7 @@ const PlasticSurgeons = () => {
                 </ul>
               </div>
 
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6 flex-grow">
                 <strong>Why It Matters:</strong> SEO is a long-term strategy that builds sustainable patient flow. Once you rank on page one, you'll receive a steady stream of high-quality patients without paying for every click. Our clients see an average 180% increase in organic traffic within 12 months.
               </p>
 
@@ -584,7 +584,7 @@ const PlasticSurgeons = () => {
             </Card>
 
             {/* Google Ads Service */}
-            <Card className="p-8 border-charcoal/10 shadow-card">
+            <Card className="p-8 border-charcoal/10 shadow-card flex flex-col h-full">
               <MousePointerClick className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-2xl font-bold text-charcoal mb-4">Google Ads for Cosmetic Surgeons</h3>
               
@@ -622,7 +622,7 @@ const PlasticSurgeons = () => {
                 </ul>
               </div>
 
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6 flex-grow">
                 <strong>Why It Matters:</strong> Google Ads provides immediate results. You can start attracting new patients within 24 hours. And because we optimise for conversion, you'll see a lower patient acquisition cost than your competitors. Our clients see an average 320% ROI on Google Ads.
               </p>
 
@@ -637,7 +637,7 @@ const PlasticSurgeons = () => {
             </Card>
 
             {/* Meta Ads Service */}
-            <Card className="p-8 border-charcoal/10 shadow-card">
+            <Card className="p-8 border-charcoal/10 shadow-card flex flex-col h-full">
               <Share2 className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-2xl font-bold text-charcoal mb-4">Meta Ads (Facebook & Instagram)</h3>
               
@@ -675,7 +675,7 @@ const PlasticSurgeons = () => {
                 </ul>
               </div>
 
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6 flex-grow">
                 <strong>Why It Matters:</strong> Meta Ads help you reach patients earlier in their decision-making journey. You can build brand awareness, showcase your expertise, and stay top-of-mind until they're ready to book. Our clients see an average 240% ROI on Meta Ads.
               </p>
 
@@ -690,7 +690,7 @@ const PlasticSurgeons = () => {
             </Card>
 
             {/* Web Design Service */}
-            <Card className="p-8 border-charcoal/10 shadow-card">
+            <Card className="p-8 border-charcoal/10 shadow-card flex flex-col h-full">
               <Layout className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-2xl font-bold text-charcoal mb-4">Plastic Surgery Web Design</h3>
               
@@ -728,7 +728,7 @@ const PlasticSurgeons = () => {
                 </ul>
               </div>
 
-              <p className="text-charcoal/70 leading-relaxed mb-6">
+              <p className="text-charcoal/70 leading-relaxed mb-6 flex-grow">
                 <strong>Why It Matters:</strong> Your website is your digital storefront. A professional, high-converting website builds trust, showcases your expertise, and converts visitors into patients. Our clients see an average 160% increase in consultation bookings after a website redesign.
               </p>
 
