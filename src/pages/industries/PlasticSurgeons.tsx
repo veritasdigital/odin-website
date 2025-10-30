@@ -30,7 +30,8 @@ import {
   Building2,
   Stethoscope,
   MapPin,
-  XCircle
+  XCircle,
+  Phone
 } from "lucide-react";
 
 const PlasticSurgeons = () => {
@@ -185,18 +186,18 @@ const PlasticSurgeons = () => {
       <Header />
 
       {/* Mobile Sticky CTA */}
-      <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-border shadow-lg p-4">
         <Button
           onClick={openForm}
-          variant="hero"
-          className="shadow-glow w-full text-sm"
+          className="w-full bg-gradient-primary text-white hover:opacity-90 text-base px-6 py-4 h-auto font-semibold shadow-glow flex items-center justify-center"
         >
+          <Phone className="mr-2 h-5 w-5" />
           Schedule Free Consultation
         </Button>
       </div>
 
       {/* 1. Hero Section */}
-      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white">
+      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white pb-20 md:pb-0">
         <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
         </div>
@@ -220,7 +221,7 @@ const PlasticSurgeons = () => {
               You need a marketing partner who understands the unique challenges plastic surgeons face—patient acquisition costs that rival the cost of surgical equipment, the complexity of before-and-after photo compliance, and competition from corporate cosmetic chains that have ten times your marketing budget. At Odin Digital, we've helped over 283 cosmetic surgery practices across Australia attract high-quality patients, build their reputation, and grow revenue by an average of 540%.
             </p>
             
-            <div className="pt-2 px-4">
+            <div className="pt-2 px-4 hidden md:block">
               <Button
                 onClick={openForm}
                 variant="hero"
