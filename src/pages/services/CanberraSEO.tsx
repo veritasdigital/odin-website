@@ -647,7 +647,7 @@ const CanberraSEO = () => {
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {painPoints.map((point, index) => (
-                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-destructive">
+                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-destructive overflow-hidden">
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 break-words">{point.title}</h3>
                   <p className="text-sm sm:text-base text-muted-foreground break-words">{point.description}</p>
                 </Card>
@@ -670,7 +670,7 @@ const CanberraSEO = () => {
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {differentiators.map((diff, index) => (
-                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-primary bg-background">
+                <Card key={index} className="p-6 sm:p-8 border-l-4 border-l-primary bg-background overflow-hidden">
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 break-words">{diff.title}</h3>
                   <p className="text-sm sm:text-base text-muted-foreground break-words">{diff.description}</p>
                 </Card>
@@ -726,11 +726,11 @@ const CanberraSEO = () => {
 
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
               {whyChooseUs.map((reason, index) => (
-                <Card key={index} className="p-6 sm:p-8">
+                <Card key={index} className="p-6 sm:p-8 overflow-hidden">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <span className="text-xl sm:text-2xl font-black text-primary">{reason.stat}</span>
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden">
+                        <span className="text-xl sm:text-2xl font-black text-primary break-words">{reason.stat}</span>
                       </div>
                     </div>
                     <div>
@@ -758,7 +758,7 @@ const CanberraSEO = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {processSteps.map((step, index) => (
-                <div key={index} className="relative">
+                <div key={index} className="relative overflow-hidden">
                   <div className="text-5xl sm:text-6xl font-black text-primary/20 mb-4">{step.number}</div>
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{step.title}</h3>
                   <p className="text-sm sm:text-base text-muted-foreground break-words">{step.description}</p>
@@ -787,7 +787,7 @@ const CanberraSEO = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <Link to="/services/google-ads-canberra">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full">
+                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
                   <BarChart className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-lg font-bold text-foreground mb-2 break-words">Google Ads Canberra</h3>
                   <p className="text-sm text-muted-foreground break-words">Drive immediate results while your SEO builds momentum.</p>
@@ -796,7 +796,7 @@ const CanberraSEO = () => {
               </Link>
 
               <Link to="/services/facebook-ads-canberra">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full">
+                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
                   <Users className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-lg font-bold text-foreground mb-2 break-words">Facebook Ads Canberra</h3>
                   <p className="text-sm text-muted-foreground break-words">Expand your reach with targeted social media advertising.</p>
@@ -805,7 +805,7 @@ const CanberraSEO = () => {
               </Link>
 
               <Link to="/services/website-design">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full">
+                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
                   <Globe className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-lg font-bold text-foreground mb-2 break-words">Web Design</h3>
                   <p className="text-sm text-muted-foreground break-words">Convert your SEO traffic with a high-performing website.</p>
@@ -814,7 +814,7 @@ const CanberraSEO = () => {
               </Link>
 
               <Link to="/services/email-marketing">
-                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full">
+                <Card className="p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
                   <FileText className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-lg font-bold text-foreground mb-2 break-words">Email Marketing</h3>
                   <p className="text-sm text-muted-foreground break-words">Nurture leads and drive repeat business with email.</p>
