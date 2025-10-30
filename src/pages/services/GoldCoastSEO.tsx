@@ -69,11 +69,11 @@ const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; l
   const { count, ref } = useCountUp(value);
 
   return (
-    <Card className="p-6 text-center">
-      <div ref={ref} className="text-4xl md:text-5xl font-black text-primary mb-2">
+    <Card className="p-4 sm:p-6 text-center">
+      <div ref={ref} className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2 break-words">
         ${count}{suffix}
       </div>
-      <div className="text-sm text-muted-foreground font-medium">{label}</div>
+      <div className="text-xs sm:text-sm text-muted-foreground font-medium break-words">{label}</div>
     </Card>
   );
 };
@@ -361,10 +361,11 @@ const GoldCoastSEO = () => {
         <SideTab />
 
         {/* Sticky Mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-40 p-4 bg-background/95 backdrop-blur-sm border-t md:hidden">
+        <div className="fixed bottom-0 left-0 right-0 z-40 p-3 bg-background/95 backdrop-blur-sm border-t md:hidden">
           <Link to="/contact" className="block">
-            <Button variant="cta" size="lg" className="w-full">
-              Get Your FREE SEO Strategy <ArrowRight className="ml-2 w-5 h-5" />
+            <Button variant="cta" size="lg" className="w-full text-sm px-4 py-3 h-auto">
+              <span className="truncate">Get Your FREE SEO Strategy</span>
+              <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
             </Button>
           </Link>
         </div>
@@ -376,30 +377,30 @@ const GoldCoastSEO = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-foreground mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 leading-tight break-words">
                 Tired of SEO Companies That Promise the World But Deliver Nothing?
               </h1>
               
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-8">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-8 break-words">
                 Get Real Results from Gold Coast's Only Revenue-Obsessed SEO Company
               </h2>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words px-4">
                 We're not here to boost your rankings. We're here to explode your revenue.
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words px-4">
                 With over $574M in verified client revenue and a 540% average ROI, we don't just talk about results - we deliver them.
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto break-words px-4">
                 No lock-in contracts. No BS. Just data-driven SEO strategies that drive real business growth.
               </p>
 
               <Link to="/contact">
-                <Button variant="cta" size="xl" className="group">
-                  Get Your FREE SEO Strategy
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto">
+                  <span className="break-words">Get Your FREE SEO Strategy</span>
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
             </div>
@@ -421,19 +422,19 @@ const GoldCoastSEO = () => {
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-4 break-words">
                 Sound Familiar?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto break-words px-4">
                 You're not alone. These are the most common frustrations we hear from businesses on the Gold Coast.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
               {problems.map((problem, index) => (
-                <Card key={index} className="p-8">
-                  <h3 className="text-xl font-bold text-foreground mb-4">{problem.title}</h3>
-                  <p className="text-muted-foreground">{problem.description}</p>
+                <Card key={index} className="p-6 sm:p-8">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4 break-words">{problem.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words">{problem.description}</p>
                 </Card>
               ))}
             </div>
@@ -454,11 +455,11 @@ const GoldCoastSEO = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8">
-                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                <Card key={index} className="p-6 sm:p-8">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-6 italic break-words">"{testimonial.quote}"</p>
                   <div className="border-t pt-4">
-                    <p className="font-bold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+                    <p className="text-sm sm:text-base font-bold text-foreground break-words">{testimonial.author}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground break-words">{testimonial.company}</p>
                   </div>
                 </Card>
               ))}
@@ -486,8 +487,8 @@ const GoldCoastSEO = () => {
                   <p className="text-primary font-semibold mb-4 break-words">{service.tagline}</p>
                   <p className="text-muted-foreground mb-6 flex-grow break-words">{service.description}</p>
                   <Link to="/contact" className="mt-auto">
-                    <Button variant="outline" className="w-full">
-                      {service.cta}
+                    <Button variant="outline" className="w-full text-xs sm:text-sm px-3 py-2 h-auto">
+                      <span className="break-words line-clamp-2">{service.cta}</span>
                     </Button>
                   </Link>
                 </Card>
@@ -510,10 +511,10 @@ const GoldCoastSEO = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {differentiators.map((diff, index) => (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center px-2">
                   <div className="flex justify-center mb-4">{diff.icon}</div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">{diff.title}</h3>
-                  <p className="text-muted-foreground">{diff.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{diff.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words">{diff.description}</p>
                 </div>
               ))}
             </div>
@@ -534,10 +535,10 @@ const GoldCoastSEO = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
-                <div key={index} className="relative">
-                  <div className="text-6xl font-black text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                <div key={index} className="relative px-2">
+                  <div className="text-5xl sm:text-6xl font-black text-primary/20 mb-4">{step.number}</div>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground break-words">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -555,12 +556,12 @@ const GoldCoastSEO = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               {whyChooseUs.map((reason, index) => (
-                <Card key={index} className="p-8">
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <Card key={index} className="p-6 sm:p-8">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
+                    <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-xl font-bold text-foreground mb-3">{reason.title}</h3>
-                      <p className="text-muted-foreground">{reason.description}</p>
+                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 break-words">{reason.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground break-words">{reason.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -575,26 +576,26 @@ const GoldCoastSEO = () => {
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-5xl font-black text-foreground mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-6 break-words">
               Ready to Stop Wasting Money on SEO That Doesn't Work?
             </h2>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-4">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 break-words px-4">
               It's time to partner with an SEO company Gold Coast businesses actually trust. One that's obsessed with your revenue, not just rankings.
             </p>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-10">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 break-words px-4">
               Book your free strategy call today and discover exactly how we can help you dominate your market and drive real, measurable growth.
             </p>
 
             <Link to="/contact">
-              <Button variant="cta" size="xl" className="group">
-                Get Your FREE SEO Strategy Now
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto">
+                <span className="break-words">Get Your FREE SEO Strategy Now</span>
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
 
-            <p className="text-sm text-muted-foreground mt-6">
+            <p className="text-xs sm:text-sm text-muted-foreground mt-6 break-words px-4">
               No lock-in contracts. No obligation. Just honest advice from SEO experts who care about your success.
             </p>
           </div>
@@ -615,10 +616,10 @@ const GoldCoastSEO = () => {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left font-semibold">
+                  <AccordionTrigger className="text-left font-semibold text-sm sm:text-base break-words pr-8">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground break-words">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
