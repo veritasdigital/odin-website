@@ -544,7 +544,7 @@ const SocialMediaAdvertising = () => {
           <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground mb-3 sm:mb-4 md:mb-6 leading-tight px-1 sm:px-2 mt-16 sm:mt-8 md:mt-0">
-                Social media advertising
+                Social Media Advertising
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary mb-4 sm:mb-6 md:mb-8 px-1 sm:px-2 leading-snug">
