@@ -584,7 +584,7 @@ const CanberraSEO = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-4 sm:mb-6 leading-tight px-2">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-4 sm:mb-6 leading-tight px-2 mt-8 sm:mt-0">
                 SEO services Canberra
               </h1>
               
