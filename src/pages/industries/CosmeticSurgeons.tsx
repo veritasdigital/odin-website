@@ -499,65 +499,65 @@ const CosmeticSurgeons = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col h-full">
               <Search className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-3">AHPRA-Compliant SEO</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Dominate Google for high-intent cosmetic surgery searches while maintaining strict AHPRA compliance.
               </p>
               <Button 
                 onClick={openForm}
                 variant="outline" 
                 size="sm"
-                className="w-full"
+                className="w-full mt-auto"
               >
                 Learn More
               </Button>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col h-full">
               <MousePointerClick className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-3">Ethical PPC for Surgical Leads</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Attract qualified patients immediately with Google Ads campaigns optimized for conversion and compliance.
               </p>
               <Button 
                 onClick={openForm}
                 variant="outline" 
                 size="sm"
-                className="w-full"
+                className="w-full mt-auto"
               >
                 Learn More
               </Button>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col h-full">
               <Share2 className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-3">Reputation-First Social Media</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Build trust and authority through educational content and ethical social media marketing.
               </p>
               <Button 
                 onClick={openForm}
                 variant="outline" 
                 size="sm"
-                className="w-full"
+                className="w-full mt-auto"
               >
                 Learn More
               </Button>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col h-full">
               <Layout className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-3">High-Converting Website Design</h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Premium, AHPRA-compliant websites built to convert visitors into consultations.
               </p>
               <Button 
                 onClick={openForm}
                 variant="outline" 
                 size="sm"
-                className="w-full"
+                className="w-full mt-auto"
               >
                 Learn More
               </Button>
