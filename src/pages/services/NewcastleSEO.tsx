@@ -484,7 +484,7 @@ const NewcastleSEO = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground mb-3 sm:mb-4 md:mb-6 leading-tight px-1 sm:px-2 mt-12 sm:mt-8 md:mt-0">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground mb-3 sm:mb-4 md:mb-6 leading-tight px-1 sm:px-2 mt-16 sm:mt-8 md:mt-0">
                 SEO Agency Newcastle
               </h1>
               
