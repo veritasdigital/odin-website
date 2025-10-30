@@ -466,7 +466,7 @@ const FacebookAdsGoldCoast = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 gap-8 max-w-3xl mx-auto">
                 {solutions.map((solution, index) => (
                   <Card key={index} className="overflow-hidden hover:shadow-glow transition-all duration-300">
                     <CardContent className="p-6 space-y-4">
