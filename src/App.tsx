@@ -43,6 +43,7 @@ import AccountingFirms from "./pages/industries/AccountingFirms";
 import RealEstateAgents from "./pages/industries/RealEstateAgents";
 import FertilityClinics from "./pages/industries/FertilityClinics";
 import CosmeticClinics from "./pages/industries/CosmeticClinics";
+import PersonalInjuryLawyers from "./pages/industries/PersonalInjuryLawyers";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -121,7 +122,8 @@ const App = () => (
           <Route path="/industries/accounting-firms" element={<AccountingFirms />} />
           <Route path="/industries/real-estate-agents" element={<RealEstateAgents />} />
           <Route path="/industries/fertility-clinics" element={<FertilityClinics />} />
-          <Route path="/industries/cosmetic-clinics" element={<CosmeticClinics />} />
+            <Route path="/industries/cosmetic-clinics" element={<CosmeticClinics />} />
+            <Route path="/industries/personal-injury-lawyers" element={<PersonalInjuryLawyers />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
