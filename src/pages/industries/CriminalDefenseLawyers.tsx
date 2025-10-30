@@ -278,7 +278,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 3: Problem-Agitation Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-16 md:py-24 bg-muted/30 decorative-circles">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-6 md:mb-8">
               Is Your Criminal Defense Practice Facing These Marketing Challenges?
@@ -288,7 +288,7 @@ export default function CriminalDefenseLawyers() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <Card className="p-6 md:p-8 hover:shadow-lg transition-shadow">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 hover:-translate-y-1 bg-white">
                 <Scale className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-bold mb-4">The Referral Pool Is Drying Up</h3>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -296,7 +296,7 @@ export default function CriminalDefenseLawyers() {
                 </p>
               </Card>
               
-              <Card className="p-6 md:p-8 hover:shadow-lg transition-shadow">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 hover:-translate-y-1 bg-white">
                 <TrendingUp className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-bold mb-4">You're Wasting Money on Low-Quality Leads</h3>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -304,7 +304,7 @@ export default function CriminalDefenseLawyers() {
                 </p>
               </Card>
               
-              <Card className="p-6 md:p-8 hover:shadow-lg transition-shadow">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 hover:-translate-y-1 bg-white">
                 <Search className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-xl md:text-2xl font-bold mb-4">You're Invisible Online</h3>
                 <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
@@ -316,7 +316,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 4: Testimonials */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background decorative-circles-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 md:mb-16">What Our Clients Say</h2>
             <p className="text-lg md:text-xl text-center text-muted-foreground mb-12 md:mb-16 max-w-4xl mx-auto px-4">
@@ -324,7 +324,7 @@ export default function CriminalDefenseLawyers() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
@@ -337,7 +337,7 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-xs md:text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</p>
               </Card>
               
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
@@ -350,7 +350,7 @@ export default function CriminalDefenseLawyers() {
                 <p className="text-xs md:text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</p>
               </Card>
               
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
@@ -367,7 +367,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 5: Services */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-16 md:py-24 bg-muted/30 decorative-circles">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-6 md:mb-8">
               Digital Marketing Services for Criminal Defense Lawyers
@@ -378,7 +378,7 @@ export default function CriminalDefenseLawyers() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16">
               {/* SEO Service */}
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <Search className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">SEO for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -400,7 +400,7 @@ export default function CriminalDefenseLawyers() {
               </Card>
 
               {/* PPC Service */}
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <MousePointerClick className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">PPC for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -422,7 +422,7 @@ export default function CriminalDefenseLawyers() {
               </Card>
 
               {/* Meta Ads Service */}
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <Share2 className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Meta Ads for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -444,7 +444,7 @@ export default function CriminalDefenseLawyers() {
               </Card>
 
               {/* Web Design Service */}
-              <Card className="p-6 md:p-8">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
                 <Palette className="w-10 h-10 md:w-12 md:h-12 text-primary mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">Web Design for Criminal Defense Lawyers</h3>
                 <p className="text-base md:text-lg font-semibold mb-4">
@@ -469,7 +469,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 6: Differentiators */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background decorative-circles-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 md:mb-16">
               The Odin Digital Difference: Your Criminal Defense Marketing Partner
@@ -515,7 +515,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 7: Process */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-16 md:py-24 bg-muted/30 decorative-circles">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 md:mb-16">
               Our Proven 4-Step Digital Marketing Process for Criminal Defense Lawyers
@@ -561,7 +561,7 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Section 8: Why Choose Us */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background decorative-circles-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-center mb-12 md:mb-16">
               Why Choose Odin Digital as Your Criminal Defense Marketing Partner?
