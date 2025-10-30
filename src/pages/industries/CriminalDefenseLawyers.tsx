@@ -217,21 +217,21 @@ export default function CriminalDefenseLawyers() {
           <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
           <div className="absolute top-1/3 right-1/3 w-20 h-20 border border-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }} />
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-20">
             <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-6 md:mb-8 leading-tight mt-12 md:mt-16">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-4 sm:mb-6 md:mb-8 leading-tight mt-8 sm:mt-12 md:mt-16 px-2">
                 Digital Marketing for Criminal Defense Lawyers
               </h1>
               
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight px-4 md:px-0">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-2 sm:px-4 md:px-0">
                 Stop Relying on Referrals. Start Generating High-Value Cases.
               </p>
               
-              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-4 sm:mb-6 md:mb-8 lg:mb-12 leading-relaxed max-w-4xl mx-auto px-2 sm:px-4">
                 Are you tired of the feast-or-famine cycle of a referral-based practice? It's time for a digital marketing agency that specializes in generating high-value cases for criminal defense lawyers.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-2 sm:px-4">
                 At Odin Digital, we're not a generic legal marketing agency. We are a team of criminal defense marketing specialists who understand the unique challenges of your practice. We build predictable, scalable lead generation systems that deliver a steady stream of qualified clients, so you can focus on what you do best: defending your clients.
               </p>
               
@@ -239,9 +239,9 @@ export default function CriminalDefenseLawyers() {
                 variant="cta" 
                 size="lg" 
                 onClick={openForm}
-                className="px-6 md:px-8 py-4 md:py-6 text-base md:text-lg w-full sm:w-auto"
+                className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg w-full sm:w-auto"
               >
-                <span className="text-center">Get Your FREE Criminal Defense Marketing Quote →</span>
+                <span className="text-center break-words">Get Your FREE Criminal Defense Marketing Quote →</span>
               </Button>
             </div>
           </div>
@@ -405,9 +405,9 @@ export default function CriminalDefenseLawyers() {
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm md:text-base mt-auto"
                 >
-                  <span className="text-center">Get Your FREE Criminal Defense SEO Quote →</span>
+                  <span className="text-center break-words">Get Your FREE Criminal Defense SEO Quote →</span>
                 </Button>
               </Card>
 
@@ -427,9 +427,9 @@ export default function CriminalDefenseLawyers() {
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm md:text-base mt-auto"
                 >
-                  <span className="text-center">Get Your FREE Criminal Defense PPC Quote →</span>
+                  <span className="text-center break-words">Get Your FREE Criminal Defense PPC Quote →</span>
                 </Button>
               </Card>
 
@@ -449,9 +449,9 @@ export default function CriminalDefenseLawyers() {
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm md:text-base mt-auto"
                 >
-                  <span className="text-center">Get Your FREE Criminal Defense Meta Ads Quote →</span>
+                  <span className="text-center break-words">Get Your FREE Criminal Defense Meta Ads Quote →</span>
                 </Button>
               </Card>
 
@@ -471,9 +471,9 @@ export default function CriminalDefenseLawyers() {
                 <Button 
                   variant="cta" 
                   onClick={openForm}
-                  className="w-full md:w-auto px-6 py-3 text-sm md:text-base mt-auto"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm md:text-base mt-auto"
                 >
-                  <span className="text-center">Get Your FREE Criminal Defense Web Design Quote →</span>
+                  <span className="text-center break-words">Get Your FREE Criminal Defense Web Design Quote →</span>
                 </Button>
               </Card>
             </div>
@@ -633,9 +633,9 @@ export default function CriminalDefenseLawyers() {
               variant="cta" 
               size="lg" 
               onClick={openForm}
-              className="px-6 md:px-8 py-4 md:py-6 text-base md:text-lg w-full sm:w-auto"
+              className="px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg w-full sm:w-auto"
             >
-              <span className="text-center">Get Your FREE Criminal Defense Marketing Quote →</span>
+              <span className="text-center break-words">Get Your FREE Criminal Defense Marketing Quote →</span>
             </Button>
           </div>
         </section>
@@ -787,14 +787,14 @@ export default function CriminalDefenseLawyers() {
         </section>
 
         {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t md:hidden z-50">
+        <div className="fixed bottom-0 left-0 right-0 p-3 sm:p-4 bg-background/95 backdrop-blur-sm border-t md:hidden z-50">
           <Button 
             variant="cta" 
             size="lg" 
             onClick={openForm}
-            className="w-full py-4 text-sm"
+            className="w-full py-3 sm:py-4 text-xs sm:text-sm px-3"
           >
-            <span className="text-center">Get Your FREE Quote →</span>
+            <span className="text-center break-words">Get Your FREE Quote →</span>
           </Button>
         </div>
 
