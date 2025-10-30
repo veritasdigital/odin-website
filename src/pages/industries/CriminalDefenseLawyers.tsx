@@ -330,43 +330,49 @@ export default function CriminalDefenseLawyers() {
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
                   ))}
                 </div>
-                <p className="text-sm md:text-base mb-4 leading-relaxed">
+                <p className="text-sm md:text-base mb-4 leading-relaxed flex-grow">
                   "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                 </p>
-                <p className="font-bold text-sm md:text-base">Fabienne Costa</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-sm md:text-base">Fabienne Costa</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</p>
+                </div>
               </Card>
               
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
                   ))}
                 </div>
-                <p className="text-sm md:text-base mb-4 leading-relaxed">
+                <p className="text-sm md:text-base mb-4 leading-relaxed flex-grow">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <p className="font-bold text-sm md:text-base">Liam C</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-sm md:text-base">Liam C</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</p>
+                </div>
               </Card>
               
-              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white">
+              <Card className="p-6 md:p-8 shadow-card hover:shadow-primary transition-all duration-300 bg-white flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <span key={i} className="text-primary text-xl md:text-2xl">★</span>
                   ))}
                 </div>
-                <p className="text-sm md:text-base mb-4 leading-relaxed">
+                <p className="text-sm md:text-base mb-4 leading-relaxed flex-grow">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
                 </p>
-                <p className="font-bold text-sm md:text-base">Evan Tsaboukos</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</p>
+                <div className="mt-auto">
+                  <p className="font-bold text-sm md:text-base">Evan Tsaboukos</p>
+                  <p className="text-xs md:text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</p>
+                </div>
               </Card>
             </div>
           </div>
