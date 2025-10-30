@@ -22,6 +22,7 @@ import GoogleAdsNewcastle from "./pages/services/GoogleAdsNewcastle";
 import GoogleAdsBrisbane from "./pages/services/GoogleAdsBrisbane";
 import SEO from "./pages/services/SEO";
 import SocialMedia from "./pages/services/SocialMedia";
+import SocialMediaAdvertising from "./pages/services/SocialMediaAdvertising";
 import WebsiteDesign from "./pages/services/WebsiteDesign";
 import FunnelDevelopment from "./pages/services/FunnelDevelopment";
 import MarketingConsulting from "./pages/services/MarketingConsulting";
@@ -108,6 +109,7 @@ const App = () => (
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
             <Route path="/services/seo" element={<SEO />} />
+            <Route path="/social-media-advertising" element={<SocialMediaAdvertising />} />
             <Route path="/seo-agency" element={<SEOAgency />} />
             <Route path="/ecommerce-seo" element={<EcommerceSEO />} />
             <Route path="/local-seo" element={<LocalSEO />} />
