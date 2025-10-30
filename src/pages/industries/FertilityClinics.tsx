@@ -335,6 +335,13 @@ const FertilityClinics = () => {
                   <p className="text-muted-foreground">We earn your business every month through results, not binding contracts. You can cancel at any time with 30 days' notice. Our 95% retention rate proves we deliver value month after month.</p>
                 </div>
               </div>
+              <div className="flex items-start gap-4">
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Transparent Reporting and Analytics</h3>
+                  <p className="text-muted-foreground">We provide detailed monthly reports showing exactly where your marketing dollars go and what results they generate. Track patient inquiries, cost per acquisition, keyword rankings, and ROI with complete transparency.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
