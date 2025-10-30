@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { SideTab } from "@/components/SideTab";
 import { 
   Scale, 
   TrendingUp, 
@@ -203,6 +206,9 @@ export default function CriminalDefenseLawyers() {
       </Helmet>
 
       <div className="min-h-screen bg-background">
+        <Header />
+        <SideTab />
+        
         {/* Section 1: Hero Section */}
         <section data-nav-contrast="dark" className="relative min-h-[90vh] gradient-hero overflow-hidden flex items-center">
           {/* Floating Background Elements - like homepage */}
@@ -785,6 +791,8 @@ export default function CriminalDefenseLawyers() {
             <span className="text-center">Get Your FREE Quote →</span>
           </Button>
         </div>
+
+        <Footer />
       </div>
     </>
   );
