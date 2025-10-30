@@ -133,6 +133,10 @@ const CanberraSEO = () => {
       title: "No Integration With Your Sales Process",
       description: "Your SEO exists in a vacuum. It's not aligned with your Google Ads, your sales team, or your business development goals.",
     },
+    {
+      title: "Lack of Industry-Specific Knowledge",
+      description: "Your SEO provider doesn't understand the unique compliance requirements, tender processes, or decision-making timelines in the government and defence sectors.",
+    },
   ];
 
   const differentiators = [
