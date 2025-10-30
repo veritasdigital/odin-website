@@ -226,20 +226,20 @@ const CosmeticClinics = () => {
                 <span className="text-foreground">Cosmetic Clinics</span>
               </nav>
 
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D91C5C] to-primary bg-clip-text text-transparent inline-block pb-2">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D91C5C] to-primary bg-clip-text text-transparent inline-block pb-2 leading-tight">
                 Cosmetic Clinic Marketing Agency
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed px-4 md:px-0">
                 Tired of Tire-Kickers? We Deliver TGA Compliant, High-Value Patient Acquisition for Cosmetic Clinics with a Proven 540% ROI.
               </p>
 
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full md:w-auto"
               >
-                Get Your FREE Marketing Strategy
+                <span className="text-center">Get Your FREE Marketing Strategy</span>
               </Button>
             </div>
           </div>
@@ -248,22 +248,22 @@ const CosmeticClinics = () => {
         {/* Section 2: Social Proof Metrics */}
         <section className="py-16 bg-background/50">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               <div className="text-center p-6 bg-card rounded-lg shadow-sm border">
-                <div className="text-5xl font-bold text-[#D91C5C] mb-2">$47M+</div>
-                <p className="text-muted-foreground">Revenue Generated for Clinics</p>
+                <div className="text-4xl md:text-5xl font-bold text-[#D91C5C] mb-2">$47M+</div>
+                <p className="text-sm md:text-base text-muted-foreground">Revenue Generated for Clinics</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg shadow-sm border">
-                <div className="text-5xl font-bold text-[#D91C5C] mb-2">540%</div>
-                <p className="text-muted-foreground">Average ROI</p>
+                <div className="text-4xl md:text-5xl font-bold text-[#D91C5C] mb-2">540%</div>
+                <p className="text-sm md:text-base text-muted-foreground">Average ROI</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg shadow-sm border">
-                <div className="text-5xl font-bold text-[#D91C5C] mb-2">95%</div>
-                <p className="text-muted-foreground">Client Retention Rate</p>
+                <div className="text-4xl md:text-5xl font-bold text-[#D91C5C] mb-2">95%</div>
+                <p className="text-sm md:text-base text-muted-foreground">Client Retention Rate</p>
               </div>
               <div className="text-center p-6 bg-card rounded-lg shadow-sm border">
-                <div className="text-5xl font-bold text-[#D91C5C] mb-2">100%</div>
-                <p className="text-muted-foreground">TGA Compliant Campaigns</p>
+                <div className="text-4xl md:text-5xl font-bold text-[#D91C5C] mb-2">100%</div>
+                <p className="text-sm md:text-base text-muted-foreground">TGA Compliant Campaigns</p>
               </div>
             </div>
           </div>
@@ -272,9 +272,9 @@ const CosmeticClinics = () => {
         {/* Section 3: Problem-Agitation Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">The Cosmetic Clinic Marketing Challenge</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">The Cosmetic Clinic Marketing Challenge</h2>
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Most cosmetic clinics struggle with the same three problems that prevent sustainable growth
               </p>
             </div>
@@ -692,19 +692,19 @@ const CosmeticClinics = () => {
         <section className="py-20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[#D91C5C] to-primary opacity-95"></div>
           <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-3xl mx-auto text-center text-white">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center text-white px-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 Ready to Stop Attracting Tire-Kickers?
               </h2>
-              <p className="text-xl mb-8 opacity-90">
+              <p className="text-lg md:text-xl mb-8 opacity-90">
                 Get a FREE, no-obligation marketing strategy session tailored to your cosmetic clinic. Discover how we can deliver TGA-compliant, high-value patient acquisition starting today.
               </p>
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-white text-[#D91C5C] hover:bg-white/90 px-8 py-6 text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105"
+                className="bg-white text-[#D91C5C] hover:bg-white/90 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full md:w-auto"
               >
-                Schedule Your FREE Strategy Session
+                <span className="text-center">Schedule Your FREE Strategy Session</span>
               </Button>
               <p className="text-sm mt-4 opacity-75">No lock-in contracts. Cancel anytime with 30 days' notice.</p>
             </div>
@@ -786,10 +786,10 @@ const CosmeticClinics = () => {
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t shadow-lg md:hidden z-40">
           <Button 
             onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm"
             size="lg"
           >
-            Get FREE Strategy Session
+            <span className="text-center">Get FREE Strategy Session</span>
           </Button>
         </div>
 
