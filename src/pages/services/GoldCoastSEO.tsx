@@ -480,11 +480,11 @@ const GoldCoastSEO = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="p-8 flex flex-col">
+                <Card key={index} className="p-8 flex flex-col overflow-hidden">
                   {service.icon}
-                  <h3 className="text-2xl font-bold text-foreground mb-2">{service.title}</h3>
-                  <p className="text-primary font-semibold mb-4">{service.tagline}</p>
-                  <p className="text-muted-foreground mb-6 flex-grow">{service.description}</p>
+                  <h3 className="text-2xl font-bold text-foreground mb-2 break-words">{service.title}</h3>
+                  <p className="text-primary font-semibold mb-4 break-words">{service.tagline}</p>
+                  <p className="text-muted-foreground mb-6 flex-grow break-words">{service.description}</p>
                   <Link to="/contact" className="mt-auto">
                     <Button variant="outline" className="w-full">
                       {service.cta}
