@@ -219,7 +219,7 @@ export default function CriminalDefenseLawyers() {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-20">
             <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-4 sm:mb-6 md:mb-8 leading-tight mt-8 sm:mt-12 md:mt-16 px-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-4 sm:mb-6 md:mb-8 leading-tight mt-16 sm:mt-20 md:mt-24 lg:mt-28 px-2">
                 Digital Marketing for Criminal Defense Lawyers
               </h1>
               
