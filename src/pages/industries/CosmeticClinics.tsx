@@ -318,7 +318,7 @@ const CosmeticClinics = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">What Our Clients Say</h2>
-              <p className="text-xl text-muted-foreground">Real results from real cosmetic clinic owners</p>
+              <p className="text-xl text-white">Real results from real cosmetic clinic owners</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
