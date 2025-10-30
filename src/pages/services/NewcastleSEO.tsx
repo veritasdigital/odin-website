@@ -474,7 +474,7 @@ const NewcastleSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-12 sm:py-20 md:py-32 overflow-hidden">
+        <section className="relative py-8 sm:py-12 md:py-20 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
@@ -482,38 +482,38 @@ const NewcastleSEO = () => {
           <div className="absolute top-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl" />
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-4 sm:mb-6 leading-tight px-2 mt-8 sm:mt-0">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-foreground mb-3 sm:mb-4 md:mb-6 leading-tight px-1 sm:px-2 mt-6 sm:mt-8 md:mt-0">
                 SEO Agency Newcastle
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 sm:mb-8 px-2">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary mb-4 sm:mb-6 md:mb-8 px-1 sm:px-2 leading-snug">`
                 Tired of Newcastle SEO Agencies Promising the World and Delivering the Same Old "SEO Takes Time" Excuse? You Need Proof, Not Promises.
               </p>
               
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-2 sm:mb-3 md:mb-4 max-w-3xl mx-auto px-1 sm:px-2 leading-relaxed">
                 Most Newcastle SEO agencies talk a big game. They promise first-page rankings, explosive growth, and transformational results. Then reality hits: vague timelines, mysterious "algorithms," and zero transparency about what's actually being done.
               </p>
               
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-2 sm:mb-3 md:mb-4 max-w-3xl mx-auto px-1 sm:px-2 leading-relaxed">
                 We're different. We're an SEO agency that delivers $574M+ in verified client revenue and a 540% average ROI. We use ethical, white-hat SEO strategies that Google rewards, not punishes.
               </p>
               
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto px-1 sm:px-2 leading-relaxed">
                 No lock-in contracts. No BS. Just transparent, data-driven SEO that drives real business growth.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center px-1 sm:px-2">`
                 <Link to="/contact" className="w-full sm:w-auto">
-                  <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                  <Button variant="cta" size="xl" className="group text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-4 lg:py-5 h-auto w-full">
                     <span>Get Your Free SEO Audit</span>
-                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-1.5 sm:ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 <a href="tel:1300123456" className="w-full sm:w-auto">
-                  <Button variant="outline" size="xl" className="text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
-                    <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                  <Button variant="outline" size="xl" className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-4 lg:py-5 h-auto w-full">
+                    <Phone className="mr-1.5 sm:mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0" />
                     <span>Call 1300 123 456</span>
                   </Button>
                 </a>
@@ -523,8 +523,8 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {metrics.map((metric, index) => (
                 <MetricCard key={index} {...metric} />
@@ -534,22 +534,22 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-12 sm:py-16 md:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 The 3 Biggest Lies Newcastle SEO Agencies Tell You
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 Sound familiar? Here's what Newcastle businesses tell us before they switch to our SEO services.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">`
               {painPoints.map((point, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 border-l-4 border-l-destructive overflow-hidden">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{point.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{point.description}</p>
+                <Card key={index} className="p-3 sm:p-4 md:p-6 lg:p-8 border-l-4 border-l-destructive overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-2 sm:mb-3 md:mb-4 break-words leading-tight">{point.title}</h3>`
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words leading-relaxed">{point.description}</p>
                 </Card>
               ))}
             </div>
@@ -557,31 +557,31 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Real Results From Real Clients
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 Don't just take our word for it. Here's what our clients say about our SEO services.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 overflow-hidden bg-background flex flex-col">
-                  <div className="flex gap-1 mb-3 sm:mb-4">
+                <Card key={index} className="p-3 sm:p-4 md:p-6 lg:p-8 overflow-hidden bg-background flex flex-col">
+                  <div className="flex gap-0.5 sm:gap-1 mb-2 sm:mb-3 md:mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-primary fill-current" viewBox="0 0 20 20">
+                      <svg key={i} className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary fill-current" viewBox="0 0 20 20">
                         <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                       </svg>
                     ))}
                   </div>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 break-words leading-relaxed italic flex-grow">"{testimonial.text}"</p>
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3 md:mb-4 break-words leading-relaxed italic flex-grow">"{testimonial.text}"</p>
                   <div className="mt-auto">
-                    <p className="text-sm sm:text-base font-bold text-foreground break-words">{testimonial.name}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground break-words">{testimonial.company}</p>
+                    <p className="text-xs sm:text-sm md:text-base font-bold text-foreground break-words">{testimonial.name}</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words">{testimonial.company}</p>
                   </div>
                 </Card>
               ))}
@@ -590,24 +590,24 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-12 sm:py-16 md:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Our Core SEO Services
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 Comprehensive SEO services designed to drive qualified traffic and real revenue growth.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 flex flex-col overflow-hidden border-t-4 border-t-primary">
-                  <div className="flex-shrink-0 mb-3 sm:mb-4">
+                <Card key={index} className="p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col overflow-hidden border-t-4 border-t-primary">
+                  <div className="flex-shrink-0 mb-2 sm:mb-3 md:mb-4">
                     {service.icon}
                   </div>
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-1.5 sm:mb-2 md:mb-3 break-words leading-tight">
                     {service.link ? (
                       <Link to={service.link} className="hover:text-primary transition-colors">
                         {service.title}
@@ -616,7 +616,7 @@ const NewcastleSEO = () => {
                       service.title
                     )}
                   </h3>
-                  <p className="text-sm sm:text-base text-muted-foreground flex-grow break-words leading-relaxed">{service.description}</p>
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground flex-grow break-words leading-relaxed">{service.description}</p>
                 </Card>
               ))}
             </div>
@@ -624,22 +624,22 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Differentiators Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 What Makes Us Different
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 We're not your typical SEO agency. Here's why Newcastle businesses choose us.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {differentiators.map((diff, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 border-l-4 border-l-primary bg-background overflow-hidden">
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{diff.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{diff.description}</p>
+                <Card key={index} className="p-3 sm:p-4 md:p-6 lg:p-8 border-l-4 border-l-primary bg-background overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-2 sm:mb-3 md:mb-4 break-words leading-tight">{diff.title}</h3>
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words leading-relaxed">{diff.description}</p>
                 </Card>
               ))}
             </div>
@@ -647,23 +647,23 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Our SEO Process
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 A systematic, transparent approach that delivers measurable results.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="relative overflow-hidden">
-                  <div className="text-4xl sm:text-5xl md:text-6xl font-black text-primary/20 mb-3 sm:mb-4">{step.number}</div>
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{step.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{step.description}</p>
+                  <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary/20 mb-2 sm:mb-3 md:mb-4">{step.number}</div>
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-1.5 sm:mb-2 md:mb-3 break-words leading-tight">{step.title}</h3>
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words leading-relaxed">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -671,29 +671,29 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-12 sm:py-16 md:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Why Newcastle Businesses Choose Odin Digital
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 We're not just another SEO agency. We're your dedicated growth partner.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {whyChooseUs.map((reason, index) => (
-                <Card key={index} className="p-4 sm:p-6 md:p-8 overflow-hidden">
-                  <div className="flex items-start gap-3 sm:gap-4">
+                <Card key={index} className="p-3 sm:p-4 md:p-6 lg:p-8 overflow-hidden">
+                  <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-2">
-                        <span className="text-xs sm:text-sm md:text-lg font-black text-primary text-center leading-tight">{reason.stat}</span>
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-lg bg-primary/10 flex items-center justify-center overflow-hidden p-1.5 sm:p-2">
+                        <span className="text-[10px] sm:text-xs md:text-sm lg:text-lg font-black text-primary text-center leading-tight">{reason.stat}</span>
                       </div>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{reason.title}</h3>
-                      <p className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">{reason.description}</p>
+                      <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-1.5 sm:mb-2 md:mb-3 break-words leading-tight">{reason.title}</h3>
+                      <p className="text-xs sm:text-sm md:text-base text-muted-foreground break-words leading-relaxed">{reason.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -703,63 +703,63 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Other Cities Links Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30">`
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 SEO Services in Other Cities
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 We provide expert SEO services across Australia's major cities.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               <Link to="/seo-sydney">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Sydney</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Dominate search results in Australia's largest market.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Sydney</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Dominate search results in Australia's largest market.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/seo-melbourne">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Melbourne</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Drive organic growth in Melbourne's competitive market.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Melbourne</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Drive organic growth in Melbourne's competitive market.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/seo-brisbane">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Brisbane</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Increase your visibility in Queensland's capital.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Brisbane</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Increase your visibility in Queensland's capital.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/seo-adelaide">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Adelaide</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Grow your Adelaide business with local SEO expertise.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Adelaide</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Grow your Adelaide business with local SEO expertise.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/seo-canberra">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Canberra</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Specialized SEO for government and B2G markets.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Canberra</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Specialized SEO for government and B2G markets.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/seo-gold-coast">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">SEO Gold Coast</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Attract more customers on the Gold Coast.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">SEO Gold Coast</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Attract more customers on the Gold Coast.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
             </div>
@@ -767,51 +767,51 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Related Services */}
-        <section className="py-12 sm:py-16 md:py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Integrated Digital Marketing Services
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2 sm:px-4 leading-relaxed">
                 Combine SEO with our other services for maximum impact.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               <Link to="/services/google-ads">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <BarChart className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Google Ads</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Drive immediate results while your SEO builds momentum.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <BarChart className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4 flex-shrink-0" />
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">Google Ads</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Drive immediate results while your SEO builds momentum.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/facebook-ads">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Meta Ads</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Expand your reach with targeted social media advertising.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <Users className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4 flex-shrink-0" />
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">Meta Ads</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Expand your reach with targeted social media advertising.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/web-design">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <Globe className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Web Design</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Convert your SEO traffic with a high-performing website.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <Globe className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4 flex-shrink-0" />
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">Web Design</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Convert your SEO traffic with a high-performing website.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
 
               <Link to="/services/email-marketing">
-                <Card className="p-4 sm:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
-                  <FileText className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3 sm:mb-4 flex-shrink-0" />
-                  <h3 className="text-base sm:text-lg font-bold text-foreground mb-2 break-words">Email Marketing</h3>
-                  <p className="text-xs sm:text-sm text-muted-foreground break-words leading-relaxed mb-3 sm:mb-4">Nurture leads and drive repeat business with email.</p>
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                <Card className="p-3 sm:p-4 md:p-6 hover:border-primary transition-colors cursor-pointer h-full overflow-hidden">
+                  <FileText className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4 flex-shrink-0" />
+                  <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground mb-1.5 sm:mb-2 break-words leading-tight">Email Marketing</h3>
+                  <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground break-words leading-relaxed mb-2 sm:mb-3 md:mb-4">Nurture leads and drive repeat business with email.</p>
+                  <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 </Card>
               </Link>
             </div>
@@ -819,55 +819,55 @@ const NewcastleSEO = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-12 sm:py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-secondary/10">`
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
           {/* Floating circles */}
           <div className="absolute top-10 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-10 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl" />
           
-          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-4 sm:mb-6 px-2">
+          <div className="relative z-10 max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-foreground mb-3 sm:mb-4 md:mb-6 px-1 sm:px-2 leading-tight">
               Ready to See Real SEO Results?
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-relaxed">
               Stop wasting money on Newcastle SEO agencies that promise the world and deliver excuses. Partner with an agency that has driven $574M+ in verified client revenue and a 540% average ROI.
             </p>
             
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-10 px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-6 sm:mb-8 md:mb-10 px-1 sm:px-2 leading-relaxed">
               Book your free SEO audit today and discover exactly how we can help you dominate search results and drive measurable growth.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center px-1 sm:px-2">
               <Link to="/contact" className="w-full sm:w-auto">
-                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                <Button variant="cta" size="xl" className="group text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-4 lg:py-5 h-auto w-full">
                   <span>Get Your Free SEO Audit Now</span>
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-1.5 sm:ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <a href="tel:1300123456" className="w-full sm:w-auto">
-                <Button variant="outline" size="xl" className="text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
-                  <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <Button variant="outline" size="xl" className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 lg:px-8 py-2.5 sm:py-3 md:py-4 lg:py-5 h-auto w-full">
+                  <Phone className="mr-1.5 sm:mr-2 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0" />
                   <span>Call 1300 123 456</span>
                 </Button>
               </a>
             </div>
 
-            <p className="text-xs sm:text-sm text-muted-foreground mt-4 sm:mt-6 px-2">
+            <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground mt-3 sm:mt-4 md:mt-6 px-1 sm:px-2 leading-relaxed">`
               No lock-in contracts. No obligation. Just honest advice from SEO experts who deliver real results.
             </p>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-muted/30 mb-16 sm:mb-20 md:mb-24">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-foreground mb-3 sm:mb-4 px-2">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30 mb-12 sm:mb-16 md:mb-20 lg:mb-24">
+          <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-foreground mb-2 sm:mb-3 md:mb-4 px-1 sm:px-2 leading-tight">
                 Frequently Asked Questions
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground px-2 sm:px-4 leading-relaxed">
                 Everything you need to know about our SEO services in Newcastle.
               </p>
             </div>
@@ -875,10 +875,10 @@ const NewcastleSEO = () => {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="overflow-hidden">
-                  <AccordionTrigger className="text-left font-semibold text-sm sm:text-base break-words pr-8 hover:no-underline">
+                  <AccordionTrigger className="text-left font-semibold text-xs sm:text-sm md:text-base break-words pr-6 sm:pr-8 hover:no-underline">`
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm sm:text-base text-muted-foreground break-words leading-relaxed">
+                  <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground break-words leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
