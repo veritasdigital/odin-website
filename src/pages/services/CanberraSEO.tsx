@@ -308,6 +308,16 @@ const CanberraSEO = () => {
     },
     {
       number: "07",
+      title: "Competitor Outranking",
+      description: "We analyse competitor strategies and implement tactics to outrank them for high-value keywords and government contract searches.",
+    },
+    {
+      number: "08",
+      title: "Conversion Optimisation",
+      description: "We ensure your SEO traffic converts into leads and contracts by optimising landing pages, CTAs, and user experience.",
+    },
+    {
+      number: "09",
       title: "Monitor, Report, Optimise",
       description: "We continuously monitor performance, report on results, and optimise based on data. You always know how your SEO is performing.",
     },
