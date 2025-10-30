@@ -391,13 +391,13 @@ const FertilityClinics = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Integrated Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* SEO Service */}
-            <div className="bg-background p-8 rounded-lg shadow-sm">
+            <div className="bg-background p-8 rounded-lg shadow-sm flex flex-col">
               <Target className="w-12 h-12 mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-4">Fertility Clinic SEO</h3>
               <p className="text-muted-foreground mb-4">
                 We build SEO strategies that get your clinic to Page 1 for the exact searches your ideal patients are using—"IVF clinic near me," "best fertility doctor [city]," "egg freezing cost," and hundreds of other high-intent keywords.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Local SEO to dominate Google's Local 3-Pack</span>
@@ -415,19 +415,19 @@ const FertilityClinics = () => {
                   <span>High-quality backlinks from medical and fertility authorities</span>
                 </li>
               </ul>
-              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white mt-auto">
                 Learn More →
               </Button>
             </div>
 
             {/* Google Ads Service */}
-            <div className="bg-background p-8 rounded-lg shadow-sm">
+            <div className="bg-background p-8 rounded-lg shadow-sm flex flex-col">
               <BarChart3 className="w-12 h-12 mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-4">Google Ads for Fertility Clinics</h3>
               <p className="text-muted-foreground mb-4">
                 We build Google Ads campaigns that deliver immediate, high-quality patient inquiries. No wasted spend on unqualified clicks. Every dollar is optimised for patient acquisition.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Keyword targeting for high-intent searches</span>
@@ -445,19 +445,19 @@ const FertilityClinics = () => {
                   <span>Transparent reporting with clear ROI tracking</span>
                 </li>
               </ul>
-              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white mt-auto">
                 Learn More →
               </Button>
             </div>
 
             {/* Meta Ads Service */}
-            <div className="bg-background p-8 rounded-lg shadow-sm">
+            <div className="bg-background p-8 rounded-lg shadow-sm flex flex-col">
               <Heart className="w-12 h-12 mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-4">Meta Ads for Fertility Clinics</h3>
               <p className="text-muted-foreground mb-4">
                 We build Facebook and Instagram campaigns that build awareness, establish trust, and nurture potential patients through the 3–12 month decision-making process.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Audience precision targeting ideal patients</span>
@@ -475,19 +475,19 @@ const FertilityClinics = () => {
                   <span>Retargeting campaigns to capture interested prospects</span>
                 </li>
               </ul>
-              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white mt-auto">
                 Learn More →
               </Button>
             </div>
 
             {/* Web Design Service */}
-            <div className="bg-background p-8 rounded-lg shadow-sm">
+            <div className="bg-background p-8 rounded-lg shadow-sm flex flex-col">
               <Microscope className="w-12 h-12 mb-4 text-primary" />
               <h3 className="text-2xl font-bold mb-4">Fertility Clinic Web Design</h3>
               <p className="text-muted-foreground mb-4">
                 We build websites that position your clinic as the trusted choice and convert visitors into patient inquiries at the highest possible rate. Every element is optimised for conversion.
               </p>
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 flex-grow">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <span>Trust-building design with patient testimonials and success stories</span>
@@ -505,7 +505,7 @@ const FertilityClinics = () => {
                   <span>SEO-optimised from day one</span>
                 </li>
               </ul>
-              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white mt-auto">
                 Learn More →
               </Button>
             </div>
