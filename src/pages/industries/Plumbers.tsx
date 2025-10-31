@@ -470,7 +470,7 @@ const Plumbers = () => {
                 Plumbers Marketing
               </h1>
               <p className="text-base md:text-lg lg:text-xl mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-                Stop Wasting Money on Tyre-Kickers and Low-Quality Leads. We Build High-Trust Digital Systems That Deliver Qualified, High-Margin Jobs Directly to Your Plumbing Business.
+                Your plumbing business is built on trust and reliability. You help homeowners solve urgent problems and maintain their most valuable asset—their home. But trust alone doesn't fill your schedule with high-margin jobs. You need a marketing partner who understands the unique challenges plumbing businesses face—overcoming the industry trust problem, generating qualified leads for both emergency callouts and planned installations, and competing against larger franchises with massive marketing budgets. At Odin Digital, we've helped over 250 plumbing businesses across Australia attract more qualified jobs, build trust in their local market, and grow revenue by an average of 340%.
               </p>
               <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-lg">
                 Schedule Free Strategy Session →
