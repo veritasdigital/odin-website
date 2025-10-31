@@ -731,7 +731,7 @@ const WebDesignHobart = () => {
         <section className="py-16 sm:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-12">
-              <div>
+              <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Related Services
                 </h2>
@@ -750,7 +750,7 @@ const WebDesignHobart = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Other Locations
                 </h2>
