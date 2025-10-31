@@ -471,7 +471,7 @@ const Plumbers = () => {
           <div className="relative z-10 w-full flex items-center justify-center">
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
               <div className="max-w-4xl mx-auto text-center">
-                <div className="space-y-6 lg:space-y-8">
+                <div className="max-w-4xl mx-auto space-y-6 lg:space-y-8">
                   {/* Breadcrumb navigation */}
                   <nav className="text-sm" aria-label="Breadcrumb">
                     <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
