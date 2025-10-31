@@ -375,43 +375,49 @@ const OnlineMarketingCompanyBrisbane = () => {
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 md:gap-6">
-                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border flex flex-col">
                   <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed flex-grow">
                     "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                   </p>
-                  <p className="text-xs sm:text-sm font-semibold">Fabienne Costa</p>
-                  <p className="text-xs text-muted-foreground">Founder, YCL Jewels</p>
+                  <div className="mt-auto">
+                    <p className="text-xs sm:text-sm font-semibold">Fabienne Costa</p>
+                    <p className="text-xs text-muted-foreground">Founder, YCL Jewels</p>
+                  </div>
                 </div>
 
-                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border flex flex-col">
                   <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed flex-grow">
                     "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since."
                   </p>
-                  <p className="text-xs sm:text-sm font-semibold">Liam C</p>
-                  <p className="text-xs text-muted-foreground">Founder, Krush Organics</p>
+                  <div className="mt-auto">
+                    <p className="text-xs sm:text-sm font-semibold">Liam C</p>
+                    <p className="text-xs text-muted-foreground">Founder, Krush Organics</p>
+                  </div>
                 </div>
 
-                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border flex flex-col">
                   <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed flex-grow">
                     "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas...that year after I was averaging over $100k a month."
                   </p>
-                  <p className="text-xs sm:text-sm font-semibold">Evan Tsaboukos</p>
-                  <p className="text-xs text-muted-foreground">Founder, Imperial Wealth</p>
+                  <div className="mt-auto">
+                    <p className="text-xs sm:text-sm font-semibold">Evan Tsaboukos</p>
+                    <p className="text-xs text-muted-foreground">Founder, Imperial Wealth</p>
+                  </div>
                 </div>
               </div>
             </div>
