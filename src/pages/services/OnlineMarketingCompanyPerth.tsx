@@ -181,41 +181,41 @@ const OnlineMarketingCompanyPerth = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent leading-tight px-2">
                 Online Marketing Company Perth
               </h1>
               
-              <p className="hero-sub-headline text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-foreground font-semibold leading-tight px-2">
+              <p className="hero-sub-headline text-base sm:text-lg md:text-xl lg:text-2xl mb-4 md:mb-6 text-foreground font-semibold leading-tight px-4">
                 Stop Paying for Digital Marketing That Doesn't Deliver Real Results. Start Dominating Perth's Market with Proven Online Marketing Strategies That Drive Revenue, Not Just Traffic.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl mb-3 md:mb-4 text-muted-foreground font-medium px-2">
+              <p className="text-sm sm:text-base md:text-lg mb-3 md:mb-4 text-muted-foreground font-medium px-4">
                 The Digital Marketing Agency Perth Businesses Trust for High-Converting Campaigns and Predictable ROI.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-muted-foreground leading-relaxed px-2">
+              <p className="text-xs sm:text-sm md:text-base mb-6 md:mb-8 text-muted-foreground leading-relaxed px-4">
                 Partner with Odin Digital and Watch Your Perth Business Scale Profitably with Digital Marketing That Actually Works.
               </p>
 
-              <div className="flex items-center justify-center gap-4 mb-6 md:mb-8 flex-wrap">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 md:mb-8 px-4">
                 <div className="flex items-center gap-2 text-primary font-semibold">
-                  <CheckCircle2 className="h-5 w-5" />
-                  <span className="text-sm md:text-base">$574M+ Client Revenue</span>
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-xs sm:text-sm md:text-base">$574M+ Client Revenue</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary font-semibold">
-                  <CheckCircle2 className="h-5 w-5" />
-                  <span className="text-sm md:text-base">95% Retention Rate</span>
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-xs sm:text-sm md:text-base">95% Retention Rate</span>
                 </div>
                 <div className="flex items-center gap-2 text-primary font-semibold">
-                  <CheckCircle2 className="h-5 w-5" />
-                  <span className="text-sm md:text-base">No Lock-In Contracts</span>
+                  <CheckCircle2 className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="text-xs sm:text-sm md:text-base">No Lock-In Contracts</span>
                 </div>
               </div>
 
-              <Link to="/contact">
-                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+              <Link to="/contact" className="block px-4">
+                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                   Get Your FREE Perth Digital Marketing Audit
-                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
@@ -226,15 +226,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 Why Most Digital Marketing Agencies Fail Perth Businesses
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2 max-w-4xl mx-auto">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4 max-w-4xl mx-auto">
                 Perth businesses waste millions every year on digital marketing services Perth that look impressive on paper but deliver nothing to the bottom line. Here's why most agencies fail.
               </p>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                 <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-destructive/10 rounded-lg flex items-center justify-center mb-4">
                     <BarChart3 className="h-6 w-6 md:h-8 md:w-8 text-destructive" />
@@ -296,11 +296,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                     Stop the Marketing Bleed: Talk to a Perth Digital Marketing Expert
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -312,15 +312,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 SEO for Perth Businesses: Dominating Page 1 in WA's Competitive Market
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4">
                 We build digital marketing strategy Perth SEO campaigns that get your business to Page 1 for the exact searches your ideal Perth customers are using.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div className="bg-card p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -378,15 +378,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 Google Ads for Perth Businesses: Immediate, High-Quality Leads
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4">
                 We build online marketing companies in Perth Google Ads campaigns that deliver immediate, high-quality leads while your SEO builds momentum.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div className="bg-card p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -428,11 +428,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                     See Our Google Ads Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -444,15 +444,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 Meta Ads (Facebook & Instagram) for Perth Businesses: Building Awareness and Trust
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4">
                 We build digital media company Perth Meta Ads campaigns that build awareness, establish trust, and position you as the go-to Perth business before someone needs your services.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <div className="bg-card p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Users className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -484,11 +484,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                     See Our Meta Ads Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -500,15 +500,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 Web Design for Perth Businesses: High-Converting Websites That Sell
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4">
                 We build best online marketing agency Perth websites that position your Perth business as the trusted expert and convert visitors into customers at the highest possible rate.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 <div className="bg-card p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Award className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -540,11 +540,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                     See Our Web Design Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -556,15 +556,15 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-center px-2">
                 Why Perth Businesses Choose Odin Digital
               </h2>
               
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground text-center mb-6 md:mb-8 px-4">
                 We are not a generalist agency that dabbles in digital marketing. We are specialists who understand how to dominate Perth's unique market.
               </p>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
                 <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border text-center">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Award className="h-6 w-6 md:h-8 md:w-8 text-primary" />
@@ -606,11 +606,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                     Talk to a Perth Digital Marketing Specialist
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
@@ -622,7 +622,7 @@ const OnlineMarketingCompanyPerth = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8 text-center px-2">
                 FAQs: Your Questions About Perth Digital Marketing Answered
               </h2>
 
@@ -682,18 +682,18 @@ const OnlineMarketingCompanyPerth = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 px-2">
                 Ready to Stop Wasting Money and Start Dominating Perth's Market?
               </h2>
               
-              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-muted-foreground px-2">
+              <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-muted-foreground px-4">
                 Stop settling for vanity metrics. Start working with the marketing agency Perth that delivers real revenue and predictable ROI.
               </p>
 
-              <Link to="/contact">
-                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+              <Link to="/contact" className="block px-4">
+                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
                   Claim Your FREE Perth Digital Marketing Audit
-                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
             </div>
