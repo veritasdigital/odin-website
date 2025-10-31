@@ -198,7 +198,9 @@ const WebDesignHobart = () => {
     { name: "PPC Management", url: "/google-ads" },
     { name: "SEO Services", url: "/seo" },
     { name: "Facebook Advertising", url: "/facebook-advertising" },
-    { name: "Web Design Agency", url: "/website-design" }
+    { name: "Web Design Agency", url: "/website-design" },
+    { name: "Email Marketing", url: "/services/email-marketing" },
+    { name: "Social Media Advertising", url: "/social-media-advertising" }
   ];
 
   const relatedCities = [
@@ -735,9 +737,9 @@ const WebDesignHobart = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Related Services
                 </h2>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {relatedServices.map((service, index) => (
-                    <Link 
+                    <Link
                       key={index}
                       to={service.url}
                       className="p-4 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
