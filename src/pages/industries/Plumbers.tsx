@@ -468,8 +468,8 @@ const Plumbers = () => {
           <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float hidden lg:block" style={{ animationDelay: '4s' }}></div>
           
           {/* Main content container */}
-          <div className="relative z-10 w-full">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
+          <div className="relative z-10 w-full flex items-center justify-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
               <div className="max-w-4xl mx-auto text-center">
                 <div className="space-y-6 lg:space-y-8">
                   {/* Breadcrumb navigation */}
