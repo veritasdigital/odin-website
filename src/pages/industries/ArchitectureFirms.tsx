@@ -297,7 +297,7 @@ const ArchitectureFirms = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center bg-white decorative-circles">
+        <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center justify-center bg-white decorative-circles">
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
@@ -307,7 +307,7 @@ const ArchitectureFirms = () => {
           <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
           <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center flex flex-col items-center">
+          <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center flex flex-col items-center">
             <nav className="mb-8 text-sm" aria-label="Breadcrumb">
               <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
                 <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
