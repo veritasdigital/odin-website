@@ -739,12 +739,12 @@ const WebDesignHobart = () => {
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {relatedServices.map((service, index) => (
-                    <Link
+                    <Link 
                       key={index}
                       to={service.url}
-                      className="p-4 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
+                      className="p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center"
                     >
-                      <span className="text-foreground font-medium hover:text-primary">
+                      <span className="text-foreground font-medium hover:text-primary block">
                         {service.name}
                       </span>
                     </Link>
@@ -761,9 +761,9 @@ const WebDesignHobart = () => {
                     <Link 
                       key={index}
                       to={city.url}
-                      className="p-4 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center"
+                      className="p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center"
                     >
-                      <span className="text-foreground font-medium hover:text-primary">
+                      <span className="text-foreground font-medium hover:text-primary block">
                         {city.name}
                       </span>
                     </Link>
