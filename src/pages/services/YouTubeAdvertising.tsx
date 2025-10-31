@@ -379,7 +379,7 @@ const YouTubeAdvertising = () => {
                 size="xl" 
                 variant="cta"
                 onClick={openForm}
-                className="w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight text-base sm:text-lg"
+                className="w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight text-sm sm:text-base md:text-lg px-4 sm:px-6"
               >
                 Stop Wasting Money: Talk to a YouTube Advertising Expert →
               </Button>
