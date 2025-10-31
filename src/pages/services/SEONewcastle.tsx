@@ -446,8 +446,8 @@ const SEONewcastle = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 items-stretch">
+              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
                   <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">540% ROI</div>
@@ -458,7 +458,7 @@ const SEONewcastle = () => {
                 <div className="font-semibold text-xs sm:text-sm text-left mt-auto pt-2">Liam C - Krush Organics</div>
               </div>
 
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
                   <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">292% Growth</div>
@@ -469,7 +469,7 @@ const SEONewcastle = () => {
                 <div className="font-semibold text-xs sm:text-sm text-left mt-auto pt-2">Fabienne Costa - YCL Jewels</div>
               </div>
 
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
                   <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">400% Revenue</div>
