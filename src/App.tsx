@@ -84,6 +84,7 @@ import YouTubeAdvertising from "./pages/services/YouTubeAdvertising";
 import EmailMarketing from "./pages/services/EmailMarketing";
 import WebDesignHobart from "./pages/services/WebDesignHobart";
 import WebDesignGoldCoast from "./pages/services/WebDesignGoldCoast";
+import WebDesignCanberra from "./pages/services/WebDesignCanberra";
 
 const queryClient = new QueryClient();
 
@@ -169,6 +170,7 @@ const App = () => (
             <Route path="/services/email-marketing" element={<EmailMarketing />} />
             <Route path="/web-design-hobart" element={<WebDesignHobart />} />
             <Route path="/web-design-gold-coast" element={<WebDesignGoldCoast />} />
+            <Route path="/web-design-canberra" element={<WebDesignCanberra />} />
             <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
