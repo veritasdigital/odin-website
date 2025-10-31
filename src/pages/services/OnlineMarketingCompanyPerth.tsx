@@ -169,7 +169,7 @@ const OnlineMarketingCompanyPerth = () => {
 
       <Header />
       
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-24 md:pb-0">
         {/* Hero Section */}
         <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           {/* Floating Circles Background */}
