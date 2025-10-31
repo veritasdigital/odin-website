@@ -1,6 +1,11 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Closing } from "@/components/Closing";
+import { SideTab } from "@/components/SideTab";
+import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Award, Target, BarChart3, Search, MousePointerClick, Share2, Code, FileText, Zap } from 'lucide-react';
 import {
   Accordion,
@@ -164,15 +169,9 @@ const OnlineMarketingCompanyAdelaide = () => {
         </script>
       </Helmet>
 
+      <Header />
+      
       <div className="min-h-screen">
-        {/* Mobile Sticky CTA */}
-        <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background border-t border-border md:hidden">
-          <Link to="/contact">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-              Schedule Free Consultation
-            </Button>
-          </Link>
-        </div>
 
         {/* Hero Section */}
         <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
@@ -992,6 +991,11 @@ const OnlineMarketingCompanyAdelaide = () => {
           </div>
         </section>
       </div>
+
+      <Footer />
+      <Closing />
+      <SideTab />
+      <MarketingFormModal />
     </>
   );
 };
