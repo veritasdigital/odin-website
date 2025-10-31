@@ -361,7 +361,7 @@ const EmailMarketingAgency = () => {
                 Email Marketing Agency
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-foreground mb-6 md:mb-8 leading-tight px-2">
+              <p className="text-base md:text-lg lg:text-xl text-foreground/80 mb-6 md:mb-8 leading-relaxed px-2 max-w-3xl mx-auto">
                 Your business needs consistent revenue, not unpredictable sales spikes. Email marketing is the most powerful channel for building customer relationships and driving predictable growth—delivering an average ROI of 4400%. But most businesses are wasting money on generic newsletters that nobody reads. You need strategic, automated email funnels that nurture leads, drive conversions, and maximize customer lifetime value. At Odin Digital, we've helped over 500 businesses across Australia build high-performing email marketing systems that generate consistent revenue and create loyal customers, with our average client achieving a 340% increase in email-driven revenue.
               </p>
 
