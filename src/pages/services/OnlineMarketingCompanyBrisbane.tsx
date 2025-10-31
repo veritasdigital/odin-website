@@ -256,15 +256,15 @@ const OnlineMarketingCompanyBrisbane = () => {
                 Digital Marketing Company Brisbane
               </h1>
               
-              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 text-foreground font-semibold leading-tight px-2">
+              <p className="hero-sub-headline text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6 text-foreground font-semibold leading-tight px-2">
                 Stop Wasting Money on Fragmented Strategies. Get a Unified Digital Marketing Plan That Delivers ROI.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-muted-foreground leading-relaxed px-2">
+              <p className="text-sm sm:text-base md:text-lg mb-4 md:mb-6 text-muted-foreground leading-relaxed px-2">
                 Are you tired of juggling multiple agencies and getting mixed results? It's time for a Brisbane digital marketing company that delivers a single, cohesive strategy focused on your bottom line.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl mb-6 md:mb-8 text-muted-foreground leading-relaxed px-2">
+              <p className="text-sm sm:text-base md:text-lg mb-6 md:mb-8 text-muted-foreground leading-relaxed px-2">
                 At Odin Digital, we don't just run campaigns; we build integrated digital ecosystems. We combine SEO, PPC, Social Media, and Web Design into one powerful strategy, ensuring every dollar you spend works harder to generate leads and sales in the competitive Brisbane market.
               </p>
 
@@ -282,33 +282,33 @@ const OnlineMarketingCompanyBrisbane = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
                 The Proof Is in the Performance
               </h2>
               
-              <p className="text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
                 We're not just making promises; we're delivering verified results. Here's a snapshot of what our clients have achieved.
               </p>
 
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                <div className="bg-card p-6 md:p-8 rounded-lg shadow-card border border-border text-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">$574M+</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Verified Client Revenue</div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="bg-card p-4 md:p-6 lg:p-8 rounded-lg shadow-card border border-border text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">$574M+</div>
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">Verified Client Revenue</div>
                 </div>
 
-                <div className="bg-card p-6 md:p-8 rounded-lg shadow-card border border-border text-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">540%</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Average ROI on Ad Spend</div>
+                <div className="bg-card p-4 md:p-6 lg:p-8 rounded-lg shadow-card border border-border text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">540%</div>
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">Average ROI on Ad Spend</div>
                 </div>
 
-                <div className="bg-card p-6 md:p-8 rounded-lg shadow-card border border-border text-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">95%</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Client Retention Rate (No Lock-In Contracts)</div>
+                <div className="bg-card p-4 md:p-6 lg:p-8 rounded-lg shadow-card border border-border text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">95%</div>
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">Client Retention Rate</div>
                 </div>
 
-                <div className="bg-card p-6 md:p-8 rounded-lg shadow-card border border-border text-center">
-                  <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">283+</div>
-                  <div className="text-sm md:text-base text-muted-foreground">Successful Campaigns Delivered</div>
+                <div className="bg-card p-4 md:p-6 lg:p-8 rounded-lg shadow-card border border-border text-center">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2">283+</div>
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">Successful Campaigns</div>
                 </div>
               </div>
             </div>
@@ -319,40 +319,40 @@ const OnlineMarketingCompanyBrisbane = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
                 The Brisbane Digital Marketing Pain Points We Solve
               </h2>
               
-              <p className="text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
                 In a city as competitive as Brisbane, a fragmented or opaque digital strategy is a recipe for failure. We fix these common problems.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Target className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold mb-3">The Fragmentation Trap</h3>
+                  <h3 className="text-base md:text-lg lg:text-xl font-semibold mb-3">The Fragmentation Trap</h3>
                   <p className="text-sm md:text-base text-muted-foreground">
                     You have one agency doing your SEO, another running your Google Ads, and you're managing social media yourself. The result? No one is talking, and your marketing efforts are disjointed, inefficient, and expensive.
                   </p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Shield className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold mb-3">The Transparency Problem</h3>
+                  <h3 className="text-base md:text-lg lg:text-xl font-semibold mb-3">The Transparency Problem</h3>
                   <p className="text-sm md:text-base text-muted-foreground">
                     You're paying a premium for a "big name" agency, but you only get confusing reports filled with vanity metrics. You don't know what you're paying for or if your marketing is actually generating leads.
                   </p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border sm:col-span-2 lg:col-span-1">
                   <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Users className="h-6 w-6 md:h-8 md:w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-semibold mb-3">The Non-Local Strategy</h3>
+                  <h3 className="text-base md:text-lg lg:text-xl font-semibold mb-3">The Non-Local Strategy</h3>
                   <p className="text-sm md:text-base text-muted-foreground">
                     You're working with an agency based in Sydney or Melbourne that doesn't understand the unique Brisbane business landscape, the local competition, or the QLD market's specific challenges.
                   </p>
@@ -366,52 +366,52 @@ const OnlineMarketingCompanyBrisbane = () => {
         <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
                 What Our Clients Say
               </h2>
               
-              <p className="text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-8 md:mb-12 px-2">
                 Don't just take our word for it. Here's what business owners are saying about working with Odin Digital.
               </p>
 
-              <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <div className="flex items-center mb-4">
+              <div className="grid md:grid-cols-3 gap-4 md:gap-6">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <CheckCircle2 key={i} className="h-5 w-5 text-primary fill-primary" />
+                      <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
                     "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                   </p>
-                  <p className="text-sm font-semibold">Fabienne Costa</p>
-                  <p className="text-xs text-muted-foreground">Founder, YCL Jewels (Gold Coast)</p>
+                  <p className="text-xs sm:text-sm font-semibold">Fabienne Costa</p>
+                  <p className="text-xs text-muted-foreground">Founder, YCL Jewels</p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <div className="flex items-center mb-4">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <CheckCircle2 key={i} className="h-5 w-5 text-primary fill-primary" />
+                      <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
-                    "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
+                    "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since."
                   </p>
-                  <p className="text-sm font-semibold">Liam C</p>
-                  <p className="text-xs text-muted-foreground">Founder, Krush Organics (Sydney)</p>
+                  <p className="text-xs sm:text-sm font-semibold">Liam C</p>
+                  <p className="text-xs text-muted-foreground">Founder, Krush Organics</p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <div className="flex items-center mb-4">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <div className="flex items-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <CheckCircle2 key={i} className="h-5 w-5 text-primary fill-primary" />
+                      <CheckCircle2 key={i} className="h-4 w-4 md:h-5 md:w-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
-                    "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 md:mb-4 italic leading-relaxed">
+                    "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas...that year after I was averaging over $100k a month."
                   </p>
-                  <p className="text-sm font-semibold">Evan Tsaboukos</p>
-                  <p className="text-xs text-muted-foreground">Founder, Imperial Wealth (Melbourne)</p>
+                  <p className="text-xs sm:text-sm font-semibold">Evan Tsaboukos</p>
+                  <p className="text-xs text-muted-foreground">Founder, Imperial Wealth</p>
                 </div>
               </div>
             </div>
