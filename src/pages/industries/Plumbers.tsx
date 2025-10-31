@@ -456,23 +456,23 @@ const Plumbers = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
+        <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
           {/* Floating Circles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed"></div>
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-secondary/10 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute top-20 left-10 w-48 h-48 md:w-72 md:h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed"></div>
+            <div className="absolute top-1/2 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-secondary/10 rounded-full blur-3xl animate-float"></div>
           </div>
 
-          <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+          <div className="container mx-auto px-4 py-12 md:py-16 lg:py-24 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 mt-8 text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 mt-4 md:mt-8 text-foreground">
                 Plumbers Marketing
               </h1>
-              <p className="text-base md:text-lg lg:text-xl mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto px-2">
                 Your plumbing business is built on trust and reliability. You help homeowners solve urgent problems and maintain their most valuable asset—their home. But trust alone doesn't fill your schedule with high-margin jobs. You need a marketing partner who understands the unique challenges plumbing businesses face—overcoming the industry trust problem, generating qualified leads for both emergency callouts and planned installations, and competing against larger franchises with massive marketing budgets. At Odin Digital, we've helped over 250 plumbing businesses across Australia attract more qualified jobs, build trust in their local market, and grow revenue by an average of 340%.
               </p>
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-lg">
+              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-5 md:py-6 text-base md:text-lg w-full sm:w-auto">
                 Schedule Free Strategy Session →
               </Button>
             </div>
@@ -480,15 +480,15 @@ const Plumbers = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-10 sm:py-12 bg-muted/50">
+        <section className="py-8 md:py-10 lg:py-12 bg-muted/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               {metrics.map((metric, index) => (
-                <Card key={index} className="p-4 sm:p-6 text-center">
-                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
+                <Card key={index} className="p-3 sm:p-4 md:p-6 text-center">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-primary mb-1 md:mb-2">
                     {metric.number}
                   </div>
-                  <div className="text-xs sm:text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-tight">
                     {metric.label}
                   </div>
                 </Card>
@@ -498,23 +498,23 @@ const Plumbers = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-12 sm:py-16 lg:py-20">
+        <section className="py-10 md:py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="text-center mb-10 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
+            <div className="text-center mb-8 md:mb-10 lg:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-3 md:mb-4 px-2">
                 The Plumbing Marketing Challenges We Solve
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
                 Plumbing is a trust-based business with unique marketing challenges. Generic agencies don't understand your industry. We do.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div className="grid gap-4 md:gap-6">
               {problems.map((problem, index) => (
-                <Card key={index} className="p-4 sm:p-6 border-2 hover:border-primary/50 transition-colors">
-                  <problem.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">{problem.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground">{problem.description}</p>
+                <Card key={index} className="p-4 md:p-6 border-2 hover:border-primary/50 transition-colors">
+                  <problem.icon className="w-8 h-8 md:w-10 md:h-10 text-primary mb-3" />
+                  <h3 className="text-lg md:text-xl font-bold mb-2">{problem.title}</h3>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{problem.description}</p>
                 </Card>
               ))}
             </div>
@@ -522,29 +522,29 @@ const Plumbers = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-12 sm:py-16 bg-gradient-to-br from-primary/5 to-accent/5">
+        <section className="py-10 md:py-12 lg:py-16 bg-gradient-to-br from-primary/5 to-accent/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="text-center mb-10 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3">
+            <div className="text-center mb-8 md:mb-10 lg:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-3 px-2">
                 What Our Trades Clients Say
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground">
+              <p className="text-sm md:text-base lg:text-lg text-muted-foreground px-2">
                 We partner with ambitious trades businesses to deliver measurable growth.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-4 sm:p-6">
-                  <div className="flex justify-center mb-3 sm:mb-4">
+                <Card key={index} className="p-4 md:p-6">
+                  <div className="flex justify-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-yellow-500" />
+                      <Award key={i} className="w-4 h-4 md:w-5 md:h-5 text-yellow-500 fill-yellow-500" />
                     ))}
                   </div>
-                  <blockquote className="text-sm sm:text-base text-charcoal mb-4 leading-relaxed italic">
+                  <blockquote className="text-sm md:text-base text-charcoal mb-4 leading-relaxed italic">
                     "{testimonial.quote}"
                   </blockquote>
-                  <cite className="text-xs sm:text-sm text-muted-foreground not-italic">
+                  <cite className="text-xs md:text-sm text-muted-foreground not-italic">
                     <strong>{testimonial.author}</strong>, {testimonial.company}
                   </cite>
                 </Card>
@@ -666,18 +666,18 @@ const Plumbers = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-primary to-secondary text-white text-center">
+        <section className="py-10 md:py-12 lg:py-16 bg-gradient-to-r from-primary to-secondary text-white text-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 px-2">
               Ready to Grow Your Plumbing Business?
             </h2>
-            <p className="text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
+            <p className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 leading-relaxed px-2">
               Stop wasting money on tyre-kickers. Start attracting high-margin jobs with a high-trust digital system that delivers qualified leads directly to your plumbing business. Schedule a free strategy session today.
             </p>
             <Button 
               variant="secondary" 
               size="lg" 
-              className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 bg-white text-primary hover:bg-white/90"
+              className="text-sm md:text-base px-6 md:px-8 py-4 md:py-5 bg-white text-primary hover:bg-white/90 w-full sm:w-auto"
               onClick={openForm}
             >
               Schedule Free Strategy Session
@@ -732,21 +732,21 @@ const Plumbers = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 sm:py-16 lg:py-20 pb-28 md:pb-20">
+        <section className="py-10 md:py-12 lg:py-16 pb-24 md:pb-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
-            <div className="text-center mb-10 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
+            <div className="text-center mb-8 md:mb-10 lg:mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-3 md:mb-4 px-2">
                 Frequently Asked Questions
               </h2>
             </div>
 
             <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-4 sm:px-6">
-                  <AccordionTrigger className="text-left text-sm sm:text-base font-semibold hover:no-underline py-3 sm:py-4">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-3 md:px-4 lg:px-6">
+                  <AccordionTrigger className="text-left text-sm md:text-base font-semibold hover:no-underline py-3 md:py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-xs sm:text-sm text-muted-foreground pb-3 sm:pb-4">
+                  <AccordionContent className="text-xs md:text-sm text-muted-foreground pb-3 md:pb-4 leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -756,9 +756,9 @@ const Plumbers = () => {
         </section>
 
         {/* Sticky Mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t shadow-lg md:hidden z-50">
+        <div className="fixed bottom-0 left-0 right-0 p-3 md:p-4 bg-white border-t shadow-lg md:hidden z-50">
           <Button 
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90"
+            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-sm md:text-base"
             size="lg"
             onClick={openForm}
           >
