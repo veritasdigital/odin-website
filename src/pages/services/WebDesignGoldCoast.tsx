@@ -317,7 +317,7 @@ const WebDesignGoldCoast = () => {
         <Header />
 
         {/* Hero Section with Floating Circles */}
-        <section className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+        <section className="relative pt-20 pb-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
           {/* Floating decorative circles */}
           <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
