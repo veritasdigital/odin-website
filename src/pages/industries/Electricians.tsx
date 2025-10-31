@@ -192,6 +192,11 @@ const Electricians = () => {
       icon: Target,
       title: "Local Market Domination",
       description: "We specialize in dominating local markets through comprehensive SEO, Google Ads, and reputation management strategies."
+    },
+    {
+      icon: Rocket,
+      title: "Rapid Results & Scale",
+      description: "We combine immediate Google Ads results with long-term SEO growth to fill your calendar now while building sustainable lead generation for the future."
     }
   ];
 
