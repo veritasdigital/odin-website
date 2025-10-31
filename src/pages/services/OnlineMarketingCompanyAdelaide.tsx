@@ -174,7 +174,7 @@ const OnlineMarketingCompanyAdelaide = () => {
       <div className="min-h-screen">
 
         {/* Hero Section */}
-        <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+        <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           {/* Floating Circles Background */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
@@ -184,18 +184,18 @@ const OnlineMarketingCompanyAdelaide = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent leading-tight">
                 Digital Marketing Experts for Adelaide Businesses
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 text-muted-foreground leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-muted-foreground leading-relaxed px-2">
                 Your business is competing in an increasingly digital world. Customers are searching online, researching on social media, and making purchasing decisions based on what they find. If you're not visible online, you're losing customers to competitors who are. At Odin Digital, we're Adelaide's leading digital marketing experts. We've helped over 200 Adelaide businesses grow through integrated digital marketing strategies that deliver real results. Whether you need SEO, Google Ads, Meta Ads, social media marketing, or a complete digital marketing strategy, we deliver measurable results that impact your bottom line.
               </p>
 
               <Link to="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
                   Schedule Free Digital Marketing Consultation
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                 </Button>
               </Link>
             </div>
@@ -203,27 +203,27 @@ const OnlineMarketingCompanyAdelaide = () => {
         </section>
 
         {/* Why Adelaide Businesses Need Digital Marketing */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 lg:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 text-center">
                 Why Adelaide Businesses Need Digital Marketing
               </h2>
               
-              <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-muted-foreground mb-6">
+              <div className="prose prose-lg max-w-none space-y-4 md:space-y-6">
+                <p className="text-base md:text-lg text-muted-foreground">
                   Adelaide's business landscape is competitive and increasingly digital. Your customers are no longer looking in the Yellow Pages—they're searching on Google, scrolling through Instagram, and asking for recommendations on Facebook. If your business isn't showing up in these places, you're invisible to potential customers.
                 </p>
                 
-                <p className="text-lg text-muted-foreground mb-6">
+                <p className="text-base md:text-lg text-muted-foreground">
                   The opportunity is massive. Adelaide businesses that embrace digital marketing are seeing unprecedented growth. They're attracting more leads, converting more customers, and growing faster than their competitors. But many Adelaide businesses are falling behind, stuck with outdated marketing strategies that no longer work.
                 </p>
                 
-                <p className="text-lg text-muted-foreground mb-6">
+                <p className="text-base md:text-lg text-muted-foreground">
                   Strategic digital marketing can transform your business. Whether you're a professional services firm in the CBD, a manufacturer in Edinburgh Parks, a winery in the Adelaide Hills, or a retailer in Glenelg, the right digital marketing strategy can help you reach more customers, generate more leads, and grow your revenue.
                 </p>
                 
-                <p className="text-lg text-muted-foreground">
+                <p className="text-base md:text-lg text-muted-foreground">
                   Our clients see real results: increased website traffic, more qualified leads, higher conversion rates, and measurable ROI. We've helped Adelaide businesses achieve an average 540% return on investment through integrated digital marketing strategies that work.
                 </p>
               </div>
@@ -232,57 +232,57 @@ const OnlineMarketingCompanyAdelaide = () => {
         </section>
 
         {/* The Digital Marketing Challenge */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center">
                 The Digital Marketing Challenge Adelaide Businesses Face
               </h2>
               
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <h3 className="text-xl font-semibold mb-3 flex items-center">
-                    <Target className="h-6 w-6 text-primary mr-2" />
-                    The Expertise Barrier
+              <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-start md:items-center">
+                    <Target className="h-5 w-5 md:h-6 md:w-6 text-primary mr-2 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span>The Expertise Barrier</span>
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     Digital marketing is complex and constantly changing. SEO, Google Ads, Meta Ads, social media—it's overwhelming. Most Adelaide business owners don't have the time or expertise to manage it effectively, and hiring internally is expensive.
                   </p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <h3 className="text-xl font-semibold mb-3 flex items-center">
-                    <TrendingUp className="h-6 w-6 text-primary mr-2" />
-                    The Cost Barrier
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-start md:items-center">
+                    <TrendingUp className="h-5 w-5 md:h-6 md:w-6 text-primary mr-2 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span>The Cost Barrier</span>
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     Many Adelaide agencies charge premium prices that small to medium-sized businesses can't afford. Others deliver poor quality work that wastes your budget without delivering results.
                   </p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <h3 className="text-xl font-semibold mb-3 flex items-center">
-                    <BarChart3 className="h-6 w-6 text-primary mr-2" />
-                    The Accountability Problem
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-start md:items-center">
+                    <BarChart3 className="h-5 w-5 md:h-6 md:w-6 text-primary mr-2 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span>The Accountability Problem</span>
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     Too many agencies operate in a black box. You pay the bills but have no idea what they're doing or whether it's working. There's no transparency, no clear reporting, and no accountability.
                   </p>
                 </div>
 
-                <div className="bg-card p-6 rounded-lg shadow-card border border-border">
-                  <h3 className="text-xl font-semibold mb-3 flex items-center">
-                    <Zap className="h-6 w-6 text-primary mr-2" />
-                    The Fragmentation Problem
+                <div className="bg-card p-5 md:p-6 rounded-lg shadow-card border border-border">
+                  <h3 className="text-lg md:text-xl font-semibold mb-3 flex items-start md:items-center">
+                    <Zap className="h-5 w-5 md:h-6 md:w-6 text-primary mr-2 flex-shrink-0 mt-0.5 md:mt-0" />
+                    <span>The Fragmentation Problem</span>
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm md:text-base text-muted-foreground">
                     You hire one agency for SEO, another for Google Ads, and someone else for social media. Nothing is integrated, you're managing multiple vendors, and your marketing strategy is fragmented and inefficient.
                   </p>
                 </div>
               </div>
 
-              <div className="mt-8 text-center">
-                <p className="text-lg text-muted-foreground mb-6">
+              <div className="mt-6 md:mt-8 text-center">
+                <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6 px-2">
                   <strong>That's where Odin Digital comes in.</strong> We provide integrated digital marketing for Adelaide businesses—SEO, Google Ads, Meta Ads, social media, and web design—all managed by one expert team with radical transparency and a proven track record of delivering results.
                 </p>
               </div>
@@ -990,6 +990,15 @@ const OnlineMarketingCompanyAdelaide = () => {
             </div>
           </div>
         </section>
+      </div>
+
+      {/* Mobile Sticky CTA */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden shadow-lg">
+        <Link to="/contact">
+          <Button className="w-full bg-gradient-primary text-white hover:shadow-glow py-6 text-base font-semibold">
+            Schedule Free Consultation
+          </Button>
+        </Link>
       </div>
 
       <Footer />
