@@ -91,6 +91,7 @@ import WhiteLabelSEO from "./pages/services/WhiteLabelSEO";
 import OnlineMarketingCompanySydney from "./pages/services/OnlineMarketingCompanySydney";
 import OnlineMarketingCompanyMelbourne from "./pages/services/OnlineMarketingCompanyMelbourne";
 import OnlineMarketingCompanyAdelaide from "./pages/services/OnlineMarketingCompanyAdelaide";
+import OnlineMarketingCompanyBrisbane from "./pages/services/OnlineMarketingCompanyBrisbane";
 
 const queryClient = new QueryClient();
 
@@ -124,6 +125,7 @@ const App = () => (
           <Route path="/online-marketing-company-sydney" element={<OnlineMarketingCompanySydney />} />
           <Route path="/online-marketing-company-melbourne" element={<OnlineMarketingCompanyMelbourne />} />
           <Route path="/online-marketing-company-adelaide" element={<OnlineMarketingCompanyAdelaide />} />
+          <Route path="/online-marketing-company-brisbane" element={<OnlineMarketingCompanyBrisbane />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
