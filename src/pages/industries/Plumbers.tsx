@@ -466,7 +466,7 @@ const Plumbers = () => {
 
           <div className="container mx-auto px-4 py-12 md:py-16 lg:py-24 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 mt-4 md:mt-8 text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 mt-12 md:mt-8 text-foreground">
                 Plumbers Marketing
               </h1>
               <p className="text-base md:text-lg lg:text-xl mb-6 md:mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto px-2">
