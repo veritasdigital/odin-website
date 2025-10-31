@@ -347,21 +347,21 @@ const EmailMarketingAgency = () => {
       
       <div className="min-h-screen pb-24 md:pb-0">
         {/* Section 1: Hero Section */}
-        <section className="relative pt-24 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+        <section className="relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           {/* Floating Circles Background */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute top-40 right-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float-delayed" />
-            <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute top-20 left-10 w-32 h-32 md:w-64 md:h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute top-40 right-20 w-48 h-48 md:w-96 md:h-96 bg-secondary/10 rounded-full blur-3xl animate-float-delayed" />
+            <div className="absolute bottom-20 left-1/3 w-40 h-40 md:w-80 md:h-80 bg-accent/10 rounded-full blur-3xl animate-float" />
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Email Marketing Agency
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-8 leading-tight">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-foreground mb-6 md:mb-8 leading-tight px-2">
                 Stop Sending Spammy Newsletters. We Build High-Converting, Automated Email Funnels That Deliver a Proven 4400% ROI.
               </p>
 
@@ -369,10 +369,10 @@ const EmailMarketingAgency = () => {
                 onClick={openForm}
                 size="xl"
                 variant="cta"
-                className="text-base sm:text-lg md:text-xl whitespace-normal h-auto px-8 py-4 leading-tight"
+                className="text-sm sm:text-base md:text-lg lg:text-xl whitespace-normal h-auto px-6 sm:px-8 py-3 sm:py-4 leading-tight w-full sm:w-auto"
               >
                 Get Your FREE Email Marketing Audit
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
@@ -381,13 +381,13 @@ const EmailMarketingAgency = () => {
         {/* Section 2: Social Proof Metrics */}
         <section className="py-12 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
               {metrics.map((metric, index) => (
-                <Card key={index} className="p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
+                <Card key={index} className="p-4 md:p-6 text-center hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
                     {metric.number}
                   </div>
-                  <div className="text-sm md:text-base text-muted-foreground">
+                  <div className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     {metric.label}
                   </div>
                 </Card>
@@ -399,22 +399,22 @@ const EmailMarketingAgency = () => {
         {/* Section 3: Problem-Agitation */}
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                 If Email Marketing Feels Like Shouting Into the Void, You're Not Alone
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-2">
                 Most businesses are making these critical mistakes with their email marketing:
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
               {problems.map((problem, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
-                  <h3 className="text-xl font-bold mb-4 text-primary">
+                <Card key={index} className="p-4 md:p-6 hover:shadow-xl transition-all duration-300 border-l-4 border-primary">
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4 text-primary">
                     {problem.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     {problem.description}
                   </p>
                 </Card>
@@ -427,23 +427,23 @@ const EmailMarketingAgency = () => {
         <section className="py-12 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center px-2">
                 What Our Clients Say
               </h2>
 
-              <Card className="p-8 md:p-12 shadow-2xl">
-                <div className="flex items-center mb-6">
+              <Card className="p-6 md:p-8 lg:p-12 shadow-2xl">
+                <div className="flex items-center mb-4 md:mb-6">
                   {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-6 h-6 text-yellow-500 fill-yellow-500" />
+                    <Award key={i} className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-500 fill-yellow-500" />
                   ))}
                 </div>
-                <blockquote className="text-lg md:text-xl mb-6 italic">
+                <blockquote className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 italic leading-relaxed">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </blockquote>
                 <div className="flex items-center">
                   <div>
-                    <div className="font-bold text-lg">Liam C</div>
-                    <div className="text-muted-foreground">Krush Organics</div>
+                    <div className="font-bold text-base sm:text-lg">Liam C</div>
+                    <div className="text-sm sm:text-base text-muted-foreground">Krush Organics</div>
                   </div>
                 </div>
               </Card>
@@ -454,23 +454,23 @@ const EmailMarketingAgency = () => {
         {/* Section 5: Services - The 4 Pillars */}
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
                 The 4 Pillars of Our Email Marketing Service
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-2">
                 We don't just send emails. We build automated revenue engines that integrate seamlessly with your <a href="/seo-agency" className="text-primary hover:underline">SEO</a> and <a href="/google-ads-management" className="text-primary hover:underline">PPC</a> strategies.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
               {services.map((service, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <service.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-4">
+                <Card key={index} className="p-4 md:p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-3 md:mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     {service.description}
                   </p>
                 </Card>
@@ -482,20 +482,20 @@ const EmailMarketingAgency = () => {
         {/* Section 6: Differentiators */}
         <section className="py-12 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
                 Why We're Different
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
               {differentiators.map((diff, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300">
-                  <diff.icon className="w-12 h-12 text-secondary mb-4" />
-                  <h3 className="text-xl font-bold mb-4">
+                <Card key={index} className="p-4 md:p-6 hover:shadow-xl transition-all duration-300">
+                  <diff.icon className="w-10 h-10 sm:w-12 sm:h-12 text-secondary mb-3 md:mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4">
                     {diff.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     {diff.description}
                   </p>
                 </Card>
@@ -507,25 +507,25 @@ const EmailMarketingAgency = () => {
         {/* Section 7: Process */}
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
                 Our Process
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground px-2">
                 From strategy to execution, we handle everything to ensure your email marketing delivers maximum ROI.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-7xl mx-auto">
               {process.map((step, index) => (
-                <Card key={index} className="p-6 relative hover:shadow-xl transition-all duration-300">
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                <Card key={index} className="p-4 md:p-6 relative hover:shadow-xl transition-all duration-300">
+                  <div className="absolute -top-3 -left-3 md:-top-4 md:-left-4 w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold text-lg md:text-xl shadow-lg">
                     {step.step}
                   </div>
-                  <h3 className="text-xl font-bold mb-4 mt-4">
+                  <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4 mt-2 md:mt-4">
                     {step.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     {step.description}
                   </p>
                 </Card>
@@ -537,20 +537,20 @@ const EmailMarketingAgency = () => {
         {/* Section 8: Why Choose Us */}
         <section className="py-12 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
                 Why Choose Odin Digital as Your Email Marketing Agency?
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-8 max-w-5xl mx-auto">
               {whyChooseUs.map((reason, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300">
-                  <CheckCircle className="w-8 h-8 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-3">
+                <Card key={index} className="p-4 md:p-6 hover:shadow-xl transition-all duration-300">
+                  <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary mb-3 md:mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 md:mb-3">
                     {reason.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm sm:text-base text-muted-foreground">
                     {reason.description}
                   </p>
                 </Card>
@@ -563,19 +563,19 @@ const EmailMarketingAgency = () => {
         <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-secondary to-accent">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center text-white">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 px-2">
                 Ready to Stop Wasting Money on Email Marketing That Doesn't Work?
               </h2>
-              <p className="text-xl md:text-2xl mb-8">
+              <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 px-2">
                 Get a FREE email marketing audit and discover exactly what's holding your campaigns back.
               </p>
               <Button 
                 onClick={openForm}
                 size="xl"
-                className="bg-white text-primary hover:bg-white/90 text-lg md:text-xl px-8 py-4 h-auto whitespace-normal leading-tight"
+                className="bg-white text-primary hover:bg-white/90 text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 sm:py-4 h-auto whitespace-normal leading-tight w-full sm:w-auto"
               >
                 Schedule Your FREE Audit Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </div>
           </div>
@@ -585,21 +585,21 @@ const EmailMarketingAgency = () => {
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6">
                     Related Services
                   </h2>
-                  <div className="space-y-3">
+                  <div className="space-y-2 md:space-y-3">
                     {relatedServices.map((service, index) => (
                       <a
                         key={index}
                         href={service.url}
-                        className="block p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
+                        className="block p-3 md:p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-medium">{service.name}</span>
-                          <ArrowRight className="w-5 h-5 text-primary" />
+                          <span className="font-medium text-sm sm:text-base">{service.name}</span>
+                          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 ml-2" />
                         </div>
                       </a>
                     ))}
@@ -607,19 +607,19 @@ const EmailMarketingAgency = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6">
                     Industries We Serve
                   </h2>
-                  <div className="space-y-3">
+                  <div className="space-y-2 md:space-y-3">
                     {relatedIndustries.map((industry, index) => (
                       <a
                         key={index}
                         href={industry.url}
-                        className="block p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
+                        className="block p-3 md:p-4 rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="font-medium">{industry.name}</span>
-                          <ArrowRight className="w-5 h-5 text-primary" />
+                          <span className="font-medium text-sm sm:text-base">{industry.name}</span>
+                          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0 ml-2" />
                         </div>
                       </a>
                     ))}
@@ -634,17 +634,17 @@ const EmailMarketingAgency = () => {
         <section className="py-12 md:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 text-center px-2">
                 Frequently Asked Questions
               </h2>
 
               <Accordion type="single" collapsible className="w-full">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
-                    <AccordionTrigger className="text-left text-base md:text-lg font-semibold">
+                    <AccordionTrigger className="text-left text-sm sm:text-base md:text-lg font-semibold">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-base text-muted-foreground">
+                    <AccordionContent className="text-sm sm:text-base text-muted-foreground">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
