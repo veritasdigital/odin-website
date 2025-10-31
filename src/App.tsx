@@ -82,6 +82,7 @@ import FacebookAdsNewcastle from "./pages/services/FacebookAdsNewcastle";
 import TikTokAdvertising from "./pages/services/TikTokAdvertising";
 import YouTubeAdvertising from "./pages/services/YouTubeAdvertising";
 import EmailMarketing from "./pages/services/EmailMarketing";
+import WebDesignHobart from "./pages/services/WebDesignHobart";
 
 const queryClient = new QueryClient();
 
@@ -165,6 +166,7 @@ const App = () => (
           <Route path="/tiktok-advertising" element={<TikTokAdvertising />} />
           <Route path="/youtube-advertising" element={<YouTubeAdvertising />} />
             <Route path="/services/email-marketing" element={<EmailMarketing />} />
+            <Route path="/web-design-hobart" element={<WebDesignHobart />} />
             <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
