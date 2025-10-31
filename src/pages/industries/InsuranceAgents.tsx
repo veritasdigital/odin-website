@@ -450,8 +450,8 @@ const InsuranceAgents = () => {
           <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
           <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32">
-            <nav className="mb-8 text-sm" aria-label="Breadcrumb">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center">
+            <nav className="mb-8 text-sm flex justify-center" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2 text-muted-foreground">
                 <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
                 <li><ArrowRight className="w-4 h-4" /></li>
@@ -461,7 +461,7 @@ const InsuranceAgents = () => {
               </ol>
             </nav>
 
-            <div className="max-w-4xl">
+            <div className="max-w-4xl mx-auto">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-charcoal leading-tight mb-6">
                 Insurance Agents Marketing
               </h1>
