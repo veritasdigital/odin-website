@@ -401,16 +401,16 @@ const WebDesignHobart = () => {
         {/* Social Proof Metrics */}
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
               {metrics.map((metric, index) => {
                 const Icon = metric.icon;
                 return (
-                  <div key={index} className="text-center space-y-2 p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300">
-                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 mx-auto text-primary mb-3" />
-                    <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
+                  <div key={index} className="text-center space-y-2 p-4 sm:p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10 mx-auto text-primary mb-2 sm:mb-3" />
+                    <div className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground break-words">
                       {metric.number}
                     </div>
-                    <div className="text-sm sm:text-base text-muted-foreground">
+                    <div className="text-xs sm:text-sm lg:text-base text-muted-foreground break-words">
                       {metric.label}
                     </div>
                   </div>
