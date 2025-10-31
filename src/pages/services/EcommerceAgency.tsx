@@ -565,7 +565,7 @@ const EcommerceAgency = () => {
                 E-Commerce Agency That Grows Your Revenue
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-foreground mb-6 md:mb-8 leading-tight px-2">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-foreground mb-6 md:mb-8 leading-tight px-2">
                 Building an e-commerce business is hard. Managing an e-commerce business is harder. You're juggling website optimisation, marketing, inventory, customer service, and a hundred other things. You need a partner who understands e-commerce, who can manage the technical side, who can drive traffic, and who can convert that traffic into sales. At Odin Digital, we're a full-service e-commerce agency that specialises in growing e-commerce revenue. We've helped over 250 e-commerce businesses increase their revenue by an average of 340% through strategic website optimisation, integrated marketing, and conversion-focused design. Whether you're selling on Shopify, WooCommerce, or a custom platform, we deliver results.
               </p>
 
