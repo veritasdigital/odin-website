@@ -496,46 +496,46 @@ const SEONewcastle = () => {
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow flex flex-col">
                 <Search className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Technical SEO</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   Fix crawl errors, improve site speed, optimize site architecture, and ensure your website meets Google's technical standards.
                 </p>
-                <Link to="/services/technical-seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium">
+                <Link to="/services/technical-seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium mt-auto">
                   Learn More →
                 </Link>
               </div>
 
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow flex flex-col">
                 <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Local SEO</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   Dominate Newcastle local search results. Google Business Profile optimization, local citations, and location-specific content.
                 </p>
-                <Link to="/services/local-seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium">
+                <Link to="/services/local-seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium mt-auto">
                   Learn More →
                 </Link>
               </div>
 
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow flex flex-col">
                 <FileText className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Content Strategy</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   High-quality, SEO-optimized content that satisfies search intent and drives conversions—not keyword-stuffed garbage.
                 </p>
-                <Link to="/services/seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium">
+                <Link to="/services/seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium mt-auto">
                   Learn More →
                 </Link>
               </div>
 
-              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
+              <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow flex flex-col">
                 <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Link Building</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   Ethical, white-hat link building through digital PR, strategic partnerships, and creating genuinely link-worthy content.
                 </p>
-                <Link to="/services/seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium">
+                <Link to="/services/seo" className="text-[#D91C5C] hover:underline text-xs sm:text-sm font-medium mt-auto">
                   Learn More →
                 </Link>
               </div>
