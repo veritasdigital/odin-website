@@ -451,13 +451,13 @@ const InsuranceAgents = () => {
           <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center">
-            <nav className="mb-8 text-sm flex justify-center" aria-label="Breadcrumb">
-              <ol className="flex items-center space-x-2 text-muted-foreground">
+            <nav className="mb-8 text-sm" aria-label="Breadcrumb">
+              <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
                 <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
                 <li><ArrowRight className="w-4 h-4" /></li>
                 <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
                 <li><ArrowRight className="w-4 h-4" /></li>
-                <li className="text-foreground font-medium">Insurance Agents Marketing</li>
+                <li className="text-foreground font-medium text-center">Insurance Agents Marketing</li>
               </ol>
             </nav>
 
