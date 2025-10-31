@@ -325,7 +325,7 @@ const WebDesignGoldCoast = () => {
           
           <div className="container mx-auto max-w-6xl relative z-10">
             <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2 mt-4 sm:mt-0">
                 Web Design Agency Gold Coast
               </h1>
               
