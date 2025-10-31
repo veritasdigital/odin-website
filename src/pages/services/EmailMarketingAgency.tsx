@@ -654,6 +654,9 @@ const EmailMarketingAgency = () => {
           </div>
         </section>
 
+        {/* Mobile spacer to avoid footer overlap */}
+        <div className="h-20 md:hidden" aria-hidden="true" />
+
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border z-40 md:hidden">
           <Button 
