@@ -213,9 +213,9 @@ const OnlineMarketingCompanyPerth = () => {
               </div>
 
               <Link to="/contact" className="block px-4">
-                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                   Get Your FREE Perth Digital Marketing Audit
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                 </Button>
               </Link>
             </div>
@@ -298,9 +298,9 @@ const OnlineMarketingCompanyPerth = () => {
 
               <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     Stop the Marketing Bleed: Talk to a Perth Digital Marketing Expert
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -362,11 +362,11 @@ const OnlineMarketingCompanyPerth = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 md:mt-12">
+              <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-5 md:px-8 md:py-6 text-base md:text-lg w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     See Our SEO Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -430,9 +430,9 @@ const OnlineMarketingCompanyPerth = () => {
 
               <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     See Our Google Ads Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -486,9 +486,9 @@ const OnlineMarketingCompanyPerth = () => {
 
               <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     See Our Meta Ads Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -542,9 +542,9 @@ const OnlineMarketingCompanyPerth = () => {
 
               <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     See Our Web Design Packages for Perth Businesses
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -608,9 +608,9 @@ const OnlineMarketingCompanyPerth = () => {
 
               <div className="text-center mt-8 md:mt-12 px-4">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                  <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                     Talk to a Perth Digital Marketing Specialist
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                   </Button>
                 </Link>
               </div>
@@ -691,9 +691,9 @@ const OnlineMarketingCompanyPerth = () => {
               </p>
 
               <Link to="/contact" className="block px-4">
-                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-6 py-4 md:px-8 md:py-6 text-sm md:text-base w-full sm:w-auto">
+                <Button size="lg" className="bg-gradient-primary text-white hover:shadow-glow px-4 py-4 md:px-8 md:py-6 text-xs sm:text-sm md:text-base w-full sm:w-auto whitespace-normal h-auto leading-tight">
                   Claim Your FREE Perth Digital Marketing Audit
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
                 </Button>
               </Link>
             </div>
@@ -704,7 +704,7 @@ const OnlineMarketingCompanyPerth = () => {
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden shadow-lg">
         <Link to="/contact">
-          <Button className="w-full bg-gradient-primary text-white hover:shadow-glow py-6 text-base font-semibold">
+          <Button className="w-full bg-gradient-primary text-white hover:shadow-glow py-4 text-sm font-semibold whitespace-normal h-auto leading-tight">
             Get FREE Perth Marketing Audit
           </Button>
         </Link>
