@@ -48,6 +48,7 @@ import PersonalInjuryLawyers from "./pages/industries/PersonalInjuryLawyers";
 import CriminalDefenseLawyers from "./pages/industries/CriminalDefenseLawyers";
 import InsuranceAgents from "./pages/industries/InsuranceAgents";
 import ArchitectureFirms from "./pages/industries/ArchitectureFirms";
+import Plumbers from "./pages/industries/Plumbers";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -163,6 +164,7 @@ const App = () => (
             <Route path="/industries/criminal-defense-lawyers" element={<CriminalDefenseLawyers />} />
             <Route path="/industries/insurance-agents" element={<InsuranceAgents />} />
             <Route path="/industries/architecture-firms" element={<ArchitectureFirms />} />
+            <Route path="/industries/plumbers" element={<Plumbers />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
