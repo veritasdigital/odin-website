@@ -559,7 +559,7 @@ const WebDesignHobart = () => {
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-xs sm:text-sm md:text-base px-4 sm:px-6"
               >
                 See Our Web Design Packages →
               </Button>
@@ -639,7 +639,7 @@ const WebDesignHobart = () => {
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-xs sm:text-sm md:text-base px-4 sm:px-6"
               >
                 Start Your Web Design Project →
               </Button>
@@ -700,7 +700,7 @@ const WebDesignHobart = () => {
                   size="lg" 
                   variant="cta"
                   onClick={openForm}
-                  className="w-full"
+                  className="w-full text-xs sm:text-sm md:text-base px-4 sm:px-6"
                 >
                   Get Your Free Website Audit →
                 </Button>
@@ -814,7 +814,7 @@ const WebDesignHobart = () => {
             size="lg" 
             variant="cta"
             onClick={openForm}
-            className="w-full"
+            className="w-full text-xs sm:text-sm md:text-base px-4 sm:px-6"
           >
             Get Your Free Audit →
           </Button>
