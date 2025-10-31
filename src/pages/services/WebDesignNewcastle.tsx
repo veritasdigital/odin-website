@@ -351,7 +351,7 @@ const WebDesignNewcastle = () => {
           
           <div className="container mx-auto max-w-6xl relative z-10">
             <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-foreground leading-tight px-2 mt-2 sm:mt-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-foreground leading-tight px-2 mt-8 sm:mt-4">
                 Web Design Newcastle
               </h1>
               
