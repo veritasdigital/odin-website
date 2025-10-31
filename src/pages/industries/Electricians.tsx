@@ -397,9 +397,10 @@ const Electricians = () => {
               <Button 
                 size="lg" 
                 onClick={openForm} 
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white w-full sm:w-auto"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white w-full sm:w-auto text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8"
               >
-                Stop the Marketing Bleed: Talk to an Electrical Contractor Marketing Expert →
+                <span className="hidden sm:inline">Stop the Marketing Bleed: Talk to an Electrical Contractor Marketing Expert →</span>
+                <span className="sm:hidden">Talk to a Marketing Expert →</span>
               </Button>
             </div>
           </div>
