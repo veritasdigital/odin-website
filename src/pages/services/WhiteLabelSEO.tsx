@@ -522,9 +522,9 @@ const WhiteLabelSEO = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-              <div className="relative">
-                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 items-stretch">
+              <div className="relative flex flex-col h-full">
+                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">1</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Agency Audit & Service Blueprint</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -533,8 +533,8 @@ const WhiteLabelSEO = () => {
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+              <div className="relative flex flex-col h-full">
+                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">2</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Client Onboarding & Strategy</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -543,8 +543,8 @@ const WhiteLabelSEO = () => {
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+              <div className="relative flex flex-col h-full">
+                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">3</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Execution & Reporting</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -553,8 +553,8 @@ const WhiteLabelSEO = () => {
                 </div>
               </div>
 
-              <div className="relative">
-                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
+              <div className="relative flex flex-col h-full">
+                <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">4</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Scale & Profit</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
