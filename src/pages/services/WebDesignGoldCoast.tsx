@@ -443,12 +443,12 @@ const WebDesignGoldCoast = () => {
               {testimonials.map((testimonial, index) => (
                 <div 
                   key={index}
-                  className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300 flex flex-col"
                 >
-                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 italic leading-relaxed">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 italic leading-relaxed flex-grow">
                     "{testimonial.quote}"
                   </p>
-                  <div className="border-t border-border pt-3 sm:pt-4">
+                  <div className="border-t border-border pt-3 sm:pt-4 mt-auto">
                     <p className="font-semibold text-sm sm:text-base text-foreground">{testimonial.author}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
