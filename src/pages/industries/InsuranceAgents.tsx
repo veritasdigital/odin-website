@@ -610,11 +610,11 @@ const InsuranceAgents = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {process.map((step, index) => (
-                <Card key={index} className="p-6 sm:p-8 relative">
+                <Card key={index} className="p-6 sm:p-8 relative flex flex-col">
                   <div className="text-5xl sm:text-6xl font-black text-primary/20 mb-4">{step.step}</div>
                   <h3 className="text-xl sm:text-2xl font-bold mb-3">{step.title}</h3>
                   <p className="text-sm sm:text-base text-muted-foreground mb-4">{step.description}</p>
-                  <div className="pt-4 border-t border-muted">
+                  <div className="pt-4 border-t border-muted mt-auto">
                     <p className="text-xs sm:text-sm font-semibold text-primary mb-2">You Get:</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{step.deliverables}</p>
                   </div>
