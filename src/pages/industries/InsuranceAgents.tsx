@@ -461,7 +461,7 @@ const InsuranceAgents = () => {
               </ol>
             </nav>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight mb-6">
                 Insurance Agents Marketing
               </h1>
@@ -470,14 +470,16 @@ const InsuranceAgents = () => {
                 Stop Buying Expensive, Cold Leads. We Build High-Trust Digital Systems That Deliver Qualified, Ready-to-Quote Clients Directly to Your Agency.
               </p>
               
-              <Button 
-                variant="default" 
-                size="lg" 
-                className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
-                onClick={openForm}
-              >
-                Schedule Free Strategy Session
-              </Button>
+              <div className="flex justify-center">
+                <Button 
+                  variant="default" 
+                  size="lg" 
+                  className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
+                  onClick={openForm}
+                >
+                  Schedule Free Strategy Session
+                </Button>
+              </div>
             </div>
           </div>
         </section>
