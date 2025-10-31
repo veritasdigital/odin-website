@@ -457,7 +457,7 @@ const WebDesignHobart = () => {
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
-                className="w-full sm:w-auto"
+                className="w-full sm:w-auto text-xs sm:text-sm md:text-base px-4 sm:px-6"
               >
                 Stop Wasting Money: Get Your Free Audit →
               </Button>
