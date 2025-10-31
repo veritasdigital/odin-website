@@ -316,36 +316,36 @@ const WebDesignGoldCoast = () => {
         <Header />
 
         {/* Hero Section with Floating Circles */}
-        <section className="relative py-16 sm:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+        <section className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
           {/* Floating decorative circles */}
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
           
           <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-6 sm:space-y-8">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
+            <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2">
                 Web Design Agency Gold Coast
               </h1>
               
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl font-semibold text-primary max-w-4xl mx-auto leading-tight">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
                 Stop Losing Customers to DIY Websites. Get a Gold Coast Website That Converts.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
                 Is your website an online brochure that looks pretty but doesn't generate leads or sales? It's time for a Gold Coast web design agency that focuses on performance, not just pixels.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
                 At Odin Digital, we build websites that are sales tools. We combine stunning, modern design with a conversion-first strategy, ensuring your new site is fast, SEO-friendly, and optimized to turn Gold Coast visitors into paying customers. Ready to upgrade your online presence?
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 px-2">
                 <Button 
                   size="xl" 
                   variant="cta"
                   onClick={openForm}
-                  className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-8"
+                  className="w-full sm:w-auto text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8"
                 >
                   Get Your FREE Web Design & Strategy Session →
                 </Button>
@@ -355,12 +355,12 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-12 sm:py-16 px-4 sm:px-6 bg-muted/30">
+        <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-center mb-6 sm:mb-8 md:mb-12 px-2">
               The Proof Is in the Performance
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground text-center mb-8 sm:mb-12 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground text-center mb-6 sm:mb-8 md:mb-12 max-w-3xl mx-auto px-2">
               We're not just making promises; we're delivering verified results. Here's a snapshot of what our clients have achieved.
             </p>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8">
@@ -383,27 +383,27 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6">
+        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
                 Is Your Gold Coast Website a Liability, Not an Asset?
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 In the competitive Gold Coast market, a poor website is costing you business every single day. We fix these common problems.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {problems.map((problem, index) => {
                 const Icon = problem.icon;
                 return (
                   <div 
                     key={index} 
-                    className="p-6 sm:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                    <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary mb-3 sm:mb-4" />
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                       {problem.title}
                     </h3>
                     <p className="text-sm sm:text-base text-muted-foreground">
@@ -414,8 +414,8 @@ const WebDesignGoldCoast = () => {
               })}
             </div>
 
-            <div className="text-center mt-12">
-              <Button 
+            <div className="text-center mt-8 sm:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -428,28 +428,28 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
                 What Our Clients Say
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Don't just take our word for it. Here's what business owners are saying about working with Odin Digital.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {testimonials.map((testimonial, index) => (
                 <div 
                   key={index}
-                  className="p-6 sm:p-8 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300"
+                  className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:shadow-lg transition-all duration-300"
                 >
-                  <p className="text-sm sm:text-base text-muted-foreground mb-6 italic">
+                  <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4 sm:mb-6 italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
-                  <div className="border-t border-border pt-4">
-                    <p className="font-semibold text-foreground">{testimonial.author}</p>
+                  <div className="border-t border-border pt-3 sm:pt-4">
+                    <p className="font-semibold text-sm sm:text-base text-foreground">{testimonial.author}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
                 </div>
@@ -459,28 +459,28 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6">
+        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
                 Gold Coast Web Design & Development Services
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 We offer a full suite of web services designed to build, maintain, and optimize your online presence for maximum growth.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <div 
-                    key={index}
-                    className="p-6 sm:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
-                  >
-                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                    <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
-                      {service.title}
+                <div 
+                  key={index}
+                  className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                >
+                  <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary mb-3 sm:mb-4" />
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                    {service.title}
                     </h3>
                     <p className="text-sm sm:text-base text-muted-foreground">
                       {service.description}
@@ -490,8 +490,8 @@ const WebDesignGoldCoast = () => {
               })}
             </div>
 
-            <div className="text-center mt-12">
-              <Button 
+            <div className="text-center mt-8 sm:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -661,21 +661,21 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6">
+        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-4xl">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16 px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
                 Frequently Asked Questions About Gold Coast Web Design
               </h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {faqs.map((faq, index) => (
                 <div 
                   key={index}
-                  className="p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                  className="p-4 sm:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3">
                     {index + 1}. {faq.question}
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground">
@@ -688,11 +688,11 @@ const WebDesignGoldCoast = () => {
         </section>
 
         {/* Related Services and Cities */}
-        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
                   Related Services
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
@@ -711,7 +711,7 @@ const WebDesignGoldCoast = () => {
               </div>
 
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
                   Other Cities We Serve
                 </h2>
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
