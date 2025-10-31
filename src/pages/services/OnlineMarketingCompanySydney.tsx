@@ -352,9 +352,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                Stop the Marketing Bleed: Talk to a Sydney Digital Marketing Expert →
+                <span className="hidden sm:inline">Stop the Marketing Bleed: Talk to a Sydney Digital Marketing Expert →</span>
+                <span className="sm:hidden">Talk to a Sydney Expert →</span>
               </Button>
             </div>
           </div>
@@ -466,9 +467,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                See Our SEO Packages for Sydney Businesses <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">See Our SEO Packages for Sydney Businesses →</span>
+                <span className="sm:hidden">See SEO Packages →</span>
               </Button>
             </div>
           </div>
@@ -580,9 +582,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                See Our Google Ads Packages for Sydney Businesses <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">See Our Google Ads Packages for Sydney Businesses →</span>
+                <span className="sm:hidden">See Google Ads Packages →</span>
               </Button>
             </div>
           </div>
@@ -672,9 +675,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                See Our Meta Ads Packages for Sydney Businesses <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">See Our Meta Ads Packages for Sydney Businesses →</span>
+                <span className="sm:hidden">See Meta Ads Packages →</span>
               </Button>
             </div>
           </div>
@@ -764,9 +768,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                See Our Web Design Packages for Sydney Businesses <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">See Our Web Design Packages for Sydney Businesses →</span>
+                <span className="sm:hidden">See Web Design Packages →</span>
               </Button>
             </div>
           </div>
@@ -840,9 +845,10 @@ const OnlineMarketingCompanySydney = () => {
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
               >
-                Talk to a Sydney Digital Marketing Specialist <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                <span className="hidden sm:inline">Talk to a Sydney Digital Marketing Specialist →</span>
+                <span className="sm:hidden">Talk to a Specialist →</span>
               </Button>
             </div>
           </div>
