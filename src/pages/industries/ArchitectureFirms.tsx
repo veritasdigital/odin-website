@@ -307,7 +307,7 @@ const ArchitectureFirms = () => {
           <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
           <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-20 sm:py-24 lg:py-32 text-center -ml-4">
             <nav className="mb-8 text-sm" aria-label="Breadcrumb">
               <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
                 <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
