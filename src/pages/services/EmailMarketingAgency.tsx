@@ -345,7 +345,7 @@ const EmailMarketingAgency = () => {
 
       <Header />
       
-      <div className="min-h-screen pb-24 md:pb-0">
+      <div className="min-h-screen pb-32 md:pb-0">
         {/* Section 1: Hero Section */}
         <section className="relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
           {/* Floating Circles Background */}
