@@ -175,6 +175,13 @@ const TikTokAdvertising = () => {
       challenge: "Building trust and credibility with a sceptical audience",
       solution: "We create transformation stories, educational content, and community-building campaigns",
       benefits: "Engaged community, program signups, subscription growth"
+    },
+    {
+      icon: Smartphone,
+      title: "Education and Online Courses",
+      challenge: "Capturing attention and demonstrating value quickly",
+      solution: "We create snackable educational content, student success stories, and behind-the-scenes glimpses that showcase your expertise",
+      benefits: "Course enrollments, brand authority, student community growth"
     }
   ];
 
