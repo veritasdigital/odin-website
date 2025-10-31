@@ -83,6 +83,7 @@ import TikTokAdvertising from "./pages/services/TikTokAdvertising";
 import YouTubeAdvertising from "./pages/services/YouTubeAdvertising";
 import EmailMarketing from "./pages/services/EmailMarketing";
 import EmailMarketingAgency from "./pages/services/EmailMarketingAgency";
+import EcommerceAgency from "./pages/services/EcommerceAgency";
 import WebDesignHobart from "./pages/services/WebDesignHobart";
 import WebDesignGoldCoast from "./pages/services/WebDesignGoldCoast";
 import WebDesignCanberra from "./pages/services/WebDesignCanberra";
@@ -184,6 +185,7 @@ const App = () => (
           <Route path="/youtube-advertising" element={<YouTubeAdvertising />} />
           <Route path="/services/email-marketing" element={<EmailMarketing />} />
           <Route path="/email-marketing-agency" element={<EmailMarketingAgency />} />
+          <Route path="/ecommerce-agency" element={<EcommerceAgency />} />
             <Route path="/web-design-hobart" element={<WebDesignHobart />} />
             <Route path="/web-design-gold-coast" element={<WebDesignGoldCoast />} />
             <Route path="/web-design-canberra" element={<WebDesignCanberra />} />
