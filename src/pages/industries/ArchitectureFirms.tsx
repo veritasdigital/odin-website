@@ -298,46 +298,53 @@ const ArchitectureFirms = () => {
       <main className="min-h-screen">
         {/* Hero Section */}
         <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center justify-center bg-white decorative-circles">
+          {/* Background gradient */}
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
 
           {/* Floating decorative elements */}
-          <div className="absolute top-20 right-20 w-16 h-16 bg-primary/10 rounded-full animate-float"></div>
-          <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-20 right-20 w-16 h-16 bg-primary/10 rounded-full animate-float hidden lg:block"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float hidden lg:block" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float hidden lg:block" style={{ animationDelay: '4s' }}></div>
           
-          <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-24 lg:py-32">
-            <div className="flex flex-col items-center justify-center text-center w-full">
-              <nav className="mb-8 text-sm w-full max-w-4xl" aria-label="Breadcrumb">
-                <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
-                  <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
-                  <li><ArrowRight className="w-4 h-4" /></li>
-                  <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
-                  <li><ArrowRight className="w-4 h-4" /></li>
-                  <li className="text-foreground font-medium">Architecture Firms</li>
-                </ol>
-              </nav>
+          {/* Main content container */}
+          <div className="relative z-10 w-full">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-24 lg:py-32">
+              <div className="max-w-4xl mx-auto text-center space-y-8">
+                {/* Breadcrumb navigation */}
+                <nav className="text-sm" aria-label="Breadcrumb">
+                  <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
+                    <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+                    <li><ArrowRight className="w-4 h-4" /></li>
+                    <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
+                    <li><ArrowRight className="w-4 h-4" /></li>
+                    <li className="text-foreground font-medium">Architecture Firms</li>
+                  </ol>
+                </nav>
 
-              <div className="w-full max-w-4xl mx-auto">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight mb-6 px-2">
+                {/* Main heading */}
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight">
                   Digital Marketing for Architecture Firms
                 </h1>
                 
-                <p className="hero-sub-headline text-base sm:text-lg md:text-xl font-semibold text-foreground/90 mb-6 leading-relaxed px-2">
+                {/* Hero sub-headline */}
+                <p className="hero-sub-headline text-base sm:text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed max-w-3xl mx-auto">
                   Stop Relying on Unpredictable Referrals. Start Attracting High-Value Clients with Precision Digital Strategy.
                 </p>
 
-                <div className="max-w-3xl mx-auto">
-                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 leading-relaxed px-2">
+                {/* Description paragraphs */}
+                <div className="max-w-3xl mx-auto space-y-4">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                     Your firm designs award-winning spaces. Your marketing should be just as precise. We build digital strategies that attract the high-net-worth clients and large-scale projects your firm deserves.
                   </p>
 
-                  <p className="text-sm sm:text-base text-muted-foreground mb-8 leading-relaxed px-2">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     At Odin Digital, we understand that architecture is a high-value, low-volume business. Generic marketing doesn't work. We craft integrated digital ecosystems—combining SEO, PPC, Web Design, and Social Strategy—to position your firm as the authority in your niche, ensuring every lead is a qualified opportunity.
                   </p>
                 </div>
                 
+                {/* CTA button */}
                 <div className="pt-2">
                   <Button 
                     variant="default" 
