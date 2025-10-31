@@ -462,18 +462,18 @@ const InsuranceAgents = () => {
             </nav>
 
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-charcoal leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight mb-6">
                 Insurance Agents Marketing
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl font-semibold text-foreground/90 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl font-semibold text-foreground/90 mb-8 leading-relaxed">
                 Stop Buying Expensive, Cold Leads. We Build High-Trust Digital Systems That Deliver Qualified, Ready-to-Quote Clients Directly to Your Agency.
               </p>
               
               <Button 
                 variant="default" 
                 size="lg" 
-                className="text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
+                className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
                 onClick={openForm}
               >
                 Schedule Free Strategy Session
@@ -483,15 +483,15 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-12 sm:py-16 bg-muted/50">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <section className="py-10 sm:py-12 bg-muted/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {metrics.map((metric, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-black text-primary mb-2">
                     {metric.number}
                   </div>
-                  <div className="text-sm sm:text-base text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     {metric.label}
                   </div>
                 </div>
@@ -501,23 +501,23 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-16 sm:py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
                 The Insurance Marketing Challenge
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 Insurance marketing is different. Generic agencies don't understand your compliance requirements, target audience, or sales cycle.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {problems.map((problem, index) => (
-                <Card key={index} className="p-6 sm:p-8 border-2 hover:border-primary/50 transition-colors">
-                  <problem.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3">{problem.title}</h3>
-                  <p className="text-base text-muted-foreground">{problem.description}</p>
+                <Card key={index} className="p-4 sm:p-6 border-2 hover:border-primary/50 transition-colors">
+                  <problem.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">{problem.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground">{problem.description}</p>
                 </Card>
               ))}
             </div>
@@ -525,46 +525,46 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Testimonial Section */}
-        <section className="py-16 sm:py-20 bg-gradient-to-br from-primary/5 to-accent/5">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-            <div className="mb-8">
-              <div className="flex justify-center mb-4">
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-primary/5 to-accent/5">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 text-center">
+            <div className="mb-6 sm:mb-8">
+              <div className="flex justify-center mb-3 sm:mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Award key={i} className="w-5 h-5 sm:w-6 sm:h-6 text-yellow-500 fill-yellow-500" />
+                  <Award key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-yellow-500" />
                 ))}
               </div>
             </div>
-            <blockquote className="text-xl sm:text-2xl md:text-3xl font-semibold text-charcoal mb-6 leading-relaxed">
+            <blockquote className="text-lg sm:text-xl md:text-2xl font-semibold text-charcoal mb-4 sm:mb-6 leading-relaxed">
               "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
             </blockquote>
-            <cite className="text-base sm:text-lg text-muted-foreground not-italic">
+            <cite className="text-sm sm:text-base text-muted-foreground not-italic">
               <strong>Evan Tsaboukos</strong>, Imperial Wealth
             </cite>
           </div>
         </section>
 
         {/* Services Section */}
-        <section className="py-16 sm:py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
                 Our Insurance Marketing Services
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 Four core pillars designed specifically for insurance agencies and brokerages
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+            <div className="grid gap-4 sm:gap-6">
               {services.map((service, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover:shadow-xl transition-shadow">
-                  <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3">{service.title}</h3>
-                  <p className="text-base text-muted-foreground mb-4">{service.description}</p>
-                  <ul className="space-y-2">
+                <Card key={index} className="p-4 sm:p-6 hover:shadow-xl transition-shadow">
+                  <service.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-3" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-3">{service.description}</p>
+                  <ul className="space-y-1.5 sm:space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm sm:text-base">
-                        <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm">
+                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -576,20 +576,20 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Differentiators Section */}
-        <section className="py-16 sm:py-20 bg-muted/50">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+        <section className="py-12 sm:py-16 bg-muted/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
                 Why Insurance Agencies Choose Odin Digital
               </h2>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {differentiators.map((item, index) => (
-                <Card key={index} className="p-6 sm:p-8 text-center hover:shadow-xl transition-shadow">
-                  <item.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mx-auto mb-4" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-3">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground">{item.description}</p>
+                <Card key={index} className="p-4 sm:p-6 text-center hover:shadow-xl transition-shadow">
+                  <item.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary mx-auto mb-3" />
+                  <h3 className="text-base sm:text-lg font-bold mb-2">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground">{item.description}</p>
                 </Card>
               ))}
             </div>
@@ -597,26 +597,26 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-16 sm:py-20 lg:py-24">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
                 Our Proven Process
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 A systematic approach to building your digital authority and lead generation system
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {process.map((step, index) => (
-                <Card key={index} className="p-6 sm:p-8 relative flex flex-col">
-                  <div className="text-5xl sm:text-6xl font-black text-primary/20 mb-4">{step.step}</div>
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4">{step.description}</p>
-                  <div className="pt-4 border-t border-muted mt-auto">
-                    <p className="text-xs sm:text-sm font-semibold text-primary mb-2">You Get:</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">{step.deliverables}</p>
+                <Card key={index} className="p-4 sm:p-6 relative flex flex-col">
+                  <div className="text-4xl sm:text-5xl font-black text-primary/20 mb-3">{step.step}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-3">{step.description}</p>
+                  <div className="pt-3 border-t border-muted mt-auto">
+                    <p className="text-xs font-semibold text-primary mb-1.5">You Get:</p>
+                    <p className="text-xs text-muted-foreground">{step.deliverables}</p>
                   </div>
                 </Card>
               ))}
@@ -625,23 +625,23 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Why Choose Us Expanded Section */}
-        <section className="py-16 sm:py-20 bg-gradient-to-br from-charcoal to-accent text-white">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        <section className="py-12 sm:py-16 bg-gradient-to-br from-charcoal to-accent text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
                 Why Choose Odin Digital for Your Insurance Agency?
               </h2>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-8 sm:gap-12">
+            <div className="grid gap-6 sm:gap-8">
               {whyChoose.map((item, index) => (
-                <div key={index} className="flex gap-4 sm:gap-6">
+                <div key={index} className="flex gap-3 sm:gap-4">
                   <div className="flex-shrink-0">
-                    <item.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary" />
+                    <item.icon className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-3">{item.title}</h3>
-                    <p className="text-base sm:text-lg text-white/90 leading-relaxed">{item.content}</p>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-white/90 leading-relaxed">{item.content}</p>
                   </div>
                 </div>
               ))}
@@ -650,18 +650,18 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-r from-primary to-secondary text-white text-center">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+        <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-primary to-secondary text-white text-center">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
               Ready to Grow Your Insurance Agency?
             </h2>
-            <p className="text-lg sm:text-xl mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
               Stop buying cold leads. Start building a high-trust digital system that delivers qualified, ready-to-quote clients directly to your agency. Schedule a free strategy session today.
             </p>
             <Button 
               variant="secondary" 
               size="lg" 
-              className="text-base sm:text-lg px-8 sm:px-12 py-5 sm:py-6 bg-white text-primary hover:bg-white/90"
+              className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 bg-white text-primary hover:bg-white/90"
               onClick={openForm}
             >
               Schedule Free Strategy Session
@@ -670,15 +670,15 @@ const InsuranceAgents = () => {
         </section>
 
         {/* Related Services & Locations */}
-        <section className="py-16 sm:py-20 bg-muted/50">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="grid md:grid-cols-3 gap-8 sm:gap-12">
+        <section className="py-12 sm:py-16 bg-muted/50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Related Services</h3>
-                <ul className="space-y-2 sm:space-y-3">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Related Services</h3>
+                <ul className="space-y-2">
                   {relatedServices.map((service, index) => (
                     <li key={index}>
-                      <Link to={service.url} className="text-primary hover:underline text-sm sm:text-base">
+                      <Link to={service.url} className="text-primary hover:underline text-sm">
                         {service.name}
                       </Link>
                     </li>
@@ -687,11 +687,11 @@ const InsuranceAgents = () => {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Service Locations</h3>
-                <ul className="space-y-2 sm:space-y-3">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Service Locations</h3>
+                <ul className="space-y-2">
                   {relatedLocations.map((location, index) => (
                     <li key={index}>
-                      <Link to={location.url} className="text-primary hover:underline text-sm sm:text-base">
+                      <Link to={location.url} className="text-primary hover:underline text-sm">
                         {location.name}
                       </Link>
                     </li>
@@ -700,11 +700,11 @@ const InsuranceAgents = () => {
               </div>
 
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Other Industries</h3>
-                <ul className="space-y-2 sm:space-y-3">
+                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Other Industries</h3>
+                <ul className="space-y-2">
                   {relatedIndustries.map((industry, index) => (
                     <li key={index}>
-                      <Link to={industry.url} className="text-primary hover:underline text-sm sm:text-base">
+                      <Link to={industry.url} className="text-primary hover:underline text-sm">
                         {industry.name}
                       </Link>
                     </li>
@@ -716,21 +716,21 @@ const InsuranceAgents = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 sm:py-20 lg:py-24">
-          <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-4">
+        <section className="py-12 sm:py-16 lg:py-20 pb-20 sm:pb-24">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal mb-3 sm:mb-4">
                 Frequently Asked Questions
               </h2>
             </div>
 
-            <Accordion type="single" collapsible className="space-y-4">
+            <Accordion type="single" collapsible className="space-y-3">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                  <AccordionTrigger className="text-left text-base sm:text-lg font-semibold hover:no-underline py-4">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-4 sm:px-6">
+                  <AccordionTrigger className="text-left text-sm sm:text-base font-semibold hover:no-underline py-3 sm:py-4">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-sm sm:text-base text-muted-foreground pb-4">
+                  <AccordionContent className="text-xs sm:text-sm text-muted-foreground pb-3 sm:pb-4">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
