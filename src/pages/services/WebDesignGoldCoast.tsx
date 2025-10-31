@@ -313,7 +313,7 @@ const WebDesignGoldCoast = () => {
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background pb-20 md:pb-0">
         <Header />
 
         {/* Hero Section with Floating Circles */}
