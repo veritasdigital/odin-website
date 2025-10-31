@@ -373,19 +373,19 @@ const WebDesignCanberra = () => {
                 Professional Web Design & Development for Canberra Businesses
               </h1>
               
-              <p className="hero-sub-headline text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
+              <p className="hero-sub-headline text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
                 Your website is often the first impression potential customers have of your business. For Canberra businesses, a professional, modern website isn't a luxury—it's a necessity.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
                 Yet many Canberra businesses are stuck with outdated websites that don't reflect their brand, don't work on mobile devices, and don't convert visitors into customers. At Odin Digital, we've helped over 150 Canberra businesses get modern, conversion-focused websites that drive real results.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
                 Whether you need a complete website redesign, a new e-commerce platform, or a WordPress site, we deliver professional web design that works.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 px-2">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-3 sm:pt-4 md:pt-6 px-2">
                 <Button 
                   size="xl" 
                   variant="cta"
@@ -400,13 +400,13 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Why Canberra Businesses Need Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Why Canberra Businesses Need Professional Web Design
             </h2>
             
-            <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 text-sm sm:text-base md:text-lg text-muted-foreground px-2">
+            <div className="max-w-4xl mx-auto space-y-3 sm:space-y-4 md:space-y-6 text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground px-2">
               <p>
                 Canberra's business landscape is diverse and competitive. From government contractors to professional services, retail to hospitality, every business needs a strong online presence to succeed.
               </p>
@@ -424,26 +424,26 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Challenges Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               The Web Design Challenge
             </h2>
             
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 sm:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
               Canberra businesses face unique challenges when it comes to web design.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {challenges.map((challenge, index) => {
                 const Icon = challenge.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary mb-3 sm:mb-4" />
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary mb-2 sm:mb-3 md:mb-4" />
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                       {challenge.title}
                     </h3>
                     <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -454,29 +454,29 @@ const WebDesignCanberra = () => {
               })}
             </div>
 
-            <p className="text-base sm:text-lg text-muted-foreground mt-8 sm:mt-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mt-6 sm:mt-8 md:mt-12 text-center max-w-3xl mx-auto px-2">
               We've spent years perfecting web design for Canberra businesses. We understand these challenges and have developed solutions that deliver results.
             </p>
           </div>
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Why Canberra Businesses Choose Odin Digital
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {whyChooseUs.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary mb-3 sm:mb-4" />
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary mb-2 sm:mb-3 md:mb-4" />
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -487,8 +487,8 @@ const WebDesignCanberra = () => {
               })}
             </div>
 
-            <div className="text-center mt-8 sm:mt-12">
-              <Button 
+            <div className="text-center mt-6 sm:mt-8 md:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -501,27 +501,27 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Our Web Design Services for Canberra
             </h2>
 
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4 md:space-y-6">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="flex flex-col md:flex-row md:items-start gap-4">
-                      <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary flex-shrink-0" />
+                    <div className="flex flex-col md:flex-row md:items-start gap-3 sm:gap-4">
+                      <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary flex-shrink-0" />
                       <div className="flex-1">
-                        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                        <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                           {service.title}
                         </h3>
-                        <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-4">
+                        <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3 sm:mb-4">
                           {service.description}
                         </p>
                         <ul className="grid sm:grid-cols-2 gap-2">
@@ -539,8 +539,8 @@ const WebDesignCanberra = () => {
               })}
             </div>
 
-            <div className="text-center mt-8 sm:mt-12">
-              <Button 
+            <div className="text-center mt-6 sm:mt-8 md:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -553,27 +553,27 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Our Web Design Process
             </h2>
 
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4 md:space-y-6">
               {processSteps.map((step, index) => (
                 <div 
                   key={index}
-                  className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                  className="p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="flex flex-col sm:flex-row items-start gap-4">
+                  <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4">
                     <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center">
                       <span className="text-xl sm:text-2xl font-bold text-primary">{step.number}</span>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                      <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3">
+                      <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                         {step.description}
                       </p>
                       <p className="text-xs sm:text-sm text-primary font-medium">
@@ -588,25 +588,25 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Business Types Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Web Design for Different Canberra Business Types
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
               {businessTypes.map((business, index) => {
                 const Icon = business.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-4 sm:p-6 md:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-6 lg:p-8 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-primary mb-3 sm:mb-4" />
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-foreground mb-2 sm:mb-3">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary mb-2 sm:mb-3 md:mb-4" />
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-2 sm:mb-3">
                       {business.title}
                     </h3>
-                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-3">
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                       {business.description}
                     </p>
                     <p className="text-xs sm:text-sm text-primary font-medium">
@@ -620,19 +620,19 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 sm:mb-8 text-center px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
               Frequently Asked Questions
             </h2>
 
-            <div className="space-y-4 sm:space-y-6">
+            <div className="space-y-3 sm:space-y-4 md:space-y-6">
               {faqs.map((faq, index) => (
                 <div 
                   key={index}
-                  className="p-4 sm:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                  className="p-3 sm:p-4 md:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                 >
-                  <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3">
+                  <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-2 sm:mb-3">
                     {faq.question}
                   </h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -645,12 +645,12 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-gradient-to-br from-primary/20 via-secondary/10 to-background">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-gradient-to-br from-primary/20 via-secondary/10 to-background">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 px-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 px-2">
               Ready to Get a Professional Website?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto px-2">
               Stop losing customers to outdated websites. Get a modern, conversion-focused website that drives real results for your Canberra business.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-2">
@@ -676,9 +676,9 @@ const WebDesignCanberra = () => {
         </section>
 
         {/* Related Services and Cities */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-8 sm:gap-12">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
               <div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
                   Related Services
