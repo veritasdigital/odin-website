@@ -82,6 +82,7 @@ import FacebookAdsNewcastle from "./pages/services/FacebookAdsNewcastle";
 import TikTokAdvertising from "./pages/services/TikTokAdvertising";
 import YouTubeAdvertising from "./pages/services/YouTubeAdvertising";
 import EmailMarketing from "./pages/services/EmailMarketing";
+import EmailMarketingAgency from "./pages/services/EmailMarketingAgency";
 import WebDesignHobart from "./pages/services/WebDesignHobart";
 import WebDesignGoldCoast from "./pages/services/WebDesignGoldCoast";
 import WebDesignCanberra from "./pages/services/WebDesignCanberra";
@@ -181,7 +182,8 @@ const App = () => (
           <Route path="/facebook-ads-newcastle" element={<FacebookAdsNewcastle />} />
           <Route path="/tiktok-advertising" element={<TikTokAdvertising />} />
           <Route path="/youtube-advertising" element={<YouTubeAdvertising />} />
-            <Route path="/services/email-marketing" element={<EmailMarketing />} />
+          <Route path="/services/email-marketing" element={<EmailMarketing />} />
+          <Route path="/email-marketing-agency" element={<EmailMarketingAgency />} />
             <Route path="/web-design-hobart" element={<WebDesignHobart />} />
             <Route path="/web-design-gold-coast" element={<WebDesignGoldCoast />} />
             <Route path="/web-design-canberra" element={<WebDesignCanberra />} />
