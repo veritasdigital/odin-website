@@ -231,7 +231,7 @@ const OnlineMarketingCompanySydney = () => {
           
           <div className="container mx-auto max-w-6xl relative z-10 px-3 sm:px-4 md:px-6">
             <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-foreground leading-tight mt-8 sm:mt-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-foreground leading-tight mt-8 sm:mt-4">
                 Online Marketing Company Sydney
               </h1>
               
