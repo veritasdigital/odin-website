@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { 
   CheckCircle2, 
@@ -326,6 +329,7 @@ const WebDesignHobart = () => {
 
   return (
     <>
+      <Header />
       <Helmet>
         <title>Web Design Hobart | High-Converting Websites with 540% ROI | Odin Digital</title>
         <meta 
@@ -337,7 +341,7 @@ const WebDesignHobart = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-background pt-20">
         {/* Breadcrumb Navigation */}
         <div className="container mx-auto px-4 sm:px-6 py-4">
           <nav className="flex text-sm text-muted-foreground">
@@ -352,29 +356,29 @@ const WebDesignHobart = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-16 sm:py-24 px-4 sm:px-6 overflow-hidden">
+        <section className="relative py-20 sm:py-32 px-4 sm:px-6 overflow-hidden bg-gradient-hero">
           {/* Floating circles background */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-float-delayed" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl animate-pulse-slow" />
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" style={{ animation: 'float 8s ease-in-out infinite' }} />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl" style={{ animation: 'float 10s ease-in-out infinite' }} />
           </div>
 
           <div className="container mx-auto max-w-6xl relative z-10">
             <div className="text-center space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-slide-up">
                 Web Design Hobart
               </h1>
               
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight max-w-4xl mx-auto">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white/95 leading-tight max-w-4xl mx-auto">
                 Stop Paying Hobart Developers for a Digital Brochure. We Build High-Converting Websites That Deliver a Proven 540% ROI.
               </p>
 
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-white/90 max-w-3xl mx-auto">
                 The Web Design Hobart Agency Australian Businesses Trust for High-Converting Websites and Predictable ROI.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg text-white/85 max-w-3xl mx-auto">
                 Partner with Odin Digital and Watch Your Website Drive Real Revenue, Not Just Traffic.
               </p>
 
@@ -794,6 +798,9 @@ const WebDesignHobart = () => {
             </Accordion>
           </div>
         </section>
+
+        <Footer />
+        <SideTab />
 
         {/* Mobile Sticky CTA */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border z-50">
