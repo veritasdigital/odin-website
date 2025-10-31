@@ -758,28 +758,28 @@ const OnlineMarketingCompanyMelbourne = () => {
             </div>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-              <Link to="/ppc-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/ppc-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">PPC Agency</h3>
               </Link>
-              <Link to="/seo-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/seo-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">SEO Agency</h3>
               </Link>
-              <Link to="/meta-ads-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/meta-ads-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Meta Ads Agency</h3>
               </Link>
-              <Link to="/web-design-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/web-design-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Web Design Agency</h3>
               </Link>
-              <Link to="/google-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/google-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Google Ads Melbourne</h3>
               </Link>
-              <Link to="/facebook-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/facebook-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Facebook Ads Melbourne</h3>
               </Link>
-              <Link to="/web-design-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/web-design-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Web Design Melbourne</h3>
               </Link>
-              <Link to="/online-marketing-company-sydney" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group">
+              <Link to="/online-marketing-company-sydney" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
                 <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Sydney Digital Marketing</h3>
               </Link>
             </div>
