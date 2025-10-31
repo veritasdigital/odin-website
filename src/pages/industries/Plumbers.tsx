@@ -535,16 +535,16 @@ const Plumbers = () => {
 
             <div className="grid gap-4 md:gap-6 lg:grid-cols-3">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-4 md:p-6">
+                <Card key={index} className="p-4 md:p-6 flex flex-col">
                   <div className="flex justify-center mb-3 md:mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Award key={i} className="w-4 h-4 md:w-5 md:h-5 text-yellow-500 fill-yellow-500" />
                     ))}
                   </div>
-                  <blockquote className="text-sm md:text-base text-charcoal mb-4 leading-relaxed italic">
+                  <blockquote className="text-sm md:text-base text-charcoal mb-4 leading-relaxed italic flex-grow">
                     "{testimonial.quote}"
                   </blockquote>
-                  <cite className="text-xs md:text-sm text-muted-foreground not-italic">
+                  <cite className="text-xs md:text-sm text-muted-foreground not-italic mt-auto">
                     <strong>{testimonial.author}</strong>, {testimonial.company}
                   </cite>
                 </Card>
