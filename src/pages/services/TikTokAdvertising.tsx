@@ -380,7 +380,7 @@ const TikTokAdvertising = () => {
         {/* Why TikTok Matters */}
         <section className="py-24 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="max-w-4xl">
+            <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6">
                 Why TikTok Advertising Matters Now
               </h2>
