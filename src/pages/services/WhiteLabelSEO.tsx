@@ -709,128 +709,128 @@ const WhiteLabelSEO = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-2" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-2" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   How do you ensure the quality of your SEO work?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Our work is managed by an Australian-based team and adheres strictly to ethical, white-hat SEO best practices. We focus on long-term, sustainable growth through high-quality content, technical excellence, and manual, high-authority link building. We never use risky or black-hat tactics that could jeopardize your client's domain.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-3" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-3" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Will my clients know that I am using a white label partner?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   No. We operate with 100% discretion. All communication with you is confidential, and all reports and dashboards are fully white-labeled and branded with your agency's logo and colours. We are the silent, expert extension of your team.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-4" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   How do you handle client communication?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Our standard process is to communicate only with your agency's account manager. You maintain the direct client relationship. However, if you require it, we can join client calls as a "senior SEO specialist" from your team—we adapt to whatever model best suits your client relationship.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-5" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-5" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   What kind of reporting do you provide?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   We provide comprehensive monthly reports that are fully white-labeled and ready for client presentation. These reports include key metrics like keyword ranking progress, organic traffic growth, conversion tracking, and a detailed breakdown of the work completed, all presented in a clear, easy-to-understand format.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-6" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-6" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   How quickly can we onboard a new client?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Once we have a signed agreement, we can typically complete the initial technical audit and strategy development within 48-72 hours. This allows your agency to start delivering value and reporting progress to your client almost immediately.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-7" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-7" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Can you handle a sudden influx of new SEO clients?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Yes. Our program is designed for instant scalability. We maintain the capacity and infrastructure to handle rapid growth, allowing your agency to take on new business without worrying about fulfillment bottlenecks or compromising quality.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-8" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-8" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Do you offer services other than general SEO?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Yes. Our white label services cover the full spectrum of SEO, including Local SEO optimization (Google Business Profile management), in-depth Technical SEO audits, content strategy, and high-authority link building.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-9" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-9" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   What are the costs involved in your white label program?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Our pricing is structured to ensure a healthy profit margin for your agency. We offer transparent, tiered pricing based on the level of fulfillment required. We view our service as a profit center for your agency, not a cost.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-10" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-10" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Do you require a long-term contract?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   No. We operate on a month-to-month basis with no lock-in contracts. We believe our quality and reliability should be the only reason you stay with us.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-11" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-11" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   How does your white label service protect my agency's reputation?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   By guaranteeing quality, using ethical practices, and providing transparent reporting, we ensure that every result we deliver is a positive reflection on your agency. We mitigate the risk of client churn caused by poor SEO performance.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-12" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-12" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   How do we get started?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   The first step is a free, confidential Agency Scalability Audit. We'll analyze your current service gaps and show you exactly how our white label program can integrate seamlessly to boost your profitability.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-13" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-13" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Do you provide training for my sales team?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Yes. We provide your sales team with the necessary training and collateral to confidently sell our SEO services. This includes pitch decks, case studies, and a clear understanding of the value proposition.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-14" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-14" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   Can we set our own pricing for the services?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Absolutely. You set the final client price. Our goal is to provide you with a high-quality fulfillment cost that allows you to maintain a strong, profitable margin while offering competitive client pricing.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-15" className="border border-border rounded-lg px-4 sm:px-6">
-                <AccordionTrigger className="text-sm sm:text-base md:text-lg font-semibold text-left">
+              <AccordionItem value="item-15" className="border border-border rounded-lg px-3 sm:px-4 md:px-6">
+                <AccordionTrigger className="text-xs sm:text-sm md:text-base font-semibold text-left">
                   What makes your link building ethical and safe?
                 </AccordionTrigger>
-                <AccordionContent className="text-sm sm:text-base text-muted-foreground">
+                <AccordionContent className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   We only engage in manual outreach to secure natural, editorial links from reputable websites. We strictly avoid PBNs, link farms, or any form of manipulative link scheme, ensuring the long-term safety and growth of your client's domain.
                 </AccordionContent>
               </AccordionItem>
