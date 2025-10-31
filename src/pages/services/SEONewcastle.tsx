@@ -455,7 +455,7 @@ const SEONewcastle = () => {
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <div className="font-semibold text-xs sm:text-sm">Liam C - Krush Organics</div>
+                <div className="font-semibold text-xs sm:text-sm text-left mt-auto pt-2">Liam C - Krush Organics</div>
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
@@ -466,7 +466,7 @@ const SEONewcastle = () => {
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                 </p>
-                <div className="font-semibold text-xs sm:text-sm">Fabienne Costa - YCL Jewels</div>
+                <div className="font-semibold text-xs sm:text-sm text-left mt-auto pt-2">Fabienne Costa - YCL Jewels</div>
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
@@ -477,7 +477,7 @@ const SEONewcastle = () => {
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
                   "Outstanding results. Our organic traffic increased by 400% and our revenue has followed suit. The transparency and communication is refreshing."
                 </p>
-                <div className="font-semibold text-xs sm:text-sm">Adriatic Furniture</div>
+                <div className="font-semibold text-xs sm:text-sm text-left mt-auto pt-2">Adriatic Furniture</div>
               </div>
             </div>
           </div>
