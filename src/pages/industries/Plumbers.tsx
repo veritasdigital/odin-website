@@ -470,38 +470,43 @@ const Plumbers = () => {
           {/* Main content container */}
           <div className="relative z-10 w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-24 lg:py-32">
-              <div className="max-w-4xl mx-auto text-center space-y-6 lg:space-y-8">
-                {/* Breadcrumb navigation */}
-                <nav className="text-sm" aria-label="Breadcrumb">
-                  <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
-                    <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
-                    <li><ArrowRight className="w-4 h-4" /></li>
-                    <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
-                    <li><ArrowRight className="w-4 h-4" /></li>
-                    <li className="text-foreground font-medium">Plumbers Marketing</li>
-                  </ol>
-                </nav>
+              <div className="max-w-4xl mx-auto text-center">
+                <div className="space-y-6 lg:space-y-8">
+                  {/* Breadcrumb navigation */}
+                  <nav className="text-sm" aria-label="Breadcrumb">
+                    <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
+                      <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+                      <li><ArrowRight className="w-4 h-4" /></li>
+                      <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
+                      <li><ArrowRight className="w-4 h-4" /></li>
+                      <li className="text-foreground font-medium">Plumbers Marketing</li>
+                    </ol>
+                  </nav>
 
-                {/* Main heading */}
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight">
-                  Plumbers Marketing
-                </h1>
-                
-                {/* Hero sub-headline */}
-                <p className="hero-sub-headline text-base sm:text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                  Stop Wasting Money on Tyre-Kickers and Low-Quality Leads. We Build High-Trust Digital Systems That Deliver Qualified, High-Margin Jobs Directly to Your Plumbing Business.
-                </p>
-                
-                {/* CTA button */}
-                <div className="pt-2">
-                  <Button 
-                    variant="default" 
-                    size="lg" 
-                    className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
-                    onClick={openForm}
-                  >
-                    Schedule Free Strategy Session
-                  </Button>
+                  {/* Hero content block */}
+                  <div className="space-y-4 lg:space-y-6">
+                    {/* Main heading */}
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight">
+                      Plumbers Marketing
+                    </h1>
+                    
+                    {/* Hero sub-headline */}
+                    <p className="hero-sub-headline text-base sm:text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                      Stop Wasting Money on Tyre-Kickers and Low-Quality Leads. We Build High-Trust Digital Systems That Deliver Qualified, High-Margin Jobs Directly to Your Plumbing Business.
+                    </p>
+                  </div>
+                  
+                  {/* CTA button */}
+                  <div>
+                    <Button 
+                      variant="default" 
+                      size="lg" 
+                      className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
+                      onClick={openForm}
+                    >
+                      Schedule Free Strategy Session
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
