@@ -344,18 +344,18 @@ const WebDesignNewcastle = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-20 pb-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
+        <section className="relative pt-16 pb-10 sm:pt-20 sm:pb-12 md:py-16 lg:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
           <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
           <div className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
           
           <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2 mt-4 sm:mt-0">
+            <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-foreground leading-tight px-2 mt-2 sm:mt-4">
                 Web Design Newcastle
               </h1>
               
-              <p className="hero-sub-headline text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
+              <p className="hero-sub-headline text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
                 Stop Paying for Websites That Look Good But Don't Convert. Start Turning Visitors into Customers with High-Converting Web Design Built for Newcastle Businesses.
               </p>
 
@@ -368,20 +368,20 @@ const WebDesignNewcastle = () => {
               </p>
 
               {/* Trust Signals */}
-              <div className="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto pt-4">
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 max-w-3xl mx-auto pt-2 sm:pt-4">
                 {metrics.map((metric, index) => {
                   const Icon = metric.icon;
                   return (
-                    <div key={index} className="text-center">
-                      <Icon className="w-6 h-6 sm:w-8 sm:h-8 mx-auto text-primary mb-2" />
-                      <div className="text-lg sm:text-2xl md:text-3xl font-bold text-foreground">{metric.number}</div>
-                      <div className="text-xs sm:text-sm text-muted-foreground">{metric.label}</div>
+                  <div key={index} className="text-center">
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mx-auto text-primary mb-1 sm:mb-2" />
+                      <div className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold text-foreground">{metric.number}</div>
+                      <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground leading-tight">{metric.label}</div>
                     </div>
                   );
                 })}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-3 sm:pt-4 md:pt-6 px-2">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center pt-2 sm:pt-3 md:pt-6 px-2">
                 <Button 
                   size="xl" 
                   variant="cta"
@@ -396,26 +396,26 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Problem/Agitation Section */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 text-center px-2">
               Why Most Web Design Companies Fail Newcastle Businesses
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-4 sm:mb-6 md:mb-8 lg:mb-12 text-center max-w-3xl mx-auto px-2">
               Newcastle businesses waste millions every year on web development Newcastle projects that look impressive in screenshots but deliver nothing to the bottom line. Here's why most agencies fail.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {painPoints.map((point, index) => {
                 const Icon = point.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-3 sm:p-4 md:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4" />
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3">
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary mb-2 sm:mb-3" />
+                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-1 sm:mb-2 md:mb-3">
                       {point.title}
                     </h3>
                     <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -426,8 +426,8 @@ const WebDesignNewcastle = () => {
               })}
             </div>
 
-            <div className="text-center mt-6 sm:mt-8 md:mt-12">
-              <Button 
+            <div className="text-center mt-4 sm:mt-6 md:mt-8 lg:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -440,26 +440,26 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Conversion-Focused Design */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 text-center px-2">
               Conversion-Focused Design: Built to Sell, Not Just Look Good
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground mb-4 sm:mb-6 md:mb-8 lg:mb-12 text-center max-w-3xl mx-auto px-2">
               We don't just build pretty websites. We build website development Newcastle projects designed to convert your visitors into customers.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid sm:grid-cols-2 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {conversionDesign.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div 
                     key={index}
-                    className="p-3 sm:p-4 md:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
+                    className="p-3 sm:p-4 md:p-5 lg:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300"
                   >
-                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-primary mb-2 sm:mb-3 md:mb-4" />
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-foreground mb-2 sm:mb-3">
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-primary mb-2 sm:mb-3" />
+                    <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-foreground mb-1 sm:mb-2 md:mb-3">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -470,8 +470,8 @@ const WebDesignNewcastle = () => {
               })}
             </div>
 
-            <div className="text-center mt-6 sm:mt-8 md:mt-12">
-              <Button 
+            <div className="text-center mt-4 sm:mt-6 md:mt-8 lg:mt-12">
+              <Button
                 size="lg" 
                 variant="cta"
                 onClick={openForm}
@@ -484,17 +484,17 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Speed Optimization */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 text-center px-2">
               Speed Optimization: Sub-3-Second Load Times
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground mb-4 sm:mb-6 md:mb-8 lg:mb-12 text-center max-w-3xl mx-auto px-2">
               We build web development companies Newcastle websites that load in under 3 seconds.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {speedOptimization.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -616,17 +616,17 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Services */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 text-center px-2">
               Our Newcastle Web Design Services
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground mb-4 sm:mb-6 md:mb-8 lg:mb-12 text-center max-w-3xl mx-auto px-2">
               We offer comprehensive small business website Newcastle and enterprise web development services.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
@@ -660,17 +660,17 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 text-center px-2">
               Why Newcastle Businesses Choose Odin Digital
             </h2>
             
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 md:mb-12 text-center max-w-3xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground mb-4 sm:mb-6 md:mb-8 lg:mb-12 text-center max-w-3xl mx-auto px-2">
               We are not a generalist agency that dabbles in web design. We are specialists who understand how to build websites that convert Newcastle customers.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
               {whyChooseUs.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -704,13 +704,13 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-4 sm:mb-6 md:mb-8 text-center px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 lg:mb-8 text-center px-2">
               FAQs: Your Questions About Newcastle Web Design Answered
             </h2>
 
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
               {faqs.map((faq, index) => (
                 <div 
                   key={index}
@@ -718,9 +718,9 @@ const WebDesignNewcastle = () => {
                 >
                   <button
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                    className="w-full p-3 sm:p-4 md:p-6 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
+                    className="w-full p-3 sm:p-4 md:p-5 lg:p-6 text-left flex items-center justify-between hover:bg-muted/50 transition-colors"
                   >
-                    <h3 className="text-sm sm:text-base md:text-lg font-bold text-foreground pr-4">
+                    <h3 className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-foreground pr-3 sm:pr-4">
                       {faq.question}
                     </h3>
                     <ChevronDown 
@@ -730,7 +730,7 @@ const WebDesignNewcastle = () => {
                     />
                   </button>
                   {openFaq === index && (
-                    <div className="px-3 sm:px-4 md:px-6 pb-3 sm:pb-4 md:pb-6">
+                    <div className="px-3 sm:px-4 md:px-5 lg:px-6 pb-3 sm:pb-4 md:pb-5 lg:pb-6">
                       <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                         {faq.answer}
                       </p>
@@ -743,16 +743,16 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-gradient-to-br from-primary/20 via-secondary/10 to-background">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6 bg-gradient-to-br from-primary/20 via-secondary/10 to-background">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6 px-2">
+            <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold text-foreground mb-2 sm:mb-3 md:mb-4 lg:mb-6 px-2">
               Ready to Stop Losing Customers and Start Converting Newcastle Visitors into Revenue?
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto px-2">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-muted-foreground mb-3 sm:mb-4 md:mb-6 lg:mb-8 max-w-2xl mx-auto px-2">
               Stop settling for websites that don't convert. Start working with the web design agency Newcastle that delivers high-converting websites and predictable ROI.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-2">
-              <Button 
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center px-2">
+              <Button
                 size="xl" 
                 variant="cta"
                 onClick={openForm}
@@ -765,14 +765,14 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Related Services and Cities */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 bg-muted/30">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-24 px-4 sm:px-6 bg-muted/30">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
+                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6">
                   Related Services
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 md:gap-4">
                   {relatedServices.map((service, index) => (
                     <Link 
                       key={index}
@@ -788,10 +788,10 @@ const WebDesignNewcastle = () => {
               </div>
 
               <div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-4 sm:mb-6">
+                <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-3 sm:mb-4 md:mb-6">
                   Other Cities We Serve
                 </h2>
-                <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
                   {relatedCities.map((city, index) => (
                     <Link 
                       key={index}
