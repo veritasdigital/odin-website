@@ -233,7 +233,8 @@ const WebDesignGoldCoast = () => {
     { name: "Facebook Ads Gold Coast", url: "/facebook-ads-gold-coast" },
     { name: "SEO Gold Coast", url: "/seo-gold-coast" },
     { name: "Email Marketing", url: "/services/email-marketing" },
-    { name: "Social Media Advertising", url: "/social-media-advertising" }
+    { name: "Social Media Advertising", url: "/social-media-advertising" },
+    { name: "Marketing Consulting", url: "/services/marketing-consulting" }
   ];
 
   const relatedCities = [
