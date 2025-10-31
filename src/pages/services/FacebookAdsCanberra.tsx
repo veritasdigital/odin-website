@@ -343,7 +343,7 @@ const FacebookAdsCanberra = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-24 px-6 overflow-hidden bg-gradient-subtle">
+        <section className="relative pt-32 pb-32 px-6 overflow-hidden bg-gradient-subtle">
           {/* Floating circles decoration */}
           <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float-delayed" />
@@ -369,7 +369,7 @@ const FacebookAdsCanberra = () => {
                 size="xl" 
                 variant="cta"
                 onClick={openForm}
-                className="w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight"
+                className="w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight text-base sm:text-lg"
               >
                 Get Your Free Meta Ads Audit →
               </Button>
@@ -380,11 +380,11 @@ const FacebookAdsCanberra = () => {
         {/* Social Proof Metrics */}
         <section className="py-16 bg-accent/5">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {socialProof.map((metric, index) => (
-                <Card key={index} className="p-8 text-center bg-background border-border hover:shadow-elegant transition-all">
-                  <div className="text-4xl sm:text-5xl font-black text-primary mb-2">{metric.number}</div>
-                  <div className="text-sm sm:text-base text-muted-foreground font-medium">{metric.label}</div>
+                <Card key={index} className="p-6 sm:p-8 text-center bg-background border-border hover:shadow-elegant transition-all">
+                  <div className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2">{metric.number}</div>
+                  <div className="text-sm sm:text-base text-muted-foreground font-medium break-words">{metric.label}</div>
                 </Card>
               ))}
             </div>
@@ -401,11 +401,11 @@ const FacebookAdsCanberra = () => {
               The Canberra market presents unique challenges that generic strategies can't solve
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {problems.map((problem, index) => (
-                <Card key={index} className="p-8 bg-background border-border hover:border-primary/20 transition-colors">
-                  <h3 className="text-xl font-bold text-foreground mb-4">{problem.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
+                <Card key={index} className="p-6 sm:p-8 bg-background border-border hover:border-primary/20 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{problem.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">{problem.description}</p>
                 </Card>
               ))}
             </div>
@@ -419,49 +419,49 @@ const FacebookAdsCanberra = () => {
               Real Results from Canberra Businesses
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="p-8 bg-background border-border flex flex-col">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <Card className="p-6 sm:p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
+                <p className="text-sm sm:text-base text-foreground mb-6 italic leading-relaxed flex-grow break-words">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-bold text-foreground">Liam C</div>
-                  <div className="text-sm text-muted-foreground">Krush Organics</div>
+                  <div className="font-bold text-foreground break-words">Liam C</div>
+                  <div className="text-sm text-muted-foreground break-words">Krush Organics</div>
                 </div>
               </Card>
 
-              <Card className="p-8 bg-background border-border flex flex-col">
+              <Card className="p-6 sm:p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
+                <p className="text-sm sm:text-base text-foreground mb-6 italic leading-relaxed flex-grow break-words">
                   "After wasting $20K with another agency, Odin rebuilt our entire Meta Ads strategy. Within 90 days, we went from $150 CPQL to $42 CPQL while doubling our lead volume. Game-changing results."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-bold text-foreground">Sarah M</div>
-                  <div className="text-sm text-muted-foreground">Canberra Professional Services</div>
+                  <div className="font-bold text-foreground break-words">Sarah M</div>
+                  <div className="text-sm text-muted-foreground break-words">Canberra Professional Services</div>
                 </div>
               </Card>
 
-              <Card className="p-8 bg-background border-border flex flex-col">
+              <Card className="p-6 sm:p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
+                <p className="text-sm sm:text-base text-foreground mb-6 italic leading-relaxed flex-grow break-words">
                   "We thought Facebook Ads 'didn't work' for B2B in Canberra. Odin proved us wrong. They generated 47 qualified enterprise leads in 60 days with a 680% ROI. Absolutely worth every dollar."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-bold text-foreground">James T</div>
-                  <div className="text-sm text-muted-foreground">ACT B2B Technology Company</div>
+                  <div className="font-bold text-foreground break-words">James T</div>
+                  <div className="text-sm text-muted-foreground break-words">ACT B2B Technology Company</div>
                 </div>
               </Card>
             </div>
@@ -478,20 +478,20 @@ const FacebookAdsCanberra = () => {
               Precision strategies built for ACT's unique market dynamics
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {services.map((service, index) => (
-                <Card key={index} className="p-8 bg-background border-border hover:border-primary/20 transition-all group">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                    <service.icon className="w-8 h-8 text-primary" />
+                <Card key={index} className="p-6 sm:p-8 bg-background border-border hover:border-primary/20 transition-all group">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">{service.description}</p>
                 </Card>
               ))}
             </div>
 
-            <div className="mt-12 text-center">
-              <p className="text-muted-foreground mb-6">
+            <div className="mt-8 sm:mt-12 text-center px-4">
+              <p className="text-sm sm:text-base text-muted-foreground mb-6 break-words">
                 Looking for other digital marketing services? We also offer{" "}
                 <a href="/seo" className="text-primary hover:underline">SEO</a>,{" "}
                 <a href="/google-ads" className="text-primary hover:underline">PPC</a>, and{" "}
@@ -508,14 +508,14 @@ const FacebookAdsCanberra = () => {
               Why Canberra Businesses Choose Odin Digital
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {differentiators.map((item, index) => (
-                <Card key={index} className="p-8 bg-background border-border">
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-xl font-bold text-foreground mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                <Card key={index} className="p-6 sm:p-8 bg-background border-border">
+                  <div className="flex items-start space-x-3 sm:space-x-4">
+                    <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary flex-shrink-0 mt-1" />
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-2 sm:mb-3 break-words">{item.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">{item.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -534,18 +534,18 @@ const FacebookAdsCanberra = () => {
               A systematic approach to scaling your Canberra business with Meta Ads
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               {process.map((step, index) => (
                 <div key={index} className="relative">
                   {index < process.length - 1 && (
                     <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-primary/20 z-0" />
                   )}
-                  <Card className="p-8 bg-background border-border relative z-10 h-full">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-2xl font-black mb-6">
+                  <Card className="p-6 sm:p-8 bg-background border-border relative z-10 h-full">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-primary rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-black mb-4 sm:mb-6">
                       {step.step}
                     </div>
-                    <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                    <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 sm:mb-4 break-words">{step.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">{step.description}</p>
                   </Card>
                 </div>
               ))}
@@ -560,17 +560,17 @@ const FacebookAdsCanberra = () => {
               The Odin Digital Difference
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
               {whyChoose.map((item, index) => (
-                <div key={index} className="flex items-start space-x-6">
+                <div key={index} className="flex items-start space-x-4 sm:space-x-6">
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <CheckCircle className="w-6 h-6 text-primary" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                     </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed">{item.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-2 sm:mb-3 break-words">{item.title}</h3>
+                    <p className="text-base sm:text-lg text-muted-foreground leading-relaxed break-words">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -583,16 +583,16 @@ const FacebookAdsCanberra = () => {
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTR6bTAgMTBjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTR6TTI2IDM0YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00em0wIDEwYzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00eiIvPjwvZz48L2c+PC9zdmc+')] opacity-10" />
           
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 break-words">
               Ready to Stop Wasting Budget and Start Scaling in Canberra?
             </h2>
-            <p className="text-xl sm:text-2xl mb-8 text-white/90">
+            <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 text-white/90 break-words">
               Get a free, no-obligation audit of your current Meta Ads performance (or competitor analysis if you're new). We'll show you exactly where you're bleeding budget and how we'd fix it.
             </p>
             <Button 
               size="xl"
               onClick={openForm}
-              className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-6 w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight"
+              className="bg-white text-primary hover:bg-white/90 font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto whitespace-normal break-words hyphens-auto leading-tight"
             >
               Get Your Free Meta Ads Audit <ArrowRight className="ml-2 inline-block" />
             </Button>
@@ -602,15 +602,15 @@ const FacebookAdsCanberra = () => {
         {/* Related Services & Cities */}
         <section className="py-16 px-6 bg-accent/5">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">Related Services</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">Related Services</h3>
+                <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   {relatedServices.map((service, index) => (
                     <a
                       key={index}
                       href={service.url}
-                      className="text-primary hover:underline font-medium"
+                      className="text-sm sm:text-base text-primary hover:underline font-medium break-words"
                     >
                       {service.name}
                     </a>
@@ -618,13 +618,13 @@ const FacebookAdsCanberra = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-6">Other Cities We Serve</h3>
-                <div className="grid grid-cols-2 gap-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">Other Cities We Serve</h3>
+                <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   {relatedCities.map((city, index) => (
                     <a
                       key={index}
                       href={city.url}
-                      className="text-primary hover:underline font-medium"
+                      className="text-sm sm:text-base text-primary hover:underline font-medium break-words"
                     >
                       {city.name}
                     </a>
@@ -648,10 +648,10 @@ const FacebookAdsCanberra = () => {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left text-lg font-semibold text-foreground">
+                  <AccordionTrigger className="text-left text-base sm:text-lg font-semibold text-foreground break-words">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed break-words">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -661,14 +661,14 @@ const FacebookAdsCanberra = () => {
         </section>
 
         {/* Sticky Mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border md:hidden z-40">
+        <div className="fixed bottom-0 left-0 right-0 p-3 sm:p-4 bg-background border-t border-border md:hidden z-40">
           <Button 
             size="lg" 
             variant="cta"
             onClick={openForm}
-            className="w-full whitespace-normal break-words hyphens-auto leading-tight"
+            className="w-full whitespace-normal break-words hyphens-auto leading-tight text-sm sm:text-base"
           >
-            <MessageSquare className="mr-2 h-5 w-5" />
+            <MessageSquare className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
             Get Free Meta Ads Audit
           </Button>
         </div>
