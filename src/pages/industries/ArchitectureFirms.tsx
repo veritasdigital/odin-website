@@ -311,7 +311,7 @@ const ArchitectureFirms = () => {
           {/* Main content container */}
           <div className="relative z-10 w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-20 sm:py-24 lg:py-32">
-              <div className="max-w-4xl mx-auto text-center space-y-8">
+              <div className="max-w-4xl mx-auto text-center space-y-6 lg:space-y-8">
                 {/* Breadcrumb navigation */}
                 <nav className="text-sm" aria-label="Breadcrumb">
                   <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
@@ -334,7 +334,7 @@ const ArchitectureFirms = () => {
                 </p>
 
                 {/* Description paragraphs */}
-                <div className="max-w-3xl mx-auto space-y-4">
+                <div className="max-w-3xl mx-auto space-y-4 lg:space-y-6">
                   <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                     Your firm designs award-winning spaces. Your marketing should be just as precise. We build digital strategies that attract the high-net-worth clients and large-scale projects your firm deserves.
                   </p>
