@@ -86,6 +86,7 @@ import WebDesignHobart from "./pages/services/WebDesignHobart";
 import WebDesignGoldCoast from "./pages/services/WebDesignGoldCoast";
 import WebDesignCanberra from "./pages/services/WebDesignCanberra";
 import WebDesignNewcastle from "./pages/services/WebDesignNewcastle";
+import SEONewcastle from "./pages/services/SEONewcastle";
 
 const queryClient = new QueryClient();
 
@@ -114,7 +115,7 @@ const App = () => (
           <Route path="/google-ads-gold-coast" element={<GoogleAdsGoldCoast />} />
           <Route path="/seo-gold-coast" element={<GoldCoastSEO />} />
           <Route path="/seo-canberra" element={<CanberraSEO />} />
-          <Route path="/seo-newcastle" element={<NewcastleSEO />} />
+          <Route path="/seo-newcastle" element={<SEONewcastle />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
