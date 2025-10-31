@@ -456,59 +456,25 @@ const Plumbers = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center justify-center bg-white decorative-circles">
-          {/* Background gradient */}
-          <div className="absolute inset-0 opacity-[0.03]">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
+          {/* Floating Circles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed"></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-secondary/10 rounded-full blur-3xl animate-float"></div>
           </div>
 
-          {/* Floating decorative elements */}
-          <div className="absolute top-20 right-20 w-16 h-16 bg-primary/10 rounded-full animate-float hidden lg:block"></div>
-          <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float hidden lg:block" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float hidden lg:block" style={{ animationDelay: '4s' }}></div>
-          
-          {/* Main content container */}
-          <div className="relative z-10 w-full flex items-center justify-center">
-            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 pt-28 pb-20 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
-              <div className="max-w-4xl mx-auto text-center">
-                <div className="max-w-4xl mx-auto space-y-6 lg:space-y-8">
-                  {/* Breadcrumb navigation */}
-                  <nav className="text-sm" aria-label="Breadcrumb">
-                    <ol className="flex flex-wrap items-center justify-center gap-2 text-muted-foreground">
-                      <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
-                      <li><ArrowRight className="w-4 h-4" /></li>
-                      <li><Link to="/industries" className="hover:text-primary transition-colors">Industries</Link></li>
-                      <li><ArrowRight className="w-4 h-4" /></li>
-                      <li className="text-foreground font-medium">Plumbers Marketing</li>
-                    </ol>
-                  </nav>
-
-                  {/* Hero content block */}
-                  <div className="space-y-4 lg:space-y-6">
-                    {/* Main heading */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight">
-                      Plumbers Marketing
-                    </h1>
-                    
-                    {/* Hero sub-headline */}
-                    <p className="hero-sub-headline text-base sm:text-lg md:text-xl font-semibold text-foreground/90 leading-relaxed max-w-3xl mx-auto">
-                      Stop Wasting Money on Tyre-Kickers and Low-Quality Leads. We Build High-Trust Digital Systems That Deliver Qualified, High-Margin Jobs Directly to Your Plumbing Business.
-                    </p>
-                  </div>
-                  
-                  {/* CTA button */}
-                  <div>
-                    <Button 
-                      variant="default" 
-                      size="lg" 
-                      className="text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 shadow-glow bg-[#D91C5C] hover:bg-[#D91C5C]/90"
-                      onClick={openForm}
-                    >
-                      Schedule Free Strategy Session
-                    </Button>
-                  </div>
-                </div>
-              </div>
+          <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-8 text-foreground">
+                Plumbers Marketing
+              </h1>
+              <p className="text-base md:text-lg lg:text-xl mb-8 text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+                Stop Wasting Money on Tyre-Kickers and Low-Quality Leads. We Build High-Trust Digital Systems That Deliver Qualified, High-Margin Jobs Directly to Your Plumbing Business.
+              </p>
+              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-8 py-6 text-lg">
+                Schedule Free Strategy Session →
+              </Button>
             </div>
           </div>
         </section>
