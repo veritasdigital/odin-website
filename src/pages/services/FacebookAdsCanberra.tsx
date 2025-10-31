@@ -420,43 +420,49 @@ const FacebookAdsCanberra = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="p-8 bg-background border-border">
+              <Card className="p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed">
+                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <div className="font-bold text-foreground">Liam C</div>
-                <div className="text-sm text-muted-foreground">Krush Organics</div>
+                <div className="mt-auto">
+                  <div className="font-bold text-foreground">Liam C</div>
+                  <div className="text-sm text-muted-foreground">Krush Organics</div>
+                </div>
               </Card>
 
-              <Card className="p-8 bg-background border-border">
+              <Card className="p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed">
+                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
                   "After wasting $20K with another agency, Odin rebuilt our entire Meta Ads strategy. Within 90 days, we went from $150 CPQL to $42 CPQL while doubling our lead volume. Game-changing results."
                 </p>
-                <div className="font-bold text-foreground">Sarah M</div>
-                <div className="text-sm text-muted-foreground">Canberra Professional Services</div>
+                <div className="mt-auto">
+                  <div className="font-bold text-foreground">Sarah M</div>
+                  <div className="text-sm text-muted-foreground">Canberra Professional Services</div>
+                </div>
               </Card>
 
-              <Card className="p-8 bg-background border-border">
+              <Card className="p-8 bg-background border-border flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                   ))}
                 </div>
-                <p className="text-foreground mb-6 italic leading-relaxed">
+                <p className="text-foreground mb-6 italic leading-relaxed flex-grow">
                   "We thought Facebook Ads 'didn't work' for B2B in Canberra. Odin proved us wrong. They generated 47 qualified enterprise leads in 60 days with a 680% ROI. Absolutely worth every dollar."
                 </p>
-                <div className="font-bold text-foreground">James T</div>
-                <div className="text-sm text-muted-foreground">ACT B2B Technology Company</div>
+                <div className="mt-auto">
+                  <div className="font-bold text-foreground">James T</div>
+                  <div className="text-sm text-muted-foreground">ACT B2B Technology Company</div>
+                </div>
               </Card>
             </div>
           </div>
