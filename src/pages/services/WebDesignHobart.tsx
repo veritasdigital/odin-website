@@ -737,14 +737,14 @@ const WebDesignHobart = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Related Services
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4">
                   {relatedServices.map((service, index) => (
                     <Link 
                       key={index}
                       to={service.url}
-                      className="p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center"
+                      className="p-3 sm:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[80px] sm:min-h-[100px]"
                     >
-                      <span className="text-foreground font-medium hover:text-primary block">
+                      <span className="text-foreground font-medium hover:text-primary block text-sm sm:text-base">
                         {service.name}
                       </span>
                     </Link>
@@ -756,14 +756,14 @@ const WebDesignHobart = () => {
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
                   Other Locations
                 </h2>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   {relatedCities.map((city, index) => (
                     <Link 
                       key={index}
                       to={city.url}
-                      className="p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center"
+                      className="p-3 sm:p-6 rounded-lg bg-card border border-border hover:border-primary hover:shadow-lg transition-all duration-300 text-center flex items-center justify-center min-h-[80px] sm:min-h-[100px]"
                     >
-                      <span className="text-foreground font-medium hover:text-primary block">
+                      <span className="text-foreground font-medium hover:text-primary block text-sm sm:text-base">
                         {city.name}
                       </span>
                     </Link>
