@@ -358,7 +358,7 @@ const TikTokAdvertising = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-32 px-6 overflow-hidden bg-gradient-subtle">
+        <section className="relative pt-32 pb-32 md:pb-24 px-4 sm:px-6 overflow-hidden bg-gradient-subtle">
           <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-float-delayed" />
           
@@ -385,7 +385,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Why TikTok Matters */}
-        <section className="py-24 px-6">
+        <section className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6">
@@ -414,7 +414,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* The TikTok Challenge */}
-        <section className="py-24 px-6 bg-accent/5">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-accent/5">
           <div className="max-w-7xl mx-auto">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mb-6 text-center">
@@ -464,7 +464,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-24 px-6">
+        <section className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-4">
               Why Businesses Choose Odin Digital
@@ -499,7 +499,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Services */}
-        <section className="py-24 px-6 bg-accent/5">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-accent/5">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-4">
               Our TikTok Advertising Services
@@ -538,7 +538,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* How We Work */}
-        <section className="py-24 px-6">
+        <section className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-4">
               How We Work
@@ -547,7 +547,7 @@ const TikTokAdvertising = () => {
               Our proven 5-step process for TikTok advertising success.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
               {process.map((step, index) => (
                 <div key={index} className="relative">
                   {index < process.length - 1 && (
@@ -571,7 +571,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Business Types */}
-        <section className="py-24 px-6 bg-accent/5">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-accent/5">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-4">
               TikTok Advertising for Different Business Types
@@ -610,13 +610,13 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="py-24 px-6">
+        <section className="py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-16">
               What Our Clients Say
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
               {testimonials.map((testimonial, index) => (
                 <Card key={index} className="p-6 sm:p-8 bg-background border-border flex flex-col">
                   <div className="flex items-center mb-4">
@@ -639,7 +639,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* FAQ */}
-        <section className="py-24 px-6 bg-accent/5">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-accent/5">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-center text-foreground mb-4">
               Frequently Asked Questions
@@ -664,7 +664,7 @@ const TikTokAdvertising = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-6 bg-gradient-primary text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 px-4 sm:px-6 bg-gradient-primary text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTR6bTAgMTBjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTR6TTI2IDM0YzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00em0wIDEwYzAtMi4yMDktMS43OTEtNC00LTRzLTQgMS43OTEtNCA0IDEuNzkxIDQgNCA0IDQtMS43OTEgNC00eiIvPjwvZz48L2c+PC9zdmc+')] opacity-10" />
           
           <div className="max-w-4xl mx-auto text-center relative z-10">
