@@ -476,16 +476,18 @@ const WebDesignHobart = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="p-8 rounded-lg bg-card border border-border shadow-lg">
-                <div className="flex items-start space-x-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-primary fill-primary" />
-                  ))}
+              <div className="p-8 rounded-lg bg-card border border-border shadow-lg flex flex-col justify-between h-full">
+                <div>
+                  <div className="flex items-start space-x-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Award key={i} className="w-5 h-5 text-primary fill-primary" />
+                    ))}
+                  </div>
+                  <p className="text-lg text-foreground mb-4 italic">
+                    "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
+                  </p>
                 </div>
-                <p className="text-lg text-foreground mb-4 italic">
-                  "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
-                </p>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 mt-auto">
                   <div>
                     <div className="font-bold text-foreground">Liam C</div>
                     <div className="text-sm text-muted-foreground">Krush Organics</div>
@@ -493,16 +495,18 @@ const WebDesignHobart = () => {
                 </div>
               </div>
 
-              <div className="p-8 rounded-lg bg-card border border-border shadow-lg">
-                <div className="flex items-start space-x-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-primary fill-primary" />
-                  ))}
+              <div className="p-8 rounded-lg bg-card border border-border shadow-lg flex flex-col justify-between h-full">
+                <div>
+                  <div className="flex items-start space-x-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Award key={i} className="w-5 h-5 text-primary fill-primary" />
+                    ))}
+                  </div>
+                  <p className="text-lg text-foreground mb-4 italic">
+                    "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
+                  </p>
                 </div>
-                <p className="text-lg text-foreground mb-4 italic">
-                  "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
-                </p>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 mt-auto">
                   <div>
                     <div className="font-bold text-foreground">Fabienne Costa</div>
                     <div className="text-sm text-muted-foreground">YCL Jewels</div>
