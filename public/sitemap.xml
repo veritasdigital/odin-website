@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://odindigital.com/</loc>
+    <loc>https://odindigital.com.au/</loc>
     <lastmod>2025-11-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/about</loc>
+    <loc>https://odindigital.com.au/about</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,25 +38,25 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-agency</loc>
+    <loc>https://odindigital.com.au/services/seo-agency</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/local-seo</loc>
+    <loc>https://odindigital.com.au/services/local-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/ecommerce-seo</loc>
+    <loc>https://odindigital.com.au/services/ecommerce-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/white-label-seo</loc>
+    <loc>https://odindigital.com.au/services/white-label-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -64,55 +64,55 @@
 
   <!-- SEO by City -->
   <url>
-    <loc>https://odindigital.com/services/seo-sydney</loc>
+    <loc>https://odindigital.com.au/services/sydney-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-melbourne</loc>
+    <loc>https://odindigital.com.au/services/melbourne-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-brisbane</loc>
+    <loc>https://odindigital.com.au/services/brisbane-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-perth</loc>
+    <loc>https://odindigital.com.au/services/perth-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-adelaide</loc>
+    <loc>https://odindigital.com.au/services/adelaide-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-canberra</loc>
+    <loc>https://odindigital.com.au/services/canberra-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-hobart</loc>
+    <loc>https://odindigital.com.au/services/hobart-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-gold-coast</loc>
+    <loc>https://odindigital.com.au/services/gold-coast-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/seo-newcastle</loc>
+    <loc>https://odindigital.com.au/services/newcastle-seo</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -120,7 +120,7 @@
 
   <!-- Google Ads Services -->
   <url>
-    <loc>https://odindigital.com/services/google-ads</loc>
+    <loc>https://odindigital.com.au/services/google-ads</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -192,16 +192,16 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/google-ads-launceston</loc>
+    <loc>https://odindigital.com.au/services/google-ads-launceston</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/google-ads-ballarat</loc>
+    <loc>https://odindigital.com.au/services/google-ads-ballarat</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
 
   <!-- Social Media Advertising -->
@@ -354,105 +354,105 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/funnel-development</loc>
+    <loc>https://odindigital.com.au/services/funnel-development</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/services/marketing-consulting</loc>
+    <loc>https://odindigital.com.au/services/marketing-consulting</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <!-- Industries -->
   <url>
-    <loc>https://odindigital.com/industries/accounting-firms</loc>
+    <loc>https://odindigital.com.au/industries/accounting-firms</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/architecture-firms</loc>
+    <loc>https://odindigital.com.au/industries/architecture-firms</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/cosmetic-clinics</loc>
+    <loc>https://odindigital.com.au/industries/cosmetic-clinics</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/cosmetic-surgeons</loc>
+    <loc>https://odindigital.com.au/industries/cosmetic-surgeons</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/criminal-defense-lawyers</loc>
+    <loc>https://odindigital.com.au/industries/criminal-defense-lawyers</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/dentists</loc>
+    <loc>https://odindigital.com.au/industries/dentists</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/dermatologists</loc>
+    <loc>https://odindigital.com.au/industries/dermatologists</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/electricians</loc>
+    <loc>https://odindigital.com.au/industries/electricians</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/fertility-clinics</loc>
+    <loc>https://odindigital.com.au/industries/fertility-clinics</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/insurance-agents</loc>
+    <loc>https://odindigital.com.au/industries/insurance-agents</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/lawyers</loc>
+    <loc>https://odindigital.com.au/industries/lawyers</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/personal-injury-lawyers</loc>
+    <loc>https://odindigital.com.au/industries/personal-injury-lawyers</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/plastic-surgeons</loc>
+    <loc>https://odindigital.com.au/industries/plastic-surgeons</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/plumbers</loc>
+    <loc>https://odindigital.com.au/industries/plumbers</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com/industries/real-estate-agents</loc>
+    <loc>https://odindigital.com.au/industries/real-estate-agents</loc>
     <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
