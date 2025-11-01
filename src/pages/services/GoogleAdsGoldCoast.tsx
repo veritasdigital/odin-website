@@ -75,7 +75,9 @@ const GoogleAdsGoldCoast = () => {
         "@type": "Review",
         "@id": "https://odindigital.com.au/google-ads-gold-coast/#review1",
         "itemReviewed": {
-          "@id": "https://odindigital.com.au/#localbusiness"
+          "@type": "LocalBusiness",
+          "@id": "https://odindigital.com.au/#localbusiness",
+          "name": "Odin Digital - Google Ads Agency Gold Coast"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -96,7 +98,9 @@ const GoogleAdsGoldCoast = () => {
         "@type": "Review",
         "@id": "https://odindigital.com.au/google-ads-gold-coast/#review2",
         "itemReviewed": {
-          "@id": "https://odindigital.com.au/#localbusiness"
+          "@type": "LocalBusiness",
+          "@id": "https://odindigital.com.au/#localbusiness",
+          "name": "Odin Digital - Google Ads Agency Gold Coast"
         },
         "reviewRating": {
           "@type": "Rating",
