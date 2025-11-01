@@ -286,6 +286,14 @@ const WebsiteDesignAndDevelopment = () => {
               },
               {
                 "@type": "Review",
+                "itemReviewed": {
+                  "@type": "Service",
+                  "name": "Website Design and Development Services",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Odin Digital"
+                  }
+                },
                 "author": {
                   "@type": "Person",
                   "name": "Fabienne Costa"

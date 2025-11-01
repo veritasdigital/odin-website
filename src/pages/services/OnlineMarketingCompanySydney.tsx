@@ -179,6 +179,14 @@ const OnlineMarketingCompanySydney = () => {
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": "Online Marketing Services Sydney",
+          "provider": {
+            "@type": "Organization",
+            "name": "Odin Digital"
+          }
+        },
         "author": {
           "@type": "Person",
           "name": "Fabienne Costa"

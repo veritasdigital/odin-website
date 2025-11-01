@@ -192,6 +192,14 @@ const AccountingFirms = () => {
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": "Marketing Services for Accounting Firms",
+          "provider": {
+            "@type": "Organization",
+            "name": "Odin Digital"
+          }
+        },
         "author": {
           "@type": "Person",
           "name": "Fabienne Costa"

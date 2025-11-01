@@ -186,6 +186,14 @@ const Lawyers = () => {
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": "Marketing Services for Lawyers",
+          "provider": {
+            "@type": "Organization",
+            "name": "Odin Digital"
+          }
+        },
         "author": {
           "@type": "Person",
           "name": "Fabienne Costa"

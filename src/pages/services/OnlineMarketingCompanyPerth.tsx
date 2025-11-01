@@ -148,6 +148,14 @@ const OnlineMarketingCompanyPerth = () => {
               },
               {
                 "@type": "Review",
+                "itemReviewed": {
+                  "@type": "Service",
+                  "name": "Online Marketing Services Perth",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Odin Digital"
+                  }
+                },
                 "author": {
                   "@type": "Person",
                   "name": "Fabienne Costa"

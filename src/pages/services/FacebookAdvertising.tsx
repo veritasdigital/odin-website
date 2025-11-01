@@ -279,6 +279,14 @@ const FacebookAdvertising = () => {
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": "Facebook Advertising Services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Odin Digital"
+          }
+        },
         "author": {
           "@type": "Person",
           "name": "Fabienne Costa"

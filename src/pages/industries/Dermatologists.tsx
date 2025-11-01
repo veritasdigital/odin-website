@@ -196,6 +196,14 @@ const Dermatologists = () => {
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Service",
+          "name": "Marketing Services for Dermatologists",
+          "provider": {
+            "@type": "Organization",
+            "name": "Odin Digital"
+          }
+        },
         "author": {
           "@type": "Person",
           "name": "Fabienne Costa"
