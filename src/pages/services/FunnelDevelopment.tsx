@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, ArrowRight, TrendingUp, Target, BarChart3, Users, Zap, AlertTriangle, Trophy, DollarSign } from "lucide-react";
+import { AsSeenIn } from "@/components/AsSeenIn";
 
 export default function FunnelDevelopment() {
   const { openForm } = useMarketingForm();
@@ -161,30 +162,68 @@ export default function FunnelDevelopment() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">Sales Funnel Development</Badge>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
-              Turn Your Website Into a Customer-Generating Machine
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Stop losing 97% of your website visitors forever. Build automated sales funnels that convert strangers into customers and customers into raving fans.
-            </p>
-            <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
-              <strong>REALITY CHECK:</strong> If your website isn't systematically moving visitors toward a purchase decision, you're essentially running an expensive digital brochure. It's time to build a real sales system.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="xl" onClick={openForm}>
+      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-24 lg:py-32">
+          <div className="max-w-4xl mx-auto space-y-8 lg:space-y-10 animate-fade-in">
+            {/* Badge */}
+            <div className="text-center">
+              <Badge variant="secondary" className="mb-6 px-6 py-2 text-sm font-semibold">
+                Sales Funnel Development
+              </Badge>
+            </div>
+            
+            {/* Main Headline */}
+            <div className="text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[1.05] tracking-tight">
+                <span className="block mb-3 lg:mb-4">Turn Your Website Into a</span>
+                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                  Customer-Generating Machine
+                </span>
+              </h1>
+            </div>
+            
+            {/* Subtitle and Description */}
+            <div className="text-center space-y-6 lg:space-y-8">
+              <p className="text-xl md:text-2xl text-charcoal/90 leading-relaxed max-w-3xl mx-auto">
+                Stop losing 97% of your website visitors forever. Build automated sales funnels that convert strangers into customers and customers into raving fans.
+              </p>
+              
+              <div className="bg-muted/30 border-l-4 border-primary p-6 rounded-r-lg max-w-3xl mx-auto">
+                <p className="text-lg text-charcoal/80 font-medium">
+                  <strong className="text-primary">REALITY CHECK:</strong> If your website isn't systematically moving visitors toward a purchase decision, you're essentially running an expensive digital brochure. It's time to build a real sales system.
+                </p>
+              </div>
+            </div>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-12 py-6 shadow-glow"
+                onClick={openForm}
+              >
                 Build My Sales Funnel
               </Button>
-              <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary transition-colors">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="text-lg px-12 py-6 border-2"
+              >
                 See Funnel Examples
               </Button>
             </div>
           </div>
         </div>
       </section>
+
+      {/* As Featured In Section */}
+      <AsSeenIn />
 
       {/* Problem Agitation Section */}
       <section className="py-24 bg-background">
