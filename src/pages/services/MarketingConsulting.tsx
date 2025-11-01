@@ -267,7 +267,7 @@ export default function MarketingConsulting() {
               <Button 
                 variant="secondary" 
                 size="lg" 
-                className="text-lg px-12 py-6"
+                className="text-lg px-12 py-6 bg-white text-primary hover:bg-white/90 border-2 border-primary/20"
               >
                 View Success Stories
               </Button>
