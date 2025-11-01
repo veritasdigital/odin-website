@@ -233,7 +233,7 @@ export default function MarketingConsulting() {
               <Button variant="cta" size="xl" onClick={openForm}>
                 Book Strategy Session
               </Button>
-              <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary transition-colors">
+              <Button variant="secondary" size="xl">
                 View Success Stories
               </Button>
             </div>
