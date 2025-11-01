@@ -8,9 +8,11 @@ import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, ArrowRight, TrendingUp, Target, BarChart3, Users, Zap, AlertTriangle, Trophy, DollarSign } from "lucide-react";
 import { AsSeenIn } from "@/components/AsSeenIn";
+import { useNavigate } from "react-router-dom";
 
 export default function FunnelDevelopment() {
   const { openForm } = useMarketingForm();
+  const navigate = useNavigate();
 
   const painPoints = [
     "Your website gets traffic but visitors leave without buying anything",
@@ -206,7 +208,7 @@ export default function FunnelDevelopment() {
                 variant="hero" 
                 size="lg" 
                 className="text-lg px-12 py-6 shadow-glow"
-                onClick={openForm}
+                onClick={() => navigate('/contact')}
               >
                 Build My Sales Funnel
               </Button>
@@ -214,6 +216,7 @@ export default function FunnelDevelopment() {
                 variant="outline" 
                 size="lg" 
                 className="text-lg px-12 py-6 border-2"
+                onClick={() => navigate('/contact')}
               >
                 See Funnel Examples
               </Button>
