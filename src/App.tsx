@@ -51,6 +51,7 @@ import ArchitectureFirms from "./pages/industries/ArchitectureFirms";
 import Plumbers from "./pages/industries/Plumbers";
 import Electricians from "./pages/industries/Electricians";
 import HVACContractors from "./pages/industries/HVACContractors";
+import RoofingCompanies from "./pages/industries/RoofingCompanies";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -169,6 +170,7 @@ const App = () => (
             <Route path="/industries/plumbers" element={<Plumbers />} />
             <Route path="/industries/electricians" element={<Electricians />} />
             <Route path="/industries/hvac-contractors" element={<HVACContractors />} />
+            <Route path="/industries/roofing-companies" element={<RoofingCompanies />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
