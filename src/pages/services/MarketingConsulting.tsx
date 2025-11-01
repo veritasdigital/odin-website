@@ -233,9 +233,10 @@ export default function MarketingConsulting() {
             
             {/* Main Headline */}
             <div className="text-center space-y-6">
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-black leading-[1] tracking-tight">
-                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Marketing Consulting
+              <h1 className="text-5xl md:text-6xl xl:text-7xl font-black text-charcoal leading-[1] tracking-tight">
+                <span className="block mb-4 lg:mb-6">Stop Guessing.</span>
+                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2 text-6xl md:text-7xl xl:text-8xl">
+                  Start Growing.
                 </span>
               </h1>
             </div>
