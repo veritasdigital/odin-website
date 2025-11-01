@@ -1254,6 +1254,28 @@ const HVACContractors = () => {
                   </div>
                 </div>
               </Card>
+
+              <Card className="p-8 hover:shadow-glow transition-all duration-300">
+                <Zap className="w-12 h-12 text-primary mb-4" />
+                <h3 className="text-2xl font-bold text-foreground mb-4">New Installation Specialists</h3>
+                <p className="text-muted-foreground mb-4">
+                  If your focus is on new HVAC system installations and replacements, we target homeowners and businesses ready to invest in complete system upgrades with high-intent campaigns that drive qualified installation quotes.
+                </p>
+                <div className="space-y-2">
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Installation-focused keyword strategies</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">High-value lead generation campaigns</span>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-muted-foreground">Quote request optimisation and follow-up</span>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </section>
