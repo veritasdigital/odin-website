@@ -287,40 +287,40 @@ const RoofingCompanies = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <Card className="p-6 md:p-8 border border-charcoal/10">
+              <Card className="p-6 md:p-8 border border-charcoal/10 flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic">
+                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic flex-grow">
                   "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                 </p>
-                <p className="text-sm font-semibold text-charcoal">- Fabienne Costa, Founder, YCL Jewels (Gold Coast)</p>
+                <p className="text-sm font-semibold text-charcoal mt-auto">- Fabienne Costa, Founder, YCL Jewels (Gold Coast)</p>
               </Card>
 
-              <Card className="p-6 md:p-8 border border-charcoal/10">
+              <Card className="p-6 md:p-8 border border-charcoal/10 flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic">
+                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic flex-grow">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <p className="text-sm font-semibold text-charcoal">- Liam C, Founder, Krush Organics (Sydney)</p>
+                <p className="text-sm font-semibold text-charcoal mt-auto">- Liam C, Founder, Krush Organics (Sydney)</p>
               </Card>
 
-              <Card className="p-6 md:p-8 border border-charcoal/10">
+              <Card className="p-6 md:p-8 border border-charcoal/10 flex flex-col">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic">
+                <p className="text-sm md:text-base text-charcoal/80 mb-4 italic flex-grow">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
                 </p>
-                <p className="text-sm font-semibold text-charcoal">- Evan Tsaboukos, Founder, Imperial Wealth (Melbourne)</p>
+                <p className="text-sm font-semibold text-charcoal mt-auto">- Evan Tsaboukos, Founder, Imperial Wealth (Melbourne)</p>
               </Card>
             </div>
 
