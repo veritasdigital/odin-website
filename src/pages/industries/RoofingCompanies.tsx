@@ -173,20 +173,20 @@ const RoofingCompanies = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 bg-white">
+        <section className="relative pt-20 sm:pt-24 md:pt-32 pb-10 sm:pb-12 md:pb-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="text-center">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-6 md:mb-8 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 sm:mb-6 md:mb-8 leading-tight">
                 Digital Marketing for Roofing Companies
               </h1>
-              <p className="hero-sub-headline text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-6 md:mb-8 leading-tight">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal mb-4 sm:mb-6 md:mb-8 leading-tight px-2">
                 Stop the Feast-or-Famine Cycle. Get a Predictable Flow of High-Quality Roofing Leads Year-Round.
               </p>
-              <p className="text-base md:text-lg lg:text-xl text-charcoal/80 max-w-5xl mx-auto leading-relaxed mb-8 md:mb-12">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-charcoal/80 max-w-5xl mx-auto leading-relaxed mb-6 sm:mb-8 md:mb-12 px-2">
                 Your team is expert at keeping the water out. Our team is expert at keeping the leads in. We build digital systems that deliver high-urgency, high-value roofing jobs on demand. At Odin Digital, we understand the roofing business—it's fast-paced, highly competitive, and often driven by emergency. Generic marketing plans fail because they don't account for seasonality, local competition, or the need for immediate lead capture. We craft integrated digital ecosystems—combining Local SEO, Hyper-Targeted PPC, Social Proof, and Mobile-First Web Design—to ensure your phone rings when customers need you most.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <Button size="lg" className="w-full sm:w-auto text-base md:text-lg py-6 md:py-7 px-6 md:px-8" onClick={openForm}>
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
+                <Button size="lg" className="w-full sm:w-auto text-sm sm:text-base md:text-lg py-5 sm:py-6 md:py-7 px-6 md:px-8" onClick={openForm}>
                   Schedule Your FREE Lead Flow Analysis →
                 </Button>
               </div>
@@ -195,58 +195,58 @@ const RoofingCompanies = () => {
         </section>
 
         {/* Proof Section */}
-        <section className="py-16 md:py-24 bg-muted/20">
+        <section className="py-12 sm:py-16 md:py-24 bg-muted/20">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 md:mb-6">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-3 sm:mb-4 md:mb-6 px-2">
                 The Proof Is in the Performance
               </h2>
-              <p className="text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto px-2">
                 We're not just making promises; we're delivering verified results for trade and professional service firms across Australia.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-              <Card className="p-6 md:p-8 border border-charcoal/10 text-center">
-                <DollarSign className="w-12 h-12 md:w-16 md:h-16 text-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-3xl md:text-4xl font-black text-charcoal mb-2">$574M+</div>
-                <p className="text-sm md:text-base text-charcoal/70">Verified Client Revenue</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+              <Card className="p-5 sm:p-6 md:p-8 border border-charcoal/10 text-center">
+                <DollarSign className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-2 sm:mb-3 md:mb-4" />
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-1 sm:mb-2">$574M+</div>
+                <p className="text-xs sm:text-sm md:text-base text-charcoal/70">Verified Client Revenue</p>
               </Card>
 
-              <Card className="p-6 md:p-8 border border-charcoal/10 text-center">
-                <TrendingUp className="w-12 h-12 md:w-16 md:h-16 text-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-3xl md:text-4xl font-black text-charcoal mb-2">540%</div>
-                <p className="text-sm md:text-base text-charcoal/70">Average ROI on Ad Spend</p>
+              <Card className="p-5 sm:p-6 md:p-8 border border-charcoal/10 text-center">
+                <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-2 sm:mb-3 md:mb-4" />
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-1 sm:mb-2">540%</div>
+                <p className="text-xs sm:text-sm md:text-base text-charcoal/70">Average ROI on Ad Spend</p>
               </Card>
 
-              <Card className="p-6 md:p-8 border border-charcoal/10 text-center">
-                <Award className="w-12 h-12 md:w-16 md:h-16 text-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-3xl md:text-4xl font-black text-charcoal mb-2">95%</div>
-                <p className="text-sm md:text-base text-charcoal/70">Client Retention Rate<br />(No Lock-In Contracts)</p>
+              <Card className="p-5 sm:p-6 md:p-8 border border-charcoal/10 text-center">
+                <Award className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-2 sm:mb-3 md:mb-4" />
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-1 sm:mb-2">95%</div>
+                <p className="text-xs sm:text-sm md:text-base text-charcoal/70">Client Retention Rate<br />(No Lock-In Contracts)</p>
               </Card>
 
-              <Card className="p-6 md:p-8 border border-charcoal/10 text-center">
-                <BarChart className="w-12 h-12 md:w-16 md:h-16 text-primary mx-auto mb-3 md:mb-4" />
-                <div className="text-3xl md:text-4xl font-black text-charcoal mb-2">283+</div>
-                <p className="text-sm md:text-base text-charcoal/70">Successful Campaigns Delivered</p>
+              <Card className="p-5 sm:p-6 md:p-8 border border-charcoal/10 text-center">
+                <BarChart className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 text-primary mx-auto mb-2 sm:mb-3 md:mb-4" />
+                <div className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-1 sm:mb-2">283+</div>
+                <p className="text-xs sm:text-sm md:text-base text-charcoal/70">Successful Campaigns Delivered</p>
               </Card>
             </div>
           </div>
         </section>
 
         {/* Pain Points Section */}
-        <section className="py-16 md:py-24 bg-white">
+        <section className="py-12 sm:py-16 md:py-24 bg-white">
           <div className="max-w-6xl mx-auto px-4 md:px-6">
-            <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 md:mb-6">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-3 sm:mb-4 md:mb-6 px-2">
                 The Roofing Marketing Pain Points We Solve
               </h2>
-              <p className="text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto px-2">
                 Roofing is a high-stakes business. Why trust your lead flow to low-stakes, generic marketing? We solve the core problems holding back your company's growth.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               <Card className="p-6 md:p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
                 <AlertCircle className="w-10 h-10 md:w-12 md:h-12 text-primary mb-3 md:mb-4" />
                 <h3 className="text-lg md:text-xl font-bold text-charcoal mb-2 md:mb-3">The Feast-or-Famine Lead Flow</h3>
@@ -324,8 +324,8 @@ const RoofingCompanies = () => {
               </Card>
             </div>
 
-            <div className="text-center mt-8 md:mt-12">
-              <Button size="lg" className="text-base md:text-lg py-6 md:py-7 px-6 md:px-8" onClick={openForm}>
+            <div className="text-center mt-6 sm:mt-8 md:mt-12 px-4">
+              <Button size="lg" className="w-full sm:w-auto text-sm sm:text-base md:text-lg py-5 sm:py-6 md:py-7 px-6 md:px-8" onClick={openForm}>
                 Get Similar Results for Your Roofing Business
               </Button>
             </div>
