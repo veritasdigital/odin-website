@@ -244,18 +244,18 @@ const HVACContractors = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="relative pt-24 md:pt-32 pb-12 md:pb-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-black text-charcoal mb-8">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-6 md:mb-8 leading-tight">
                 HVAC Marketing That Delivers Consistent Leads
               </h1>
-              <p className="text-xl md:text-2xl text-charcoal/80 max-w-5xl mx-auto leading-relaxed mb-12">
+              <p className="text-base md:text-lg lg:text-xl text-charcoal/80 max-w-5xl mx-auto leading-relaxed mb-8 md:mb-12">
                 Running an HVAC contracting business is demanding. You're managing technicians, scheduling service calls, handling emergency requests, managing inventory, and trying to keep customers happy. On top of all that, you need a steady stream of leads to keep your business growing. The problem is that most HVAC contractors struggle with inconsistent lead flow. Some months are booked solid, other months you're scrambling to find work. You need a partner who understands the HVAC business, who can deliver consistent leads, and who can help you dominate your local market. At Odin Digital, we're HVAC marketing experts. We've helped over 180 HVAC contractors generate consistent leads and grow their revenue. We specialise in HVAC SEO, Google Ads, local marketing, and integrated strategies that work for heating and cooling businesses. Whether you're a residential contractor, commercial specialist, or mixed service provider, we deliver results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" onClick={openForm}>
-                  Schedule Free HVAC Marketing Consultation
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                <Button size="lg" className="w-full sm:w-auto text-base md:text-lg py-6 md:py-7 px-6 md:px-8" onClick={openForm}>
+                  Schedule Free Consultation
                 </Button>
               </div>
             </div>
@@ -263,22 +263,22 @@ const HVACContractors = () => {
         </section>
 
         {/* Challenge Section */}
-        <section className="py-24 bg-muted/20">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+        <section className="py-16 md:py-24 bg-muted/20">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 md:mb-6">
                 The HVAC Contractor Challenge
               </h2>
-              <p className="text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto leading-relaxed">
                 The HVAC industry is more competitive than ever. With seasonal demand fluctuations, increasing competition from national chains, and customers who primarily find contractors through online search, HVAC contractors face unique marketing challenges that require specialised expertise.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-              <Card className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
-                <TrendingDown className="w-12 h-12 text-primary mb-4" />
-                <h3 className="text-xl font-bold text-charcoal mb-3">Inconsistent Lead Generation</h3>
-                <p className="text-charcoal/70">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+              <Card className="p-6 md:p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
+                <TrendingDown className="w-10 h-10 md:w-12 md:h-12 text-primary mb-3 md:mb-4" />
+                <h3 className="text-lg md:text-xl font-bold text-charcoal mb-2 md:mb-3">Inconsistent Lead Generation</h3>
+                <p className="text-sm md:text-base text-charcoal/70">
                   Many HVAC contractors experience feast-or-famine cycles. Busy during peak seasons, struggling during shoulder months. You need consistent, year-round lead flow to stabilise revenue and maintain your team.
                 </p>
               </Card>
@@ -339,18 +339,18 @@ const HVACContractors = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-24 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+        <section className="py-16 md:py-24 bg-white">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 md:mb-6">
                 Why HVAC Contractors Choose Odin Digital
               </h2>
-              <p className="text-xl text-charcoal/70 max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl text-charcoal/70 max-w-4xl mx-auto">
                 We're not a general marketing agency trying to work with every industry. We specialise in home services, with deep expertise in HVAC contractor marketing. Here's what sets us apart.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <Card className="p-8 hover:shadow-glow transition-all duration-300">
                 <Wrench className="w-12 h-12 text-primary mb-4" />
                 <h3 className="text-2xl font-bold text-foreground mb-4">HVAC Marketing Expertise</h3>
@@ -1578,27 +1578,27 @@ const HVACContractors = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 gradient-hero relative overflow-hidden">
+        <section className="py-16 md:py-24 gradient-hero relative overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute w-96 h-96 bg-white/5 rounded-full blur-3xl -top-20 -right-20"></div>
             <div className="absolute w-96 h-96 bg-white/5 rounded-full blur-3xl -bottom-20 -left-20"></div>
           </div>
           
-          <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
+          <div className="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 md:mb-8">
               Ready to Generate Consistent HVAC Leads?
             </h2>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed">
               Stop struggling with inconsistent lead flow and seasonal revenue swings. Let's build a marketing strategy that delivers qualified HVAC leads month after month, regardless of the season. Schedule your free consultation and discover exactly how we can help you dominate your local HVAC market.
             </p>
-            <p className="text-lg text-white/80 mb-12">
+            <p className="text-base md:text-lg text-white/80 mb-8 md:mb-12">
               During your free strategy call, we'll analyse your current marketing, identify your biggest opportunities, show you exactly what's working for your competitors, and provide a customised growth plan for your HVAC business. No obligation, no pressure—just actionable insights you can use immediately.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="xl" onClick={openForm} className="bg-white text-primary hover:bg-white/90">
-                Schedule Your Free HVAC Marketing Consultation
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-20 md:mb-0">
+              <Button size="lg" onClick={openForm} className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 text-base md:text-lg py-6 md:py-7 px-6 md:px-8">
+                Schedule Free Consultation
               </Button>
-              <Button variant="secondary" size="xl" asChild>
+              <Button variant="secondary" size="lg" asChild className="w-full sm:w-auto text-base md:text-lg py-6 md:py-7 px-6 md:px-8">
                 <a href="/contact">Contact Us</a>
               </Button>
             </div>
@@ -1606,10 +1606,10 @@ const HVACContractors = () => {
         </section>
 
         {/* Sticky Mobile CTA */}
-        <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border md:hidden z-50">
-          <Button variant="cta" size="lg" onClick={openForm} className="w-full">
+        <div className="fixed bottom-0 left-0 right-0 p-3 bg-background/95 backdrop-blur-sm border-t border-border md:hidden z-50 shadow-lg">
+          <Button size="lg" onClick={openForm} className="w-full text-base py-6">
             <Phone className="w-5 h-5 mr-2" />
-            Schedule Free Consultation
+            Get Free Consultation
           </Button>
         </div>
 
