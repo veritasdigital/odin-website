@@ -157,7 +157,7 @@ export default function GoogleAds() {
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get My Free Google Ads Audit
               </Button>
-              <Button variant="outline" size="xl" className="border-white text-white hover:bg-white hover:text-primary transition-colors">
+              <Button variant="secondary" size="xl">
                 See Real Results
               </Button>
             </div>
