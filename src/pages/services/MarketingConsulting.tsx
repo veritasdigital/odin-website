@@ -216,24 +216,59 @@ export default function MarketingConsulting() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">Strategic Marketing Consulting</Badge>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
-              Stop Guessing. Start Growing.
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              Get the strategic clarity and proven frameworks you need to achieve breakthrough growth without wasting time and money on tactics that don't work.
-            </p>
-            <p className="text-lg text-white/80 mb-12 max-w-3xl mx-auto">
-              <strong>TRUTH:</strong> Most businesses fail not because they lack effort, but because they lack strategy. The difference between struggling and thriving is often just having the right roadmap.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="cta" size="xl" onClick={openForm}>
+      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-24 lg:py-32">
+          <div className="max-w-4xl mx-auto space-y-8 lg:space-y-10 animate-fade-in">
+            {/* Badge */}
+            <div className="text-center">
+              <Badge variant="secondary" className="mb-6 px-6 py-2 text-sm font-semibold">
+                Strategic Marketing Consulting
+              </Badge>
+            </div>
+            
+            {/* Main Headline */}
+            <div className="text-center space-y-6">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[1.05] tracking-tight">
+                <span className="block mb-3 lg:mb-4">Stop Guessing.</span>
+                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                  Start Growing.
+                </span>
+              </h1>
+            </div>
+            
+            {/* Subtitle and Description */}
+            <div className="text-center space-y-6 lg:space-y-8">
+              <p className="text-xl md:text-2xl text-charcoal/90 leading-relaxed max-w-3xl mx-auto">
+                Get the strategic clarity and proven frameworks you need to achieve breakthrough growth without wasting time and money on tactics that don't work.
+              </p>
+              
+              <div className="bg-muted/30 border-l-4 border-primary p-6 rounded-r-lg max-w-3xl mx-auto">
+                <p className="text-lg text-charcoal/80 font-medium">
+                  <strong className="text-primary">TRUTH:</strong> Most businesses fail not because they lack effort, but because they lack strategy. The difference between struggling and thriving is often just having the right roadmap.
+                </p>
+              </div>
+            </div>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-12 py-6 shadow-glow"
+                onClick={openForm}
+              >
                 Book Strategy Session
               </Button>
-              <Button variant="secondary" size="xl">
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                className="text-lg px-12 py-6"
+              >
                 View Success Stories
               </Button>
             </div>
