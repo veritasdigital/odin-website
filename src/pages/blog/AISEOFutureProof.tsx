@@ -206,7 +206,7 @@ const AISEOFutureProof = () => {
                     <tr className="bg-muted">
                       <th className="border border-border p-4 text-left font-semibold">Feature</th>
                       <th className="border border-border p-4 text-left font-semibold">Traditional SEO Focus</th>
-                      <th className="border border-border p-4 text-left font-semibold">Answer Engine Optimization (AEO) Focus</th>
+                      <th className="border border-border p-4 text-left font-semibold">Answer Engine Optimisation (AEO) Focus</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -312,7 +312,7 @@ const AISEOFutureProof = () => {
                   <Target className="w-6 h-6 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-charcoal">
-                  4. Practical Steps to Optimise for Answer Engine Optimization (AEO)
+                  4. Practical Steps to Optimise for Answer Engine Optimisation (AEO)
                 </h2>
               </div>
 
@@ -411,7 +411,7 @@ const AISEOFutureProof = () => {
               </p>
 
               <p>
-                The fear that AI will eliminate the need for human optimisers is based on a misunderstanding of what AI is doing. AI is automating the <em>mechanics</em> of content creation and some aspects of data analysis, but it cannot automate the <em>strategy, creativity, and human judgment</em> required for true success.
+                The fear that AI will eliminate the need for human optimisers is based on a misunderstanding of what AI is doing. AI is automating the <em>mechanics</em> of content creation and some aspects of data analysis, but it cannot automate the <em>strategy, creativity, and human judgement</em> required for true success.
               </p>
 
               <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
@@ -455,7 +455,7 @@ const AISEOFutureProof = () => {
               </h2>
 
               <p>
-                The transition to AI SEO is not a threat; it is the single greatest opportunity for businesses willing to adapt. By 2026, the companies that succeed will be those that have fully embraced the principles of Answer Engine Optimization.
+                The transition to AI SEO is not a threat; it is the single greatest opportunity for businesses willing to adapt. By 2026, the companies that succeed will be those that have fully embraced the principles of Answer Engine Optimisation.
               </p>
 
               <p>Here are your key takeaways for future-proofing your organic strategy:</p>
@@ -469,7 +469,7 @@ const AISEOFutureProof = () => {
               </ol>
 
               <p className="text-lg font-semibold mt-8">
-                The future of SEO is a partnership between human expertise and artificial intelligence. By adopting an <strong>AI SEO</strong> mindset and implementing <strong>Answer Engine Optimization</strong> techniques today, you can ensure your organic strategy is not just surviving, but thriving in the dynamic digital landscape of 2026.
+                The future of SEO is a partnership between human expertise and artificial intelligence. By adopting an <strong>AI SEO</strong> mindset and implementing <strong>Answer Engine Optimisation</strong> techniques today, you can ensure your organic strategy is not just surviving, but thriving in the dynamic digital landscape of 2026.
               </p>
 
               {/* CTA Section */}
@@ -478,7 +478,7 @@ const AISEOFutureProof = () => {
                   Ready to Future-Proof Your SEO Strategy?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  At Odin Digital, we're already implementing AI SEO and Answer Engine Optimization strategies for our clients. Let's discuss how we can help your business stay ahead of the curve in 2026 and beyond.
+                  At Odin Digital, we're already implementing AI SEO and Answer Engine Optimisation strategies for our clients. Let's discuss how we can help your business stay ahead of the curve in 2026 and beyond.
                 </p>
                 <Link to="/contact">
                   <Button size="lg" className="w-full sm:w-auto">
