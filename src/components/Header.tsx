@@ -13,39 +13,6 @@ import odinLogo from "@/assets/odin-digital-logo.png";
 export const Header = () => {
   const { openForm } = useMarketingForm();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isOverDarkSection, setIsOverDarkSection] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const updateContrast = () => {
-      const header = document.querySelector('header');
-      if (!header) return;
-
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
-
-      const rect = header.getBoundingClientRect();
-      const x = Math.min(Math.max(rect.left + rect.width / 2, 0), window.innerWidth - 1);
-      const y = Math.min(Math.max(rect.top + rect.height / 2, 0), window.innerHeight - 1);
-
-      const elements = document.elementsFromPoint(x, y);
-      const overDark = elements.some((el) => {
-        if (el === header) return false;
-        return (el as HTMLElement).closest('[data-nav-contrast="dark"]');
-      });
-
-      setIsOverDarkSection(!!overDark);
-    };
-
-    window.addEventListener('scroll', updateContrast, { passive: true } as AddEventListenerOptions);
-    window.addEventListener('resize', updateContrast);
-    updateContrast();
-
-    return () => {
-      window.removeEventListener('scroll', updateContrast as EventListener);
-      window.removeEventListener('resize', updateContrast as EventListener);
-    };
-  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-lg border-b border-charcoal/10">
@@ -59,9 +26,7 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <DropdownMenu>
-              <DropdownMenuTrigger className={`flex items-center space-x-1 font-medium transition-colors cursor-pointer ${
-                isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
-              }`}>
+              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary">
                 <span>Services</span>
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
@@ -113,24 +78,16 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/web-design-perth" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
-            }`}>
+            <a href="/web-design-perth" className="font-medium transition-colors text-foreground hover:text-primary">
               Web Design
             </a>
-            <a href="/about" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
-            }`}>
+            <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary">
               About
             </a>
-            <a href="/blog" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
-            }`}>
+            <a href="/blog" className="font-medium transition-colors text-foreground hover:text-primary">
               Blog
             </a>
-            <a href="/contact" className={`font-medium transition-colors ${
-              isOverDarkSection ? 'text-white hover:text-white/80' : 'text-foreground hover:text-primary'
-            }`}>
+            <a href="/contact" className="font-medium transition-colors text-foreground hover:text-primary">
               Contact
             </a>
           </nav>
@@ -144,9 +101,7 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              isOverDarkSection ? 'text-white' : 'text-charcoal'
-            }`}
+            className="md:hidden p-2 transition-colors text-foreground"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
