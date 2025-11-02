@@ -102,7 +102,7 @@ const Blog = () => {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
+      <section className="pt-32 pb-20 gradient-hero" data-nav-contrast="dark">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
             Digital Marketing Insights
@@ -235,7 +235,7 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-24 gradient-hero">
+      <section className="py-24 gradient-hero" data-nav-contrast="dark">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <TrendingUp className="w-16 h-16 text-white mx-auto mb-6" />
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
