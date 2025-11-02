@@ -8,6 +8,12 @@ import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, ArrowRight, User, TrendingUp } from "lucide-react";
 import contentMatrixImage from "@/assets/content-marketing-matrix.jpg";
+import seoDeadlySins from "@/assets/blog/seo-deadly-sins.jpg";
+import googleAdsPerformanceMax from "@/assets/blog/google-ads-performance-max.jpg";
+import localSeoStrategies from "@/assets/blog/local-seo-strategies.jpg";
+import socialMediaTrends from "@/assets/blog/social-media-trends.jpg";
+import emailAutomation from "@/assets/blog/email-automation.jpg";
+import conversionOptimization from "@/assets/blog/conversion-optimization.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -17,7 +23,7 @@ const Blog = () => {
       id: 1,
       title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
       excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
-      image: "/api/placeholder/600/400",
+      image: seoDeadlySins,
       author: "Odin Digital Team",
       date: "March 20, 2024",
       readTime: "12 min read",
@@ -39,7 +45,7 @@ const Blog = () => {
       id: 3,
       title: "Google Ads Performance Max: The Complete Guide for 2024",
       excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
-      image: "/api/placeholder/600/400",
+      image: googleAdsPerformanceMax,
       author: "Lucas Durante",
       date: "March 10, 2024",
       readTime: "12 min read",
@@ -49,7 +55,7 @@ const Blog = () => {
       id: 4,
       title: "Local SEO Strategies That Actually Work in 2024",
       excerpt: "Essential local SEO tactics that help businesses dominate their local market and attract more customers from their area.",
-      image: "/api/placeholder/600/400",
+      image: localSeoStrategies,
       author: "Sarah Marketing",
       date: "March 5, 2024",
       readTime: "10 min read",
@@ -59,7 +65,7 @@ const Blog = () => {
       id: 5,
       title: "Social Media Marketing Trends: What's Working Now",
       excerpt: "Stay ahead of the curve with the latest social media marketing trends and strategies that are driving engagement and conversions.",
-      image: "/api/placeholder/600/400",
+      image: socialMediaTrends,
       author: "Digital Team",
       date: "February 28, 2024",
       readTime: "7 min read",
@@ -69,7 +75,7 @@ const Blog = () => {
       id: 6,
       title: "Email Marketing Automation: From Setup to Scale",
       excerpt: "Build email marketing funnels that nurture leads and convert prospects into loyal customers with proven automation strategies.",
-      image: "/api/placeholder/600/400",
+      image: emailAutomation,
       author: "Marketing Automation",
       date: "February 22, 2024",
       readTime: "15 min read",
@@ -79,7 +85,7 @@ const Blog = () => {
       id: 7,
       title: "Conversion Rate Optimization: The Complete Blueprint",
       excerpt: "Turn more visitors into customers with data-driven CRO strategies that have increased conversion rates by up to 300%.",
-      image: "/api/placeholder/600/400",
+      image: conversionOptimization,
       author: "CRO Specialist",
       date: "February 15, 2024",
       readTime: "11 min read",
