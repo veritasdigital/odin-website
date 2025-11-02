@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, ArrowRight, User, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 import contentMatrixImage from "@/assets/content-marketing-matrix.jpg";
 import seoDeadlySins from "@/assets/blog/seo-deadly-sins.jpg";
 import googleAdsPerformanceMax from "@/assets/blog/google-ads-performance-max.jpg";
@@ -21,6 +22,18 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "AI SEO is Here: How to Future-Proof Your Organic Strategy in 2026",
+      excerpt: "The future of search is conversational and AI-driven. Learn how to adapt your SEO strategy for AI Overviews, Answer Engine Optimization, and the evolving digital landscape of 2026.",
+      image: contentMatrixImage,
+      author: "Odin Digital Team",
+      date: "January 2026",
+      readTime: "10 min read",
+      category: "AI & SEO",
+      featured: true,
+      link: "/blog/ai-seo-future-proof-organic-strategy-2026"
+    },
+    {
+      id: 2,
       title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
       excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
       image: seoDeadlySins,
@@ -28,10 +41,10 @@ const Blog = () => {
       date: "March 20, 2024",
       readTime: "12 min read",
       category: "SEO",
-      featured: true
+      featured: false
     },
     {
-      id: 2,
+      id: 3,
       title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
       excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
       image: contentMatrixImage,
@@ -42,7 +55,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       title: "Google Ads Performance Max: The Complete Guide for 2024",
       excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
       image: googleAdsPerformanceMax,
@@ -52,7 +65,7 @@ const Blog = () => {
       category: "Paid Advertising"
     },
     {
-      id: 4,
+      id: 5,
       title: "Local SEO Strategies That Actually Work in 2024",
       excerpt: "Essential local SEO tactics that help businesses dominate their local market and attract more customers from their area.",
       image: localSeoStrategies,
@@ -62,7 +75,7 @@ const Blog = () => {
       category: "SEO"
     },
     {
-      id: 5,
+      id: 6,
       title: "Social Media Marketing Trends: What's Working Now",
       excerpt: "Stay ahead of the curve with the latest social media marketing trends and strategies that are driving engagement and conversions.",
       image: socialMediaTrends,
@@ -72,7 +85,7 @@ const Blog = () => {
       category: "Social Media"
     },
     {
-      id: 6,
+      id: 7,
       title: "Email Marketing Automation: From Setup to Scale",
       excerpt: "Build email marketing funnels that nurture leads and convert prospects into loyal customers with proven automation strategies.",
       image: emailAutomation,
@@ -82,7 +95,7 @@ const Blog = () => {
       category: "Email Marketing"
     },
     {
-      id: 7,
+      id: 8,
       title: "Conversion Rate Optimization: The Complete Blueprint",
       excerpt: "Turn more visitors into customers with data-driven CRO strategies that have increased conversion rates by up to 300%.",
       image: conversionOptimization,
@@ -93,7 +106,7 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["All", "Content Marketing", "Paid Advertising", "SEO", "Social Media", "Email Marketing", "CRO"];
+  const categories = ["All", "AI & SEO", "Content Marketing", "Paid Advertising", "SEO", "Social Media", "Email Marketing", "CRO"];
 
   return (
     <div className="min-h-screen bg-background">
@@ -158,10 +171,12 @@ const Blog = () => {
                       <span>{post.readTime}</span>
                     </div>
                   </div>
-                  <Button variant="outline" className="w-fit group">
-                    Read Full Article
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <Link to={post.link || "#"}>
+                    <Button variant="outline" className="w-fit group">
+                      Read Full Article
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Card>
@@ -192,43 +207,49 @@ const Blog = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.filter(post => !post.featured).map((post) => (
-              <Card key={post.id} className="overflow-hidden hover:shadow-glow transition-all duration-300 group">
-                <div className="relative">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
-                    {post.category}
-                  </Badge>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-4">
-                    <div className="flex items-center space-x-1">
-                      <User className="w-3 h-3" />
-                      <span>{post.author}</span>
+              <Link 
+                key={post.id} 
+                to={post.link || "#"} 
+                className="block"
+              >
+                <Card className="overflow-hidden hover:shadow-glow transition-all duration-300 group h-full">
+                  <div className="relative">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
+                      {post.category}
+                    </Badge>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-4 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-4">
+                      <div className="flex items-center space-x-1">
+                        <User className="w-3 h-3" />
+                        <span>{post.author}</span>
+                      </div>
+                      <div className="flex items-center space-x-1">
+                        <Clock className="w-3 h-3" />
+                        <span>{post.readTime}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center space-x-1">
-                      <Clock className="w-3 h-3" />
-                      <span>{post.readTime}</span>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">{post.date}</span>
+                      <Button variant="ghost" size="sm" className="group/btn">
+                        Read More
+                        <ArrowRight className="w-3 h-3 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">{post.date}</span>
-                    <Button variant="ghost" size="sm" className="group/btn">
-                      Read More
-                      <ArrowRight className="w-3 h-3 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
