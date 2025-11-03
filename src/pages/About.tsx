@@ -28,9 +28,9 @@ const About = () => {
             <div className="text-center space-y-8">
               {/* Main heading with sleek animation */}
               <h1 className="text-5xl md:text-7xl font-black text-charcoal leading-[1.1] tracking-tight animate-fade-in">
-                About Odin Digital: <br />
-                <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">
-                  A New Era of Digital Marketing
+                About Odin Digital: A New Era of{" "}
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                  Digital Marketing
                 </span>
               </h1>
               
