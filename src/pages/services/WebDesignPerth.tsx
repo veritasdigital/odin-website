@@ -25,6 +25,8 @@ import {
   DollarSign,
   Headphones,
 } from "lucide-react";
+import { AsSeenIn } from "@/components/AsSeenIn";
+import heroPerson from "@/assets/hero-person-new.png";
 
 const WebDesignPerth = () => {
   const { openForm } = useMarketingForm();
@@ -325,40 +327,85 @@ const WebDesignPerth = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 py-20 sm:py-32">
-          {/* Floating circles from homepage */}
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
-
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 mt-12 break-words overflow-wrap-anywhere">
-                Web Design Agency Perth
-              </h1>
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
+          
+          {/* Split Screen Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
-              <p className="hero-sub-headline text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground break-words overflow-wrap-anywhere">
-                Your Website Should Drive Growth, Not Costs.
-              </p>
+              {/* Left Side - Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Perth's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Your Website Should Drive Growth, Not Costs.
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Is your outdated, slow, or overpriced website holding your Perth business back? It's time for a professional Perth web design agency that delivers high-converting websites without the east coast price tag.
+                  </p>
 
-              <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto break-words overflow-wrap-anywhere">
-                Is your outdated, slow, or overpriced website holding your Perth business back? It's time for a professional Perth web design agency that delivers high-converting websites without the east coast price tag.
-              </p>
-
-              <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-3xl mx-auto break-words overflow-wrap-anywhere">
-                In the competitive Perth market, you need a website that performs. A slow, unprofessional, or broken site doesn't just look bad—it actively drives potential customers to your competitors. At Odin Digital, we don't just build pretty websites; we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment. With no lock-in contracts and a focus on radical transparency, we're the Perth web design partner you can trust. Ready to turn your website into a revenue-generating machine?
-              </p>
-
-              <Button
-                onClick={openForm}
-                size="lg"
-                className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 whitespace-normal h-auto"
-              >
-                Get Your FREE Perth Web Design Quote →
-              </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    In the competitive Perth market, you need a website that performs. A slow, unprofessional, or broken site doesn't just look bad—it actively drives potential customers to your competitors. At Odin Digital, we don't just build pretty websites; we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow"
+                    onClick={openForm}
+                  >
+                    Get Your FREE Perth Web Design Quote →
+                  </Button>
+                </div>
+              </div>
+              
+              {/* Right Side - Person Image */}
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-lg">
+                  {/* Person Image */}
+                  <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
+                    <img src={heroPerson} alt="Alexa Blake, Odin Digital General Manager" className="w-full h-full object-cover object-center" />
+                  </div>
+                  
+                  {/* Floating Glassy Banner */}
+                  <div className="absolute bottom-8 -left-4 right-8 bg-white/80 backdrop-blur-lg border border-white/40 rounded-xl shadow-lg p-4 z-10">
+                    <div className="text-charcoal">
+                      <h3 className="font-bold text-lg">Alexa Blake</h3>
+                      <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative elements around image */}
+                  <div className="absolute -top-6 -left-6 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
+                  <div className="absolute -bottom-4 -right-4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute top-1/3 -left-8 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+                </div>
+              </div>
+              
             </div>
           </div>
         </section>
+
+        {/* As Seen In Section */}
+        <AsSeenIn />
 
         {/* Social Proof Metrics Section */}
         <section className="py-16 sm:py-20 bg-muted/30">
