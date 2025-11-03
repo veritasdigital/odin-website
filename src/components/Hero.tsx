@@ -76,6 +76,9 @@ export const Hero = () => {
                     src={fox40Logo}
                     alt="FOX40 News"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="92"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -83,6 +86,9 @@ export const Hero = () => {
                     src={msnLogo}
                     alt="MSN"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="62"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -90,6 +96,9 @@ export const Hero = () => {
                     src={yahooFinanceLogo}
                     alt="Yahoo Finance"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="65"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -97,6 +106,9 @@ export const Hero = () => {
                     src={businessInsiderLogo}
                     alt="Business Insider"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="75"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -104,6 +116,9 @@ export const Hero = () => {
                     src={digitalJournalLogo}
                     alt="Digital Journal"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="58"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -111,6 +126,9 @@ export const Hero = () => {
                     src={chronicleJournalLogo}
                     alt="The Chronicle Journal"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="41"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
@@ -118,6 +136,9 @@ export const Hero = () => {
                     src={ncnLogo}
                     alt="NCN"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    width="52"
+                    height="24"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -132,7 +153,14 @@ export const Hero = () => {
               
               {/* Person Image */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
-                <img src={heroPerson} alt="Alexa Blake, Odin Digital General Manager" className="w-full h-full object-cover object-center" />
+                <img 
+                  src={heroPerson} 
+                  alt="Alexa Blake, Odin Digital General Manager" 
+                  className="w-full h-full object-cover object-center"
+                  width="768"
+                  height="1024"
+                  fetchPriority="high"
+                />
               </div>
               
               {/* Floating Glassy Banner */}
