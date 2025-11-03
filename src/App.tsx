@@ -102,6 +102,7 @@ import OnlineMarketingCompanyAdelaide from "./pages/services/OnlineMarketingComp
 import OnlineMarketingCompanyBrisbane from "./pages/services/OnlineMarketingCompanyBrisbane";
 import OnlineMarketingCompanyPerth from "./pages/services/OnlineMarketingCompanyPerth";
 import AISEOFutureProof from "./pages/blog/AISEOFutureProof";
+import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
 
@@ -116,6 +117,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/our-clients" element={<OurClients />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/google-ads" element={<GoogleAds />} />
             <Route path="/google-ads-management" element={<GoogleAdsManagement />} />

@@ -90,6 +90,9 @@ export const Header = () => {
             <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary">
               About
             </a>
+            <a href="/our-clients" className="font-medium transition-colors text-foreground hover:text-primary">
+              Our Clients
+            </a>
             <a href="/blog" className="font-medium transition-colors text-foreground hover:text-primary">
               Blog
             </a>
@@ -138,6 +141,7 @@ export const Header = () => {
               </div>
               <a href="/web-design-perth" className="text-charcoal/70 hover:text-primary font-medium py-2">Web Design</a>
               <a href="/about" className="text-charcoal/70 hover:text-primary font-medium py-2">About</a>
+              <a href="/our-clients" className="text-charcoal/70 hover:text-primary font-medium py-2">Our Clients</a>
               <a href="/blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="/contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
               <Button variant="cta" size="lg" className="mt-4 w-full font-medium" onClick={openForm}>
