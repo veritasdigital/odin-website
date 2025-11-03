@@ -10,33 +10,38 @@ import chronicleJournalLogo from "@/assets/media/chronicle-journal-logo.png";
 import ncnLogo from "@/assets/media/ncn-logo.png";
 export const Hero = () => {
   const { openForm } = useMarketingForm();
-  return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
-      {/* Subtle Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-      </div>
+  return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white via-primary/5 to-secondary/10">
+      {/* Animated Background Blobs */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+      
+      {/* Floating Particles */}
+      <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+      <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/40 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-accent/30 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
       
       {/* Split Screen Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
           
           {/* Left Side - Text Content */}
-          <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
+          <div className="space-y-8 lg:space-y-10 max-w-2xl">
             {/* Main Headline */}
-            <div className="space-y-6">
+            <div className="space-y-6 animate-fade-in">
               <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-3 lg:mb-4">Accelerate Your</span>
-                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                <span className="block mb-3 lg:mb-4 animate-fade-in">Accelerate Your</span>
+                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   Digital Growth
                 </span>
-                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl">
+                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   With Strategic Marketing Excellence
                 </span>
               </h1>
             </div>
             
             {/* Subtitle and Description */}
-            <div className="space-y-6 lg:space-y-8">
+            <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
               <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
                 Data-Driven Digital Marketing Solutions That Deliver Measurable Business Results
               </h2>
@@ -47,11 +52,11 @@ export const Hero = () => {
             </div>
             
             {/* Action Button */}
-            <div className="pt-2">
+            <div className="pt-2 animate-fade-in" style={{ animationDelay: "0.8s" }}>
               <Button 
                 variant="hero" 
                 size="lg" 
-                className="text-lg px-12 py-6 shadow-glow"
+                className="text-lg px-12 py-6 shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
                 onClick={openForm}
               >
                 Get Your FREE Marketing Strategy
@@ -59,7 +64,7 @@ export const Hero = () => {
             </div>
             
             {/* As Seen In Media Logos */}
-            <div className="pt-8 mt-8 border-t border-charcoal/10">
+            <div className="pt-8 mt-8 border-t border-charcoal/10 animate-fade-in" style={{ animationDelay: "1s" }}>
               <div className="text-center mb-6">
                 <h3 className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
                   As Featured In
@@ -120,29 +125,29 @@ export const Hero = () => {
           </div>
           
           {/* Right Side - Person Image */}
-          <div className="relative flex items-center justify-center lg:justify-end">
+          <div className="relative flex items-center justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative w-full max-w-lg">
+              {/* Gradient Ring */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
+              
               {/* Person Image */}
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
                 <img src={heroPerson} alt="Alexa Blake, Odin Digital General Manager" className="w-full h-full object-cover object-center" />
               </div>
               
               {/* Floating Glassy Banner */}
-              <div className="absolute bottom-8 -left-4 right-8 bg-white/80 backdrop-blur-lg border border-white/40 rounded-xl shadow-lg p-4 z-10">
+              <div className="absolute bottom-8 -left-4 right-8 bg-white/90 backdrop-blur-xl border border-white/60 rounded-xl shadow-2xl p-4 z-10 transform hover:scale-105 transition-all duration-300">
                 <div className="text-charcoal">
-                  <h3 className="font-bold text-lg">Alexa Blake</h3>
+                  <h3 className="font-bold text-lg bg-gradient-to-r from-charcoal to-charcoal/80 bg-clip-text">Alexa Blake</h3>
                   <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
                 </div>
               </div>
               
-              {/* Decorative elements around image */}
-              <div className="absolute -top-6 -left-6 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-              <div className="absolute -bottom-4 -right-4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{
-              animationDelay: '2s'
-            }}></div>
-              <div className="absolute top-1/3 -left-8 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{
-              animationDelay: '4s'
-            }}></div>
+              {/* Enhanced Decorative elements around image */}
+              <div className="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-br from-primary to-primary/50 rounded-full animate-float shadow-lg shadow-primary/30"></div>
+              <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-gradient-to-br from-secondary to-secondary/50 rounded-lg animate-float shadow-lg shadow-secondary/30" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute top-1/3 -left-8 w-8 h-8 bg-gradient-to-br from-accent to-accent/50 rounded-full animate-float shadow-lg shadow-accent/30" style={{ animationDelay: '4s' }}></div>
+              <div className="absolute top-16 -right-6 w-6 h-6 bg-gradient-to-br from-primary to-accent rounded-full animate-float shadow-lg shadow-primary/20" style={{ animationDelay: '3s' }}></div>
             </div>
           </div>
           
