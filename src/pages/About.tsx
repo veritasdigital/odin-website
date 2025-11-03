@@ -15,16 +15,27 @@ const About = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
+        <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+          {/* Animated background elements */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+          
+          {/* Floating decorative shapes */}
+          <div className="absolute top-40 left-20 w-8 h-8 bg-primary/20 rounded-full animate-float"></div>
+          <div className="absolute top-60 right-32 w-6 h-6 bg-secondary/30 rounded-lg animate-float" style={{ animationDelay: "1.5s" }}></div>
+          <div className="absolute bottom-40 left-1/4 w-10 h-10 bg-accent/20 rounded-full animate-float" style={{ animationDelay: "3s" }}></div>
+          <div className="absolute top-1/3 right-20 w-12 h-12 bg-primary/15 rounded-lg animate-float" style={{ animationDelay: "2.5s" }}></div>
+
+          <div className="max-w-7xl mx-auto px-6 relative z-10">
+            <div className="text-center mb-16 animate-fade-in">
               <h1 className="text-4xl md:text-6xl font-black text-charcoal mb-8 leading-tight">
-                About Odin Digital: A New Era of <span className="text-primary">Digital Marketing</span>
+                About Odin Digital: A New Era of <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Digital Marketing</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 We're Not Just a Digital Agency; We're Your Unfair Advantage.
               </h2>
-              <p className="text-xl text-charcoal/80 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-xl text-charcoal/80 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 In a world saturated with digital noise, Odin Digital was founded on a simple, powerful principle: <strong>every ambitious business deserves marketing that delivers real, measurable results.</strong> We are a collective of performance-obsessed marketers, strategists, and innovators who have united to challenge the status quo of the agency world.
               </p>
             </div>
