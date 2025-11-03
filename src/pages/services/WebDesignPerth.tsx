@@ -615,24 +615,39 @@ const WebDesignPerth = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-16 sm:py-20 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 break-words overflow-wrap-anywhere">
-              Ready to Build a Website That Grows Your Business in Perth?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto break-words overflow-wrap-anywhere">
-              Stop losing customers to an outdated, slow, or unprofessional website. It's time to invest in a high-converting website that generates a measurable return on investment.
-            </p>
-            <p className="text-base text-muted-foreground mb-10 max-w-3xl mx-auto break-words overflow-wrap-anywhere">
-              Take the first step towards transforming your online presence. Schedule your FREE, no-obligation Perth web design consultation and quote with one of our senior strategists today. We'll analyze your current website, discuss your goals, and show you exactly how we can help you build a website that drives real business growth. What do you have to lose?
-            </p>
-            <Button
-              onClick={openForm}
-              size="lg"
-              className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105 whitespace-normal h-auto"
-            >
-              Get Your FREE Perth Web Design Quote →
-            </Button>
+        <section className="relative py-20 sm:py-32 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
+          {/* Animated background elements */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto">
+              <Card className="p-8 sm:p-12 bg-white/80 backdrop-blur-sm border-2 shadow-xl hover:shadow-2xl transition-all duration-300">
+                <div className="text-center space-y-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                    Ready to Build a Website That Grows Your Business in Perth?
+                  </h2>
+                  <div className="space-y-4">
+                    <p className="text-lg sm:text-xl text-charcoal/80 leading-relaxed">
+                      Stop losing customers to an outdated, slow, or unprofessional website. It's time to invest in a high-converting website that generates a measurable return on investment.
+                    </p>
+                    <p className="text-base sm:text-lg text-charcoal/70 leading-relaxed">
+                      Take the first step towards transforming your online presence. Schedule your FREE, no-obligation Perth web design consultation and quote with one of our senior strategists today. We'll analyse your current website, discuss your goals, and show you exactly how we can help you build a website that drives real business growth. What do you have to lose?
+                    </p>
+                  </div>
+                  <div className="pt-4">
+                    <Button
+                      onClick={openForm}
+                      variant="hero"
+                      size="lg"
+                      className="text-lg px-12 py-6 shadow-glow"
+                    >
+                      Get Your FREE Perth Web Design Quote →
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </section>
 
