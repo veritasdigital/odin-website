@@ -857,29 +857,27 @@ const ConveyancingLawyers = () => {
 
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
               {caseStudies.map((study, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <div className="mb-4">
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2">{study.type}</h3>
-                    <div className="bg-destructive/10 p-4 rounded-lg mb-4">
-                      <p className="font-semibold mb-2 text-sm sm:text-base">The Challenge:</p>
-                      <p className="text-sm sm:text-base text-muted-foreground">{study.challenge}</p>
-                    </div>
-                    <div className="bg-primary/5 p-4 rounded-lg mb-4">
-                      <p className="font-semibold mb-2 text-sm sm:text-base">Our Solution:</p>
-                      <p className="text-sm sm:text-base text-muted-foreground">{study.solution}</p>
-                    </div>
-                    <div className="bg-green-50 dark:bg-green-950 p-4 rounded-lg mb-4">
-                      <p className="font-semibold mb-2 text-sm sm:text-base">Results Achieved:</p>
-                      <p className="text-sm sm:text-base text-muted-foreground">{study.results}</p>
-                    </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      {Object.entries(study.metrics).map(([key, value], idx) => (
-                        <div key={idx} className="text-center p-3 bg-background rounded-lg">
-                          <div className="text-xl sm:text-2xl font-black text-primary">{value}</div>
-                          <div className="text-xs sm:text-sm text-muted-foreground capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
-                        </div>
-                      ))}
-                    </div>
+                <Card key={index} className="p-6 sm:p-8 hover-scale flex flex-col">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4">{study.type}</h3>
+                  <div className="bg-destructive/10 p-4 rounded-lg mb-4 flex-grow-0">
+                    <p className="font-semibold mb-2 text-sm sm:text-base">The Challenge:</p>
+                    <p className="text-sm sm:text-base text-muted-foreground">{study.challenge}</p>
+                  </div>
+                  <div className="bg-primary/5 p-4 rounded-lg mb-4 flex-grow-0">
+                    <p className="font-semibold mb-2 text-sm sm:text-base">Our Solution:</p>
+                    <p className="text-sm sm:text-base text-muted-foreground">{study.solution}</p>
+                  </div>
+                  <div className="bg-green-50 dark:bg-green-950 p-4 rounded-lg mb-4 flex-grow">
+                    <p className="font-semibold mb-2 text-sm sm:text-base">Results Achieved:</p>
+                    <p className="text-sm sm:text-base text-muted-foreground">{study.results}</p>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4 mt-auto">
+                    {Object.entries(study.metrics).map(([key, value], idx) => (
+                      <div key={idx} className="text-center p-3 bg-background rounded-lg">
+                        <div className="text-xl sm:text-2xl font-black text-primary">{value}</div>
+                        <div className="text-xs sm:text-sm text-muted-foreground capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
+                      </div>
+                    ))}
                   </div>
                 </Card>
               ))}
