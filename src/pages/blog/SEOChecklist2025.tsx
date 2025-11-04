@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Search, TrendingUp, Zap, Globe, MapPin, Star, Rocket, Target, LineChart } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -87,12 +87,17 @@ const SEOChecklist2025 = () => {
         <Header />
         
         <main className="pt-20">
-          {/* Hero Section with Floating Circles */}
-          <section className="relative py-20 overflow-hidden bg-gradient-to-b from-background to-muted/20">
-            {/* Floating Circles */}
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float-delayed"></div>
-            <div className="absolute top-40 right-20 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-float-slow"></div>
+          {/* Hero Section with Enhanced Visual Elements */}
+          <section className="relative py-20 overflow-hidden bg-gradient-to-br from-white via-primary/5 to-secondary/10">
+            {/* Animated Background Blobs */}
+            <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
+            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }}></div>
+            
+            {/* Floating Particles */}
+            <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+            <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/40 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+            <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-accent/30 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
             <div className="container mx-auto px-4 relative z-10">
               {/* Breadcrumbs */}
@@ -126,13 +131,39 @@ const SEOChecklist2025 = () => {
                   </p>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-                  The Ultimate SEO Checklist for Australian Small Businesses in 2025
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                  <span className="block mb-2">The Ultimate</span>
+                  <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">SEO Checklist</span>
+                  <span className="block mt-2 text-foreground">for Australian Small Businesses in 2025</span>
                 </h1>
 
-                <p className="text-xl text-muted-foreground mb-8">
+                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
                   Your complete guide to ranking higher on Google, attracting more customers, and growing your Australian small business in 2025.
                 </p>
+                
+                {/* Quick Stats */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  <div className="bg-white/50 backdrop-blur-sm border border-primary/10 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
+                    <TrendingUp className="w-6 h-6 text-primary mx-auto mb-2" />
+                    <div className="font-bold text-2xl text-foreground">93%</div>
+                    <div className="text-sm text-muted-foreground">Start with Google</div>
+                  </div>
+                  <div className="bg-white/50 backdrop-blur-sm border border-secondary/10 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
+                    <Target className="w-6 h-6 text-secondary mx-auto mb-2" />
+                    <div className="font-bold text-2xl text-foreground">75%</div>
+                    <div className="text-sm text-muted-foreground">Never scroll past page 1</div>
+                  </div>
+                  <div className="bg-white/50 backdrop-blur-sm border border-accent/10 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
+                    <LineChart className="w-6 h-6 text-accent mx-auto mb-2" />
+                    <div className="font-bold text-2xl text-foreground">14.6%</div>
+                    <div className="text-sm text-muted-foreground">SEO Lead Close Rate</div>
+                  </div>
+                  <div className="bg-white/50 backdrop-blur-sm border border-primary/10 rounded-lg p-4 text-center transform hover:scale-105 transition-all duration-300">
+                    <Rocket className="w-6 h-6 text-primary mx-auto mb-2" />
+                    <div className="font-bold text-2xl text-foreground">10X</div>
+                    <div className="text-sm text-muted-foreground">ROI Potential</div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -181,10 +212,19 @@ const SEOChecklist2025 = () => {
 
                 {/* On-Page SEO Section */}
                 <section id="on-page-seo" className="mb-16 scroll-mt-24">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">On-Page SEO Checklist</h2>
-                  <p className="text-lg leading-relaxed text-foreground mb-8">
-                    On-page SEO refers to the optimisation of elements on your website. These are the things you have direct control over.
-                  </p>
+                  <div className="relative mb-8">
+                    {/* Decorative Elements */}
+                    <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 bg-gradient-primary rounded-xl shadow-primary">
+                        <Search className="w-8 h-8 text-white" />
+                      </div>
+                      <h2 className="text-3xl md:text-4xl font-black text-foreground">On-Page SEO Checklist</h2>
+                    </div>
+                    <p className="text-lg leading-relaxed text-muted-foreground mb-8 pl-16">
+                      On-page SEO refers to the optimisation of elements on your website. These are the things you have direct control over.
+                    </p>
+                  </div>
 
                   <div className="space-y-10">
                     <div>
@@ -282,10 +322,18 @@ const SEOChecklist2025 = () => {
 
                 {/* Off-Page SEO Section */}
                 <section id="off-page-seo" className="mb-16 scroll-mt-24">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Off-Page SEO Checklist</h2>
-                  <p className="text-lg leading-relaxed text-foreground mb-8">
-                    Off-page SEO refers to activities that take place off your website to improve your rankings.
-                  </p>
+                  <div className="relative mb-8">
+                    <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-secondary to-primary rounded-full"></div>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 bg-gradient-to-br from-secondary to-primary rounded-xl shadow-lg">
+                        <Globe className="w-8 h-8 text-white" />
+                      </div>
+                      <h2 className="text-3xl md:text-4xl font-black text-foreground">Off-Page SEO Checklist</h2>
+                    </div>
+                    <p className="text-lg leading-relaxed text-muted-foreground mb-8 pl-16">
+                      Off-page SEO refers to activities that take place off your website to improve your rankings.
+                    </p>
+                  </div>
 
                   <div className="space-y-10">
                     <div>
@@ -324,10 +372,18 @@ const SEOChecklist2025 = () => {
 
                 {/* Technical SEO Section */}
                 <section id="technical-seo" className="mb-16 scroll-mt-24">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Technical SEO Checklist</h2>
-                  <p className="text-lg leading-relaxed text-foreground mb-8">
-                    Technical SEO refers to the optimisation of your website's backend. Our <Link to="/services/website-design" className="text-primary hover:underline font-semibold">web design team</Link> ensures all technical SEO elements are optimised from day one.
-                  </p>
+                  <div className="relative mb-8">
+                    <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-accent to-primary rounded-full"></div>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 bg-gradient-to-br from-accent to-primary rounded-xl shadow-lg">
+                        <Zap className="w-8 h-8 text-white" />
+                      </div>
+                      <h2 className="text-3xl md:text-4xl font-black text-foreground">Technical SEO Checklist</h2>
+                    </div>
+                    <p className="text-lg leading-relaxed text-muted-foreground mb-8 pl-16">
+                      Technical SEO refers to the optimisation of your website's backend. Our <Link to="/services/website-design" className="text-primary hover:underline font-semibold">web design team</Link> ensures all technical SEO elements are optimised from day one.
+                    </p>
+                  </div>
 
                   <div className="space-y-10">
                     <div>
@@ -374,10 +430,18 @@ const SEOChecklist2025 = () => {
 
                 {/* Local SEO Section */}
                 <section id="local-seo" className="mb-16 scroll-mt-24">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Local SEO Checklist</h2>
-                  <p className="text-lg leading-relaxed text-foreground mb-8">
-                    Local SEO is essential for businesses that serve a specific geographic area. Our <Link to="/services/local-seo" className="text-primary hover:underline font-semibold">local SEO services</Link> help you dominate your local market.
-                  </p>
+                  <div className="relative mb-8">
+                    <div className="absolute -left-4 top-0 w-1 h-16 bg-gradient-to-b from-primary to-accent rounded-full"></div>
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-xl shadow-primary">
+                        <MapPin className="w-8 h-8 text-white" />
+                      </div>
+                      <h2 className="text-3xl md:text-4xl font-black text-foreground">Local SEO Checklist</h2>
+                    </div>
+                    <p className="text-lg leading-relaxed text-muted-foreground mb-8 pl-16">
+                      Local SEO is essential for businesses that serve a specific geographic area. Our <Link to="/services/local-seo" className="text-primary hover:underline font-semibold">local SEO services</Link> help you dominate your local market.
+                    </p>
+                  </div>
 
                   <div className="space-y-10">
                     <div>
@@ -410,6 +474,30 @@ const SEOChecklist2025 = () => {
                       </ul>
                     </div>
                   </div>
+                  
+                  {/* Visual Stats Card */}
+                  <Card className="mt-10 p-8 bg-gradient-to-br from-primary/5 via-white to-secondary/5 border-primary/20">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="p-3 bg-gradient-primary rounded-lg">
+                        <Star className="w-6 h-6 text-white" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground">The Power of Reviews</h3>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      <div className="text-center">
+                        <div className="text-4xl font-black bg-gradient-primary bg-clip-text text-transparent mb-2">88%</div>
+                        <p className="text-sm text-muted-foreground">Trust online reviews as much as personal recommendations</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl font-black bg-gradient-primary bg-clip-text text-transparent mb-2">5★</div>
+                        <p className="text-sm text-muted-foreground">Businesses with 5-star ratings get 69% more clicks</p>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl font-black bg-gradient-primary bg-clip-text text-transparent mb-2">50+</div>
+                        <p className="text-sm text-muted-foreground">Reviews needed to significantly impact local rankings</p>
+                      </div>
+                    </div>
+                  </Card>
                 </section>
 
                 {/* Conclusion */}
