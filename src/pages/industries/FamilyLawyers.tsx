@@ -451,7 +451,7 @@ const FamilyLawyers = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal mb-8"
                 onClick={openForm}
               >
                 Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
