@@ -208,14 +208,14 @@ const Orthodontists = () => {
       <Header />
 
       {/* Breadcrumb Navigation */}
-      <div className="bg-muted/30 py-3 md:py-4">
+      <div className="bg-muted/30 py-2 sm:py-3 md:py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex items-center space-x-2 text-sm text-charcoal/60">
+          <div className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm text-charcoal/60">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
             <Link to="/industries" className="hover:text-primary transition-colors">Industries</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-charcoal">Orthodontists Marketing</span>
+            <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span className="text-charcoal truncate">Orthodontists Marketing</span>
           </div>
         </div>
       </div>
@@ -233,32 +233,32 @@ const Orthodontists = () => {
       </div>
 
       {/* 1. Hero Section */}
-      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white">
+      <section className="relative isolate overflow-hidden min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] flex items-center bg-white">
         <div className="absolute inset-0 opacity-[0.03]">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
         </div>
 
         {/* Decorative floating circles */}
-        <div className="absolute -top-6 left-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
-        <div className="absolute top-1/4 right-1/3 w-10 h-10" style={{ background: 'linear-gradient(135deg, rgba(217, 28, 92, 0.15), rgba(138, 0, 0, 0.15))', borderRadius: '50%', animation: 'float 8s ease-in-out infinite', animationDelay: '1s' }}></div>
+        <div className="absolute -top-6 left-1/4 w-8 h-8 sm:w-12 sm:h-12 bg-primary/20 rounded-full animate-float"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-6 h-6 sm:w-8 sm:h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-10 w-4 h-4 sm:w-6 sm:h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/4 right-1/3 w-6 h-6 sm:w-10 sm:h-10" style={{ background: 'linear-gradient(135deg, rgba(217, 28, 92, 0.15), rgba(138, 0, 0, 0.15))', borderRadius: '50%', animation: 'float 8s ease-in-out infinite', animationDelay: '1s' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-16 md:py-20 pt-24 sm:pt-28 md:pt-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-8 sm:py-12 md:py-16 lg:py-20 pt-20 sm:pt-24 md:pt-28 lg:pt-32">
           <div className="max-w-4xl mx-auto animate-slide-up text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight mb-3 sm:mb-4 md:mb-6">
               Orthodontists Marketing
             </h1>
             
-            <p className="text-xl sm:text-2xl md:text-3xl text-charcoal font-bold leading-tight mb-4 sm:mb-6">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-charcoal font-bold leading-tight mb-3 sm:mb-4 md:mb-6">
               Stop Relying on Referrals and Start Attracting High-Value Patients Directly. We Build Digital Ecosystems That Increase Case Acceptance and Deliver a Predictable Stream of New Patient Starts.
             </p>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-3 sm:mb-4 font-semibold">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal/80 leading-relaxed mb-2 sm:mb-3 md:mb-4 font-semibold">
               The Orthodontists Marketing Agency That Understands Your Practice, Your Patients, and Your Goals.
             </p>
             
-            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-charcoal/70 leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-3xl mx-auto">
               Partner with Odin Digital and transform your orthodontic practice with data-driven marketing strategies that drive real patient growth.
             </p>
             
@@ -267,28 +267,28 @@ const Orthodontists = () => {
                 onClick={openForm}
                 size="lg"
                 style={{ backgroundColor: '#D91C5C' }}
-                className="text-white text-base sm:text-lg px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
+                className="text-white text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
               >
                 Get Your FREE Orthodontist Marketing Audit →
               </Button>
             </div>
 
             {/* Trust Signals */}
-            <div className="mt-8 sm:mt-10 md:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#D91C5C' }}>$574M+</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#D91C5C' }}>$574M+</div>
                 <div className="text-xs sm:text-sm text-charcoal/70">Client Revenue</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#D91C5C' }}>540%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#D91C5C' }}>540%</div>
                 <div className="text-xs sm:text-sm text-charcoal/70">Average ROI</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#D91C5C' }}>95%</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#D91C5C' }}>95%</div>
                 <div className="text-xs sm:text-sm text-charcoal/70">Client Retention</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#D91C5C' }}>200+</div>
+                <div className="text-xl sm:text-2xl md:text-3xl font-bold" style={{ color: '#D91C5C' }}>200+</div>
                 <div className="text-xs sm:text-sm text-charcoal/70">Businesses Transformed</div>
               </div>
             </div>
@@ -297,50 +297,50 @@ const Orthodontists = () => {
       </section>
 
       {/* 2. Problem-Agitation Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-muted decorative-circles-alt">
+      <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-muted decorative-circles-alt">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
+          <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-2 sm:mb-3 md:mb-4">
               Why Most Orthodontic Marketing Fails
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-charcoal/70 max-w-3xl mx-auto px-2">
               Most orthodontists struggle with low case acceptance rates and inconsistent patient flow. Here's why traditional marketing doesn't work anymore.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <AlertCircle className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
-              <h3 className="text-xl font-bold text-charcoal mb-3">
+            <Card className="p-4 sm:p-5 md:p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+              <AlertCircle className="h-10 w-10 sm:h-12 sm:w-12 mb-3 sm:mb-4" style={{ color: '#D91C5C' }} />
+              <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-2 sm:mb-3">
                 Low Case Acceptance Rates
               </h3>
-              <p className="text-charcoal/70 leading-relaxed">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
                 Most practices struggle with converting consultations into treatment starts because they're not educating patients before they walk through the door.
               </p>
             </Card>
 
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <Target className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
-              <h3 className="text-xl font-bold text-charcoal mb-3">
+            <Card className="p-4 sm:p-5 md:p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+              <Target className="h-10 w-10 sm:h-12 sm:w-12 mb-3 sm:mb-4" style={{ color: '#D91C5C' }} />
+              <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-2 sm:mb-3">
                 Digital Sophistication Gap
               </h3>
-              <p className="text-charcoal/70 leading-relaxed">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
                 Your competitors are using advanced digital marketing while you're still relying on outdated referral programs and traditional advertising.
               </p>
             </Card>
 
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <Star className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
-              <h3 className="text-xl font-bold text-charcoal mb-3">
+            <Card className="p-4 sm:p-5 md:p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+              <Star className="h-10 w-10 sm:h-12 sm:w-12 mb-3 sm:mb-4" style={{ color: '#D91C5C' }} />
+              <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-2 sm:mb-3">
                 Online Reputation Battle
               </h3>
-              <p className="text-charcoal/70 leading-relaxed">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
                 You're losing patients to practices with better online reviews and stronger digital presence, even if your clinical expertise is superior.
               </p>
             </Card>
           </div>
 
-          <div className="text-center mt-8 sm:mt-10 md:mt-12">
+          <div className="text-center mt-6 sm:mt-8 md:mt-10 lg:mt-12">
             <Button
               onClick={openForm}
               size="lg"
@@ -766,18 +766,18 @@ const Orthodontists = () => {
       </section>
 
       {/* 9. Final CTA Section */}
-      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-charcoal to-accent text-white relative overflow-hidden">
+      <section className="py-10 sm:py-12 md:py-16 lg:py-20 bg-gradient-to-br from-charcoal to-accent text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-0 w-48 h-48 sm:w-64 sm:h-64 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-secondary rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pb-16 md:pb-0">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-black mb-4 sm:mb-6 leading-tight">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pb-12 sm:pb-16 md:pb-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-3 sm:mb-4 md:mb-6 leading-tight">
             Ready to Transform Your Orthodontic Practice?
           </h2>
           
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 md:mb-10 leading-relaxed opacity-90">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-relaxed opacity-90 px-2">
             Stop relying on referrals and start building a predictable patient acquisition system. Partner with the orthodontist marketing agency that delivers real results.
           </p>
           
@@ -785,7 +785,7 @@ const Orthodontists = () => {
             onClick={openForm}
             size="xl"
             style={{ backgroundColor: '#D91C5C' }}
-            className="text-white text-base sm:text-lg md:text-xl px-8 sm:px-12 md:px-16 py-5 sm:py-6 md:py-8 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
+            className="text-white text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-5 md:py-6 lg:py-8 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
           >
             Get Your FREE Practice Growth Audit →
           </Button>
