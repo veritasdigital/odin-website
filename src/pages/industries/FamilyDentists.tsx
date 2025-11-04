@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -236,6 +237,13 @@ const FamilyDentists = () => {
 
   return (
     <>
+      {/* Mobile Sticky CTA */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background border-t shadow-lg p-4">
+        <Button size="lg" className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300" asChild>
+          <Link to="/contact">Schedule FREE Analysis →</Link>
+        </Button>
+      </div>
+
       <Helmet>
         <title>Digital Marketing for Family Dentists | Attract New Patients & Maximize Recall - Odin Digital</title>
         <meta
@@ -245,7 +253,7 @@ const FamilyDentists = () => {
         <script type="application/ld+json">{JSON.stringify(jsonLdSchema)}</script>
       </Helmet>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-20 md:pb-0">
         <Header />
 
         {/* Mobile Sticky CTA */}
