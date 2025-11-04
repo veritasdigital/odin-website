@@ -17,6 +17,7 @@ import emailAutomation from "@/assets/blog/email-automation.jpg";
 import conversionOptimization from "@/assets/blog/conversion-optimization.jpg";
 import keywordResearchAI from "@/assets/blog/keyword-research-ai.jpg";
 import aiSeoHeroImage from "@/assets/blog/ai-seo-hero.jpg";
+import localSeo2026Image from "@/assets/blog/local-seo-2026.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -24,6 +25,18 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Local SEO in 2026: The Complete Guide to Dominating Your Local Market",
+      excerpt: "Master the art of local SEO with this comprehensive 2026 guide. Learn proven strategies to boost your Google Business Profile, get more reviews, and dominate your local market.",
+      image: localSeo2026Image,
+      author: "Odin Digital Team",
+      date: "January 15, 2025",
+      readTime: "12 min read",
+      category: "SEO",
+      featured: true,
+      link: "/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market"
+    },
+    {
+      id: 2,
       title: "How AI SEO Works: A Non-Technical Guide for Business Leaders",
       excerpt: "Demystify AI SEO for your business. Learn how search engines use AI to understand user intent and discover practical strategies to create content that ranks.",
       image: aiSeoHeroImage,
@@ -31,11 +44,11 @@ const Blog = () => {
       date: "January 15, 2025",
       readTime: "13 min read",
       category: "AI & SEO",
-      featured: true,
+      featured: false,
       link: "/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders"
     },
     {
-      id: 2,
+      id: 3,
       title: "Local SEO for Tradies: 10 Tips to Get More Local Customers",
       excerpt: "Are you a tradie struggling to get found online? Our local SEO guide will show you 10 practical tips to rank higher in local search results and attract more customers in your area.",
       image: localSeoStrategies,
@@ -47,7 +60,7 @@ const Blog = () => {
       link: "/blog/blog-post-local-seo"
     },
     {
-      id: 3,
+      id: 4,
       title: "The Ultimate SEO Checklist for Australian Small Businesses in 2025",
       excerpt: "Is your small business website struggling to get noticed on Google? Our ultimate SEO checklist will guide you through the essential steps to improve your search engine rankings, attract more customers, and grow your business.",
       image: keywordResearchAI,
@@ -59,7 +72,7 @@ const Blog = () => {
       link: "/blog/blog-post-seo-checklist"
     },
     {
-      id: 4,
+      id: 5,
       title: "AI SEO is Here: How to Future-Proof Your Organic Strategy in 2026",
       excerpt: "The future of search is conversational and AI-driven. Learn how to adapt your SEO strategy for AI Overviews, Answer Engine Optimization, and the evolving digital landscape of 2026.",
       image: contentMatrixImage,
@@ -71,7 +84,7 @@ const Blog = () => {
       link: "/blog/ai-seo-future-proof-organic-strategy-2026"
     },
     {
-      id: 5,
+      id: 6,
       title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
       excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
       image: seoDeadlySins,
@@ -82,7 +95,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 7,
       title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
       excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
       image: contentMatrixImage,
@@ -93,7 +106,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 8,
       title: "Google Ads Performance Max: The Complete Guide for 2024",
       excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
       image: googleAdsPerformanceMax,
