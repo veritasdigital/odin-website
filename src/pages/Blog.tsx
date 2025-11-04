@@ -15,6 +15,7 @@ import localSeoStrategies from "@/assets/blog/local-seo-strategies.jpg";
 import socialMediaTrends from "@/assets/blog/social-media-trends.jpg";
 import emailAutomation from "@/assets/blog/email-automation.jpg";
 import conversionOptimization from "@/assets/blog/conversion-optimization.jpg";
+import keywordResearchAI from "@/assets/blog/keyword-research-ai.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -22,6 +23,18 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "The Ultimate SEO Checklist for Australian Small Businesses in 2025",
+      excerpt: "Is your small business website struggling to get noticed on Google? Our ultimate SEO checklist will guide you through the essential steps to improve your search engine rankings, attract more customers, and grow your business.",
+      image: keywordResearchAI,
+      author: "Odin Digital Team",
+      date: "January 15, 2025",
+      readTime: "5 min read",
+      category: "SEO",
+      featured: true,
+      link: "/blog/blog-post-seo-checklist"
+    },
+    {
+      id: 2,
       title: "AI SEO is Here: How to Future-Proof Your Organic Strategy in 2026",
       excerpt: "The future of search is conversational and AI-driven. Learn how to adapt your SEO strategy for AI Overviews, Answer Engine Optimization, and the evolving digital landscape of 2026.",
       image: contentMatrixImage,
@@ -29,11 +42,11 @@ const Blog = () => {
       date: "January 2026",
       readTime: "10 min read",
       category: "AI & SEO",
-      featured: true,
+      featured: false,
       link: "/blog/ai-seo-future-proof-organic-strategy-2026"
     },
     {
-      id: 2,
+      id: 3,
       title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
       excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
       image: seoDeadlySins,
@@ -44,7 +57,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 3,
+      id: 4,
       title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
       excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
       image: contentMatrixImage,
@@ -55,7 +68,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "Google Ads Performance Max: The Complete Guide for 2024",
       excerpt: "Discover how Performance Max campaigns can revolutionize your Google Ads strategy and drive better results across all Google properties.",
       image: googleAdsPerformanceMax,
@@ -65,7 +78,7 @@ const Blog = () => {
       category: "Paid Advertising"
     },
     {
-      id: 5,
+      id: 6,
       title: "Local SEO Strategies That Actually Work in 2024",
       excerpt: "Essential local SEO tactics that help businesses dominate their local market and attract more customers from their area.",
       image: localSeoStrategies,
@@ -75,7 +88,7 @@ const Blog = () => {
       category: "SEO"
     },
     {
-      id: 6,
+      id: 7,
       title: "Social Media Marketing Trends: What's Working Now",
       excerpt: "Stay ahead of the curve with the latest social media marketing trends and strategies that are driving engagement and conversions.",
       image: socialMediaTrends,
@@ -85,7 +98,7 @@ const Blog = () => {
       category: "Social Media"
     },
     {
-      id: 7,
+      id: 8,
       title: "Email Marketing Automation: From Setup to Scale",
       excerpt: "Build email marketing funnels that nurture leads and convert prospects into loyal customers with proven automation strategies.",
       image: emailAutomation,
@@ -95,7 +108,7 @@ const Blog = () => {
       category: "Email Marketing"
     },
     {
-      id: 8,
+      id: 9,
       title: "Conversion Rate Optimization: The Complete Blueprint",
       excerpt: "Turn more visitors into customers with data-driven CRO strategies that have increased conversion rates by up to 300%.",
       image: conversionOptimization,
