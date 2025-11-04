@@ -540,57 +540,57 @@ const Orthodontists = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            <div className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10">
+            <div className="relative h-full">
+              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10 h-full flex flex-col">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#D91C5C' }}>
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                   Digital Presence & Competitor Audit
                 </h3>
-                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
+                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed flex-1">
                   We analyze your current digital footprint, identify opportunities, and benchmark against local competitors.
                 </p>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10">
+            <div className="relative h-full">
+              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10 h-full flex flex-col">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#D91C5C' }}>
                   <span className="text-white font-bold text-xl">2</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                   Strategy Development & Implementation
                 </h3>
-                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
+                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed flex-1">
                   We create a custom marketing plan tailored to your practice goals and begin implementation immediately.
                 </p>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10">
+            <div className="relative h-full">
+              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10 h-full flex flex-col">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#D91C5C' }}>
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                   Launch & Patient Acquisition
                 </h3>
-                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
+                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed flex-1">
                   We launch campaigns across all channels and start driving qualified patient inquiries to your practice.
                 </p>
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10">
+            <div className="relative h-full">
+              <div className="bg-white p-6 rounded-lg shadow-card border border-charcoal/10 h-full flex flex-col">
                 <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#D91C5C' }}>
                   <span className="text-white font-bold text-xl">4</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                   Continuous Performance & Case Acceptance Optimization
                 </h3>
-                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed">
+                <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed flex-1">
                   We continuously refine strategies based on data to maximize ROI and case acceptance rates.
                 </p>
               </div>
