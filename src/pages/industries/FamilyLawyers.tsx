@@ -435,15 +435,15 @@ const FamilyLawyers = () => {
                 Digital Marketing for Family Lawyers
               </h1>
               
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl font-bold text-white/95 mb-8 leading-tight max-w-5xl mx-auto">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white/95 mb-8 leading-tight max-w-5xl mx-auto px-4">
                 Stop Wasting Budget on Low-Value Leads. Attract High-Net-Worth, Complex Family Law Cases with a Predictable, Ethical Digital Strategy.
               </p>
 
-              <div className="prose prose-lg max-w-4xl mx-auto mb-8">
-                <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+              <div className="prose prose-lg max-w-4xl mx-auto mb-8 px-4">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
                   In family law, every case is high-stakes. Your marketing must reflect the gravity, discretion, and professionalism your clients demand. We build digital ecosystems that filter out the noise and deliver high-value, pre-qualified clients ready to engage your firm.
                 </p>
-                <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
                   At Odin Digital, we understand the unique challenges of family law—from the extreme emotional weight of divorce and custody battles to the ethical constraints of legal advertising. Generic marketing agencies fail because they don't understand the difference between a high-net-worth property settlement and a simple consultation. Our integrated strategy—combining Discreet SEO, High-Value PPC, Trust-Building Meta Ads, and Anxiety-Reducing Web Design—is engineered to attract the most complex and profitable cases, ensuring your firm's reputation and bottom line are protected.
                 </p>
               </div>
@@ -451,10 +451,10 @@ const FamilyLawyers = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-base sm:text-lg px-6 sm:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
                 onClick={openForm}
               >
-                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
               </Button>
             </div>
           </div>
@@ -463,20 +463,20 @@ const FamilyLawyers = () => {
         {/* Stats Section */}
         <section className="py-16 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">The Proof Is in the Performance</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">The Proof Is in the Performance</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 We partner with high-calibre professional service firms and legal practices to deliver measurable, high-ROI growth. Our results speak for themselves.
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4">
               {stats.map((stat, index) => (
-                <Card key={index} className="p-6 text-center hover-scale">
-                  <div className="text-3xl md:text-4xl font-black bg-gradient-primary bg-clip-text text-transparent mb-2">
+                <Card key={index} className="p-4 sm:p-6 text-center hover-scale">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-black bg-gradient-primary bg-clip-text text-transparent mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-xs sm:text-sm text-muted-foreground">
                     {stat.label}
                   </div>
                 </Card>
@@ -488,19 +488,19 @@ const FamilyLawyers = () => {
         {/* Pain Points Section */}
         <section className="py-20 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">The Family Law Marketing Pain Points We Solve</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">The Family Law Marketing Pain Points We Solve</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 Your focus should be on achieving the best outcomes for your clients. We remove the stress of unpredictable, low-quality lead generation.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-4">
               {painPoints.map((point, index) => (
-                <Card key={index} className="p-8 hover-scale">
-                  <point.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-4">{point.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                  <point.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-4">{point.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {point.description}
                   </p>
                 </Card>
@@ -512,23 +512,23 @@ const FamilyLawyers = () => {
         {/* Testimonials Section */}
         <section className="py-20 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">What Our Professional Clients Say</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">What Our Professional Clients Say</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 Our clients are high-performing professionals who demand results and discretion. Here's what they're saying about our partnership.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-4">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8 hover-scale flex flex-col justify-between">
-                  <p className="text-lg mb-6 italic leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale flex flex-col justify-between">
+                  <p className="text-base sm:text-lg mb-6 italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
                   <div className="border-t pt-4">
-                    <p className="font-bold">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    <p className="font-bold text-sm sm:text-base">{testimonial.author}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.position}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.location}</p>
                   </div>
                 </Card>
               ))}
@@ -539,33 +539,33 @@ const FamilyLawyers = () => {
         {/* Services Section */}
         <section className="py-20 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">The Integrated Digital Strategy for High-Value Family Law Cases</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">The Integrated Digital Strategy for High-Value Family Law Cases</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 We provide a single, cohesive strategy where every channel works to attract, filter, and convert high-net-worth clients.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-12 px-4">
               {services.map((service, index) => (
-                <Card key={index} className="p-8 hover-scale">
-                  <service.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                  <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4">{service.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
                 </Card>
               ))}
             </div>
 
-            <div className="text-center">
+            <div className="text-center px-4">
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-base sm:text-lg px-6 sm:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
                 onClick={openForm}
               >
-                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
               </Button>
             </div>
           </div>
@@ -574,19 +574,19 @@ const FamilyLawyers = () => {
         {/* Differentiators Section */}
         <section className="py-20 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">Why Odin Digital is the Strategic Partner for Your Family Law Firm</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Why Odin Digital is the Strategic Partner for Your Family Law Firm</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 We understand the unique regulatory, ethical, and emotional landscape of family law. Our systems are built for discretion and high-value conversion.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
               {differentiators.map((item, index) => (
-                <Card key={index} className="p-8 hover-scale">
-                  <item.icon className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                  <item.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-4">{item.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {item.description}
                   </p>
                 </Card>
@@ -598,19 +598,19 @@ const FamilyLawyers = () => {
         {/* Process Section */}
         <section className="py-20 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">Our 4-Step Predictable Client Acquisition Process</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Our 4-Step Predictable Client Acquisition Process</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 We follow a strategic process designed to deliver a steady, high-quality stream of complex family law cases.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
               {processSteps.map((step, index) => (
-                <Card key={index} className="p-8 hover-scale">
-                  <div className="text-5xl font-black text-primary/20 mb-4">{step.number}</div>
-                  <h3 className="text-xl font-bold mb-4">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                  <div className="text-4xl sm:text-5xl font-black text-primary/20 mb-4">{step.number}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-4">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {step.description}
                   </p>
                 </Card>
@@ -622,19 +622,19 @@ const FamilyLawyers = () => {
         {/* Benefits Section */}
         <section className="py-20 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">Why Choose Odin Digital as Your Family Law Marketing Partner?</h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Why Choose Odin Digital as Your Family Law Marketing Partner?</h2>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
                 We are obsessed with your firm's growth and reputation. Our focus is on turning your digital presence into a predictable source of high-value cases.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="p-8 hover-scale">
-                  <CheckCircle className="w-12 h-12 text-primary mb-4" />
-                  <h3 className="text-xl font-bold mb-4">{benefit.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                  <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
+                  <h3 className="text-lg sm:text-xl font-bold mb-4">{benefit.title}</h3>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {benefit.description}
                   </p>
                 </Card>
@@ -649,25 +649,25 @@ const FamilyLawyers = () => {
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
           
           <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 px-4">
               Ready to Build a Predictable High-Value Client Acquisition System?
             </h2>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-6 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-4 sm:mb-6 max-w-4xl mx-auto leading-relaxed px-4">
               Stop relying on referrals alone and start attracting complex, high-net-worth cases with a strategic digital blueprint built for the modern legal landscape.
             </p>
 
-            <p className="text-lg text-white/80 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
               Schedule your free, no-obligation High-Value Case Acquisition Analysis today. We'll show you the exact roadmap to dominate your local market and maximize your firm's profitability.
             </p>
 
             <Button 
               variant="cta" 
               size="xl" 
-              className="text-base sm:text-lg px-6 sm:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+              className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
               onClick={openForm}
             >
-              Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+              Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
             </Button>
           </div>
         </section>
@@ -675,31 +675,31 @@ const FamilyLawyers = () => {
         {/* FAQ Section */}
         <section className="py-20 bg-background">
           <div className="max-w-4xl mx-auto px-6">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-black mb-4">Frequently Asked Questions About Marketing for Family Lawyers</h2>
+            <div className="text-center mb-12 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Frequently Asked Questions About Marketing for Family Lawyers</h2>
             </div>
 
             <Accordion type="single" collapsible className="w-full space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                  <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-4 sm:px-6">
+                  <AccordionTrigger className="text-left text-sm sm:text-base font-semibold hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
 
-            <div className="text-center mt-12">
+            <div className="text-center mt-12 px-4">
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-base sm:text-lg px-6 sm:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
                 onClick={openForm}
               >
-                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
+                Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
               </Button>
             </div>
           </div>
