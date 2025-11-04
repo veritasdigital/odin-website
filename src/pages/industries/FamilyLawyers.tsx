@@ -521,7 +521,7 @@ const FamilyLawyers = () => {
 
             <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8 hover-scale">
+                <Card key={index} className="p-8 hover-scale flex flex-col justify-between">
                   <p className="text-lg mb-6 italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
