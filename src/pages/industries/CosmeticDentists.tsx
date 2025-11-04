@@ -184,13 +184,14 @@ const CosmeticDentists = () => {
       <Header />
 
       {/* Mobile Sticky CTA */}
-      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border z-50 md:hidden">
         <Button
           onClick={openForm}
+          size="lg"
           style={{ backgroundColor: '#D91C5C' }}
-          className="text-white shadow-glow"
+          className="text-white shadow-glow w-full"
         >
-          Get FREE Audit →
+          Get FREE Marketing Audit →
         </Button>
       </div>
 
@@ -206,21 +207,21 @@ const CosmeticDentists = () => {
         <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
         <div className="absolute top-1/4 right-1/3 w-10 h-10" style={{ background: 'linear-gradient(135deg, rgba(217, 28, 92, 0.15), rgba(138, 0, 0, 0.15))', borderRadius: '50%', animation: 'float 8s ease-in-out infinite', animationDelay: '1s' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20 pt-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-16 md:py-20 pt-24 sm:pt-28 md:pt-32">
           <div className="max-w-4xl mx-auto animate-slide-up text-center">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight mb-4 sm:mb-6">
               Digital Marketing for Cosmetic Dentists
             </h1>
             
-            <p className="text-2xl md:text-3xl text-charcoal font-bold leading-tight mb-6">
+            <p className="text-xl sm:text-2xl md:text-3xl text-charcoal font-bold leading-tight mb-4 sm:mb-6">
               Stop Paying for Marketing That Doesn't Deliver High-Value Cosmetic Cases. Start Dominating Your Local Market with Proven Strategies That Fill Your Calendar with Veneers, Implants, and Smile Makeovers.
             </p>
             
-            <p className="text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-4 font-semibold">
+            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/80 leading-relaxed mb-3 sm:mb-4 font-semibold">
               The Digital Marketing Agency Cosmetic Dentists Trust for More High-Value Cases and Premium Patient Acquisition.
             </p>
             
-            <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 leading-relaxed mb-6 sm:mb-8 max-w-3xl mx-auto">
               Partner with Odin Digital and Watch Your Cosmetic Dental Practice Scale with Marketing That Actually Drives Revenue, Not Just Website Visits.
             </p>
             
@@ -229,7 +230,7 @@ const CosmeticDentists = () => {
                 onClick={openForm}
                 size="lg"
                 style={{ backgroundColor: '#D91C5C' }}
-                className="text-white text-lg px-12 py-6 h-auto shadow-glow hover:scale-105 transition-transform"
+                className="text-white text-base sm:text-lg px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
               >
                 Get Your FREE Cosmetic Dental Marketing Audit →
               </Button>
@@ -255,18 +256,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 2. Problem/Agitation Section */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               Why Most Dental Marketing Agencies Fail Cosmetic Dentists
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               Cosmetic dentists waste millions every year on cosmetic dentist marketing that looks impressive on paper but delivers nothing to the bottom line. Here's why most agencies fail.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <AlertCircle className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-xl font-bold text-charcoal mb-3">
@@ -328,12 +329,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               Stop the Marketing Bleed: Talk to a Cosmetic Dental Marketing Expert →
             </Button>
@@ -342,18 +343,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 3. SEO for Cosmetic Dentists */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-white decorative-circles">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               SEO for Cosmetic Dentists: Dominating "Veneers [City]" and High-Value Cosmetic Searches
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               We build cosmetic dentist SEO strategies that get your cosmetic dental practice to Page 1 for the exact searches your ideal cosmetic patients are using when they're ready to invest in their smile.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-8 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <Search className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-2xl font-bold text-charcoal mb-4">
@@ -451,12 +452,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               See Our SEO Packages for Cosmetic Dentists →
             </Button>
@@ -465,18 +466,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 4. Google Ads for Cosmetic Dentists */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               Google Ads for Cosmetic Dentists: Immediate High-Value Cosmetic Consultations
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               We build Google Ads for cosmetic dentists campaigns that deliver immediate, high-value cosmetic consultations while your SEO builds momentum—even in competitive markets.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-8 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <Target className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-2xl font-bold text-charcoal mb-4">
@@ -574,12 +575,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               See Our Google Ads Packages for Cosmetic Dentists →
             </Button>
@@ -588,18 +589,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 5. Meta Ads for Cosmetic Dentists */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-white decorative-circles">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               Meta Ads (Facebook & Instagram) for Cosmetic Dentists: Building Awareness and Trust
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               We build Facebook Ads for cosmetic dentists campaigns that build awareness, establish trust, and position you as the go-to cosmetic dentist before someone needs your services.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-8 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <Users className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-2xl font-bold text-charcoal mb-4">
@@ -673,12 +674,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               See Our Meta Ads Packages for Cosmetic Dentists →
             </Button>
@@ -687,18 +688,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 6. Web Design for Cosmetic Dentists */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               Web Design for Cosmetic Dentists: High-Converting Websites That Drive Cosmetic Consultations
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               We build cosmetic dentist website design that positions your cosmetic dental practice as the trusted local expert and converts visitors into high-value cosmetic consultations at the highest possible rate.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-8 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <Crown className="h-12 w-12 mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-2xl font-bold text-charcoal mb-4">
@@ -796,12 +797,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               See Our Web Design Packages for Cosmetic Dentists →
             </Button>
@@ -810,18 +811,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 7. Why Cosmetic Dentists Choose Odin Digital */}
-      <section className="py-20 bg-white decorative-circles">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-white decorative-circles">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               Why Cosmetic Dentists Choose Odin Digital
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-charcoal/70 max-w-3xl mx-auto">
               We are not a generalist agency that dabbles in dental marketing. We are specialists who understand how to dominate local markets for cosmetic dental practices.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
             <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
               <Award className="h-12 w-12 mx-auto mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-xl font-bold text-charcoal mb-3">
@@ -873,12 +874,12 @@ const CosmeticDentists = () => {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-10 md:mt-12">
             <Button
               onClick={openForm}
               size="lg"
               style={{ backgroundColor: '#D91C5C' }}
-              className="text-white shadow-glow"
+              className="text-white shadow-glow text-sm sm:text-base px-4 sm:px-6 md:px-8 w-full sm:w-auto"
             >
               Talk to a Cosmetic Dental Marketing Specialist →
             </Button>
@@ -887,10 +888,10 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 8. FAQ Section */}
-      <section className="py-20 bg-muted decorative-circles-alt">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted decorative-circles-alt">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-3 sm:mb-4">
               FAQs: Your Questions About Cosmetic Dental Marketing Answered
             </h2>
           </div>
@@ -990,18 +991,18 @@ const CosmeticDentists = () => {
       </section>
 
       {/* 9. Final Call to Action */}
-      <section className="py-20 bg-gradient-to-br from-charcoal to-accent text-white relative overflow-hidden">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-charcoal to-accent text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-black mb-6 leading-tight">
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center pb-16 md:pb-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-black mb-4 sm:mb-6 leading-tight">
             Ready to Stop Attracting Low-Value Patients and Start Filling Your Calendar with High-Value Cosmetic Cases?
           </h2>
           
-          <p className="text-xl md:text-2xl mb-10 leading-relaxed opacity-90">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 md:mb-10 leading-relaxed opacity-90">
             Stop settling for marketing that fills your calendar with cleanings. Start working with the digital marketing agency for cosmetic dentists that drives high-value cosmetic consultations, veneer cases, implant inquiries, and smile makeover bookings.
           </p>
           
@@ -1009,7 +1010,7 @@ const CosmeticDentists = () => {
             onClick={openForm}
             size="xl"
             style={{ backgroundColor: '#D91C5C' }}
-            className="text-white text-xl px-16 py-8 h-auto shadow-glow hover:scale-105 transition-transform"
+            className="text-white text-base sm:text-lg md:text-xl px-8 sm:px-12 md:px-16 py-5 sm:py-6 md:py-8 h-auto shadow-glow hover:scale-105 transition-transform w-full sm:w-auto"
           >
             Claim Your FREE Cosmetic Dental Marketing Audit →
           </Button>
