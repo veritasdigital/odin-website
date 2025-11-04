@@ -546,16 +546,16 @@ const ImmigrationLawyers = () => {
 
             <div className="grid md:grid-cols-3 gap-6 sm:gap-8 px-4">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
+                <Card key={index} className="p-6 sm:p-8 hover-scale flex flex-col">
                   <div className="mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="inline-block w-5 h-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4 italic leading-relaxed">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4 italic leading-relaxed flex-grow">
                     "{testimonial.quote}"
                   </p>
-                  <div>
+                  <div className="mt-auto">
                     <p className="font-semibold text-sm sm:text-base">{testimonial.author}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
