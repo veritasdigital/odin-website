@@ -416,54 +416,54 @@ const Orthodontists = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col">
               <Layout className="h-12 w-12 mx-auto mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                 High-Converting Web Design & Patient Education Hubs
               </h3>
-              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4 flex-1">
                 We build modern, mobile-optimized websites that educate patients about orthodontic treatments and drive consultation bookings.
               </p>
-              <Link to="/web-design-agency" className="text-primary hover:underline text-sm font-semibold">
+              <Link to="/web-design-agency" className="text-primary hover:underline text-sm font-semibold mt-auto">
                 Learn More <ArrowRight className="w-4 h-4 inline" />
               </Link>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col">
               <Search className="h-12 w-12 mx-auto mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                 Authority-Building SEO & Content Marketing
               </h3>
-              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4 flex-1">
                 We position your practice as the local orthodontic authority through strategic <Link to="/seo-agency" className="text-primary hover:underline">SEO</Link> and educational content.
               </p>
-              <Link to="/seo-agency" className="text-primary hover:underline text-sm font-semibold">
+              <Link to="/seo-agency" className="text-primary hover:underline text-sm font-semibold mt-auto">
                 Learn More <ArrowRight className="w-4 h-4 inline" />
               </Link>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col">
               <Target className="h-12 w-12 mx-auto mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                 Multi-Platform PPC & Meta Ads
               </h3>
-              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4 flex-1">
                 We run targeted <Link to="/ppc-agency" className="text-primary hover:underline">PPC</Link> and <Link to="/meta-ads-agency" className="text-primary hover:underline">Meta Ads</Link> campaigns to reach both parents and adult patients.
               </p>
-              <Link to="/ppc-agency" className="text-primary hover:underline text-sm font-semibold">
+              <Link to="/ppc-agency" className="text-primary hover:underline text-sm font-semibold mt-auto">
                 Learn More <ArrowRight className="w-4 h-4 inline" />
               </Link>
             </Card>
 
-            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
+            <Card className="p-6 text-center border-charcoal/10 hover:border-primary/20 transition-colors shadow-card flex flex-col">
               <Star className="h-12 w-12 mx-auto mb-4" style={{ color: '#D91C5C' }} />
               <h3 className="text-lg sm:text-xl font-bold text-charcoal mb-3">
                 Automated Review Generation & Reputation Management
               </h3>
-              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4">
+              <p className="text-sm sm:text-base text-charcoal/70 leading-relaxed mb-4 flex-1">
                 We implement automated systems to generate 5-star reviews and protect your online reputation.
               </p>
-              <Button onClick={openForm} variant="link" className="text-primary hover:underline text-sm font-semibold p-0">
+              <Button onClick={openForm} variant="link" className="text-primary hover:underline text-sm font-semibold p-0 mt-auto">
                 Learn More <ArrowRight className="w-4 h-4 inline" />
               </Button>
             </Card>
