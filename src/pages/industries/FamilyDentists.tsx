@@ -278,7 +278,7 @@ const FamilyDentists = () => {
 
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight mt-8 sm:mt-12">
                 Digital Marketing for Family Dentists
               </h1>
               
