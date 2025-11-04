@@ -23,6 +23,18 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Local SEO for Tradies: 10 Tips to Get More Local Customers",
+      excerpt: "Are you a tradie struggling to get found online? Our local SEO guide will show you 10 practical tips to rank higher in local search results and attract more customers in your area.",
+      image: localSeoStrategies,
+      author: "Odin Digital Team",
+      date: "January 16, 2025",
+      readTime: "5 min read",
+      category: "SEO",
+      featured: true,
+      link: "/blog/blog-post-local-seo"
+    },
+    {
+      id: 2,
       title: "The Ultimate SEO Checklist for Australian Small Businesses in 2025",
       excerpt: "Is your small business website struggling to get noticed on Google? Our ultimate SEO checklist will guide you through the essential steps to improve your search engine rankings, attract more customers, and grow your business.",
       image: keywordResearchAI,
@@ -30,11 +42,11 @@ const Blog = () => {
       date: "January 15, 2025",
       readTime: "5 min read",
       category: "SEO",
-      featured: true,
+      featured: false,
       link: "/blog/blog-post-seo-checklist"
     },
     {
-      id: 2,
+      id: 3,
       title: "AI SEO is Here: How to Future-Proof Your Organic Strategy in 2026",
       excerpt: "The future of search is conversational and AI-driven. Learn how to adapt your SEO strategy for AI Overviews, Answer Engine Optimization, and the evolving digital landscape of 2026.",
       image: contentMatrixImage,
@@ -46,7 +58,7 @@ const Blog = () => {
       link: "/blog/ai-seo-future-proof-organic-strategy-2026"
     },
     {
-      id: 3,
+      id: 4,
       title: "The 7 Deadly Sins of SEO: Are You Guilty of These Common Mistakes?",
       excerpt: "Discover the seven most common SEO mistakes that can sabotage your rankings and learn how to achieve SEO redemption with proven strategies.",
       image: seoDeadlySins,
@@ -57,7 +69,7 @@ const Blog = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: "The Content Marketing Matrix: A Simple Framework for Creating Content That Attracts, Engages, and Converts",
       excerpt: "Content marketing can often feel like a chaotic, never-ending treadmill. Learn our simple framework to bring clarity and strategic intent to your content efforts.",
       image: contentMatrixImage,
