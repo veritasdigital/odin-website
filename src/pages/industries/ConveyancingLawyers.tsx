@@ -456,6 +456,13 @@ const ConveyancingLawyers = () => {
       description: "Marketing specifically to first home buyers, who need extra guidance and education.",
       strategy: "We create comprehensive first home buyer resources, guides, and support materials that position you as the trusted advisor for first-timers.",
       benefits: ["Grateful clients", "Referral generation", "Long-term relationships"]
+    },
+    {
+      icon: Target,
+      title: "Off-the-Plan Conveyancing",
+      description: "Marketing off-the-plan conveyancing services to property investors and first home buyers purchasing new developments.",
+      strategy: "We target buyers of new developments with specialized content on off-the-plan considerations, sunset clauses, and developer contracts, positioning you as the expert in this complex area.",
+      benefits: ["Higher-value transactions", "Developer relationships", "Specialist positioning"]
     }
   ];
 
