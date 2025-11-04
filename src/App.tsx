@@ -51,6 +51,7 @@ import FamilyDentists from "./pages/industries/FamilyDentists";
 import FamilyLawyers from "./pages/industries/FamilyLawyers";
 import ConveyancingLawyers from "./pages/industries/ConveyancingLawyers";
 import ImmigrationLawyers from "./pages/industries/ImmigrationLawyers";
+import Ophthalmologists from "./pages/industries/Ophthalmologists";
 import PersonalInjuryLawyers from "./pages/industries/PersonalInjuryLawyers";
 import CriminalDefenseLawyers from "./pages/industries/CriminalDefenseLawyers";
 import InsuranceAgents from "./pages/industries/InsuranceAgents";
@@ -180,6 +181,7 @@ const App = () => (
           <Route path="/industries/family-lawyers" element={<FamilyLawyers />} />
           <Route path="/industries/conveyancing-lawyers" element={<ConveyancingLawyers />} />
           <Route path="/industries/immigration-lawyers" element={<ImmigrationLawyers />} />
+          <Route path="/industries/ophthalmologists" element={<Ophthalmologists />} />
             <Route path="/industries/personal-injury-lawyers" element={<PersonalInjuryLawyers />} />
             <Route path="/industries/criminal-defense-lawyers" element={<CriminalDefenseLawyers />} />
             <Route path="/industries/insurance-agents" element={<InsuranceAgents />} />
