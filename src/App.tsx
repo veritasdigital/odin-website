@@ -110,6 +110,7 @@ import OnlineMarketingCompanyAdelaide from "./pages/services/OnlineMarketingComp
 import OnlineMarketingCompanyBrisbane from "./pages/services/OnlineMarketingCompanyBrisbane";
 import OnlineMarketingCompanyPerth from "./pages/services/OnlineMarketingCompanyPerth";
 import AISEOFutureProof from "./pages/blog/AISEOFutureProof";
+import SEOChecklist2025 from "./pages/blog/SEOChecklist2025";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -225,6 +226,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/ai-seo-future-proof-organic-strategy-2026" element={<AISEOFutureProof />} />
+            <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/thank-you" element={<ThankYou />} />
