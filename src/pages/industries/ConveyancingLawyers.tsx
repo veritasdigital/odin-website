@@ -191,6 +191,11 @@ const ConveyancingLawyers = () => {
       icon: BookOpen,
       title: "Client Education Complexity",
       description: "Educating clients about the conveyancing process and your value is time-consuming and difficult to scale."
+    },
+    {
+      icon: Users,
+      title: "Referral Network Dependency",
+      description: "Over-reliance on a few referral sources creates vulnerability and limits your growth potential when those relationships change."
     }
   ];
 
