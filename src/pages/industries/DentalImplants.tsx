@@ -1286,6 +1286,31 @@ export default function DentalImplants() {
                 </li>
               </ul>
             </Card>
+
+            {/* Service 6 */}
+            <Card className="p-6 sm:p-8 border-charcoal/10 shadow-card">
+              <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-4">
+                Immediate Load Implants
+              </h3>
+              <p className="text-sm sm:text-base text-charcoal/70 mb-4">
+                Same-day implants and temporary teeth for patients seeking faster results.
+              </p>
+              <p className="text-sm sm:text-base font-semibold text-charcoal mb-3">Marketing Strategy:</p>
+              <ul className="space-y-2 mb-4">
+                <li className="flex items-start space-x-2">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-charcoal/70">Time-saving benefit messaging</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-charcoal/70">Patient convenience focus</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-charcoal/70">Advanced technology positioning</span>
+                </li>
+              </ul>
+            </Card>
           </div>
         </div>
       </section>
