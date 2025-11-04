@@ -112,6 +112,7 @@ import OnlineMarketingCompanyPerth from "./pages/services/OnlineMarketingCompany
 import AISEOFutureProof from "./pages/blog/AISEOFutureProof";
 import SEOChecklist2025 from "./pages/blog/SEOChecklist2025";
 import LocalSEOTradies from "./pages/blog/LocalSEOTradies";
+import AISEOGuide from "./pages/blog/AISEOGuide";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -229,6 +230,7 @@ const App = () => (
             <Route path="/blog/ai-seo-future-proof-organic-strategy-2026" element={<AISEOFutureProof />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
+            <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/thank-you" element={<ThankYou />} />
