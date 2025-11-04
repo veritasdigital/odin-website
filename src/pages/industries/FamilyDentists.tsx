@@ -239,7 +239,7 @@ const FamilyDentists = () => {
     <>
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background border-t shadow-lg p-4">
-        <Button size="lg" className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300" asChild>
+        <Button size="lg" className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 text-sm sm:text-base whitespace-normal h-auto py-3" asChild>
           <Link to="/contact">Schedule FREE Analysis →</Link>
         </Button>
       </div>
@@ -262,10 +262,10 @@ const FamilyDentists = () => {
             onClick={openForm}
             variant="cta"
             size="lg"
-            className="w-full"
+            className="w-full text-xs sm:text-sm whitespace-normal h-auto py-3"
           >
-            <Phone className="w-5 h-5 mr-2" />
-            SCHEDULE FREE ANALYSIS
+            <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" />
+            <span>SCHEDULE FREE ANALYSIS</span>
           </Button>
         </div>
 
@@ -298,7 +298,7 @@ const FamilyDentists = () => {
                 onClick={openForm}
                 variant="cta"
                 size="xl"
-                className="text-lg shadow-glow"
+                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal h-auto py-3 sm:py-4"
               >
                 Schedule Your FREE Patient Acquisition Analysis →
               </Button>
@@ -505,6 +505,7 @@ const FamilyDentists = () => {
                 onClick={openForm}
                 variant="cta"
                 size="lg"
+                className="text-sm sm:text-base whitespace-normal h-auto py-3"
               >
                 Schedule Your FREE Patient Acquisition Analysis →
               </Button>
@@ -875,7 +876,7 @@ const FamilyDentists = () => {
                 onClick={openForm}
                 variant="cta"
                 size="xl"
-                className="text-lg shadow-glow"
+                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal h-auto py-3 sm:py-4"
               >
                 Schedule Your FREE Patient Acquisition Analysis →
               </Button>
