@@ -172,10 +172,10 @@ export const Hero = () => {
               </div>
               
               {/* Enhanced Decorative elements around image */}
-              <div className="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-br from-muted/40 to-muted/20 rounded-full animate-float shadow-md shadow-muted/10"></div>
-              <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-gradient-to-br from-muted/35 to-muted/15 rounded-lg animate-float shadow-md shadow-muted/10" style={{ animationDelay: '2s' }}></div>
-              <div className="absolute top-1/3 -left-8 w-8 h-8 bg-gradient-to-br from-muted/30 to-muted/15 rounded-full animate-float shadow-md shadow-muted/10" style={{ animationDelay: '4s' }}></div>
-              <div className="absolute top-16 -right-6 w-6 h-6 bg-gradient-to-br from-muted/25 to-muted/10 rounded-full animate-float shadow-md shadow-muted/10" style={{ animationDelay: '3s' }}></div>
+              <div className="absolute -top-6 -left-6 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg"></div>
+              <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute top-1/3 -left-8 w-8 h-8 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '4s' }}></div>
+              <div className="absolute top-16 -right-6 w-6 h-6 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '3s' }}></div>
             </div>
           </div>
           
