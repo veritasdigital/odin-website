@@ -347,25 +347,39 @@ const OurClients = () => {
       <ClientLogos />
 
       {/* Featured Case Study Header */}
-      <section className="py-16 bg-background relative">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <Badge variant="secondary" className="mb-4">
+      <section className="py-20 bg-background relative overflow-hidden border-y border-primary/10">
+        {/* Decorative gradient line */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
+        
+        {/* Floating decorative elements */}
+        <div className="absolute top-10 right-10 w-20 h-20 border-2 border-primary/10 rounded-full animate-float" />
+        <div className="absolute bottom-10 left-10 w-16 h-16 bg-primary/5 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+          <Badge variant="secondary" className="mb-6 bg-primary/10 text-primary border-primary/20">
+            <Sparkles className="w-4 h-4 inline mr-2" />
             Featured Success Story
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-4">
-            How We Helped Australia's Largest <span className="text-primary">Furniture Retailer</span>
+          <h2 className="text-4xl md:text-6xl font-black text-charcoal mb-6">
+            How We Helped Australia's Largest <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">Furniture Retailer</span>
           </h2>
-          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
             Achieve 712% ROI and record-breaking ecommerce growth from day one
           </p>
         </div>
+        
+        {/* Decorative gradient line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50" />
       </section>
 
       {/* Case Studies */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-6 space-y-16">
+      <section className="py-24 bg-gradient-to-b from-background via-accent/5 to-background relative">
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6 space-y-16">
           {caseStudies.map((study, idx) => (
-            <div key={idx} className="animate-fade-in">
+            <div key={idx} className="animate-fade-in" style={{ animationDelay: `${idx * 100}ms` }}>
               <CaseStudyCard {...study} />
             </div>
           ))}
