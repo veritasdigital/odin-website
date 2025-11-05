@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import lucasDuranteImage from "@/assets/lucas-durante-new.png";
-import odinTeamStock from "@/assets/odin-team-stock.jpg";
+import odinTeamProfessional from "@/assets/odin-team-professional.jpg";
 
 export const AboutUs = () => {
   const values = [
@@ -110,7 +110,7 @@ export const AboutUs = () => {
             {/* Image - Right Side */}
             <div className="relative">
               <img 
-                src={odinTeamStock}
+                src={odinTeamProfessional}
                 alt="Odin Digital marketing team" 
                 className="w-full rounded-lg shadow-xl"
               />
