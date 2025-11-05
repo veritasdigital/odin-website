@@ -102,20 +102,20 @@ const AISEOFutureProof = () => {
           <div className="max-w-5xl mx-auto px-6 relative z-10">
             {/* Breadcrumb */}
             <nav className="mb-6 text-sm">
-              <ol className="flex items-center space-x-2 text-white/80">
-                <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
+              <ol className="flex items-center space-x-2 text-muted-foreground">
+                <li><Link to="/" className="hover:text-foreground transition-colors">Home</Link></li>
                 <li>/</li>
-                <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                <li><Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link></li>
                 <li>/</li>
-                <li className="text-white">AI SEO Future-Proof Strategy</li>
+                <li className="text-foreground">AI SEO Future-Proof Strategy</li>
               </ol>
             </nav>
 
-            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-black text-foreground mb-6 leading-tight">
               AI SEO is Here: How to Future-Proof Your Organic Strategy in 2026
             </h1>
 
-            <div className="flex flex-wrap items-center gap-4 text-white/90 mb-8">
+            <div className="flex flex-wrap items-center gap-4 text-muted-foreground mb-8">
               <div className="flex items-center space-x-2">
                 <User className="w-4 h-4" />
                 <span>Odin Digital Team</span>
@@ -138,20 +138,20 @@ const AISEOFutureProof = () => {
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <TrendingUp className="w-8 h-8 text-white mb-2" />
-                <div className="text-2xl font-bold text-white">Zero-Click</div>
-                <div className="text-white/80 text-sm">AI Overviews changing search</div>
+              <Card className="p-6 bg-primary/10 backdrop-blur-sm border-primary/20">
+                <TrendingUp className="w-8 h-8 text-primary mb-2" />
+                <div className="text-2xl font-bold text-foreground">Zero-Click</div>
+                <div className="text-muted-foreground text-sm">AI Overviews changing search</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <Target className="w-8 h-8 text-white mb-2" />
-                <div className="text-2xl font-bold text-white">AEO Era</div>
-                <div className="text-white/80 text-sm">Answer Engine Optimization</div>
+              <Card className="p-6 bg-primary/10 backdrop-blur-sm border-primary/20">
+                <Target className="w-8 h-8 text-primary mb-2" />
+                <div className="text-2xl font-bold text-foreground">AEO Era</div>
+                <div className="text-muted-foreground text-sm">Answer Engine Optimization</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <Zap className="w-8 h-8 text-white mb-2" />
-                <div className="text-2xl font-bold text-white">E-E-A-T</div>
-                <div className="text-white/80 text-sm">Experience is paramount</div>
+              <Card className="p-6 bg-primary/10 backdrop-blur-sm border-primary/20">
+                <Zap className="w-8 h-8 text-primary mb-2" />
+                <div className="text-2xl font-bold text-foreground">E-E-A-T</div>
+                <div className="text-muted-foreground text-sm">Experience is paramount</div>
               </Card>
             </div>
           </div>
