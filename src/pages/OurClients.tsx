@@ -3,8 +3,12 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Target, Lightbulb, TrendingUp } from "lucide-react";
+import { CheckCircle2, Target, Lightbulb, TrendingUp, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { AsSeenIn } from "@/components/AsSeenIn";
+import { ClientLogos } from "@/components/ClientLogos";
+import { Partnerships } from "@/components/Partnerships";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
 interface CaseStudyProps {
   industry: string;
@@ -34,72 +38,72 @@ const CaseStudyCard = ({
   services,
   websiteUrl 
 }: CaseStudyProps) => (
-  <Card className="overflow-hidden border-border/50 hover:border-primary/20 transition-all duration-300">
+  <Card className="overflow-hidden border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-xl group">
     <CardContent className="p-0">
-      <div className="grid lg:grid-cols-5 gap-8 p-8">
+      <div className="grid lg:grid-cols-5 gap-8 p-8 lg:p-10">
         {/* Left Column - Narrative */}
         <div className="lg:col-span-3 space-y-6">
           <div className="space-y-3">
-            <Badge variant="secondary" className="mb-2">
+            <Badge variant="secondary" className="mb-2 bg-primary/10 text-primary border-primary/20">
               {industry} | ⭐⭐⭐⭐⭐
             </Badge>
-            <h3 className="text-3xl font-bold text-foreground">{clientName}</h3>
-            <p className="text-muted-foreground leading-relaxed">{description}</p>
+            <h3 className="text-3xl md:text-4xl font-black text-charcoal group-hover:text-primary transition-colors">{clientName}</h3>
+            <p className="text-charcoal/70 leading-relaxed text-lg">{description}</p>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex gap-3">
-              <Target className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+          <div className="space-y-5">
+            <div className="flex gap-4 p-4 bg-accent/20 rounded-lg">
+              <Target className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground mb-2">The Challenge</h4>
-                <p className="text-muted-foreground">{challenge}</p>
+                <h4 className="font-bold text-charcoal mb-2 text-lg">The Challenge</h4>
+                <p className="text-charcoal/80 leading-relaxed">{challenge}</p>
               </div>
             </div>
 
-            <div className="flex gap-3">
-              <Lightbulb className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div className="flex gap-4 p-4 bg-accent/20 rounded-lg">
+              <Lightbulb className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground mb-2">Our Solution</h4>
-                <p className="text-muted-foreground">{solution}</p>
+                <h4 className="font-bold text-charcoal mb-2 text-lg">Our Solution</h4>
+                <p className="text-charcoal/80 leading-relaxed">{solution}</p>
               </div>
             </div>
 
-            <div className="flex gap-3">
-              <TrendingUp className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+            <div className="flex gap-4 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+              <TrendingUp className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-foreground mb-2">The Result</h4>
-                <p className="text-muted-foreground">{result}</p>
+                <h4 className="font-bold text-charcoal mb-2 text-lg">The Result</h4>
+                <p className="text-charcoal/80 leading-relaxed font-medium">{result}</p>
               </div>
             </div>
           </div>
 
           {testimonialQuote && (
-            <div className="bg-accent/50 p-6 rounded-lg border-l-4 border-primary">
-              <p className="text-foreground italic">"{testimonialQuote}"</p>
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6 rounded-lg border border-primary/20 shadow-lg">
+              <p className="text-charcoal italic text-lg leading-relaxed">"{testimonialQuote}"</p>
             </div>
           )}
         </div>
 
         {/* Right Column - Metrics */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="bg-accent/30 rounded-lg p-6 space-y-4">
-            <h4 className="font-semibold text-foreground mb-4">Campaign Performance</h4>
+          <div className="bg-gradient-to-br from-accent/40 to-accent/20 rounded-lg p-6 space-y-4 border border-border">
+            <h4 className="font-bold text-charcoal mb-4 text-lg">Campaign Performance</h4>
             {metrics.map((metric, idx) => (
-              <div key={idx} className="flex justify-between items-start pb-3 border-b border-border/50 last:border-0">
-                <span className="text-sm text-muted-foreground">{metric.label}</span>
-                <span className="font-semibold text-foreground text-right">{metric.value}</span>
+              <div key={idx} className="flex justify-between items-start pb-3 border-b border-border/50 last:border-0 last:pb-0">
+                <span className="text-sm text-charcoal/70 font-medium">{metric.label}</span>
+                <span className="font-bold text-primary text-right">{metric.value}</span>
               </div>
             ))}
           </div>
 
           <div className="flex flex-wrap gap-2">
             {services.map((service, idx) => (
-              <Badge key={idx} variant="outline" className="text-xs">
+              <Badge key={idx} variant="outline" className="text-xs font-semibold border-primary/30 text-charcoal hover:bg-primary/10">
                 {service}
               </Badge>
             ))}
             {websiteUrl && (
-              <Badge variant="default" className="text-xs cursor-pointer">
+              <Badge variant="default" className="text-xs cursor-pointer font-semibold bg-primary hover:bg-primary/90">
                 Visit Website
               </Badge>
             )}
@@ -109,6 +113,39 @@ const CaseStudyCard = ({
     </CardContent>
   </Card>
 );
+
+const CTASection = () => {
+  const { openForm } = useMarketingForm();
+  
+  return (
+    <section className="py-24 gradient-hero relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
+      <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+      
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
+        <CheckCircle2 className="w-20 h-20 text-white mx-auto animate-pulse" />
+        <h2 className="text-4xl md:text-5xl font-black text-white">
+          Ready to Become Our Next Success Story?
+        </h2>
+        <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+          We're so confident in our ability to deliver results that we guarantee a minimum 200% increase in qualified leads within 90 days, or we'll continue working at no charge until we achieve your goals.
+        </p>
+        
+        <Card className="p-8 bg-white/10 backdrop-blur-md border-white/20 text-white max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
+          <p className="text-white/80 mb-6 leading-relaxed">
+            Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
+          </p>
+          <Button variant="cta" size="lg" className="w-full text-lg" onClick={openForm}>
+            GET YOUR GUARANTEED RESULTS
+          </Button>
+        </Card>
+      </div>
+    </section>
+  );
+};
 
 const OurClients = () => {
   const caseStudies: CaseStudyProps[] = [
@@ -262,74 +299,84 @@ const OurClients = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-background to-accent/20">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
+        <div className="absolute bottom-32 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/4 right-1/3 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto space-y-6">
-            <Badge variant="secondary" className="mb-4">
+            <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+              <Sparkles className="w-4 h-4 inline mr-2" />
               Proven Results & Case Studies
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground">
-              Odin Digital Reviews From Real Clients
+            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
+              Odin Digital Reviews From <span className="text-white/90">Real Clients</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-white/90 leading-relaxed">
               See exactly how our proven strategies have transformed businesses across Australia. These aren't theoretical case studies - these are real results from real clients who trusted us to grow their businesses.
             </p>
 
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">$50M+</div>
-                <div className="text-sm text-muted-foreground">Total Revenue Generated</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">200+</div>
-                <div className="text-sm text-muted-foreground">Businesses Transformed</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">352%</div>
-                <div className="text-sm text-muted-foreground">Record ROI Achievement</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">5.2X</div>
-                <div className="text-sm text-muted-foreground">Average ROI</div>
-              </div>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+                <div className="text-4xl font-black text-white mb-2">$50M+</div>
+                <div className="text-sm text-white/80 font-medium">Total Revenue Generated</div>
+              </Card>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+                <div className="text-4xl font-black text-white mb-2">200+</div>
+                <div className="text-sm text-white/80 font-medium">Businesses Transformed</div>
+              </Card>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+                <div className="text-4xl font-black text-white mb-2">352%</div>
+                <div className="text-sm text-white/80 font-medium">Record ROI Achievement</div>
+              </Card>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
+                <div className="text-4xl font-black text-white mb-2">5.2X</div>
+                <div className="text-sm text-white/80 font-medium">Average ROI</div>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Social Proof */}
+      <AsSeenIn />
+      <ClientLogos />
+
       {/* Featured Case Study Header */}
-      <section className="py-12 bg-accent/10">
+      <section className="py-16 bg-accent/20 decorative-circles relative">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-foreground mb-2">Featured Case Study</h2>
-          <p className="text-xl text-muted-foreground">
-            How we helped Australia's largest furniture retailer achieve 712% ROI
+          <Badge variant="secondary" className="mb-4">
+            Featured Success Story
+          </Badge>
+          <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-4">
+            How We Helped Australia's Largest <span className="text-primary">Furniture Retailer</span>
+          </h2>
+          <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
+            Achieve 712% ROI and record-breaking ecommerce growth from day one
           </p>
         </div>
       </section>
 
       {/* Case Studies */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6 space-y-12">
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-6 space-y-16">
           {caseStudies.map((study, idx) => (
-            <CaseStudyCard key={idx} {...study} />
+            <div key={idx} className="animate-fade-in">
+              <CaseStudyCard {...study} />
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Performance Guarantee */}
-      <section className="py-20 bg-gradient-to-b from-accent/20 to-background">
-        <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
-          <CheckCircle2 className="w-16 h-16 text-primary mx-auto" />
-          <h2 className="text-4xl font-bold text-foreground">Our 90-Day Performance Guarantee</h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            We're so confident in our ability to deliver results that we guarantee a minimum 200% increase in qualified leads within 90 days, or we'll continue working at no charge until we achieve your goals.
-          </p>
-          <Button variant="cta" size="lg" className="mt-6">
-            Get Your Guaranteed Results
-          </Button>
-        </div>
-      </section>
+      {/* Partnerships Section */}
+      <Partnerships />
+
+      {/* CTA Section */}
+      <CTASection />
 
       <Footer />
     </div>
