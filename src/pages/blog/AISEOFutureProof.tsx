@@ -91,7 +91,7 @@ const AISEOFutureProof = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 overflow-hidden gradient-hero">
+        <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary/20 via-primary/10 to-background">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float" />
