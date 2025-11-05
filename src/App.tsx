@@ -233,7 +233,6 @@ const App = () => (
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
           <Route path="/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market" element={<LocalSEO2026 />} />
-          <Route path="/blog/ai-seo-future-proof-organic-strategy-2026" element={<AISEOFutureProof />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/thank-you" element={<ThankYou />} />
