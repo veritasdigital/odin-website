@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import heroPerson from "@/assets/hero-person-new.png";
+import heroPerson from "@/assets/hero-person-optimized.webp";
 import fox40Logo from "@/assets/media/fox40-logo.png";
 import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
@@ -157,8 +157,8 @@ export const Hero = () => {
                   src={heroPerson} 
                   alt="Alexa Blake, Odin Digital General Manager" 
                   className="w-full h-full object-cover object-center"
-                  width="768"
-                  height="1024"
+                  width="600"
+                  height="800"
                   fetchPriority="high"
                 />
               </div>
