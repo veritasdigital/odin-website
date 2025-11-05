@@ -347,7 +347,7 @@ const OurClients = () => {
       <ClientLogos />
 
       {/* Featured Case Study Header */}
-      <section className="py-16 bg-accent/20 decorative-circles relative">
+      <section className="py-16 bg-background relative">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <Badge variant="secondary" className="mb-4">
             Featured Success Story
