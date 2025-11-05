@@ -114,7 +114,6 @@ import SEOChecklist2025 from "./pages/blog/SEOChecklist2025";
 import LocalSEOTradies from "./pages/blog/LocalSEOTradies";
 import AISEOGuide from "./pages/blog/AISEOGuide";
 import LocalSEO2026 from "./pages/blog/LocalSEO2026";
-import AISEOFutureProof from "./pages/blog/AISEOFutureProof";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
