@@ -309,19 +309,19 @@ const AISEOFutureProof = () => {
                   The focus is shifting from single keywords (e.g., "best coffee Sydney") to the full, conversational questions users ask AI (e.g., "What is the best coffee shop in Sydney near the Opera House that opens before 7 am?"). AI SEO demands that you anticipate and directly answer these complex, long-tail, and highly specific queries.
                 </p>
 
-                <Card className="p-6 my-8 bg-primary/5 border-primary/20">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Actionable Advice</h4>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
+                <Card className="p-6 my-8 bg-primary/5 border-l-4 border-primary">
+                  <h5 className="text-lg font-bold text-foreground mb-3">Actionable Advice:</h5>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
                       <span><strong>Mine People Also Ask (PAA) and Related Questions:</strong> These sections on the SERP are goldmines for AEO, as they reveal the exact questions users are asking.</span>
                     </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
                       <span><strong>Use AI Tools for Intent Mapping:</strong> Leverage AI-powered tools to group keywords by true user intent (informational, navigational, transactional) and identify the specific questions behind the search.</span>
                     </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
                       <span><strong>Focus on the "Why" and "How":</strong> Content should address the underlying need, not just the surface-level query.</span>
                     </li>
                   </ul>
@@ -331,29 +331,35 @@ const AISEOFutureProof = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   AI tools can now generate outlines, drafts, and even full articles in minutes. This presents a dual challenge:
                 </p>
-                <ul className="space-y-3 text-muted-foreground list-disc list-inside">
-                  <li><strong>The Volume Challenge:</strong> The barrier to entry for content creation has dropped, leading to a massive influx of AI-generated content.</li>
-                  <li><strong>The Quality Challenge:</strong> Google's algorithms are becoming increasingly sophisticated at identifying low-quality, formulaic, or unhelpful content, regardless of whether it was written by a human or an AI.</li>
+                <ul className="space-y-2 text-muted-foreground ml-6">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>The Volume Challenge:</strong> The barrier to entry for content creation has dropped, leading to a massive influx of AI-generated content.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>The Quality Challenge:</strong> Google's algorithms are becoming increasingly sophisticated at identifying low-quality, formulaic, or unhelpful content, regardless of whether it was written by a human or an AI.</span>
+                  </li>
                 </ul>
 
-                <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                  To future-proof your content, you must ensure it meets the highest standards of <strong>E-E-A-T</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness). Learn more about <Link to="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" className="text-primary hover:underline">how AI SEO works</Link> in our comprehensive guide.
+                <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+                  To future-proof your content, you must ensure it meets the highest standards of <strong>E-E-A-T</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness).
                 </p>
 
-                <Card className="p-6 my-8 bg-primary/5 border-primary/20">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Actionable Advice</h4>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
+                <Card className="p-6 my-8 bg-primary/5 border-l-4 border-primary">
+                  <h5 className="text-lg font-bold text-foreground mb-3">Actionable Advice:</h5>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
                       <span><strong>Inject Human Experience:</strong> AI can write, but it cannot <em>experience</em>. Your content must be infused with genuine, first-hand experience, unique insights, case studies, and original data that an LLM cannot replicate.</span>
                     </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
                       <span><strong>Fact-Check and Cite:</strong> AI Overviews are prone to "hallucinations" (generating false information). Your content must be meticulously fact-checked and include clear, verifiable citations to establish trustworthiness.</span>
                     </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span><strong>The "Australian Filter":</strong> For the Odin Digital blog, ensure your content is locally relevant, using Australian spelling and terminology (e.g., "optimisation" instead of "optimization," "colour" instead of "color") to resonate with the target audience and establish local authority.</span>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span><strong>The "Australian Filter":</strong> For the Odin Digital blog, ensure your content is locally relevant, using Australian spelling and terminology (e.g., "optimisation" instead of "optimization," "colour" instead of "color," "trousers" instead of "pants") to resonate with the target audience and establish local authority.</span>
                     </li>
                   </ul>
                 </Card>
@@ -361,17 +367,21 @@ const AISEOFutureProof = () => {
             </div>
 
             {/* Mid-Post CTA */}
-            <Card className="my-16 p-8 bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20">
+            <Card className="p-8 md:p-12 my-16 gradient-cta text-white">
               <div className="text-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4">
                   Ready to Future-Proof Your SEO Strategy?
                 </h3>
-                <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-                  Our team of digital marketing experts specialises in <Link to="/services/seo" className="text-primary hover:underline">AI-powered SEO strategies</Link> that drive real results. Let's discuss how we can help you dominate the AI-driven search landscape.
+                <p className="text-xl mb-8 text-white/90">
+                  Let our team of AI SEO experts help you dominate the Answer Engine era
                 </p>
-                <Button variant="cta" size="lg" onClick={openForm}>
-                  Get Your Free Strategy Session
-                  <ArrowRight className="w-4 h-4 ml-2" />
+                <Button 
+                  size="lg" 
+                  onClick={() => openForm()}
+                  className="bg-white text-primary hover:bg-white/90 font-bold text-lg px-8 py-6"
+                >
+                  Book Your Free AI SEO Audit
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
             </Card>
@@ -391,18 +401,19 @@ const AISEOFutureProof = () => {
                   The single most important AEO technique is providing a clear, concise, and direct answer to a question immediately after the heading that poses the question.
                 </p>
 
-                <Card className="p-6 my-6 bg-muted/30 border-l-4 border-primary">
-                  <h4 className="text-lg font-bold text-foreground mb-2">Example:</h4>
-                  <p className="font-semibold text-foreground mb-2">What is the ideal word count for an AI SEO blog post?</p>
-                  <p className="text-muted-foreground italic mb-2">Direct Answer:</p>
-                  <p className="text-muted-foreground">
-                    The ideal word count for an AI SEO blog post is typically between 2,000 and 2,500 words. This length allows for the necessary depth to cover complex topics, establish expertise, and provide multiple, structured answers that an AI can easily extract.
-                  </p>
+                <Card className="p-6 my-8 bg-muted/30 border-2 border-primary/20">
+                  <h4 className="text-xl font-bold text-foreground mb-4">Example:</h4>
+                  <div className="space-y-4">
+                    <p className="text-lg font-semibold text-foreground">What is the ideal word count for an AI SEO blog post?</p>
+                    <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground bg-primary/5 py-3 px-4 rounded">
+                      <strong>Direct Answer:</strong> The ideal word count for an AI SEO blog post is typically between 2,000 and 2,500 words. This length allows for the necessary depth to cover complex topics, establish expertise, and provide multiple, structured answers that an AI can easily extract.
+                    </blockquote>
+                    <p className="text-sm text-muted-foreground">
+                      This format makes it easy for Google's LLM to identify the core answer and use it in an AI Overview. Follow this direct answer with the necessary supporting detail, context, and evidence.
+                    </p>
+                  </div>
                 </Card>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  This format makes it easy for Google's LLM to identify the core answer and use it in an AI Overview. Follow this direct answer with the necessary supporting detail, context, and evidence.
-                </p>
 
                 <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Step 2: Embrace Structured Data and Schema Markup</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -412,16 +423,16 @@ const AISEOFutureProof = () => {
                   AI models rely on structured data to understand the relationships between entities (people, places, things, concepts) on your page. Using schema markup (especially <code className="bg-muted px-2 py-1 rounded">FAQPage</code>, <code className="bg-muted px-2 py-1 rounded">HowTo</code>, <code className="bg-muted px-2 py-1 rounded">Product</code>, and <code className="bg-muted px-2 py-1 rounded">Review</code> schema) allows you to pre-package answers in a machine-readable format, increasing the likelihood of your content being selected as a source.
                 </p>
 
-                <Card className="p-6 my-8 bg-primary/5 border-primary/20">
-                  <h4 className="text-xl font-bold text-foreground mb-4">Actionable Advice</h4>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span><strong>Use FAQPage Schema:</strong> For question-and-answer sections, this is essential for AEO.</span>
+                <Card className="p-6 my-8 bg-primary/5 border-l-4 border-primary">
+                  <h5 className="text-lg font-bold text-foreground mb-3">Actionable Advice:</h5>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span><strong>Use <code className="bg-muted px-2 py-1 rounded">FAQPage</code> Schema:</strong> For question-and-answer sections, this is essential for AEO.</span>
                     </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-primary mt-1">•</span>
-                      <span><strong>Implement HowTo Schema:</strong> For step-by-step guides, this helps the AI generate clear, sequential instructions.</span>
+                    <li className="flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span><strong>Implement <code className="bg-muted px-2 py-1 rounded">HowTo</code> Schema:</strong> For step-by-step guides, this helps the AI generate clear, sequential instructions.</span>
                     </li>
                   </ul>
                 </Card>
@@ -430,20 +441,38 @@ const AISEOFutureProof = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   AI models favour content that is unambiguous and easy to process. Avoid overly complex jargon or convoluted sentence structures.
                 </p>
-                <ul className="space-y-3 text-muted-foreground list-disc list-inside">
-                  <li><strong>Use Short Paragraphs:</strong> Break up large blocks of text. Short, punchy paragraphs are easier for both human readers and AI models to digest.</li>
-                  <li><strong>Use Lists and Tables:</strong> As demonstrated in this post, lists and tables are excellent for summarising complex information and presenting data in a highly extractable format. They are a favourite of AI Overviews.</li>
-                  <li><strong>Maintain Semantic Consistency:</strong> Use the same terminology consistently throughout the document. If you call it "AI SEO" in one section, don't switch to "Artificial Intelligence Optimisation" in the next.</li>
+                <ul className="space-y-2 text-muted-foreground ml-6 mt-4">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Use Short Paragraphs:</strong> Break up large blocks of text. Short, punchy paragraphs are easier for both human readers and AI models to digest.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Use Lists and Tables:</strong> As demonstrated in this post, lists and tables are excellent for summarising complex information and presenting data in a highly extractable format. They are a favourite of AI Overviews.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Maintain Semantic Consistency:</strong> Use the same terminology consistently throughout the document. If you call it "AI SEO" in one section, don't switch to "Artificial Intelligence Optimisation" in the next.</span>
+                  </li>
                 </ul>
 
                 <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Step 4: Build Topic Authority (Topical Clusters)</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   AI SEO is less about individual page ranking and more about establishing your entire website as the definitive authority on a cluster of related topics.
                 </p>
-                <ul className="space-y-3 text-muted-foreground list-disc list-inside">
-                  <li><strong>Pillar Content:</strong> Create one comprehensive, long-form piece of "pillar" content (like this blog post) that covers a broad topic (e.g., AI SEO).</li>
-                  <li><strong>Cluster Content:</strong> Create multiple, shorter, more specific pieces of content that link back to the pillar (e.g., "5 Tools for AI-Powered Keyword Research," "A Beginner's Guide to Google AI Overviews").</li>
-                  <li><strong>Internal Linking:</strong> Use robust internal linking to connect all cluster pages to the pillar page, signalling to the AI that your site has deep, interconnected expertise on the subject. This reinforces your site's E-E-A-T. Our <Link to="/services/website-design" className="text-primary hover:underline">website design services</Link> can help you implement the perfect internal linking structure.</li>
+                <ul className="space-y-2 text-muted-foreground ml-6 mt-4">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Pillar Content:</strong> Create one comprehensive, long-form piece of "pillar" content (like this blog post) that covers a broad topic (e.g., AI SEO).</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Cluster Content:</strong> Create multiple, shorter, more specific pieces of content that link back to the pillar (e.g., "5 Tools for AI-Powered Keyword Research," "A Beginner's Guide to Google AI Overviews").</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span><strong>Internal Linking:</strong> Use robust internal linking to connect all cluster pages to the pillar page, signalling to the AI that your site has deep, interconnected expertise on the subject. This reinforces your site's E-E-A-T.</span>
+                  </li>
                 </ul>
               </div>
             </div>
