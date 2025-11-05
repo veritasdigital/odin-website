@@ -89,9 +89,12 @@ const CaseStudyCard = ({
 
         {/* Right Column - Metrics */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="bg-gradient-to-br from-accent/30 via-accent/15 to-accent/5 rounded-xl p-7 space-y-4 border-2 border-border/50 shadow-md relative overflow-hidden">
-            <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary/5 rounded-full translate-x-16 translate-y-16" />
-            <h4 className="font-bold text-charcoal mb-4 text-lg relative z-10">Campaign Performance</h4>
+          <div className="bg-gradient-to-br from-primary/5 via-accent/5 to-transparent rounded-xl p-7 space-y-4 border-2 border-primary/10 shadow-lg relative overflow-hidden">
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary/3 rounded-full translate-x-16 translate-y-16" />
+            <h4 className="font-bold text-charcoal mb-4 text-lg relative z-10 flex items-center gap-2">
+              <Sparkles className="w-5 h-5 text-primary" />
+              Campaign Performance
+            </h4>
             {metrics.map((metric, idx) => (
               <div key={idx} className="flex justify-between items-start pb-3 border-b border-border/50 last:border-0 last:pb-0 relative z-10">
                 <span className="text-sm text-charcoal/70 font-medium">{metric.label}</span>
