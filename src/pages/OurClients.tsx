@@ -38,7 +38,9 @@ const CaseStudyCard = ({
   services,
   websiteUrl 
 }: CaseStudyProps) => (
-  <Card className="overflow-hidden border-border/50 hover:border-primary/20 transition-all duration-300 hover:shadow-xl group">
+  <Card className="overflow-hidden border-2 border-border/30 hover:border-primary/40 transition-all duration-300 hover:shadow-2xl group relative bg-background">
+    {/* Decorative corner accent */}
+    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
     <CardContent className="p-0">
       <div className="grid lg:grid-cols-5 gap-8 p-8 lg:p-10">
         {/* Left Column - Narrative */}
@@ -52,7 +54,7 @@ const CaseStudyCard = ({
           </div>
 
           <div className="space-y-5">
-            <div className="flex gap-4 p-4 bg-accent/20 rounded-lg">
+            <div className="flex gap-4 p-5 bg-gradient-to-br from-background to-accent/10 rounded-xl border border-border/50 shadow-sm">
               <Target className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-charcoal mb-2 text-lg">The Challenge</h4>
@@ -60,7 +62,7 @@ const CaseStudyCard = ({
               </div>
             </div>
 
-            <div className="flex gap-4 p-4 bg-accent/20 rounded-lg">
+            <div className="flex gap-4 p-5 bg-gradient-to-br from-background to-accent/10 rounded-xl border border-border/50 shadow-sm">
               <Lightbulb className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-charcoal mb-2 text-lg">Our Solution</h4>
@@ -68,7 +70,7 @@ const CaseStudyCard = ({
               </div>
             </div>
 
-            <div className="flex gap-4 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
+            <div className="flex gap-4 p-5 bg-gradient-to-br from-primary/5 via-primary/3 to-transparent rounded-xl border-2 border-primary/20 shadow-md">
               <TrendingUp className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-bold text-charcoal mb-2 text-lg">The Result</h4>
@@ -78,18 +80,20 @@ const CaseStudyCard = ({
           </div>
 
           {testimonialQuote && (
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-6 rounded-lg border border-primary/20 shadow-lg">
-              <p className="text-charcoal italic text-lg leading-relaxed">"{testimonialQuote}"</p>
+            <div className="bg-gradient-to-br from-primary/8 via-primary/5 to-transparent p-7 rounded-xl border-2 border-primary/20 shadow-lg relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-20 h-20 bg-primary/5 rounded-full -translate-x-10 -translate-y-10" />
+              <p className="text-charcoal italic text-lg leading-relaxed relative z-10">"{testimonialQuote}"</p>
             </div>
           )}
         </div>
 
         {/* Right Column - Metrics */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="bg-gradient-to-br from-accent/40 to-accent/20 rounded-lg p-6 space-y-4 border border-border">
-            <h4 className="font-bold text-charcoal mb-4 text-lg">Campaign Performance</h4>
+          <div className="bg-gradient-to-br from-accent/30 via-accent/15 to-accent/5 rounded-xl p-7 space-y-4 border-2 border-border/50 shadow-md relative overflow-hidden">
+            <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary/5 rounded-full translate-x-16 translate-y-16" />
+            <h4 className="font-bold text-charcoal mb-4 text-lg relative z-10">Campaign Performance</h4>
             {metrics.map((metric, idx) => (
-              <div key={idx} className="flex justify-between items-start pb-3 border-b border-border/50 last:border-0 last:pb-0">
+              <div key={idx} className="flex justify-between items-start pb-3 border-b border-border/50 last:border-0 last:pb-0 relative z-10">
                 <span className="text-sm text-charcoal/70 font-medium">{metric.label}</span>
                 <span className="font-bold text-primary text-right">{metric.value}</span>
               </div>
@@ -133,14 +137,19 @@ const CTASection = () => {
           We're so confident in our ability to deliver results that we guarantee a minimum 200% increase in qualified leads within 90 days, or we'll continue working at no charge until we achieve your goals.
         </p>
         
-        <Card className="p-8 bg-white/10 backdrop-blur-md border-white/20 text-white max-w-2xl mx-auto">
-          <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
-          <p className="text-white/80 mb-6 leading-relaxed">
-            Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
-          </p>
-          <Button variant="cta" size="lg" className="w-full text-lg" onClick={openForm}>
-            GET YOUR GUARANTEED RESULTS
-          </Button>
+        <Card className="p-8 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white max-w-2xl mx-auto shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-40 h-40 bg-white/5 rounded-full -translate-x-20 -translate-y-20" />
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-16 translate-y-16" />
+          
+          <div className="relative z-10">
+            <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
+            <p className="text-white/80 mb-6 leading-relaxed">
+              Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
+            </p>
+            <Button variant="cta" size="lg" className="w-full text-lg" onClick={openForm}>
+              GET YOUR GUARANTEED RESULTS
+            </Button>
+          </div>
         </Card>
       </div>
     </section>
@@ -321,20 +330,20 @@ const OurClients = () => {
 
             {/* Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">$50M+</div>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
+                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">$50M+</div>
                 <div className="text-sm text-white/80 font-medium">Total Revenue Generated</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">200+</div>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
+                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">200+</div>
                 <div className="text-sm text-white/80 font-medium">Businesses Transformed</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">352%</div>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
+                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">352%</div>
                 <div className="text-sm text-white/80 font-medium">Record ROI Achievement</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">5.2X</div>
+              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
+                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">5.2X</div>
                 <div className="text-sm text-white/80 font-medium">Average ROI</div>
               </Card>
             </div>
