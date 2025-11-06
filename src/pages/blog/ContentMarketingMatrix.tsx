@@ -3,9 +3,13 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Calendar, User, Clock } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Target, RefreshCw, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/blog/content-marketing-matrix-hero.jpg";
+import matrixVisual from "@/assets/blog/matrix-framework-visual.jpg";
+import journeyTeam from "@/assets/blog/content-journey-team.jpg";
+import repurposeImage from "@/assets/blog/content-repurpose.jpg";
+import roiImage from "@/assets/blog/measuring-roi.jpg";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
@@ -88,21 +92,26 @@ export default function ContentMarketingMatrix() {
         <SideTab />
 
         {/* Hero Section with Floating Elements */}
-        <section className="relative pt-32 pb-20 overflow-hidden">
+        <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background via-muted/30 to-muted/20">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img 
               src={heroImage} 
               alt="Content Marketing Matrix Strategy"
-              className="w-full h-full object-cover opacity-20"
+              className="w-full h-full object-cover opacity-10"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background"></div>
           </div>
 
-          {/* Floating Decorative Elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-gradient-primary opacity-10 blur-3xl animate-float"></div>
-          <div className="absolute top-40 right-20 w-40 h-40 rounded-full bg-gradient-secondary opacity-10 blur-3xl animate-float-delayed"></div>
-          <div className="absolute bottom-20 left-1/4 w-24 h-24 rounded-full bg-gradient-primary opacity-10 blur-2xl animate-pulse-glow"></div>
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-primary/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-primary/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
           <div className="container mx-auto px-4 relative z-10">
             {/* Breadcrumb */}
@@ -122,8 +131,8 @@ export default function ContentMarketingMatrix() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 max-w-5xl leading-tight">
-              The Content Marketing Matrix: How to Create Content That Actually Converts
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 text-charcoal max-w-5xl leading-tight">
+              The Content Marketing Matrix: <span className="bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent">How to Create Content That Actually Converts</span>
             </h1>
 
             {/* Meta Information */}
@@ -189,10 +198,33 @@ export default function ContentMarketingMatrix() {
           </Card>
 
           {/* Main Content Sections */}
-          <div className="prose prose-lg max-w-none space-y-12">
-            {/* Section 1 */}
-            <section id="introducing-matrix">
-              <h2 className="text-3xl font-bold mb-6">Introducing the Content Marketing Matrix (Awareness, Consideration, Decision, Loyalty)</h2>
+          <div className="prose prose-lg max-w-none space-y-16">
+            {/* Section 1 - Introducing the Matrix */}
+            <section id="introducing-matrix" className="relative">
+              {/* Decorative Elements */}
+              <div className="absolute -top-8 -left-8 w-20 h-20 bg-primary/5 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-accent/5 rounded-full blur-2xl"></div>
+              
+              {/* Section Header with Icon */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-primary shadow-glow">
+                  <Target className="w-7 h-7 text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-charcoal m-0">
+                  Introducing the Content Marketing Matrix
+                </h2>
+              </div>
+
+              {/* Featured Image */}
+              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
+                <img 
+                  src={matrixVisual} 
+                  alt="Content Marketing Matrix Framework Visualization"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+
               <p className="text-lg leading-relaxed mb-4">
                 The Content Marketing Matrix is a powerful planning tool that maps your content inventory and future content ideation against two critical dimensions: the <strong>customer's stage in the buying journey</strong> and the <strong>content's primary purpose</strong>.
               </p>
@@ -252,9 +284,31 @@ export default function ContentMarketingMatrix() {
               </div>
             </Card>
 
-            {/* Section 2 */}
-            <section id="content-ideas">
-              <h2 className="text-3xl font-bold mb-6">Content Ideas for Each Stage of the Customer Journey</h2>
+            {/* Section 2 - Customer Journey Content */}
+            <section id="content-ideas" className="relative">
+              {/* Decorative Elements */}
+              <div className="absolute -top-8 -right-8 w-24 h-24 bg-secondary/5 rounded-full blur-2xl"></div>
+              
+              {/* Section Header with Icon */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-secondary to-accent shadow-glow">
+                  <TrendingUp className="w-7 h-7 text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-charcoal m-0">
+                  Content Ideas for Each Stage of the Customer Journey
+                </h2>
+              </div>
+
+              {/* Featured Image */}
+              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
+                <img 
+                  src={journeyTeam} 
+                  alt="Team Planning Customer Journey Content Strategy"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+
               <p className="text-lg leading-relaxed mb-6">
                 To bring the <strong>content marketing matrix</strong> to life, let's explore the specific types of <strong>customer journey content</strong> that perform best at each stage. Remember, the goal is to create a seamless flow, guiding the customer from one stage to the next.
               </p>
@@ -301,9 +355,31 @@ export default function ContentMarketingMatrix() {
               </p>
             </section>
 
-            {/* Section 3 */}
-            <section id="repurpose-content">
-              <h2 className="text-3xl font-bold mb-6">How to Repurpose One Piece of Content for Multiple Platforms</h2>
+            {/* Section 3 - Repurposing Content */}
+            <section id="repurpose-content" className="relative">
+              {/* Decorative Elements */}
+              <div className="absolute -top-8 -left-8 w-28 h-28 bg-primary/5 rounded-full blur-2xl"></div>
+              
+              {/* Section Header with Icon */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-primary shadow-glow">
+                  <RefreshCw className="w-7 h-7 text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-charcoal m-0">
+                  How to Repurpose One Piece of Content for Multiple Platforms
+                </h2>
+              </div>
+
+              {/* Featured Image */}
+              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
+                <img 
+                  src={repurposeImage} 
+                  alt="Repurposing Content Across Multiple Digital Platforms"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+
               <p className="text-lg leading-relaxed mb-4">
                 Creating high-quality, strategic <strong>customer journey content</strong> is time-consuming. To maximise your <strong>content marketing ROI</strong> and ensure your <strong>content strategy framework</strong> is efficient, you must master the art of content repurposing.
               </p>
@@ -341,9 +417,31 @@ export default function ContentMarketingMatrix() {
               </p>
             </section>
 
-            {/* Section 4 */}
-            <section id="measuring-success">
-              <h2 className="text-3xl font-bold mb-6">Measuring Content Marketing Success Beyond Just Traffic</h2>
+            {/* Section 4 - Measuring Success */}
+            <section id="measuring-success" className="relative">
+              {/* Decorative Elements */}
+              <div className="absolute -top-8 -right-8 w-32 h-32 bg-accent/5 rounded-full blur-2xl"></div>
+              
+              {/* Section Header with Icon */}
+              <div className="flex items-center gap-4 mb-8">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-accent to-secondary shadow-glow">
+                  <TrendingUp className="w-7 h-7 text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-black text-charcoal m-0">
+                  Measuring Content Marketing Success Beyond Just Traffic
+                </h2>
+              </div>
+
+              {/* Featured Image */}
+              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
+                <img 
+                  src={roiImage} 
+                  alt="Analytics Dashboard Showing Content Marketing ROI Metrics"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+
               <p className="text-lg leading-relaxed mb-6">
                 The biggest trap in content marketing is focusing on <strong>vanity metrics</strong>—page views, likes, and shares. While these are nice for the ego, they offer little insight into your true <strong>content marketing ROI</strong>. A successful <strong>content strategy framework</strong> must be built on metrics that directly correlate with business outcomes.
               </p>
@@ -388,8 +486,13 @@ export default function ContentMarketingMatrix() {
             </section>
 
             {/* Conclusion */}
-            <section id="conclusion">
-              <h2 className="text-3xl font-bold mb-6">Conclusion: Building a Content Engine That Drives Business Growth</h2>
+            <section id="conclusion" className="relative">
+              {/* Decorative Elements */}
+              <div className="absolute -top-8 left-1/2 w-40 h-40 bg-gradient-primary opacity-5 rounded-full blur-3xl"></div>
+              
+              <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-6">
+                Conclusion: Building a Content Engine That Drives Business Growth
+              </h2>
               <p className="text-lg leading-relaxed mb-4">
                 The shift from simply creating content to implementing a strategic <strong>content marketing matrix</strong> is the single most important change a business can make to its digital strategy. It moves you from a reactive, topic-driven approach to a proactive, customer-centric <strong>content strategy framework</strong>.
               </p>
@@ -403,32 +506,41 @@ export default function ContentMarketingMatrix() {
           </div>
 
           {/* Final CTA Section */}
-          <Card className="p-12 bg-gradient-primary text-white mt-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Take Your Digital Marketing to the Next Level?
-            </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Get a free, no-obligation marketing strategy session with our experts.
-            </p>
-            <Button 
-              asChild
-              variant="secondary"
-              size="xl"
-              className="bg-white text-primary hover:bg-white/90 shadow-elegant"
-            >
-              <Link to="/contact">
+          <Card className="relative p-12 bg-gradient-primary text-white mt-16 shadow-glow overflow-hidden">
+            {/* Decorative Floating Elements */}
+            <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-white/5 rounded-full blur-2xl"></div>
+            
+            <div className="relative text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-black mb-4">
+                Ready to Take Your Digital Marketing to the Next Level?
+              </h2>
+              <p className="text-xl mb-8 opacity-90">
+                Get a free, no-obligation marketing strategy session with our experts.
+              </p>
+              <Button 
+                onClick={openForm}
+                variant="secondary"
+                size="lg"
+                className="bg-white text-primary hover:bg-white/90 hover:scale-105 text-lg px-8 py-6 shadow-primary transition-all duration-300"
+              >
                 Get Your Free Strategy Session
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
+              </Button>
+            </div>
           </Card>
 
           {/* Author Bio */}
-          <Card className="p-8 mt-12 bg-card/50 backdrop-blur-sm">
-            <h3 className="text-xl font-bold mb-4">About the Author</h3>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              The Odin Digital Team consists of experienced digital marketing strategists, SEO specialists, and content creators dedicated to helping Australian businesses achieve exponential growth through data-driven strategies.
-            </p>
+          <Card className="relative p-8 mt-12 bg-gradient-to-br from-muted/50 to-muted/30 backdrop-blur-sm border-primary/10 overflow-hidden">
+            {/* Decorative Elements */}
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/5 rounded-full blur-xl"></div>
+            
+            <div className="relative">
+              <h3 className="text-xl font-bold mb-4 text-charcoal">About the Author</h3>
+              <p className="text-lg leading-relaxed text-muted-foreground">
+                The <strong>Odin Digital Team</strong> consists of experienced digital marketing strategists, SEO specialists, and content creators dedicated to helping Australian businesses achieve exponential growth through data-driven strategies.
+              </p>
+            </div>
           </Card>
 
           {/* Related Articles */}
