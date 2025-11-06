@@ -27,11 +27,24 @@ import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
 import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
 import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero-new.jpg";
 import emailListBuildingHeroImage from "@/assets/blog/email-list-building-hero.jpg";
+import conversionOptimizationHeroImage from "@/assets/blog/conversion-optimization.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 21,
+      title: "Google Analytics 4 for Beginners: A Guide for Aussie Business Owners",
+      excerpt: "Confused by Google Analytics 4? Our beginner-friendly guide for Australian business owners will help you understand the basics, set up your account, and start tracking your website's performance.",
+      image: conversionOptimizationHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "CRO",
+      featured: false,
+      link: "/blog/blog-post-analytics-cro"
+    },
     {
       id: 20,
       title: "How to Build an Email List from Scratch for Your Australian Business",
