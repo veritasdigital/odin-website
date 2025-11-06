@@ -6,7 +6,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, Calendar, User, Clock, Target, RefreshCw, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/blog/content-marketing-matrix-hero.jpg";
-import matrixVisual from "@/assets/blog/matrix-framework-visual.jpg";
+import matrixVisual from "@/assets/blog/matrix-presentation-realistic.jpg";
 import journeyTeam from "@/assets/blog/content-journey-team.jpg";
 import repurposeImage from "@/assets/blog/content-repurpose.jpg";
 import roiImage from "@/assets/blog/measuring-roi.jpg";
@@ -205,6 +205,16 @@ export default function ContentMarketingMatrix() {
               <div className="absolute -top-8 -left-8 w-20 h-20 bg-primary/5 rounded-full blur-2xl"></div>
               <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-accent/5 rounded-full blur-2xl"></div>
               
+              {/* Featured Image - Moved to headline */}
+              <div className="relative rounded-2xl overflow-hidden mb-6 shadow-card ring-1 ring-primary/10">
+                <img 
+                  src={matrixVisual} 
+                  alt="Content Marketing Matrix Framework Presentation"
+                  className="w-full h-auto"
+                  loading="lazy"
+                />
+              </div>
+
               {/* Section Header with Icon */}
               <div className="flex items-center gap-4 mb-8">
                 <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-primary shadow-glow">
@@ -213,16 +223,6 @@ export default function ContentMarketingMatrix() {
                 <h2 className="text-3xl md:text-4xl font-black text-charcoal m-0">
                   Introducing the Content Marketing Matrix
                 </h2>
-              </div>
-
-              {/* Featured Image */}
-              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={matrixVisual} 
-                  alt="Content Marketing Matrix Framework Visualization"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
               </div>
 
               <p className="text-lg leading-relaxed mb-4">
