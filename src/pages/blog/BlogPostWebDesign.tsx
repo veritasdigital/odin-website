@@ -72,9 +72,9 @@ const BlogPostWebDesign = () => {
 
       <Header />
       
-      <article className="min-h-screen bg-background">
+      <article className="min-h-screen bg-background pt-20">
         {/* Hero Section with Floating Elements */}
-        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+        <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5 pt-16">
           {/* Animated Background Blobs */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
