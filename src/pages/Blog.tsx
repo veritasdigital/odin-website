@@ -29,11 +29,24 @@ import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero-new.jpg"
 import emailListBuildingHeroImage from "@/assets/blog/email-list-building-hero.jpg";
 import conversionOptimizationHeroImage from "@/assets/blog/conversion-optimization.jpg";
 import croConversionOptimizationImage from "@/assets/blog/cro-conversion-optimization.jpg";
+import websiteRedesignImage from "@/assets/blog/website-redesign-signs.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 23,
+      title: "10 Signs It's Time for a Website Redesign for Your Aussie Business",
+      excerpt: "Is your website holding your business back? Discover the 10 telltale signs that it's time for a website redesign and learn how a fresh, modern website can help you attract more customers and grow your Australian business.",
+      image: websiteRedesignImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "Web Design",
+      featured: false,
+      link: "/blog/blog-post-web-design"
+    },
     {
       id: 22,
       title: "Conversion Rate Optimisation (CRO): The Secret to Getting More From Your Existing Traffic",
