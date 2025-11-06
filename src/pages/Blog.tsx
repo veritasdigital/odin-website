@@ -19,6 +19,7 @@ import keywordResearchAI from "@/assets/blog/keyword-research-ai.jpg";
 import aiSeoHeroImage from "@/assets/blog/ai-seo-hero.jpg";
 import localSeo2026Image from "@/assets/blog/local-seo-2026.jpg";
 import aiSeoFutureProofImage from "@/assets/blog/ai-seo-future-proof.jpg";
+import willAIReplaceSEOImage from "@/assets/blog/will-ai-replace-seo-featured.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -28,7 +29,7 @@ const Blog = () => {
       id: 1,
       title: "Will AI Replace SEO? A Data-Backed Answer for Worried Marketers",
       excerpt: "The question every SEO professional is asking. Dive into the data, understand the impact of AI Overviews on organic traffic, and discover why strategic human oversight is more critical than ever.",
-      image: aiSeoFutureProofImage,
+      image: willAIReplaceSEOImage,
       author: "Odin Digital Team",
       date: "15 January 2025",
       readTime: "15 min read",
