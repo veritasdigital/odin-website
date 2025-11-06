@@ -83,13 +83,18 @@ const BlogPostAnalyticsCRO = () => {
         <Header />
 
         {/* Hero Section with Floating Circles */}
-        <section className="relative pt-32 pb-16 overflow-hidden">
-          {/* Floating circles from home page */}
-          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed"></div>
-          <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-float"></div>
+        <section className="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }}></div>
 
-          <div className="container relative z-10">
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-accent/40 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-secondary/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="container relative z-10">{/* ... keep existing code ... */}
             {/* Breadcrumb Navigation */}
             <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
               <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
@@ -107,8 +112,8 @@ const BlogPostAnalyticsCRO = () => {
 
             {/* Article Header */}
             <article className="max-w-4xl mx-auto">
-              <header className="mb-12">
-                <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-6">
+              <header className="mb-12 animate-fade-in">
+                <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>{/* ... keep existing code ... */}
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">CRO</span>
                   <div className="flex items-center">
                     <Clock className="w-4 h-4 mr-1" />
@@ -118,19 +123,24 @@ const BlogPostAnalyticsCRO = () => {
                   <time dateTime="2025-01-15">January 15, 2025</time>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   Google Analytics 4 for Beginners: A Guide for Aussie Business Owners
                 </h1>
 
-                <p className="text-xl text-muted-foreground mb-8">
+                <p className="text-xl text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>{/* ... keep existing code ... */}
                   By Odin Digital Team
                 </p>
 
-                <img
-                  src={conversionOptimizationHero}
-                  alt="Google Analytics 4 dashboard showing business analytics and conversion data"
-                  className="w-full rounded-lg shadow-lg"
-                />
+                <div className="relative animate-fade-in" style={{ animationDelay: "0.8s" }}>
+                  {/* Gradient Ring around image */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
+                  
+                  <img
+                    src={conversionOptimizationHero}
+                    alt="Google Analytics 4 dashboard showing business analytics and conversion data"
+                    className="relative w-full rounded-lg shadow-2xl ring-1 ring-primary/10 hover:scale-[1.02] transition-transform duration-500"
+                  />
+                </div>{/* ... keep existing code ... */}
               </header>
 
               {/* Introduction */}
@@ -147,57 +157,63 @@ const BlogPostAnalyticsCRO = () => {
               </div>
 
               {/* Table of Contents */}
-              <nav className="bg-accent/50 rounded-lg p-8 mb-12">
-                <h2 className="text-2xl font-bold mb-4">Table of Contents</h2>
+              <nav className="relative bg-gradient-to-br from-muted/40 to-muted/20 backdrop-blur-sm rounded-lg p-8 mb-12 border border-primary/10 shadow-card hover:shadow-glow transition-all duration-300 animate-fade-in" style={{ animationDelay: "1s" }}>
+                <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Table of Contents</h2>{/* ... keep existing code ... */}
                 <ul className="space-y-3">
                   <li>
                     <button
                       onClick={() => scrollToSection('what-is-ga4')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       What is Google Analytics 4?
                     </button>
-                  </li>
+                  </li>{/* ... keep existing code ... */}
                   <li>
                     <button
                       onClick={() => scrollToSection('why-use-ga4')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       Why Should You Use Google Analytics 4?
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => scrollToSection('setting-up-ga4')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       Setting Up Google Analytics 4
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => scrollToSection('understanding-interface')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       Understanding the GA4 Interface
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => scrollToSection('key-metrics')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       Key Metrics to Track
                     </button>
                   </li>
                   <li>
                     <button
                       onClick={() => scrollToSection('creating-report')}
-                      className="text-primary hover:underline text-left"
+                      className="text-primary hover:underline text-left hover:translate-x-2 transition-transform duration-200 flex items-center group"
                     >
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                       Creating Your First Report
                     </button>
-                  </li>
+                  </li>{/* ... keep existing code ... */}
                 </ul>
               </nav>
 
@@ -234,17 +250,23 @@ const BlogPostAnalyticsCRO = () => {
                 </section>
 
                 {/* Mid-Post CTA */}
-                <div className="bg-gradient-primary rounded-lg p-8 text-white my-12">
-                  <h3 className="text-2xl font-bold mb-4">Ready to Optimise Your Digital Marketing?</h3>
-                  <p className="text-lg mb-6">
-                    Our team of digital marketing experts can help you set up and interpret your analytics data to drive real business results. Get your free marketing strategy session today.
-                  </p>
-                  <Link to="/services/marketing-consulting">
-                    <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
-                      Get Your Free Strategy Session
-                    </Button>
-                  </Link>
-                </div>
+                <div className="relative overflow-hidden bg-gradient-primary rounded-lg p-8 text-white my-12 shadow-glow hover:shadow-primary transition-all duration-300 transform hover:scale-[1.02] animate-fade-in">
+                  {/* Decorative elements */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+                  
+                  <div className="relative z-10">{/* ... keep existing code ... */}
+                    <h3 className="text-2xl font-bold mb-4">Ready to Optimise Your Digital Marketing?</h3>
+                    <p className="text-lg mb-6">
+                      Our team of digital marketing experts can help you set up and interpret your analytics data to drive real business results. Get your free marketing strategy session today.
+                    </p>
+                    <Link to="/services/marketing-consulting">
+                      <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                        Get Your Free Strategy Session
+                      </Button>
+                    </Link>
+                  </div>
+                </div>{/* ... keep existing code ... */}
 
                 {/* Section 3 */}
                 <section id="setting-up-ga4">
@@ -353,8 +375,12 @@ const BlogPostAnalyticsCRO = () => {
                 </section>
 
                 {/* Conclusion */}
-                <section className="bg-accent/30 rounded-lg p-8 my-12">
-                  <h2 className="text-3xl font-bold mb-4">The Bottom Line</h2>
+                <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg p-8 my-12 border border-primary/10 shadow-card">
+                  {/* Decorative corner elements */}
+                  <div className="absolute top-0 left-0 w-16 h-16 bg-primary/10 rounded-br-full"></div>
+                  <div className="absolute bottom-0 right-0 w-16 h-16 bg-secondary/10 rounded-tl-full"></div>
+                  
+                  <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">The Bottom Line</h2>{/* ... keep existing code ... */}
                   <p className="text-lg leading-relaxed">
                     Google Analytics 4 might seem intimidating at first, but it's a powerful tool that can help you understand your website's performance and make data-driven decisions to grow your Australian business.
                   </p>
@@ -368,28 +394,37 @@ const BlogPostAnalyticsCRO = () => {
               </div>
 
               {/* Final CTA Section */}
-              <section className="bg-gradient-primary rounded-lg p-12 text-white text-center my-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Ready to Take Your Digital Marketing to the Next Level?
-                </h2>
-                <p className="text-xl mb-8 max-w-2xl mx-auto">
-                  Get a free, no-obligation marketing strategy session with our experts.
-                </p>
-                <Link to="/contact">
-                  <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90">
-                    Get Your Free Strategy Session
-                  </Button>
-                </Link>
-              </section>
+              <section className="relative overflow-hidden bg-gradient-primary rounded-lg p-12 text-white text-center my-16 shadow-glow hover:shadow-primary transition-all duration-300 transform hover:scale-[1.02]">
+                {/* Animated Background Elements */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+                
+                <div className="relative z-10">{/* ... keep existing code ... */}
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Ready to Take Your Digital Marketing to the Next Level?
+                  </h2>
+                  <p className="text-xl mb-8 max-w-2xl mx-auto">
+                    Get a free, no-obligation marketing strategy session with our experts.
+                  </p>
+                  <Link to="/contact">
+                    <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                      Get Your Free Strategy Session
+                    </Button>
+                  </Link>
+                </div>
+              </section>{/* ... keep existing code ... */}
 
               {/* Author Bio */}
-              <section className="bg-accent/30 rounded-lg p-8 flex items-start space-x-6">
+              <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg p-8 flex items-start space-x-6 border border-primary/10 shadow-card hover:shadow-glow transition-all duration-300">
+                {/* Decorative element */}
+                <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-full blur-2xl"></div>
+                
                 <img
                   src={odinTeamPhoto}
                   alt="Odin Digital Team"
-                  className="w-24 h-24 rounded-full object-cover"
+                  className="w-24 h-24 rounded-full object-cover ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300"
                 />
-                <div>
+                <div className="relative z-10">{/* ... keep existing code ... */}
                   <h3 className="text-xl font-bold mb-2">Odin Digital Team</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     The Odin Digital Team consists of experienced digital marketing strategists, SEO specialists, and content creators dedicated to helping Australian businesses achieve exponential growth through data-driven strategies.
