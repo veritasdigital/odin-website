@@ -32,11 +32,24 @@ import croConversionOptimizationImage from "@/assets/blog/cro-conversion-optimiz
 import websiteRedesignImage from "@/assets/blog/website-redesign-signs.jpg";
 import shopifySEOImage from "@/assets/blog/shopify-seo-hero.jpg";
 import marketingAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
+import digitalMarketingMistakesImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 26,
+      title: "The 5 Most Common Digital Marketing Mistakes Small Businesses Make (and How to Fix Them)",
+      excerpt: "Learn about the 5 most common digital marketing mistakes small businesses make (and how to fix them) with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+      image: digitalMarketingMistakesImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "12 min read",
+      category: "Digital Marketing",
+      featured: false,
+      link: "/blog/the-5-most-common-digital-marketing-mistakes-small-businesses-make"
+    },
     {
       id: 25,
       title: "Marketing Automation for Beginners: How to Nurture Leads While You Sleep",
