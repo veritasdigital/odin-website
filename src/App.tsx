@@ -115,6 +115,7 @@ import LocalSEOTradies from "./pages/blog/LocalSEOTradies";
 import AISEOGuide from "./pages/blog/AISEOGuide";
 import LocalSEO2026 from "./pages/blog/LocalSEO2026";
 import WillAIReplaceSEO from "./pages/blog/WillAIReplaceSEO";
+import ContentMarketing from "./pages/blog/ContentMarketing";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -231,6 +232,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/ai-seo-future-proof-organic-strategy-2026" element={<AISEOFutureProof />} />
             <Route path="/blog/will-ai-replace-seo-a-data-backed-answer-for-worried-marketers" element={<WillAIReplaceSEO />} />
+            <Route path="/blog/blog-post-content-marketing" element={<ContentMarketing />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
