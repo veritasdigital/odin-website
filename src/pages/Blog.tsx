@@ -24,6 +24,7 @@ import contentMarketingHeroImage from "@/assets/blog/content-marketing-hero.jpg"
 import contentMarketingMatrixImage from "@/assets/blog/content-marketing-matrix-hero.jpg";
 import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
+import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -40,6 +41,18 @@ const Blog = () => {
       category: "Paid Advertising",
       featured: false,
       link: "/blog/google-ads-guide"
+    },
+    {
+      id: 18,
+      title: "Facebook Ads for Australian Cafes & Restaurants: A Recipe for Success",
+      excerpt: "Struggling to get more bums on seats in your Australian cafe or restaurant? Learn how to create targeted Facebook Ads campaigns that attract local foodies and turn them into regular customers.",
+      image: facebookAdsCafeHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "Social Media",
+      featured: false,
+      link: "/blog/blog-post-social-media"
     },
     {
       id: 1,
