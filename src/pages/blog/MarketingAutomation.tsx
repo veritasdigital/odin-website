@@ -359,7 +359,7 @@ const MarketingAutomation = () => {
                 <img 
                   src={emailAutomationImage} 
                   alt="Email automation workflow diagram" 
-                  className="w-full h-[300px] object-cover rounded-lg shadow-elegant mb-8"
+                  className="w-full h-auto object-cover rounded-lg shadow-elegant mb-8"
                 />
 
                 <h3 className="text-2xl font-bold mb-4">Step 1: Define Your Goal and Content</h3>
