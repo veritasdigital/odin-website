@@ -110,7 +110,7 @@ export default function TikTokForBusiness() {
         <Header />
 
         {/* Breadcrumb Navigation */}
-        <div className="bg-background/80 backdrop-blur-sm border-b border-border/40">
+        <div className="bg-background/80 backdrop-blur-sm border-b border-border/40 mt-6">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Link to="/" className="hover:text-primary transition-colors">Home</Link>
