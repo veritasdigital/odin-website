@@ -26,11 +26,24 @@ import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
 import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
 import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero-new.jpg";
+import emailListBuildingHeroImage from "@/assets/blog/email-list-building-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 20,
+      title: "How to Build an Email List from Scratch for Your Australian Business",
+      excerpt: "Want to build an email list but don't know where to start? Our practical guide for Australian businesses will show you proven strategies to grow your list from zero to thousands of engaged subscribers.",
+      image: emailListBuildingHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "Email Marketing",
+      featured: false,
+      link: "/blog/blog-post-email-marketing"
+    },
     {
       id: 17,
       title: "Google Ads for Dummies: A Guide for Australian Small Business Owners",

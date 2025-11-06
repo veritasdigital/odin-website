@@ -121,6 +121,7 @@ import ContentMarketingMatrix from "./pages/blog/ContentMarketingMatrix";
 import BeyondTheBoostPost from "./pages/blog/BeyondTheBoostPost";
 import GoogleAdsGuide from "./pages/blog/GoogleAdsGuide";
 import BlogPostSocialMedia from "./pages/blog/BlogPostSocialMedia";
+import BlogPostEmailMarketing from "./pages/blog/BlogPostEmailMarketing";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -243,6 +244,7 @@ const App = () => (
             <Route path="/blog/google-ads-guide" element={<GoogleAdsGuide />} />
             <Route path="/blog/blog-post-social-media" element={<BlogPostSocialMedia />} />
             <Route path="/blog/the-rise-of-tiktok-for-business-is-it-right-for-your-brand" element={<TikTokForBusiness />} />
+            <Route path="/blog/blog-post-email-marketing" element={<BlogPostEmailMarketing />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
