@@ -23,11 +23,24 @@ import willAIReplaceSEOImage from "@/assets/blog/will-ai-replace-seo-featured.jp
 import contentMarketingHeroImage from "@/assets/blog/content-marketing-hero.jpg";
 import contentMarketingMatrixImage from "@/assets/blog/content-marketing-matrix-hero.jpg";
 import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
+import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 17,
+      title: "Google Ads for Dummies: A Guide for Australian Small Business Owners",
+      excerpt: "Want to get your Australian small business in front of more customers? Learn the basics of setting up and running a successful Google Ads campaign, even if you're a complete beginner.",
+      image: googleAdsHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "Paid Advertising",
+      featured: false,
+      link: "/blog/google-ads-guide"
+    },
     {
       id: 1,
       title: "Will AI Replace SEO? A Data-Backed Answer for Worried Marketers",
