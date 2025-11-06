@@ -33,11 +33,24 @@ import websiteRedesignImage from "@/assets/blog/website-redesign-signs.jpg";
 import shopifySEOImage from "@/assets/blog/shopify-seo-hero.jpg";
 import marketingAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 import digitalMarketingMistakesImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
+import digitalMarketingStrategy2026Image from "@/assets/blog/digital-marketing-strategy-2026.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 27,
+      title: "Putting It All Together: How to Build a Cohesive Digital Marketing Strategy for 2026",
+      excerpt: "Learn about putting it all together: how to build a cohesive digital marketing strategy for 2026 with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+      image: digitalMarketingStrategy2026Image,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "15 min read",
+      category: "Digital Marketing Strategy",
+      featured: false,
+      link: "/blog/how-to-build-a-cohesive-digital-marketing-strategy-for-2026"
+    },
     {
       id: 26,
       title: "The 5 Most Common Digital Marketing Mistakes Small Businesses Make (and How to Fix Them)",
