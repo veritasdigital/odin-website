@@ -6,8 +6,10 @@ import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { Mail, Target, Zap, TrendingUp, Settings, CheckCircle, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/blog/marketing-automation-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
+import emailAutomationImage from "@/assets/blog/email-automation.jpg";
 
 const MarketingAutomation = () => {
   const { openForm } = useMarketingForm();
@@ -138,7 +140,12 @@ const MarketingAutomation = () => {
 
               {/* Introduction */}
               <section id="introduction">
-                <h2 className="text-3xl font-bold mb-6">Introduction: What is Marketing Automation and Why It's Not Just for Big Companies</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Introduction: What is Marketing Automation and Why It's Not Just for Big Companies</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-4">
                   In the fast-paced world of small business, time is your most precious commodity. You're the CEO, the head of sales, the marketing manager, and often the coffee runner. The idea of adding another complex system to your already overflowing plate might seem daunting, but what if that system could actually <strong>give you back time</strong>?
@@ -191,17 +198,46 @@ const MarketingAutomation = () => {
 
               {/* The 3 Essential Automation Workflows */}
               <section id="workflows" className="mt-12">
-                <h2 className="text-3xl font-bold mb-6">The 3 Essential Automation Workflows Every Business Needs</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <Settings className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">The 3 Essential Automation Workflows Every Business Needs</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-6">
                   To avoid the overwhelm, let's focus on the three foundational workflows that will deliver the biggest impact for a small business starting out with marketing automation.
                 </p>
 
-                <h3 className="text-2xl font-bold mb-4">Workflow 1: The Welcome and Onboarding Sequence</h3>
-                
-                <p className="text-lg leading-relaxed mb-4">
-                  This is the most critical first step. When a new lead signs up for your newsletter, downloads a free resource, or creates an account, they are at their peak level of interest. A welcome sequence capitalises on this momentum.
-                </p>
+                {/* Visual Stats Card */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-lg border border-primary/20">
+                    <Clock className="w-8 h-8 text-primary mb-3" />
+                    <div className="text-3xl font-bold mb-2">10+ Hours</div>
+                    <div className="text-sm text-muted-foreground">Saved per week with automation</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-secondary/10 to-primary/10 p-6 rounded-lg border border-secondary/20">
+                    <Users className="w-8 h-8 text-secondary mb-3" />
+                    <div className="text-3xl font-bold mb-2">3x More</div>
+                    <div className="text-sm text-muted-foreground">Leads nurtured simultaneously</div>
+                  </div>
+                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-lg border border-primary/20">
+                    <TrendingUp className="w-8 h-8 text-primary mb-3" />
+                    <div className="text-3xl font-bold mb-2">45%</div>
+                    <div className="text-sm text-muted-foreground">Average conversion increase</div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-accent/30 to-accent/10 p-8 rounded-lg border-l-4 border-primary mb-6">
+                  <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
+                    Workflow 1: The Welcome and Onboarding Sequence
+                  </h3>
+                  
+                  <p className="text-lg leading-relaxed mb-4">
+                    This is the most critical first step. When a new lead signs up for your newsletter, downloads a free resource, or creates an account, they are at their peak level of interest. A welcome sequence capitalises on this momentum.
+                  </p>
+                </div>
 
                 <div className="overflow-x-auto mb-6">
                   <table className="min-w-full border-collapse border border-border">
@@ -246,11 +282,16 @@ const MarketingAutomation = () => {
                   <strong>Pro Tip (Aussie Spelling Check):</strong> Remember to use 'personalisation' and 'optimisation' with an 's' instead of a 'z'—a small detail that shows you're writing for the local market.
                 </p>
 
-                <h3 className="text-2xl font-bold mb-4">Workflow 2: The Cart Abandonment Recovery (for E-commerce) or Service Inquiry Follow-up (for Service Businesses)</h3>
-                
-                <p className="text-lg leading-relaxed mb-4">
-                  This workflow targets prospects who showed high intent but didn't complete the final action.
-                </p>
+                <div className="bg-gradient-to-r from-accent/30 to-accent/10 p-8 rounded-lg border-l-4 border-secondary mb-6">
+                  <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-bold">2</div>
+                    Workflow 2: The Cart Abandonment Recovery (for E-commerce) or Service Inquiry Follow-up (for Service Businesses)
+                  </h3>
+                  
+                  <p className="text-lg leading-relaxed mb-4">
+                    This workflow targets prospects who showed high intent but didn't complete the final action.
+                  </p>
+                </div>
 
                 <p className="text-lg leading-relaxed mb-4">
                   For <strong>E-commerce</strong>, this involves a series of emails sent when a customer adds items to their cart but leaves the site before purchasing. The first email is a gentle reminder, the second might offer a small incentive (like free shipping), and the third creates a sense of urgency.
@@ -264,11 +305,16 @@ const MarketingAutomation = () => {
                   This workflow is a powerful revenue generator, as it targets leads who are already close to converting.
                 </p>
 
-                <h3 className="text-2xl font-bold mb-4">Workflow 3: The Re-engagement Campaign</h3>
-                
-                <p className="text-lg leading-relaxed mb-4">
-                  Over time, some contacts will stop opening your emails. This is natural, but you don't want to keep paying to email people who aren't interested.
-                </p>
+                <div className="bg-gradient-to-r from-accent/30 to-accent/10 p-8 rounded-lg border-l-4 border-primary mb-6">
+                  <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">3</div>
+                    Workflow 3: The Re-engagement Campaign
+                  </h3>
+                  
+                  <p className="text-lg leading-relaxed mb-4">
+                    Over time, some contacts will stop opening your emails. This is natural, but you don't want to keep paying to email people who aren't interested.
+                  </p>
+                </div>
 
                 <p className="text-lg leading-relaxed mb-4">
                   The trigger for this campaign is a contact who hasn't opened or clicked an email in a set period, for example, 90 days. The automation system then sends a short, direct email—often with a subject line like "Are we still friends? We miss you!"—to prompt a response.
@@ -299,11 +345,22 @@ const MarketingAutomation = () => {
 
               {/* Setting Up Your First Email Nurture Sequence */}
               <section id="setup" className="mt-12">
-                <h2 className="text-3xl font-bold mb-6">Setting Up Your First Email Nurture Sequence: A Simple Tutorial</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Setting Up Your First Email Nurture Sequence: A Simple Tutorial</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-6">
                   The welcome sequence (Workflow 1) is the perfect place to start. Here is a step-by-step guide to setting it up in most beginner-friendly platforms.
                 </p>
+
+                <img 
+                  src={emailAutomationImage} 
+                  alt="Email automation workflow diagram" 
+                  className="w-full h-[300px] object-cover rounded-lg shadow-elegant mb-8"
+                />
 
                 <h3 className="text-2xl font-bold mb-4">Step 1: Define Your Goal and Content</h3>
                 
@@ -357,7 +414,12 @@ const MarketingAutomation = () => {
 
               {/* Lead Scoring 101 */}
               <section id="lead-scoring" className="mt-12">
-                <h2 className="text-3xl font-bold mb-6">Lead Scoring 101: How to Identify Your Hottest Prospects Automatically</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Lead Scoring 101: How to Identify Your Hottest Prospects Automatically</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-4">
                   As your lead list grows, you can't treat every contact the same. Some are just browsing, while others are ready to pull out their wallet. <strong>Lead scoring</strong> is an automated process that assigns a numerical value to each lead based on their demographic information and engagement behaviour.
@@ -459,7 +521,12 @@ const MarketingAutomation = () => {
 
               {/* Tools of the Trade */}
               <section id="tools" className="mt-12">
-                <h2 className="text-3xl font-bold mb-6">Tools of the Trade: A Comparison of Beginner-Friendly Automation Platforms</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Tools of the Trade: A Comparison of Beginner-Friendly Automation Platforms</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-6">
                   Choosing the right platform is crucial. For small businesses, the best tool is one that is easy to use, integrates well with your existing systems, and is cost-effective. Here is a comparison of some of the top beginner-friendly options available to the Australian market.
@@ -574,7 +641,12 @@ const MarketingAutomation = () => {
 
               {/* Conclusion */}
               <section id="conclusion" className="mt-12">
-                <h2 className="text-3xl font-bold mb-6">Conclusion: Saving Time and Converting More Leads with Automation</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                    <CheckCircle className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-3xl font-bold">Conclusion: Saving Time and Converting More Leads with Automation</h2>
+                </div>
                 
                 <p className="text-lg leading-relaxed mb-4">
                   Marketing automation is not a futuristic concept; it is the present-day reality of efficient business operation. For the small business owner, it represents a powerful shift from reactive, manual marketing to a proactive, systemised approach.
