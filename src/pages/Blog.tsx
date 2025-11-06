@@ -31,11 +31,24 @@ import conversionOptimizationHeroImage from "@/assets/blog/conversion-optimizati
 import croConversionOptimizationImage from "@/assets/blog/cro-conversion-optimization.jpg";
 import websiteRedesignImage from "@/assets/blog/website-redesign-signs.jpg";
 import shopifySEOImage from "@/assets/blog/shopify-seo-hero.jpg";
+import marketingAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 25,
+      title: "Marketing Automation for Beginners: How to Nurture Leads While You Sleep",
+      excerpt: "Learn about marketing automation for beginners: how to nurture leads while you sleep with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+      image: marketingAutomationImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "14 min read",
+      category: "Marketing Automation",
+      featured: false,
+      link: "/blog/marketing-automation-for-beginners"
+    },
     {
       id: 24,
       title: "Shopify SEO: How to Get Your Online Store to the Top of Google",
