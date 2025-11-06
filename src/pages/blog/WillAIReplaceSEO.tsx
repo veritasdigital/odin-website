@@ -97,7 +97,7 @@ const WillAIReplaceSEO = () => {
 
           <div className="max-w-5xl mx-auto px-6 relative z-10">
             {/* Breadcrumb */}
-            <nav className="mb-6 text-sm">
+            <nav className="mb-6 mt-8 text-sm">
               <ol className="flex items-center space-x-2 text-muted-foreground">
                 <li><Link to="/" className="hover:text-foreground transition-colors">Home</Link></li>
                 <li>/</li>
