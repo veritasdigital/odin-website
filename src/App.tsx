@@ -125,6 +125,7 @@ import BlogPostEmailMarketing from "./pages/blog/BlogPostEmailMarketing";
 import BlogPostAnalyticsCRO from "./pages/blog/BlogPostAnalyticsCRO";
 import ConversionRateOptimisation from "./pages/blog/ConversionRateOptimisation";
 import BlogPostWebDesign from "./pages/blog/BlogPostWebDesign";
+import ShopifySEO from "./pages/blog/ShopifySEO";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -251,6 +252,7 @@ const App = () => (
             <Route path="/blog/blog-post-analytics-cro" element={<BlogPostAnalyticsCRO />} />
             <Route path="/blog/conversion-rate-optimisation-cro-secret-to-getting-more-from-existing-traffic" element={<ConversionRateOptimisation />} />
             <Route path="/blog/blog-post-web-design" element={<BlogPostWebDesign />} />
+            <Route path="/blog/blog-post-ecommerce" element={<ShopifySEO />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />

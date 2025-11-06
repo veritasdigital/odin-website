@@ -30,11 +30,24 @@ import emailListBuildingHeroImage from "@/assets/blog/email-list-building-hero.j
 import conversionOptimizationHeroImage from "@/assets/blog/conversion-optimization.jpg";
 import croConversionOptimizationImage from "@/assets/blog/cro-conversion-optimization.jpg";
 import websiteRedesignImage from "@/assets/blog/website-redesign-signs.jpg";
+import shopifySEOImage from "@/assets/blog/shopify-seo-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 24,
+      title: "Shopify SEO: How to Get Your Online Store to the Top of Google",
+      excerpt: "Want more organic traffic to your Shopify store? Our comprehensive Shopify SEO guide for Australian businesses will show you how to optimise your online store and rank higher on Google.",
+      image: shopifySEOImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "5 min read",
+      category: "E-commerce",
+      featured: false,
+      link: "/blog/blog-post-ecommerce"
+    },
     {
       id: 23,
       title: "10 Signs It's Time for a Website Redesign for Your Aussie Business",
