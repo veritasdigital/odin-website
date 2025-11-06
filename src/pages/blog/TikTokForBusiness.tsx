@@ -109,16 +109,9 @@ export default function TikTokForBusiness() {
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
         <Header />
 
-        {/* Animated Background Elements */}
-        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-accent/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-primary-glow/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
-        </div>
-
-        <main className="relative z-10">
-          {/* Breadcrumb Navigation */}
-          <div className="container mx-auto px-4 pt-8 pb-4">
+        {/* Breadcrumb Navigation */}
+        <div className="bg-background/80 backdrop-blur-sm border-b border-border/40">
+          <div className="container mx-auto px-4 py-4">
             <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Link to="/" className="hover:text-primary transition-colors">Home</Link>
               <span>/</span>
@@ -127,7 +120,16 @@ export default function TikTokForBusiness() {
               <span className="text-foreground">The Rise of TikTok for Business</span>
             </nav>
           </div>
+        </div>
 
+        {/* Animated Background Elements */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-accent/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-primary-glow/10 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+        </div>
+
+        <main className="relative z-10">
           {/* Hero Section */}
           <section className="container mx-auto px-4 py-12 md:py-16">
             <div className="max-w-4xl mx-auto">
