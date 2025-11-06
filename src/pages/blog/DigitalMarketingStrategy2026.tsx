@@ -9,6 +9,10 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import heroImage from "@/assets/blog/digital-marketing-strategy-2026.jpg";
+import coreComponentsImage from "@/assets/blog/core-components-strategy.jpg";
+import goalsKpisImage from "@/assets/blog/goals-kpis-dashboard.jpg";
+import budgetAllocationImage from "@/assets/blog/budget-allocation.jpg";
+import channelSynergyImage from "@/assets/blog/channel-synergy.jpg";
 
 const DigitalMarketingStrategy2026 = () => {
   const { openForm } = useMarketingForm();
@@ -221,13 +225,30 @@ const DigitalMarketingStrategy2026 = () => {
 
           {/* Core Components */}
           <section id="core-components" className="prose prose-lg max-w-none mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              The 5 Core Components of a Modern Digital Marketing Strategy
-            </h2>
-            
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              A modern, cohesive digital marketing strategy is built on five foundational pillars. Think of these as the essential departments of your marketing engine. Ignoring any one of them will create a weak link that compromises the entire structure.
-            </p>
+            {/* Section Header with Visual Elements */}
+            <div className="relative mb-12 decorative-circles">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-accent/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 relative z-10">
+                The 5 Core Components of a Modern Digital Marketing Strategy
+              </h2>
+              
+              <p className="text-muted-foreground leading-relaxed mb-8 relative z-10">
+                A modern, cohesive digital marketing strategy is built on five foundational pillars. Think of these as the essential departments of your marketing engine. Ignoring any one of them will create a weak link that compromises the entire structure.
+              </p>
+
+              {/* Feature Image */}
+              <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
+                <img 
+                  src={coreComponentsImage} 
+                  alt="Marketing team collaborating on the 5 core components of digital marketing strategy" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
               1. Audience and Customer Journey Mapping
@@ -341,13 +362,29 @@ const DigitalMarketingStrategy2026 = () => {
 
           {/* Goals and KPIs */}
           <section id="goals-kpis" className="prose prose-lg max-w-none mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              How to Set Realistic Goals and KPIs for Your Marketing
-            </h2>
-            
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              A <strong>cohesive marketing plan</strong> needs a destination. Without clear, measurable goals, you can't determine if your strategy is working. For small business owners, the best framework for setting goals is the <strong>SMART</strong> framework, followed by defining the key performance indicators (<strong>KPIs</strong>) that track your progress.
-            </p>
+            {/* Section Header with Visual Elements */}
+            <div className="relative mb-12 decorative-circles-alt">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-10 left-1/4 w-56 h-56 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 relative z-10">
+                How to Set Realistic Goals and KPIs for Your Marketing
+              </h2>
+              
+              <p className="text-muted-foreground leading-relaxed mb-8 relative z-10">
+                A <strong>cohesive marketing plan</strong> needs a destination. Without clear, measurable goals, you can't determine if your strategy is working. For small business owners, the best framework for setting goals is the <strong>SMART</strong> framework, followed by defining the key performance indicators (<strong>KPIs</strong>) that track your progress.
+              </p>
+
+              {/* Feature Image */}
+              <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
+                <img 
+                  src={goalsKpisImage} 
+                  alt="Marketing analytics dashboard showing KPIs and performance metrics" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
               The SMART Goal Framework
@@ -431,13 +468,30 @@ const DigitalMarketingStrategy2026 = () => {
 
           {/* Budgeting */}
           <section id="budgeting" className="prose prose-lg max-w-none mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Budgeting for Growth: How to Allocate Your Marketing Spend
-            </h2>
-            
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              For the small business owner, every dollar counts. Your <strong>marketing budget allocation</strong> must be strategic, not speculative. A common mistake is to spend all the budget on the most visible channel (like paid ads) without investing in the foundational assets (like the website and content).
-            </p>
+            {/* Section Header with Visual Elements */}
+            <div className="relative mb-12 decorative-circles">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute -top-16 right-1/3 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute -bottom-12 left-1/4 w-52 h-52 bg-accent/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 relative z-10">
+                Budgeting for Growth: How to Allocate Your Marketing Spend
+              </h2>
+              
+              <p className="text-muted-foreground leading-relaxed mb-8 relative z-10">
+                For the small business owner, every dollar counts. Your <strong>marketing budget allocation</strong> must be strategic, not speculative. A common mistake is to spend all the budget on the most visible channel (like paid ads) without investing in the foundational assets (like the website and content).
+              </p>
+
+              {/* Feature Image */}
+              <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
+                <img 
+                  src={budgetAllocationImage} 
+                  alt="Marketing budget allocation planning with financial charts and pie graphs" 
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
               The 70/20/10 Rule for Marketing Budgeting: A Framework for Strategic Allocation
@@ -520,17 +574,34 @@ const DigitalMarketingStrategy2026 = () => {
 
           {/* Synergy */}
           <section id="synergy" className="prose prose-lg max-w-none mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              The Power of Synergy: How Each Channel Works Together
-            </h2>
-            
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              The 'cohesive' part of your <strong>cohesive marketing plan</strong> is the synergy—the idea that the combined effect of your channels is greater than the sum of their individual parts. This is the essence of an <strong>integrated marketing strategy</strong>.
-            </p>
+            {/* Section Header with Visual Elements */}
+            <div className="relative mb-12 decorative-circles-alt">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <div className="absolute top-0 -left-16 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+                <div className="absolute -bottom-8 right-1/4 w-56 h-56 bg-accent/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 relative z-10">
+                The Power of Synergy: How Each Channel Works Together
+              </h2>
+              
+              <p className="text-muted-foreground leading-relaxed mb-6 relative z-10">
+                The 'cohesive' part of your <strong>cohesive marketing plan</strong> is the synergy—the idea that the combined effect of your channels is greater than the sum of their individual parts. This is the essence of an <strong>integrated marketing strategy</strong>.
+              </p>
 
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Here is how the major channels should interlock:
-            </p>
+              {/* Feature Image */}
+              <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
+                <img 
+                  src={channelSynergyImage} 
+                  alt="Digital marketing channels working together in synergy - SEO, social media, email, and paid ads" 
+                  className="w-full h-auto"
+                />
+              </div>
+
+              <p className="text-muted-foreground leading-relaxed mb-6 relative z-10">
+                Here is how the major channels should interlock:
+              </p>
+            </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
               1. SEO and Content Marketing: The Engine Room
