@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Calendar, User, Clock, TrendingUp, Target, Zap, BookOpen, CheckCircle2, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/blog/will-ai-replace-seo-hero.jpg";
+import partnershipImage from "@/assets/blog/human-ai-seo-partnership.jpg";
 
 const WillAIReplaceSEO = () => {
   const publishDate = "15 January 2025";
@@ -105,6 +107,15 @@ const WillAIReplaceSEO = () => {
               </ol>
             </nav>
 
+            {/* Hero Image */}
+            <div className="mb-8 rounded-2xl overflow-hidden shadow-glow border border-primary/20">
+              <img 
+                src={heroImage} 
+                alt="AI and SEO merging together - futuristic digital illustration showing human working with AI technology" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
             <h1 className="text-4xl md:text-6xl font-black text-foreground mb-6 leading-tight">
               Will AI Replace SEO? A Data-Backed Answer for Worried Marketers
             </h1>
@@ -152,8 +163,16 @@ const WillAIReplaceSEO = () => {
         {/* Main Content */}
         <article className="max-w-4xl mx-auto px-6 py-16">
           {/* Introduction */}
-          <section className="prose prose-lg max-w-none mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Introduction: Addressing the Biggest Question in SEO Right Now</h2>
+          <section className="prose prose-lg max-w-none mb-16">
+            <div className="relative">
+              <div className="absolute -left-8 top-0 w-1 h-24 bg-gradient-to-b from-primary to-transparent"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary/5">
+                  <TrendingUp className="h-6 w-6 text-primary" />
+                </div>
+                Introduction: Addressing the Biggest Question in SEO Right Now
+              </h2>
+            </div>
             
             <p className="text-lg leading-relaxed mb-4">
               It's the question that hangs like a storm cloud over every marketing department, every SEO agency, and every digital strategist's desk: <strong>will AI replace SEO</strong>?
@@ -181,14 +200,28 @@ const WillAIReplaceSEO = () => {
           </section>
 
           {/* What the Data Says */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">What the Data Says: Analysing Studies on AI Overviews and Organic Traffic</h2>
+          <section className="relative mb-16 p-8 rounded-2xl bg-gradient-to-br from-muted/50 via-background to-muted/30 border border-border/50">
+            {/* Decorative circles */}
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/10 rounded-full blur-2xl"></div>
+            
+            <div className="relative">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary/5">
+                  <Target className="h-6 w-6 text-primary" />
+                </div>
+                What the Data Says: Analysing Studies on AI Overviews and Organic Traffic
+              </h2>
+            </div>
             
             <p className="text-lg leading-relaxed mb-4">
               The most immediate and concerning impact of AI on SEO is the measurable decline in organic traffic and click-through rates (CTR) caused by AI Overviews. The data is stark, and it confirms the anxieties of many marketers.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The Rise of the "Zero-Click" Search</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-primary to-transparent rounded-full"></div>
+              The Rise of the "Zero-Click" Search
+            </h3>
             
             <p className="text-lg leading-relaxed mb-4">
               The core problem is the rise of the "zero-click" search. Industry research indicates that approximately <strong>60% of searches</strong> now result in no clicks at all, as the AI-generated answer satisfies the user's query directly on the SERP [1]. This phenomenon is particularly acute for informational queries—the very lifeblood of many content marketing strategies.
@@ -198,7 +231,10 @@ const WillAIReplaceSEO = () => {
               When a user asks a question like "What is the capital of Australia?" or "How does a heat pump work?", the AI Overview provides a concise, authoritative answer, often citing multiple sources. For the user, this is a massive convenience. For the website owner, it's a lost click.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The Hard Numbers on CTR Decline</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
+              The Hard Numbers on CTR Decline
+            </h3>
             
             <p className="text-lg leading-relaxed mb-6">
               To quantify this impact, we can look at studies from leading SEO analytics firms. The numbers paint a clear picture of a shifting landscape:
@@ -247,7 +283,10 @@ const WillAIReplaceSEO = () => {
               These figures are a wake-up call. A <strong>34.5% drop</strong> in clicks for the number one organic result is not a minor fluctuation; it is a fundamental re-evaluation of what "ranking number one" means. The AI Overview effectively becomes the new "position zero," pushing the traditional organic results further down the page—sometimes by as much as 1,500 pixels, or two to three full screen scrolls [1].
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The Branded vs. Non-Branded Divide</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-accent to-transparent rounded-full"></div>
+              The Branded vs. Non-Branded Divide
+            </h3>
             
             <p className="text-lg leading-relaxed mb-4">
               Interestingly, the impact is not uniform. The data shows a clear distinction between non-branded and branded queries:
@@ -293,8 +332,14 @@ const WillAIReplaceSEO = () => {
           </section>
 
           {/* The New Role of the SEO Specialist */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">The New Role of the SEO Specialist in an AI-Driven World</h2>
+          <section className="relative mb-16">
+            <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-primary via-secondary to-transparent"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 shadow-glow">
+                <Zap className="h-6 w-6 text-primary" />
+              </div>
+              The New Role of the SEO Specialist in an AI-Driven World
+            </h2>
             
             <p className="text-lg leading-relaxed mb-4">
               Given the data, it's understandable why marketers are asking: <strong>will AI replace SEO</strong>? The answer is a resounding <em>no</em>, but with a critical caveat: AI will replace the <em>tasks</em> of an SEO specialist who refuses to adapt.
@@ -304,7 +349,10 @@ const WillAIReplaceSEO = () => {
               The <strong>future of SEO specialists</strong> is not about being a human keyword-stuffing machine or a link-building automaton. It's about becoming a <strong>strategic architect</strong> and a <strong>human editor</strong> of AI-driven processes.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">From Technician to Strategist</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-primary to-transparent rounded-full"></div>
+              From Technician to Strategist
+            </h3>
             
             <p className="text-lg leading-relaxed mb-4">
               The traditional SEO role was heavily technical and tactical: keyword research, on-page optimisation, link auditing, and technical site health checks. While these elements remain important, <strong>AI SEO tools</strong> can now perform them faster, more accurately, and at a fraction of the cost.
@@ -327,7 +375,10 @@ const WillAIReplaceSEO = () => {
               </li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The Human Element: E-E-A-T and Unique Value</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
+              The Human Element: E-E-A-T and Unique Value
+            </h3>
             
             <p className="text-lg leading-relaxed mb-4">
               The one thing AI cannot replicate is genuine, first-hand <strong>Experience</strong> and <strong>Trust</strong>. This is the competitive advantage for the <strong>human-led SEO</strong> specialist.
@@ -350,14 +401,33 @@ const WillAIReplaceSEO = () => {
           </section>
 
           {/* Human vs. AI Comparison */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Human vs. AI: Where Each Excels in the SEO Process</h2>
+          <section className="relative mb-16 p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-background to-accent/5 border border-primary/10">
+            <div className="absolute top-4 right-4 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-pulse-glow"></div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary shadow-glow">
+                <User className="h-6 w-6 text-white" />
+              </div>
+              Human vs. AI: Where Each Excels in the SEO Process
+            </h2>
             
             <p className="text-lg leading-relaxed mb-6">
               The most successful marketing teams of the future will not be those that choose one over the other, but those that understand the clear division of labour between <strong>human-led SEO</strong> and <strong>AI SEO tools</strong>. This is a partnership, not a competition.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The AI Advantage: Speed, Scale, and Data Processing</h3>
+            {/* Partnership Image */}
+            <div className="my-8 rounded-xl overflow-hidden shadow-card border border-border">
+              <img 
+                src={partnershipImage} 
+                alt="Human SEO specialist working in partnership with AI technology - professional workspace with analytics and digital dashboards" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+              The AI Advantage: Speed, Scale, and Data Processing
+            </h3>
             
             <p className="text-lg leading-relaxed mb-6">
               AI excels at tasks that are repetitive, data-intensive, and require massive scale. These are the areas where AI should be deployed as the primary engine:
@@ -401,7 +471,10 @@ const WillAIReplaceSEO = () => {
               By offloading these tasks to <strong>AI SEO tools</strong>, the human specialist is freed from the drudgery of the tactical and can focus on the strategic.
             </p>
 
-            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">The Human Advantage: Strategy, Empathy, and Creativity</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">
+              <div className="w-2 h-8 bg-gradient-to-b from-secondary to-accent rounded-full"></div>
+              The Human Advantage: Strategy, Empathy, and Creativity
+            </h3>
             
             <p className="text-lg leading-relaxed mb-6">
               The human specialist is irreplaceable in areas that require abstract thought, emotional intelligence, and strategic decision-making. These are the tasks that define the <strong>future of SEO specialists</strong>:
@@ -450,8 +523,15 @@ const WillAIReplaceSEO = () => {
           </section>
 
           {/* How to Leverage AI */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">How to Leverage AI as a Powerful Co-Pilot for Your SEO Efforts</h2>
+          <section className="relative mb-16">
+            <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-secondary via-primary to-transparent"></div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 shadow-glow">
+                <Zap className="h-6 w-6 text-secondary" />
+              </div>
+              How to Leverage AI as a Powerful Co-Pilot for Your SEO Efforts
+            </h2>
             
             <p className="text-lg leading-relaxed mb-6">
               The question is no longer <strong>will AI replace SEO</strong>, but <em>how quickly can I integrate AI into my workflow</em>? For marketing professionals, leveraging AI as a co-pilot is the key to maintaining visibility and driving high-quality traffic in the new search environment.
@@ -462,8 +542,14 @@ const WillAIReplaceSEO = () => {
             </p>
 
             <div className="space-y-8">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">1. Shift from Keyword Ranking to Topic Authority</h3>
+              <div className="relative bg-gradient-to-br from-card to-muted/20 border border-primary/20 rounded-xl p-8 shadow-card overflow-hidden">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/5 rounded-full blur-xl"></div>
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 flex-shrink-0">
+                    <BookOpen className="h-5 w-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-4">1. Shift from Keyword Ranking to Topic Authority</h3>
                 <p className="text-lg leading-relaxed mb-4">
                   The goal is no longer to rank for a single keyword, but to become the definitive authority on an entire topic cluster.
                 </p>
@@ -481,10 +567,18 @@ const WillAIReplaceSEO = () => {
                     <span><strong>Optimisation:</strong> Ensure your content is structured with clear, semantic headings (H2, H3, H4) and includes a concise, direct answer to the core question early in the article. This makes it easy for the AI Overview to extract and cite your information.</span>
                   </li>
                 </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">2. Prioritise Branded and High-Intent Searches</h3>
+              <div className="relative bg-gradient-to-br from-card to-muted/20 border border-primary/20 rounded-xl p-8 shadow-card overflow-hidden">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-secondary/5 rounded-full blur-xl"></div>
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 flex-shrink-0">
+                    <Target className="h-5 w-5 text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-4">2. Prioritise Branded and High-Intent Searches</h3>
                 <p className="text-lg leading-relaxed mb-4">
                   Since branded searches are more resilient to AIOs and often lead to a CTR boost, your strategy must focus on capturing users who are further down the funnel.
                 </p>
@@ -502,10 +596,18 @@ const WillAIReplaceSEO = () => {
                     <span><strong>The "Why Us" Content:</strong> Create content that answers the question "Why should I choose this brand?" This is inherently human-led and cannot be replicated by an AI that only synthesises general information.</span>
                   </li>
                 </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">3. Use AI for Content Velocity, Not Content Volume</h3>
+              <div className="relative bg-gradient-to-br from-card to-muted/20 border border-primary/20 rounded-xl p-8 shadow-card overflow-hidden">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/5 rounded-full blur-xl"></div>
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 flex-shrink-0">
+                    <Zap className="h-5 w-5 text-accent" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-4">3. Use AI for Content Velocity, Not Content Volume</h3>
                 <p className="text-lg leading-relaxed mb-4">
                   The temptation is to use AI to churn out thousands of articles. Resist this. The data shows that low-quality, high-volume content will be ignored by both users and AI Overviews.
                 </p>
@@ -523,10 +625,18 @@ const WillAIReplaceSEO = () => {
                     <span><strong>The 80/20 Rule:</strong> Aim for 80% of the content to be human-refined, even if 80% of the <em>drafting</em> was AI-assisted.</span>
                   </li>
                 </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">4. Master Generative Engine Optimisation (GEO)</h3>
+              <div className="relative bg-gradient-to-br from-card to-muted/20 border border-primary/20 rounded-xl p-8 shadow-card overflow-hidden">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/5 rounded-full blur-xl"></div>
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 flex-shrink-0">
+                    <Target className="h-5 w-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-4">4. Master Generative Engine Optimisation (GEO)</h3>
                 <p className="text-lg leading-relaxed mb-4">
                   SEO is evolving into Generative Engine Optimisation (GEO). This means optimising your content not just for the traditional search algorithm, but for the large language models (LLMs) that power the AI Overviews.
                 </p>
@@ -544,10 +654,18 @@ const WillAIReplaceSEO = () => {
                     <span><strong>Anticipate Follow-Up Questions:</strong> As the Forbes article noted, AI search is "fluid, interactive and helpful" [1]. Your content should anticipate the user's next question and provide the answer, making your page a complete resource that the AI will favour.</span>
                   </li>
                 </ul>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="text-xl font-bold text-foreground mb-4">5. Embrace Technical SEO as the Foundation</h3>
+              <div className="relative bg-gradient-to-br from-card to-muted/20 border border-secondary/20 rounded-xl p-8 shadow-card overflow-hidden">
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-secondary/5 rounded-full blur-xl"></div>
+                <div className="relative flex items-start gap-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-secondary/10 flex-shrink-0">
+                    <CheckCircle2 className="h-5 w-5 text-secondary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-foreground mb-4">5. Embrace Technical SEO as the Foundation</h3>
                 <p className="text-lg leading-relaxed mb-4">
                   While the focus has shifted to content strategy, technical SEO remains the critical foundation. A brilliant piece of content is useless if the AI cannot crawl, index, and understand it.
                 </p>
@@ -561,13 +679,22 @@ const WillAIReplaceSEO = () => {
                     <span><strong>Human Action:</strong> The human specialist's role is to interpret the AI's technical reports and prioritise the fixes based on business impact. They must also ensure that all new content is correctly implemented with the latest schema and technical best practices.</span>
                   </li>
                 </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
 
           {/* Conclusion */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Conclusion: Why Strategic Human Oversight is More Critical Than Ever</h2>
+          <section className="relative mb-16 p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-background to-secondary/10 border border-primary/20">
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl animate-pulse-glow"></div>
+            
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 flex items-center gap-3">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-secondary shadow-glow">
+                <CheckCircle2 className="h-6 w-6 text-white" />
+              </div>
+              Conclusion: Why Strategic Human Oversight is More Critical Than Ever
+            </h2>
             
             <p className="text-lg leading-relaxed mb-4">
               The initial fear that <strong>will AI replace SEO</strong> is understandable, but the data and the market reality tell a different story. The relationship between <strong>AI and SEO</strong> is not a zero-sum game; it is a symbiotic partnership that is elevating the entire profession.
