@@ -8,10 +8,8 @@ import strategyImage from "@/assets/blog/facebook-ads-strategy-realistic.jpg";
 import foodVisualsImage from "@/assets/blog/facebook-ads-food-visuals.jpg";
 import successMetricsImage from "@/assets/blog/facebook-ads-success-metrics.jpg";
 import odinTeamImage from "@/assets/odin-team-professional.jpg";
-
 const BlogPostSocialMedia = () => {
   const publishDate = "15 January 2025";
-
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -38,33 +36,26 @@ const BlogPostSocialMedia = () => {
     "datePublished": "2025-01-15",
     "dateModified": "2025-01-15"
   };
-
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://odindigital.com.au/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://odindigital.com.au/blog"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Facebook Ads for Australian Cafes & Restaurants: A Recipe for Success"
-      }
-    ]
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://odindigital.com.au/"
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://odindigital.com.au/blog"
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Facebook Ads for Australian Cafes & Restaurants: A Recipe for Success"
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Facebook Ads for Australian Cafes & Restaurants | Odin Digital</title>
         <meta name="description" content="Struggling to get more bums on seats in your Australian cafe or restaurant? Our guide to Facebook Ads will show you how to create targeted campaigns that attract local foodies and turn them into regular customers." />
@@ -93,27 +84,41 @@ const BlogPostSocialMedia = () => {
           {/* Animated Background Blobs - Homepage Style */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
+            <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{
+            animationDelay: '1.5s'
+          }}></div>
+            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{
+            animationDelay: '3s'
+          }}></div>
           </div>
 
           {/* Floating Particles */}
           <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
-          <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-accent/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/30 rounded-full animate-float" style={{
+          animationDelay: '1s'
+        }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-accent/20 rounded-full animate-float" style={{
+          animationDelay: '2s'
+        }}></div>
+          <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-primary/20 rounded-full animate-float" style={{
+          animationDelay: '2.5s'
+        }}></div>
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-sm rounded-full mb-6 border border-primary/20 animate-fade-in">
                 <span className="text-sm font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Social Media Strategy</span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight animate-fade-in" style={{
+              animationDelay: '0.2s'
+            }}>
                 <span className="block mb-2">Facebook Ads for</span>
                 <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Australian Cafes & Restaurants:</span>
                 <span className="block mt-2">A Recipe for Success</span>
               </h1>
-              <div className="flex items-center justify-center gap-4 text-muted-foreground mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="flex items-center justify-center gap-4 text-muted-foreground mb-8 animate-fade-in" style={{
+              animationDelay: '0.4s'
+            }}>
                 <span className="font-medium">By Odin Digital Team</span>
                 <span>•</span>
                 <time dateTime="2025-01-15" className="font-medium">{publishDate}</time>
@@ -121,16 +126,14 @@ const BlogPostSocialMedia = () => {
                 <span className="font-medium">5 min read</span>
               </div>
             </div>
-            <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl animate-fade-in transform hover:scale-[1.02] transition-transform duration-500" style={{ animationDelay: '0.6s' }}>
+            <div className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl animate-fade-in transform hover:scale-[1.02] transition-transform duration-500" style={{
+            animationDelay: '0.6s'
+          }}>
               <div className="relative">
                 {/* Gradient Ring around image */}
                 <div className="absolute -inset-1 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl blur-lg"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/20">
-                  <img 
-                    src={heroImage} 
-                    alt="Modern Australian cafe with customers enjoying food and coffee" 
-                    className="w-full h-auto"
-                  />
+                  <img src={heroImage} alt="Modern Australian cafe with customers enjoying food and coffee" className="w-full h-auto" />
                 </div>
               </div>
             </div>
@@ -257,11 +260,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-secondary/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <img 
-                    src={strategyImage} 
-                    alt="Marketing team discussing Facebook advertising strategy" 
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={strategyImage} alt="Marketing team discussing Facebook advertising strategy" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
             </section>
@@ -352,11 +351,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 to-primary/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <img 
-                    src={foodVisualsImage} 
-                    alt="Professional food photography of cafe dishes and coffee" 
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={foodVisualsImage} alt="Professional food photography of cafe dishes and coffee" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
             </section>
@@ -415,11 +410,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-secondary/50 to-accent/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <img 
-                    src={successMetricsImage} 
-                    alt="Cafe owner viewing successful Facebook ads campaign results" 
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={successMetricsImage} alt="Cafe owner viewing successful Facebook ads campaign results" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
             </section>
@@ -462,11 +453,7 @@ const BlogPostSocialMedia = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-br from-primary to-secondary rounded-full blur-md"></div>
-                    <img 
-                      src={odinTeamImage} 
-                      alt="Odin Digital Team" 
-                      className="relative w-24 h-24 rounded-full object-cover ring-2 ring-white"
-                    />
+                    
                   </div>
                   <div>
                     <h3 className="text-2xl font-black mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">About the Odin Digital Team</h3>
@@ -480,8 +467,6 @@ const BlogPostSocialMedia = () => {
           </div>
         </div>
       </article>
-    </>
-  );
+    </>;
 };
-
 export default BlogPostSocialMedia;
