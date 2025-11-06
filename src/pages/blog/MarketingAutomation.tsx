@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { Mail, Target, Zap, TrendingUp, Settings, CheckCircle, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/marketing-team-expertise.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
-import emailAutomationImage from "@/assets/blog/email-automation.jpg";
+import emailAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 
 const MarketingAutomation = () => {
   const { openForm } = useMarketingForm();
@@ -358,7 +358,9 @@ const MarketingAutomation = () => {
 
                 <img 
                   src={emailAutomationImage} 
-                  alt="Email automation workflow diagram" 
+                  alt="Professional marketing automation dashboard and email sequence builder"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-auto object-cover rounded-lg shadow-elegant mb-8"
                 />
 
