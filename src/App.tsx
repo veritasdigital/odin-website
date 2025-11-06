@@ -14,6 +14,8 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import BlogPostSocialMedia from "./pages/blog/BlogPostSocialMedia";
+import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
 import GoogleAdsCanberra from "./pages/services/GoogleAdsCanberra";

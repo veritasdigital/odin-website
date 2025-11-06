@@ -25,6 +25,7 @@ import contentMarketingMatrixImage from "@/assets/blog/content-marketing-matrix-
 import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
 import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
+import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -53,6 +54,18 @@ const Blog = () => {
       category: "Social Media",
       featured: false,
       link: "/blog/blog-post-social-media"
+    },
+    {
+      id: 19,
+      title: "The Rise of TikTok for Business: Is It Right for Your Brand?",
+      excerpt: "Learn about the rise of TikTok for business and whether it's the right platform for your brand with this comprehensive guide from Odin Digital.",
+      image: tiktokBusinessHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "13 min read",
+      category: "Social Media",
+      featured: false,
+      link: "/blog/the-rise-of-tiktok-for-business-is-it-right-for-your-brand"
     },
     {
       id: 1,
