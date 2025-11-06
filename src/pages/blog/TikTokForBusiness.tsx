@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import heroImage from "@/assets/blog/tiktok-business-hero.jpg";
+import heroImage from "@/assets/blog/tiktok-business-hero-new.jpg";
 import demographicsImage from "@/assets/blog/tiktok-demographics.jpg";
 import strategyImage from "@/assets/blog/tiktok-strategy.jpg";
 import contentCreationImage from "@/assets/blog/tiktok-content-creation.jpg";
