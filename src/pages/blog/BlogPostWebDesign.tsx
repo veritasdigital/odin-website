@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Header } from "@/components/Header";
 import heroImage from "@/assets/blog/website-redesign-signs.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 
@@ -69,6 +70,8 @@ const BlogPostWebDesign = () => {
         </script>
       </Helmet>
 
+      <Header />
+      
       <article className="min-h-screen bg-background">
         {/* Hero Section with Floating Elements */}
         <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
@@ -80,16 +83,16 @@ const BlogPostWebDesign = () => {
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
-            {/* Breadcrumbs */}
-            <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8 animate-fade-in">
-              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
-              <span>/</span>
-              <span className="text-foreground">10 Signs It's Time for a Website Redesign</span>
-            </nav>
-
             <div className="max-w-4xl mx-auto text-center">
+              {/* Breadcrumbs */}
+              <nav className="flex items-center justify-center space-x-2 text-sm text-muted-foreground mb-8 animate-fade-in">
+                <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                <span>/</span>
+                <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
+                <span>/</span>
+                <span className="text-foreground">10 Signs It's Time for a Website Redesign</span>
+              </nav>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in leading-tight">
                 10 Signs It's Time for a Website Redesign for Your Aussie Business
               </h1>
