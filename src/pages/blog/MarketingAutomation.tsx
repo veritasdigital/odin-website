@@ -7,7 +7,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail, Target, Zap, TrendingUp, Settings, CheckCircle, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/blog/marketing-automation-hero.jpg";
+import heroImage from "@/assets/marketing-team-expertise.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import emailAutomationImage from "@/assets/blog/email-automation.jpg";
 
