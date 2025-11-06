@@ -117,6 +117,7 @@ import LocalSEO2026 from "./pages/blog/LocalSEO2026";
 import WillAIReplaceSEO from "./pages/blog/WillAIReplaceSEO";
 import ContentMarketing from "./pages/blog/ContentMarketing";
 import ContentMarketingMatrix from "./pages/blog/ContentMarketingMatrix";
+import BeyondTheBoostPost from "./pages/blog/BeyondTheBoostPost";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -235,6 +236,7 @@ const App = () => (
             <Route path="/blog/will-ai-replace-seo-a-data-backed-answer-for-worried-marketers" element={<WillAIReplaceSEO />} />
             <Route path="/blog/blog-post-content-marketing" element={<ContentMarketing />} />
             <Route path="/blog/the-content-marketing-matrix-how-to-create-content-that-actually-converts" element={<ContentMarketingMatrix />} />
+            <Route path="/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising" element={<BeyondTheBoostPost />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />

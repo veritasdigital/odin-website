@@ -22,6 +22,7 @@ import aiSeoFutureProofImage from "@/assets/blog/ai-seo-future-proof.jpg";
 import willAIReplaceSEOImage from "@/assets/blog/will-ai-replace-seo-featured.jpg";
 import contentMarketingHeroImage from "@/assets/blog/content-marketing-hero.jpg";
 import contentMarketingMatrixImage from "@/assets/blog/content-marketing-matrix-hero.jpg";
+import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -62,6 +63,18 @@ const Blog = () => {
       category: "Content Marketing",
       featured: false,
       link: "/blog/the-content-marketing-matrix-how-to-create-content-that-actually-converts"
+    },
+    {
+      id: 16,
+      title: "Beyond the Boost Post: A Small Business Guide to Strategic Paid Advertising",
+      excerpt: "Move beyond random acts of advertising and build a data-driven strategy that delivers measurable ROI.",
+      image: paidAdvertisingHeroImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "13 min read",
+      category: "Paid Advertising",
+      featured: false,
+      link: "/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising"
     },
     {
       id: 4,
