@@ -25,7 +25,7 @@ import contentMarketingMatrixImage from "@/assets/blog/content-marketing-matrix-
 import paidAdvertisingHeroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import googleAdsHeroImage from "@/assets/blog/google-ads-hero.jpg";
 import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
-import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero.jpg";
+import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero-new.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
