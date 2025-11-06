@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Search, Target, BarChart3 } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -73,6 +75,8 @@ const GoogleAdsGuide = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
+        <Header />
+        
         {/* Animated Background Elements */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -470,6 +474,8 @@ const GoogleAdsGuide = () => {
             </div>
           </div>
         </article>
+        
+        <Footer />
       </div>
     </>
   );
