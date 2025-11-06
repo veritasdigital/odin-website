@@ -28,11 +28,24 @@ import facebookAdsCafeHeroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
 import tiktokBusinessHeroImage from "@/assets/blog/tiktok-business-hero-new.jpg";
 import emailListBuildingHeroImage from "@/assets/blog/email-list-building-hero.jpg";
 import conversionOptimizationHeroImage from "@/assets/blog/conversion-optimization.jpg";
+import croConversionOptimizationImage from "@/assets/blog/cro-conversion-optimization.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 22,
+      title: "Conversion Rate Optimisation (CRO): The Secret to Getting More From Your Existing Traffic",
+      excerpt: "Learn about conversion rate optimisation (cro): the secret to getting more from your existing traffic with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+      image: croConversionOptimizationImage,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "13 min read",
+      category: "CRO",
+      featured: false,
+      link: "/blog/conversion-rate-optimisation-cro-secret-to-getting-more-from-existing-traffic"
+    },
     {
       id: 21,
       title: "Google Analytics 4 for Beginners: A Guide for Aussie Business Owners",
