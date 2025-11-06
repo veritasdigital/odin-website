@@ -93,7 +93,7 @@ const ShopifySEO = () => {
                 <span className="text-foreground">Shopify SEO: How to Get Your Online Store to the Top of Google</span>
               </nav>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-fade-in leading-tight px-2 py-1">
                 Shopify SEO: How to Get Your Online Store to the Top of Google
               </h1>
               
