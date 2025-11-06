@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
-import heroImage from "@/assets/blog/website-redesign-realistic.jpg";
+import heroImage from "@/assets/blog/website-redesign-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 
 const BlogPostWebDesign = () => {
