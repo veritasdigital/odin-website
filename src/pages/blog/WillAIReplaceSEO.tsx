@@ -757,10 +757,10 @@ const WillAIReplaceSEO = () => {
           {/* Final CTA */}
           <section className="my-16">
             <Card className="p-12 gradient-cta text-center">
-              <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+              <h2 className="text-3xl md:text-4xl font-black text-foreground mb-4">
                 Ready to Take Your Digital Marketing to the Next Level?
               </h2>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
                 Get a free, no-obligation marketing strategy session with our experts and discover how to thrive in the age of AI-powered search.
               </p>
               <Button asChild size="lg" variant="secondary" className="text-lg px-8">
