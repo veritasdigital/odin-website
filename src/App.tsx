@@ -14,7 +14,6 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
-import BlogPostSocialMedia from "./pages/blog/BlogPostSocialMedia";
 import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
@@ -243,6 +242,7 @@ const App = () => (
             <Route path="/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising" element={<BeyondTheBoostPost />} />
             <Route path="/blog/google-ads-guide" element={<GoogleAdsGuide />} />
             <Route path="/blog/blog-post-social-media" element={<BlogPostSocialMedia />} />
+            <Route path="/blog/the-rise-of-tiktok-for-business-is-it-right-for-your-brand" element={<TikTokForBusiness />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
