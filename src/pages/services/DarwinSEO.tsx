@@ -576,13 +576,13 @@ const DarwinSEO = () => {
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <Card key={index} className="p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow">
+                  <Card key={index} className="p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow flex flex-col">
                     <Icon className="w-10 h-10 sm:w-12 sm:h-12 mb-3 md:mb-4 text-primary" />
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4">{service.title}</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-5 md:mb-6">{service.description}</p>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-5 md:mb-6 flex-grow">{service.description}</p>
                     <Button 
                       onClick={() => navigate('/contact')}
-                      className="w-full whitespace-normal h-auto py-2.5 sm:py-3 px-3 sm:px-4 text-xs sm:text-sm"
+                      className="w-full whitespace-normal h-auto py-2.5 sm:py-3 px-3 sm:px-4 text-xs sm:text-sm mt-auto"
                       style={{ backgroundColor: '#D91C5C', color: 'white' }}
                     >
                       {service.cta}
