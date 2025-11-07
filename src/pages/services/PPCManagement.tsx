@@ -400,44 +400,49 @@ const PPCManagement = () => {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen">
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-28 pb-10 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-          {/* Animated background elements */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-float-delayed" style={{ animationDelay: '2s' }} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl animate-pulse-slow" />
-          </div>
+        <section className="relative isolate overflow-hidden min-h-[85vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-5">
-                PPC Management Agency
+          <div className="container relative z-10 mx-auto px-4 py-28 md:py-32">
+            <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8 animate-fade-in">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight tracking-tight">
+                <span className="block">PPC Management Agency</span>
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 md:mb-7 bg-gradient-primary bg-clip-text text-transparent leading-relaxed pb-2">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-charcoal/90 font-bold leading-tight">
                 Stop Wasting Money on Google Ads. Start Generating ROI.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 md:mb-5 text-muted-foreground max-w-3xl mx-auto px-2">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 Are you tired of burning through your ad budget with nothing to show for it? It's time for a PPC management agency that is obsessed with ROI and radical transparency.
               </p>
 
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-6 md:mb-9 text-muted-foreground max-w-3xl mx-auto px-2">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-charcoal/70 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 At Odin Digital, we don't just manage your PPC campaigns; we build high-converting, ROI-focused PPC machines that generate real business growth. With no lock-in contracts and a team of Google Ads specialists, we're the PPC management partner you can trust. Ready to finally get a positive return on your ad spend?
               </p>
 
-              <Button 
-                size="lg" 
-                onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-4 sm:py-4 sm:px-6 text-sm sm:text-base"
-                style={{ backgroundColor: '#D91C5C', color: 'white' }}
-              >
-                Get Your FREE PPC Management Quote →
-              </Button>
+              <div className="pt-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <Button 
+                  variant="hero"
+                  size="lg" 
+                  onClick={() => navigate('/contact')}
+                  className="shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300 font-bold whitespace-normal h-auto py-4 px-8 sm:py-6 sm:px-12 text-base sm:text-lg"
+                >
+                  Get Your FREE PPC Management Quote →
+                </Button>
+              </div>
             </div>
           </div>
         </section>
