@@ -514,11 +514,11 @@ const PPCManagement = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-6 md:p-8 hover:shadow-lg transition-shadow">
-                  <p className="text-sm sm:text-base mb-4 md:mb-6 italic text-muted-foreground">
+                <Card key={index} className="p-6 md:p-8 hover:shadow-lg transition-shadow flex flex-col">
+                  <p className="text-sm sm:text-base mb-4 md:mb-6 italic text-muted-foreground flex-grow">
                     "{testimonial.quote}"
                   </p>
-                  <div className="border-t pt-4">
+                  <div className="border-t pt-4 mt-auto">
                     <p className="font-bold text-sm sm:text-base">{testimonial.author}</p>
                     <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
