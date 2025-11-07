@@ -548,7 +548,7 @@ const PPCAgency = () => {
                 </ol>
               </nav>
 
-              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent animate-fade-in">
+              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent animate-fade-in leading-tight pb-2">
                 PPC Agency
               </h1>
               
