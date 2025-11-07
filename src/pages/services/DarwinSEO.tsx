@@ -403,7 +403,7 @@ const DarwinSEO = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden">
+        <section className="relative py-12 md:py-20 lg:py-32 overflow-hidden">
           {/* Animated background elements */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -413,19 +413,19 @@ const DarwinSEO = () => {
 
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-2">
                 SEO Company Darwin
               </h1>
               
-              <p className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent leading-tight">
+              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-primary bg-clip-text text-transparent leading-tight px-2">
                 Stop Being Invisible Online. Start Dominating the Darwin Market.
               </p>
 
-              <p className="text-lg md:text-xl mb-6 text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-muted-foreground max-w-3xl mx-auto px-4">
                 Are you struggling to get found by customers in Darwin and the NT? It's time for a local SEO company that understands the unique challenges of the Top End and delivers real, measurable results.
               </p>
 
-              <p className="text-base md:text-lg mb-10 text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-sm sm:text-base md:text-lg mb-8 md:mb-10 text-muted-foreground max-w-3xl mx-auto px-4">
                 In Darwin, you can't afford to be invisible. At Odin Digital, we don't just offer generic SEO; we provide tailored SEO strategies that help you dominate the local Darwin market and reach customers across the Northern Territory. With no lock-in contracts and a focus on radical transparency, we're the Darwin SEO partner you can trust. Ready to finally get your business on the map?
               </p>
 
@@ -442,27 +442,27 @@ const DarwinSEO = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-16 md:py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 The Proof Is in the Performance
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 We're not just making promises; we're delivering verified results. Here's a snapshot of what our clients have achieved.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
               {metrics.map((metric, index) => {
                 const Icon = metric.icon;
                 return (
-                  <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                    <Icon className="w-12 h-12 mx-auto mb-4 text-primary" />
-                    <div className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
+                  <Card key={index} className="p-4 sm:p-6 text-center hover:shadow-lg transition-shadow">
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-auto mb-3 md:mb-4 text-primary" />
+                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
                       {metric.value}
                     </div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-xs sm:text-sm text-muted-foreground">
                       {metric.label}
                     </div>
                   </Card>
@@ -473,25 +473,25 @@ const DarwinSEO = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-16 md:py-20">
+        <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 Is Your Business Invisible in the Top End?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 You know you have a great business, but you're struggling to get found by customers in Darwin. It's a common and frustrating problem for businesses in the NT.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               {problems.map((problem, index) => {
                 const Icon = problem.icon;
                 return (
-                  <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                    <Icon className="w-12 h-12 mb-4 text-primary" />
-                    <h3 className="text-xl font-bold mb-4">{problem.title}</h3>
-                    <p className="text-muted-foreground">{problem.description}</p>
+                  <Card key={index} className="p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow">
+                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 mb-3 md:mb-4 text-primary" />
+                    <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4">{problem.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground">{problem.description}</p>
                   </Card>
                 );
               })}
@@ -500,60 +500,60 @@ const DarwinSEO = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-16 md:py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 What Our Clients Say
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 Don't just take our word for it. Here's what business owners are saying about working with Odin Digital.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
-                <div className="flex items-center mb-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+              <Card className="p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow flex flex-col">
+                <div className="flex items-center mb-3 md:mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-primary fill-current" />
+                    <Award key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 flex-grow">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 flex-grow">
                   "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-semibold">Fabienne Costa</div>
-                  <div className="text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</div>
+                  <div className="font-semibold text-sm sm:text-base">Fabienne Costa</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</div>
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
-                <div className="flex items-center mb-4">
+              <Card className="p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow flex flex-col">
+                <div className="flex items-center mb-3 md:mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-primary fill-current" />
+                    <Award key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 flex-grow">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 flex-grow">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-semibold">Liam C</div>
-                  <div className="text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</div>
+                  <div className="font-semibold text-sm sm:text-base">Liam C</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</div>
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
-                <div className="flex items-center mb-4">
+              <Card className="p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow flex flex-col">
+                <div className="flex items-center mb-3 md:mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-primary fill-current" />
+                    <Award key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 flex-grow">
+                <p className="text-sm sm:text-base text-muted-foreground mb-4 flex-grow">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
                 </p>
                 <div className="mt-auto">
-                  <div className="font-semibold">Evan Tsaboukos</div>
-                  <div className="text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</div>
+                  <div className="font-semibold text-sm sm:text-base">Evan Tsaboukos</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</div>
                 </div>
               </Card>
             </div>
@@ -561,28 +561,28 @@ const DarwinSEO = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-16 md:py-20">
+        <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 SEO Services for Darwin & the NT
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 We offer a complete suite of professional SEO services to help your Darwin business dominate the local market and reach customers across the Northern Territory.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               {services.map((service, index) => {
                 const Icon = service.icon;
                 return (
-                  <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                    <Icon className="w-12 h-12 mb-4 text-primary" />
-                    <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                    <p className="text-muted-foreground mb-6">{service.description}</p>
+                  <Card key={index} className="p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow">
+                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 mb-3 md:mb-4 text-primary" />
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4">{service.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-5 md:mb-6">{service.description}</p>
                     <Button 
                       onClick={() => navigate('/contact')}
-                      className="w-full whitespace-normal h-auto py-3 px-4 text-sm"
+                      className="w-full whitespace-normal h-auto py-2.5 sm:py-3 px-3 sm:px-4 text-xs sm:text-sm"
                       style={{ backgroundColor: '#D91C5C', color: 'white' }}
                     >
                       {service.cta}
@@ -595,25 +595,25 @@ const DarwinSEO = () => {
         </section>
 
         {/* Differentiators Section */}
-        <section className="py-16 md:py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 The Odin Digital Difference: Your Darwin SEO Company
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 Why choose us as your SEO company in Darwin? Because we understand the Top End and we're committed to your success.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
               {differentiators.map((diff, index) => {
                 const Icon = diff.icon;
                 return (
-                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-                    <Icon className="w-10 h-10 mb-4 text-primary" />
-                    <h3 className="text-lg font-bold mb-3">{diff.title}</h3>
-                    <p className="text-sm text-muted-foreground">{diff.description}</p>
+                  <Card key={index} className="p-4 sm:p-5 md:p-6 hover:shadow-lg transition-shadow">
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 mb-3 md:mb-4 text-primary" />
+                    <h3 className="text-sm sm:text-base md:text-lg font-bold mb-2 md:mb-3">{diff.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{diff.description}</p>
                   </Card>
                 );
               })}
@@ -622,28 +622,28 @@ const DarwinSEO = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-16 md:py-20">
+        <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 Our Proven 4-Step SEO Process
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 We follow a simple, effective process to deliver high-performing SEO campaigns for our Darwin clients.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
               {processSteps.map((step, index) => {
                 const Icon = step.icon;
                 return (
-                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow relative">
-                    <div className="absolute -top-4 -left-4 w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  <Card key={index} className="p-5 sm:p-6 hover:shadow-lg transition-shadow relative">
+                    <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-primary rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-lg">
                       {step.number}
                     </div>
-                    <Icon className="w-10 h-10 mb-4 text-primary mt-4" />
-                    <h3 className="text-lg font-bold mb-3">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.description}</p>
+                    <Icon className="w-8 h-8 sm:w-10 sm:h-10 mb-3 md:mb-4 text-primary mt-3 sm:mt-4" />
+                    <h3 className="text-base sm:text-lg font-bold mb-2 md:mb-3">{step.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{step.description}</p>
                   </Card>
                 );
               })}
@@ -652,25 +652,25 @@ const DarwinSEO = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-16 md:py-20 bg-muted/30">
+        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-8 md:mb-12">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
                 Why Choose Odin Digital as Your Darwin SEO Partner?
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                 You need an SEO partner who understands the unique challenges of the Darwin market. Here's why we're the right choice for your business.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
               {whyChooseUs.map((reason, index) => {
                 const Icon = reason.icon;
                 return (
-                  <Card key={index} className="p-8 hover:shadow-lg transition-shadow">
-                    <Icon className="w-12 h-12 mb-4 text-primary" />
-                    <h3 className="text-xl font-bold mb-4">{reason.title}</h3>
-                    <p className="text-muted-foreground">{reason.description}</p>
+                  <Card key={index} className="p-5 sm:p-6 md:p-8 hover:shadow-lg transition-shadow">
+                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 mb-3 md:mb-4 text-primary" />
+                    <h3 className="text-lg sm:text-xl font-bold mb-3 md:mb-4">{reason.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground">{reason.description}</p>
                   </Card>
                 );
               })}
