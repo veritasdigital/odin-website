@@ -418,7 +418,7 @@ const PPCManagement = () => {
                 PPC Management Agency
               </h1>
               
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-primary bg-clip-text text-transparent leading-tight px-2">
+              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-primary bg-clip-text text-transparent leading-relaxed px-2 pb-2">
                 Stop Wasting Money on Google Ads. Start Generating ROI.
               </p>
 
