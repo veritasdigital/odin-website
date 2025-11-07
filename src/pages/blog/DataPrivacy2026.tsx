@@ -12,12 +12,11 @@ import heroImage from "@/assets/blog/data-privacy-2026-hero.jpg";
 import cookielessFutureImage from "@/assets/blog/cookieless-future-visual.jpg";
 import firstPartyDataImage from "@/assets/blog/first-party-data-strategy.jpg";
 import privacyPrinciplesImage from "@/assets/blog/australian-privacy-principles.jpg";
-
 const DataPrivacy2026 = () => {
-  const { openForm } = useMarketingForm();
-
-  return (
-    <div className="min-h-screen bg-background">
+  const {
+    openForm
+  } = useMarketingForm();
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>Data Privacy in 2026: What Australian Businesses Need to Know | Odin Digital</title>
         <meta name="description" content="Learn about data privacy in 2026: what australian businesses need to know with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency." />
@@ -39,58 +38,54 @@ const DataPrivacy2026 = () => {
         {/* Schema Markup - BlogPosting */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://odindigital.com.au/blog/data-privacy-in-2026-australian-businesses"
-            },
-            "headline": "Data Privacy in 2026: What Australian Businesses Need to Know",
-            "description": "Learn about data privacy in 2026: what australian businesses need to know with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
-            "image": "https://odindigital.com.au/images/blog/data-privacy-in-2026-australian-businesses-featured.jpg",
-            "author": {
-              "@type": "Organization",
-              "name": "Odin Digital Team",
-              "url": "https://odindigital.com.au/about"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Odin Digital",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://odindigital.com.au/logo.png"
-              }
-            },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
-          })}
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://odindigital.com.au/blog/data-privacy-in-2026-australian-businesses"
+          },
+          "headline": "Data Privacy in 2026: What Australian Businesses Need to Know",
+          "description": "Learn about data privacy in 2026: what australian businesses need to know with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+          "image": "https://odindigital.com.au/images/blog/data-privacy-in-2026-australian-businesses-featured.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "Odin Digital Team",
+            "url": "https://odindigital.com.au/about"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Odin Digital",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://odindigital.com.au/logo.png"
+            }
+          },
+          "datePublished": "2025-01-15",
+          "dateModified": "2025-01-15"
+        })}
         </script>
 
         {/* Schema Markup - BreadcrumbList */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://odindigital.com.au/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://odindigital.com.au/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Data Privacy in 2026: What Australian Businesses Need to Know"
-              }
-            ]
-          })}
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://odindigital.com.au/"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://odindigital.com.au/blog"
+          }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Data Privacy in 2026: What Australian Businesses Need to Know"
+          }]
+        })}
         </script>
       </Helmet>
 
@@ -103,24 +98,22 @@ const DataPrivacy2026 = () => {
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
+          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{
+          animationDelay: '2s'
+        }}></div>
         </div>
 
         {/* Floating particles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-2 h-2 bg-primary/20 rounded-full animate-float"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${10 + Math.random() * 10}s`
-              }}
-            ></div>
-          ))}
+          {[...Array(20)].map((_, i) => <div key={i} className="absolute w-2 h-2 bg-primary/20 rounded-full animate-float" style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 5}s`,
+          animationDuration: `${10 + Math.random() * 10}s`
+        }}></div>)}
         </div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
@@ -161,11 +154,7 @@ const DataPrivacy2026 = () => {
 
           {/* Featured Image */}
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img 
-              src={heroImage} 
-              alt="Data Privacy in 2026 for Australian Businesses" 
-              className="w-full h-auto"
-            />
+            <img src={heroImage} alt="Data Privacy in 2026 for Australian Businesses" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -275,11 +264,7 @@ const DataPrivacy2026 = () => {
 
             {/* Feature Image */}
             <div className="rounded-2xl overflow-hidden shadow-card mb-8">
-              <img 
-                src={cookielessFutureImage} 
-                alt="Visualization of the cookie-less future in digital marketing" 
-                className="w-full h-auto"
-              />
+              <img src={cookielessFutureImage} alt="Visualization of the cookie-less future in digital marketing" className="w-full h-auto" />
             </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
@@ -371,11 +356,7 @@ const DataPrivacy2026 = () => {
 
             {/* Feature Image */}
             <div className="rounded-2xl overflow-hidden shadow-card mb-8">
-              <img 
-                src={firstPartyDataImage} 
-                alt="First-party data strategy framework for Australian businesses" 
-                className="w-full h-auto"
-              />
+              <img src={firstPartyDataImage} alt="First-party data strategy framework for Australian businesses" className="w-full h-auto" />
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
@@ -460,11 +441,7 @@ const DataPrivacy2026 = () => {
 
             {/* Feature Image */}
             <div className="rounded-2xl overflow-hidden shadow-card mb-8">
-              <img 
-                src={privacyPrinciplesImage} 
-                alt="Australian Privacy Principles for businesses" 
-                className="w-full h-auto"
-              />
+              
             </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
@@ -694,8 +671,6 @@ const DataPrivacy2026 = () => {
       </article>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default DataPrivacy2026;
