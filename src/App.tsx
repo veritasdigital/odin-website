@@ -131,6 +131,7 @@ import DigitalMarketingMistakes from "./pages/blog/DigitalMarketingMistakes";
 import DigitalMarketingStrategy2026 from "./pages/blog/DigitalMarketingStrategy2026";
 import DataPrivacy2026 from "./pages/blog/DataPrivacy2026";
 import OurClients from "./pages/OurClients";
+import DarwinSEO from "./pages/services/DarwinSEO";
 
 const queryClient = new QueryClient();
 
@@ -185,6 +186,7 @@ const App = () => (
             <Route path="/seo-adelaide" element={<AdelaideSEO />} />
             <Route path="/seo-hobart" element={<HobartSEO />} />
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
+            <Route path="/seo-darwin" element={<DarwinSEO />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/industries/dentists" element={<Dentists />} />
             <Route path="/industries/lawyers" element={<Lawyers />} />
