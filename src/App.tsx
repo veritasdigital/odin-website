@@ -129,6 +129,7 @@ import ShopifySEO from "./pages/blog/ShopifySEO";
 import MarketingAutomation from "./pages/blog/MarketingAutomation";
 import DigitalMarketingMistakes from "./pages/blog/DigitalMarketingMistakes";
 import DigitalMarketingStrategy2026 from "./pages/blog/DigitalMarketingStrategy2026";
+import DataPrivacy2026 from "./pages/blog/DataPrivacy2026";
 import OurClients from "./pages/OurClients";
 
 const queryClient = new QueryClient();
@@ -259,6 +260,7 @@ const App = () => (
             <Route path="/blog/marketing-automation-for-beginners" element={<MarketingAutomation />} />
             <Route path="/blog/the-5-most-common-digital-marketing-mistakes-small-businesses-make" element={<DigitalMarketingMistakes />} />
             <Route path="/blog/how-to-build-a-cohesive-digital-marketing-strategy-for-2026" element={<DigitalMarketingStrategy2026 />} />
+            <Route path="/blog/data-privacy-in-2026-australian-businesses" element={<DataPrivacy2026 />} />
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />

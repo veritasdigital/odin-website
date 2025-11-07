@@ -34,11 +34,24 @@ import shopifySEOImage from "@/assets/blog/shopify-seo-hero.jpg";
 import marketingAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 import digitalMarketingMistakesImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 import digitalMarketingStrategy2026Image from "@/assets/blog/digital-marketing-strategy-2026.jpg";
+import dataPrivacy2026Image from "@/assets/blog/data-privacy-2026-hero.jpg";
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
 
   const blogPosts = [
+    {
+      id: 28,
+      title: "Data Privacy in 2026: What Australian Businesses Need to Know",
+      excerpt: "Learn about data privacy in 2026: what australian businesses need to know with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency.",
+      image: dataPrivacy2026Image,
+      author: "Odin Digital Team",
+      date: "15 January 2025",
+      readTime: "14 min read",
+      category: "Data Privacy",
+      featured: false,
+      link: "/blog/data-privacy-in-2026-australian-businesses"
+    },
     {
       id: 27,
       title: "Putting It All Together: How to Build a Cohesive Digital Marketing Strategy for 2026",
