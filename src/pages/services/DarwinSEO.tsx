@@ -512,43 +512,49 @@ const DarwinSEO = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 flex-grow">
                   "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with."
                 </p>
-                <div className="font-semibold">Fabienne Costa</div>
-                <div className="text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Fabienne Costa</div>
+                  <div className="text-sm text-muted-foreground">Founder, YCL Jewels (Gold Coast)</div>
+                </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 flex-grow">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
                 </p>
-                <div className="font-semibold">Liam C</div>
-                <div className="text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Liam C</div>
+                  <div className="text-sm text-muted-foreground">Founder, Krush Organics (Sydney)</div>
+                </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-lg transition-shadow">
+              <Card className="p-6 hover:shadow-lg transition-shadow flex flex-col">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 text-primary fill-current" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
+                <p className="text-muted-foreground mb-4 flex-grow">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
                 </p>
-                <div className="font-semibold">Evan Tsaboukos</div>
-                <div className="text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Evan Tsaboukos</div>
+                  <div className="text-sm text-muted-foreground">Founder, Imperial Wealth (Melbourne)</div>
+                </div>
               </Card>
             </div>
           </div>
