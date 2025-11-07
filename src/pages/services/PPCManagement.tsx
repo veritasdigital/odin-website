@@ -404,7 +404,7 @@ const PPCManagement = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+        <section className="relative pt-20 pb-10 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
           {/* Animated background elements */}
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -414,26 +414,26 @@ const PPCManagement = () => {
 
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-5">
                 PPC Management Agency
               </h1>
               
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-primary bg-clip-text text-transparent leading-relaxed px-2 pb-2">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 md:mb-7 bg-gradient-primary bg-clip-text text-transparent leading-relaxed pb-2">
                 Stop Wasting Money on Google Ads. Start Generating ROI.
               </p>
 
-              <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 md:mb-5 text-muted-foreground max-w-3xl mx-auto px-2">
                 Are you tired of burning through your ad budget with nothing to show for it? It's time for a PPC management agency that is obsessed with ROI and radical transparency.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg mb-8 md:mb-10 text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-6 md:mb-9 text-muted-foreground max-w-3xl mx-auto px-2">
                 At Odin Digital, we don't just manage your PPC campaigns; we build high-converting, ROI-focused PPC machines that generate real business growth. With no lock-in contracts and a team of Google Ads specialists, we're the PPC management partner you can trust. Ready to finally get a positive return on your ad spend?
               </p>
 
               <Button 
-                size="xl" 
+                size="lg" 
                 onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-6 text-sm sm:text-base"
+                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-4 sm:py-4 sm:px-6 text-sm sm:text-base"
                 style={{ backgroundColor: '#D91C5C', color: 'white' }}
               >
                 Get Your FREE PPC Management Quote →
@@ -443,27 +443,27 @@ const PPCManagement = () => {
         </section>
 
         {/* Social Proof Metrics */}
-        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
+        <section className="py-10 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
+            <div className="text-center mb-6 md:mb-10">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-3">
                 The Proof Is in the Performance
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
                 We're not just making promises; we're delivering verified results. Here's a snapshot of what our clients have achieved.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
               {metrics.map((metric, index) => {
                 const Icon = metric.icon;
                 return (
-                  <Card key={index} className="p-6 md:p-8 text-center hover:shadow-lg transition-shadow">
-                    <Icon className="w-10 h-10 md:w-12 md:h-12 mx-auto mb-3 md:mb-4 text-primary" />
-                    <div className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 bg-gradient-primary bg-clip-text text-transparent">
+                  <Card key={index} className="p-4 sm:p-5 md:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
+                    <Icon className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 lg:w-12 lg:h-12 mx-auto mb-2 md:mb-3 text-primary" />
+                    <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-1 md:mb-2 bg-gradient-primary bg-clip-text text-transparent leading-tight">
                       {metric.value}
                     </div>
-                    <div className="text-xs sm:text-sm text-muted-foreground">
+                    <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground leading-tight">
                       {metric.label}
                     </div>
                   </Card>
@@ -474,25 +474,25 @@ const PPCManagement = () => {
         </section>
 
         {/* Problem-Agitation Section */}
-        <section className="py-12 md:py-16 lg:py-20">
+        <section className="py-10 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
+            <div className="text-center mb-6 md:mb-10">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-3">
                 Is Your Google Ads Account a Money Pit?
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
                 You know Google Ads can be a powerful tool, but right now it feels like you're just throwing money away. It's a common and frustrating problem for businesses across Australia.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
               {problems.map((problem, index) => {
                 const Icon = problem.icon;
                 return (
-                  <Card key={index} className="p-6 md:p-8 hover:shadow-lg transition-shadow">
-                    <Icon className="w-10 h-10 md:w-12 md:h-12 mb-3 md:mb-4 text-primary" />
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4">{problem.title}</h3>
-                    <p className="text-sm sm:text-base text-muted-foreground">{problem.description}</p>
+                  <Card key={index} className="p-5 sm:p-6 md:p-7 lg:p-8 hover:shadow-lg transition-shadow">
+                    <Icon className="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 lg:w-12 lg:h-12 mb-3 md:mb-4 text-primary" />
+                    <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-3">{problem.title}</h3>
+                    <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">{problem.description}</p>
                   </Card>
                 );
               })}
@@ -501,26 +501,26 @@ const PPCManagement = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
+        <section className="py-10 md:py-16 lg:py-20 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8 md:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 px-2">
+            <div className="text-center mb-6 md:mb-10">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-3">
                 What Our Clients Say
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
                 Don't just take our word for it. Here's what business owners are saying about working with Odin Digital.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-6 md:p-8 hover:shadow-lg transition-shadow flex flex-col">
-                  <p className="text-sm sm:text-base mb-4 md:mb-6 italic text-muted-foreground flex-grow">
+                <Card key={index} className="p-5 sm:p-6 md:p-7 lg:p-8 hover:shadow-lg transition-shadow flex flex-col">
+                  <p className="text-xs sm:text-sm md:text-base mb-4 md:mb-5 italic text-muted-foreground flex-grow leading-relaxed">
                     "{testimonial.quote}"
                   </p>
-                  <div className="border-t pt-4 mt-auto">
-                    <p className="font-bold text-sm sm:text-base">{testimonial.author}</p>
-                    <p className="text-xs sm:text-sm text-muted-foreground">{testimonial.company}</p>
+                  <div className="border-t pt-3 md:pt-4 mt-auto">
+                    <p className="font-bold text-xs sm:text-sm md:text-base">{testimonial.author}</p>
+                    <p className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
                 </Card>
               ))}
@@ -712,11 +712,11 @@ const PPCManagement = () => {
       </div>
 
       {/* Sticky Mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t md:hidden z-40">
+      <div className="fixed bottom-0 left-0 right-0 p-3 bg-background/95 backdrop-blur-sm border-t md:hidden z-40 shadow-lg">
         <Button 
           size="lg"
           onClick={() => navigate('/contact')}
-          className="w-full font-bold"
+          className="w-full font-bold text-sm h-12"
           style={{ backgroundColor: '#D91C5C', color: 'white' }}
         >
           Get Your FREE Quote →
