@@ -103,9 +103,9 @@ const DigitalMarketingStrategy2026 = () => {
       <section className="relative pt-32 pb-20 overflow-hidden gradient-hero">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
 
         {/* Floating particles */}
@@ -113,7 +113,7 @@ const DigitalMarketingStrategy2026 = () => {
           {[...Array(20)].map((_, i) => (
             <div
               key={i}
-              className="absolute w-2 h-2 bg-white/20 rounded-full animate-float"
+              className="absolute w-2 h-2 bg-primary/20 rounded-full animate-float"
               style={{
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
@@ -126,26 +126,26 @@ const DigitalMarketingStrategy2026 = () => {
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           {/* Breadcrumbs */}
-          <nav className="flex items-center space-x-2 text-sm text-white/80 mb-8">
-            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+          <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
+            <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
+            <Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link>
             <span>/</span>
-            <span className="text-white">Putting It All Together: How to Build a Cohesive Digital Marketing Strategy for 2026</span>
+            <span className="text-foreground">Putting It All Together: How to Build a Cohesive Digital Marketing Strategy for 2026</span>
           </nav>
 
           {/* Category Badge */}
-          <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-sm">
+          <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
             Digital Marketing Strategy
           </Badge>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-foreground mb-8 leading-tight">
             Putting It All Together: How to Build a Cohesive Digital Marketing Strategy for 2026
           </h1>
 
           {/* Meta Information */}
-          <div className="flex flex-wrap items-center gap-6 text-white/90 mb-12">
+          <div className="flex flex-wrap items-center gap-6 text-muted-foreground mb-12">
             <div className="flex items-center space-x-2">
               <User className="w-5 h-5" />
               <span>Odin Digital Team</span>
