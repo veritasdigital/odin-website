@@ -746,7 +746,7 @@ const DigitalMarketingStrategy2026 = () => {
               Get a free, no-obligation marketing strategy session with our experts.
             </p>
             <Link to="/contact">
-              <Button variant="cta" size="xl" className="bg-white text-primary hover:bg-white/90">
+              <Button variant="secondary" size="xl">
                 Get Your Free Strategy Session
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
