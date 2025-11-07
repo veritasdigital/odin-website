@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { 
   Target, 
   TrendingUp, 
@@ -22,7 +22,9 @@ import {
   Clock,
   AlertCircle,
   UserX,
-  TrendingDown
+  TrendingDown,
+  ChevronRight,
+  MessageSquare
 } from "lucide-react";
 import {
   Accordion,
@@ -506,59 +508,77 @@ const PPCAgency = () => {
       <div className="min-h-screen bg-background">
         <Header />
 
-        {/* Breadcrumb Navigation */}
-        <div className="bg-muted/30 border-b">
-          <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
-              <a href="/" className="hover:text-primary transition-colors">Home</a>
-              <span>/</span>
-              <a href="/services" className="hover:text-primary transition-colors">Services</a>
-              <span>/</span>
-              <span className="text-foreground font-medium">PPC Agency</span>
-            </nav>
-          </div>
-        </div>
-
         {/* Hero Section */}
-        <section className="relative pt-28 pb-10 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-          {/* Animated background elements - pulled from Hero.tsx */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
-            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
-            
-            {/* Floating Particles */}
-            <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-            <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
-            <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden pt-28 md:pt-32 pb-16">
+          {/* Animated Background Blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/10 rounded-full blur-3xl animate-pulse-glow" />
           </div>
 
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-5">
+          {/* Decorative Floating Circles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-[10%] w-3 h-3 rounded-full bg-gradient-primary animate-float opacity-60" />
+            <div className="absolute top-1/3 right-[15%] w-2 h-2 rounded-full bg-gradient-primary animate-float opacity-40" style={{ animationDelay: '1s' }} />
+            <div className="absolute bottom-1/4 left-[20%] w-4 h-4 rounded-full bg-gradient-primary animate-float opacity-50" style={{ animationDelay: '2s' }} />
+            <div className="absolute top-1/2 right-[25%] w-3 h-3 rounded-full bg-gradient-primary animate-float opacity-70" style={{ animationDelay: '3s' }} />
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl mx-auto text-center space-y-6">
+              {/* Breadcrumb */}
+              <nav className="flex justify-center mb-6" aria-label="Breadcrumb">
+                <ol className="inline-flex items-center space-x-2 text-sm">
+                  <li>
+                    <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+                      Home
+                    </Link>
+                  </li>
+                  <ChevronRight className="w-4 h-4 text-muted-foreground" />
+                  <li>
+                    <Link to="/services" className="text-muted-foreground hover:text-primary transition-colors">
+                      Services
+                    </Link>
+                  </li>
+                  <ChevronRight className="w-4 h-4 text-muted-foreground" />
+                  <li className="text-primary font-medium">
+                    PPC Agency
+                  </li>
+                </ol>
+              </nav>
+
+              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent animate-fade-in">
                 PPC Agency
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-5 md:mb-7 bg-gradient-primary bg-clip-text text-transparent leading-relaxed pb-2">
+              <p className="text-2xl md:text-3xl font-semibold text-foreground leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Tired of Wasting Budget on Vanity Metrics? We Are the Performance-First PPC Agency Delivering a Proven 540% ROI.
               </p>
-
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-3 md:mb-5 text-muted-foreground max-w-3xl mx-auto px-2">
-                Forget clicks. Forget impressions. Forget quality score. At Odin Digital, we are the PPC Agency that cares about one thing only: your profit. With radical transparency, no lock-in contracts, and senior strategists managing every account, we deliver an average 540% ROI for businesses across Australia.
+              
+              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                No lock-in contracts. No junior managers. No vanity metrics. Just transparent, performance-first Google Ads management that delivers measurable results for businesses across Australia.
               </p>
-
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-6 md:mb-9 text-muted-foreground max-w-3xl mx-auto px-2">
-                Ready to work with a PPC Agency that actually understands performance marketing?
-              </p>
-
-              <Button 
-                size="lg" 
-                onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-4 sm:py-4 sm:px-6 text-sm sm:text-base"
-                style={{ backgroundColor: '#D91C5C', color: 'white' }}
-              >
-                Get Your FREE PPC Audit & Strategy Session →
-              </Button>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                <Button 
+                  size="lg" 
+                  variant="cta"
+                  className="shadow-primary hover:shadow-glow transition-smooth"
+                  onClick={() => navigate('/contact')}
+                >
+                  <MessageSquare className="mr-2 h-5 w-5" />
+                  Book Your Free PPC Audit
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-primary/20 hover:bg-primary/5 transition-smooth"
+                  onClick={() => navigate('/services')}
+                >
+                  View All Services
+                </Button>
+              </div>
             </div>
           </div>
         </section>
