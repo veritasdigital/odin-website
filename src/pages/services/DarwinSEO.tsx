@@ -432,7 +432,7 @@ const DarwinSEO = () => {
               <Button 
                 size="xl" 
                 onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold"
+                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-6 text-sm sm:text-base"
                 style={{ backgroundColor: '#D91C5C', color: 'white' }}
               >
                 Get Your FREE Darwin SEO Quote →
@@ -582,7 +582,7 @@ const DarwinSEO = () => {
                     <p className="text-muted-foreground mb-6">{service.description}</p>
                     <Button 
                       onClick={() => navigate('/contact')}
-                      className="w-full"
+                      className="w-full whitespace-normal h-auto py-3 px-4 text-sm"
                       style={{ backgroundColor: '#D91C5C', color: 'white' }}
                     >
                       {service.cta}
@@ -694,7 +694,7 @@ const DarwinSEO = () => {
               <Button 
                 size="xl" 
                 onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold"
+                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-6 text-sm sm:text-base"
                 style={{ backgroundColor: '#D91C5C', color: 'white' }}
               >
                 Get Your FREE Darwin SEO Quote →
@@ -734,7 +734,7 @@ const DarwinSEO = () => {
           <Button 
             size="lg"
             onClick={() => navigate('/contact')}
-            className="w-full shadow-glow font-bold"
+            className="w-full shadow-glow font-bold whitespace-normal h-auto py-3 px-4 text-sm"
             style={{ backgroundColor: '#D91C5C', color: 'white' }}
           >
             Get Your FREE Darwin SEO Quote →
