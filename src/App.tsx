@@ -133,6 +133,7 @@ import DataPrivacy2026 from "./pages/blog/DataPrivacy2026";
 import OurClients from "./pages/OurClients";
 import DarwinSEO from "./pages/services/DarwinSEO";
 import PPCManagement from "./pages/services/PPCManagement";
+import PPCAgency from "./pages/services/PPCAgency";
 
 const queryClient = new QueryClient();
 
@@ -189,6 +190,7 @@ const App = () => (
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
             <Route path="/seo-darwin" element={<DarwinSEO />} />
             <Route path="/ppc-management" element={<PPCManagement />} />
+            <Route path="/ppc-agency" element={<PPCAgency />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
             <Route path="/industries/dentists" element={<Dentists />} />
             <Route path="/industries/lawyers" element={<Lawyers />} />
