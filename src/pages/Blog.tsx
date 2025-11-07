@@ -362,15 +362,15 @@ const Blog = () => {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+          <h1 className="text-5xl md:text-7xl font-black text-foreground mb-8">
             Digital Marketing Insights
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
             Stay ahead of the curve with expert insights, proven strategies, and actionable tips from Australia's leading digital marketing agency.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm}>
+          <Button variant="default" size="xl" onClick={openForm}>
             Get Your Free Marketing Strategy
           </Button>
         </div>
