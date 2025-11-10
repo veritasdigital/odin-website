@@ -4,7 +4,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 export const CTA = () => {
   const { openForm } = useMarketingForm();
 
-  return <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
+  return <section data-nav-contrast="dark" className="py-24 gradient-primary relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
       <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
