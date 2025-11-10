@@ -195,19 +195,32 @@ export default function Contact() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative py-24 gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
-        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <section className="relative py-24 gradient-primary overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
+        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/90 mb-12 leading-relaxed">
             Book your free 30-minute strategy session and discover how we can accelerate your business growth.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm}>
-            <Calendar className="w-5 h-5 mr-2" />
-            Schedule Free Consultation
-          </Button>
+          
+          <div className="flex justify-center">
+            <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white max-w-md">
+              <h3 className="text-2xl font-bold mb-4">Schedule Your Free Consultation</h3>
+              <p className="text-white/80 mb-6">
+                Meet with our team to discuss your business objectives and explore how our digital marketing expertise can drive measurable results.
+              </p>
+              <Button variant="cta" size="lg" className="w-full" onClick={openForm}>
+                <Calendar className="w-5 h-5 mr-2" />
+                SCHEDULE NOW
+              </Button>
+            </Card>
+          </div>
         </div>
       </section>
 
