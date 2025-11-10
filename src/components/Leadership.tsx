@@ -1,6 +1,7 @@
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
 import matteoBanzon from "@/assets/matteo-banzon.png";
+import sarahMitchell from "@/assets/team-member-new.png";
 import { Card } from "@/components/ui/card";
 
 const leadershipTeam = [
@@ -15,7 +16,7 @@ const leadershipTeam = [
   {
     name: "Sarah Mitchell",
     title: "Chief Marketing Officer",
-    image: lucasDurante, // Using placeholder
+    image: sarahMitchell,
     bio: "Sarah brings 12+ years of strategic marketing expertise, specializing in data-driven campaigns that deliver exceptional ROI. She oversees all client strategy and campaign optimization.",
     email: "sarah@odindigital.com.au",
     linkedin: "#"
