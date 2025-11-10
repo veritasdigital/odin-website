@@ -2,6 +2,7 @@ import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
 import matteoBanzon from "@/assets/matteo-banzon.png";
 import sarahMitchell from "@/assets/team-member-new.png";
+import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
 import { Card } from "@/components/ui/card";
 
 const leadershipTeam = [
@@ -38,11 +39,11 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
-    name: "David Rodriguez",
+    name: "Alfonso Rodriguez",
     title: "Technical Director",
-    image: lucasDurante, // Using placeholder
-    bio: "David oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
-    email: "david@odindigital.com.au",
+    image: alfonsoRodriguez,
+    bio: "Alfonso oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
+    email: "alfonso@odindigital.com.au",
     linkedin: "#"
   },
   {
