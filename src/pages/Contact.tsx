@@ -195,8 +195,9 @@ export default function Contact() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 gradient-hero">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative py-24 gradient-hero overflow-hidden">
+        <div className="absolute inset-0 bg-charcoal-950/60" aria-hidden="true" />
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
             Ready to Get Started?
           </h2>
