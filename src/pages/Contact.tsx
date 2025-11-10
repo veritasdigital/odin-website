@@ -58,7 +58,7 @@ export default function Contact() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-charcoal-950/60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
         <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
             Get In Touch
@@ -196,7 +196,7 @@ export default function Contact() {
 
       {/* Final CTA */}
       <section className="relative py-24 gradient-hero overflow-hidden">
-        <div className="absolute inset-0 bg-charcoal-950/60" aria-hidden="true" />
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
             Ready to Get Started?
