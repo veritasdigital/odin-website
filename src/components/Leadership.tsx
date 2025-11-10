@@ -35,7 +35,7 @@ const leadershipTeam = [
   {
     name: "Emily Platt",
     title: "Creative Director",
-    image: emilyPlatt,
+    image: alfonsoRodriguez,
     bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
     email: "emily@odindigital.com.au",
     linkedin: "#"
@@ -43,7 +43,7 @@ const leadershipTeam = [
   {
     name: "Alfonso Rodriguez",
     title: "Technical Director",
-    image: alfonsoRodriguez,
+    image: emilyPlatt,
     bio: "Alfonso oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
     email: "alfonso@odindigital.com.au",
     linkedin: "#"
