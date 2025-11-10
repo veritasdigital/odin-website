@@ -43,7 +43,7 @@ const leadershipTeam = [
   {
     name: "Alfonso Rodriguez",
     title: "Technical Director",
-    image: emilyPlatt,
+    image: alfonsoRodriguez,
     bio: "Alfonso oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
     email: "alfonso@odindigital.com.au",
     linkedin: "#"
