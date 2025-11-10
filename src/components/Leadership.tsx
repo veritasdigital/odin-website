@@ -3,6 +3,7 @@ import marketingTeam from "@/assets/odin-team-real.jpg";
 import matteoBanzon from "@/assets/matteo-banzon.png";
 import sarahMitchell from "@/assets/team-member-new.png";
 import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
+import emilyPlatt from "@/assets/emily-platt.png";
 import { Card } from "@/components/ui/card";
 
 const leadershipTeam = [
@@ -31,11 +32,11 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
-    name: "Emma Thompson",
+    name: "Emily Platt",
     title: "Creative Director",
-    image: lucasDurante, // Using placeholder
-    bio: "Emma leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
-    email: "emma@odindigital.com.au",
+    image: emilyPlatt,
+    bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
+    email: "emily@odindigital.com.au",
     linkedin: "#"
   },
   {
