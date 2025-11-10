@@ -57,7 +57,7 @@ export default function Contact() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
+      <section className="pt-32 pb-20 bg-primary gradient-hero">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
             Get In Touch
