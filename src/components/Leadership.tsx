@@ -35,7 +35,7 @@ const leadershipTeam = [
   {
     name: "Emily Platt",
     title: "Creative Director",
-    image: alfonsoRodriguez,
+    image: emilyPlatt,
     bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
     email: "emily@odindigital.com.au",
     linkedin: "#"
