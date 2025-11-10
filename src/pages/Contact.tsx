@@ -57,8 +57,9 @@ export default function Contact() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-primary gradient-hero">
-        <div className="max-w-6xl mx-auto px-6 text-center">
+      <section className="relative pt-32 pb-20 gradient-hero overflow-hidden">
+        <div className="absolute inset-0 bg-charcoal-950/60" aria-hidden="true" />
+        <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
             Get In Touch
           </h1>
