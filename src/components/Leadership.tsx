@@ -4,6 +4,7 @@ import matteoBanzon from "@/assets/matteo-banzon.png";
 import sarahMitchell from "@/assets/team-member-new.png";
 import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
 import emilyPlatt from "@/assets/emily-platt.png";
+import alexaBlake from "@/assets/hero-person-optimized.webp";
 import { Card } from "@/components/ui/card";
 
 const leadershipTeam = [
@@ -24,11 +25,11 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
-    name: "Michael Chen",
+    name: "Alexa Blake",
     title: "Head of Operations",
-    image: lucasDurante, // Using placeholder
-    bio: "Michael ensures our operations run smoothly and efficiently. With a background in project management and digital systems, he keeps our team and clients on track for success.",
-    email: "michael@odindigital.com.au",
+    image: alexaBlake,
+    bio: "Alexa ensures our operations run smoothly and efficiently. With a background in project management and digital systems, she keeps our team and clients on track for success.",
+    email: "alexa@odindigital.com.au",
     linkedin: "#"
   },
   {
