@@ -342,41 +342,61 @@ const FacebookAdsLaunceston = () => {
         
         <main className="flex-grow">
           {/* Hero Section */}
-          <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
-            {/* Floating circles from homepage */}
-            <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-accent/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+            {/* Animated Background Blobs */}
+            <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+            <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
             
-            <div className="container mx-auto px-4 relative z-10">
+            {/* Floating Particles */}
+            <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+            <div className="absolute top-64 right-1/3 w-3 h-3 bg-primary/40 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+            <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+            <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-secondary/30 rounded-full animate-float" style={{ animationDelay: "1.5s" }}></div>
+            <div className="absolute bottom-32 right-1/3 w-2 h-2 bg-secondary/25 rounded-full animate-float" style={{ animationDelay: "2.5s" }}></div>
+            
+            {/* Floating Geometric Shapes */}
+            <div className="absolute top-24 right-16 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg"></div>
+            <div className="absolute bottom-24 left-16 w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/4 left-24 w-8 h-8 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '4s' }}></div>
+            <div className="absolute bottom-1/3 right-24 w-6 h-6 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '3s' }}></div>
+            
+            <div className="container mx-auto px-4 relative z-10 py-20">
+              <nav className="text-sm mb-12 text-muted-foreground animate-fade-in">
+                <a href="/" className="hover:text-primary transition-colors">Home</a>
+                <span className="mx-2">&gt;</span>
+                <a href="/facebook-advertising" className="hover:text-primary transition-colors">Facebook Advertising</a>
+                <span className="mx-2">&gt;</span>
+                <span className="text-foreground">Facebook Ads Launceston</span>
+              </nav>
+
               <div className="max-w-4xl mx-auto text-center">
-                <div className="inline-block mb-6">
-                  <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
+                <div className="inline-block mb-6 animate-fade-in">
+                  <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold backdrop-blur-sm">
                     Meta Ads Agency • Launceston
                   </span>
                 </div>
                 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 text-foreground leading-tight animate-fade-in" style={{ animationDelay: "0.1s" }}>
                   Facebook Ads Launceston
                 </h1>
                 
-                <p className="hero-sub-headline text-xl md:text-2xl lg:text-3xl mb-8 text-muted-foreground font-medium leading-relaxed">
-                  Stop Shouting into the Local Void. Start a Profitable Conversation with Australia.
-                  <br />
-                  <span className="text-foreground">We Build High-ROI Facebook & Instagram Ad Campaigns That Find Your Ideal Customers on the Mainland and Turn Them into High-Margin Revenue.</span>
+                <p className="hero-sub-headline text-2xl md:text-3xl mb-10 bg-gradient-to-r from-foreground via-foreground/95 to-foreground/90 bg-clip-text text-transparent font-bold leading-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                  Stop Shouting into the Local Void. Start a Profitable Conversation with Australia. We Build High-ROI Facebook & Instagram Ad Campaigns That Find Your Ideal Customers on the Mainland and Turn Them into High-Margin Revenue.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   <Button 
                     onClick={openForm}
                     size="xl" 
                     variant="cta"
+                    className="shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
                   >
                     Get Your FREE Strategy Session →
                   </Button>
-                  <a href="tel:1300123456" className="text-foreground hover:text-primary transition-colors flex items-center gap-2">
+                  <a href="tel:1300595013" className="text-foreground hover:text-primary transition-colors flex items-center gap-2">
                     <Phone className="w-5 h-5" />
-                    <span className="font-semibold">1300 123 456</span>
+                    <span className="font-semibold">1300 595 013</span>
                   </a>
                 </div>
               </div>
@@ -384,14 +404,22 @@ const FacebookAdsLaunceston = () => {
           </section>
 
           {/* Social Proof Metrics */}
-          <section className="py-16 bg-accent/5">
-            <div className="container mx-auto px-4">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <section className="py-16 bg-accent/5 relative overflow-hidden">
+            {/* Subtle Background Elements */}
+            <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 left-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"></div>
+            
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
                 {metrics.map((metric, index) => (
-                  <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300 border-border/50 bg-card">
-                    <metric.icon className="w-8 h-8 mx-auto mb-3 text-primary" />
-                    <div className="text-3xl md:text-4xl font-bold mb-2 text-foreground">{metric.value}</div>
-                    <div className="text-sm text-muted-foreground">{metric.label}</div>
+                  <Card key={index} className="p-6 text-center hover:shadow-glow hover:scale-105 transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                    <metric.icon className="w-12 h-12 text-primary mx-auto mb-4" />
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent mb-2">
+                      {metric.value}
+                    </div>
+                    <div className="text-sm text-muted-foreground font-medium">
+                      {metric.label}
+                    </div>
                   </Card>
                 ))}
               </div>
@@ -399,9 +427,13 @@ const FacebookAdsLaunceston = () => {
           </section>
 
           {/* Problem-Agitation Section */}
-          <section className="py-16 md:py-20 bg-background">
-            <div className="container mx-auto px-4">
-              <div className="max-w-3xl mx-auto text-center mb-12">
+          <section className="py-16 md:py-20 bg-background relative overflow-hidden">
+            {/* Decorative Elements */}
+            <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-muted/10 to-transparent rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-muted/10 to-transparent rounded-full blur-3xl"></div>
+            
+            <div className="container mx-auto px-4 relative z-10">
+              <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
                   If You're a Launceston Business Owner, You Already Know the Problem
                 </h2>
@@ -412,8 +444,10 @@ const FacebookAdsLaunceston = () => {
               
               <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
                 {painPoints.map((point, index) => (
-                  <Card key={index} className="p-6 hover:shadow-glow transition-all duration-300 border-border/50 bg-card">
-                    <point.icon className="w-12 h-12 text-primary mb-4" />
+                  <Card key={index} className="p-6 hover:shadow-glow hover:-translate-y-1 transition-all duration-300 border-border/50 bg-card/80 backdrop-blur-sm animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
+                    <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                      <point.icon className="w-8 h-8 text-primary" />
+                    </div>
                     <h3 className="text-xl font-bold mb-3 text-foreground">{point.title}</h3>
                     <p className="text-muted-foreground leading-relaxed">{point.description}</p>
                   </Card>
@@ -630,27 +664,41 @@ const FacebookAdsLaunceston = () => {
           {/* Final CTA Section */}
           <section className="py-16 md:py-20 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-primary opacity-95"></div>
-            <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+            
+            {/* Enhanced Floating Elements */}
+            <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+            <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+            
+            {/* Floating Particles */}
+            <div className="absolute top-20 right-1/4 w-3 h-3 bg-white/20 rounded-full animate-float"></div>
+            <div className="absolute bottom-20 left-1/3 w-2 h-2 bg-white/20 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+            <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/20 rounded-full animate-float" style={{ animationDelay: "1.5s" }}></div>
+            
+            {/* Geometric Shapes */}
+            <div className="absolute top-16 right-16 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full animate-float shadow-lg"></div>
+            <div className="absolute bottom-16 left-16 w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
             
             <div className="container mx-auto px-4 relative z-10">
               <div className="max-w-3xl mx-auto text-center text-white">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">
                   Ready to Break Out of the Launceston Market and Scale Nationally?
                 </h2>
-                <p className="text-xl mb-8 text-white/90">
+                <p className="text-xl mb-8 text-white/90 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   Book your FREE 30-minute strategy session with our team. We'll analyze your business, identify your highest-value mainland audiences, and show you exactly how we'd build a profitable Facebook Ads campaign to scale your revenue.
                 </p>
-                <p className="text-lg mb-8 font-semibold text-white">
+                <p className="text-lg mb-8 font-semibold text-white animate-fade-in" style={{ animationDelay: "0.4s" }}>
                   No obligation. No sales pitch. Just a data-driven roadmap to national growth.
                 </p>
-                <Button 
-                  onClick={openForm}
-                  size="xl" 
-                  className="bg-white text-primary hover:bg-white/90 shadow-glow text-lg font-bold"
-                >
-                  Claim Your FREE Strategy Session Now →
-                </Button>
+                <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
+                  <Button 
+                    onClick={openForm}
+                    size="xl" 
+                    className="bg-white text-primary hover:bg-white/90 shadow-glow hover:scale-105 text-lg font-bold transition-all duration-300"
+                  >
+                    Claim Your FREE Strategy Session Now →
+                  </Button>
+                </div>
               </div>
             </div>
           </section>
