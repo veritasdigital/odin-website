@@ -317,7 +317,7 @@ const FacebookAdsDarwin = () => {
 
           <div className="container mx-auto max-w-6xl relative z-10">
             <div className="text-center space-y-8">
-              <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight mt-12">
                 Facebook Ads Darwin
               </h1>
               <p className="text-2xl md:text-3xl font-semibold text-foreground/90 max-w-4xl mx-auto leading-relaxed hero-sub-headline">
