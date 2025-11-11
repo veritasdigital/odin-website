@@ -479,8 +479,8 @@ const FacebookAdsLaunceston = () => {
 
               <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {testimonials.map((testimonial, index) => (
-                  <Card key={index} className="p-6 bg-card border-border/50 hover:shadow-glow transition-all duration-300">
-                    <div className="mb-4">
+                  <Card key={index} className="p-6 bg-card border-border/50 hover:shadow-glow transition-all duration-300 flex flex-col">
+                    <div className="mb-4 flex-grow">
                       <div className="flex gap-1 mb-4">
                         {[...Array(5)].map((_, i) => (
                           <span key={i} className="text-primary">★</span>
@@ -488,7 +488,7 @@ const FacebookAdsLaunceston = () => {
                       </div>
                       <p className="text-muted-foreground italic mb-4 leading-relaxed">"{testimonial.quote}"</p>
                     </div>
-                    <div className="border-t border-border pt-4">
+                    <div className="border-t border-border pt-4 mt-auto">
                       <p className="font-semibold text-foreground">{testimonial.author}</p>
                       <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                     </div>
