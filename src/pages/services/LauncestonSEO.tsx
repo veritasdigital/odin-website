@@ -408,7 +408,7 @@ const LauncestonSEO = () => {
         <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
         <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full pt-32 md:pt-40 pb-20">
           <div className="max-w-5xl mx-auto text-center">
             <div className="space-y-8 animate-fade-in">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
