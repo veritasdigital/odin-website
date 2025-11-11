@@ -575,8 +575,8 @@ const BallaratSEO = () => {
       {/* Sticky Mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden p-4 bg-background/95 backdrop-blur-sm border-t border-border">
         <Button 
-          className="w-full h-12 text-white"
-          style={{ backgroundColor: '#0066FF' }}
+          variant="default"
+          className="w-full h-12"
           onClick={openForm}
         >
           Book Your Free Consultation
@@ -584,38 +584,52 @@ const BallaratSEO = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white to-[#F0F4FF]">
+      <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-hero">
         {/* Animated Background Blobs */}
-        <div className="absolute top-20 left-10 w-96 h-96 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)' }} />
-        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(255, 51, 102, 0.08)', animationDelay: "1.5s" }} />
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 rounded-full blur-3xl animate-pulse" style={{ backgroundColor: 'rgba(0, 102, 255, 0.05)', animationDelay: "3s" }} />
+        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+        
+        {/* Additional Gradient Rings */}
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-gradient-to-br from-secondary/10 to-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "4s" }}></div>
         
         {/* Floating Particles */}
-        <div className="absolute top-32 left-1/4 w-2 h-2 rounded-full animate-float" style={{ backgroundColor: 'rgba(0, 102, 255, 0.3)' }}></div>
-        <div className="absolute top-64 right-1/3 w-3 h-3 rounded-full animate-float" style={{ backgroundColor: 'rgba(255, 51, 102, 0.3)', animationDelay: "1s" }}></div>
-        <div className="absolute bottom-48 left-1/2 w-2 h-2 rounded-full animate-float" style={{ backgroundColor: 'rgba(0, 102, 255, 0.2)', animationDelay: "2s" }}></div>
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-secondary/30 rounded-full animate-float" style={{ animationDelay: "3.5s" }}></div>
+        <div className="absolute bottom-1/4 left-2/3 w-3 h-3 bg-primary/25 rounded-full animate-float" style={{ animationDelay: "4.5s" }}></div>
         
         {/* Enhanced Decorative Floating Elements - Homepage Style */}
-        <div className="absolute top-1/4 left-20 w-12 h-12 backdrop-blur-sm rounded-full animate-float shadow-lg" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)', border: '1px solid rgba(0, 102, 255, 0.2)' }}></div>
-        <div className="absolute bottom-1/3 right-32 w-10 h-10 backdrop-blur-sm rounded-lg animate-float shadow-lg" style={{ backgroundColor: 'rgba(255, 51, 102, 0.1)', border: '1px solid rgba(255, 51, 102, 0.2)', animationDelay: '2s' }}></div>
-        <div className="absolute top-2/3 left-1/4 w-8 h-8 backdrop-blur-sm rounded-full animate-float shadow-lg" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)', border: '1px solid rgba(0, 102, 255, 0.2)', animationDelay: '4s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-6 h-6 backdrop-blur-sm rounded-full animate-float shadow-lg" style={{ backgroundColor: 'rgba(255, 51, 102, 0.1)', border: '1px solid rgba(255, 51, 102, 0.2)', animationDelay: '3s' }}></div>
-        <div className="absolute bottom-1/4 left-1/3 w-7 h-7 backdrop-blur-sm rounded-lg animate-float shadow-lg" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)', border: '1px solid rgba(0, 102, 255, 0.2)', animationDelay: '5s' }}></div>
+        <div className="absolute top-1/4 left-20 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg"></div>
+        <div className="absolute bottom-1/3 right-32 w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 left-1/4 w-8 h-8 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-7 h-7 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '5s' }}></div>
+        <div className="absolute top-16 right-1/3 w-9 h-9 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-20 left-1/2 w-11 h-11 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '3.5s' }}></div>
+        <div className="absolute top-1/2 left-16 w-5 h-5 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '6s' }}></div>
+        
+        {/* Geometric Accent Shapes */}
+        <div className="absolute top-40 right-1/4 w-16 h-16 border-2 border-primary/20 rounded-lg rotate-12 animate-float" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute bottom-32 left-1/4 w-20 h-20 border-2 border-secondary/20 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 right-16 w-12 h-12 border-2 border-primary/15 rounded-lg -rotate-12 animate-float" style={{ animationDelay: '5.5s' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-24 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-16 items-center">
             {/* Left - Text Content (60%) */}
             <div className="space-y-8 lg:space-y-10 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl font-black leading-[0.95] tracking-tight" style={{ color: '#1a1a1a' }}>
+              <h1 className="text-5xl md:text-6xl font-black leading-[0.95] tracking-tight text-foreground">
                 SEO services Ballarat
               </h1>
               
               <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                <p className="text-2xl md:text-3xl font-bold leading-tight" style={{ color: '#1a1a1a' }}>
+                <p className="text-2xl md:text-3xl font-bold leading-tight text-foreground">
                   Ballarat SEO that actually works. Local expertise. Real results. No lock-in contracts.
                 </p>
                 
-                <div className="space-y-4" style={{ color: '#4a4a4a' }}>
+                <div className="space-y-4 text-muted-foreground">
                   <p className="text-base leading-relaxed">
                     Most Ballarat businesses waste thousands on SEO agencies that don't understand the local market. They target the wrong keywords. They ignore technical issues. They report on vanity metrics.
                   </p>
@@ -633,8 +647,8 @@ const BallaratSEO = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-2 animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <Button 
                   size="lg" 
-                  className="text-white text-base px-8 py-6 shadow-lg hover:scale-105 transition-all duration-300"
-                  style={{ backgroundColor: '#0066FF' }}
+                  variant="default"
+                  className="text-base px-8 py-6 shadow-lg hover:scale-105 transition-all duration-300"
                   onClick={openForm}
                 >
                   Book Your Free SEO Consultation
@@ -643,7 +657,6 @@ const BallaratSEO = () => {
                   size="lg" 
                   variant="outline"
                   className="text-base px-8 py-6"
-                  style={{ borderColor: '#1a1a1a', color: '#1a1a1a' }}
                   asChild
                 >
                   <a href="tel:1300123456">
@@ -658,19 +671,19 @@ const BallaratSEO = () => {
             <div className="relative hidden lg:block animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <div className="relative aspect-square">
                 {/* Large Circle */}
-                <div className="absolute inset-0 rounded-full animate-pulse" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)', border: '2px solid rgba(0, 102, 255, 0.3)' }}></div>
+                <div className="absolute inset-0 bg-primary/10 border-2 border-primary/30 rounded-full animate-pulse"></div>
                 
                 {/* Medium Circle */}
-                <div className="absolute inset-12 rounded-full animate-pulse" style={{ backgroundColor: 'rgba(255, 51, 102, 0.08)', border: '2px solid rgba(255, 51, 102, 0.2)', animationDelay: '1s' }}></div>
+                <div className="absolute inset-12 bg-secondary/10 border-2 border-secondary/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
                 
                 {/* Small Circle */}
-                <div className="absolute inset-24 rounded-full animate-pulse" style={{ backgroundColor: 'rgba(0, 102, 255, 0.15)', border: '2px solid rgba(0, 102, 255, 0.4)', animationDelay: '2s' }}></div>
+                <div className="absolute inset-24 bg-primary/15 border-2 border-primary/40 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
                 
                 {/* Center Content */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center space-y-4">
-                    <div className="text-6xl font-black" style={{ color: '#0066FF' }}>540%</div>
-                    <div className="text-lg font-semibold" style={{ color: '#1a1a1a' }}>Average ROI</div>
+                    <div className="text-6xl font-black text-primary">540%</div>
+                    <div className="text-lg font-semibold text-foreground">Average ROI</div>
                   </div>
                 </div>
               </div>
@@ -680,14 +693,14 @@ const BallaratSEO = () => {
       </section>
 
       {/* Metrics Section */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {metrics.map((metric, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow border" style={{ borderColor: '#0066FF' }}>
-                <metric.icon className="w-8 h-8 mx-auto mb-3" style={{ color: '#0066FF' }} />
-                <div className="text-3xl font-black mb-2" style={{ color: '#1a1a1a' }}>{metric.value}</div>
-                <div className="text-sm" style={{ color: '#4a4a4a' }}>{metric.label}</div>
+              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow border-2 border-primary">
+                <metric.icon className="w-8 h-8 mx-auto mb-3 text-primary" />
+                <div className="text-3xl font-black mb-2 text-foreground">{metric.value}</div>
+                <div className="text-sm text-muted-foreground">{metric.label}</div>
               </Card>
             ))}
           </div>
@@ -695,23 +708,23 @@ const BallaratSEO = () => {
       </section>
 
       {/* Problem-Agitation Section */}
-      <section className="relative py-20 md:py-24 bg-white overflow-hidden">
+      <section className="relative py-20 md:py-24 bg-background overflow-hidden">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               Why Your SEO Isn't Working in Ballarat
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               Most Ballarat businesses struggle with SEO because agencies don't understand the local market dynamics.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {problems.map((problem, index) => (
-              <div key={index} className="relative pl-6" style={{ borderLeft: '4px solid #FF3366' }}>
-                <problem.icon className="w-10 h-10 mb-4" style={{ color: '#FF3366' }} />
-                <h3 className="text-xl font-bold mb-3" style={{ color: '#1a1a1a' }}>{problem.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#4a4a4a' }}>{problem.description}</p>
+              <div key={index} className="relative pl-6 border-l-4 border-secondary">
+                <problem.icon className="w-10 h-10 mb-4 text-secondary" />
+                <h3 className="text-xl font-bold mb-3 text-foreground">{problem.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{problem.description}</p>
               </div>
             ))}
           </div>
@@ -719,23 +732,23 @@ const BallaratSEO = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="relative py-20 md:py-24 overflow-hidden" style={{ background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)' }}>
+      <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               SEO Built for Ballarat
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               Our Ballarat-specific approach delivers real results for local businesses.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {solutions.map((solution, index) => (
-              <div key={index} className="relative pl-6" style={{ borderLeft: '4px solid #0066FF' }}>
-                <solution.icon className="w-10 h-10 mb-4" style={{ color: '#0066FF' }} />
-                <h3 className="text-xl font-bold mb-3" style={{ color: '#1a1a1a' }}>{solution.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#4a4a4a' }}>{solution.description}</p>
+              <div key={index} className="relative pl-6 border-l-4 border-primary">
+                <solution.icon className="w-10 h-10 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-3 text-foreground">{solution.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{solution.description}</p>
               </div>
             ))}
           </div>
@@ -743,26 +756,26 @@ const BallaratSEO = () => {
       </section>
 
       {/* Services Section */}
-      <section className="relative py-20 md:py-24 bg-white">
+      <section className="relative py-20 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               Our SEO Services for Ballarat
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               Comprehensive SEO solutions tailored to Ballarat's market dynamics.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {services.map((service, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-shadow border-2" style={{ borderColor: '#0066FF' }}>
-                <service.icon className="w-12 h-12 mb-4" style={{ color: '#0066FF' }} />
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#1a1a1a' }}>{service.title}</h3>
-                <p className="text-sm leading-relaxed mb-6" style={{ color: '#4a4a4a' }}>{service.description}</p>
+              <Card key={index} className="p-8 hover:shadow-xl transition-shadow border-2 border-primary">
+                <service.icon className="w-12 h-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
+                <p className="text-sm leading-relaxed mb-6 text-muted-foreground">{service.description}</p>
                 <Button 
-                  className="w-full text-white"
-                  style={{ backgroundColor: '#0066FF' }}
+                  variant="default"
+                  className="w-full"
                   onClick={openForm}
                 >
                   {service.cta}
@@ -774,22 +787,22 @@ const BallaratSEO = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="relative py-20 md:py-24 overflow-hidden" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #F0F4FF 100%)' }}>
+      <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-subtle">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               Why Ballarat Businesses Choose Odin Digital for SEO
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               Proven results, local expertise, and transparent partnerships.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {whyChooseUs.map((reason, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-lg font-bold mb-3" style={{ color: '#1a1a1a' }}>{reason.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#4a4a4a' }}>{reason.description}</p>
+              <div key={index} className="bg-card p-6 rounded-lg shadow-sm border border-border">
+                <h3 className="text-lg font-bold mb-3 text-foreground">{reason.title}</h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">{reason.description}</p>
               </div>
             ))}
           </div>
@@ -797,8 +810,8 @@ const BallaratSEO = () => {
           <div className="text-center mt-12">
             <Button 
               size="lg" 
-              className="text-white px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
-              style={{ backgroundColor: '#0066FF' }}
+              variant="default"
+              className="px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
               onClick={openForm}
             >
               Book Your Free SEO Consultation
@@ -808,28 +821,28 @@ const BallaratSEO = () => {
       </section>
 
       {/* Process Section */}
-      <section className="relative py-20 md:py-24 bg-white">
+      <section className="relative py-20 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-8">
           <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               Our SEO Process
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               A transparent, results-focused approach to dominating Ballarat search results.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
             {processSteps.map((step, index) => (
-              <div key={index} className="flex flex-col md:flex-row gap-6 items-start bg-white p-8 rounded-lg shadow-sm border" style={{ borderColor: '#0066FF' }}>
+              <div key={index} className="flex flex-col md:flex-row gap-6 items-start bg-card p-8 rounded-lg shadow-sm border-2 border-primary">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgba(0, 102, 255, 0.1)' }}>
-                    <span className="text-2xl font-black" style={{ color: '#0066FF' }}>{step.number}</span>
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-2xl font-black text-primary">{step.number}</span>
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-3" style={{ color: '#1a1a1a' }}>{step.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: '#4a4a4a' }}>{step.description}</p>
+                  <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -838,8 +851,8 @@ const BallaratSEO = () => {
           <div className="text-center mt-12">
             <Button 
               size="lg" 
-              className="text-white px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
-              style={{ backgroundColor: '#0066FF' }}
+              variant="default"
+              className="px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
               onClick={openForm}
             >
               Start Your SEO Journey Today
@@ -849,24 +862,24 @@ const BallaratSEO = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative py-20 md:py-24" style={{ background: 'linear-gradient(180deg, #F0F4FF 0%, #FFFFFF 100%)' }}>
+      <section className="relative py-20 md:py-24 bg-gradient-subtle">
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight" style={{ color: '#1a1a1a' }}>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 leading-tight text-foreground">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg" style={{ color: '#4a4a4a' }}>
+            <p className="text-lg text-muted-foreground">
               Everything you need to know about SEO for Ballarat businesses.
             </p>
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6 border" style={{ borderColor: '#0066FF' }}>
-                <AccordionTrigger className="text-left font-semibold hover:no-underline" style={{ color: '#1a1a1a' }}>
+              <AccordionItem key={index} value={`item-${index}`} className="bg-card rounded-lg px-6 border-2 border-primary">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline text-foreground">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="leading-relaxed text-sm" style={{ color: '#4a4a4a' }}>
+                <AccordionContent className="leading-relaxed text-sm text-muted-foreground">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -876,8 +889,8 @@ const BallaratSEO = () => {
           <div className="text-center mt-12">
             <Button 
               size="lg" 
-              className="text-white px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
-              style={{ backgroundColor: '#0066FF' }}
+              variant="default"
+              className="px-12 py-6 text-lg shadow-lg hover:scale-105 transition-all duration-300"
               onClick={openForm}
             >
               Book Your Free SEO Consultation
@@ -887,7 +900,7 @@ const BallaratSEO = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative py-24 overflow-hidden" style={{ background: 'linear-gradient(135deg, #0066FF 0%, #0052CC 100%)' }}>
+      <section className="relative py-24 overflow-hidden bg-gradient-primary">
         {/* Animated Background Blobs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
@@ -914,8 +927,8 @@ const BallaratSEO = () => {
               </p>
               <Button 
                 size="lg" 
+                variant="secondary"
                 className="w-full h-12 text-lg font-semibold"
-                style={{ backgroundColor: '#FF3366', color: 'white' }}
                 onClick={openForm}
               >
                 <Calendar className="w-5 h-5 mr-2" />
