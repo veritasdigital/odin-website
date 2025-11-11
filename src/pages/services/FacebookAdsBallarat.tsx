@@ -216,30 +216,32 @@ const FacebookAdsBallarat = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-          {/* Dark overlay for contrast */}
-          <div className="absolute inset-0 bg-black/70 z-[1]"></div>
-          
+        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-primary py-20 lg:py-32">
           {/* Animated background blobs */}
-          <div className="absolute inset-0 overflow-hidden z-0">
-            <div className="absolute top-0 -left-4 w-72 h-72 bg-accent/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-            <div className="absolute top-0 -right-4 w-72 h-72 bg-secondary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-20 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-4000"></div>
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
           </div>
 
           {/* Floating circles */}
-          <div className="absolute inset-0 overflow-hidden z-0">
-            <div className="absolute top-20 left-10 w-20 h-20 border-2 border-white/20 rounded-full animate-float"></div>
-            <div className="absolute top-40 right-20 w-32 h-32 border-2 border-white/10 rounded-full animate-float animation-delay-2000"></div>
-            <div className="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-white/20 rounded-full animate-float animation-delay-4000"></div>
-            <div className="absolute bottom-40 right-1/3 w-24 h-24 border-2 border-white/10 rounded-full animate-float animation-delay-1000"></div>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
+            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-white/20 rounded-full animate-float animation-delay-2000"></div>
+            <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-float animation-delay-4000"></div>
+            <div className="absolute top-2/3 right-1/4 w-3 h-3 bg-white/30 rounded-full animate-float animation-delay-3000"></div>
+            <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white/25 rounded-full animate-float animation-delay-1000"></div>
           </div>
 
           {/* Geometric shapes */}
-          <div className="absolute inset-0 overflow-hidden z-0">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-16 h-16 border border-white/10 rotate-45 animate-float"></div>
             <div className="absolute bottom-1/4 right-1/4 w-12 h-12 border border-white/10 rotate-12 animate-float animation-delay-3000"></div>
+            <div className="absolute top-1/2 right-1/2 w-20 h-20 border border-white/5 rotate-[30deg] animate-float animation-delay-1500"></div>
           </div>
+
+          {/* Dark overlay for proper text contrast */}
+          <div className="absolute inset-0 bg-black/70 z-[1]"></div>
 
           <div className="container mx-auto px-4 py-20 relative z-[2]">
             <div className="max-w-4xl mx-auto text-center">
@@ -839,21 +841,23 @@ const FacebookAdsBallarat = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
-          {/* Dark overlay for contrast */}
-          <div className="absolute inset-0 bg-black/70 z-[1]"></div>
-          
+        <section className="relative py-20 overflow-hidden bg-gradient-primary">
           {/* Animated background blobs */}
-          <div className="absolute inset-0 overflow-hidden z-0">
-            <div className="absolute top-0 -left-4 w-72 h-72 bg-accent/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-            <div className="absolute bottom-0 -right-4 w-72 h-72 bg-secondary/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
           </div>
 
           {/* Floating circles */}
-          <div className="absolute inset-0 overflow-hidden z-0">
-            <div className="absolute top-10 left-10 w-16 h-16 border-2 border-white/20 rounded-full animate-float"></div>
-            <div className="absolute bottom-10 right-10 w-20 h-20 border-2 border-white/10 rounded-full animate-float animation-delay-2000"></div>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
+            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-white/20 rounded-full animate-float animation-delay-2000"></div>
+            <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-white/40 rounded-full animate-float animation-delay-4000"></div>
           </div>
+
+          {/* Dark overlay for proper text contrast */}
+          <div className="absolute inset-0 bg-black/70"></div>
 
           <div className="container mx-auto px-4 relative z-[2]">
             <div className="max-w-3xl mx-auto text-center">
