@@ -397,28 +397,40 @@ const LauncestonSEO = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 gradient-primary overflow-hidden">
-        {/* Floating Background Elements - from homepage */}
-        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/3 right-1/3 w-20 h-20 border border-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }} />
+      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        {/* Animated Background Blobs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+        
+        {/* Floating Particles */}
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
-              SEO Company Launceston
-            </h1>
-            <p className="text-4xl md:text-5xl font-bold text-white/95 mb-8 leading-tight">
-              High-Converting SEO Campaigns That Generate Real Revenue for Northern Tasmania Businesses
-            </p>
-            <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-3xl mx-auto">
-              Stop wasting money on generic mainland agencies. We build ROI-focused SEO campaigns tailored to Launceston's unique market—from local service businesses to tourism operators competing for statewide keywords.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-20">
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="space-y-8 animate-fade-in">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                <span className="block mb-3">SEO Company</span>
+                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2">
+                  Launceston
+                </span>
+              </h1>
+              
+              <h2 className="text-2xl md:text-3xl lg:text-4xl text-charcoal/90 font-bold leading-tight max-w-4xl mx-auto" style={{ animationDelay: "0.2s" }}>
+                High-Converting SEO Campaigns That Generate Real Revenue for Northern Tasmania Businesses
+              </h2>
+              
+              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto font-light" style={{ animationDelay: "0.4s" }}>
+                Stop wasting money on generic mainland agencies. We build ROI-focused SEO campaigns tailored to Launceston's unique market—from local service businesses to tourism operators competing for statewide keywords.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 animate-fade-in" style={{ animationDelay: "0.6s" }}>
               <Button 
                 size="xl" 
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12 px-8"
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-14 px-12 text-lg shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
                 onClick={openForm}
               >
                 Get Your FREE Launceston SEO Quote →
@@ -426,7 +438,7 @@ const LauncestonSEO = () => {
               <Button 
                 size="xl" 
                 variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 h-12 px-8"
+                className="border-charcoal/20 text-charcoal hover:bg-charcoal/5 h-14 px-10 text-lg"
                 asChild
               >
                 <a href="tel:1300123456">
@@ -455,13 +467,17 @@ const LauncestonSEO = () => {
       </section>
 
       {/* Problems Section */}
-      <section className="py-20 md:py-24 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+      <section className="relative py-20 md:py-24 bg-gradient-to-br from-muted/20 via-background to-muted/10 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-48 h-48 bg-accent/5 rounded-full blur-3xl" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6 leading-tight">
               Why Most Launceston Businesses Struggle with SEO
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
               Launceston's market presents unique challenges that generic SEO agencies simply don't understand.
             </p>
           </div>
@@ -479,13 +495,13 @@ const LauncestonSEO = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="relative py-20 md:py-24 bg-gradient-to-b from-background to-muted/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6 leading-tight">
               Our Launceston SEO Services
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
               Tailored strategies designed for Northern Tasmania's unique market dynamics.
             </p>
           </div>
@@ -509,13 +525,17 @@ const LauncestonSEO = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 md:py-24 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+      <section className="relative py-20 md:py-24 bg-gradient-to-br from-muted/20 via-background to-muted/10 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6 leading-tight">
               Why Choose Odin Digital for Launceston SEO?
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
               We're not another generic agency. We're Launceston SEO specialists who understand your market.
             </p>
           </div>
@@ -543,13 +563,13 @@ const LauncestonSEO = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="relative py-20 md:py-24 bg-gradient-to-b from-background to-muted/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+          <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6 leading-tight">
               Our Proven Launceston SEO Process
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
               A transparent, results-focused approach to dominating Launceston search results.
             </p>
           </div>
@@ -585,13 +605,13 @@ const LauncestonSEO = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 md:py-24 bg-muted/30">
+      <section className="relative py-20 md:py-24 bg-gradient-to-br from-muted/20 via-background to-muted/10">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6 leading-tight">
               Frequently Asked Questions
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
               Everything you need to know about SEO for Launceston businesses.
             </p>
           </div>
@@ -623,10 +643,15 @@ const LauncestonSEO = () => {
 
       {/* Final CTA Section */}
       <section className="relative py-24 gradient-primary overflow-hidden">
-        {/* Background Elements */}
+        {/* Animated Background Blobs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+        
+        {/* Floating Elements */}
         <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
         <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
         <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/3 right-1/4 w-20 h-20 border border-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }} />
         
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
