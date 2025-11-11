@@ -216,40 +216,40 @@ const FacebookAdsBallarat = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-primary py-20 lg:py-32">
+        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-background py-20 lg:py-32">
+          {/* Light overlay for subtle effect */}
+          <div className="absolute inset-0 bg-white/95 z-[1]" />
+          
           {/* Animated background blobs */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute inset-0 overflow-hidden z-0">
+            <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
+            <div className="absolute top-1/2 right-1/3 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse delay-1000" />
           </div>
-
+          
           {/* Floating circles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
-            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-white/20 rounded-full animate-float animation-delay-2000"></div>
-            <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-float animation-delay-4000"></div>
-            <div className="absolute top-2/3 right-1/4 w-3 h-3 bg-white/30 rounded-full animate-float animation-delay-3000"></div>
-            <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-white/25 rounded-full animate-float animation-delay-1000"></div>
+          <div className="absolute inset-0 overflow-hidden z-0">
+            <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-primary/20 rounded-full animate-pulse" />
+            <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-primary/30 rounded-full animate-pulse delay-300" />
+            <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse delay-500" />
+            <div className="absolute top-1/2 right-1/4 w-5 h-5 bg-primary/25 rounded-full animate-pulse delay-700" />
+            <div className="absolute top-2/3 left-1/2 w-3 h-3 bg-accent/30 rounded-full animate-pulse delay-900" />
           </div>
-
+          
           {/* Geometric shapes */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-1/4 left-1/4 w-16 h-16 border border-white/10 rotate-45 animate-float"></div>
-            <div className="absolute bottom-1/4 right-1/4 w-12 h-12 border border-white/10 rotate-12 animate-float animation-delay-3000"></div>
-            <div className="absolute top-1/2 right-1/2 w-20 h-20 border border-white/5 rotate-[30deg] animate-float animation-delay-1500"></div>
+          <div className="absolute inset-0 overflow-hidden z-0">
+            <div className="absolute top-10 right-20 w-20 h-20 border border-primary/10 rotate-45 animate-pulse" />
+            <div className="absolute bottom-20 left-20 w-16 h-16 border border-primary/15 rotate-12 animate-pulse delay-500" />
+            <div className="absolute top-1/3 left-1/4 w-12 h-12 border border-accent/10 -rotate-6 animate-pulse delay-1000" />
           </div>
-
-          {/* Dark overlay for proper text contrast */}
-          <div className="absolute inset-0 bg-black/70 z-[1]"></div>
 
           <div className="container mx-auto px-4 py-20 relative z-[2]">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
                 Facebook Ads Ballarat: Get More Customers with Profitable Campaigns
               </h1>
               
-              <p className="hero-sub-headline text-xl md:text-2xl text-white/95 mb-8 leading-relaxed max-w-3xl mx-auto">
+              <p className="hero-sub-headline text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
                 Stop wasting money on Facebook Ads that don't convert. We help Ballarat businesses run profitable campaigns that deliver real customers and real sales. 140+ businesses helped. 310% revenue increase. 285% ROAS improvement.
               </p>
 
@@ -257,7 +257,7 @@ const FacebookAdsBallarat = () => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-white text-primary hover:bg-white/90 shadow-glow text-lg px-8 py-6 whitespace-normal break-words min-h-[48px]"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-glow text-lg px-8 py-6 whitespace-normal break-words min-h-[48px]"
                 >
                   <Link to="/contact">Schedule Free Facebook Ads Consultation</Link>
                 </Button>
