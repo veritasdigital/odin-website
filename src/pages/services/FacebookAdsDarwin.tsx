@@ -315,26 +315,26 @@ const FacebookAdsDarwin = () => {
             <div className="absolute bottom-[40%] left-[40%] w-1 h-1 bg-accent rounded-full animate-float opacity-60" style={{ animationDelay: '3.5s' }} />
           </div>
 
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-8">
-              <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight mt-12">
+          <div className="container mx-auto max-w-6xl relative z-10 px-4">
+            <div className="text-center space-y-6 md:space-y-8">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-foreground leading-tight mt-12">
                 Facebook Ads Darwin
               </h1>
-              <p className="text-2xl md:text-3xl font-semibold text-foreground/90 max-w-4xl mx-auto leading-relaxed hero-sub-headline">
+              <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-foreground/90 max-w-4xl mx-auto leading-relaxed hero-sub-headline">
                 Stop Wasting Ad Spend on Tourists. Attract High-Value, Local Territorian Customers with Darwin's Most Precise Meta Ads Strategy.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Darwin is a unique market. Your advertising needs to understand the seasonal shifts, the local culture, and the high cost of living. We build Meta Ads campaigns that cut through the noise, target genuine Territorian customers, and deliver a predictable flow of sales and bookings.
               </p>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 At Odin Digital, we know that generic Facebook Ads strategies fail in the Northern Territory. They waste budget on tourists, ignore the seasonal economy, and quickly suffer from creative fatigue in a smaller market. We are Darwin specialists. Our approach is built on hyper-local targeting, dynamic seasonal ad management, and locally-relevant creative that resonates with the Territorian mindset. We turn your Meta Ads budget into a reliable source of high-quality, local customers.
               </p>
               <Button 
                 onClick={openForm}
                 size="lg" 
-                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-lg px-8 py-6"
+                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto"
               >
-                Schedule Your FREE Darwin Meta Ads Strategy Session →
+                <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
               </Button>
             </div>
           </div>
@@ -436,9 +436,9 @@ const FacebookAdsDarwin = () => {
               <Button 
                 onClick={openForm}
                 size="lg" 
-                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105"
+                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 md:px-8 w-full md:w-auto"
               >
-                Schedule Your FREE Darwin Meta Ads Strategy Session →
+                <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
               </Button>
             </div>
           </div>
@@ -534,9 +534,9 @@ const FacebookAdsDarwin = () => {
             <Button 
               onClick={openForm}
               size="lg" 
-              className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-lg px-8 py-6"
+              className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto"
             >
-              Schedule Your FREE Darwin Meta Ads Strategy Session →
+              <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
             </Button>
           </div>
         </section>
@@ -566,11 +566,11 @@ const FacebookAdsDarwin = () => {
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden z-40">
           <Button 
             onClick={openForm}
-            className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300"
+            className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 text-sm"
             size="lg"
           >
-            <Phone className="w-5 h-5 mr-2" />
-            Book Free Strategy Session
+            <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
+            <span className="truncate">Book Free Strategy Session</span>
           </Button>
         </div>
       </main>
