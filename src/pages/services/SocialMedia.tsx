@@ -81,8 +81,20 @@ export default function SocialMedia() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative pt-32 pb-20 gradient-hero overflow-hidden">
+        {/* Dark overlay for contrast */}
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
+        
+        {/* Animated background blobs from homepage */}
+        <div className="absolute top-10 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        
+        {/* Floating circles from homepage */}
+        <div className="absolute top-20 right-1/4 w-32 h-32 border-2 border-white/10 rounded-full animate-float" />
+        <div className="absolute bottom-32 left-1/3 w-24 h-24 border-2 border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
+        
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">Social Media Marketing</Badge>
             <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
@@ -254,8 +266,15 @@ export default function SocialMedia() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 gradient-hero">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="relative py-24 gradient-hero overflow-hidden">
+        {/* Dark overlay for contrast */}
+        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
+        
+        {/* Background elements */}
+        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
+        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+        
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
             Ready to Amplify Your Social Presence?
           </h2>
