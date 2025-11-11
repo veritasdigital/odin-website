@@ -139,6 +139,7 @@ import BallaratSEO from "./pages/services/BallaratSEO";
 import PPCManagement from "./pages/services/PPCManagement";
 import PPCAgency from "./pages/services/PPCAgency";
 import FacebookAdsBallarat from "./pages/services/FacebookAdsBallarat";
+import WebDesignDarwin from "./pages/services/WebDesignDarwin";
 
 const queryClient = new QueryClient();
 
@@ -248,6 +249,7 @@ const App = () => (
           <Route path="/facebook-ads-darwin" element={<FacebookAdsDarwin />} />
           <Route path="/facebook-ads-launceston" element={<FacebookAdsLaunceston />} />
           <Route path="/facebook-ads-ballarat" element={<FacebookAdsBallarat />} />
+          <Route path="/web-design-darwin" element={<WebDesignDarwin />} />
           <Route path="/tiktok-advertising" element={<TikTokAdvertising />} />
           <Route path="/youtube-advertising" element={<YouTubeAdvertising />} />
           <Route path="/services/email-marketing" element={<EmailMarketing />} />
