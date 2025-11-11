@@ -399,7 +399,7 @@ const FacebookAdsDarwin = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8 hover:shadow-card transition-all duration-300 bg-card">
+                <Card key={index} className="p-8 hover:shadow-card transition-all duration-300 bg-card flex flex-col justify-between">
                   <p className="text-muted-foreground mb-6 italic leading-relaxed">"{testimonial.quote}"</p>
                   <div className="border-t border-border pt-4">
                     <p className="font-semibold text-foreground">{testimonial.author}</p>
