@@ -111,15 +111,33 @@ export default function Services() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+      <section className="pt-32 pb-20 relative overflow-hidden">
+        {/* Gradient Background with Dark Overlay for Contrast */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        
+        {/* Animated Background Blobs */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse delay-1000"></div>
+        
+        {/* Floating Circles */}
+        <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce delay-500"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce delay-700"></div>
+        
+        {/* Geometric Shapes */}
+        <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+        <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
+        
+        <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-black text-white mb-8 animate-fade-in drop-shadow-lg">
             Our Digital Marketing Services
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-white mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in drop-shadow-md">
             Comprehensive digital marketing solutions designed to drive growth, increase revenue, and establish your brand as the market leader.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm} className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto">
+          <Button variant="cta" size="xl" onClick={openForm} className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto animate-fade-in shadow-xl">
             Get Your Free Strategy Session
           </Button>
         </div>
