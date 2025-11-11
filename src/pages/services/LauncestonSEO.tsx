@@ -403,10 +403,16 @@ const LauncestonSEO = () => {
         <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
         <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
         
-        {/* Floating Particles */}
-        <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        {/* Additional Gradient Rings */}
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-gradient-to-br from-secondary/10 to-primary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "4s" }}></div>
+        
+        {/* Floating Particles - Small */}
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-secondary/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-secondary/30 rounded-full animate-float" style={{ animationDelay: "3.5s" }}></div>
+        <div className="absolute bottom-1/4 left-2/3 w-3 h-3 bg-primary/25 rounded-full animate-float" style={{ animationDelay: "4.5s" }}></div>
         
         {/* Enhanced Decorative Floating Elements - Homepage Style */}
         <div className="absolute top-1/4 left-20 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg"></div>
@@ -414,6 +420,14 @@ const LauncestonSEO = () => {
         <div className="absolute top-2/3 left-1/4 w-8 h-8 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '4s' }}></div>
         <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '3s' }}></div>
         <div className="absolute bottom-1/4 left-1/3 w-7 h-7 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '5s' }}></div>
+        <div className="absolute top-16 right-1/3 w-9 h-9 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-20 left-1/2 w-11 h-11 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '3.5s' }}></div>
+        <div className="absolute top-1/2 left-16 w-5 h-5 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '6s' }}></div>
+        
+        {/* Geometric Accent Shapes */}
+        <div className="absolute top-40 right-1/4 w-16 h-16 border-2 border-primary/20 rounded-lg rotate-12 animate-float" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute bottom-32 left-1/4 w-20 h-20 border-2 border-secondary/20 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 right-16 w-12 h-12 border-2 border-primary/15 rounded-lg -rotate-12 animate-float" style={{ animationDelay: '5.5s' }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-24 lg:py-32">
           <div className="max-w-5xl mx-auto text-center">
