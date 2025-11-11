@@ -397,7 +397,7 @@ const LauncestonSEO = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+      <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
         {/* Animated Background Blobs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
@@ -407,38 +407,47 @@ const LauncestonSEO = () => {
         <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
         <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
         <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        
+        {/* Enhanced Decorative Floating Elements - Homepage Style */}
+        <div className="absolute top-1/4 left-20 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg"></div>
+        <div className="absolute bottom-1/3 right-32 w-10 h-10 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 left-1/4 w-8 h-8 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/3 right-1/4 w-6 h-6 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute bottom-1/4 left-1/3 w-7 h-7 bg-white/20 backdrop-blur-sm border border-white/40 rounded-lg animate-float shadow-lg" style={{ animationDelay: '5s' }}></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full pt-32 md:pt-40 pb-20">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full py-24 lg:py-32">
           <div className="max-w-5xl mx-auto text-center">
-            <div className="space-y-8 animate-fade-in">
+            <div className="space-y-8 lg:space-y-10 animate-fade-in">
               <h1 className="text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-3">SEO Company</span>
-                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2">
+                <span className="block mb-3 lg:mb-4 animate-fade-in">SEO Company</span>
+                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   Launceston
                 </span>
               </h1>
               
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-charcoal/90 font-bold leading-tight max-w-4xl mx-auto" style={{ animationDelay: "0.2s" }}>
-                High-Converting SEO Campaigns That Generate Real Revenue for Northern Tasmania Businesses
-              </h2>
-              
-              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto font-light" style={{ animationDelay: "0.4s" }}>
-                Stop wasting money on generic mainland agencies. We build ROI-focused SEO campaigns tailored to Launceston's unique market—from local service businesses to tourism operators competing for statewide keywords.
-              </p>
+              <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <h2 className="text-xl md:text-2xl lg:text-3xl text-charcoal/90 font-bold leading-tight max-w-4xl mx-auto">
+                  High-Converting SEO Campaigns That Generate Real Revenue for Northern Tasmania Businesses
+                </h2>
+                
+                <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto font-light">
+                  Stop wasting money on generic mainland agencies. We build ROI-focused SEO campaigns tailored to Launceston's unique market—from local service businesses to tourism operators competing for statewide keywords.
+                </p>
+              </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 pt-2 animate-fade-in" style={{ animationDelay: "0.6s" }}>
               <Button 
-                size="xl" 
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-14 px-12 text-lg shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
+                size="lg" 
+                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-lg px-12 py-6 shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
                 onClick={openForm}
               >
                 Get Your FREE Launceston SEO Quote →
               </Button>
               <Button 
-                size="xl" 
+                size="lg" 
                 variant="outline"
-                className="border-charcoal/20 text-charcoal hover:bg-charcoal/5 h-14 px-10 text-lg"
+                className="border-charcoal/20 text-charcoal hover:bg-charcoal/5 text-lg px-10 py-6"
                 asChild
               >
                 <a href="tel:1300123456">
