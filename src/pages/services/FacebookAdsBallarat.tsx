@@ -250,7 +250,7 @@ const FacebookAdsBallarat = () => {
               </h1>
               
               <p className="hero-sub-headline text-xl md:text-2xl text-white/95 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Your Ballarat business deserves to reach more customers. Facebook Ads can help you get in front of the right people at the right time. But if you're struggling with poor return on ad spend, low conversion rates, or wasted ad budget, you're not alone. Most Ballarat businesses struggle with Facebook Ads. They don't understand how to target the right audience. They don't know how to create compelling ads. And they don't have time to manage campaigns and optimise for results. That's where we come in. Odin Digital is the leading Facebook Ads agency in Ballarat. We help Ballarat businesses run profitable Facebook Ads campaigns that deliver real customers and real sales. We've helped over 140 Ballarat businesses improve their Facebook Ads performance and increase their revenue. We specialise in audience targeting, creative development, campaign optimisation, and proven strategies that work for Ballarat businesses. Whether you're a retail business, restaurant, e-commerce store, or professional services firm, we can help you get more customers with profitable Facebook Ads campaigns.
+                Stop wasting money on Facebook Ads that don't convert. We help Ballarat businesses run profitable campaigns that deliver real customers and real sales. 140+ businesses helped. 310% revenue increase. 285% ROAS improvement.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
