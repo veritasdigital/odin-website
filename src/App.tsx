@@ -133,6 +133,7 @@ import DataPrivacy2026 from "./pages/blog/DataPrivacy2026";
 import OurClients from "./pages/OurClients";
 import DarwinSEO from "./pages/services/DarwinSEO";
 import LauncestonSEO from "./pages/services/LauncestonSEO";
+import BallaratSEO from "./pages/services/BallaratSEO";
 import PPCManagement from "./pages/services/PPCManagement";
 import PPCAgency from "./pages/services/PPCAgency";
 
@@ -190,7 +191,8 @@ const App = () => (
             <Route path="/seo-hobart" element={<HobartSEO />} />
             <Route path="/seo-melbourne" element={<MelbourneSEO />} />
             <Route path="/seo-darwin" element={<DarwinSEO />} />
-            <Route path="/seo-launceston" element={<LauncestonSEO />} />
+          <Route path="/seo-launceston" element={<LauncestonSEO />} />
+          <Route path="/seo-ballarat" element={<BallaratSEO />} />
             <Route path="/ppc-management" element={<PPCManagement />} />
             <Route path="/ppc-agency" element={<PPCAgency />} />
             <Route path="/industries/dermatologists" element={<Dermatologists />} />
