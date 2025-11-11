@@ -408,13 +408,31 @@ export default function GoogleAdsHobart() {
         </div>
 
         {/* Section 1: Hero Section */}
-        <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-          <div className="container mx-auto px-4 md:px-6">
+        <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
+          {/* Gradient Background with Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          
+          {/* Geometric Shapes */}
+          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
+
+          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
+              <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight pb-2 drop-shadow-lg animate-fade-in">
                 Hobart Google Ads Agency: Stop Wasting Your Budget. Start Dominating Tasmania's Market.
               </h1>
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 md:mb-6 text-foreground">
+              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 md:mb-6 text-white/90 drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 The PPC Agency Hobart Businesses Trust for Maximum ROI in a Tight-Knit Market.
               </h2>
               <p className="text-base md:text-lg font-medium text-foreground/80 mb-4">

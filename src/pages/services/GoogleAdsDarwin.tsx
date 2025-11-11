@@ -287,20 +287,37 @@ const GoogleAdsDarwin = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative pt-28 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-0 overflow-hidden decorative-circles">
-          <div className="absolute inset-0 gradient-hero opacity-5"></div>
+        <section className="relative pt-28 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-0 overflow-hidden">
+          {/* Gradient Background with Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          
+          {/* Geometric Shapes */}
+          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg animate-fade-in">
                 Google Ads Agency Darwin
               </h1>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary leading-tight pb-2">
+              <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-white leading-tight pb-2 drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Stop Wasting Your Budget. Start Dominating Your Market.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground mb-6">
+              <p className="text-lg md:text-xl text-white/95 mb-6 drop-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 The PPC Agency Darwin Businesses Trust for Maximum ROI in a Competitive Market.
               </p>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              <p className="text-lg md:text-xl text-white/90 mb-8 drop-shadow animate-fade-in" style={{ animationDelay: '0.3s' }}>
                 Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
               </p>
               <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">

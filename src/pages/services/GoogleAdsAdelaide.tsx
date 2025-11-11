@@ -259,42 +259,50 @@ const GoogleAdsAdelaide = () => {
         <MarketingFormModal />
 
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden pt-32 pb-20 px-4 bg-white">
-          {/* Subtle Background Pattern */}
-          <div className="absolute inset-0 opacity-[0.03]">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-          </div>
+        <section className="relative isolate overflow-hidden pt-32 pb-20 px-4">
+          {/* Gradient Background with Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
           
-          {/* Decorative floating elements */}
-          <div className="absolute top-20 left-10 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 right-20 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          
+          {/* Geometric Shapes */}
+          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
           
           <div className="relative z-10 container mx-auto max-w-4xl text-center">
             <div className="space-y-6 animate-fade-in">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-charcoal leading-tight tracking-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight drop-shadow-lg">
                 <span className="block mb-2">Adelaide Google Ads Agency:</span>
-                <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                <span className="block">
                   Stop Wasting Your Budget.
                 </span>
                 <span className="block mt-2">Start Driving Sales.</span>
               </h1>
               
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-charcoal/90 leading-tight max-w-3xl mx-auto">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-white/90 leading-tight max-w-3xl mx-auto drop-shadow-md" style={{ animationDelay: '0.1s' }}>
                 The PPC Agency Adelaide Businesses Trust for Maximum ROI and Zero Wasted Spend.
               </h2>
               
-              <p className="text-base md:text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto font-light">
+              <p className="text-base md:text-xl text-white/95 leading-relaxed max-w-3xl mx-auto drop-shadow" style={{ animationDelay: '0.2s' }}>
                 Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
               </p>
               
-              <p className="text-sm md:text-lg text-charcoal/60 leading-relaxed max-w-3xl mx-auto font-light">
+              <p className="text-sm md:text-lg text-white/90 leading-relaxed max-w-3xl mx-auto drop-shadow" style={{ animationDelay: '0.3s' }}>
                 If you're an Adelaide business owner throwing thousands into Google Ads each month with little to show for it, you're not alone. Most PPC agencies treat your budget like a bottomless pit, padding their retainers while your ROAS remains abysmal. We're different. We're a precision-focused adwords management adelaide team that treats your ad spend like our own—because your success is our reputation.
               </p>
               
-              <div className="pt-6">
+              <div className="pt-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 <Link to="/contact">
-                  <Button size="lg" variant="hero" className="w-full md:w-auto justify-center text-sm md:text-lg px-6 md:px-12 py-6 shadow-glow whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+                  <Button size="lg" variant="cta" className="w-full md:w-auto justify-center text-sm md:text-lg px-6 md:px-12 py-6 shadow-xl whitespace-normal h-auto min-h-[3rem] md:min-h-0">
                     <span className="hidden md:inline">Get Your FREE Adelaide PPC Strategy Session</span>
                     <span className="md:hidden">Get Your FREE PPC Strategy Session</span>
                     <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
@@ -302,15 +310,15 @@ const GoogleAdsAdelaide = () => {
                 </Link>
               </div>
               
-              <div className="mt-12 pt-8 border-t border-charcoal/10">
+              <div className="mt-12 pt-8 border-t border-white/20 animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 <div className="flex flex-wrap justify-center gap-8 text-center">
                   <div className="space-y-2">
-                    <div className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">$574M+</div>
-                    <div className="text-sm text-charcoal/60 font-medium">Client Revenue</div>
+                    <div className="text-4xl font-bold text-white drop-shadow-lg">$574M+</div>
+                    <div className="text-sm text-white/80 font-medium drop-shadow">Client Revenue</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">95%</div>
-                    <div className="text-sm text-charcoal/60 font-medium">Client Retention</div>
+                    <div className="text-4xl font-bold text-white drop-shadow-lg">95%</div>
+                    <div className="text-sm text-white/80 font-medium drop-shadow">Client Retention</div>
                   </div>
                 </div>
               </div>

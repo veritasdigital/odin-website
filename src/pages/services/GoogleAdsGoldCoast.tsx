@@ -332,16 +332,34 @@ const GoogleAdsGoldCoast = () => {
         </div>
         
         {/* Hero Section */}
-        <section className="pt-28 pb-20 md:py-32 px-4">
-          <div className="container mx-auto max-w-6xl">
+        <section className="pt-28 pb-20 md:py-32 px-4 relative overflow-hidden">
+          {/* Gradient Background with Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          
+          {/* Geometric Shapes */}
+          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
+
+          <div className="container mx-auto max-w-6xl relative z-10">
             <div className="text-center space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg animate-fade-in">
                 Google Ads Agency Gold Coast
               </h1>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-primary leading-snug">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white leading-snug drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Stop Settling for Tire-Kickers. Get High-Value Leads with a 540% Average ROI.
               </p>
-              <div className="max-w-4xl mx-auto space-y-6 text-lg text-muted-foreground">
+              <div className="max-w-4xl mx-auto space-y-6 text-lg text-white/95 drop-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
                   The Gold Coast is one of Australia's most competitive advertising markets. Every business is fighting for the same high-value keywords, and the cost per click is skyrocketing. If you're working with a generic PPC agency that treats your Gold Coast business like just another account, you're bleeding budget on low-quality leads and irrelevant clicks.
                 </p>
@@ -352,7 +370,9 @@ const GoogleAdsGoldCoast = () => {
               <Button 
                 size="xl" 
                 onClick={openForm}
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 h-auto min-h-[3.5rem] whitespace-normal leading-snug"
+                variant="cta"
+                className="shadow-xl hover:shadow-2xl transition-all duration-300 text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 h-auto min-h-[3.5rem] whitespace-normal leading-snug animate-fade-in"
+                style={{ animationDelay: '0.3s' }}
               >
                 Get Your FREE Gold Coast PPC Strategy Audit <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

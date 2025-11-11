@@ -273,22 +273,40 @@ const GoogleAdsCanberra = () => {
         <Header />
         
         {/* Section 1: Hero Section */}
-        <section className="py-20 md:py-32 px-4">
-          <div className="container mx-auto max-w-5xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+        <section className="relative py-20 md:py-32 px-4 overflow-hidden">
+          {/* Gradient Background with Dark Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
+          
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          
+          {/* Floating Circles */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          
+          {/* Geometric Shapes */}
+          <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
+          <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
+
+          <div className="container mx-auto max-w-5xl text-center relative z-10">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg animate-fade-in">
               Canberra Google Ads Agency: Stop Wasting Your Budget. Start Driving ROI.
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-muted-foreground">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-white/90 drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
               The PPC Agency Canberra Businesses Trust for Precision and Profit.
             </h2>
-            <p className="text-lg mb-6 text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg mb-6 text-white/95 max-w-3xl mx-auto drop-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Partner with Odin Digital and Turn Your Google Ads Spend into Verified Revenue.
             </p>
-            <p className="text-lg mb-8 text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg mb-8 text-white/90 max-w-3xl mx-auto drop-shadow animate-fade-in" style={{ animationDelay: '0.3s' }}>
               Canberra's unique business landscape—dominated by government, professional services, and high-value B2B—demands precision in your PPC strategy. Generic google ads agency canberra providers waste your budget. We're the ppc agency canberra that delivers hyper-targeted campaigns, maximum ROI, and complete transparency. No lock-in contracts. Just results.
             </p>
             <Link to="/contact">
-              <Button size="xl" className="text-base md:text-lg">
+              <Button size="xl" className="text-base md:text-lg animate-fade-in shadow-xl" style={{ animationDelay: '0.4s' }}>
                 Get Your FREE PPC Strategy Session <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
