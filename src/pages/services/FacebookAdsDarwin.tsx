@@ -332,9 +332,9 @@ const FacebookAdsDarwin = () => {
               <Button 
                 onClick={openForm}
                 size="lg" 
-                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto"
+                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto whitespace-normal break-words"
               >
-                <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
+                Schedule Your FREE Darwin Meta Ads Strategy Session →
               </Button>
             </div>
           </div>
@@ -436,9 +436,9 @@ const FacebookAdsDarwin = () => {
               <Button 
                 onClick={openForm}
                 size="lg" 
-                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 md:px-8 w-full md:w-auto"
+                className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 md:px-8 w-full md:w-auto whitespace-normal break-words"
               >
-                <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
+                Schedule Your FREE Darwin Meta Ads Strategy Session →
               </Button>
             </div>
           </div>
@@ -534,9 +534,9 @@ const FacebookAdsDarwin = () => {
             <Button 
               onClick={openForm}
               size="lg" 
-              className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto"
+              className="bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 transform hover:scale-105 text-base md:text-lg px-6 py-6 md:px-8 w-full md:w-auto whitespace-normal break-words"
             >
-              <span className="text-center">Schedule Your FREE Darwin Meta Ads Strategy Session →</span>
+              Schedule Your FREE Darwin Meta Ads Strategy Session →
             </Button>
           </div>
         </section>
@@ -566,11 +566,11 @@ const FacebookAdsDarwin = () => {
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t border-border md:hidden z-40">
           <Button 
             onClick={openForm}
-            className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 text-sm"
+            className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 text-sm whitespace-normal break-words"
             size="lg"
           >
             <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-            <span className="truncate">Book Free Strategy Session</span>
+            <span className="line-clamp-2">Book Free Strategy Session</span>
           </Button>
         </div>
       </main>
