@@ -483,14 +483,14 @@ const OnlineMarketingCompanyGoldCoast = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {testimonials.map((testimonial, index) => (
-                <Card key={index} className="p-8">
+                <Card key={index} className="p-8 flex flex-col">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Award key={i} className="w-5 h-5 text-primary fill-primary" />
                     ))}
                   </div>
-                  <p className="text-lg mb-4 italic">"{testimonial.quote}"</p>
-                  <div>
+                  <p className="text-lg mb-4 italic flex-grow">"{testimonial.quote}"</p>
+                  <div className="mt-auto">
                     <div className="font-semibold">{testimonial.name}</div>
                     <div className="text-sm text-muted-foreground">{testimonial.company}</div>
                   </div>
