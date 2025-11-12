@@ -377,9 +377,9 @@ const OnlineMarketingCompanyNewcastle = () => {
               }
             ].map((testimonial, index) => (
               <Card key={index} className="p-8 bg-card/50 backdrop-blur border-border/50 hover:shadow-lg transition-all duration-300 animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
-                <CardContent className="p-0">
-                  <p className="text-muted-foreground italic mb-6 leading-relaxed">"{testimonial.quote}"</p>
-                  <div className="border-t border-border pt-4">
+                <CardContent className="p-0 flex flex-col h-full">
+                  <p className="text-muted-foreground italic mb-6 leading-relaxed flex-grow">"{testimonial.quote}"</p>
+                  <div className="border-t border-border pt-4 mt-auto">
                     <p className="font-semibold text-foreground">{testimonial.author}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.company}</p>
                   </div>
