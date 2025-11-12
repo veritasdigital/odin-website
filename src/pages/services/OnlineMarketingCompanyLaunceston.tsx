@@ -353,16 +353,6 @@ const OnlineMarketingCompanyLaunceston = () => {
 
       <Header />
 
-      {/* Section 1: Hero */}
-      <ServiceHero
-        h1="Online Marketing Company Launceston"
-        subheadline={
-          <p className="hero-sub-headline">
-            Stop Being Limited by the Bass Strait. We Are the Mainland-Caliber Online Marketing Company That Builds Integrated Digital Systems to Overcome the "Tassie Tax" and Drive Predictable, High-Margin Revenue from Across Australia.
-          </p>
-        }
-      />
-
       {/* Breadcrumb Navigation */}
       <section className="pt-8 pb-4 bg-background">
         <div className="container mx-auto px-6">
@@ -375,6 +365,16 @@ const OnlineMarketingCompanyLaunceston = () => {
           </nav>
         </div>
       </section>
+
+      {/* Section 1: Hero */}
+      <ServiceHero
+        h1="Online Marketing Company Launceston"
+        subheadline={
+          <p className="hero-sub-headline">
+            Stop Being Limited by the Bass Strait. We Are the Mainland-Caliber Online Marketing Company That Builds Integrated Digital Systems to Overcome the "Tassie Tax" and Drive Predictable, High-Margin Revenue from Across Australia.
+          </p>
+        }
+      />
 
       {/* Introduction */}
       <section className="pt-8 pb-16 relative overflow-hidden">
