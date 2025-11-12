@@ -325,15 +325,17 @@ const OnlineMarketingCompanyGoldCoast = () => {
         <SideTab />
 
         {/* Breadcrumb Navigation */}
-        <div className="container mx-auto px-6 py-4">
-          <nav className="flex text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <span className="mx-2">&gt;</span>
-            <Link to="/gold-coast" className="hover:text-primary transition-colors">Gold Coast</Link>
-            <span className="mx-2">&gt;</span>
-            <span className="text-foreground">Online Marketing Company Gold Coast</span>
-          </nav>
-        </div>
+        <section className="pt-8 pb-4 bg-background">
+          <div className="container mx-auto px-6">
+            <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              <span>/</span>
+              <Link to="/gold-coast" className="hover:text-primary transition-colors">Gold Coast</Link>
+              <span>/</span>
+              <span className="text-foreground">Online Marketing Company Gold Coast</span>
+            </nav>
+          </div>
+        </section>
 
         {/* Section 1: Hero Section */}
         <ServiceHero h1="Online Marketing Company Gold Coast" subheadline={<>

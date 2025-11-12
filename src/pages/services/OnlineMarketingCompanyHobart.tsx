@@ -269,6 +269,19 @@ const OnlineMarketingCompanyHobart = () => {
         <Header />
         <SideTab />
 
+        {/* Breadcrumb Navigation */}
+        <section className="pt-8 pb-4 bg-background">
+          <div className="container mx-auto px-6">
+            <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+              <a href="/" className="hover:text-primary transition-colors">Home</a>
+              <span>/</span>
+              <a href="/hobart" className="hover:text-primary transition-colors">Hobart</a>
+              <span>/</span>
+              <span className="text-foreground">Online Marketing Company Hobart</span>
+            </nav>
+          </div>
+        </section>
+
         {/* Hero Section */}
         <ServiceHero
           h1="Online Marketing Company Hobart"

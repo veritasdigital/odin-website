@@ -1,9 +1,11 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { ServiceHero } from "@/components/ServiceHero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { CheckCircle2, TrendingUp, Target, Users, BarChart3, Mail, Search, MessageSquare, Layout, DollarSign, Shield, Award } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
@@ -382,6 +384,19 @@ const OnlineMarketingCompanyCanberra = () => {
       </Helmet>
 
       <Header />
+
+      {/* Breadcrumb Navigation */}
+      <section className="pt-8 pb-4 bg-background">
+        <div className="container mx-auto px-6">
+          <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
+            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/canberra" className="hover:text-primary transition-colors">Canberra</Link>
+            <span>/</span>
+            <span className="text-foreground">Online Marketing Canberra</span>
+          </nav>
+        </div>
+      </section>
 
       <div className="min-h-screen">
         {/* Hero Section */}
