@@ -116,6 +116,7 @@ import OnlineMarketingCompanyHobart from "./pages/services/OnlineMarketingCompan
 import OnlineMarketingCompanyGoldCoast from "./pages/services/OnlineMarketingCompanyGoldCoast";
 import OnlineMarketingCompanyCanberra from "./pages/services/OnlineMarketingCompanyCanberra";
 import OnlineMarketingCompanyDarwin from "./pages/services/OnlineMarketingCompanyDarwin";
+import OnlineMarketingCompanyNewcastle from "./pages/services/OnlineMarketingCompanyNewcastle";
 import AISEOFutureProof from "./pages/blog/AISEOFutureProof";
 import SEOChecklist2025 from "./pages/blog/SEOChecklist2025";
 import LocalSEOTradies from "./pages/blog/LocalSEOTradies";
@@ -184,6 +185,7 @@ const App = () => (
           <Route path="/online-marketing-company-gold-coast" element={<OnlineMarketingCompanyGoldCoast />} />
           <Route path="/online-marketing-company-canberra" element={<OnlineMarketingCompanyCanberra />} />
           <Route path="/online-marketing-company-darwin" element={<OnlineMarketingCompanyDarwin />} />
+          <Route path="/online-marketing-company-newcastle" element={<OnlineMarketingCompanyNewcastle />} />
             <Route path="/google-ads-darwin" element={<GoogleAdsDarwin />} />
             <Route path="/google-ads-launceston" element={<GoogleAdsLaunceston />} />
             <Route path="/google-ads-ballarat" element={<GoogleAdsBallarat />} />
