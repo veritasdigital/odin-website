@@ -241,7 +241,7 @@ const OnlineMarketingCompanyNewcastle = () => {
       />
 
       {/* Introduction */}
-      <section className="py-16 relative overflow-hidden">
+      <section className="pt-8 pb-16 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-float" />
