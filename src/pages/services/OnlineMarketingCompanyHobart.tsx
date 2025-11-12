@@ -101,6 +101,11 @@ const OnlineMarketingCompanyHobart = () => {
       icon: Target,
       title: "Local Focus, National Expertise",
       description: "We combine local market knowledge with national-level strategy and execution."
+    },
+    {
+      icon: CheckCircle2,
+      title: "Results-Driven Campaigns",
+      description: "Every campaign is built around measurable outcomes—leads, sales, and revenue, not vanity metrics."
     }
   ];
 
