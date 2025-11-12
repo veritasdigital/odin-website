@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
 import { ServiceHero } from "@/components/ServiceHero";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -379,6 +380,8 @@ const OnlineMarketingCompanyCanberra = () => {
           {JSON.stringify(schema)}
         </script>
       </Helmet>
+
+      <Header />
 
       <div className="min-h-screen">
         {/* Hero Section */}
