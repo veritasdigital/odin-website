@@ -354,7 +354,7 @@ const OnlineMarketingCompanyLaunceston = () => {
       <Header />
 
       {/* Breadcrumb Navigation */}
-      <section className="pt-8 pb-4 bg-background">
+      <section className="pt-24 pb-4 bg-background">
         <div className="container mx-auto px-6">
           <nav className="flex items-center space-x-2 text-sm text-muted-foreground">
             <Link to="/" className="hover:text-primary transition-colors">Home</Link>
