@@ -146,6 +146,7 @@ import PPCManagement from "./pages/services/PPCManagement";
 import PPCAgency from "./pages/services/PPCAgency";
 import FacebookAdsBallarat from "./pages/services/FacebookAdsBallarat";
 import WebDesignDarwin from "./pages/services/WebDesignDarwin";
+import InfluencerAgency from "./pages/services/InfluencerAgency";
 
 const queryClient = new QueryClient();
 
@@ -271,6 +272,7 @@ const App = () => (
             <Route path="/web-design-gold-coast" element={<WebDesignGoldCoast />} />
             <Route path="/web-design-canberra" element={<WebDesignCanberra />} />
             <Route path="/web-design-newcastle" element={<WebDesignNewcastle />} />
+            <Route path="/influencer-agency" element={<InfluencerAgency />} />
             <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
