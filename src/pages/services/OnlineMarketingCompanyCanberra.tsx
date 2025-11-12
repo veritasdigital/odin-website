@@ -403,35 +403,47 @@ const OnlineMarketingCompanyCanberra = () => {
         </div>
 
         {/* Social Proof Metrics */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="relative py-16 bg-gradient-to-br from-white via-muted/20 to-white overflow-hidden">
+          {/* Floating decorative elements */}
+          <div className="absolute top-10 right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse" />
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-accent/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "1s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">110+</div>
-                <div className="text-muted-foreground">Businesses Helped</div>
+              <div className="text-center animate-fade-in">
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">110+</div>
+                <div className="text-charcoal/70">Businesses Helped</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">240%</div>
-                <div className="text-muted-foreground">Lead Increase</div>
+              <div className="text-center animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">240%</div>
+                <div className="text-charcoal/70">Lead Increase</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">185%</div>
-                <div className="text-muted-foreground">Revenue Growth</div>
+              <div className="text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">185%</div>
+                <div className="text-charcoal/70">Revenue Growth</div>
               </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">4.9/5</div>
-                <div className="text-muted-foreground">Client Rating</div>
+              <div className="text-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
+                <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">4.9/5</div>
+                <div className="text-charcoal/70">Client Rating</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Challenge Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute top-20 left-20 w-64 h-64 bg-muted/15 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+          
+          {/* Floating circles */}
+          <div className="absolute top-32 right-1/4 w-12 h-12 bg-white/30 backdrop-blur-sm border border-white/50 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-32 left-1/4 w-16 h-16 bg-white/30 backdrop-blur-sm border border-white/50 rounded-full animate-float shadow-lg" style={{ animationDelay: "1.5s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">The Canberra Online Marketing Challenge</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">The Canberra Online Marketing Challenge</h2>
+              <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 Online marketing is complex and challenging. Most Canberra businesses face these common obstacles when trying to grow their online presence and attract customers.
               </p>
             </div>
@@ -466,11 +478,19 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-white via-muted/10 to-white overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-10 left-1/4 w-48 h-48 bg-accent/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          
+          {/* Floating geometric shapes */}
+          <div className="absolute top-20 right-10 w-20 h-20 bg-white/25 backdrop-blur-sm border border-white/40 rounded-lg rotate-12 animate-float shadow-lg" />
+          <div className="absolute bottom-32 left-10 w-14 h-14 bg-white/25 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: "2s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Why Canberra Businesses Choose Odin Digital</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">Why Canberra Businesses Choose Odin Digital</h2>
+              <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 We've helped over 110 Canberra businesses achieve measurable results through integrated online marketing. Here's why they choose us over other agencies.
               </p>
             </div>
@@ -512,11 +532,19 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Background decorations */}
+          <div className="absolute top-1/4 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 right-10 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+          
+          {/* Floating particles */}
+          <div className="absolute top-40 left-1/3 w-3 h-3 bg-primary/20 rounded-full animate-float" />
+          <div className="absolute bottom-40 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-float" style={{ animationDelay: "1s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Our Online Marketing Services for Canberra Businesses</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">Our Online Marketing Services for Canberra Businesses</h2>
+              <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 We offer comprehensive online marketing services designed to drive measurable results for your Canberra business.
               </p>
             </div>
@@ -556,11 +584,19 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-white via-muted/15 to-white overflow-hidden">
+          {/* Animated blobs */}
+          <div className="absolute top-20 right-1/4 w-60 h-60 bg-muted/15 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 left-1/4 w-52 h-52 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          
+          {/* Floating circles */}
+          <div className="absolute top-1/3 left-10 w-10 h-10 bg-white/30 backdrop-blur-sm border border-white/50 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-1/3 right-10 w-12 h-12 bg-white/30 backdrop-blur-sm border border-white/50 rounded-lg animate-float shadow-lg" style={{ animationDelay: "2.5s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">How We Help Canberra Businesses</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">How We Help Canberra Businesses</h2>
+              <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 Our proven 7-step process ensures your online marketing delivers measurable results and continuous improvement.
               </p>
             </div>
@@ -588,11 +624,19 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* Industries Section */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Background elements */}
+          <div className="absolute top-10 left-1/3 w-56 h-56 bg-accent/5 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-1/3 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          
+          {/* Floating shapes */}
+          <div className="absolute top-24 right-20 w-16 h-16 bg-white/25 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-24 left-20 w-14 h-14 bg-white/25 backdrop-blur-sm border border-white/40 rounded-lg rotate-45 animate-float shadow-lg" style={{ animationDelay: "1.8s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Online Marketing for Different Canberra Industries</h2>
-              <p className="text-lg text-muted-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">Online Marketing for Different Canberra Industries</h2>
+              <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 We work with businesses across all industries in Canberra. Here's how we help businesses in your sector.
               </p>
             </div>
@@ -618,12 +662,20 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 bg-gradient-to-br from-white via-muted/10 to-white overflow-hidden">
+          {/* Decorative blobs */}
+          <div className="absolute top-1/4 right-10 w-48 h-48 bg-muted/15 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-1/4 left-10 w-52 h-52 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+          
+          {/* Floating elements */}
+          <div className="absolute top-40 left-1/4 w-8 h-8 bg-white/30 backdrop-blur-sm border border-white/50 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-40 right-1/4 w-10 h-10 bg-white/30 backdrop-blur-sm border border-white/50 rounded-lg animate-float shadow-lg" style={{ animationDelay: "1.2s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Frequently Asked Questions</h2>
-                <p className="text-lg text-muted-foreground">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-charcoal animate-fade-in">Frequently Asked Questions</h2>
+                <p className="text-lg text-charcoal/70 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                   Common questions about our online marketing services for Canberra businesses.
                 </p>
               </div>
@@ -645,11 +697,20 @@ const OnlineMarketingCompanyCanberra = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-20 bg-primary/10">
-          <div className="container mx-auto px-4">
+        <section className="relative py-24 bg-gradient-to-br from-primary via-primary to-secondary overflow-hidden">
+          {/* Animated pattern background */}
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-20" />
+          
+          {/* Floating circles for CTA section */}
+          <div className="absolute top-20 left-20 w-24 h-24 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-20 right-20 w-32 h-32 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full animate-float shadow-lg" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg rotate-12 animate-float shadow-lg" style={{ animationDelay: "2.5s" }} />
+          <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full animate-float shadow-lg" style={{ animationDelay: "0.8s" }} />
+          
+          <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Get Measurable Results Today</h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white animate-fade-in">Get Measurable Results Today</h2>
+              <p className="text-lg text-white/90 mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 Stop wasting money on marketing that doesn't deliver results. Partner with Odin Digital and get transparent reporting, local expertise, and measurable ROI. We've helped over 110 Canberra businesses achieve their goals—let us help you achieve yours.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
