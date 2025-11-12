@@ -147,6 +147,7 @@ import PPCAgency from "./pages/services/PPCAgency";
 import FacebookAdsBallarat from "./pages/services/FacebookAdsBallarat";
 import WebDesignDarwin from "./pages/services/WebDesignDarwin";
 import InfluencerAgency from "./pages/services/InfluencerAgency";
+import PediatricDentists from "./pages/industries/PediatricDentists";
 
 const queryClient = new QueryClient();
 
@@ -237,6 +238,7 @@ const App = () => (
             <Route path="/industries/electricians" element={<Electricians />} />
             <Route path="/industries/hvac-contractors" element={<HVACContractors />} />
             <Route path="/industries/roofing-companies" element={<RoofingCompanies />} />
+            <Route path="/industries/pediatric-dentists" element={<PediatricDentists />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
