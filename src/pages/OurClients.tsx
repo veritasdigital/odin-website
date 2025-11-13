@@ -125,31 +125,37 @@ const CTASection = () => {
   const { openForm } = useMarketingForm();
   
   return (
-    <section className="py-24 gradient-hero relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-      <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+    <section className="py-24 bg-gradient-to-br from-white via-muted/30 to-muted/20 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
+      </div>
+      
+      {/* Floating circles */}
+      <div className="absolute top-10 left-10 w-32 h-32 border border-primary/10 rounded-full animate-float" />
+      <div className="absolute bottom-20 right-20 w-24 h-24 border border-accent/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
-        <CheckCircle2 className="w-20 h-20 text-white mx-auto animate-pulse" />
-        <h2 className="text-4xl md:text-5xl font-black text-white">
+        <CheckCircle2 className="w-20 h-20 text-primary mx-auto animate-pulse" />
+        <h2 className="text-4xl md:text-5xl font-black text-charcoal">
           Ready to Become Our Next Success Story?
         </h2>
-        <p className="text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+        <p className="text-xl text-charcoal/70 leading-relaxed max-w-3xl mx-auto">
           We're so confident in our ability to deliver results that we guarantee a minimum 200% increase in qualified leads within 90 days, or we'll continue working at no charge until we achieve your goals.
         </p>
         
-        <Card className="p-8 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white max-w-2xl mx-auto shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-40 h-40 bg-white/5 rounded-full -translate-x-20 -translate-y-20" />
-          <div className="absolute bottom-0 right-0 w-32 h-32 bg-white/5 rounded-full translate-x-16 translate-y-16" />
+        <Card className="p-8 bg-white border-2 border-border max-w-2xl mx-auto shadow-lg relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-40 h-40 bg-primary/5 rounded-full -translate-x-20 -translate-y-20" />
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-accent/5 rounded-full translate-x-16 translate-y-16" />
           
           <div className="relative z-10">
-            <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
-            <p className="text-white/80 mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-charcoal">Schedule Your Strategic Consultation</h3>
+            <p className="text-charcoal/70 mb-6 leading-relaxed">
               Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>
-            <Button variant="cta" size="lg" className="w-full text-lg" onClick={openForm}>
+            <Button variant="cta" size="lg" className="w-full text-lg whitespace-normal break-words" onClick={openForm}>
               GET YOUR GUARANTEED RESULTS
             </Button>
           </div>
