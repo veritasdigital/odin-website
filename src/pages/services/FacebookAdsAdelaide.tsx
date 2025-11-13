@@ -25,7 +25,9 @@ import {
   BarChart,
   Shield,
   Clock,
+  ArrowRight,
 } from "lucide-react";
+import { ServiceHero } from "@/components/ServiceHero";
 
 const FacebookAdsAdelaide = () => {
   const { openForm } = useMarketingForm();

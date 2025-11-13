@@ -29,7 +29,9 @@ import {
   ShoppingCart,
   Clock,
   TrendingDown,
+  ArrowRight,
 } from "lucide-react";
+import { ServiceHero } from "@/components/ServiceHero";
 
 const FacebookAdsSydney = () => {
   const { openForm } = useMarketingForm();
