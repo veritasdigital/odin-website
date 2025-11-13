@@ -147,6 +147,7 @@ import PPCAgency from "./pages/services/PPCAgency";
 import FacebookAdsBallarat from "./pages/services/FacebookAdsBallarat";
 import WebDesignDarwin from "./pages/services/WebDesignDarwin";
 import WebDesignLaunceston from "./pages/services/WebDesignLaunceston";
+import WebDesignBallarat from "./pages/services/WebDesignBallarat";
 import InfluencerAgency from "./pages/services/InfluencerAgency";
 import PediatricDentists from "./pages/industries/PediatricDentists";
 import LandscapingCompanies from "./pages/industries/LandscapingCompanies";
@@ -278,6 +279,7 @@ const App = () => (
             <Route path="/web-design-canberra" element={<WebDesignCanberra />} />
             <Route path="/web-design-newcastle" element={<WebDesignNewcastle />} />
             <Route path="/web-design-launceston" element={<WebDesignLaunceston />} />
+            <Route path="/web-design-ballarat" element={<WebDesignBallarat />} />
             <Route path="/influencer-agency" element={<InfluencerAgency />} />
             <Route path="/services/facebook-ads" element={<FacebookAdvertising />} />
             <Route path="/contact" element={<Contact />} />
