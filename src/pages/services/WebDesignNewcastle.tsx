@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -340,57 +341,83 @@ const WebDesignNewcastle = () => {
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 
-      <div className="min-h-screen bg-background pb-20 md:pb-0">
+      <div className="min-h-screen bg-background">
         <Header />
 
         {/* Hero Section */}
-        <section className="relative pt-16 pb-10 sm:pt-20 sm:pb-12 md:py-16 lg:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
-          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-          <div className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
           
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-foreground leading-tight px-2 mt-8 sm:mt-4">
-                Web Design Newcastle
-              </h1>
+          {/* Floating Circles from Homepage */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-muted/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
-              <p className="hero-sub-headline text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
-                Stop Paying for Websites That Look Good But Don't Convert. Start Turning Visitors into Customers with High-Converting Web Design Built for Newcastle Businesses.
-              </p>
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Newcastle's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Professional Web Design That Drives Growth
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Stop losing customers to slow, outdated websites. We build high-converting, SEO-optimized websites designed specifically for Newcastle businesses.
+                  </p>
 
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                The Web Design Agency Newcastle Businesses Trust for Fast, Mobile-Optimized, SEO-Friendly Websites That Actually Sell.
-              </p>
-
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                Partner with Odin Digital and Watch Your Newcastle Business Dominate Online with a Website That Drives Revenue, Not Just Traffic.
-              </p>
-
-              {/* Trust Signals */}
-              <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 max-w-3xl mx-auto pt-2 sm:pt-4">
-                {metrics.map((metric, index) => {
-                  const Icon = metric.icon;
-                  return (
-                  <div key={index} className="text-center">
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mx-auto text-primary mb-1 sm:mb-2" />
-                      <div className="text-base sm:text-lg md:text-2xl lg:text-3xl font-bold text-foreground">{metric.number}</div>
-                      <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground leading-tight">{metric.label}</div>
-                    </div>
-                  );
-                })}
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    At Odin Digital, we create websites that work as hard as you do. Modern design. Lightning-fast performance. Built for conversions.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow whitespace-normal break-words"
+                    onClick={openForm}
+                  >
+                    Get Your FREE Newcastle Web Design Quote →
+                  </Button>
+                </div>
               </div>
+              
+            </div>
+          </div>
+        </section>
 
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center pt-2 sm:pt-3 md:pt-6 px-2">
-                <Button 
-                  size="xl" 
-                  variant="cta"
-                  onClick={openForm}
-                  className="w-full sm:w-auto text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8"
-                >
-                  Get Your FREE Newcastle Website Audit →
-                </Button>
-              </div>
+        {/* Trust Signals Section */}
+        <section className="py-20 md:py-32 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-4xl mx-auto">
+              {metrics.map((metric, index) => {
+                const Icon = metric.icon;
+                return (
+                  <Card key={index} className="p-6 text-center hover-scale border-border/50 bg-card">
+                    <Icon className="h-10 w-10 mx-auto mb-3 text-primary" />
+                    <div className="text-3xl font-bold text-primary mb-1">{metric.number}</div>
+                    <div className="text-sm text-muted-foreground">{metric.label}</div>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>

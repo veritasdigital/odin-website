@@ -480,40 +480,61 @@ const WebDesignDarwin = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-primary py-20 lg:py-32">
-        {/* Animated background blobs */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-secondary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
         </div>
+        
+        {/* Floating Circles from Homepage */}
+        <div className="absolute top-20 left-10 w-64 h-64 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-muted/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+          <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+            
+            {/* Centered Text Content */}
+            <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+              {/* Main Headline */}
+              <div className="space-y-6">
+                <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                  <span className="block mb-3 lg:mb-4">Darwin's Leading</span>
+                  <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                    Web Design Agency
+                  </span>
+                </h1>
+              </div>
+              
+              {/* Subtitle and Description */}
+              <div className="space-y-6 lg:space-y-8">
+                <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                  Professional Websites That Generate Leads and Sales
+                </h2>
+                
+                <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                  Is your outdated, slow, or overpriced website holding your Darwin business back? It's time for a professional Darwin web design agency that delivers high-converting websites.
+                </p>
 
-        {/* Floating circles */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
-          <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-white/20 rounded-full animate-float animation-delay-2000"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-white/40 rounded-full animate-float animation-delay-4000"></div>
-          <div className="absolute top-2/3 right-1/4 w-3 h-3 bg-white/30 rounded-full animate-float animation-delay-3000"></div>
-        </div>
-
-        {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/70"></div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              Web Design Darwin: Professional Websites That Generate Leads and Sales
-            </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
-              Your Darwin business deserves a professional website that generates leads and sales. A great website is the foundation of your online presence. It's where customers discover you, learn about your business, and decide whether to buy from you. But if you're struggling with an outdated website, poor mobile experience, or a website that doesn't generate leads, you're not alone. Most Darwin businesses struggle with web design. They don't have access to local web designers. They can't afford expensive Sydney or Melbourne agencies. And they end up with websites that look nice but don't generate results. That's where we come in. Odin Digital is the leading web design agency in Darwin. We help Darwin businesses create professional websites that generate leads and sales. We've helped over 95 Darwin businesses transform their online presence and increase their revenue. We specialise in modern design, mobile optimisation, SEO integration, and conversion optimisation. Whether you're a small business, professional services firm, e-commerce store, or any other Darwin business, we can help you create a website that works for you.
-            </p>
-            <Button 
-              size="lg" 
-              onClick={() => navigate('/contact')}
-              className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 h-auto whitespace-normal break-words"
-            >
-              Schedule Free Web Design Consultation <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+                <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                  At Odin Digital, we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment. Modern design. Mobile-optimised. Built for Darwin businesses.
+                </p>
+              </div>
+              
+              {/* Action Button */}
+              <div className="pt-2 flex justify-center">
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="text-lg px-12 py-6 shadow-glow whitespace-normal break-words"
+                  onClick={() => navigate('/contact')}
+                >
+                  Schedule FREE Web Design Consultation →
+                </Button>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>

@@ -266,40 +266,62 @@ const WebDesignGoldCoast = () => {
       <div className="min-h-screen bg-background pb-20 md:pb-0">
         <Header />
 
-        {/* Hero Section with Floating Circles */}
-        <section className="relative pt-20 pb-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
-          {/* Floating decorative circles */}
-          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{
-          animationDelay: '1s'
-        }} />
-          <div className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{
-          animationDelay: '2s'
-        }} />
+        {/* Hero Section */}
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
           
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2 mt-4 sm:mt-0">
-                Web Design Agency Gold Coast
-              </h1>
+          {/* Floating Circles from Homepage */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-muted/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
-              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
-                Stop Losing Customers to DIY Websites. Get a Gold Coast Website That Converts.
-              </p>
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Gold Coast's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Stop Losing Customers to DIY Websites. Get a Gold Coast Website That Converts.
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Is your website an online brochure that looks pretty but doesn't generate leads or sales? It's time for a Gold Coast web design agency that focuses on performance, not just pixels.
+                  </p>
 
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-2">
-                Is your website an online brochure that looks pretty but doesn't generate leads or sales? It's time for a Gold Coast web design agency that focuses on performance, not just pixels.
-              </p>
-
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                At Odin Digital, we build websites that are sales tools. We combine stunning, modern design with a conversion-first strategy, ensuring your new site is fast, SEO-friendly, and optimized to turn Gold Coast visitors into paying customers. Ready to upgrade your online presence?
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-6 px-2">
-                <Button size="xl" variant="cta" onClick={openForm} className="w-full sm:w-auto text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8">
-                  Get Your FREE Web Design & Strategy Session →
-                </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    At Odin Digital, we build websites that are sales tools. We combine stunning, modern design with a conversion-first strategy, ensuring your new site is fast, SEO-friendly, and optimized to turn Gold Coast visitors into paying customers.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow whitespace-normal break-words"
+                    onClick={openForm}
+                  >
+                    Get Your FREE Web Design Session →
+                  </Button>
+                </div>
               </div>
+              
             </div>
           </div>
         </section>

@@ -271,40 +271,62 @@ const WebDesignCanberra = () => {
       <div className="min-h-screen bg-background pb-20 md:pb-0">
         <Header />
 
-        {/* Hero Section with Floating Circles */}
-        <section className="relative pt-20 pb-12 sm:py-16 md:py-24 px-4 sm:px-6 overflow-hidden bg-gradient-to-br from-background via-primary/5 to-background">
-          {/* Floating decorative circles */}
-          <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{
-          animationDelay: '1s'
-        }} />
-          <div className="absolute top-1/2 left-1/3 w-40 sm:w-64 h-40 sm:h-64 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{
-          animationDelay: '2s'
-        }} />
+        {/* Hero Section */}
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
           
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-4 sm:space-y-6 md:space-y-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight px-2 mt-4 sm:mt-0">
-                Professional Web Design & Development for Canberra Businesses
-              </h1>
+          {/* Floating Circles from Homepage */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-muted/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
-              <p className="hero-sub-headline text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary max-w-4xl mx-auto leading-tight px-2">
-                Your website is often the first impression potential customers have of your business. For Canberra businesses, a professional, modern website isn't a luxury—it's a necessity.
-              </p>
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Canberra's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Professional Web Design & Development for Canberra Businesses
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Your website is often the first impression potential customers have of your business. For Canberra businesses, a professional, modern website isn't a luxury—it's a necessity.
+                  </p>
 
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                Yet many Canberra businesses are stuck with outdated websites that don't reflect their brand, don't work on mobile devices, and don't convert visitors into customers. At Odin Digital, we've helped over 150 Canberra businesses get modern, conversion-focused websites that drive real results.
-              </p>
-
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                Whether you need a complete website redesign, a new e-commerce platform, or a WordPress site, we deliver professional web design that works.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-3 sm:pt-4 md:pt-6 px-2">
-                <Button size="xl" variant="cta" onClick={openForm} className="w-full sm:w-auto text-xs sm:text-sm md:text-base lg:text-lg px-4 sm:px-6 md:px-8">
-                  Schedule Free Website Consultation →
-                </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Yet many Canberra businesses are stuck with outdated websites that don't reflect their brand, don't work on mobile devices, and don't convert visitors into customers. At Odin Digital, we've helped over 150 Canberra businesses get modern, conversion-focused websites that drive real results.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow whitespace-normal break-words"
+                    onClick={openForm}
+                  >
+                    Schedule FREE Website Consultation →
+                  </Button>
+                </div>
               </div>
+              
             </div>
           </div>
         </section>

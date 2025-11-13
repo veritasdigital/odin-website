@@ -306,41 +306,61 @@ const WebDesignHobart = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-20 sm:py-32 px-4 sm:px-6 overflow-hidden bg-background">
-          {/* Floating circles background */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" style={{
-            animation: 'float 8s ease-in-out infinite'
-          }} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" style={{
-            animation: 'float 10s ease-in-out infinite'
-          }} />
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
-
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground animate-slide-up">
-                Web Design Hobart
-              </h1>
+          
+          {/* Floating Circles from Homepage */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-muted/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
-              <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight max-w-4xl mx-auto">
-                Stop Paying Hobart Developers for a Digital Brochure. We Build High-Converting Websites That Deliver a Proven 540% ROI.
-              </p>
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Hobart's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    High-Converting Websites with 540% ROI
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Stop paying for pretty pictures and start investing in a sales machine. The performance-focused web design Hobart agency that delivers proven 540% ROI websites.
+                  </p>
 
-              <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-                The Web Design Hobart Agency Australian Businesses Trust for High-Converting Websites and Predictable ROI.
-              </p>
-
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                Partner with Odin Digital and Watch Your Website Drive Real Revenue, Not Just Traffic.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
-                <Button size="xl" variant="cta" onClick={openForm} className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-4 sm:px-8">
-                  Get Your FREE Website Audit →
-                </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    We build websites that are engineered for speed, optimized for local search, and designed to convert Hobart's local traffic into paying customers.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow whitespace-normal break-words"
+                    onClick={openForm}
+                  >
+                    Get Your FREE Website Audit →
+                  </Button>
+                </div>
               </div>
+              
             </div>
           </div>
         </section>
