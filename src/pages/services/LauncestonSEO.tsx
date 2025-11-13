@@ -426,7 +426,8 @@ const LauncestonSEO = () => {
       {/* Sticky Mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden p-4 bg-background/95 backdrop-blur-sm border-t border-border">
         <Button 
-          className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12"
+          variant="cta"
+          className="w-full h-12"
           onClick={openForm}
         >
           Get Your FREE Quote →
@@ -489,8 +490,9 @@ const LauncestonSEO = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10 pt-2 animate-fade-in" style={{ animationDelay: "0.6s" }}>
               <Button 
+                variant="cta"
                 size="lg" 
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-lg px-12 py-6 shadow-glow hover:shadow-primary hover:scale-105 transition-all duration-300"
+                className="text-lg px-12 py-6 hover:scale-105 transition-all duration-300"
                 onClick={openForm}
               >
                 Get Your FREE Launceston SEO Quote →
@@ -573,7 +575,8 @@ const LauncestonSEO = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
                 <Button 
-                  className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12"
+                  variant="cta"
+                  className="w-full h-12"
                   onClick={openForm}
                 >
                   {service.cta}
@@ -612,8 +615,9 @@ const LauncestonSEO = () => {
 
           <div className="text-center">
             <Button 
+              variant="cta"
               size="xl" 
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12 px-8"
+              className="h-12 px-8"
               onClick={openForm}
             >
               Get Your FREE Launceston SEO Quote →
@@ -654,8 +658,9 @@ const LauncestonSEO = () => {
 
           <div className="text-center mt-12">
             <Button 
+              variant="cta"
               size="xl" 
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12 px-8"
+              className="h-12 px-8"
               onClick={openForm}
             >
               Start Your SEO Journey Today →
@@ -691,8 +696,9 @@ const LauncestonSEO = () => {
 
           <div className="text-center mt-12">
             <Button 
+              variant="cta"
               size="xl" 
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12 px-8"
+              className="h-12 px-8"
               onClick={openForm}
             >
               Get Your FREE Launceston SEO Quote →
@@ -728,8 +734,9 @@ const LauncestonSEO = () => {
                 No pressure. No obligation. Just honest insights about how to grow your Launceston business with SEO.
               </p>
               <Button 
+                variant="cta"
                 size="lg" 
-                className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white h-12"
+                className="w-full h-12"
                 onClick={openForm}
               >
                 <Calendar className="w-5 h-5 mr-2" />

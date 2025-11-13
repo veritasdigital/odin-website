@@ -217,7 +217,8 @@ const WhiteLabelSEO = () => {
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-3 shadow-lg">
           <Button 
             onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold py-4"
+            variant="cta"
+            className="w-full font-bold py-4"
             size="lg"
           >
             Schedule Your FREE Agency Audit →
@@ -311,7 +312,7 @@ const WhiteLabelSEO = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <AlertCircle className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <AlertCircle className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Inconsistent Quality & Client Churn</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   You've tried cheap overseas providers whose work is generic, uses risky tactics, and ultimately fails to deliver results. This leads to frustrated clients, difficult conversations, and the dreaded client churn.
@@ -319,7 +320,7 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">The Black Box of Reporting</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Your current partner sends vague, unbranded reports that you can't confidently present to your clients. You lack transparency, making it impossible to answer client questions and eroding your agency's credibility.
@@ -327,7 +328,7 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Capacity & Overhead Limits</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   You are turning away profitable SEO business because you lack the internal capacity to fulfill it. Hiring, training, and managing an in-house SEO team is expensive, time-consuming, and limits your ability to scale instantly.
@@ -362,7 +363,7 @@ const WhiteLabelSEO = () => {
             <div className="grid md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 items-stretch">
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
-                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
+                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">292% Growth</div>
                 </div>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
@@ -373,7 +374,7 @@ const WhiteLabelSEO = () => {
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
-                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
+                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">500% ROI</div>
                 </div>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
@@ -384,7 +385,7 @@ const WhiteLabelSEO = () => {
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
                 <div className="flex items-center mb-2 sm:mb-3">
-                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-[#D91C5C] mr-2" />
+                  <Award className="w-6 h-6 sm:w-8 sm:h-8 text-primary mr-2" />
                   <div className="text-lg sm:text-xl md:text-2xl font-bold text-primary">5x Revenue</div>
                 </div>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground mb-2 sm:mb-3">
@@ -410,7 +411,7 @@ const WhiteLabelSEO = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <Search className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <Search className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Technical SEO Audit & Fix</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Deep-dive technical audit to identify and fix foundational issues. Site speed optimization, core web vitals, schema markup, and crawl error fixes.
@@ -418,7 +419,7 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <TrendingUp className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">High-Authority Link Building</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Manual, ethical outreach to secure high-DA links from relevant, quality Australian sources. Build genuine authority and protect from penalties.
@@ -426,7 +427,7 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <FileText className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <FileText className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Conversion-Focused Content</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Content strategy targeting high-commercial intent keywords, authoritative pillar pages, optimized to drive client leads—not just traffic.
@@ -434,7 +435,7 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border hover:shadow-lg transition-shadow">
-                <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Branded Reporting & Communication</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                   Fully white-labeled reports you can present directly. Dedicated Australian account manager for seamless integration into your workflow.
@@ -468,8 +469,8 @@ const WhiteLabelSEO = () => {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
               <div className="text-center p-3 sm:p-4 md:p-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                  <Shield className="w-6 h-6 sm:w-7 sm:h-7 text-[#D91C5C]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                  <Shield className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Australian-Based, Ethical Expertise</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -478,8 +479,8 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="text-center p-3 sm:p-4 md:p-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                  <BarChart3 className="w-6 h-6 sm:w-7 sm:h-7 text-[#D91C5C]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                  <BarChart3 className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">100% Transparent, White-Labeled</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -488,8 +489,8 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="text-center p-3 sm:p-4 md:p-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                  <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-[#D91C5C]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                  <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Instant, Risk-Free Scalability</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -498,8 +499,8 @@ const WhiteLabelSEO = () => {
               </div>
 
               <div className="text-center p-3 sm:p-4 md:p-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#D91C5C]/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
-                  <Award className="w-6 h-6 sm:w-7 sm:h-7 text-[#D91C5C]" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                  <Award className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
                 <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Reputation Protection Guarantee</h3>
                 <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
@@ -525,7 +526,7 @@ const WhiteLabelSEO = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6 items-stretch">
               <div className="relative flex flex-col h-full">
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">1</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">1</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Agency Audit & Service Blueprint</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     Confidential audit of your current needs, service gaps, and capacity. Customized white label service blueprint to maximize profit margins.
@@ -535,7 +536,7 @@ const WhiteLabelSEO = () => {
 
               <div className="relative flex flex-col h-full">
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">2</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">2</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Client Onboarding & Strategy</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     You introduce us or we remain silent. We conduct keyword research and strategy development for you to present as your own.
@@ -545,7 +546,7 @@ const WhiteLabelSEO = () => {
 
               <div className="relative flex flex-col h-full">
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">3</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">3</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Execution & Reporting</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     Our team executes the strategy. Real-time progress access and fully branded monthly reports for client presentation.
@@ -555,7 +556,7 @@ const WhiteLabelSEO = () => {
 
               <div className="relative flex flex-col h-full">
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border flex flex-col h-full">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#D91C5C] text-white rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">4</div>
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-base sm:text-lg mb-2 sm:mb-3">4</div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2">Scale & Profit</h3>
                   <p className="text-xs sm:text-sm md:text-base text-muted-foreground">
                     As clients see results, scale the service. We handle increased demand seamlessly, allowing growth without adding staff.
@@ -587,18 +588,18 @@ const WhiteLabelSEO = () => {
                   </p>
                 </div>
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
-                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                  <Users className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Dedicated Account Manager</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Australian-Based Team</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">100% Confidential Service</span>
                     </div>
                   </div>
@@ -607,18 +608,18 @@ const WhiteLabelSEO = () => {
 
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-10 items-center">
                 <div className="order-2 md:order-1 bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
-                  <Target className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                  <Target className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">AI-Powered Strategy</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Competitive Analysis</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Predictive Content Planning</span>
                     </div>
                   </div>
@@ -639,18 +640,18 @@ const WhiteLabelSEO = () => {
                   </p>
                 </div>
                 <div className="bg-card p-3 sm:p-4 md:p-6 rounded-lg shadow-card border border-border">
-                  <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-[#D91C5C] mb-2 sm:mb-3" />
+                  <DollarSign className="w-8 h-8 sm:w-10 sm:h-10 text-primary mb-2 sm:mb-3" />
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">No Lock-In Contracts</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Month-to-Month Service</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-[#D91C5C]" />
+                      <CheckCircle2 className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
                       <span className="text-xs sm:text-sm">Quality-Driven Retention</span>
                     </div>
                   </div>
@@ -683,7 +684,8 @@ const WhiteLabelSEO = () => {
             <Button 
               onClick={openForm}
               size="lg"
-              className="bg-white text-[#D91C5C] hover:bg-white/90 font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 shadow-glow transition-all duration-300 hover:scale-105"
+              variant="secondary"
+              className="font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 transition-all duration-300 hover:scale-105"
             >
               Schedule Your FREE Agency Scalability Audit <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </Button>
