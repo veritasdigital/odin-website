@@ -282,16 +282,37 @@ const PerthSEO = () => {
         </div>
         
         {/* Hero Section */}
-        <section className="gradient-hero pt-32 pb-24 px-6">
-          <div className="max-w-7xl mx-auto">
+        <section className="relative pt-32 pb-24 px-6 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated background blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse" />
+          </div>
+
+          {/* Floating circles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-32 right-20 w-32 h-32 border-2 border-primary/20 rounded-full animate-float" />
+            <div className="absolute bottom-40 left-16 w-24 h-24 border-2 border-accent/20 rounded-full animate-float-delayed" />
+            <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-primary/20 rounded-full animate-pulse" />
+            <div className="absolute bottom-1/3 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float" />
+          </div>
+
+          {/* Geometric shapes */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-24 left-1/4 w-40 h-40 border border-primary/10 rotate-45 animate-float-delayed" />
+            <div className="absolute bottom-32 right-1/3 w-32 h-32 border border-accent/10 rotate-12 animate-float" />
+          </div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-black text-foreground mb-6 leading-tight">
                 Stop Paying for SEO That Doesn't Deliver Results
               </h1>
-              <h2 className="text-2xl md:text-3xl text-white/90 mb-8 font-bold">
+              <h2 className="text-2xl md:text-3xl text-foreground/80 mb-8 font-bold">
                 Partner with Perth's Leading SEO Experts and Dominate Local Search
               </h2>
-              <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
+              <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
                 You're tired of SEO agencies that promise page 1 rankings but leave you buried on page 10. You're sick of paying thousands for "SEO services" that deliver nothing but confusing reports and empty promises. You want results—real, measurable business growth. That's exactly what we deliver.
               </p>
               <Button 
@@ -302,7 +323,7 @@ const PerthSEO = () => {
               >
                 <Link to="/contact">Get Your FREE SEO Audit →</Link>
               </Button>
-              <p className="text-sm text-white/70">
+              <p className="text-sm text-muted-foreground/70">
                 No credit card required • See what's holding you back in 48 hours
               </p>
             </div>
