@@ -394,8 +394,8 @@ const LauncestonSEO = () => {
 
       <Header />
 
-      {/* Breadcrumb Navigation */}
-      <div className="container mx-auto px-4 pt-4">
+        {/* Breadcrumb Navigation */}
+        <div className="container mx-auto px-4 pt-24 pb-6">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

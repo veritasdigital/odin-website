@@ -437,7 +437,7 @@ const MelbourneSEO = () => {
         <Header />
         
         {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 pt-24 pb-8">
+        <div className="container mx-auto px-4 pt-24 pb-6">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>

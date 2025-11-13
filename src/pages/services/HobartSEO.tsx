@@ -454,7 +454,7 @@ const HobartSEO = () => {
 
       <main className="min-h-screen">
         {/* Breadcrumb Navigation */}
-        <section className="container mx-auto px-4 py-6">
+        <section className="container mx-auto px-4 pt-24 pb-6">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
