@@ -234,17 +234,17 @@ export default function DentalImplants() {
       {/* 1. Hero Section */}
       <section className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 gradient-hero decorative-circles relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center relative z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6 md:mb-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-charcoal mb-4 sm:mb-6 md:mb-8">
             Dental Implant Marketing That Attracts Quality Patients
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 md:mb-12 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-charcoal/90 mb-8 sm:mb-10 md:mb-12 max-w-5xl mx-auto leading-relaxed">
             Running a dental implant specialist practice is rewarding but challenging. You've invested years in advanced training and education. You have the expertise to transform patients' lives through implant dentistry. But attracting enough quality patients to fill your schedule is a constant struggle. Many patients don't know about implants or think they're too expensive. Your referral network is inconsistent. Your online presence isn't strong enough. And you're competing with general dentists who are now offering implant services. You need a marketing partner who understands implant dentistry, who can educate patients about implants, and who can help you attract quality patients consistently. At Odin Digital, we're dental implant marketing specialists. We've helped over 165 implant specialists and implantology practices attract more quality patients and grow their revenue. We specialise in implant patient education, referral network building, Google Ads, local marketing, and integrated strategies that work for specialist practices. Whether you're a solo practitioner, group practice, or university-affiliated program, we deliver results.
           </p>
           <Button 
             variant="cta" 
             size="xl" 
             onClick={openForm}
-            className="text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 w-full sm:w-auto"
+            className="text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 w-full sm:w-auto whitespace-normal break-words"
           >
             Schedule Free Implant Marketing Consultation
           </Button>
