@@ -7,222 +7,194 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SideTab } from "@/components/SideTab";
 import { Target, MapPin, TrendingUp, Shield, Award, BarChart3, DollarSign, Users } from "lucide-react";
-
 const GoogleAdsLaunceston = () => {
   const navigate = useNavigate();
-
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused Google Ads agency in Launceston. We specialize in PPC management for Launceston and Northern Tasmania businesses, focusing on ROI and regional competition strategy. $574M+ in client revenue. No lock-in contracts.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+61-XXX-XXX-XXX",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused Google Ads agency in Launceston. We specialize in PPC management for Launceston and Northern Tasmania businesses, focusing on ROI and regional competition strategy. $574M+ in client revenue. No lock-in contracts.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://growth-conduit-central.lovable.app/google-ads-launceston",
-        "name": "Odin Digital - Google Ads Agency Launceston",
-        "description": "Launceston's top PPC management company. Expert Google Ads services focusing on regional targeting and statewide competition strategy.",
-        "url": "https://growth-conduit-central.lovable.app/google-ads-launceston",
+      "slogan": "No Lock-In Contracts. Just Results.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+61-XXX-XXX-XXX",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Launceston",
-          "addressRegion": "TAS",
-          "postalCode": "7250",
-          "addressCountry": "AU"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "-41.4332",
-          "longitude": "147.1441"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Launceston",
-          "containedIn": {
-            "@type": "State",
-            "name": "Tasmania"
-          }
-        }
+        "contactType": "Sales",
+        "areaServed": "AU",
+        "availableLanguage": "English"
       },
-      {
+      "sameAs": []
+    }, {
+      "@type": "LocalBusiness",
+      "@id": "https://growth-conduit-central.lovable.app/google-ads-launceston",
+      "name": "Odin Digital - Google Ads Agency Launceston",
+      "description": "Launceston's top PPC management company. Expert Google Ads services focusing on regional targeting and statewide competition strategy.",
+      "url": "https://growth-conduit-central.lovable.app/google-ads-launceston",
+      "telephone": "+61-XXX-XXX-XXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Launceston",
+        "addressRegion": "TAS",
+        "postalCode": "7250",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-41.4332",
+        "longitude": "147.1441"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Launceston",
+        "containedIn": {
+          "@type": "State",
+          "name": "Tasmania"
+        }
+      }
+    }, {
+      "@type": "Service",
+      "serviceType": "PPC Management",
+      "provider": {
+        "@type": "Organization",
+        "name": "Odin Digital"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Launceston"
+      },
+      "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Launceston, TAS, focusing on maximum Return on Ad Spend (ROAS) and regional competition strategy.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "PPC Management Launceston Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Google Ads Management"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "PPC Advertising Launceston"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Regional & Statewide Campaigns"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much budget do I need for Google Ads in Launceston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The required budget depends on your industry competition and target CPA. For most Launceston businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management launceston team will analyze your market during your free audit and recommend a precise, efficient budget."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to see results from ppc launceston campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts launceston refine the campaigns."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the difference between Google Ads and adwords launceston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords launceston or Google Ads, we are the google ads agency launceston that manages it all."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer an adwords management launceston service with a performance guarantee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why should I choose Odin Digital over a large mainland google agency launceston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Large mainland agencies often apply generic strategies designed for Sydney or Melbourne and have no understanding of Launceston's unique regional market. We are a lean team of ppc experts launceston who provide hyper-focused, personalized service. We understand the Launceston market, the competition with Hobart, and the importance of local reputation in Northern Tasmania."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you manage other pay per click launceston platforms like Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We are a full-service ppc agency launceston and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising launceston strategy for maximum reach and ROI."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you prevent my budget from being wasted on clicks from outside Launceston?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use precise geographic targeting (Launceston-only targeting, Northern Tasmania targeting, or Tasmania-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help Launceston businesses compete with Hobart for statewide customers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We specialize in positioning Launceston businesses to compete effectively with Hobart-based businesses for statewide Tasmanian customers. We use competitive intelligence, messaging, and targeting strategies to ensure you capture your fair share of the statewide market."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help me with my landing pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What metrics do you report on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
+        }
+      }]
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
         "@type": "Service",
-        "serviceType": "PPC Management",
+        "name": "Google Ads Launceston Services",
         "provider": {
           "@type": "Organization",
           "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Launceston"
-        },
-        "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Launceston, TAS, focusing on maximum Return on Ad Spend (ROAS) and regional competition strategy.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "PPC Management Launceston Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads Management"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "PPC Advertising Launceston"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Regional & Statewide Campaigns"
-              }
-            }
-          ]
         }
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much budget do I need for Google Ads in Launceston?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The required budget depends on your industry competition and target CPA. For most Launceston businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management launceston team will analyze your market during your free audit and recommend a precise, efficient budget."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from ppc launceston campaigns?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts launceston refine the campaigns."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Google Ads and adwords launceston?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords launceston or Google Ads, we are the google ads agency launceston that manages it all."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer an adwords management launceston service with a performance guarantee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why should I choose Odin Digital over a large mainland google agency launceston?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Large mainland agencies often apply generic strategies designed for Sydney or Melbourne and have no understanding of Launceston's unique regional market. We are a lean team of ppc experts launceston who provide hyper-focused, personalized service. We understand the Launceston market, the competition with Hobart, and the importance of local reputation in Northern Tasmania."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you manage other pay per click launceston platforms like Meta Ads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We are a full-service ppc agency launceston and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising launceston strategy for maximum reach and ROI."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you prevent my budget from being wasted on clicks from outside Launceston?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use precise geographic targeting (Launceston-only targeting, Northern Tasmania targeting, or Tasmania-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help Launceston businesses compete with Hobart for statewide customers?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We specialize in positioning Launceston businesses to compete effectively with Hobart-based businesses for statewide Tasmanian customers. We use competitive intelligence, messaging, and targeting strategies to ensure you capture your fair share of the statewide market."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help me with my landing pages?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What metrics do you report on?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
-            }
-          }
-        ]
+      "author": {
+        "@type": "Person",
+        "name": "Fabienne Costa"
       },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Google Ads Launceston Services",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Odin Digital"
       }
-    ]
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Google Ads Agency Launceston | PPC Management Experts | Odin Digital</title>
-        <meta 
-          name="description" 
-          content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Launceston trusts for maximum ROI. Regional expertise, statewide strategy, and no lock-in contracts. Get your free audit." 
-        />
+        <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Launceston trusts for maximum ROI. Regional expertise, statewide strategy, and no lock-in contracts. Get your free audit." />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
@@ -237,12 +209,7 @@ const GoogleAdsLaunceston = () => {
         
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
-          <Button 
-            variant="cta" 
-            size="lg"
-            className="w-full text-sm sm:text-base py-6"
-            onClick={() => navigate('/contact')}
-          >
+          <Button variant="cta" size="lg" className="w-full text-sm sm:text-base py-6" onClick={() => navigate('/contact')}>
             <span className="sm:hidden">Get FREE Strategy</span>
             <span className="hidden sm:inline">Get Your FREE Launceston PPC Strategy</span>
           </Button>
@@ -257,9 +224,15 @@ const GoogleAdsLaunceston = () => {
 
           {/* Floating Background Elements */}
           <div className="absolute top-20 left-10 w-12 h-12 bg-primary/20 rounded-full animate-float" />
-          <div className="absolute bottom-32 right-20 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }} />
-          <div className="absolute bottom-1/4 right-1/3 w-10 h-10 bg-primary/10 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+          <div className="absolute bottom-32 right-20 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{
+          animationDelay: '2s'
+        }} />
+          <div className="absolute top-1/2 left-1/4 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{
+          animationDelay: '4s'
+        }} />
+          <div className="absolute bottom-1/4 right-1/3 w-10 h-10 bg-primary/10 rounded-lg animate-float" style={{
+          animationDelay: '1s'
+        }} />
 
           <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
             <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-8 mt-16 md:mt-20 leading-[0.95] tracking-tight">
@@ -286,12 +259,7 @@ const GoogleAdsLaunceston = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button 
-                variant="hero" 
-                size="lg"
-                className="text-lg px-12 py-6 shadow-glow"
-                onClick={() => navigate('/contact')}
-              >
+              <Button variant="hero" size="lg" className="text-lg px-12 py-6 shadow-glow" onClick={() => navigate('/contact')}>
                 <span className="sm:hidden">Get FREE Strategy →</span>
                 <span className="hidden sm:inline">Get Your FREE Launceston PPC Strategy Session →</span>
               </Button>
@@ -384,12 +352,7 @@ const GoogleAdsLaunceston = () => {
             </div>
 
             <div className="text-center">
-              <Button 
-                variant="cta" 
-                size="default"
-                className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 whitespace-normal leading-tight"
-                onClick={() => navigate('/contact')}
-              >
+              <Button variant="cta" size="default" className="text-xs sm:text-sm md:text-base px-3 sm:px-4 md:px-6 whitespace-normal leading-tight" onClick={() => navigate('/contact')}>
                 <span className="sm:hidden">Talk to PPC Expert →</span>
                 <span className="hidden sm:inline">Stop the Budget Bleed: Talk to a PPC Expert →</span>
               </Button>
@@ -462,12 +425,7 @@ const GoogleAdsLaunceston = () => {
             </div>
 
             <div className="text-center">
-              <Button 
-                variant="cta" 
-                size="lg"
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight"
-                onClick={() => navigate('/contact')}
-              >
+              <Button variant="cta" size="lg" className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight" onClick={() => navigate('/contact')}>
                 <span className="sm:hidden">See Packages →</span>
                 <span className="hidden sm:inline">See Our Launceston PPC Management Packages →</span>
               </Button>
@@ -528,12 +486,7 @@ const GoogleAdsLaunceston = () => {
             </div>
 
             <div className="text-center">
-              <Button 
-                variant="cta" 
-                size="lg"
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight"
-                onClick={() => navigate('/contact')}
-              >
+              <Button variant="cta" size="lg" className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-5 sm:py-6 md:py-7 whitespace-normal leading-tight" onClick={() => navigate('/contact')}>
                 <span className="sm:hidden">Get Custom Strategy →</span>
                 <span className="hidden sm:inline">Ready for a Custom Google Ads Strategy? Contact Us →</span>
               </Button>
@@ -649,24 +602,23 @@ const GoogleAdsLaunceston = () => {
         <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
           {/* Background Elements */}
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-          <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+          <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
+          animationDelay: '3s'
+        }} />
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{
+          animationDelay: '1s'
+        }} />
           
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
+            <h2 className="text-4xl font-black mb-8 text-slate-950 md:text-6xl">
               Ready to Stop Wasting Budget and Start Dominating Launceston?
             </h2>
             
-            <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 leading-relaxed text-slate-950">
               Stop guessing with your <strong>ppc launceston</strong> budget. Start working with <strong>ppc experts launceston</strong> who deliver precision, transparency, and profit in Northern Tasmania's unique regional market.
             </p>
 
-            <Button 
-              variant="cta" 
-              size="lg"
-              className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-5 sm:py-6 md:py-8 whitespace-normal leading-tight"
-              onClick={() => navigate('/contact')}
-            >
+            <Button variant="cta" size="lg" className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-5 sm:py-6 md:py-8 whitespace-normal leading-tight" onClick={() => navigate('/contact')}>
               <span className="sm:hidden">FREE Strategy Session →</span>
               <span className="hidden sm:inline">Claim Your FREE Launceston PPC Strategy Session →</span>
             </Button>
@@ -675,8 +627,6 @@ const GoogleAdsLaunceston = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default GoogleAdsLaunceston;
