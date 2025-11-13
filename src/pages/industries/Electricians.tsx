@@ -650,18 +650,18 @@ const Electricians = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-10 md:py-12 lg:py-16 bg-gradient-to-r from-primary to-secondary text-white text-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 px-2">
+        <section className="py-10 md:py-12 lg:py-16 bg-gradient-to-r from-primary to-secondary relative overflow-hidden">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 px-2 text-charcoal">
               Ready to Stop Losing Emergency Calls and Start Dominating Your Local Market?
             </h2>
-            <p className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 leading-relaxed px-2">
+            <p className="text-sm md:text-base lg:text-lg mb-6 md:mb-8 leading-relaxed px-2 text-charcoal/90">
               Stop settling for marketing that doesn't deliver. Start working with the digital marketing agency for electricians that fills your calendar with emergency calls, commercial contracts, and high-value residential projects.
             </p>
             <Button 
               variant="secondary" 
               size="lg" 
-              className="text-sm md:text-base px-6 md:px-8 py-4 md:py-5 bg-white text-primary hover:bg-white/90 w-full sm:w-auto"
+              className="text-sm md:text-base px-6 md:px-8 py-4 md:py-5 bg-white text-primary hover:bg-white/90 w-full sm:w-auto whitespace-normal break-words"
               onClick={openForm}
             >
               Claim Your FREE Electrical Contractor Marketing Audit →
@@ -672,7 +672,7 @@ const Electricians = () => {
         {/* Sticky Mobile CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-3 md:p-4 bg-white border-t shadow-lg md:hidden z-50">
           <Button 
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-sm md:text-base"
+            className="w-full bg-primary hover:bg-primary/90 text-sm md:text-base whitespace-normal break-words"
             size="lg"
             onClick={openForm}
           >
