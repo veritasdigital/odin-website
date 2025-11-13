@@ -10,16 +10,27 @@ import chronicleJournalLogo from "@/assets/media/chronicle-journal-logo.png";
 import ncnLogo from "@/assets/media/ncn-logo.png";
 export const Hero = () => {
   const { openForm } = useMarketingForm();
-  return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
-      {/* Animated Background Blobs */}
-      <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
-      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+  return <section className="relative isolate overflow-hidden min-h-screen flex items-center gradient-hero">
+      {/* Dark overlay for better text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-black/40" aria-hidden="true" />
       
-      {/* Floating Particles */}
-      <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-      <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
-      <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+      {/* Animated Background Blobs - More vibrant */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-primary/30 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-accent/25 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-secondary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-40 right-1/4 w-80 h-80 bg-primary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2.5s" }} />
+      
+      {/* Floating Circles from Google Ads page */}
+      <div className="absolute top-20 right-1/4 w-32 h-32 border-2 border-white/20 rounded-full animate-float" />
+      <div className="absolute bottom-32 left-1/3 w-24 h-24 border-2 border-white/15 rounded-lg animate-float" style={{ animationDelay: "3s" }} />
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/10 rounded-full animate-float" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute bottom-1/4 right-1/3 w-20 h-20 border-2 border-white/10 rounded-full animate-float" style={{ animationDelay: "4s" }} />
+      
+      {/* Floating Particles - More visible */}
+      <div className="absolute top-32 left-1/4 w-3 h-3 bg-white/30 rounded-full animate-float"></div>
+      <div className="absolute top-64 right-1/3 w-4 h-4 bg-white/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute bottom-48 left-1/2 w-3 h-3 bg-white/20 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+      <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-white/35 rounded-full animate-float" style={{ animationDelay: "2.5s" }}></div>
       
       {/* Split Screen Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
@@ -29,9 +40,9 @@ export const Hero = () => {
           <div className="space-y-8 lg:space-y-10 max-w-2xl">
             {/* Main Headline */}
             <div className="space-y-6 animate-fade-in">
-              <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+              <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-white leading-[0.95] tracking-tight">
                 <span className="block mb-3 lg:mb-4 animate-fade-in">Accelerate Your</span>
-                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <span className="block bg-gradient-to-r from-white via-white to-white/90 bg-clip-text text-transparent pb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
                   Digital Growth
                 </span>
                 <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl animate-fade-in" style={{ animationDelay: "0.4s" }}>
@@ -42,11 +53,11 @@ export const Hero = () => {
             
             {/* Subtitle and Description */}
             <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+              <h2 className="text-xl md:text-2xl lg:text-2xl text-white/95 font-bold leading-tight max-w-2xl">
                 Data-Driven Digital Marketing Solutions That Deliver Measurable Business Results
               </h2>
               
-              <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+              <p className="text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl font-light">
                 At Odin Digital, we partner with ambitious businesses to develop and execute comprehensive digital marketing strategies that drive sustainable growth. Our evidence-based approach and proven methodologies have contributed to generating over $574 million in client revenue across diverse industries.
               </p>
             </div>
@@ -64,9 +75,9 @@ export const Hero = () => {
             </div>
             
             {/* As Seen In Media Logos */}
-            <div className="pt-8 mt-8 border-t border-charcoal/10 animate-fade-in" style={{ animationDelay: "1s" }}>
+            <div className="pt-8 mt-8 border-t border-white/20 animate-fade-in" style={{ animationDelay: "1s" }}>
               <div className="text-center mb-6">
-                <h3 className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
+                <h3 className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-4">
                   As Featured In
                 </h3>
               </div>
@@ -164,10 +175,10 @@ export const Hero = () => {
               </div>
               
               {/* Floating Glassy Banner */}
-              <div className="absolute bottom-8 -left-4 right-8 bg-white/90 backdrop-blur-xl border border-white/60 rounded-xl shadow-2xl p-4 z-10 transform hover:scale-105 transition-all duration-300">
-                <div className="text-charcoal">
-                  <h3 className="font-bold text-lg bg-gradient-to-r from-charcoal to-charcoal/80 bg-clip-text">Alexa Blake</h3>
-                  <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
+              <div className="absolute bottom-8 -left-4 right-8 bg-gradient-to-br from-primary/95 to-accent/95 backdrop-blur-xl border border-white/30 rounded-xl shadow-2xl p-4 z-10 transform hover:scale-105 transition-all duration-300">
+                <div className="text-white">
+                  <h3 className="font-bold text-lg">Alexa Blake</h3>
+                  <p className="text-sm text-white/80">Odin Digital General Manager</p>
                 </div>
               </div>
               
