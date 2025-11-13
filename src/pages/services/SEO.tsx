@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Search, TrendingUp, Globe, BarChart3, Users, Clock } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 export default function SEO() {
   const {
     openForm
@@ -118,59 +119,45 @@ export default function SEO() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Benefits & Features Combined Section */}
       <section className="py-24 bg-background">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
               Why SEO Delivers Long-Term Results
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto">
               Unlike paid advertising, SEO builds sustainable organic traffic that compounds over time.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {benefits.map((benefit, index) => {
             const IconComponent = benefit.icon;
             return <Card key={index} className="p-8 text-center hover:shadow-glow transition-all duration-300">
                   <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
+                  <h3 className="text-2xl font-bold text-charcoal mb-4">{benefit.title}</h3>
+                  <p className="text-charcoal/70">{benefit.description}</p>
                 </Card>;
           })}
           </div>
-        </div>
-      </section>
 
-      {/* What's Included Section */}
-      <section className="py-24 bg-muted/30">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-black text-foreground mb-8">
-                Comprehensive SEO Services
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Our full-service SEO approach covers every aspect of search engine optimization to maximize your organic visibility.
-              </p>
-              <Button variant="cta" size="lg" onClick={openForm}>
+          <Card className="p-8">
+            <h3 className="text-2xl font-bold text-charcoal mb-6">Complete SEO Service Includes</h3>
+            <ul className="grid md:grid-cols-2 gap-4">
+              {features.map((feature, index) => <li key={index} className="flex items-start space-x-3">
+                  <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-charcoal/70">{feature}</span>
+                </li>)}
+            </ul>
+            <div className="mt-8 text-center">
+              <Button variant="cta" size="lg" onClick={openForm} className="whitespace-normal break-words py-3 px-6">
                 Start Your SEO Journey
               </Button>
             </div>
-            
-            <Card className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-6">What's Included</h3>
-              <ul className="space-y-4">
-                {features.map((feature, index) => <li key={index} className="flex items-start space-x-3">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>)}
-              </ul>
-            </Card>
-          </div>
+          </Card>
         </div>
       </section>
 
@@ -198,50 +185,41 @@ export default function SEO() {
         </div>
       </section>
 
-      {/* Case Study Section */}
-      <section className="relative py-24 gradient-hero overflow-hidden">
-        {/* Dark overlay for contrast */}
-        <div aria-hidden="true" className="absolute inset-0 bg-transparent" />
-        
-        {/* Background elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float bg-pink-100" />
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
-        animationDelay: '3s'
-      }} />
-        
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 text-slate-950">
-              SEO Success Story
-            </h2>
-            <p className="text-xl max-w-3xl mx-auto text-slate-950">
-              How we transformed an e-commerce site's organic performance.
-            </p>
-          </div>
-
+      {/* Case Study Section - Simplified */}
+      <section className="py-24 bg-muted/30">
+        <div className="max-w-6xl mx-auto px-6">
           <Card className="p-8 md:p-12">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+                SEO Success Story
+              </h2>
+              <p className="text-lg text-charcoal/70">
+                How we transformed an e-commerce site's organic performance
+              </p>
+            </div>
+
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-4">{caseStudy.client}</h3>
+                <h3 className="text-2xl font-bold text-charcoal mb-4">{caseStudy.client}</h3>
                 <div className="mb-6">
-                  <h4 className="font-semibold text-foreground mb-2">Challenge:</h4>
-                  <p className="text-muted-foreground">{caseStudy.challenge}</p>
+                  <h4 className="font-semibold text-charcoal mb-2">Challenge:</h4>
+                  <p className="text-charcoal/70">{caseStudy.challenge}</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Solution:</h4>
-                  <p className="text-muted-foreground">{caseStudy.solution}</p>
+                  <h4 className="font-semibold text-charcoal mb-2">Solution:</h4>
+                  <p className="text-charcoal/70">{caseStudy.solution}</p>
                 </div>
               </div>
               
               <div>
-                <h4 className="font-semibold text-foreground mb-4">Results:</h4>
+                <h4 className="font-semibold text-charcoal mb-4">Results:</h4>
                 <div className="space-y-4">
                   {caseStudy.results.map((result, index) => <div key={index} className="flex items-center space-x-3">
                       <BarChart3 className="w-5 h-5 text-primary" />
-                      <span className="text-muted-foreground">{result}</span>
+                      <span className="text-charcoal/70">{result}</span>
                     </div>)}
                 </div>
-                <Button variant="outline" className="mt-6" onClick={openForm}>
+                <Button variant="outline" className="mt-6 whitespace-normal break-words py-3 px-6" onClick={openForm}>
                   Get SEO Results Like This
                 </Button>
               </div>
@@ -254,40 +232,40 @@ export default function SEO() {
       <section className="py-24 bg-background">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
               SEO Frequently Asked Questions
             </h2>
           </div>
 
-          <div className="space-y-6">
-            <Card className="p-6">
-              <h3 className="text-xl font-bold text-foreground mb-3">How long does SEO take to show results?</h3>
-              <p className="text-muted-foreground">SEO is a long-term strategy. You'll typically see initial improvements within 3-4 months, with significant results appearing after 6-12 months of consistent optimization.</p>
-            </Card>
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">How long does SEO take to show results?</AccordionTrigger>
+              <AccordionContent className="text-charcoal/70">SEO is a long-term strategy. You'll typically see initial improvements within 3-4 months, with significant results appearing after 6-12 months of consistent optimization.</AccordionContent>
+            </AccordionItem>
 
-            <Card className="p-6">
-              <h3 className="text-xl font-bold text-foreground mb-3">Do you guarantee first page rankings?</h3>
-              <p className="text-muted-foreground">While we can't guarantee specific rankings (no legitimate SEO company can), we guarantee improved visibility, traffic, and search performance based on our proven track record.</p>
-            </Card>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">Do you guarantee first page rankings?</AccordionTrigger>
+              <AccordionContent className="text-charcoal/70">While we can't guarantee specific rankings (no legitimate SEO company can), we guarantee improved visibility, traffic, and search performance based on our proven track record.</AccordionContent>
+            </AccordionItem>
 
-            <Card className="p-6">
-              <h3 className="text-xl font-bold text-foreground mb-3">What's included in your SEO reporting?</h3>
-              <p className="text-muted-foreground">Monthly reports include keyword rankings, organic traffic growth, technical improvements implemented, content performance, and strategic recommendations for continued growth.</p>
-            </Card>
-          </div>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">What's included in your SEO reporting?</AccordionTrigger>
+              <AccordionContent className="text-charcoal/70">Monthly reports include keyword rankings, organic traffic growth, technical improvements implemented, content performance, and strategic recommendations for continued growth.</AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-24 bg-muted/30">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-black text-foreground mb-8">
+          <h2 className="text-4xl md:text-6xl font-black text-charcoal mb-8">
             Ready to Dominate Search Results?
           </h2>
-          <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+          <p className="text-xl text-charcoal/70 mb-12 leading-relaxed">
             Let our SEO experts build sustainable organic traffic that grows your business.
           </p>
-          <Button variant="cta" size="xl" onClick={openForm}>
+          <Button variant="cta" size="xl" onClick={openForm} className="whitespace-normal break-words py-3 px-6">
             <Search className="w-5 h-5 mr-2" />
             Get Your Free SEO Audit
           </Button>
