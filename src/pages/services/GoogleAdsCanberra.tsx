@@ -4,263 +4,222 @@ import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ArrowRight, Target, TrendingUp, Users, Award, DollarSign, BarChart3, Shield, Crosshair, CheckCircle2, AlertCircle } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const GoogleAdsCanberra = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused Google Ads agency in Canberra. We specialize in PPC management for the ACT market, focusing on ROI and budget efficiency. $574M+ in client revenue. No lock-in contracts.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+61-XXX-XXX-XXX",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused Google Ads agency in Canberra. We specialize in PPC management for the ACT market, focusing on ROI and budget efficiency. $574M+ in client revenue. No lock-in contracts.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://growth-conduit-central.lovable.app/google-ads-canberra",
-        "name": "Odin Digital - Google Ads Agency Canberra",
-        "description": "Canberra's top PPC management company. Expert Google Ads services focusing on B2B and government sector targeting.",
-        "url": "https://growth-conduit-central.lovable.app/google-ads-canberra",
+      "slogan": "No Lock-In Contracts. Just Results.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+61-XXX-XXX-XXX",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Canberra",
-          "addressRegion": "ACT",
-          "postalCode": "2600",
-          "addressCountry": "AU"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "-35.2809",
-          "longitude": "149.1300"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Canberra",
-          "containedIn": {
-            "@type": "State",
-            "name": "ACT"
-          }
-        }
+        "contactType": "Sales",
+        "areaServed": "AU",
+        "availableLanguage": "English"
       },
-      {
+      "sameAs": []
+    }, {
+      "@type": "LocalBusiness",
+      "@id": "https://growth-conduit-central.lovable.app/google-ads-canberra",
+      "name": "Odin Digital - Google Ads Agency Canberra",
+      "description": "Canberra's top PPC management company. Expert Google Ads services focusing on B2B and government sector targeting.",
+      "url": "https://growth-conduit-central.lovable.app/google-ads-canberra",
+      "telephone": "+61-XXX-XXX-XXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Canberra",
+        "addressRegion": "ACT",
+        "postalCode": "2600",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-35.2809",
+        "longitude": "149.1300"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Canberra",
+        "containedIn": {
+          "@type": "State",
+          "name": "ACT"
+        }
+      }
+    }, {
+      "@type": "Service",
+      "serviceType": "PPC Management",
+      "provider": {
+        "@type": "Organization",
+        "name": "Odin Digital"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Canberra"
+      },
+      "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Canberra, ACT, focusing on maximum Return on Ad Spend (ROAS).",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "PPC Management Canberra Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Google Ads Management"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "PPC Advertising Canberra"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Corporate & Government Sector Targeting"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much budget do I need for Google Ads in Canberra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The required budget varies based on your industry competition and target CPA. We recommend starting with a budget that allows for sufficient data collection, typically $1,500 - $3,000 per month for a focused campaign. Our ppc management canberra team will analyze your market during your audit and recommend a precise, efficient budget."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help me with adwords management company canberra services if I'm targeting the government sector?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We specialize in the nuances of B2B and government targeting. We use advanced audience lists, specific keyword targeting, and ad copy that speaks directly to the needs of the ACT's corporate and public sectors, making us the best ppc management company for this niche."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to see results from ppc canberra campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts canberra refine the campaigns."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the difference between Google Ads and adwords canberra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords canberra or Google Ads, we are the google ads agency canberra that manages it all."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer an adwords management canberra service with a performance guarantee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave. We put the risk on us, not you."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why should I choose Odin Digital over a large national google agency canberra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Large national agencies often apply generic strategies and are slow to adapt. We are a lean team of ppc experts canberra who provide hyper-focused, personalized service. We understand the Canberra market, we are agile, and we focus on your ROAS, not our retainer."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you manage other pay per click canberra platforms like Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We are a full-service ppc agency canberra and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising canberra strategy for you."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you prevent my budget from being wasted on irrelevant clicks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use a three-pronged approach: 1) Aggressive Negative Keywords, 2) Hyper-Specific Ad Grouping, and 3) Continuous Budget Monitoring. We filter out low-intent traffic and ensure your ads are only shown to people who are ready to buy."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help me with my landing pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What metrics do you report on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks."
+        }
+      }]
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
         "@type": "Service",
-        "serviceType": "PPC Management",
+        "name": "Google Ads Canberra Services",
         "provider": {
           "@type": "Organization",
           "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Canberra"
-        },
-        "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Canberra, ACT, focusing on maximum Return on Ad Spend (ROAS).",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "PPC Management Canberra Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads Management"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "PPC Advertising Canberra"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Corporate & Government Sector Targeting"
-              }
-            }
-          ]
         }
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much budget do I need for Google Ads in Canberra?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The required budget varies based on your industry competition and target CPA. We recommend starting with a budget that allows for sufficient data collection, typically $1,500 - $3,000 per month for a focused campaign. Our ppc management canberra team will analyze your market during your audit and recommend a precise, efficient budget."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help me with adwords management company canberra services if I'm targeting the government sector?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We specialize in the nuances of B2B and government targeting. We use advanced audience lists, specific keyword targeting, and ad copy that speaks directly to the needs of the ACT's corporate and public sectors, making us the best ppc management company for this niche."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from ppc canberra campaigns?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts canberra refine the campaigns."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Google Ads and adwords canberra?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords canberra or Google Ads, we are the google ads agency canberra that manages it all."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer an adwords management canberra service with a performance guarantee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave. We put the risk on us, not you."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why should I choose Odin Digital over a large national google agency canberra?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Large national agencies often apply generic strategies and are slow to adapt. We are a lean team of ppc experts canberra who provide hyper-focused, personalized service. We understand the Canberra market, we are agile, and we focus on your ROAS, not our retainer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you manage other pay per click canberra platforms like Meta Ads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We are a full-service ppc agency canberra and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising canberra strategy for you."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you prevent my budget from being wasted on irrelevant clicks?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use a three-pronged approach: 1) Aggressive Negative Keywords, 2) Hyper-Specific Ad Grouping, and 3) Continuous Budget Monitoring. We filter out low-intent traffic and ensure your ads are only shown to people who are ready to buy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help me with my landing pages?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What metrics do you report on?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks."
-            }
-          }
-        ]
+      "author": {
+        "@type": "Person",
+        "name": "Fabienne Costa"
       },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Google Ads Canberra Services",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Odin Digital"
       }
-    ]
+    }]
   };
-
-  const faqs = [
-    {
-      question: "How much budget do I need for Google Ads in Canberra?",
-      answer: "The required budget varies based on your industry competition and target CPA. We recommend starting with a budget that allows for sufficient data collection, typically $1,500 - $3,000 per month for a focused campaign. Our ppc management canberra team will analyze your market during your audit and recommend a precise, efficient budget."
-    },
-    {
-      question: "Can you help me with adwords management company canberra services if I'm targeting the government sector?",
-      answer: "Yes. We specialize in the nuances of B2B and government targeting. We use advanced audience lists, specific keyword targeting, and ad copy that speaks directly to the needs of the ACT's corporate and public sectors, making us the best ppc management company for this niche."
-    },
-    {
-      question: "How long does it take to see results from ppc canberra campaigns?",
-      answer: "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts canberra refine the campaigns."
-    },
-    {
-      question: "What is the difference between Google Ads and adwords canberra?",
-      answer: "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords canberra or Google Ads, we are the google ads agency canberra that manages it all."
-    },
-    {
-      question: "Do you offer an adwords management canberra service with a performance guarantee?",
-      answer: "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave. We put the risk on us, not you."
-    },
-    {
-      question: "Why should I choose Odin Digital over a large national google agency canberra?",
-      answer: "Large national agencies often apply generic strategies and are slow to adapt. We are a lean team of ppc experts canberra who provide hyper-focused, personalized service. We understand the Canberra market, we are agile, and we focus on your ROAS, not our retainer."
-    },
-    {
-      question: "Do you manage other pay per click canberra platforms like Meta Ads?",
-      answer: "Yes. We are a full-service ppc agency canberra and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising canberra strategy for you."
-    },
-    {
-      question: "How do you prevent my budget from being wasted on irrelevant clicks?",
-      answer: "We use a three-pronged approach: 1) Aggressive Negative Keywords, 2) Hyper-Specific Ad Grouping, and 3) Continuous Budget Monitoring. We filter out low-intent traffic and ensure your ads are only shown to people who are ready to buy."
-    },
-    {
-      question: "Can you help me with my landing pages?",
-      answer: "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
-    },
-    {
-      question: "What metrics do you report on?",
-      answer: "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks."
-    }
-  ];
-
-  return (
-    <>
+  const faqs = [{
+    question: "How much budget do I need for Google Ads in Canberra?",
+    answer: "The required budget varies based on your industry competition and target CPA. We recommend starting with a budget that allows for sufficient data collection, typically $1,500 - $3,000 per month for a focused campaign. Our ppc management canberra team will analyze your market during your audit and recommend a precise, efficient budget."
+  }, {
+    question: "Can you help me with adwords management company canberra services if I'm targeting the government sector?",
+    answer: "Yes. We specialize in the nuances of B2B and government targeting. We use advanced audience lists, specific keyword targeting, and ad copy that speaks directly to the needs of the ACT's corporate and public sectors, making us the best ppc management company for this niche."
+  }, {
+    question: "How long does it take to see results from ppc canberra campaigns?",
+    answer: "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts canberra refine the campaigns."
+  }, {
+    question: "What is the difference between Google Ads and adwords canberra?",
+    answer: "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords canberra or Google Ads, we are the google ads agency canberra that manages it all."
+  }, {
+    question: "Do you offer an adwords management canberra service with a performance guarantee?",
+    answer: "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave. We put the risk on us, not you."
+  }, {
+    question: "Why should I choose Odin Digital over a large national google agency canberra?",
+    answer: "Large national agencies often apply generic strategies and are slow to adapt. We are a lean team of ppc experts canberra who provide hyper-focused, personalized service. We understand the Canberra market, we are agile, and we focus on your ROAS, not our retainer."
+  }, {
+    question: "Do you manage other pay per click canberra platforms like Meta Ads?",
+    answer: "Yes. We are a full-service ppc agency canberra and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising canberra strategy for you."
+  }, {
+    question: "How do you prevent my budget from being wasted on irrelevant clicks?",
+    answer: "We use a three-pronged approach: 1) Aggressive Negative Keywords, 2) Hyper-Specific Ad Grouping, and 3) Continuous Budget Monitoring. We filter out low-intent traffic and ensure your ads are only shown to people who are ready to buy."
+  }, {
+    question: "Can you help me with my landing pages?",
+    answer: "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
+  }, {
+    question: "What metrics do you report on?",
+    answer: "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks."
+  }];
+  return <>
       <Helmet>
         <title>Google Ads Agency Canberra | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Canberra trusts for maximum ROI. Precision targeting, transparent reporting, and no lock-in contracts. Get your free audit." />
@@ -276,37 +235,53 @@ const GoogleAdsCanberra = () => {
         <section className="relative py-20 md:py-32 px-4 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full filter blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
           
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
           
           {/* Floating Circles */}
           <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
-          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{
+          animationDelay: '0.5s'
+        }}></div>
           <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{
+          animationDelay: '0.7s'
+        }}></div>
           
           {/* Geometric Shapes */}
           <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
           <div className="absolute bottom-32 left-16 w-12 h-12 border-2 border-white/10 rotate-12"></div>
 
           <div className="container mx-auto max-w-5xl text-center relative z-10">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white drop-shadow-lg animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 drop-shadow-lg animate-fade-in text-slate-950 lg:text-6xl">
               Canberra Google Ads Agency: Stop Wasting Your Budget. Start Driving ROI.
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-white/90 drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <h2 style={{
+            animationDelay: '0.1s'
+          }} className="text-2xl md:text-3xl font-bold mb-8 drop-shadow-md animate-fade-in text-slate-950 lg:text-4xl">
               The PPC Agency Canberra Businesses Trust for Precision and Profit.
             </h2>
-            <p className="text-lg mb-6 text-white/95 max-w-3xl mx-auto drop-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p style={{
+            animationDelay: '0.2s'
+          }} className="text-lg mb-6 max-w-3xl mx-auto drop-shadow animate-fade-in text-slate-950">
               Partner with Odin Digital and Turn Your Google Ads Spend into Verified Revenue.
             </p>
-            <p className="text-lg mb-8 text-white/90 max-w-3xl mx-auto drop-shadow animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <p style={{
+            animationDelay: '0.3s'
+          }} className="text-lg mb-8 max-w-3xl mx-auto drop-shadow animate-fade-in text-slate-950">
               Canberra's unique business landscape—dominated by government, professional services, and high-value B2B—demands precision in your PPC strategy. Generic google ads agency canberra providers waste your budget. We're the ppc agency canberra that delivers hyper-targeted campaigns, maximum ROI, and complete transparency. No lock-in contracts. Just results.
             </p>
             <Link to="/contact">
-              <Button size="xl" className="text-base md:text-lg animate-fade-in shadow-xl" style={{ animationDelay: '0.4s' }}>
+              <Button size="xl" className="text-base md:text-lg animate-fade-in shadow-xl" style={{
+              animationDelay: '0.4s'
+            }}>
                 Get Your FREE PPC Strategy Session <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -499,16 +474,14 @@ const GoogleAdsCanberra = () => {
               We know you have specific concerns about ad spend and agency performance. We're here to provide clear, honest answers.
             </p>
             <Accordion type="single" collapsible className="w-full">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                   <AccordionTrigger className="text-left text-foreground">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
         </section>
@@ -543,8 +516,6 @@ const GoogleAdsCanberra = () => {
           </Link>
         </div>
       </div>
-    </>
-  );
+    </>;
 };
-
 export default GoogleAdsCanberra;
