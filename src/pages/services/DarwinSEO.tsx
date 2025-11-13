@@ -440,40 +440,42 @@ const DarwinSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
-          {/* Animated background elements */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl animate-float-delayed" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl animate-pulse-slow" />
-          </div>
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
 
-          <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 px-2">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 SEO Company Darwin
               </h1>
-              
-              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 bg-gradient-primary bg-clip-text text-transparent leading-tight px-2">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Stop Being Invisible Online. Start Dominating the Darwin Market.
-              </p>
-
-              <p className="text-base sm:text-lg md:text-xl mb-4 md:mb-6 text-muted-foreground max-w-3xl mx-auto px-4">
+              </h2>
+              <p className="text-lg md:text-xl text-charcoal/70 mb-6 leading-relaxed">
                 Are you struggling to get found by customers in Darwin and the NT? It's time for a local SEO company that understands the unique challenges of the Top End and delivers real, measurable results.
               </p>
-
-              <p className="text-sm sm:text-base md:text-lg mb-8 md:mb-10 text-muted-foreground max-w-3xl mx-auto px-4">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
                 In Darwin, you can't afford to be invisible. At Odin Digital, we don't just offer generic SEO; we provide tailored SEO strategies that help you dominate the local Darwin market and reach customers across the Northern Territory. With no lock-in contracts and a focus on radical transparency, we're the Darwin SEO partner you can trust. Ready to finally get your business on the map?
               </p>
-
               <Button 
+                variant="cta"
                 size="xl" 
-                onClick={() => navigate('/contact')}
-                className="shadow-glow hover:shadow-primary/60 font-bold whitespace-normal h-auto py-3 px-6 text-sm sm:text-base"
-                style={{ backgroundColor: '#D91C5C', color: 'white' }}
+                asChild
+                className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words"
               >
-                Get Your FREE Darwin SEO Quote →
+                <Link to="/contact">Get Your FREE Darwin SEO Quote →</Link>
               </Button>
+              <p className="text-sm text-muted-foreground/70">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>

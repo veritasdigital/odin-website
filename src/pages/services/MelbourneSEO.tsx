@@ -460,26 +460,39 @@ const MelbourneSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-          <div className="container mx-auto px-4">
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 SEO Melbourne: Stop Burning Money on SEO That Doesn't Convert
               </h1>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-muted-foreground">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Tired of Melbourne SEO Agencies That Promise the World But Lock You Into a 12-Month Contract of Excuses?
               </h2>
-              <p className="text-lg md:text-xl mb-6 text-muted-foreground">
-                You've been burned before. You paid a Melbourne SEO agency thousands of dollars, and all you got was a bunch of technical jargon, zero transparency, and rankings for keywords that don't bring in a single dollar of revenue. You're stuck in a contract you can't escape, watching your competitors crush it while you're left wondering if SEO even works at all.
+              <p className="text-lg md:text-xl text-charcoal/70 mb-6 leading-relaxed">
+                You've been burned before. You paid a Melbourne SEO agency thousands of dollars, and all you got was a bunch of technical jargon, zero transparency, and rankings for keywords that don't bring in a single dollar of revenue.
               </p>
-              <p className="text-lg md:text-xl mb-8 text-muted-foreground">
-                Here's the truth: The problem isn't SEO. The problem is the typical SEO company Melbourne that treats you like a number and locks you into a 12-month contract before they've proven a damn thing. At Odin Digital, we do things differently. We don't do lock-in contracts. We don't waste your time on vanity metrics. And we sure as hell don't chase rankings for keywords that don't convert. We focus on one thing: Driving real, measurable revenue for your business.
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
+                Here's the truth: The problem isn't SEO. The problem is the typical SEO company Melbourne that treats you like a number. At Odin Digital, we don't do lock-in contracts. We don't waste your time on vanity metrics. We focus on one thing: Driving real, measurable revenue for your business.
               </p>
-              <Button asChild size="lg" className="min-h-[48px] text-lg px-8">
+              <Button variant="cta" size="xl" asChild className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words">
                 <Link to="/contact">
-                  Get Your FREE Melbourne SEO Strategy <ArrowRight className="ml-2 h-5 w-5" />
+                  Get Your FREE Melbourne SEO Strategy <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
                 </Link>
               </Button>
+              <p className="text-sm text-muted-foreground/70">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>

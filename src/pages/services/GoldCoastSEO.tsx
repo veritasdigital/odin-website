@@ -408,38 +408,43 @@ const GoldCoastSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-          <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-6 mt-8 sm:mt-12 md:mt-16 leading-tight break-words">
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 Tired of SEO Companies That Promise the World But Deliver Nothing?
               </h1>
-              
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-8 break-words">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Get Real Results from Gold Coast's Only Revenue-Obsessed SEO Company
               </h2>
-              
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words px-4">
+              <p className="text-lg md:text-xl text-charcoal/70 mb-4 leading-relaxed">
                 We're not here to boost your rankings. We're here to explode your revenue.
               </p>
-              
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-4 max-w-3xl mx-auto break-words px-4">
+              <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">
                 With over $574M in verified client revenue and a 540% average ROI, we don't just talk about results - we deliver them.
               </p>
-              
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto break-words px-4">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
                 No lock-in contracts. No BS. Just data-driven SEO strategies that drive real business growth.
               </p>
-
               <Link to="/contact">
-                <Button variant="cta" size="xl" className="group text-sm sm:text-base px-6 sm:px-8 py-4 sm:py-5 h-auto">
-                  <span className="break-words">Get Your FREE SEO Strategy</span>
-                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                <Button variant="cta" size="xl" className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words">
+                  Get Your FREE SEO Strategy
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                 </Button>
               </Link>
+              <p className="text-sm text-muted-foreground/70">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>

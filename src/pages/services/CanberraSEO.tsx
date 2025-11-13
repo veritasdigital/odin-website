@@ -611,50 +611,51 @@ const CanberraSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-12 sm:py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
-          <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
           
-          {/* Floating circles - design elements from home page */}
-          <div className="absolute top-20 right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl" />
-          
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-5xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground mb-4 sm:mb-6 leading-tight px-2 mt-8 sm:mt-0">
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 SEO services Canberra
               </h1>
-              
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 sm:mb-8 px-2">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Canberra SEO that actually works. Local expertise. Government sector knowledge. Real results.
-              </p>
-              
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+              </h2>
+              <p className="text-lg md:text-xl text-charcoal/70 mb-4 leading-relaxed">
                 Most SEO companies don't understand the Canberra market. They don't know government procurement. They don't specialise in B2G marketing. They treat you like every other client.
               </p>
-              
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+              <p className="text-base md:text-lg text-muted-foreground mb-4 leading-relaxed">
                 We're different. We specialise in Canberra SEO, government sector marketing, and defence industry optimisation. We deliver $574M+ in client revenue and a 540% average ROI.
               </p>
-              
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto px-2">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
                 No lock-in contracts. No BS. Just data-driven SEO strategies designed to win government contracts and drive real business growth.
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact" className="w-full sm:w-auto">
-                  <Button variant="cta" size="xl" className="group text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                  <Button variant="cta" size="xl" className="w-full text-sm sm:text-base px-6 sm:px-8 whitespace-normal break-words">
                     <span>Book Your Free Consultation</span>
-                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                   </Button>
                 </Link>
                 <a href="tel:1300123456" className="w-full sm:w-auto">
-                  <Button variant="outline" size="xl" className="text-sm sm:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5 h-auto w-full">
+                  <Button variant="outline" size="xl" className="w-full text-sm sm:text-base px-6 sm:px-8">
                     <Phone className="mr-2 w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                     <span>Call 1300 123 456</span>
                   </Button>
                 </a>
               </div>
+              <p className="text-sm text-muted-foreground/70 mt-4">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>

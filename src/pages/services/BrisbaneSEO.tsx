@@ -300,31 +300,37 @@ const BrisbaneSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-muted via-background to-muted">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-          <div className="container mx-auto max-w-6xl relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <Badge variant="secondary" className="mb-6 text-sm px-4 py-2">
-                Brisbane's Most Trusted SEO Agency
-              </Badge>
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 Tired of SEO Agencies That Promise Page 1 But Deliver Page 10?
               </h1>
-              <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-semibold">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Partner with Brisbane's Top SEO Experts and Watch Your Rankings (and Revenue) Soar
               </h2>
-              <p className="text-lg text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-charcoal/70 mb-10 leading-relaxed">
                 You're done with SEO agencies that promise the world and deliver nothing but excuses. You want results—not vanity metrics. You want an SEO partner that understands your business, drives real traffic, and generates actual revenue. That's exactly what we do.
               </p>
               <Button 
                 variant="cta" 
                 size="xl" 
                 asChild
-                className="mb-4"
+                className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words"
               >
                 <Link to="/contact">Get Your FREE SEO Audit →</Link>
               </Button>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-muted-foreground/70">
                 No credit card required • See what's holding you back in 48 hours
               </p>
             </div>

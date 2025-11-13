@@ -397,29 +397,36 @@ const SydneySEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-          <div className="container mx-auto px-4 relative z-10">
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 mt-8 leading-tight animate-fade-in">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 Stop Paying for SEO That Doesn't Deliver Results
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary mb-6 animate-fade-in" style={{ animationDelay: '100ms' }}>
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Partner with Sydney's Leading SEO Experts and Dominate Local Search
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <p className="text-lg md:text-xl text-charcoal/70 mb-10 leading-relaxed">
                 You're here because you're tired of SEO agencies that overpromise and underdeliver. You've watched your competitors climb the rankings while your business stagnates. You've invested in SEO before, only to see little to no return. That ends now.
               </p>
-              <div className="animate-fade-in" style={{ animationDelay: '300ms' }}>
-                <Link to="/contact">
-                  <Button size="xl" variant="cta" className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12">
-                    Get Your FREE SEO Audit →
-                  </Button>
-                </Link>
-                <p className="text-xs sm:text-sm text-muted-foreground mt-4">
-                  No credit card required • See what's holding you back in 48 hours
-                </p>
-              </div>
+              <Link to="/contact">
+                <Button variant="cta" size="xl" className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words">
+                  Get Your FREE SEO Audit →
+                </Button>
+              </Link>
+              <p className="text-sm text-muted-foreground/70">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>

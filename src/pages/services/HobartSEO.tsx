@@ -483,29 +483,41 @@ const HobartSEO = () => {
         </section>
 
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
-          <div className="container mx-auto px-4 relative z-10">
+        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          
+          {/* Floating Particles */}
+          <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+          <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight">
                 SEO Hobart: Stop Burning Money on SEO That Doesn't Convert
               </h1>
-              <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-muted-foreground">
+              <h2 className="text-2xl md:text-3xl text-charcoal/80 mb-8 font-bold">
                 Tired of so-called SEO experts in Hobart who promise the world but deliver nothing but excuses?
               </h2>
-              <p className="text-lg md:text-xl mb-6 text-foreground/90">
+              <p className="text-lg md:text-xl text-charcoal/70 mb-6 leading-relaxed">
                 You're not alone. Most businesses are stuck paying for SEO services that generate traffic but zero revenue. They rank for keywords that don't matter, produce "reports" full of jargon, and lock you into long-term contracts that make it impossible to escape.
               </p>
-              <p className="text-lg md:text-xl mb-8 text-foreground/90">
+              <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed">
                 At Odin Digital, we do things differently. We're a performance-focused SEO company in Hobart that measures success by one thing only: <strong>your bottom line</strong>. We don't care about vanity metrics. We care about leads, sales, and revenue. And we back it up with a no-lock-in-contract guarantee.
               </p>
-              <Button asChild size="xl" variant="cta" className="group text-base md:text-lg">
+              <Button variant="cta" size="xl" asChild className="mb-4 w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 whitespace-normal break-words">
                 <Link to="/contact">
                   <span className="hidden sm:inline">Get Your FREE Hobart SEO Strategy</span>
                   <span className="sm:hidden">Get FREE Strategy</span>
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-5 w-5 flex-shrink-0" />
                 </Link>
               </Button>
+              <p className="text-sm text-muted-foreground/70">
+                No credit card required • See what's holding you back in 48 hours
+              </p>
             </div>
           </div>
         </section>
