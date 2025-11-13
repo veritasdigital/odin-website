@@ -361,39 +361,56 @@ const WebDesignSydney = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 pt-32 pb-20 md:pt-40 md:pb-32">
-          {/* Floating Circles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl" />
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+              
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Sydney's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Your website isn't converting because it's not designed for conversions.
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Stop settling for outdated, slow, non-converting websites. At Odin Digital, we design and develop websites that look beautiful, load fast, and drive real business results.
+                  </p>
 
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 break-words overflow-wrap-anywhere">
-                Web design Sydney
-              </h1>
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-foreground/90 break-words overflow-wrap-anywhere leading-tight">
-                Your website isn't converting because it's not designed for conversions.
-              </p>
-              <p className="text-base sm:text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
-                Stop settling for outdated, slow, non-converting websites. At Odin Digital, we design and develop websites that look beautiful, load fast, and drive real business results. We've helped 283+ businesses across Australia transform their online presence from a liability into their most powerful sales tool.
-              </p>
-              <p className="text-sm sm:text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere">
-                From e-commerce platforms to professional services websites, we build websites that work as hard as you do. Modern design. User-centric experience. Lightning-fast performance. Built for conversions.
-              </p>
-              <p className="text-sm sm:text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words overflow-wrap-anywhere font-semibold">
-                No templates. No shortcuts. Just strategic, results-driven web design.
-              </p>
-              <Button
-                variant="cta"
-                size="lg"
-                onClick={() => window.location.href = '/contact'}
-                className="text-base md:text-lg h-14 px-8 whitespace-normal break-words text-center"
-              >
-                Book Your Free Consultation <ArrowRight className="ml-2 h-5 w-5 shrink-0" />
-              </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    From e-commerce platforms to professional services websites, we build websites that work as hard as you do. Modern design. User-centric experience. Lightning-fast performance. Built for conversions. No templates. No shortcuts. Just strategic, results-driven web design.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow"
+                    onClick={() => window.location.href = '/contact'}
+                  >
+                    Book Your Free Sydney Consultation →
+                  </Button>
+                </div>
+              </div>
+              
             </div>
           </div>
         </section>

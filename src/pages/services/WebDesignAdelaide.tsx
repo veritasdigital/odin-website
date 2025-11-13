@@ -284,36 +284,56 @@ const WebDesignAdelaide = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-primary/5 pt-32 pb-20 md:pt-40 md:pb-32">
-          {/* Floating Circles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-3xl" />
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
           </div>
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+              
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Adelaide's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Your Website Should Generate Leads, Not Headaches.
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Is your outdated, slow, or DIY website costing you customers? It's time for a professional Adelaide web design agency that builds high-converting websites designed to grow your business.
+                  </p>
 
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 pb-2 break-words hyphens-auto">
-                Web Design Agency Adelaide
-              </h1>
-              <p className="hero-sub-headline text-4xl md:text-5xl font-bold mb-8 text-foreground/90 break-words hyphens-auto">
-                Your Website Should Generate Leads, Not Headaches.
-              </p>
-              <p className="text-lg md:text-xl mb-6 text-muted-foreground leading-relaxed break-words hyphens-auto">
-                Is your outdated, slow, or DIY website costing you customers? It's time for a professional Adelaide web design agency that builds high-converting websites designed to grow your business.
-              </p>
-              <p className="text-base md:text-lg mb-10 text-muted-foreground leading-relaxed break-words hyphens-auto">
-                In the competitive Adelaide market, your website is your most important sales tool. A slow, unprofessional, or broken site doesn't just look bad—it actively drives potential customers to your competitors. At Odin Digital, we don't just build pretty websites; we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment. With no lock-in contracts and a focus on radical transparency, we're the Adelaide web design partner you can trust. Ready to turn your website into a revenue-generating machine?
-              </p>
-              <Button
-                variant="cta"
-                size="lg"
-                onClick={() => window.location.href = '/contact'}
-                className="text-base md:text-lg h-14 px-8 whitespace-normal break-words text-center"
-              >
-                Get Your FREE Adelaide Web Design Quote <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    In the competitive Adelaide market, your website is your most important sales tool. At Odin Digital, we build strategic, SEO-optimised, and conversion-focused digital assets that generate a measurable return on investment. Ready to turn your website into a revenue-generating machine?
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow"
+                    onClick={() => window.location.href = '/contact'}
+                  >
+                    Get Your FREE Adelaide Web Design Quote →
+                  </Button>
+                </div>
+              </div>
+              
             </div>
           </div>
         </section>

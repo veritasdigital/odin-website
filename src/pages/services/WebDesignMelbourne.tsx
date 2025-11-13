@@ -393,38 +393,56 @@ const WebDesignMelbourne = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
-          {/* Floating circles - same as home page */}
-          <div className="absolute top-20 left-10 w-32 h-32 md:w-64 md:h-64 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-40 h-40 md:w-80 md:h-80 bg-accent/5 rounded-full blur-3xl animate-pulse delay-700" />
-          <div className="absolute top-1/2 left-1/3 w-24 h-24 md:w-48 md:h-48 bg-primary/3 rounded-full blur-2xl animate-pulse delay-300" />
+        <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-white">
+          {/* Subtle Background Pattern */}
+          <div className="absolute inset-0 opacity-[0.03]">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          </div>
+          
+          {/* Content */}
+          <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+              
+              {/* Centered Text Content */}
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
+                {/* Main Headline */}
+                <div className="space-y-6">
+                  <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
+                    <span className="block mb-3 lg:mb-4">Melbourne's Leading</span>
+                    <span className="block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pb-2">
+                      Web Design Agency
+                    </span>
+                  </h1>
+                </div>
+                
+                {/* Subtitle and Description */}
+                <div className="space-y-6 lg:space-y-8">
+                  <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+                    Stop Paying for Ferrari Websites with Bicycle Wheels. You Need a Site That Actually Converts.
+                  </h2>
+                  
+                  <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    Most web design agencies charge $15,000+ for websites that look stunning but don't generate leads or sales. They focus on winning design awards, not winning you customers.
+                  </p>
 
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 break-words overflow-wrap-anywhere">
-                Web Design Melbourne
-              </h1>
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-foreground/90 break-words overflow-wrap-anywhere leading-tight">
-                Stop Paying Melbourne Web Design Agencies for a Ferrari with Bicycle Wheels. You Need a Site That Actually Converts.
-              </p>
-              <div className="prose prose-lg max-w-3xl mx-auto mb-8 text-muted-foreground break-words overflow-wrap-anywhere">
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                  Most web design agencies will charge you $15,000+ for a website that looks stunning but doesn't generate leads or sales. They focus on winning design awards, not winning you customers.
-                </p>
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                  At Odin Digital, we build websites that are beautiful AND convert. Conversion-focused design. Seamless CRM integration. Lightning-fast performance. SEO-optimized from day one. And unlike other agencies, we offer no lock-in contracts—you stay because we deliver results, not because you're trapped.
-                </p>
-                <p className="text-base sm:text-lg md:text-xl leading-relaxed">
-                  We've generated $574M+ for our clients with a 540% average ROI. Let's build you a website that actually drives business results.
-                </p>
+                  <p className="text-base md:text-lg text-charcoal/70 leading-relaxed max-w-2xl font-light">
+                    At Odin Digital, we build websites that are beautiful AND convert. Conversion-focused design. Seamless CRM integration. Lightning-fast performance. SEO-optimized from day one. We've generated $574M+ for our clients with a 540% average ROI.
+                  </p>
+                </div>
+                
+                {/* Action Button */}
+                <div className="pt-2 flex justify-center">
+                  <Button 
+                    variant="hero" 
+                    size="lg" 
+                    className="text-lg px-12 py-6 shadow-glow"
+                    onClick={openForm}
+                  >
+                    Get Your FREE Melbourne Web Design Quote →
+                  </Button>
+                </div>
               </div>
-              <Button
-                onClick={openForm}
-                size="lg"
-                className="bg-gradient-primary text-primary-foreground px-8 py-6 text-base sm:text-lg rounded-lg shadow-primary hover:shadow-glow transition-all duration-300 transform hover:scale-105"
-              >
-                Get Your Free Website Audit
-              </Button>
+              
             </div>
           </div>
         </section>
