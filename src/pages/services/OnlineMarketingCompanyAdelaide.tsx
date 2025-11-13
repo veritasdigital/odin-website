@@ -7,16 +7,9 @@ import { Closing } from "@/components/Closing";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ArrowRight, CheckCircle2, TrendingUp, Users, Award, Target, BarChart3, Search, MousePointerClick, Share2, Code, FileText, Zap } from 'lucide-react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const OnlineMarketingCompanyAdelaide = () => {
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Digital Marketing Adelaide | Online Marketing Company</title>
         <meta name="description" content="Digital marketing experts in Adelaide. SEO, Google Ads, Meta Ads, web design, social media. 200+ Adelaide clients, 540% average ROI." />
@@ -24,148 +17,133 @@ const OnlineMarketingCompanyAdelaide = () => {
         {/* JSON-LD Schema Markup */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "LocalBusiness",
-                "@id": "https://growth-conduit-central.lovable.app/#local-business",
-                "name": "Odin Digital",
-                "url": "https://growth-conduit-central.lovable.app/",
-                "logo": "https://growth-conduit-central.lovable.app/logo.png",
-                "description": "Digital marketing experts in Adelaide. SEO, Google Ads, Meta Ads, web design, social media marketing.",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Adelaide",
-                  "addressRegion": "SA",
-                  "addressCountry": "AU"
-                },
-                "email": "hello@odindigital.com.au",
-                "areaServed": {
-                  "@type": "City",
-                  "name": "Adelaide"
-                }
-              },
-              {
-                "@type": "WebPage",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#webpage",
-                "url": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide",
-                "name": "Digital Marketing Adelaide | Online Marketing Company",
-                "description": "Digital marketing experts in Adelaide. SEO, Google Ads, Meta Ads, web design, social media. 200+ Adelaide clients, 540% average ROI.",
-                "inLanguage": "en-AU",
-                "datePublished": "2024-01-01",
-                "dateModified": "2024-01-01"
-              },
-              {
-                "@type": "Service",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#seo",
-                "name": "Search Engine Optimisation (SEO)",
-                "description": "SEO services for Adelaide businesses to improve search rankings and organic traffic.",
-                "provider": {
-                  "@id": "https://growth-conduit-central.lovable.app/#local-business"
-                },
-                "areaServed": {
-                  "@type": "City",
-                  "name": "Adelaide"
-                },
-                "serviceType": "SEO"
-              },
-              {
-                "@type": "Service",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#google-ads",
-                "name": "Google Ads Management",
-                "description": "Google Ads management services for Adelaide businesses to generate leads and sales.",
-                "provider": {
-                  "@id": "https://growth-conduit-central.lovable.app/#local-business"
-                },
-                "areaServed": {
-                  "@type": "City",
-                  "name": "Adelaide"
-                },
-                "serviceType": "PPC Advertising"
-              },
-              {
-                "@type": "Service",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#meta-ads",
-                "name": "Meta Ads Management",
-                "description": "Meta Ads (Facebook and Instagram) management for Adelaide businesses.",
-                "provider": {
-                  "@id": "https://growth-conduit-central.lovable.app/#local-business"
-                },
-                "areaServed": {
-                  "@type": "City",
-                  "name": "Adelaide"
-                },
-                "serviceType": "Social Media Advertising"
-              },
-              {
-                "@type": "Service",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#web-design",
-                "name": "Web Design and Development",
-                "description": "Professional web design and development for Adelaide businesses.",
-                "provider": {
-                  "@id": "https://growth-conduit-central.lovable.app/#local-business"
-                },
-                "areaServed": {
-                  "@type": "City",
-                  "name": "Adelaide"
-                },
-                "serviceType": "Web Design"
-              },
-              {
-                "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "How much does digital marketing cost?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Digital marketing costs vary depending on your goals and channels. We offer flexible pricing starting from $2,000/month for small businesses to $10,000+/month for larger enterprises. We can work within your budget."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "How long does it take to see results?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Google Ads can deliver results immediately. SEO typically takes 3–6 months to see significant results. Social media results depend on your strategy but usually take 2–3 months. We set realistic expectations upfront."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Can you guarantee results?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "We can't guarantee specific rankings or traffic numbers because algorithms change. However, we can guarantee that we'll use proven strategies, track results carefully, and continuously optimise for better performance. Our 540% average ROI speaks to the effectiveness of our approach."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Do you work with small businesses?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Absolutely. We work with businesses of all sizes, from startups to large enterprises. We have affordable options for small businesses."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What if I'm not happy with the results?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "We work on a month-to-month basis with no long-term contracts. If you're not happy, you can leave. However, we're confident in our work and have a 95% client retention rate."
-                    }
-                  }
-                ]
-              },
-              {
-                "@type": "AggregateRating",
-                "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#rating",
-                "ratingValue": "4.9",
-                "ratingCount": "200",
-                "bestRating": "5",
-                "worstRating": "1"
+          "@context": "https://schema.org",
+          "@graph": [{
+            "@type": "LocalBusiness",
+            "@id": "https://growth-conduit-central.lovable.app/#local-business",
+            "name": "Odin Digital",
+            "url": "https://growth-conduit-central.lovable.app/",
+            "logo": "https://growth-conduit-central.lovable.app/logo.png",
+            "description": "Digital marketing experts in Adelaide. SEO, Google Ads, Meta Ads, web design, social media marketing.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Adelaide",
+              "addressRegion": "SA",
+              "addressCountry": "AU"
+            },
+            "email": "hello@odindigital.com.au",
+            "areaServed": {
+              "@type": "City",
+              "name": "Adelaide"
+            }
+          }, {
+            "@type": "WebPage",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#webpage",
+            "url": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide",
+            "name": "Digital Marketing Adelaide | Online Marketing Company",
+            "description": "Digital marketing experts in Adelaide. SEO, Google Ads, Meta Ads, web design, social media. 200+ Adelaide clients, 540% average ROI.",
+            "inLanguage": "en-AU",
+            "datePublished": "2024-01-01",
+            "dateModified": "2024-01-01"
+          }, {
+            "@type": "Service",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#seo",
+            "name": "Search Engine Optimisation (SEO)",
+            "description": "SEO services for Adelaide businesses to improve search rankings and organic traffic.",
+            "provider": {
+              "@id": "https://growth-conduit-central.lovable.app/#local-business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Adelaide"
+            },
+            "serviceType": "SEO"
+          }, {
+            "@type": "Service",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#google-ads",
+            "name": "Google Ads Management",
+            "description": "Google Ads management services for Adelaide businesses to generate leads and sales.",
+            "provider": {
+              "@id": "https://growth-conduit-central.lovable.app/#local-business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Adelaide"
+            },
+            "serviceType": "PPC Advertising"
+          }, {
+            "@type": "Service",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#meta-ads",
+            "name": "Meta Ads Management",
+            "description": "Meta Ads (Facebook and Instagram) management for Adelaide businesses.",
+            "provider": {
+              "@id": "https://growth-conduit-central.lovable.app/#local-business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Adelaide"
+            },
+            "serviceType": "Social Media Advertising"
+          }, {
+            "@type": "Service",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#web-design",
+            "name": "Web Design and Development",
+            "description": "Professional web design and development for Adelaide businesses.",
+            "provider": {
+              "@id": "https://growth-conduit-central.lovable.app/#local-business"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Adelaide"
+            },
+            "serviceType": "Web Design"
+          }, {
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "How much does digital marketing cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Digital marketing costs vary depending on your goals and channels. We offer flexible pricing starting from $2,000/month for small businesses to $10,000+/month for larger enterprises. We can work within your budget."
               }
-            ]
-          })}
+            }, {
+              "@type": "Question",
+              "name": "How long does it take to see results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google Ads can deliver results immediately. SEO typically takes 3–6 months to see significant results. Social media results depend on your strategy but usually take 2–3 months. We set realistic expectations upfront."
+              }
+            }, {
+              "@type": "Question",
+              "name": "Can you guarantee results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can't guarantee specific rankings or traffic numbers because algorithms change. However, we can guarantee that we'll use proven strategies, track results carefully, and continuously optimise for better performance. Our 540% average ROI speaks to the effectiveness of our approach."
+              }
+            }, {
+              "@type": "Question",
+              "name": "Do you work with small businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We work with businesses of all sizes, from startups to large enterprises. We have affordable options for small businesses."
+              }
+            }, {
+              "@type": "Question",
+              "name": "What if I'm not happy with the results?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We work on a month-to-month basis with no long-term contracts. If you're not happy, you can leave. However, we're confident in our work and have a 95% client retention rate."
+              }
+            }]
+          }, {
+            "@type": "AggregateRating",
+            "@id": "https://growth-conduit-central.lovable.app/online-marketing-company-adelaide#rating",
+            "ratingValue": "4.9",
+            "ratingCount": "200",
+            "bestRating": "5",
+            "worstRating": "1"
+          }]
+        })}
         </script>
       </Helmet>
 
@@ -923,39 +901,7 @@ const OnlineMarketingCompanyAdelaide = () => {
         </section>
 
         {/* Related Links Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
-                Related Services & Locations
-              </h2>
-              
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-                <Link to="/seo-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">SEO Agency</h3>
-                </Link>
-                <Link to="/ppc-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">PPC Agency</h3>
-                </Link>
-                <Link to="/google-ads-adelaide" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Google Ads Adelaide</h3>
-                </Link>
-                <Link to="/facebook-ads-adelaide" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Facebook Ads Adelaide</h3>
-                </Link>
-                <Link to="/web-design-adelaide" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Web Design Adelaide</h3>
-                </Link>
-                <Link to="/online-marketing-company-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Melbourne Digital Marketing</h3>
-                </Link>
-                <Link to="/online-marketing-company-sydney" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                  <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Sydney Digital Marketing</h3>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Final CTA Section */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground relative overflow-hidden">
@@ -1005,8 +951,6 @@ const OnlineMarketingCompanyAdelaide = () => {
       <Closing />
       <SideTab />
       <MarketingFormModal />
-    </>
-  );
+    </>;
 };
-
 export default OnlineMarketingCompanyAdelaide;
