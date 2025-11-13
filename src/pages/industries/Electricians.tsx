@@ -332,29 +332,36 @@ const Electricians = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background to-accent/5">
-          {/* Floating Circles */}
+        <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated background blobs */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-48 h-48 md:w-72 md:h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed"></div>
-            <div className="absolute top-1/2 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-secondary/10 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute top-20 left-10 w-48 h-48 md:w-72 md:h-72 bg-muted/20 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-64 h-64 md:w-96 md:h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/3 w-40 h-40 md:w-64 md:h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+          </div>
+          
+          {/* Floating particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
           </div>
 
           <div className="container mx-auto px-4 py-12 md:py-16 lg:py-24 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 mt-12 md:mt-8 text-foreground">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 mt-12 md:mt-8 text-charcoal">
                 Digital Marketing for Electricians
               </h1>
-              <p className="hero-sub-headline text-xl md:text-2xl lg:text-3xl font-semibold text-foreground mb-4 md:mb-6 leading-tight px-2">
+              <p className="hero-sub-headline text-xl md:text-2xl lg:text-3xl font-semibold text-charcoal/90 mb-4 md:mb-6 leading-tight px-2">
                 Stop Paying for Marketing That Doesn't Deliver Emergency Calls and High-Value Jobs. Start Dominating Your Local Market with Proven Strategies That Fill Your Calendar with Profitable Work.
               </p>
-              <p className="text-base md:text-lg lg:text-xl text-foreground/80 mb-3 md:mb-4 leading-relaxed px-2">
+              <p className="text-base md:text-lg lg:text-xl text-charcoal/70 mb-3 md:mb-4 leading-relaxed px-2">
                 The Digital Marketing Agency Electrical Contractors Trust for More Emergency Calls, Commercial Jobs, and Residential Projects.
               </p>
-              <p className="text-base md:text-lg lg:text-xl text-foreground/80 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">
+              <p className="text-base md:text-lg lg:text-xl text-charcoal/70 mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto px-2">
                 Partner with Odin Digital and Watch Your Electrical Business Scale with Marketing That Actually Drives Revenue, Not Just Website Visits.
               </p>
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-5 md:py-6 text-base md:text-lg w-full sm:w-auto">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 md:px-8 py-5 md:py-6 text-base md:text-lg w-full sm:w-auto whitespace-normal break-words">
                 Get Your FREE Electrical Contractor Marketing Audit →
               </Button>
             </div>

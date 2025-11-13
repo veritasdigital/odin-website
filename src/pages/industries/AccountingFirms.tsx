@@ -241,15 +241,20 @@ const AccountingFirms = () => {
 
       <div className="pb-20 md:pb-0">
         {/* 1. Hero Section */}
-        <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-white pb-20 md:pb-0">
-          <div className="absolute inset-0 opacity-[0.03]">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+        <section className="relative isolate overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20 pb-20 md:pb-0">
+          {/* Animated background blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
           </div>
 
-          {/* Decorative floating circles */}
-          <div className="absolute -top-6 left-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          {/* Floating particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute -top-6 left-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
+            <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-primary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-20 pt-24 sm:pt-32">
             <div className="max-w-4xl mx-auto animate-slide-up text-center">

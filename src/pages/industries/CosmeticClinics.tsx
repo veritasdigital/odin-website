@@ -207,12 +207,18 @@ const CosmeticClinics = () => {
         <Header />
         
         {/* Section 1: Hero Section */}
-        <section className="relative pt-32 pb-20 overflow-hidden">
-          {/* Animated Background Elements */}
+        <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-[#D91C5C]/10 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-accent/10 rounded-full blur-2xl animate-pulse delay-500"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+          </div>
+          
+          {/* Floating Particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
@@ -226,18 +232,18 @@ const CosmeticClinics = () => {
                 <span className="text-foreground">Cosmetic Clinics</span>
               </nav>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#D91C5C] to-primary bg-clip-text text-transparent inline-block pb-2 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-charcoal leading-tight">
                 Cosmetic Clinic Marketing Agency
               </h1>
               
-              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 leading-relaxed px-4 md:px-0">
+              <p className="text-lg md:text-xl lg:text-2xl text-charcoal/70 mb-8 leading-relaxed px-4 md:px-0">
                 Tired of Tire-Kickers? We Deliver TGA Compliant, High-Value Patient Acquisition for Cosmetic Clinics with a Proven 540% ROI.
               </p>
 
               <Button 
                 onClick={openForm}
                 size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full md:w-auto"
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto whitespace-normal break-words"
               >
                 <span className="text-center">Get Your FREE Marketing Strategy</span>
               </Button>

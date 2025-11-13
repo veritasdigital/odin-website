@@ -297,16 +297,20 @@ const ArchitectureFirms = () => {
 
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center justify-center bg-white decorative-circles">
-          {/* Background gradient */}
-          <div className="absolute inset-0 opacity-[0.03]">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+        <section className="relative isolate overflow-hidden min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated background blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full blur-3xl animate-float"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
           </div>
 
           {/* Floating decorative elements */}
-          <div className="absolute top-20 right-20 w-16 h-16 bg-primary/10 rounded-full animate-float hidden lg:block"></div>
-          <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/10 rounded-lg animate-float hidden lg:block" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-secondary/10 rounded-full animate-float hidden lg:block" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 right-20 w-16 h-16 bg-primary/20 rounded-full animate-float hidden lg:block"></div>
+            <div className="absolute bottom-32 left-16 w-12 h-12 bg-accent/20 rounded-lg animate-float hidden lg:block" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-primary/20 rounded-full animate-float hidden lg:block" style={{ animationDelay: '4s' }}></div>
+          </div>
           
           {/* Main content container */}
           <div className="relative z-10 w-full">
