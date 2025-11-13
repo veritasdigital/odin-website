@@ -9,220 +9,181 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { Link } from "react-router-dom";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Users, Target, TrendingUp, Award, Search, Leaf, Phone, MapPin } from "lucide-react";
-
 const LandscapingCompanies = () => {
-  const { openForm } = useMarketingForm();
-
-  const faqs = [
-    {
-      question: "How much does landscaping marketing cost?",
-      answer: "Landscaping marketing costs vary depending on your goals, location, and competition. We offer packages starting at $1,500 per month for small contractors and up to $10,000+ per month for larger campaigns. We're happy to discuss your budget and create a custom quote."
-    },
-    {
-      question: "How long does it take to see results?",
-      answer: "You can see initial results within 2–4 weeks. However, it typically takes 8–12 weeks to optimise campaigns and see consistent results. SEO takes longer (3–6 months) but provides long-term results."
-    },
-    {
-      question: "What marketing channels work best for landscaping companies?",
-      answer: "Google Ads and SEO are the most effective for capturing high-intent customers actively searching for landscaping services. Facebook and Instagram Ads work well for brand awareness and showcasing your portfolio. We recommend an integrated approach combining multiple channels."
-    },
-    {
-      question: "Can you help with seasonal fluctuations?",
-      answer: "Yes. We develop marketing strategies that address seasonal fluctuations. We help you generate leads year-round by adjusting budgets during peak season and focusing on planning services during slow periods. This smooths out seasonal revenue swings."
-    },
-    {
-      question: "Do you provide transparent reporting?",
-      answer: "Yes. We provide detailed monthly reporting showing leads generated, cost per lead, conversion rates, and ROI. You'll receive easy-to-understand dashboards and regular communication so you always know how your marketing is performing."
-    },
-    {
-      question: "Do I need to sign a long-term contract?",
-      answer: "We offer both fixed-term agreements (typically 6-12 months for best results) and month-to-month options. Most clients stay with us long-term because we deliver measurable results. No lock-in contracts—we earn your business every month."
-    },
-    {
-      question: "Can you guarantee results?",
-      answer: "While we can't guarantee specific results (no ethical agency can), we do guarantee our effort, expertise, and transparent communication. We track and optimise for metrics that matter: leads, conversions, and ROI. Our 95% client retention rate speaks to our results."
-    },
-    {
-      question: "Do you offer a free consultation?",
-      answer: "Yes. We offer a free landscaping marketing consultation where we'll audit your current marketing, analyse your local competition, and provide actionable recommendations. No pressure, no obligations—just valuable insights for your business."
-    },
-    {
-      question: "How do you help us get more customer reviews?",
-      answer: "We implement automated review generation systems that make it easy for happy customers to leave reviews on Google, Facebook, and industry-specific platforms. We also help you respond professionally to all reviews, building trust with potential customers."
-    },
-    {
-      question: "Can you help our website rank higher on Google?",
-      answer: "Yes. We specialise in local SEO for landscaping companies. This includes optimising your Google Business Profile, building location-specific pages, creating service-specific content, and earning quality backlinks. Most clients see significant ranking improvements within 3-6 months."
-    },
-    {
-      question: "Do you build websites for landscaping companies?",
-      answer: "Yes. We design professional, mobile-responsive websites optimised for conversions. Our websites showcase your portfolio, highlight customer testimonials, and include clear calls-to-action that convert visitors into leads. Typical timeline is 4-8 weeks."
-    },
-    {
-      question: "Can you work with small landscaping contractors?",
-      answer: "Absolutely. We work with landscaping companies of all sizes—from solo contractors to large commercial landscaping firms. We tailor our strategies and pricing to fit your specific goals, budget, and market."
-    },
-    {
-      question: "How do we compete with larger landscaping companies?",
-      answer: "We position you as the local expert and leverage your unique strengths: personalised service, local knowledge, specialised expertise. Through targeted local SEO, Google Ads, and review management, we help you dominate your service area even against larger competitors."
-    },
-    {
-      question: "Can you help market commercial landscaping services?",
-      answer: "Yes. We create specialised campaigns for commercial landscaping including LinkedIn advertising, industry-specific SEO, and targeting property managers, facilities managers, and commercial developers. We understand the longer sales cycles and relationship-based nature of commercial work."
-    },
-    {
-      question: "How do I get started?",
-      answer: "Schedule a free strategy session with our team. We'll audit your current marketing, identify opportunities, and provide a customised roadmap for growth. No pressure, no obligations—just actionable insights tailored to your landscaping business."
-    }
-  ];
-
+  const {
+    openForm
+  } = useMarketingForm();
+  const faqs = [{
+    question: "How much does landscaping marketing cost?",
+    answer: "Landscaping marketing costs vary depending on your goals, location, and competition. We offer packages starting at $1,500 per month for small contractors and up to $10,000+ per month for larger campaigns. We're happy to discuss your budget and create a custom quote."
+  }, {
+    question: "How long does it take to see results?",
+    answer: "You can see initial results within 2–4 weeks. However, it typically takes 8–12 weeks to optimise campaigns and see consistent results. SEO takes longer (3–6 months) but provides long-term results."
+  }, {
+    question: "What marketing channels work best for landscaping companies?",
+    answer: "Google Ads and SEO are the most effective for capturing high-intent customers actively searching for landscaping services. Facebook and Instagram Ads work well for brand awareness and showcasing your portfolio. We recommend an integrated approach combining multiple channels."
+  }, {
+    question: "Can you help with seasonal fluctuations?",
+    answer: "Yes. We develop marketing strategies that address seasonal fluctuations. We help you generate leads year-round by adjusting budgets during peak season and focusing on planning services during slow periods. This smooths out seasonal revenue swings."
+  }, {
+    question: "Do you provide transparent reporting?",
+    answer: "Yes. We provide detailed monthly reporting showing leads generated, cost per lead, conversion rates, and ROI. You'll receive easy-to-understand dashboards and regular communication so you always know how your marketing is performing."
+  }, {
+    question: "Do I need to sign a long-term contract?",
+    answer: "We offer both fixed-term agreements (typically 6-12 months for best results) and month-to-month options. Most clients stay with us long-term because we deliver measurable results. No lock-in contracts—we earn your business every month."
+  }, {
+    question: "Can you guarantee results?",
+    answer: "While we can't guarantee specific results (no ethical agency can), we do guarantee our effort, expertise, and transparent communication. We track and optimise for metrics that matter: leads, conversions, and ROI. Our 95% client retention rate speaks to our results."
+  }, {
+    question: "Do you offer a free consultation?",
+    answer: "Yes. We offer a free landscaping marketing consultation where we'll audit your current marketing, analyse your local competition, and provide actionable recommendations. No pressure, no obligations—just valuable insights for your business."
+  }, {
+    question: "How do you help us get more customer reviews?",
+    answer: "We implement automated review generation systems that make it easy for happy customers to leave reviews on Google, Facebook, and industry-specific platforms. We also help you respond professionally to all reviews, building trust with potential customers."
+  }, {
+    question: "Can you help our website rank higher on Google?",
+    answer: "Yes. We specialise in local SEO for landscaping companies. This includes optimising your Google Business Profile, building location-specific pages, creating service-specific content, and earning quality backlinks. Most clients see significant ranking improvements within 3-6 months."
+  }, {
+    question: "Do you build websites for landscaping companies?",
+    answer: "Yes. We design professional, mobile-responsive websites optimised for conversions. Our websites showcase your portfolio, highlight customer testimonials, and include clear calls-to-action that convert visitors into leads. Typical timeline is 4-8 weeks."
+  }, {
+    question: "Can you work with small landscaping contractors?",
+    answer: "Absolutely. We work with landscaping companies of all sizes—from solo contractors to large commercial landscaping firms. We tailor our strategies and pricing to fit your specific goals, budget, and market."
+  }, {
+    question: "How do we compete with larger landscaping companies?",
+    answer: "We position you as the local expert and leverage your unique strengths: personalised service, local knowledge, specialised expertise. Through targeted local SEO, Google Ads, and review management, we help you dominate your service area even against larger competitors."
+  }, {
+    question: "Can you help market commercial landscaping services?",
+    answer: "Yes. We create specialised campaigns for commercial landscaping including LinkedIn advertising, industry-specific SEO, and targeting property managers, facilities managers, and commercial developers. We understand the longer sales cycles and relationship-based nature of commercial work."
+  }, {
+    question: "How do I get started?",
+    answer: "Schedule a free strategy session with our team. We'll audit your current marketing, identify opportunities, and provide a customised roadmap for growth. No pressure, no obligations—just actionable insights tailored to your landscaping business."
+  }];
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Landscaping marketing services for landscape contractors.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "url": "https://growth-conduit-central.lovable.app/contact"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.facebook.com/odindigital",
-          "https://twitter.com/odindigital"
-        ]
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Landscaping marketing services for landscape contractors.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "WebPage",
-        "name": "Landscaping Company Marketing | Consistent Leads, Proven Results",
-        "url": "https://growth-conduit-central.lovable.app/industries/landscaping-companies",
-        "inLanguage": "en-AU",
-        "description": "Landscaping marketing services for landscape contractors. SEO, Google Ads, Facebook Ads, web design. 150+ companies, $8M attributed revenue. Consistent leads, local expertise, affordable pricing.",
-        "about": {
-          "@type": "Service",
-          "name": "Landscaping Company Marketing"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://growth-conduit-central.lovable.app/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Industries",
-              "item": "https://growth-conduit-central.lovable.app/industries"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Landscaping Company Marketing"
-            }
-          ]
-        }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://growth-conduit-central.lovable.app/contact"
       },
-      {
+      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
+    }, {
+      "@type": "WebPage",
+      "name": "Landscaping Company Marketing | Consistent Leads, Proven Results",
+      "url": "https://growth-conduit-central.lovable.app/industries/landscaping-companies",
+      "inLanguage": "en-AU",
+      "description": "Landscaping marketing services for landscape contractors. SEO, Google Ads, Facebook Ads, web design. 150+ companies, $8M attributed revenue. Consistent leads, local expertise, affordable pricing.",
+      "about": {
         "@type": "Service",
-        "serviceType": "Landscaping Company Marketing",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Australia"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Digital Marketing Services for Landscaping Companies",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Search Engine Optimisation (SEO)"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads Management"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Facebook and Instagram Ads"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Professional Website Design"
-              }
-            }
-          ]
-        }
+        "name": "Landscaping Company Marketing"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-          }
-        }))
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Odin Digital - Landscaping Company Marketing"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Evan Tsaboukos"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Imperial Wealth"
-        }
-      },
-      {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "150",
-        "bestRating": "5",
-        "worstRating": "1"
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://growth-conduit-central.lovable.app/"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://growth-conduit-central.lovable.app/industries"
+        }, {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Landscaping Company Marketing"
+        }]
       }
-    ]
+    }, {
+      "@type": "Service",
+      "serviceType": "Landscaping Company Marketing",
+      "provider": {
+        "@type": "Organization",
+        "name": "Odin Digital"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Marketing Services for Landscaping Companies",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Search Engine Optimisation (SEO)"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Google Ads Management"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Facebook and Instagram Ads"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Professional Website Design"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "Odin Digital - Landscaping Company Marketing"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Evan Tsaboukos"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Imperial Wealth"
+      }
+    }, {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "150",
+      "bestRating": "5",
+      "worstRating": "1"
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Landscaping Company Marketing | Consistent Leads, Proven Results | Odin Digital</title>
         <meta name="description" content="Landscaping marketing services for landscape contractors. SEO, Google Ads, Facebook Ads, web design. 150+ companies, $8M attributed revenue. Consistent leads, local expertise, affordable pricing." />
@@ -257,10 +218,7 @@ const LandscapingCompanies = () => {
       </div>
 
       {/* Hero Section */}
-      <ServiceHero 
-        h1="Landscaping Company Marketing: Consistent Leads, Proven Results, Local Expertise"
-        subheadline="Your landscaping business deserves marketing that generates consistent, reliable leads. Landscaping is a seasonal business, but you can smooth out the fluctuations with the right marketing strategy. Customers search online for landscapers. They look on Google, Facebook, Instagram, and review sites. They read reviews and testimonials. They check out your website and portfolio. But if you're struggling with inconsistent leads, poor online visibility, high customer acquisition costs, or lack of digital marketing knowledge, you're not alone. Most landscaping companies struggle with marketing. They rely on word-of-mouth and local directories. They don't have a professional website. They don't show up on Google. They don't have customer reviews. And they don't have a consistent way to generate leads. That's where we come in. Odin Digital is the leading landscaping marketing agency. We help landscaping companies generate consistent, reliable leads through integrated marketing. We've helped over 150 landscaping companies grow their business. We've generated over $8 million in attributed revenue for our clients. We specialise in SEO, Google Ads, Facebook Ads, website design, and reputation management. Whether you're a solo contractor, small crew, or mid-size company, we can help you achieve your landscaping marketing goals."
-      />
+      <ServiceHero h1="Landscaping Company Marketing: Consistent Leads, Proven Results, Local Expertise" subheadline="Your landscaping business deserves marketing that generates consistent, reliable leads. Landscaping is a seasonal business, but you can smooth out the fluctuations with the right marketing strategy. Customers search online for landscapers. They look on Google, Facebook, Instagram, and review sites. They read reviews and testimonials. They check out your website and portfolio. But if you're struggling with inconsistent leads, poor online visibility, high customer acquisition costs, or lack of digital marketing knowledge, you're not alone. Most landscaping companies struggle with marketing. They rely on word-of-mouth and local directories. They don't have a professional website. They don't show up on Google. They don't have customer reviews. And they don't have a consistent way to generate leads. That's where we come in. Odin Digital is the leading landscaping marketing agency. We help landscaping companies generate consistent, reliable leads through integrated marketing. We've helped over 150 landscaping companies grow their business. We've generated over $8 million in attributed revenue for our clients. We specialise in SEO, Google Ads, Facebook Ads, website design, and reputation management. Whether you're a solo contractor, small crew, or mid-size company, we can help you achieve your landscaping marketing goals." />
 
       {/* Social Proof Metrics */}
       <section className="py-16 bg-muted/30">
@@ -343,9 +301,7 @@ const LandscapingCompanies = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
@@ -360,9 +316,7 @@ const LandscapingCompanies = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "Working with Odin Digital transformed our online presence. Within 6 months, we saw a 285% increase in qualified leads and our cost per acquisition dropped by 42%. They truly understand our market."
@@ -377,9 +331,7 @@ const LandscapingCompanies = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "The ROI speaks for itself. Odin Digital's strategic approach to PPC and SEO helped us dominate our local market. Our practice revenue increased by 310% in the first year. Highly recommended."
@@ -760,16 +712,14 @@ const LandscapingCompanies = () => {
           
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
                   <AccordionTrigger className="text-left font-semibold hover:text-primary">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
 
@@ -796,31 +746,7 @@ const LandscapingCompanies = () => {
 
       {/* Related Service & Industry Links */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Explore Our Services & Industry Solutions</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <h3 className="text-xl font-bold mb-4">Core Marketing Services</h3>
-              <div className="flex flex-wrap gap-3">
-                <Link to="/ppc-agency"><Button variant="outline">PPC Agency</Button></Link>
-                <Link to="/seo-agency"><Button variant="outline">SEO Agency</Button></Link>
-                <Link to="/meta-ads-agency"><Button variant="outline">Meta Ads Agency</Button></Link>
-                <Link to="/web-design-agency"><Button variant="outline">Web Design Agency</Button></Link>
-                <Link to="/email-marketing-agency"><Button variant="outline">Email Marketing Agency</Button></Link>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-4">Related Industry Solutions</h3>
-              <div className="flex flex-wrap gap-3">
-                <Link to="/industries/plumbers"><Button variant="outline">Plumber Marketing</Button></Link>
-                <Link to="/industries/electricians"><Button variant="outline">Electrician Marketing</Button></Link>
-                <Link to="/industries/roofing-companies"><Button variant="outline">Roofing Company Marketing</Button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </section>
 
       {/* Mobile Sticky CTA */}
@@ -831,8 +757,6 @@ const LandscapingCompanies = () => {
       </div>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default LandscapingCompanies;
