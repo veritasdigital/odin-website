@@ -883,7 +883,7 @@ const FacebookAdsBallarat = () => {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white/10 text-lg px-8 py-6 whitespace-normal break-words min-h-[48px]"
+                  className="border-primary text-primary hover:bg-primary/10 text-lg px-8 py-6 whitespace-normal break-words min-h-[48px]"
                 >
                   <Link to="/services">Learn About Our Services</Link>
                 </Button>
