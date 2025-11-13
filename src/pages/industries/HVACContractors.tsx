@@ -1607,20 +1607,20 @@ const HVACContractors = () => {
           </div>
           
           <div className="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 md:mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-6 md:mb-8">
               Ready to Generate Consistent HVAC Leads?
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-charcoal/90 mb-6 md:mb-8 leading-relaxed">
               Stop struggling with inconsistent lead flow and seasonal revenue swings. Let's build a marketing strategy that delivers qualified HVAC leads month after month, regardless of the season. Schedule your free consultation and discover exactly how we can help you dominate your local HVAC market.
             </p>
-            <p className="text-base md:text-lg text-white/80 mb-8 md:mb-12">
+            <p className="text-base md:text-lg text-charcoal/70 mb-8 md:mb-12">
               During your free strategy call, we'll analyse your current marketing, identify your biggest opportunities, show you exactly what's working for your competitors, and provide a customised growth plan for your HVAC business. No obligation, no pressure—just actionable insights you can use immediately.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-20 md:mb-0">
-              <Button size="lg" onClick={openForm} className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 text-base md:text-lg py-6 md:py-7 px-6 md:px-8">
+              <Button size="lg" onClick={openForm} className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 text-base md:text-lg py-6 md:py-7 px-6 md:px-8 whitespace-normal break-words">
                 Schedule Free Consultation
               </Button>
-              <Button variant="secondary" size="lg" asChild className="w-full sm:w-auto text-base md:text-lg py-6 md:py-7 px-6 md:px-8">
+              <Button variant="secondary" size="lg" asChild className="w-full sm:w-auto text-base md:text-lg py-6 md:py-7 px-6 md:px-8 whitespace-normal break-words">
                 <a href="/contact">Contact Us</a>
               </Button>
             </div>
