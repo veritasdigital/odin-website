@@ -81,33 +81,36 @@ export default function SocialMedia() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 gradient-hero overflow-hidden">
-        {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
+      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        {/* Animated background blobs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
         
-        {/* Animated background blobs from homepage */}
-        <div className="absolute top-10 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        {/* Floating Circles with white/glass effect */}
+        <div className="absolute top-32 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
+        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.8s' }} />
         
-        {/* Floating circles from homepage */}
-        <div className="absolute top-20 right-1/4 w-32 h-32 border-2 border-white/10 rounded-full animate-float" />
-        <div className="absolute bottom-32 left-1/3 w-24 h-24 border-2 border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
+        {/* Geometric Shapes */}
+        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">Social Media Marketing</Badge>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+            <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-8 animate-fade-in">
               Stop Posting Into the Void
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Build brand awareness and engage your audience across all major social platforms with content that drives real business results.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Social Media Strategy
               </Button>
-              <Button variant="hero" size="xl">
+              <Button variant="outline" size="xl" className="border-primary hover:bg-primary hover:text-white">
                 View Our Work
               </Button>
             </div>
