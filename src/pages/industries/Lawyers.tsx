@@ -820,19 +820,19 @@ const Lawyers = () => {
       </section>
 
       {/* 10. Final CTA */}
-      <section className="py-20 bg-gradient-hero text-white decorative-circles-alt">
+      <section className="py-20 bg-gradient-hero decorative-circles-alt">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-black mb-6">
+          <h2 className="text-3xl md:text-4xl font-black mb-6 text-charcoal">
             Ready to Stop Wasting Money and Start Attracting High-Value Clients?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-xl mb-8 text-charcoal/90">
             Stop settling for low-quality leads. Start working with the digital marketing for lawyers agency that delivers high-value case inquiries and predictable growth.
           </p>
           <Button
             onClick={openForm}
             variant="secondary"
             size="lg"
-            className="shadow-glow"
+            className="shadow-glow whitespace-normal break-words"
           >
             Claim Your FREE Law Firm Marketing Audit →
           </Button>
