@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -317,6 +318,8 @@ const LinkedInAdvertising = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
+        <Header />
+        
         {/* Breadcrumb Navigation */}
         <div className="bg-muted/30 py-3 px-6">
           <div className="max-w-7xl mx-auto">
