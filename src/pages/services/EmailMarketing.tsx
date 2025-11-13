@@ -376,7 +376,7 @@ const EmailMarketing = () => {
 
           <div className="container mx-auto px-6 lg:px-12 relative z-10">
             <div className="max-w-4xl mx-auto text-center animate-slide-up">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-tight tracking-tight mb-6 break-words">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-black text-charcoal leading-[0.95] tracking-tighter mb-10 break-words drop-shadow-sm">
                 Email marketing services
               </h1>
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal/90 mb-8 leading-tight break-words">
