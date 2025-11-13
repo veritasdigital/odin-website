@@ -248,10 +248,39 @@ const OnlineMarketingCompanyNewcastle = () => {
       </section>
 
       {/* Hero Section */}
-      <ServiceHero 
-        h1="Online Marketing Company Newcastle"
-        subheadline="Stop Paying Sydney Prices for Generic Marketing. Get a Cohesive, Newcastle-Centric Digital Strategy Engineered for Predictable Growth in the Hunter Region."
-      />
+      <section className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        {/* Animated Background Blobs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '0s' }}></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-muted/15 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-muted/10 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
+        </div>
+
+        {/* Floating Particles */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-charcoal">
+              Online Marketing Company Newcastle
+            </h1>
+            <p className="text-xl md:text-2xl text-charcoal/90 mb-8 leading-relaxed">
+              Stop Paying Sydney Prices for Generic Marketing. Get a Cohesive, Newcastle-Centric Digital Strategy Engineered for Predictable Growth in the Hunter Region.
+            </p>
+            <Button 
+              size="lg" 
+              onClick={() => window.location.href = '/contact'}
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-8 py-3 whitespace-normal break-words"
+            >
+              Schedule Your FREE Newcastle Digital Strategy Session →
+            </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Introduction */}
       <section className="pt-8 pb-16 relative overflow-hidden">

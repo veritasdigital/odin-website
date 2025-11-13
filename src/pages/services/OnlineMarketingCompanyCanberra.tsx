@@ -400,22 +400,40 @@ const OnlineMarketingCompanyCanberra = () => {
 
       <div className="min-h-screen">
         {/* Hero Section */}
-        <ServiceHero 
-          h1="Online Marketing Canberra: Measurable Results, Transparent Reporting, Local Expertise"
-          subheadline="Your Canberra business deserves online marketing that delivers measurable results. Online marketing is no longer optional—it's essential. Customers search online for businesses like yours. They discover you through Google, Facebook, Instagram, and email. But if you're struggling with unclear ROI, poor agency experiences, or difficulty managing multiple marketing channels, you're not alone. Most Canberra businesses struggle with online marketing. They don't understand which channels to use. They can't find an agency that understands the Canberra market. They're frustrated with poor communication and lack of transparency. And they're tired of paying for marketing that doesn't deliver results. That's where we come in. Odin Digital is the leading online marketing agency in Canberra. We help Canberra businesses achieve measurable results through integrated online marketing. We've helped over 110 Canberra businesses increase their online visibility, generate more leads, and grow their revenue. We specialise in strategic planning, integrated marketing, transparent reporting, and proven results. Whether you're a small business, professional services firm, e-commerce store, or any other Canberra business, we can help you achieve your online marketing goals."
-        />
-
-        <div className="py-4">
-          <div className="container mx-auto px-4 text-center">
-            <Button 
-              onClick={openForm}
-              size="lg"
-              className="bg-[#D91C5C] hover:bg-[#B91849] text-white shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              Schedule Free Online Marketing Consultation
-            </Button>
+        <section className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '0s' }}></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-muted/15 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-muted/10 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
           </div>
-        </div>
+
+          {/* Floating Particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-pulse"></div>
+            <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+          </div>
+
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-charcoal">
+                Online Marketing Canberra: Measurable Results, Transparent Reporting, Local Expertise
+              </h1>
+              <p className="text-xl md:text-2xl text-charcoal/90 mb-8 leading-relaxed">
+                Confused by marketing ROI? Burned by generic agencies? Get strategic, data-driven online marketing built for Canberra businesses. No fluff. No lock-in contracts. Just real results.
+              </p>
+              <Button 
+                size="lg" 
+                onClick={openForm}
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-8 py-3 whitespace-normal break-words"
+              >
+                Schedule Free Online Marketing Consultation
+              </Button>
+            </div>
+          </div>
+        </section>
+
 
         {/* Social Proof Metrics */}
         <section className="relative py-16 bg-gradient-to-br from-white via-muted/20 to-white overflow-hidden">
@@ -732,7 +750,7 @@ const OnlineMarketingCompanyCanberra = () => {
                 <Button 
                   onClick={openForm}
                   size="lg"
-                  className="bg-[#D91C5C] hover:bg-[#B91849] text-white shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
                 >
                   Schedule Your Free Online Marketing Consultation
                 </Button>

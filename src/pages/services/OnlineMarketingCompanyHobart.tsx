@@ -283,14 +283,39 @@ const OnlineMarketingCompanyHobart = () => {
         </section>
 
         {/* Hero Section */}
-        <ServiceHero
-          h1="Online Marketing Company Hobart"
-          subheadline={
-            <>
-              Stop Wasting Your Budget on Mainland Strategies. Start Dominating Tasmania with Online Marketing That Drives Real Revenue.
-            </>
-          }
-        />
+        <section className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '0s' }}></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-muted/15 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-muted/10 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
+          </div>
+
+          {/* Floating Particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-pulse"></div>
+            <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+          </div>
+
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-charcoal">
+                Online Marketing Company Hobart
+              </h1>
+              <p className="text-xl md:text-2xl text-charcoal/90 mb-8 leading-relaxed">
+                Stop Wasting Your Budget on Mainland Strategies. Start Dominating Tasmania with Online Marketing That Drives Real Revenue.
+              </p>
+              <Button 
+                size="lg" 
+                onClick={openForm}
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-8 py-3 whitespace-normal break-words"
+              >
+                Get Your FREE Hobart Online Marketing Audit →
+              </Button>
+            </div>
+          </div>
+        </section>
 
         <div className="container mx-auto px-6 py-12">
           {/* Trust Signals */}
@@ -308,7 +333,7 @@ const OnlineMarketingCompanyHobart = () => {
             <Button 
               size="lg" 
               onClick={openForm}
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
             >
               Get Your FREE Hobart Online Marketing Audit →
             </Button>
@@ -340,7 +365,7 @@ const OnlineMarketingCompanyHobart = () => {
               <Button 
                 size="lg" 
                 onClick={openForm}
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
               >
                 Stop the Marketing Bleed: Talk to a Hobart Expert →
               </Button>
@@ -369,7 +394,7 @@ const OnlineMarketingCompanyHobart = () => {
               <Button 
                 size="lg" 
                 onClick={openForm}
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
               >
                 See Our Digital Marketing Packages for Hobart →
               </Button>
@@ -402,7 +427,7 @@ const OnlineMarketingCompanyHobart = () => {
               <Button 
                 size="lg" 
                 onClick={openForm}
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
               >
                 Talk to a Hobart Digital Marketing Specialist →
               </Button>
@@ -434,7 +459,7 @@ const OnlineMarketingCompanyHobart = () => {
               <Button 
                 size="lg" 
                 onClick={openForm}
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
               >
                 Get Your Questions Answered: Book a Free Call →
               </Button>
@@ -452,7 +477,7 @@ const OnlineMarketingCompanyHobart = () => {
             <Button 
               size="lg" 
               onClick={openForm}
-              className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white"
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words"
             >
               Claim Your FREE Hobart Online Marketing Audit →
             </Button>
@@ -464,7 +489,7 @@ const OnlineMarketingCompanyHobart = () => {
           <Button 
             size="lg" 
             onClick={openForm}
-            className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-lg whitespace-normal break-words"
+            className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white shadow-lg px-6 py-3 whitespace-normal break-words"
           >
             Get FREE Hobart Marketing Audit →
           </Button>

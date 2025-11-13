@@ -338,9 +338,39 @@ const OnlineMarketingCompanyGoldCoast = () => {
         </section>
 
         {/* Section 1: Hero Section */}
-        <ServiceHero h1="Online Marketing Company Gold Coast" subheadline={<>
-              In Australia's Most Competitive Market, "Good Enough" Gets You Nowhere. We Are the Performance-Obsessed Online Marketing Company That Builds High-ROI Digital Systems to Crush Your Competition and Drive Predictable, Year-Round Revenue.
-            </>} />
+        <section className="relative pt-12 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '0s' }}></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-muted/15 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-muted/10 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
+          </div>
+
+          {/* Floating Particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-pulse"></div>
+            <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+          </div>
+
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-charcoal">
+                Online Marketing Company Gold Coast
+              </h1>
+              <p className="text-xl md:text-2xl text-charcoal/90 mb-8 leading-relaxed">
+                In Australia's Most Competitive Market, "Good Enough" Gets You Nowhere. We Are the Performance-Obsessed Online Marketing Company That Builds High-ROI Digital Systems to Crush Your Competition and Drive Predictable, Year-Round Revenue.
+              </p>
+              <Button 
+                size="lg" 
+                onClick={openForm}
+                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-8 py-3 whitespace-normal break-words"
+              >
+                Get Your FREE Gold Coast Marketing Audit →
+              </Button>
+            </div>
+          </div>
+        </section>
 
         <div className="container mx-auto px-6 py-12">
           {/* Section 2: Social Proof Metrics */}
@@ -352,7 +382,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
                 </Card>)}
             </div>
             <div className="text-center mt-8">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 Get Your FREE Gold Coast Marketing Audit →
               </Button>
             </div>
@@ -379,7 +409,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
             })}
             </div>
             <div className="text-center">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 Stop Wasting Money: Talk to a Gold Coast Expert →
               </Button>
             </div>
@@ -430,7 +460,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
             })}
             </div>
             <div className="text-center">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 See How We Build Your Integrated System →
               </Button>
             </div>
@@ -457,7 +487,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
             })}
             </div>
             <div className="text-center">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 Partner with the Best Gold Coast Marketing Agency →
               </Button>
             </div>
@@ -502,7 +532,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
                 </Card>)}
             </div>
             <div className="text-center mt-8">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 Experience the Odin Digital Difference →
               </Button>
             </div>
@@ -516,7 +546,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Stop settling for mediocre results. Partner with the online marketing company that builds integrated digital systems to drive predictable, year-round ROI.
             </p>
-            <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+            <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
               Claim Your FREE Gold Coast Marketing Audit →
             </Button>
           </section>
@@ -544,7 +574,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
               </Accordion>
             </div>
             <div className="text-center mt-8">
-              <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white">
+              <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 py-3 whitespace-normal break-words">
                 Get Your Questions Answered: Book a Free Call →
               </Button>
             </div>
@@ -553,7 +583,7 @@ const OnlineMarketingCompanyGoldCoast = () => {
 
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
-          <Button size="lg" onClick={openForm} className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white shadow-lg whitespace-normal break-words">
+          <Button size="lg" onClick={openForm} className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white shadow-lg px-6 py-3 whitespace-normal break-words">
             Get FREE Marketing Audit →
           </Button>
         </div>
