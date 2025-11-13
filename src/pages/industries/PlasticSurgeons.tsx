@@ -5,178 +5,133 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { 
-  Search, 
-  MousePointerClick, 
-  Share2, 
-  Layout, 
-  TrendingUp, 
-  Users, 
-  DollarSign, 
-  Award,
-  CheckCircle,
-  Shield,
-  Target,
-  BarChart,
-  Zap,
-  AlertTriangle,
-  FileText,
-  Briefcase,
-  Clock,
-  UserCheck,
-  Star,
-  TrendingDown,
-  Eye,
-  Building2,
-  Stethoscope,
-  MapPin,
-  XCircle,
-  Phone
-} from "lucide-react";
-
+import { Search, MousePointerClick, Share2, Layout, TrendingUp, Users, DollarSign, Award, CheckCircle, Shield, Target, BarChart, Zap, AlertTriangle, FileText, Briefcase, Clock, UserCheck, Star, TrendingDown, Eye, Building2, Stethoscope, MapPin, XCircle, Phone } from "lucide-react";
 const PlasticSurgeons = () => {
-  const { openForm } = useMarketingForm();
-
+  const {
+    openForm
+  } = useMarketingForm();
   const jsonLdSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://odindigital.com.au/#organization",
-        "name": "Odin Digital",
-        "url": "https://odindigital.com.au",
-        "logo": "https://odindigital.com.au/logo.png",
-        "description": "Digital marketing agency specialising in cosmetic surgery practice marketing, SEO, Google Ads, Meta Ads, and web design.",
-        "sameAs": [],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#webpage",
-        "url": "https://odindigital.com.au/industries/plastic-surgeons",
-        "name": "Cosmetic Surgery Marketing Solutions | Odin Digital",
-        "description": "Cosmetic surgery marketing agency for growing practices. SEO, Google Ads, Meta Ads, web design. 540% average ROI, 95% retention, $574M+ client revenue.",
-        "inLanguage": "en-AU",
-        "datePublished": "2024-01-01",
-        "dateModified": "2024-01-01"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://odindigital.com.au/#website",
-        "url": "https://odindigital.com.au",
-        "name": "Odin Digital",
-        "description": "Digital marketing agency specialising in cosmetic surgery practice marketing",
-        "publisher": {
-          "@id": "https://odindigital.com.au/#organization"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#cosmetic-seo",
-        "name": "Cosmetic Surgery SEO Services",
-        "description": "Search engine optimisation for cosmetic surgery practices to increase organic visibility and patient acquisition.",
-        "provider": {
-          "@id": "https://odindigital.com.au/#organization"
-        },
+    "@graph": [{
+      "@type": "Organization",
+      "@id": "https://odindigital.com.au/#organization",
+      "name": "Odin Digital",
+      "url": "https://odindigital.com.au",
+      "logo": "https://odindigital.com.au/logo.png",
+      "description": "Digital marketing agency specialising in cosmetic surgery practice marketing, SEO, Google Ads, Meta Ads, and web design.",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
         "areaServed": "AU",
-        "serviceType": "Search Engine Optimisation"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#google-ads",
-        "name": "Cosmetic Surgery Google Ads Management",
-        "description": "Google Ads management for cosmetic surgery practices to reach patients actively searching for cosmetic procedures.",
-        "provider": {
-          "@id": "https://odindigital.com.au/#organization"
-        },
-        "areaServed": "AU",
-        "serviceType": "Pay-Per-Click Advertising"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#meta-ads",
-        "name": "Cosmetic Surgery Meta Ads Management",
-        "description": "Facebook and Instagram advertising for cosmetic surgery practices to build brand awareness and reach new patients.",
-        "provider": {
-          "@id": "https://odindigital.com.au/#organization"
-        },
-        "areaServed": "AU",
-        "serviceType": "Social Media Advertising"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#web-design",
-        "name": "Plastic Surgery Web Design",
-        "description": "Custom web design for cosmetic surgery practices optimised for conversion and patient acquisition.",
-        "provider": {
-          "@id": "https://odindigital.com.au/#organization"
-        },
-        "areaServed": "AU",
-        "serviceType": "Web Design"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from cosmetic surgery SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO is a long-term strategy. Most practices see initial results within 3–6 months, with significant results by 6–12 months. Google Ads provides immediate results, so we often combine SEO with Google Ads for quick wins while building long-term organic traffic."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What's the typical cost of cosmetic surgery marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It depends on your goals and location. A solo practitioner might spend $3,000–$7,000 per month, while a larger group might spend $15,000–$30,000 per month. We work with practices of all sizes and can tailor a strategy to your budget."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you guarantee results?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We can't guarantee specific rankings or traffic numbers because Google's algorithm is constantly changing. However, we can guarantee that we'll use proven strategies, track results carefully, and continuously optimise for better performance. Our 540% average ROI speaks to the effectiveness of our approach."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you work with practices outside major cities?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely. We work with practices in regional areas, rural areas, and major cities. In fact, regional practices often see better results because there's less competition. We have experience with the unique challenges of regional marketing."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you handle before-and-after photo compliance?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Compliance is built into everything we do. We follow Privacy Act requirements for patient photos. We ensure you have written consent before using any patient photos in marketing. We help you manage your before-and-after gallery in a compliant way. Your compliance is our responsibility."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "AggregateRating",
-        "@id": "https://odindigital.com.au/industries/plastic-surgeons#rating",
-        "ratingValue": "4.9",
-        "ratingCount": "283",
-        "bestRating": "5",
-        "worstRating": "1"
+        "availableLanguage": "English"
       }
-    ]
+    }, {
+      "@type": "WebPage",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#webpage",
+      "url": "https://odindigital.com.au/industries/plastic-surgeons",
+      "name": "Cosmetic Surgery Marketing Solutions | Odin Digital",
+      "description": "Cosmetic surgery marketing agency for growing practices. SEO, Google Ads, Meta Ads, web design. 540% average ROI, 95% retention, $574M+ client revenue.",
+      "inLanguage": "en-AU",
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-01"
+    }, {
+      "@type": "WebSite",
+      "@id": "https://odindigital.com.au/#website",
+      "url": "https://odindigital.com.au",
+      "name": "Odin Digital",
+      "description": "Digital marketing agency specialising in cosmetic surgery practice marketing",
+      "publisher": {
+        "@id": "https://odindigital.com.au/#organization"
+      }
+    }, {
+      "@type": "Service",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#cosmetic-seo",
+      "name": "Cosmetic Surgery SEO Services",
+      "description": "Search engine optimisation for cosmetic surgery practices to increase organic visibility and patient acquisition.",
+      "provider": {
+        "@id": "https://odindigital.com.au/#organization"
+      },
+      "areaServed": "AU",
+      "serviceType": "Search Engine Optimisation"
+    }, {
+      "@type": "Service",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#google-ads",
+      "name": "Cosmetic Surgery Google Ads Management",
+      "description": "Google Ads management for cosmetic surgery practices to reach patients actively searching for cosmetic procedures.",
+      "provider": {
+        "@id": "https://odindigital.com.au/#organization"
+      },
+      "areaServed": "AU",
+      "serviceType": "Pay-Per-Click Advertising"
+    }, {
+      "@type": "Service",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#meta-ads",
+      "name": "Cosmetic Surgery Meta Ads Management",
+      "description": "Facebook and Instagram advertising for cosmetic surgery practices to build brand awareness and reach new patients.",
+      "provider": {
+        "@id": "https://odindigital.com.au/#organization"
+      },
+      "areaServed": "AU",
+      "serviceType": "Social Media Advertising"
+    }, {
+      "@type": "Service",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#web-design",
+      "name": "Plastic Surgery Web Design",
+      "description": "Custom web design for cosmetic surgery practices optimised for conversion and patient acquisition.",
+      "provider": {
+        "@id": "https://odindigital.com.au/#organization"
+      },
+      "areaServed": "AU",
+      "serviceType": "Web Design"
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How long does it take to see results from cosmetic surgery SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO is a long-term strategy. Most practices see initial results within 3–6 months, with significant results by 6–12 months. Google Ads provides immediate results, so we often combine SEO with Google Ads for quick wins while building long-term organic traffic."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What's the typical cost of cosmetic surgery marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on your goals and location. A solo practitioner might spend $3,000–$7,000 per month, while a larger group might spend $15,000–$30,000 per month. We work with practices of all sizes and can tailor a strategy to your budget."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you guarantee results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We can't guarantee specific rankings or traffic numbers because Google's algorithm is constantly changing. However, we can guarantee that we'll use proven strategies, track results carefully, and continuously optimise for better performance. Our 540% average ROI speaks to the effectiveness of our approach."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you work with practices outside major cities?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We work with practices in regional areas, rural areas, and major cities. In fact, regional practices often see better results because there's less competition. We have experience with the unique challenges of regional marketing."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you handle before-and-after photo compliance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Compliance is built into everything we do. We follow Privacy Act requirements for patient photos. We ensure you have written consent before using any patient photos in marketing. We help you manage your before-and-after gallery in a compliant way. Your compliance is our responsibility."
+        }
+      }]
+    }, {
+      "@type": "AggregateRating",
+      "@id": "https://odindigital.com.au/industries/plastic-surgeons#rating",
+      "ratingValue": "4.9",
+      "ratingCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Cosmetic Surgery Marketing Solutions | Odin Digital</title>
         <meta name="description" content="Cosmetic surgery marketing agency for growing practices. SEO, Google Ads, Meta Ads, web design. 540% average ROI, 95% retention, $574M+ client revenue." />
@@ -187,10 +142,7 @@ const PlasticSurgeons = () => {
 
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-border shadow-lg p-4">
-        <Button
-          onClick={openForm}
-          className="w-full bg-gradient-primary text-white hover:opacity-90 text-base px-6 py-4 h-auto font-semibold shadow-glow flex items-center justify-center"
-        >
+        <Button onClick={openForm} className="w-full bg-gradient-primary text-white hover:opacity-90 text-base px-6 py-4 h-auto font-semibold shadow-glow flex items-center justify-center">
           <Phone className="mr-2 h-5 w-5" />
           Schedule Free Consultation
         </Button>
@@ -204,8 +156,12 @@ const PlasticSurgeons = () => {
 
         {/* Decorative floating circles */}
         <div className="absolute -top-6 left-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
+        <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{
+        animationDelay: '4s'
+      }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-20 pt-24 sm:pt-32">
           <div className="max-w-4xl mx-auto animate-slide-up text-center">
@@ -222,12 +178,7 @@ const PlasticSurgeons = () => {
             </p>
             
             <div className="pt-2 px-4 hidden md:block">
-              <Button
-                onClick={openForm}
-                variant="hero"
-                size="lg"
-                className="shadow-glow w-full sm:w-auto text-sm sm:text-base"
-              >
+              <Button onClick={openForm} variant="hero" size="lg" className="shadow-glow w-full sm:w-auto text-sm sm:text-base">
                 Schedule Free Consultation →
               </Button>
             </div>
@@ -292,12 +243,7 @@ const PlasticSurgeons = () => {
           </div>
 
           <div className="text-center mt-8 sm:mt-12 px-4">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               See How We Can Help Your Practice →
             </Button>
           </div>
@@ -574,12 +520,7 @@ const PlasticSurgeons = () => {
                 <strong>Why It Matters:</strong> SEO is a long-term strategy that builds sustainable patient flow. Once you rank on page one, you'll receive a steady stream of high-quality patients without paying for every click. Our clients see an average 180% increase in organic traffic within 12 months.
               </p>
 
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More About SEO
               </Button>
             </Card>
@@ -627,12 +568,7 @@ const PlasticSurgeons = () => {
                 <strong>Why It Matters:</strong> Google Ads provides immediate results. You can start attracting new patients within 24 hours. And because we optimise for conversion, you'll see a lower patient acquisition cost than your competitors. Our clients see an average 320% ROI on Google Ads.
               </p>
 
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More About Google Ads
               </Button>
             </Card>
@@ -680,12 +616,7 @@ const PlasticSurgeons = () => {
                 <strong>Why It Matters:</strong> Meta Ads help you reach patients earlier in their decision-making journey. You can build brand awareness, showcase your expertise, and stay top-of-mind until they're ready to book. Our clients see an average 240% ROI on Meta Ads.
               </p>
 
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More About Meta Ads
               </Button>
             </Card>
@@ -733,12 +664,7 @@ const PlasticSurgeons = () => {
                 <strong>Why It Matters:</strong> Your website is your digital storefront. A professional, high-converting website builds trust, showcases your expertise, and converts visitors into patients. Our clients see an average 160% increase in consultation bookings after a website redesign.
               </p>
 
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More About Web Design
               </Button>
             </Card>
@@ -806,12 +732,7 @@ const PlasticSurgeons = () => {
           </div>
 
           <div className="text-center mt-8 sm:mt-12 px-4">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               Get Started Today →
             </Button>
           </div>
@@ -1061,12 +982,7 @@ const PlasticSurgeons = () => {
           </Accordion>
 
           <div className="text-center mt-8 sm:mt-12">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               Still Have Questions? Let's Talk →
             </Button>
           </div>
@@ -1083,12 +999,7 @@ const PlasticSurgeons = () => {
             Schedule a free consultation to discover how we can help you attract high-quality patients, lower your patient acquisition cost, and grow your practice with integrated marketing that actually works.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              onClick={openForm}
-              variant="outline"
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 shadow-glow w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90 shadow-glow w-full sm:w-auto text-sm sm:text-base">
               Schedule Your Free Consultation →
             </Button>
           </div>
@@ -1100,82 +1011,10 @@ const PlasticSurgeons = () => {
 
       {/* Related Industry & Service Links */}
       <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-black text-charcoal mb-4">
-              Explore Our Other Services & Industries
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Related Industries</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/industries/dentists" className="text-primary hover:underline">
-                    Digital Marketing for Dentists
-                  </a>
-                </li>
-                <li>
-                  <a href="/industries/dermatologists" className="text-primary hover:underline">
-                    Digital Marketing for Dermatologists
-                  </a>
-                </li>
-                <li>
-                  <a href="/industries/lawyers" className="text-primary hover:underline">
-                    Digital Marketing for Lawyers
-                  </a>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Our Core Services</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/seo-agency" className="text-primary hover:underline">
-                    SEO Agency
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/google-ads" className="text-primary hover:underline">
-                    Google Ads Management
-                  </a>
-                </li>
-                <li>
-                  <a href="/facebook-advertising" className="text-primary hover:underline">
-                    Meta Ads (Facebook & Instagram)
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/website-design" className="text-primary hover:underline">
-                    Website Design & Development
-                  </a>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Plastic Surgery Specific</h3>
-              <ul className="space-y-2">
-                <li>
-                  <span className="text-charcoal/50">Plastic Surgery SEO (Coming Soon)</span>
-                </li>
-                <li>
-                  <span className="text-charcoal/50">Plastic Surgery PPC (Coming Soon)</span>
-                </li>
-                <li>
-                  <span className="text-charcoal/50">Plastic Surgery Web Design (Coming Soon)</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </div>
+        
       </section>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default PlasticSurgeons;
