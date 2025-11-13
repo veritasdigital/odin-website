@@ -335,7 +335,7 @@ const WebDesignPerth = () => {
           
           {/* Split Screen Content */}
           <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
+            <div className="grid grid-cols-1 gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
               {/* Left Side - Text Content */}
               <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
