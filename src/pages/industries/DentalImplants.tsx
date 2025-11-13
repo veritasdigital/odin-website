@@ -1534,10 +1534,10 @@ export default function DentalImplants() {
       {/* 10. Final CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 gradient-hero decorative-circles relative overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6 md:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-4 sm:mb-6 md:mb-8">
             Ready to Attract More Quality Implant Patients?
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 md:mb-12 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-charcoal/90 mb-8 sm:mb-10 md:mb-12 leading-relaxed">
             You've invested years in becoming an implant specialist. Now it's time to invest in marketing that delivers consistent, quality patient flow. We've helped over 165 implant specialists and implantology practices grow their revenue by an average of 310%. No lock-in contracts. No hidden fees. Just proven strategies that work. Schedule your free implant marketing consultation today and discover how we can help you attract more quality patients, reduce your marketing costs, and grow your practice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -1545,7 +1545,7 @@ export default function DentalImplants() {
               variant="cta" 
               size="xl"
               onClick={openForm}
-              className="text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 w-full sm:w-auto"
+              className="text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-12 w-full sm:w-auto whitespace-normal break-words"
             >
               Schedule Your Free Implant Marketing Consultation
             </Button>
