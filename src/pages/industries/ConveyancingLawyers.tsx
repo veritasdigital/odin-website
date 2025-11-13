@@ -598,18 +598,18 @@ const ConveyancingLawyers = () => {
 
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight mt-24 sm:mt-32">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight mt-24 sm:mt-32">
                 Conveyancing Marketing That Attracts Quality Clients
               </h1>
               
               <div className="prose prose-lg max-w-4xl mx-auto mb-8 px-4">
-                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-charcoal/90 leading-relaxed">
                   Running a conveyancing law practice is demanding. You're managing complex transactions, navigating regulations, meeting tight deadlines, and keeping clients informed throughout the process. On top of all that, you need a steady stream of quality clients to keep your practice growing.
                 </p>
-                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-charcoal/90 leading-relaxed">
                   The problem is that most conveyancers struggle with inconsistent client flow. Some months are busy, other months are slow. You're competing with online conveyancing services that undercut on price. Your online presence isn't strong enough. And many potential clients don't understand why they need a conveyancer.
                 </p>
-                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-charcoal/90 leading-relaxed">
                   You need a marketing partner who understands conveyancing, who can educate clients about your value, and who can help you attract quality clients consistently. At Odin Digital, we're conveyancing lawyer marketing specialists. We've helped over 190 conveyancing practices attract more quality clients and grow their revenue. We specialise in client education, referral network building, Google Ads, local marketing, and integrated strategies that work for conveyancing practices. Whether you're a solo practitioner, small firm, or large practice, we deliver results.
                 </p>
               </div>
