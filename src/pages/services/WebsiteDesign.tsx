@@ -7,88 +7,56 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Globe, Smartphone, Zap, BarChart3, Users, Monitor } from "lucide-react";
-
 export default function WebsiteDesign() {
-  const { openForm } = useMarketingForm();
-
-  const features = [
-    "Custom responsive web design",
-    "User experience optimization",
-    "E-commerce development",
-    "Content management systems",
-    "Speed and performance optimization",
-    "Mobile-first approach",
-    "SEO-friendly architecture",
-    "Security implementation",
-    "Analytics integration",
-    "Ongoing maintenance support"
-  ];
-
-  const benefits = [
-    {
-      icon: BarChart3,
-      title: "40% Better Conversions",
-      description: "Our websites convert significantly better than industry averages"
-    },
-    {
-      icon: Zap,
-      title: "3x Faster Loading",
-      description: "Optimized for speed with sub-3 second loading times"
-    },
-    {
-      icon: Smartphone,
-      title: "100% Mobile Ready",
-      description: "Perfect user experience across all devices and screen sizes"
-    }
-  ];
-
-  const services = [
-    {
-      title: "Business Websites",
-      description: "Professional websites that establish credibility and drive leads",
-      features: ["Custom Design", "Contact Forms", "SEO Optimization", "Content Management"]
-    },
-    {
-      title: "E-commerce Stores",
-      description: "Online stores built to maximize sales and customer satisfaction",
-      features: ["Product Catalogs", "Payment Integration", "Inventory Management", "Order Tracking"]
-    },
-    {
-      title: "Landing Pages",
-      description: "High-converting pages designed for specific campaigns and goals",
-      features: ["A/B Testing", "Conversion Optimization", "Campaign Integration", "Lead Capture"]
-    }
-  ];
-
-  const process = [
-    {
-      step: "01",
-      title: "Discovery & Planning",
-      description: "We understand your business goals, target audience, and technical requirements."
-    },
-    {
-      step: "02",
-      title: "Design & Prototyping",
-      description: "Create visual designs and interactive prototypes for your approval."
-    },
-    {
-      step: "03",
-      title: "Development & Testing",
-      description: "Build your website with clean code and thorough testing across devices."
-    },
-    {
-      step: "04",
-      title: "Launch & Optimize",
-      description: "Deploy your website and continuously optimize for better performance."
-    }
-  ];
-
-  const technologies = [
-    "WordPress", "Shopify", "React", "HTML5/CSS3", "JavaScript", "PHP", "WooCommerce", "Custom CMS"
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const {
+    openForm
+  } = useMarketingForm();
+  const features = ["Custom responsive web design", "User experience optimization", "E-commerce development", "Content management systems", "Speed and performance optimization", "Mobile-first approach", "SEO-friendly architecture", "Security implementation", "Analytics integration", "Ongoing maintenance support"];
+  const benefits = [{
+    icon: BarChart3,
+    title: "40% Better Conversions",
+    description: "Our websites convert significantly better than industry averages"
+  }, {
+    icon: Zap,
+    title: "3x Faster Loading",
+    description: "Optimized for speed with sub-3 second loading times"
+  }, {
+    icon: Smartphone,
+    title: "100% Mobile Ready",
+    description: "Perfect user experience across all devices and screen sizes"
+  }];
+  const services = [{
+    title: "Business Websites",
+    description: "Professional websites that establish credibility and drive leads",
+    features: ["Custom Design", "Contact Forms", "SEO Optimization", "Content Management"]
+  }, {
+    title: "E-commerce Stores",
+    description: "Online stores built to maximize sales and customer satisfaction",
+    features: ["Product Catalogs", "Payment Integration", "Inventory Management", "Order Tracking"]
+  }, {
+    title: "Landing Pages",
+    description: "High-converting pages designed for specific campaigns and goals",
+    features: ["A/B Testing", "Conversion Optimization", "Campaign Integration", "Lead Capture"]
+  }];
+  const process = [{
+    step: "01",
+    title: "Discovery & Planning",
+    description: "We understand your business goals, target audience, and technical requirements."
+  }, {
+    step: "02",
+    title: "Design & Prototyping",
+    description: "Create visual designs and interactive prototypes for your approval."
+  }, {
+    step: "03",
+    title: "Development & Testing",
+    description: "Build your website with clean code and thorough testing across devices."
+  }, {
+    step: "04",
+    title: "Launch & Optimize",
+    description: "Deploy your website and continuously optimize for better performance."
+  }];
+  const technologies = ["WordPress", "Shopify", "React", "HTML5/CSS3", "JavaScript", "PHP", "WooCommerce", "Custom CMS"];
+  return <div className="min-h-screen bg-background">
       <Header />
       <MarketingFormModal />
       <SideTab />
@@ -97,24 +65,44 @@ export default function WebsiteDesign() {
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
         {/* Animated background blobs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1.5s'
+      }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '3s'
+      }} />
         
         {/* Floating Particles */}
         <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
         
         {/* Floating Circles with white/glass effect */}
         <div className="absolute top-32 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
-        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.8s' }} />
+        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '1s'
+      }} />
+        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2s'
+      }} />
+        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2.8s'
+      }} />
         
         {/* Geometric Shapes */}
-        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{ animationDelay: '0.5s' }} />
-        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
-        <div className="absolute top-1/4 left-1/5 w-20 h-20 bg-white/10 backdrop-blur-sm border border-white/25 rounded-lg rotate-12 animate-float shadow-lg" style={{ animationDelay: '3.2s' }} />
+        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{
+        animationDelay: '0.5s'
+      }} />
+        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2.5s'
+      }} />
+        <div className="absolute top-1/4 left-1/5 w-20 h-20 bg-white/10 backdrop-blur-sm border border-white/25 rounded-lg rotate-12 animate-float shadow-lg" style={{
+        animationDelay: '3.2s'
+      }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
@@ -122,10 +110,14 @@ export default function WebsiteDesign() {
             <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-8 animate-fade-in">
               Your Website Should Be Your Best Salesperson
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               Create stunning, conversion-optimized websites that drive results and provide exceptional user experiences across all devices.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Website Quote
               </Button>
@@ -150,20 +142,16 @@ export default function WebsiteDesign() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="p-8 hover:shadow-glow transition-all duration-300">
+            {services.map((service, index) => <Card key={index} className="p-8 hover:shadow-glow transition-all duration-300">
                 <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
                 <ul className="space-y-2">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center space-x-2">
+                  {service.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-primary" />
                       <span className="text-muted-foreground text-sm">{feature}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -182,17 +170,15 @@ export default function WebsiteDesign() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
-              const IconComponent = benefit.icon;
-              return (
-                <Card key={index} className="p-8 text-center hover:shadow-glow transition-all duration-300">
+            const IconComponent = benefit.icon;
+            return <Card key={index} className="p-8 text-center hover:shadow-glow transition-all duration-300">
                   <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -216,12 +202,10 @@ export default function WebsiteDesign() {
             <Card className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">What's Included</h3>
               <ul className="space-y-4">
-                {features.map((feature, index) => (
-                  <li key={index} className="flex items-start space-x-3">
+                {features.map((feature, index) => <li key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </Card>
           </div>
@@ -241,15 +225,13 @@ export default function WebsiteDesign() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((step, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300">
+            {process.map((step, index) => <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300">
                 <div className="w-12 h-12 mx-auto mb-4 bg-gradient-primary rounded-full flex items-center justify-center">
                   <span className="text-white font-bold">{step.step}</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -267,11 +249,9 @@ export default function WebsiteDesign() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {technologies.map((tech, index) => (
-              <Card key={index} className="p-4 text-center hover:shadow-glow transition-all duration-300">
+            {technologies.map((tech, index) => <Card key={index} className="p-4 text-center hover:shadow-glow transition-all duration-300">
                 <span className="text-foreground font-medium">{tech}</span>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -310,10 +290,10 @@ export default function WebsiteDesign() {
       {/* CTA Section */}
       <section className="py-24 gradient-hero">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-black text-white mb-8">
+          <h2 className="text-4xl font-black mb-8 text-slate-950 md:text-6xl">
             Ready to Build Your Website?
           </h2>
-          <p className="text-xl text-white/90 mb-12 leading-relaxed">
+          <p className="text-xl mb-12 leading-relaxed text-slate-950">
             Let our web development experts create a website that drives results for your business.
           </p>
           <Button variant="cta" size="xl" onClick={openForm}>
@@ -324,6 +304,5 @@ export default function WebsiteDesign() {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 }
