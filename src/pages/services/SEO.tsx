@@ -7,77 +7,48 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Search, TrendingUp, Globe, BarChart3, Users, Clock } from "lucide-react";
-
 export default function SEO() {
-  const { openForm } = useMarketingForm();
-
-  const features = [
-    "Technical SEO audits and fixes",
-    "Comprehensive keyword research",
-    "On-page optimization",
-    "Content strategy development",
-    "Link building campaigns",
-    "Local SEO optimization",
-    "Site speed optimization",
-    "Mobile SEO optimization",
-    "Schema markup implementation",
-    "Monthly progress reports"
-  ];
-
-  const benefits = [
-    {
-      icon: TrendingUp,
-      title: "150% Traffic Increase",
-      description: "Average organic traffic growth within 6 months of SEO implementation"
-    },
-    {
-      icon: Globe,
-      title: "Top 3 Rankings",
-      description: "85% of target keywords ranking in top 3 positions on Google"
-    },
-    {
-      icon: Users,
-      title: "Higher Quality Leads",
-      description: "Organic traffic converts 60% better than paid advertising"
-    }
-  ];
-
-  const process = [
-    {
-      step: "01",
-      title: "SEO Audit & Research",
-      description: "Comprehensive analysis of your website's current SEO performance and competitor landscape."
-    },
-    {
-      step: "02",
-      title: "Strategy Development",
-      description: "Custom SEO roadmap with keyword targeting, content strategy, and technical improvements."
-    },
-    {
-      step: "03",
-      title: "Implementation",
-      description: "Execute on-page optimization, technical fixes, and content creation according to strategy."
-    },
-    {
-      step: "04",
-      title: "Monitor & Optimize",
-      description: "Ongoing monitoring, reporting, and optimization to maintain and improve rankings."
-    }
-  ];
-
+  const {
+    openForm
+  } = useMarketingForm();
+  const features = ["Technical SEO audits and fixes", "Comprehensive keyword research", "On-page optimization", "Content strategy development", "Link building campaigns", "Local SEO optimization", "Site speed optimization", "Mobile SEO optimization", "Schema markup implementation", "Monthly progress reports"];
+  const benefits = [{
+    icon: TrendingUp,
+    title: "150% Traffic Increase",
+    description: "Average organic traffic growth within 6 months of SEO implementation"
+  }, {
+    icon: Globe,
+    title: "Top 3 Rankings",
+    description: "85% of target keywords ranking in top 3 positions on Google"
+  }, {
+    icon: Users,
+    title: "Higher Quality Leads",
+    description: "Organic traffic converts 60% better than paid advertising"
+  }];
+  const process = [{
+    step: "01",
+    title: "SEO Audit & Research",
+    description: "Comprehensive analysis of your website's current SEO performance and competitor landscape."
+  }, {
+    step: "02",
+    title: "Strategy Development",
+    description: "Custom SEO roadmap with keyword targeting, content strategy, and technical improvements."
+  }, {
+    step: "03",
+    title: "Implementation",
+    description: "Execute on-page optimization, technical fixes, and content creation according to strategy."
+  }, {
+    step: "04",
+    title: "Monitor & Optimize",
+    description: "Ongoing monitoring, reporting, and optimization to maintain and improve rankings."
+  }];
   const caseStudy = {
     client: "E-commerce Retailer",
     challenge: "Poor organic visibility with only 12% of traffic from search engines",
     solution: "Complete SEO overhaul including technical fixes, content optimization, and strategic link building",
-    results: [
-      "580% increase in organic traffic",
-      "Top 3 rankings for 75+ keywords",
-      "$2.3M additional revenue from organic search"
-    ]
+    results: ["580% increase in organic traffic", "Top 3 rankings for 75+ keywords", "$2.3M additional revenue from organic search"]
   };
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Header />
       <MarketingFormModal />
       <SideTab />
@@ -89,12 +60,18 @@ export default function SEO() {
         
         {/* Animated background blobs from homepage */}
         <div className="absolute top-10 right-10 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-10 left-10 w-80 h-80 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '2s'
+      }} />
         
         {/* Floating circles from homepage */}
         <div className="absolute top-20 right-1/4 w-32 h-32 border-2 border-white/10 rounded-full animate-float" />
-        <div className="absolute bottom-32 left-1/3 w-24 h-24 border-2 border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute bottom-32 left-1/3 w-24 h-24 border-2 border-white/10 rounded-lg animate-float" style={{
+        animationDelay: '3s'
+      }} />
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full animate-float" style={{
+        animationDelay: '1.5s'
+      }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
@@ -109,7 +86,7 @@ export default function SEO() {
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Free SEO Audit
               </Button>
-              <Button variant="outline" size="xl" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button variant="outline" size="xl" className="border-white hover:bg-white text-pink-600">
                 View SEO Results
               </Button>
             </div>
@@ -131,17 +108,15 @@ export default function SEO() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => {
-              const IconComponent = benefit.icon;
-              return (
-                <Card key={index} className="p-8 text-center hover:shadow-glow transition-all duration-300">
+            const IconComponent = benefit.icon;
+            return <Card key={index} className="p-8 text-center hover:shadow-glow transition-all duration-300">
                   <div className="w-16 h-16 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground mb-4">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
-                </Card>
-              );
-            })}
+                </Card>;
+          })}
           </div>
         </div>
       </section>
@@ -165,12 +140,10 @@ export default function SEO() {
             <Card className="p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">What's Included</h3>
               <ul className="space-y-4">
-                {features.map((feature, index) => (
-                  <li key={index} className="flex items-start space-x-3">
+                {features.map((feature, index) => <li key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </Card>
           </div>
@@ -190,15 +163,13 @@ export default function SEO() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((step, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300">
+            {process.map((step, index) => <Card key={index} className="p-6 text-center hover:shadow-glow transition-all duration-300">
                 <div className="w-12 h-12 mx-auto mb-4 bg-gradient-primary rounded-full flex items-center justify-center">
                   <span className="text-white font-bold">{step.step}</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -210,7 +181,9 @@ export default function SEO() {
         
         {/* Background elements */}
         <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
+        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
+        animationDelay: '3s'
+      }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
@@ -239,12 +212,10 @@ export default function SEO() {
               <div>
                 <h4 className="font-semibold text-foreground mb-4">Results:</h4>
                 <div className="space-y-4">
-                  {caseStudy.results.map((result, index) => (
-                    <div key={index} className="flex items-center space-x-3">
+                  {caseStudy.results.map((result, index) => <div key={index} className="flex items-center space-x-3">
                       <BarChart3 className="w-5 h-5 text-primary" />
                       <span className="text-muted-foreground">{result}</span>
-                    </div>
-                  ))}
+                    </div>)}
                 </div>
                 <Button variant="outline" className="mt-6" onClick={openForm}>
                   Get SEO Results Like This
@@ -300,6 +271,5 @@ export default function SEO() {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 }
