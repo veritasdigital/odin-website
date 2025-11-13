@@ -5,257 +5,206 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { 
-  Search, 
-  MousePointerClick, 
-  Share2, 
-  Layout, 
-  TrendingUp, 
-  Users, 
-  DollarSign, 
-  Award,
-  CheckCircle,
-  Shield,
-  Target,
-  BarChart,
-  Zap,
-  AlertTriangle,
-  FileText,
-  Briefcase,
-  Clock,
-  UserCheck,
-  Star,
-  TrendingDown,
-  Eye
-} from "lucide-react";
-
+import { Search, MousePointerClick, Share2, Layout, TrendingUp, Users, DollarSign, Award, CheckCircle, Shield, Target, BarChart, Zap, AlertTriangle, FileText, Briefcase, Clock, UserCheck, Star, TrendingDown, Eye } from "lucide-react";
 const CosmeticSurgeons = () => {
-  const { openForm } = useMarketingForm();
-
+  const {
+    openForm
+  } = useMarketingForm();
   const jsonLdSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://odindigital.com.au/",
+      "logo": "https://odindigital.com.au/logo.png",
+      "description": "Performance-focused digital marketing agency specializing in compliant marketing for high-regulation industries like cosmetic surgery.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "areaServed": "AU",
+        "availableLanguage": "English"
+      },
+      "sameAs": []
+    }, {
+      "@type": "WebPage",
+      "name": "Cosmetic Surgery Digital Marketing Agency",
+      "url": "https://odindigital.com.au/industries/cosmetic-surgeons",
+      "description": "The national hub page for compliant, high-ROI digital marketing services for cosmetic surgeons and plastic surgeons in Australia.",
+      "inLanguage": "en-AU",
+      "lastReviewed": "2025-10-30"
+    }, {
+      "@type": "Service",
+      "serviceType": "Digital Marketing for Cosmetic Surgeons",
+      "provider": {
         "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://odindigital.com.au/",
-        "logo": "https://odindigital.com.au/logo.png",
-        "description": "Performance-focused digital marketing agency specializing in compliant marketing for high-regulation industries like cosmetic surgery.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
+        "name": "Odin Digital"
       },
-      {
-        "@type": "WebPage",
-        "name": "Cosmetic Surgery Digital Marketing Agency",
-        "url": "https://odindigital.com.au/industries/cosmetic-surgeons",
-        "description": "The national hub page for compliant, high-ROI digital marketing services for cosmetic surgeons and plastic surgeons in Australia.",
-        "inLanguage": "en-AU",
-        "lastReviewed": "2025-10-30"
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Digital Marketing for Cosmetic Surgeons",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": "Australia",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Cosmetic Surgery Marketing Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "AHPRA Compliant SEO"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Ethical PPC for Surgical Leads"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Reputation-First Social Media"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How do you ensure our ads comply with AHPRA and Medical Board guidelines?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Compliance is our top priority. Our team is fully trained on the AHPRA advertising guidelines for cosmetic procedures. We have a mandatory compliance checklist integrated into every campaign launch, ensuring we avoid prohibited claims, incentives, and targeting of vulnerable groups. We treat compliance as a feature, not an afterthought."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the most effective digital channel for acquiring high-value cosmetic surgery patients?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The most effective strategy is an integrated one. Google Ads (PPC) captures high-intent patients searching for specific procedures, while SEO builds long-term authority and trust. We use Meta Ads primarily for ethical retargeting and building a community around your brand, ensuring a full-funnel approach."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you handle the high cost of PPC for cosmetic procedures?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We counter the high Cost Per Click (CPC) by focusing on Conversion Rate Optimization (CRO) and Patient Pre-Qualification. We ensure your ads and landing pages are so compelling and targeted that your conversion rate is significantly higher than the industry average, driving your overall Patient Acquisition Cost (PAC) down."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help us build trust and reputation online?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely. Reputation is everything in cosmetic surgery. We integrate reputation management into every campaign, focusing on ethical patient testimonials, educational content, and strategic PR to position your practice as a trusted authority."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you have experience with all cosmetic procedures (surgical and non-surgical)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We have extensive experience marketing both surgical procedures (breast augmentation, rhinoplasty, liposuction, facelifts) and non-surgical treatments (injectables, laser treatments, skin rejuvenation). We tailor campaigns to the specific procedure and patient demographics."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you attract qualified patients vs. 'tire-kickers'?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use precise audience targeting (demographics, income brackets, search intent) and pre-qualification mechanisms (pricing transparency, procedure education, consultation forms) to ensure your leads are genuinely interested and financially capable."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What's your average Patient Acquisition Cost (PAC) for cosmetic procedures?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "PAC varies significantly depending on the procedure (breast augmentation vs. Botox), location, and competition. We focus on optimizing PAC relative to the Lifetime Value (LTV) of your patients, ensuring a strong ROI. During your free strategy session, we'll provide PAC benchmarks specific to your practice."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help us rank for competitive keywords like 'breast augmentation Sydney'?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Ranking for competitive cosmetic surgery keywords requires a strategic, long-term SEO approach. We use content marketing, technical SEO, local SEO, and compliant link-building to help you dominate your local market."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you handle before-and-after photos in compliance with advertising rules?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We strictly adhere to AHPRA guidelines, which prohibit the use of before-and-after images in advertising. Instead, we focus on educational content, patient testimonials (text-based), and trust signals to build credibility ethically."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you work with both established practices and new surgeons?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We work with cosmetic surgeons at all stages—from solo practitioners launching their first practice to large multi-surgeon clinics with established patient bases. Our strategies are tailored to your specific growth stage and goals."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from SEO in the cosmetic surgery niche?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO is a 6-12 month strategy in competitive markets like cosmetic surgery. However, you will see incremental improvements in rankings and traffic within 3-4 months. For immediate results, we recommend combining SEO with Google Ads."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you track ROI and revenue from each marketing channel?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely. We implement advanced tracking to measure Patient Acquisition Cost (PAC), conversion rates, and revenue attribution for each channel (SEO, PPC, Social). You will have full visibility into what's working and what's not."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer website design for cosmetic surgery practices?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We specialize in high-converting, AHPRA-compliant cosmetic surgery websites that are professionally designed, mobile-optimized, and built to convert visitors into consultations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you ensure patient privacy and confidentiality in your marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Patient privacy is paramount. We never use identifiable patient information without explicit written consent. All testimonials and case studies are anonymized or approved by the patient. We strictly comply with privacy laws and AHPRA regulations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What makes your cosmetic surgery marketing different from other agencies?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We are obsessed with compliance and results. Most agencies treat cosmetic surgery like any other industry. We understand the unique challenges (AHPRA compliance, high patient expectations, reputation risk) and build strategies that deliver high-quality patient inquiries while protecting your practice's reputation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer performance guarantees or contracts?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer the best guarantee in the industry: No Lock-In Contracts. If we are not delivering high-quality patient inquiries and a positive ROI, you are free to leave at any time. We put the risk on us, not you."
-            }
+      "areaServed": "Australia",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cosmetic Surgery Marketing Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AHPRA Compliant SEO"
           }
-        ]
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Organization",
-          "name": "Odin Digital - Cosmetic Surgery Digital Marketing Agency"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Liam C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Krush Organics"
-        }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ethical PPC for Surgical Leads"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Reputation-First Social Media"
+          }
+        }]
       }
-    ]
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do you ensure our ads comply with AHPRA and Medical Board guidelines?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Compliance is our top priority. Our team is fully trained on the AHPRA advertising guidelines for cosmetic procedures. We have a mandatory compliance checklist integrated into every campaign launch, ensuring we avoid prohibited claims, incentives, and targeting of vulnerable groups. We treat compliance as a feature, not an afterthought."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the most effective digital channel for acquiring high-value cosmetic surgery patients?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most effective strategy is an integrated one. Google Ads (PPC) captures high-intent patients searching for specific procedures, while SEO builds long-term authority and trust. We use Meta Ads primarily for ethical retargeting and building a community around your brand, ensuring a full-funnel approach."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you handle the high cost of PPC for cosmetic procedures?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We counter the high Cost Per Click (CPC) by focusing on Conversion Rate Optimization (CRO) and Patient Pre-Qualification. We ensure your ads and landing pages are so compelling and targeted that your conversion rate is significantly higher than the industry average, driving your overall Patient Acquisition Cost (PAC) down."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help us build trust and reputation online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Reputation is everything in cosmetic surgery. We integrate reputation management into every campaign, focusing on ethical patient testimonials, educational content, and strategic PR to position your practice as a trusted authority."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you have experience with all cosmetic procedures (surgical and non-surgical)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We have extensive experience marketing both surgical procedures (breast augmentation, rhinoplasty, liposuction, facelifts) and non-surgical treatments (injectables, laser treatments, skin rejuvenation). We tailor campaigns to the specific procedure and patient demographics."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you attract qualified patients vs. 'tire-kickers'?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use precise audience targeting (demographics, income brackets, search intent) and pre-qualification mechanisms (pricing transparency, procedure education, consultation forms) to ensure your leads are genuinely interested and financially capable."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What's your average Patient Acquisition Cost (PAC) for cosmetic procedures?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PAC varies significantly depending on the procedure (breast augmentation vs. Botox), location, and competition. We focus on optimizing PAC relative to the Lifetime Value (LTV) of your patients, ensuring a strong ROI. During your free strategy session, we'll provide PAC benchmarks specific to your practice."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help us rank for competitive keywords like 'breast augmentation Sydney'?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Ranking for competitive cosmetic surgery keywords requires a strategic, long-term SEO approach. We use content marketing, technical SEO, local SEO, and compliant link-building to help you dominate your local market."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you handle before-and-after photos in compliance with advertising rules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We strictly adhere to AHPRA guidelines, which prohibit the use of before-and-after images in advertising. Instead, we focus on educational content, patient testimonials (text-based), and trust signals to build credibility ethically."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you work with both established practices and new surgeons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We work with cosmetic surgeons at all stages—from solo practitioners launching their first practice to large multi-surgeon clinics with established patient bases. Our strategies are tailored to your specific growth stage and goals."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to see results from SEO in the cosmetic surgery niche?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO is a 6-12 month strategy in competitive markets like cosmetic surgery. However, you will see incremental improvements in rankings and traffic within 3-4 months. For immediate results, we recommend combining SEO with Google Ads."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you track ROI and revenue from each marketing channel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. We implement advanced tracking to measure Patient Acquisition Cost (PAC), conversion rates, and revenue attribution for each channel (SEO, PPC, Social). You will have full visibility into what's working and what's not."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer website design for cosmetic surgery practices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We specialize in high-converting, AHPRA-compliant cosmetic surgery websites that are professionally designed, mobile-optimized, and built to convert visitors into consultations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you ensure patient privacy and confidentiality in your marketing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Patient privacy is paramount. We never use identifiable patient information without explicit written consent. All testimonials and case studies are anonymized or approved by the patient. We strictly comply with privacy laws and AHPRA regulations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What makes your cosmetic surgery marketing different from other agencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are obsessed with compliance and results. Most agencies treat cosmetic surgery like any other industry. We understand the unique challenges (AHPRA compliance, high patient expectations, reputation risk) and build strategies that deliver high-quality patient inquiries while protecting your practice's reputation."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer performance guarantees or contracts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer the best guarantee in the industry: No Lock-In Contracts. If we are not delivering high-quality patient inquiries and a positive ROI, you are free to leave at any time. We put the risk on us, not you."
+        }
+      }]
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "Odin Digital - Cosmetic Surgery Digital Marketing Agency"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Liam C"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Krush Organics"
+      }
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Cosmetic Surgery Digital Marketing Agency | AHPRA Compliant & High-ROI | Odin Digital</title>
         <meta name="description" content="The only marketing agency for cosmetic surgeons that guarantees AHPRA compliance while delivering a proven 540% ROI. Focus on high-quality patient acquisition. Get your free strategy session." />
@@ -266,11 +215,7 @@ const CosmeticSurgeons = () => {
 
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
-        <Button
-          onClick={openForm}
-          variant="hero"
-          className="shadow-glow w-full text-sm"
-        >
+        <Button onClick={openForm} variant="hero" className="shadow-glow w-full text-sm">
           Get Your FREE Strategy Session
         </Button>
       </div>
@@ -283,8 +228,12 @@ const CosmeticSurgeons = () => {
 
         {/* Decorative floating circles */}
         <div className="absolute -top-6 left-1/4 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-1/3 right-1/4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
+        <div className="absolute top-1/2 left-10 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{
+        animationDelay: '4s'
+      }}></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 w-full py-12 sm:py-20 pt-24 sm:pt-32">
           <div className="max-w-4xl mx-auto animate-slide-up text-center">
@@ -301,12 +250,7 @@ const CosmeticSurgeons = () => {
             </p>
             
             <div className="pt-2 px-4">
-              <Button
-                onClick={openForm}
-                variant="hero"
-                size="lg"
-                className="shadow-glow w-full sm:w-auto text-sm sm:text-base"
-              >
+              <Button onClick={openForm} variant="hero" size="lg" className="shadow-glow w-full sm:w-auto text-sm sm:text-base">
                 Get Your FREE Strategy Session →
               </Button>
             </div>
@@ -404,12 +348,7 @@ const CosmeticSurgeons = () => {
           </div>
 
           <div className="text-center mt-8 sm:mt-12 px-4">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               Stop Wasting Budget: Get a Compliant Strategy →
             </Button>
           </div>
@@ -505,12 +444,7 @@ const CosmeticSurgeons = () => {
               <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Dominate Google for high-intent cosmetic surgery searches while maintaining strict AHPRA compliance.
               </p>
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More
               </Button>
             </Card>
@@ -521,12 +455,7 @@ const CosmeticSurgeons = () => {
               <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Attract qualified patients immediately with Google Ads campaigns optimized for conversion and compliance.
               </p>
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More
               </Button>
             </Card>
@@ -537,12 +466,7 @@ const CosmeticSurgeons = () => {
               <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Build trust and authority through educational content and ethical social media marketing.
               </p>
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More
               </Button>
             </Card>
@@ -553,24 +477,14 @@ const CosmeticSurgeons = () => {
               <p className="text-charcoal/70 leading-relaxed mb-4 flex-grow">
                 Premium, AHPRA-compliant websites built to convert visitors into consultations.
               </p>
-              <Button 
-                onClick={openForm}
-                variant="outline" 
-                size="sm"
-                className="w-full mt-auto"
-              >
+              <Button onClick={openForm} variant="outline" size="sm" className="w-full mt-auto">
                 Learn More
               </Button>
             </Card>
           </div>
 
           <div className="text-center mt-8 sm:mt-12 px-4">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               See How We Can Help Your Practice →
             </Button>
           </div>
@@ -670,12 +584,7 @@ const CosmeticSurgeons = () => {
           </div>
 
           <div className="text-center mt-8 sm:mt-12 px-4">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               Start Your Strategy Session →
             </Button>
           </div>
@@ -742,12 +651,7 @@ const CosmeticSurgeons = () => {
           <p className="text-lg sm:text-xl mb-6 sm:mb-8 opacity-90">
             Get your free strategy session and discover how we can help you dominate your local market while staying 100% compliant.
           </p>
-          <Button
-            onClick={openForm}
-            variant="outline"
-            size="lg"
-            className="bg-white text-primary hover:bg-white/90 shadow-glow w-full sm:w-auto text-sm sm:text-base"
-          >
+          <Button onClick={openForm} variant="outline" size="lg" className="bg-white text-primary hover:bg-white/90 shadow-glow w-full sm:w-auto text-sm sm:text-base">
             Get Your FREE Strategy Session Now →
           </Button>
           <p className="mt-6 text-sm opacity-80">
@@ -758,77 +662,7 @@ const CosmeticSurgeons = () => {
 
       {/* 10. Related Industry & Service Links */}
       <section className="py-12 sm:py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-black text-charcoal mb-4">
-              Explore Our Other Services & Industries
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Related Industries</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/industries/dentists" className="text-primary hover:underline">
-                    Digital Marketing for Dentists
-                  </a>
-                </li>
-                <li>
-                  <a href="/industries/dermatologists" className="text-primary hover:underline">
-                    Digital Marketing for Dermatologists
-                  </a>
-                </li>
-                <li>
-                  <a href="/industries/lawyers" className="text-primary hover:underline">
-                    Digital Marketing for Lawyers
-                  </a>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Our Core Services</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/seo-agency" className="text-primary hover:underline">
-                    SEO Agency
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/google-ads" className="text-primary hover:underline">
-                    Google Ads Management
-                  </a>
-                </li>
-                <li>
-                  <a href="/facebook-advertising" className="text-primary hover:underline">
-                    Meta Ads (Facebook & Instagram)
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/website-design" className="text-primary hover:underline">
-                    Website Design & Development
-                  </a>
-                </li>
-              </ul>
-            </Card>
-
-            <Card className="p-6 border-charcoal/10 hover:border-primary/20 transition-colors shadow-card">
-              <h3 className="text-lg font-bold text-charcoal mb-3">Cosmetic Surgery Specific</h3>
-              <ul className="space-y-2">
-                <li>
-                  <span className="text-charcoal/50">Cosmetic Surgery SEO (Coming Soon)</span>
-                </li>
-                <li>
-                  <span className="text-charcoal/50">Cosmetic Surgery PPC (Coming Soon)</span>
-                </li>
-                <li>
-                  <span className="text-charcoal/50">Cosmetic Surgery Web Design (Coming Soon)</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </div>
+        
       </section>
 
       {/* 11. FAQ Section */}
@@ -990,12 +824,7 @@ const CosmeticSurgeons = () => {
           </Accordion>
 
           <div className="text-center mt-8 sm:mt-12">
-            <Button
-              onClick={openForm}
-              variant="default"
-              size="lg"
-              className="shadow-primary w-full sm:w-auto text-sm sm:text-base"
-            >
+            <Button onClick={openForm} variant="default" size="lg" className="shadow-primary w-full sm:w-auto text-sm sm:text-base">
               Still Have Questions? Let's Talk →
             </Button>
           </div>
@@ -1003,8 +832,6 @@ const CosmeticSurgeons = () => {
       </section>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default CosmeticSurgeons;
