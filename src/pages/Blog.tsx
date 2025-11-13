@@ -539,26 +539,32 @@ const Blog = () => {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-24 gradient-hero">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <TrendingUp className="w-16 h-16 text-white mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+      <section className="py-24 bg-gradient-to-br from-white via-muted/30 to-muted/20 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
+        </div>
+
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <TrendingUp className="w-16 h-16 text-primary mx-auto mb-6" />
+          <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
             Stay Ahead of the Competition
           </h2>
-          <p className="text-xl text-white/90 mb-12 leading-relaxed">
+          <p className="text-xl text-charcoal/70 mb-12 leading-relaxed">
             Get the latest digital marketing insights, strategies, and industry updates delivered directly to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-8">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-4 py-3 rounded-lg border border-white/20 bg-white/10 backdrop-blur-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/30"
+              className="flex-1 px-4 py-3 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30"
             />
-            <Button variant="cta" size="lg">
+            <Button variant="cta" size="lg" className="whitespace-normal break-words">
               Subscribe
             </Button>
           </div>
-          <p className="text-sm text-white/70">
+          <p className="text-sm text-charcoal/60">
             Join 5,000+ business owners getting weekly marketing insights
           </p>
         </div>
