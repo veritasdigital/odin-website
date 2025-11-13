@@ -479,18 +479,18 @@ const ImmigrationLawyers = () => {
 
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight mt-24 sm:mt-32">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight mt-24 sm:mt-32">
                 Immigration Lawyers Marketing
               </h1>
               
-              <p className="text-xl sm:text-2xl md:text-3xl text-white/95 mb-8 max-w-5xl mx-auto leading-relaxed font-semibold px-4">
+              <p className="text-xl sm:text-2xl md:text-3xl text-charcoal/95 mb-8 max-w-5xl mx-auto leading-relaxed font-semibold px-4">
                 Stop Competing on Price and Start Competing on Trust. We Build Digital Ecosystems That Attract High-Value, Retainer-Ready Clients for Your Immigration Law Firm.
               </p>
 
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal mb-8"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words mb-8"
                 onClick={openForm}
               >
                 Schedule Free Immigration Marketing Consultation <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
@@ -716,15 +716,15 @@ const ImmigrationLawyers = () => {
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
           
           <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-charcoal mb-6 sm:mb-8 px-4">
               Ready to Attract More High-Value Immigration Clients?
             </h2>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
+            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
               Stop competing on price. Start building overwhelming trust. Generate a predictable stream of retainer-ready clients who value your expertise.
             </p>
 
-            <p className="text-base sm:text-lg text-white/80 mb-8 max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg text-charcoal/85 mb-8 max-w-3xl mx-auto px-4">
               Schedule your free, no-obligation immigration law marketing consultation today. We'll analyze your current marketing, identify opportunities, and show you exactly how we can help you scale your practice.
             </p>
 
@@ -732,7 +732,7 @@ const ImmigrationLawyers = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal w-full sm:w-auto"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words w-full sm:w-auto"
                 onClick={openForm}
               >
                 Schedule Your Free Immigration Marketing Consultation <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
