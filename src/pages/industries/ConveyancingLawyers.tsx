@@ -945,15 +945,15 @@ const ConveyancingLawyers = () => {
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
           
           <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-charcoal mb-6 sm:mb-8 px-4">
               Ready to Attract More Quality Conveyancing Clients?
             </h2>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
+            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
               Stop struggling with inconsistent client flow. Stop competing on price alone. Start attracting quality clients who value professional conveyancing services.
             </p>
 
-            <p className="text-base sm:text-lg text-white/80 mb-8 max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg text-charcoal/80 mb-8 max-w-3xl mx-auto px-4">
               Schedule your free, no-obligation conveyancing marketing consultation today. We'll analyse your current marketing, identify opportunities, and show you exactly how we can help you grow your practice.
             </p>
 
@@ -961,7 +961,7 @@ const ConveyancingLawyers = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal w-full sm:w-auto"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words w-full sm:w-auto"
                 onClick={openForm}
               >
                 Schedule Your Free Conveyancing Marketing Consultation <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
