@@ -311,43 +311,57 @@ const OurClients = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-        <div className="absolute bottom-32 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/4 right-1/3 w-20 h-20 bg-white/5 rounded-full animate-float" style={{ animationDelay: '3s' }} />
+      <section className="relative isolate overflow-hidden min-h-[80vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        {/* Animated Background Blobs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-primary/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
         
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-4xl mx-auto space-y-6">
-            <Badge variant="secondary" className="mb-4 bg-white/20 text-white border-white/30">
+        {/* Floating Particles */}
+        <div className="absolute top-32 left-1/4 w-3 h-3 bg-primary/20 rounded-full animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-4 h-4 bg-accent/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-48 left-1/2 w-3 h-3 bg-primary/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-accent/20 rounded-full animate-float" style={{ animationDelay: "3s" }}></div>
+        
+        {/* Floating Circles */}
+        <div className="absolute top-20 right-32 w-24 h-24 bg-primary/20 rounded-full animate-float blur-xl" style={{ animationDelay: "0.5s" }}></div>
+        <div className="absolute bottom-32 left-20 w-32 h-32 bg-accent/20 rounded-full animate-float blur-xl" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute top-1/3 left-1/4 w-16 h-16 bg-primary/15 rounded-full animate-float blur-lg" style={{ animationDelay: "4s" }}></div>
+        
+        {/* Geometric Shapes */}
+        <div className="absolute top-1/4 right-1/3 w-20 h-20 border-2 border-primary/10 rounded-lg rotate-12 animate-float" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-16 h-16 border-2 border-accent/10 rounded-full animate-float" style={{ animationDelay: "3s" }}></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-6 py-24">
+          <div className="text-center max-w-4xl mx-auto space-y-6 animate-fade-in">
+            <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-primary/20">
               <Sparkles className="w-4 h-4 inline mr-2" />
               Proven Results & Case Studies
             </Badge>
-            <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
-              Odin Digital Reviews From <span className="text-white/90">Real Clients</span>
+            <h1 className="text-5xl md:text-6xl font-black text-charcoal mb-6 tracking-tight">
+              Odin Digital Reviews From <span className="text-charcoal/80">Real Clients</span>
             </h1>
-            <p className="text-xl text-white/90 leading-relaxed">
+            <p className="text-xl text-charcoal/70 leading-relaxed">
               See exactly how our proven strategies have transformed businesses across Australia. These aren't theoretical case studies - these are real results from real clients who trusted us to grow their businesses.
             </p>
 
             {/* Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12">
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
-                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">$50M+</div>
-                <div className="text-sm text-white/80 font-medium">Total Revenue Generated</div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+              <Card className="p-6 bg-white/80 backdrop-blur-md border-2 border-primary/20 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+                <div className="text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">$50M+</div>
+                <div className="text-sm text-charcoal/70 font-medium">Total Revenue Generated</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
-                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">200+</div>
-                <div className="text-sm text-white/80 font-medium">Businesses Transformed</div>
+              <Card className="p-6 bg-white/80 backdrop-blur-md border-2 border-primary/20 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+                <div className="text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">200+</div>
+                <div className="text-sm text-charcoal/70 font-medium">Businesses Transformed</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
-                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">352%</div>
-                <div className="text-sm text-white/80 font-medium">Record ROI Achievement</div>
+              <Card className="p-6 bg-white/80 backdrop-blur-md border-2 border-primary/20 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+                <div className="text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">352%</div>
+                <div className="text-sm text-charcoal/70 font-medium">Record ROI Achievement</div>
               </Card>
-              <Card className="p-6 bg-white/10 backdrop-blur-sm border-2 border-white/30 hover:border-white/50 transition-all hover:shadow-xl group">
-                <div className="text-4xl font-black text-white mb-2 group-hover:scale-110 transition-transform">5.2X</div>
-                <div className="text-sm text-white/80 font-medium">Average ROI</div>
+              <Card className="p-6 bg-white/80 backdrop-blur-md border-2 border-primary/20 shadow-xl hover:shadow-2xl hover:border-primary/40 transition-all duration-300 group">
+                <div className="text-4xl font-black text-primary mb-2 group-hover:scale-110 transition-transform">5.2X</div>
+                <div className="text-sm text-charcoal/70 font-medium">Average ROI</div>
               </Card>
             </div>
           </div>
