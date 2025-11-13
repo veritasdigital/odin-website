@@ -332,10 +332,10 @@ const GoogleAdsGoldCoast = () => {
         </div>
         
         {/* Hero Section */}
-        <section className="pt-28 pb-20 md:py-32 px-4 relative overflow-hidden">
-          {/* Gradient Background with Dark Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary-foreground/20"></div>
-          <div className="absolute inset-0 bg-black/50"></div>
+        <section className="pt-28 pb-20 md:py-32 px-4 relative overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated Background Blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
