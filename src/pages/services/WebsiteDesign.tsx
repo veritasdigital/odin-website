@@ -94,21 +94,42 @@ export default function WebsiteDesign() {
       <SideTab />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-hero">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        {/* Animated background blobs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
+        
+        {/* Floating Particles */}
+        <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Floating Circles with white/glass effect */}
+        <div className="absolute top-32 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
+        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
+        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.8s' }} />
+        
+        {/* Geometric Shapes */}
+        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{ animationDelay: '0.5s' }} />
+        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
+        <div className="absolute top-1/4 left-1/5 w-20 h-20 bg-white/10 backdrop-blur-sm border border-white/25 rounded-lg rotate-12 animate-float shadow-lg" style={{ animationDelay: '3.2s' }} />
+        
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">Web Development</Badge>
-            <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+            <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-8 animate-fade-in">
               Your Website Should Be Your Best Salesperson
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Create stunning, conversion-optimized websites that drive results and provide exceptional user experiences across all devices.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Website Quote
               </Button>
-              <Button variant="outline" size="xl" className="text-primary border-white hover:bg-white">
+              <Button variant="outline" size="xl" className="border-primary hover:bg-primary hover:text-white">
                 View Portfolio
               </Button>
             </div>
