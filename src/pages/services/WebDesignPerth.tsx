@@ -377,28 +377,6 @@ const WebDesignPerth = () => {
                 </div>
               </div>
               
-              {/* Right Side - Person Image */}
-              <div className="relative flex items-center justify-center lg:justify-end">
-                <div className="relative w-full max-w-lg">
-                  {/* Person Image */}
-                  <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-lg">
-                    <img src={heroPerson} alt="Alexa Blake, Odin Digital General Manager" className="w-full h-full object-cover object-center" />
-                  </div>
-                  
-                  {/* Floating Glassy Banner */}
-                  <div className="absolute bottom-8 -left-4 right-8 bg-white/80 backdrop-blur-lg border border-white/40 rounded-xl shadow-lg p-4 z-10">
-                    <div className="text-charcoal">
-                      <h3 className="font-bold text-lg">Alexa Blake</h3>
-                      <p className="text-sm text-charcoal/70">Odin Digital General Manager</p>
-                    </div>
-                  </div>
-                  
-                  {/* Decorative elements around image */}
-                  <div className="absolute -top-6 -left-6 w-12 h-12 bg-primary/20 rounded-full animate-float"></div>
-                  <div className="absolute -bottom-4 -right-4 w-8 h-8 bg-secondary/20 rounded-lg animate-float" style={{ animationDelay: '2s' }}></div>
-                  <div className="absolute top-1/3 -left-8 w-6 h-6 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
-                </div>
-              </div>
               
             </div>
           </div>
