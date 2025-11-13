@@ -522,7 +522,7 @@ const WebDesignPerth = () => {
                   </p>
                   <Button
                     onClick={openForm}
-                    className="bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow w-full whitespace-normal h-auto"
+                    className="bg-gradient-primary text-primary-foreground shadow-primary hover:shadow-glow w-full whitespace-normal break-words h-auto py-3 px-6"
                   >
                     {service.cta}
                   </Button>
