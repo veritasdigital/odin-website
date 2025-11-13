@@ -278,19 +278,19 @@ const FamilyDentists = () => {
 
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight mt-8 sm:mt-12">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight mt-8 sm:mt-12">
                 Digital Marketing for Family Dentists
               </h1>
               
-              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl text-white/95 font-bold mb-8 leading-tight max-w-5xl mx-auto">
+              <p className="hero-sub-headline text-2xl sm:text-3xl md:text-4xl text-charcoal/95 font-bold mb-8 leading-tight max-w-5xl mx-auto">
                 Stop Losing Patients to the Clinic Down the Street. Attract High-Value, Long-Term Patients with a Predictable Digital Strategy.
               </p>
 
-              <p className="text-lg sm:text-xl text-white/90 mb-6 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-charcoal/90 mb-6 max-w-4xl mx-auto leading-relaxed">
                 You're focused on creating healthy smiles. We're focused on creating a healthy patient schedule. We build digital systems that deliver a steady flow of new patient bookings and ensure high recall rates.
               </p>
 
-              <p className="text-base sm:text-lg text-white/85 mb-10 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg text-charcoal/85 mb-10 max-w-4xl mx-auto leading-relaxed">
                 At Odin Digital, we understand the unique challenges of running a family dental practice—from high local competition to the critical need for patient trust and retention. Generic marketing plans fail because they don't account for patient anxiety, the importance of HICAPS, or the high cost of acquiring a new patient. We craft integrated digital ecosystems—combining Local SEO, Targeted PPC, Patient-Centric Web Design, and Recall Automation—to ensure your chairs are always full.
               </p>
 
@@ -298,7 +298,7 @@ const FamilyDentists = () => {
                 onClick={openForm}
                 variant="cta"
                 size="xl"
-                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal h-auto py-3 sm:py-4"
+                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal break-words h-auto py-3 sm:py-4"
               >
                 Schedule Your FREE Patient Acquisition Analysis →
               </Button>
@@ -859,15 +859,15 @@ const FamilyDentists = () => {
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
 
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-charcoal mb-6">
               Ready to Build a Predictable Patient Acquisition System?
             </h2>
             
-            <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-charcoal/90 mb-8 max-w-3xl mx-auto leading-relaxed">
               Stop relying on word-of-mouth and start attracting high-value, long-term patients with a strategic digital blueprint.
             </p>
 
-            <p className="text-base sm:text-lg text-white/85 mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-charcoal/85 mb-10 max-w-3xl mx-auto leading-relaxed">
               Schedule your free, no-obligation patient acquisition analysis today. We'll show you the exact roadmap to dominate your local market and maximizing patient retention.
             </p>
 
@@ -876,7 +876,7 @@ const FamilyDentists = () => {
                 onClick={openForm}
                 variant="cta"
                 size="xl"
-                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal h-auto py-3 sm:py-4"
+                className="text-sm sm:text-base md:text-lg shadow-glow whitespace-normal break-words h-auto py-3 sm:py-4"
               >
                 Schedule Your FREE Patient Acquisition Analysis →
               </Button>
