@@ -151,8 +151,11 @@ import WebDesignBallarat from "./pages/services/WebDesignBallarat";
 import InfluencerAgency from "./pages/services/InfluencerAgency";
 import PediatricDentists from "./pages/industries/PediatricDentists";
 import LandscapingCompanies from "./pages/industries/LandscapingCompanies";
+
 const queryClient = new QueryClient();
-const App = () => <QueryClientProvider client={queryClient}>
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
     <MarketingFormProvider>
       <TooltipProvider>
         <Toaster />
@@ -239,7 +242,7 @@ const App = () => <QueryClientProvider client={queryClient}>
             <Route path="/industries/hvac-contractors" element={<HVACContractors />} />
             <Route path="/industries/roofing-companies" element={<RoofingCompanies />} />
           <Route path="/industries/pediatric-dentists" element={<PediatricDentists />} />
-          
+          <Route path="/industries/landscaping-companies" element={<LandscapingCompanies />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
@@ -311,5 +314,7 @@ const App = () => <QueryClientProvider client={queryClient}>
         </BrowserRouter>
       </TooltipProvider>
     </MarketingFormProvider>
-  </QueryClientProvider>;
+  </QueryClientProvider>
+);
+
 export default App;
