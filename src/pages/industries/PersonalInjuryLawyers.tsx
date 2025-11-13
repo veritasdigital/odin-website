@@ -8,193 +8,158 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle2, Shield, TrendingUp, Users, Award, Target, Zap, Clock, BarChart3, FileCheck, Search, MousePointerClick, Share2, Palette, Scale, Gavel } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
-
 const PersonalInjuryLawyers = () => {
-  const { openForm } = useMarketingForm();
-
+  const {
+    openForm
+  } = useMarketingForm();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const faqs = [
-    {
-      question: "How do you ensure our marketing remains compliant with legal advertising rules?",
-      answer: "Compliance is our highest priority. Our team is trained on the Legal Profession Uniform Law and state-specific rules (e.g., QLD/NSW restrictions). We integrate a mandatory compliance checklist into every campaign launch, ensuring we avoid prohibited language, sensationalism, and direct approaches to injured people."
-    },
-    {
-      question: "Why is personal injury PPC so expensive, and how do you manage the cost?",
-      answer: "Personal injury PPC is expensive because the client lifetime value (CLV) is extremely high, driving up competition. We manage the cost by focusing on Case Pre-Qualification and Conversion Rate Optimisation (CRO). We use hyper-specific keywords and pre-qualify leads on the landing page, ensuring your high CPC only results in high-value, qualified case enquiries."
-    },
-    {
-      question: "How does SEO help a personal injury law firm with a long sales cycle?",
-      answer: "SEO builds the long-term trust and authority necessary for a long sales cycle. By ranking for terms that answer a prospect's initial questions (e.g., \"how long do I have to file a claim?\"), you become the trusted resource. When they are ready to hire a lawyer months later, your firm is already the authority in their mind."
-    },
-    {
-      question: "We get a lot of leads, but most are low-value or time-wasters. How do you fix this?",
-      answer: "We fix low-quality lead problems through Case Pre-Qualification Systems and Strategic Targeting. Our landing pages use qualifying questions (injury severity, liability clarity, case timeline) to filter out frivolous inquiries before they reach your intake team. We also exclude keywords that attract non-viable cases."
-    },
-    {
-      question: "How do you compete with personal injury marketing aggregators and lead generation companies?",
-      answer: "We build your own proprietary case pipeline instead of relying on shared lead aggregators. Through SEO and branded PPC campaigns, we establish your firm as the direct authority, eliminating the need to compete for expensive, shared leads. This reduces cost per case and increases case quality."
-    },
-    {
-      question: "What makes your PPC campaigns different from other agencies managing personal injury Google Ads?",
-      answer: "We build Case-Type-Specific Landing Pages and use Negative Keyword Sculpting. Instead of sending all clicks to a generic contact page, we create dedicated landing pages for each case type (motor vehicle accidents, workplace injuries, medical negligence). We also exclude low-intent and unqualified searches to maximize ROI."
-    },
-    {
-      question: "How long does it take to see results from SEO for a personal injury law firm?",
-      answer: "SEO is a medium to long-term investment. You can expect to see measurable improvements in organic traffic and keyword rankings within 4-6 months. However, once established, SEO delivers compounding returns, driving qualified case inquiries month after month without the ongoing ad spend required by PPC."
-    },
-    {
-      question: "Can you help us with social media advertising for personal injury cases?",
-      answer: "Yes, but with compliance-first guardrails. Meta Ads (Facebook and Instagram) are powerful for awareness-stage campaigns and retargeting. We create compliant ad creatives that educate and build trust without violating legal advertising restrictions. This keeps your firm top-of-mind throughout the long decision-making process."
-    },
-    {
-      question: "Do you offer web design services specifically for personal injury law firms?",
-      answer: "Absolutely. We design compliance-focused, conversion-optimized websites tailored for personal injury firms. Our designs emphasize trust, authority, and ethical practice, with clear CTAs, case-type-specific landing pages, and seamless case submission integration to maximize case acquisition."
-    },
-    {
-      question: "What is your pricing structure? Do you require long-term contracts?",
-      answer: "We offer flexible, performance-based pricing with no lock-in contracts. You can cancel with 30 days' notice. We earn your business every month through results, not binding agreements. Our 95% retention rate proves we deliver consistent value."
-    },
-    {
-      question: "How do you measure ROI for personal injury marketing campaigns?",
-      answer: "We track every case inquiry back to its source and measure Cost Per Case Acquisition, Case Value, and overall Return on Ad Spend (ROAS). You'll receive detailed monthly reports showing exactly where your marketing dollars go and what results they generate, including case quality metrics and conversion rates."
-    },
-    {
-      question: "What is the typical ROI we can expect from working with Odin Digital?",
-      answer: "Our average client sees a 540% ROI, meaning for every $1 invested, they generate $5.40 in revenue. However, results vary based on your market, competition, and case mix. We focus on delivering qualified, high-value cases—not just vanity metrics like clicks or impressions."
-    },
-    {
-      question: "How do you handle the ethical restrictions around advertising to injured people?",
-      answer: "We strictly adhere to the prohibition on direct approaches to injured people. Our campaigns focus on Educational Content Marketing and Brand Authority Building. We attract clients who are actively seeking help, rather than soliciting individuals who may not yet be aware they have a claim."
-    },
-    {
-      question: "Can you help us if we're a new personal injury law firm with no existing client base?",
-      answer: "Absolutely. We've helped numerous new firms launch successfully. We focus on rapid brand awareness through PPC and social media ads while simultaneously building your long-term SEO foundation. This dual approach generates immediate case inquiries while establishing sustainable growth."
-    },
-    {
-      question: "Do you work with personal injury law firms outside of major cities?",
-      answer: "Yes. We work with personal injury firms across Australia, from major metro areas to regional markets. Our digital marketing strategies are tailored to your local competitive landscape, whether you're in Sydney, Melbourne, or a smaller regional hub."
-    },
-    {
-      question: "What happens if a campaign isn't performing as expected?",
-      answer: "We provide complete transparency through monthly reporting. If a campaign underperforms, we immediately analyze the data, identify the issue, and implement optimizations. Our no lock-in contract policy means you're never trapped in an underperforming relationship—we earn your business every single month."
-    }
-  ];
-
+  const faqs = [{
+    question: "How do you ensure our marketing remains compliant with legal advertising rules?",
+    answer: "Compliance is our highest priority. Our team is trained on the Legal Profession Uniform Law and state-specific rules (e.g., QLD/NSW restrictions). We integrate a mandatory compliance checklist into every campaign launch, ensuring we avoid prohibited language, sensationalism, and direct approaches to injured people."
+  }, {
+    question: "Why is personal injury PPC so expensive, and how do you manage the cost?",
+    answer: "Personal injury PPC is expensive because the client lifetime value (CLV) is extremely high, driving up competition. We manage the cost by focusing on Case Pre-Qualification and Conversion Rate Optimisation (CRO). We use hyper-specific keywords and pre-qualify leads on the landing page, ensuring your high CPC only results in high-value, qualified case enquiries."
+  }, {
+    question: "How does SEO help a personal injury law firm with a long sales cycle?",
+    answer: "SEO builds the long-term trust and authority necessary for a long sales cycle. By ranking for terms that answer a prospect's initial questions (e.g., \"how long do I have to file a claim?\"), you become the trusted resource. When they are ready to hire a lawyer months later, your firm is already the authority in their mind."
+  }, {
+    question: "We get a lot of leads, but most are low-value or time-wasters. How do you fix this?",
+    answer: "We fix low-quality lead problems through Case Pre-Qualification Systems and Strategic Targeting. Our landing pages use qualifying questions (injury severity, liability clarity, case timeline) to filter out frivolous inquiries before they reach your intake team. We also exclude keywords that attract non-viable cases."
+  }, {
+    question: "How do you compete with personal injury marketing aggregators and lead generation companies?",
+    answer: "We build your own proprietary case pipeline instead of relying on shared lead aggregators. Through SEO and branded PPC campaigns, we establish your firm as the direct authority, eliminating the need to compete for expensive, shared leads. This reduces cost per case and increases case quality."
+  }, {
+    question: "What makes your PPC campaigns different from other agencies managing personal injury Google Ads?",
+    answer: "We build Case-Type-Specific Landing Pages and use Negative Keyword Sculpting. Instead of sending all clicks to a generic contact page, we create dedicated landing pages for each case type (motor vehicle accidents, workplace injuries, medical negligence). We also exclude low-intent and unqualified searches to maximize ROI."
+  }, {
+    question: "How long does it take to see results from SEO for a personal injury law firm?",
+    answer: "SEO is a medium to long-term investment. You can expect to see measurable improvements in organic traffic and keyword rankings within 4-6 months. However, once established, SEO delivers compounding returns, driving qualified case inquiries month after month without the ongoing ad spend required by PPC."
+  }, {
+    question: "Can you help us with social media advertising for personal injury cases?",
+    answer: "Yes, but with compliance-first guardrails. Meta Ads (Facebook and Instagram) are powerful for awareness-stage campaigns and retargeting. We create compliant ad creatives that educate and build trust without violating legal advertising restrictions. This keeps your firm top-of-mind throughout the long decision-making process."
+  }, {
+    question: "Do you offer web design services specifically for personal injury law firms?",
+    answer: "Absolutely. We design compliance-focused, conversion-optimized websites tailored for personal injury firms. Our designs emphasize trust, authority, and ethical practice, with clear CTAs, case-type-specific landing pages, and seamless case submission integration to maximize case acquisition."
+  }, {
+    question: "What is your pricing structure? Do you require long-term contracts?",
+    answer: "We offer flexible, performance-based pricing with no lock-in contracts. You can cancel with 30 days' notice. We earn your business every month through results, not binding agreements. Our 95% retention rate proves we deliver consistent value."
+  }, {
+    question: "How do you measure ROI for personal injury marketing campaigns?",
+    answer: "We track every case inquiry back to its source and measure Cost Per Case Acquisition, Case Value, and overall Return on Ad Spend (ROAS). You'll receive detailed monthly reports showing exactly where your marketing dollars go and what results they generate, including case quality metrics and conversion rates."
+  }, {
+    question: "What is the typical ROI we can expect from working with Odin Digital?",
+    answer: "Our average client sees a 540% ROI, meaning for every $1 invested, they generate $5.40 in revenue. However, results vary based on your market, competition, and case mix. We focus on delivering qualified, high-value cases—not just vanity metrics like clicks or impressions."
+  }, {
+    question: "How do you handle the ethical restrictions around advertising to injured people?",
+    answer: "We strictly adhere to the prohibition on direct approaches to injured people. Our campaigns focus on Educational Content Marketing and Brand Authority Building. We attract clients who are actively seeking help, rather than soliciting individuals who may not yet be aware they have a claim."
+  }, {
+    question: "Can you help us if we're a new personal injury law firm with no existing client base?",
+    answer: "Absolutely. We've helped numerous new firms launch successfully. We focus on rapid brand awareness through PPC and social media ads while simultaneously building your long-term SEO foundation. This dual approach generates immediate case inquiries while establishing sustainable growth."
+  }, {
+    question: "Do you work with personal injury law firms outside of major cities?",
+    answer: "Yes. We work with personal injury firms across Australia, from major metro areas to regional markets. Our digital marketing strategies are tailored to your local competitive landscape, whether you're in Sydney, Melbourne, or a smaller regional hub."
+  }, {
+    question: "What happens if a campaign isn't performing as expected?",
+    answer: "We provide complete transparency through monthly reporting. If a campaign underperforms, we immediately analyze the data, identify the issue, and implement optimizations. Our no lock-in contract policy means you're never trapped in an underperforming relationship—we earn your business every single month."
+  }];
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://growth-conduit-central.lovable.app/#organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused digital marketing agency specializing in compliant, high-value case acquisition for personal injury law firms.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "url": "https://growth-conduit-central.lovable.app/contact"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.facebook.com/odindigital",
-          "https://twitter.com/odindigital"
-        ]
+    "@graph": [{
+      "@type": "Organization",
+      "@id": "https://growth-conduit-central.lovable.app/#organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused digital marketing agency specializing in compliant, high-value case acquisition for personal injury law firms.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#webpage",
-        "name": "Personal Injury Lawyer Marketing Agency",
-        "url": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers",
-        "description": "The national hub page for compliant, high-value case acquisition strategies for personal injury lawyers in Australia.",
-        "inLanguage": "en-AU",
-        "lastReviewed": "2025-10-30",
-        "isPartOf": {
-          "@id": "https://growth-conduit-central.lovable.app/#website"
-        }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://growth-conduit-central.lovable.app/contact"
       },
-      {
-        "@type": "Service",
-        "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#service",
-        "serviceType": "Digital Marketing for Personal Injury Lawyers",
-        "provider": {
-          "@id": "https://growth-conduit-central.lovable.app/#organization"
-        },
-        "areaServed": "Australia",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Personal Injury Case Acquisition Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Compliant Case Pre-Qualification Funnels"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "High-Value Case PPC"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Law Firm Authority SEO"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#faqpage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-          }
-        }))
-      },
-      {
-        "@type": "Review",
-        "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#review",
-        "itemReviewed": {
-          "@type": "Organization",
-          "name": "Odin Digital - Personal Injury Lawyer Marketing Agency"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Liam C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Krush Organics"
-        }
+      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
+    }, {
+      "@type": "WebPage",
+      "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#webpage",
+      "name": "Personal Injury Lawyer Marketing Agency",
+      "url": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers",
+      "description": "The national hub page for compliant, high-value case acquisition strategies for personal injury lawyers in Australia.",
+      "inLanguage": "en-AU",
+      "lastReviewed": "2025-10-30",
+      "isPartOf": {
+        "@id": "https://growth-conduit-central.lovable.app/#website"
       }
-    ]
+    }, {
+      "@type": "Service",
+      "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#service",
+      "serviceType": "Digital Marketing for Personal Injury Lawyers",
+      "provider": {
+        "@id": "https://growth-conduit-central.lovable.app/#organization"
+      },
+      "areaServed": "Australia",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Personal Injury Case Acquisition Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Compliant Case Pre-Qualification Funnels"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High-Value Case PPC"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Law Firm Authority SEO"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#faqpage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }, {
+      "@type": "Review",
+      "@id": "https://growth-conduit-central.lovable.app/industries/personal-injury-lawyers#review",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "Odin Digital - Personal Injury Lawyer Marketing Agency"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Liam C"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Krush Organics"
+      }
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Personal Injury Lawyer Marketing Agency | Compliant & High-Value Cases | Odin Digital</title>
         <meta name="description" content="The only Personal Injury Lawyer Marketing Agency focused on compliant, high-value case acquisition. Stop wasting budget on junk leads. Proven 540% ROI." />
@@ -234,11 +199,7 @@ const PersonalInjuryLawyers = () => {
                 Stop Wasting Budget on Junk Leads and Unethical Tactics. We Deliver High-Value, Compliant Case Generation for Personal Injury Lawyers with a Proven 540% ROI.
               </p>
 
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full md:w-auto"
-              >
+              <Button onClick={openForm} size="lg" className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full md:w-auto">
                 <span className="text-center">Get Your FREE Marketing Strategy</span>
               </Button>
             </div>
@@ -324,9 +285,7 @@ const PersonalInjuryLawyers = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
               <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
@@ -337,9 +296,7 @@ const PersonalInjuryLawyers = () => {
 
               <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "Finally, an agency that understands legal advertising compliance AND delivers results. Our case quality has improved dramatically, and we're attracting clients who actually have viable claims."
@@ -350,9 +307,7 @@ const PersonalInjuryLawyers = () => {
 
               <div className="p-6 md:p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-sm md:text-base text-muted-foreground mb-4 italic">
                   "The ROI speaks for itself. We've cut our dependence on lead aggregators by 70% while tripling our high-value case inquiries. Best investment we've made."
@@ -397,11 +352,7 @@ const PersonalInjuryLawyers = () => {
                     <span className="text-xs md:text-sm">Local SEO domination</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base" asChild>
                   <a href="/seo-agency">Learn More</a>
                 </Button>
               </div>
@@ -428,11 +379,7 @@ const PersonalInjuryLawyers = () => {
                     <span className="text-xs md:text-sm">Case-type-specific landing pages</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base" asChild>
                   <a href="/ppc-agency">Learn More</a>
                 </Button>
               </div>
@@ -459,11 +406,7 @@ const PersonalInjuryLawyers = () => {
                     <span className="text-xs md:text-sm">Brand awareness strategies</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base" asChild>
                   <a href="/meta-ads-agency">Learn More</a>
                 </Button>
               </div>
@@ -490,11 +433,7 @@ const PersonalInjuryLawyers = () => {
                     <span className="text-xs md:text-sm">Mobile-optimized for conversions</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white text-sm md:text-base" asChild>
                   <a href="/web-design-agency">Learn More</a>
                 </Button>
               </div>
@@ -699,11 +638,7 @@ const PersonalInjuryLawyers = () => {
               <p className="text-lg md:text-xl mb-8 opacity-90">
                 Get a FREE, no-obligation marketing strategy session tailored to your law firm. Discover how we can deliver compliant, high-value case acquisition starting today.
               </p>
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-white text-[#D91C5C] hover:bg-white/90 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full md:w-auto"
-              >
+              <Button onClick={openForm} size="lg" className="bg-white text-[#D91C5C] hover:bg-white/90 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full md:w-auto">
                 <span className="text-center">Schedule Your FREE Strategy Session</span>
               </Button>
               <p className="text-sm mt-4 opacity-75">No lock-in contracts. Cancel anytime with 30 days' notice.</p>
@@ -712,49 +647,7 @@ const PersonalInjuryLawyers = () => {
         </section>
 
         {/* Section 10: Related Industry & Service Links */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto px-4">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Explore More Industry Solutions</h2>
-              
-              <div className="mb-8">
-                <h3 className="text-lg md:text-xl font-semibold mb-4">Related Industries</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <a href="/industries" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">All Industries</span>
-                  </a>
-                  <a href="/industries/cosmetic-surgeons" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Cosmetic Surgeons</span>
-                  </a>
-                  <a href="/industries/real-estate-agents" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Real Estate Agents</span>
-                  </a>
-                  <a href="/industries/cosmetic-clinics" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Cosmetic Clinics</span>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-lg md:text-xl font-semibold mb-4">Core Services</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <a href="/seo-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">SEO Agency</span>
-                  </a>
-                  <a href="/ppc-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">PPC Agency</span>
-                  </a>
-                  <a href="/meta-ads-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Meta Ads Agency</span>
-                  </a>
-                  <a href="/web-design-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Web Design Agency</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Section 11: FAQ Section */}
         <section className="py-20">
@@ -766,8 +659,7 @@ const PersonalInjuryLawyers = () => {
               </p>
 
               <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <Collapsible key={index} className="bg-card border rounded-lg">
+                {faqs.map((faq, index) => <Collapsible key={index} className="bg-card border rounded-lg">
                     <CollapsibleTrigger className="flex justify-between items-center w-full p-6 text-left hover:bg-secondary/50 transition-colors rounded-lg">
                       <span className="font-semibold pr-4">{faq.question}</span>
                       <ChevronDown className="w-5 h-5 flex-shrink-0 transition-transform duration-200" />
@@ -775,8 +667,7 @@ const PersonalInjuryLawyers = () => {
                     <CollapsibleContent className="px-6 pb-6">
                       <p className="text-muted-foreground">{faq.answer}</p>
                     </CollapsibleContent>
-                  </Collapsible>
-                ))}
+                  </Collapsible>)}
               </div>
             </div>
           </div>
@@ -784,11 +675,7 @@ const PersonalInjuryLawyers = () => {
 
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t shadow-lg md:hidden z-40">
-          <Button 
-            onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm"
-            size="lg"
-          >
+          <Button onClick={openForm} className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm" size="lg">
             <span className="text-center">Get FREE Strategy Session</span>
           </Button>
         </div>
@@ -796,8 +683,6 @@ const PersonalInjuryLawyers = () => {
         <Footer />
         <SideTab />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default PersonalInjuryLawyers;
