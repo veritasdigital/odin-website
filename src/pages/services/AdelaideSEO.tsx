@@ -1,3 +1,5 @@
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -31,7 +33,6 @@ import {
   BarChart
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import { Footer } from "@/components/Footer";
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
@@ -394,18 +395,27 @@ const AdelaideSEO = () => {
           </Breadcrumb>
         </div>
 
-        {/* Section 1: Hero */}
-        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-background via-background to-primary/5">
-          <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        {/* Hero Section */}
+        <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Animated background blobs */}
+          <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
+          
+          {/* Floating circles */}
+          <div className="absolute top-32 right-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 right-1/3 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
+          
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 leading-tight animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight animate-fade-in text-charcoal drop-shadow-sm">
                 SEO Adelaide: Stop Wasting Money on SEO That Doesn't Convert
               </h1>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-8 animate-fade-in">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-charcoal/70 mb-8 animate-fade-in">
                 Tired of Adelaide SEO Agencies That Promise the World But Lock You Into a 12-Month Contract of Excuses?
               </h2>
-              <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto animate-fade-in">
+              <p className="text-lg md:text-xl text-charcoal/60 mb-6 max-w-3xl mx-auto animate-fade-in">
                 We're Odin Digital, and we're done with the SEO industry's BS. While other Adelaide SEO companies are selling you on vanity metrics like rankings and traffic, we're obsessed with one thing: growing your revenue.
               </p>
               <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in">

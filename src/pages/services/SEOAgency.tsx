@@ -1,3 +1,5 @@
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -40,7 +42,6 @@ import {
   Settings,
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import { Footer } from "@/components/Footer";
 
 const SEOAgency = () => {
   const { openForm } = useMarketingForm();
@@ -394,6 +395,8 @@ const SEOAgency = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
+        <Header />
+        
         {/* Breadcrumb Navigation */}
         <div className="container mx-auto px-4 pt-4">
           <Breadcrumb>

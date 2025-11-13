@@ -302,8 +302,16 @@ const EcommerceSEO = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-          <div className="container mx-auto px-4">
+        <section className="relative py-20 md:py-32 bg-gradient-to-br from-white via-muted/30 to-muted/20 overflow-hidden">
+          {/* Animated background blobs */}
+          <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+          
+          {/* Floating circles */}
+          <div className="absolute top-32 right-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
+          <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
+          
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
                 E-commerce SEO: Stop Driving Traffic. Start Driving Revenue.
