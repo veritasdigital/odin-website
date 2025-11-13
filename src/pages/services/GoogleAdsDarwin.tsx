@@ -7,259 +7,222 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SideTab } from "@/components/SideTab";
 import { Target, Calendar, TrendingUp, Award, MapPin, BarChart3, Filter, Zap } from "lucide-react";
-
 const GoogleAdsDarwin = () => {
   const navigate = useNavigate();
-
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused Google Ads agency in Darwin. We specialize in PPC management for Darwin and NT businesses, focusing on ROI and seasonal optimization. $574M+ in client revenue. No lock-in contracts.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+61-XXX-XXX-XXX",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused Google Ads agency in Darwin. We specialize in PPC management for Darwin and NT businesses, focusing on ROI and seasonal optimization. $574M+ in client revenue. No lock-in contracts.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://growth-conduit-central.lovable.app/google-ads-darwin",
-        "name": "Odin Digital - Google Ads Agency Darwin",
-        "description": "Darwin's top PPC management company. Expert Google Ads services focusing on local targeting and seasonal optimization.",
-        "url": "https://growth-conduit-central.lovable.app/google-ads-darwin",
+      "slogan": "No Lock-In Contracts. Just Results.",
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+61-XXX-XXX-XXX",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Darwin",
-          "addressRegion": "NT",
-          "postalCode": "0800",
-          "addressCountry": "AU"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "-12.4634",
-          "longitude": "130.8456"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Darwin",
-          "containedIn": {
-            "@type": "State",
-            "name": "Northern Territory"
-          }
-        }
+        "contactType": "Sales",
+        "areaServed": "AU",
+        "availableLanguage": "English"
       },
-      {
+      "sameAs": []
+    }, {
+      "@type": "LocalBusiness",
+      "@id": "https://growth-conduit-central.lovable.app/google-ads-darwin",
+      "name": "Odin Digital - Google Ads Agency Darwin",
+      "description": "Darwin's top PPC management company. Expert Google Ads services focusing on local targeting and seasonal optimization.",
+      "url": "https://growth-conduit-central.lovable.app/google-ads-darwin",
+      "telephone": "+61-XXX-XXX-XXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Darwin",
+        "addressRegion": "NT",
+        "postalCode": "0800",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-12.4634",
+        "longitude": "130.8456"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Darwin",
+        "containedIn": {
+          "@type": "State",
+          "name": "Northern Territory"
+        }
+      }
+    }, {
+      "@type": "Service",
+      "serviceType": "PPC Management",
+      "provider": {
+        "@type": "Organization",
+        "name": "Odin Digital"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Darwin"
+      },
+      "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Darwin, NT, focusing on maximum Return on Ad Spend (ROAS) and seasonal optimization.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "PPC Management Darwin Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Google Ads Management"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "PPC Advertising Darwin"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Tourism & Hospitality Campaigns"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much budget do I need for Google Ads in Darwin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The required budget depends on your industry competition and target CPA. For most Darwin businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management darwin team will analyze your market during your free audit and recommend a precise, efficient budget."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How long does it take to see results from ppc darwin campaigns?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts darwin refine the campaigns."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the difference between Google Ads and adwords darwin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords darwin or Google Ads, we are the google ads agency darwin that manages it all."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you offer an adwords management darwin service with a performance guarantee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why should I choose Odin Digital over a large national google agency darwin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Large national agencies often apply generic strategies designed for big cities and are slow to adapt. We are a lean team of ppc experts darwin who provide hyper-focused, personalized service. We understand the Darwin market, the seasonal fluctuations, and the importance of precision in a smaller market."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you manage other pay per click darwin platforms like Meta Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We are a full-service ppc agency darwin and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising darwin strategy for maximum reach and ROI."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How do you prevent my budget from being wasted on clicks from outside Darwin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We use precise geographic targeting (radius targeting, suburb targeting, or NT-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help with seasonal campaigns for tourism businesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We specialize in seasonal campaign optimization for Darwin's tourism and hospitality sectors. We scale campaigns during the Dry Season (peak tourism) and optimize for efficiency during the Wet Season."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can you help me with my landing pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What metrics do you report on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
+        }
+      }]
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
         "@type": "Service",
-        "serviceType": "PPC Management",
+        "name": "Google Ads Darwin Services",
         "provider": {
           "@type": "Organization",
           "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Darwin"
-        },
-        "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Darwin, NT, focusing on maximum Return on Ad Spend (ROAS) and seasonal optimization.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "PPC Management Darwin Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads Management"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "PPC Advertising Darwin"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Tourism & Hospitality Campaigns"
-              }
-            }
-          ]
         }
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much budget do I need for Google Ads in Darwin?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The required budget depends on your industry competition and target CPA. For most Darwin businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management darwin team will analyze your market during your free audit and recommend a precise, efficient budget."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from ppc darwin campaigns?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts darwin refine the campaigns."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between Google Ads and adwords darwin?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords darwin or Google Ads, we are the google ads agency darwin that manages it all."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer an adwords management darwin service with a performance guarantee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why should I choose Odin Digital over a large national google agency darwin?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Large national agencies often apply generic strategies designed for big cities and are slow to adapt. We are a lean team of ppc experts darwin who provide hyper-focused, personalized service. We understand the Darwin market, the seasonal fluctuations, and the importance of precision in a smaller market."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you manage other pay per click darwin platforms like Meta Ads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We are a full-service ppc agency darwin and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising darwin strategy for maximum reach and ROI."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you prevent my budget from being wasted on clicks from outside Darwin?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use precise geographic targeting (radius targeting, suburb targeting, or NT-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help with seasonal campaigns for tourism businesses?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We specialize in seasonal campaign optimization for Darwin's tourism and hospitality sectors. We scale campaigns during the Dry Season (peak tourism) and optimize for efficiency during the Wet Season."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help me with my landing pages?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What metrics do you report on?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
-            }
-          }
-        ]
+      "author": {
+        "@type": "Person",
+        "name": "Fabienne Costa"
       },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Google Ads Darwin Services",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Odin Digital"
       }
-    ]
+    }]
   };
-
-  const faqs = [
-    {
-      question: "How much budget do I need for Google Ads in Darwin?",
-      answer: "The required budget depends on your industry competition and target CPA. For most Darwin businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management darwin team will analyze your market during your free audit and recommend a precise, efficient budget."
-    },
-    {
-      question: "How long does it take to see results from ppc darwin campaigns?",
-      answer: "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts darwin refine the campaigns."
-    },
-    {
-      question: "What is the difference between Google Ads and adwords darwin?",
-      answer: "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords darwin or Google Ads, we are the google ads agency darwin that manages it all."
-    },
-    {
-      question: "Do you offer an adwords management darwin service with a performance guarantee?",
-      answer: "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
-    },
-    {
-      question: "Why should I choose Odin Digital over a large national google agency darwin?",
-      answer: "Large national agencies often apply generic strategies designed for big cities and are slow to adapt. We are a lean team of ppc experts darwin who provide hyper-focused, personalized service. We understand the Darwin market, the seasonal fluctuations, and the importance of precision in a smaller market."
-    },
-    {
-      question: "Do you manage other pay per click darwin platforms like Meta Ads?",
-      answer: "Yes. We are a full-service ppc agency darwin and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising darwin strategy for maximum reach and ROI."
-    },
-    {
-      question: "How do you prevent my budget from being wasted on clicks from outside Darwin?",
-      answer: "We use precise geographic targeting (radius targeting, suburb targeting, or NT-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
-    },
-    {
-      question: "Can you help with seasonal campaigns for tourism businesses?",
-      answer: "Yes. We specialize in seasonal campaign optimization for Darwin's tourism and hospitality sectors. We scale campaigns during the Dry Season (peak tourism) and optimize for efficiency during the Wet Season."
-    },
-    {
-      question: "Can you help me with my landing pages?",
-      answer: "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
-    },
-    {
-      question: "What metrics do you report on?",
-      answer: "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
-    }
-  ];
-
-  return (
-    <>
+  const faqs = [{
+    question: "How much budget do I need for Google Ads in Darwin?",
+    answer: "The required budget depends on your industry competition and target CPA. For most Darwin businesses, we recommend starting with $1,000 - $2,500 per month to allow for sufficient data collection and optimization. Our ppc management darwin team will analyze your market during your free audit and recommend a precise, efficient budget."
+  }, {
+    question: "How long does it take to see results from ppc darwin campaigns?",
+    answer: "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts darwin refine the campaigns."
+  }, {
+    question: "What is the difference between Google Ads and adwords darwin?",
+    answer: "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords darwin or Google Ads, we are the google ads agency darwin that manages it all."
+  }, {
+    question: "Do you offer an adwords management darwin service with a performance guarantee?",
+    answer: "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
+  }, {
+    question: "Why should I choose Odin Digital over a large national google agency darwin?",
+    answer: "Large national agencies often apply generic strategies designed for big cities and are slow to adapt. We are a lean team of ppc experts darwin who provide hyper-focused, personalized service. We understand the Darwin market, the seasonal fluctuations, and the importance of precision in a smaller market."
+  }, {
+    question: "Do you manage other pay per click darwin platforms like Meta Ads?",
+    answer: "Yes. We are a full-service ppc agency darwin and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising darwin strategy for maximum reach and ROI."
+  }, {
+    question: "How do you prevent my budget from being wasted on clicks from outside Darwin?",
+    answer: "We use precise geographic targeting (radius targeting, suburb targeting, or NT-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency."
+  }, {
+    question: "Can you help with seasonal campaigns for tourism businesses?",
+    answer: "Yes. We specialize in seasonal campaign optimization for Darwin's tourism and hospitality sectors. We scale campaigns during the Dry Season (peak tourism) and optimize for efficiency during the Wet Season."
+  }, {
+    question: "Can you help me with my landing pages?",
+    answer: "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions."
+  }, {
+    question: "What metrics do you report on?",
+    answer: "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, and Revenue Generated. We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
+  }];
+  return <>
       <Helmet>
         <title>Google Ads Agency Darwin | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Darwin trusts for maximum ROI. Precision targeting, seasonal optimization, and no lock-in contracts. Get your free audit." />
@@ -277,11 +240,7 @@ const GoogleAdsDarwin = () => {
         
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-4 shadow-lg">
-          <Button 
-            onClick={() => navigate('/contact')}
-            size="lg" 
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold"
-          >
+          <Button onClick={() => navigate('/contact')} size="lg" className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold">
             Get FREE Strategy Session
           </Button>
         </div>
@@ -290,17 +249,25 @@ const GoogleAdsDarwin = () => {
         <section className="relative pt-28 md:pt-32 pb-20 md:pb-32 mb-20 md:mb-0 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full filter blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
           
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
           
           {/* Floating Circles */}
           <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-white/40 rounded-full animate-bounce"></div>
-          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-white/30 rounded-full animate-bounce" style={{
+          animationDelay: '0.5s'
+        }}></div>
           <div className="absolute bottom-1/4 left-1/3 w-4 h-4 bg-white/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{ animationDelay: '0.7s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-white/50 rounded-full animate-bounce" style={{
+          animationDelay: '0.7s'
+        }}></div>
           
           {/* Geometric Shapes */}
           <div className="absolute top-40 right-20 w-16 h-16 border-2 border-white/20 rotate-45 animate-pulse"></div>
@@ -308,28 +275,29 @@ const GoogleAdsDarwin = () => {
 
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-lg animate-fade-in">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg animate-fade-in text-slate-950 lg:text-7xl">
                 Google Ads Agency Darwin
               </h1>
-              <p className="text-2xl md:text-4xl lg:text-5xl font-bold mb-8 text-white leading-tight pb-2 drop-shadow-md animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <p style={{
+              animationDelay: '0.1s'
+            }} className="text-2xl md:text-4xl font-bold mb-8 leading-tight pb-2 drop-shadow-md animate-fade-in text-slate-950 lg:text-4xl">
                 Stop Wasting Your Budget. Start Dominating Your Market.
               </p>
-              <p className="text-lg md:text-xl text-white/95 mb-6 drop-shadow animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <p style={{
+              animationDelay: '0.2s'
+            }} className="text-lg md:text-xl mb-6 drop-shadow animate-fade-in text-slate-950">
                 The PPC Agency Darwin Businesses Trust for Maximum ROI in a Competitive Market.
               </p>
-              <p className="text-lg md:text-xl text-white/90 mb-8 drop-shadow animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <p style={{
+              animationDelay: '0.3s'
+            }} className="text-lg md:text-xl mb-8 drop-shadow animate-fade-in text-slate-950">
                 Partner with Odin Digital and Turn Your Google Ads Budget into Verified Revenue.
               </p>
               <p className="text-base md:text-lg text-muted-foreground mb-10 max-w-3xl mx-auto">
                 Darwin businesses face unique challenges. The market is smaller. The competition is fierce. And most importantly, every dollar of wasted ad spend hits harder. Generic PPC strategies designed for Sydney or Melbourne simply don't work here. You need precision. You need expertise. You need an adwords management darwin team that understands your market inside and out.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  onClick={() => navigate('/contact')}
-                  size="lg" 
-                  variant="cta"
-                  className="group w-full sm:w-auto text-sm sm:text-lg px-4 sm:px-8"
-                >
+                <Button onClick={() => navigate('/contact')} size="lg" variant="cta" className="group w-full sm:w-auto text-sm sm:text-lg px-4 sm:px-8">
                   <span className="hidden sm:inline">Get Your FREE Darwin PPC Strategy Session</span>
                   <span className="sm:hidden">Get FREE PPC Strategy Session</span>
                   <Target className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:rotate-12 transition-transform" />
@@ -421,12 +389,7 @@ const GoogleAdsDarwin = () => {
               </div>
 
               <div className="text-center mt-12">
-                <Button 
-                  onClick={() => navigate('/contact')}
-                  size="lg"
-                  variant="cta"
-                  className="w-full sm:w-auto text-sm sm:text-lg"
-                >
+                <Button onClick={() => navigate('/contact')} size="lg" variant="cta" className="w-full sm:w-auto text-sm sm:text-lg">
                   <span className="hidden sm:inline">Stop the Budget Bleed: Talk to a PPC Expert</span>
                   <span className="sm:hidden">Talk to a PPC Expert</span>
                 </Button>
@@ -499,12 +462,7 @@ const GoogleAdsDarwin = () => {
               </div>
 
               <div className="text-center mt-12">
-                <Button 
-                  onClick={() => navigate('/contact')}
-                  size="lg"
-                  variant="cta"
-                  className="w-full sm:w-auto text-sm sm:text-lg"
-                >
+                <Button onClick={() => navigate('/contact')} size="lg" variant="cta" className="w-full sm:w-auto text-sm sm:text-lg">
                   <span className="hidden sm:inline">See Our Darwin PPC Management Packages</span>
                   <span className="sm:hidden">See Our PPC Packages</span>
                 </Button>
@@ -569,12 +527,7 @@ const GoogleAdsDarwin = () => {
               </div>
 
               <div className="text-center mt-12">
-                <Button 
-                  onClick={() => navigate('/contact')}
-                  size="lg"
-                  variant="cta"
-                  className="w-full sm:w-auto text-sm sm:text-lg"
-                >
+                <Button onClick={() => navigate('/contact')} size="lg" variant="cta" className="w-full sm:w-auto text-sm sm:text-lg">
                   <span className="hidden sm:inline">Ready for a Custom Google Ads Strategy? Contact Us</span>
                   <span className="sm:hidden">Get Custom Strategy</span>
                 </Button>
@@ -597,16 +550,14 @@ const GoogleAdsDarwin = () => {
               </div>
 
               <Accordion type="single" collapsible className="w-full">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`}>
+                {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`}>
                     <AccordionTrigger className="text-left">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
                       {faq.answer}
                     </AccordionContent>
-                  </AccordionItem>
-                ))}
+                  </AccordionItem>)}
               </Accordion>
             </div>
           </div>
@@ -620,17 +571,13 @@ const GoogleAdsDarwin = () => {
           </div>
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-6 text-slate-950 md:text-5xl">
                 Ready to Stop Wasting Budget and Start Dominating Darwin?
               </h2>
-              <p className="text-lg md:text-xl mb-10 opacity-90">
+              <p className="text-lg md:text-xl mb-10 opacity-90 text-slate-950">
                 Stop guessing with your ppc darwin budget. Start working with ppc experts darwin who deliver precision, transparency, and profit in Darwin's unique market.
               </p>
-              <Button 
-                onClick={() => navigate('/contact')}
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 font-bold w-full sm:w-auto text-sm sm:text-lg"
-              >
+              <Button onClick={() => navigate('/contact')} size="lg" className="bg-white text-primary hover:bg-white/90 font-bold w-full sm:w-auto text-sm sm:text-lg">
                 <span className="hidden sm:inline">Claim Your FREE Darwin PPC Strategy Session</span>
                 <span className="sm:hidden">Get FREE Strategy Session</span>
               </Button>
@@ -640,8 +587,6 @@ const GoogleAdsDarwin = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default GoogleAdsDarwin;
