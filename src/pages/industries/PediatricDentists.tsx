@@ -333,8 +333,8 @@ const PediatricDentists = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Trusted by Australia's Leading Businesses</h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card>
-              <CardContent className="p-8">
+            <Card className="flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 fill-primary text-primary" />
@@ -343,13 +343,15 @@ const PediatricDentists = () => {
                 <p className="text-muted-foreground mb-4">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
                 </p>
-                <div className="font-semibold">Evan Tsaboukos</div>
-                <div className="text-sm text-muted-foreground">Imperial Wealth</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Evan Tsaboukos</div>
+                  <div className="text-sm text-muted-foreground">Imperial Wealth</div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="p-8">
+            <Card className="flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 fill-primary text-primary" />
@@ -358,13 +360,15 @@ const PediatricDentists = () => {
                 <p className="text-muted-foreground mb-4">
                   "Working with Odin Digital transformed our online presence. Within 6 months, we saw a 285% increase in qualified leads and our cost per acquisition dropped by 42%. They truly understand our market."
                 </p>
-                <div className="font-semibold">Fabienne Costa</div>
-                <div className="text-sm text-muted-foreground">YCL Jewels</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Fabienne Costa</div>
+                  <div className="text-sm text-muted-foreground">YCL Jewels</div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardContent className="p-8">
+            <Card className="flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Award key={i} className="w-5 h-5 fill-primary text-primary" />
@@ -373,8 +377,10 @@ const PediatricDentists = () => {
                 <p className="text-muted-foreground mb-4">
                   "The ROI speaks for itself. Odin Digital's strategic approach to PPC and SEO helped us dominate our local market. Our practice revenue increased by 310% in the first year. Highly recommended."
                 </p>
-                <div className="font-semibold">Liam C</div>
-                <div className="text-sm text-muted-foreground">Krush Organics</div>
+                <div className="mt-auto">
+                  <div className="font-semibold">Liam C</div>
+                  <div className="text-sm text-muted-foreground">Krush Organics</div>
+                </div>
               </CardContent>
             </Card>
           </div>
