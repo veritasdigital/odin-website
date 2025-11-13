@@ -8,193 +8,158 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle2, Shield, TrendingUp, Users, Award, Target, Zap, Clock, BarChart3, FileCheck, Search, MousePointerClick, Share2, Palette } from "lucide-react";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
-
 const CosmeticClinics = () => {
-  const { openForm } = useMarketingForm();
-
+  const {
+    openForm
+  } = useMarketingForm();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const faqs = [
-    {
-      question: "How do you ensure our marketing remains compliant with TGA advertising guidelines?",
-      answer: "Compliance is our highest priority. Our team is trained on the Therapeutic Goods Administration (TGA) guidelines, ensuring we avoid prohibited claims, incentives, and \"before/after\" photos for certain procedures. We implement a mandatory compliance checklist into every campaign launch to protect your clinic's reputation and licence."
-    },
-    {
-      question: "We get a lot of leads, but they are all price-shoppers. How do you fix the low-quality lead problem?",
-      answer: "We fix the low-quality lead problem through Lead Pre-Qualification and Messaging Alignment. Our campaigns target patients who are searching for solutions, not just prices. We use detailed pre-qualification forms and landing page copy that justifies your premium pricing and filters out \"tire-kickers\" before they ever reach your front desk."
-    },
-    {
-      question: "How does SEO help a cosmetic clinic compete in a saturated local market?",
-      answer: "Local SEO builds the authority and trust needed to compete. We focus on dominating local search results for high-value treatments (e.g., \"best laser resurfacing near me\"). This positions your clinic as the local expert, ensuring that when a patient is ready to book, they choose your premium service over a discounted competitor."
-    },
-    {
-      question: "What makes your PPC campaigns different from other agencies managing cosmetic clinic Google Ads?",
-      answer: "We build Treatment-Specific Landing Pages and use High-Intent Keyword Targeting. Instead of sending all clicks to your homepage, we create dedicated landing pages for each high-value treatment, optimizing for conversion. We also exclude price-focused keywords and instead focus on solution-based searches like \"best botox clinic for natural results.\""
-    },
-    {
-      question: "How long does it take to see results from SEO for a cosmetic clinic?",
-      answer: "SEO is a medium-term investment. You can expect to see measurable improvements in organic traffic and keyword rankings within 3-6 months. However, once established, SEO delivers compounding returns, driving qualified leads month after month without the ongoing ad spend required by PPC."
-    },
-    {
-      question: "Can you help us with social media advertising on Instagram and Facebook for our medispa?",
-      answer: "Absolutely. Meta Ads (Facebook and Instagram) are powerful channels for cosmetic clinics, especially for awareness-stage campaigns. We create TGA-compliant ad creatives and targeting strategies that build your brand and nurture leads through educational content, testimonials, and lifestyle imagery—all while adhering to strict advertising rules."
-    },
-    {
-      question: "Do you offer web design services specifically for cosmetic clinics and medispas?",
-      answer: "Yes. We design TGA-compliant, conversion-optimized websites tailored for cosmetic clinics. Our designs emphasize trust, authority, and premium positioning, with clear CTAs, treatment-specific landing pages, and seamless booking integration to maximize patient acquisition."
-    },
-    {
-      question: "What is your pricing structure? Do you require long-term contracts?",
-      answer: "We offer flexible, performance-based pricing with no lock-in contracts. You can cancel with 30 days' notice. We earn your business every month through results, not binding agreements. Our 95% retention rate proves we deliver consistent value."
-    },
-    {
-      question: "How do you measure ROI for cosmetic clinic marketing campaigns?",
-      answer: "We track every lead back to its source and measure Cost Per Acquisition (CPA), Patient Lifetime Value (LTV), and overall Return on Ad Spend (ROAS). You'll receive detailed monthly reports showing exactly where your marketing dollars go and what results they generate, including lead quality metrics and conversion rates."
-    },
-    {
-      question: "What is the typical ROI we can expect from working with Odin Digital?",
-      answer: "Our average client sees a 540% ROI, meaning for every $1 invested, they generate $5.40 in revenue. However, results vary based on your market, competition, and treatment mix. We focus on delivering qualified, high-value patients—not just vanity metrics like clicks or impressions."
-    },
-    {
-      question: "How do you handle the long sales cycle for high-ticket cosmetic treatments?",
-      answer: "We implement Lead Nurturing Campaigns using email automation, retargeting ads, and educational content to stay top-of-mind throughout the patient's decision-making journey. Most high-value cosmetic treatments require 3-6 touchpoints before conversion, so we build systems to nurture leads over time."
-    },
-    {
-      question: "Can you help us if we're a new cosmetic clinic with no existing patient base?",
-      answer: "Absolutely. We've helped numerous new clinics launch successfully. We focus on rapid brand awareness through PPC and social media ads while simultaneously building your long-term SEO foundation. This dual approach generates immediate patient inquiries while establishing sustainable growth."
-    },
-    {
-      question: "Do you work with cosmetic clinics outside of major cities?",
-      answer: "Yes. We work with cosmetic clinics and medispas across Australia, from major metro areas to regional markets. Our digital marketing strategies are tailored to your local competitive landscape, whether you're in Sydney, Melbourne, or a smaller regional hub."
-    },
-    {
-      question: "What industries do you specialize in besides cosmetic clinics?",
-      answer: "We specialize in high-value service industries including cosmetic surgeons, dermatologists, dentists, lawyers, real estate agents, and accounting firms. Our expertise in compliance-heavy, premium service industries makes us uniquely qualified to handle the nuanced marketing needs of cosmetic clinics."
-    },
-    {
-      question: "How do you ensure patient privacy and data security in your marketing campaigns?",
-      answer: "We adhere strictly to Australian Privacy Principles and implement secure data handling practices across all campaigns. Patient data is never shared with third parties, and all tracking and analytics are configured to maintain privacy compliance while still providing actionable insights."
-    },
-    {
-      question: "What happens if a campaign isn't performing as expected?",
-      answer: "We provide complete transparency through monthly reporting. If a campaign underperforms, we immediately analyze the data, identify the issue, and implement optimizations. Our no lock-in contract policy means you're never trapped in an underperforming relationship—we earn your business every single month."
-    }
-  ];
-
+  const faqs = [{
+    question: "How do you ensure our marketing remains compliant with TGA advertising guidelines?",
+    answer: "Compliance is our highest priority. Our team is trained on the Therapeutic Goods Administration (TGA) guidelines, ensuring we avoid prohibited claims, incentives, and \"before/after\" photos for certain procedures. We implement a mandatory compliance checklist into every campaign launch to protect your clinic's reputation and licence."
+  }, {
+    question: "We get a lot of leads, but they are all price-shoppers. How do you fix the low-quality lead problem?",
+    answer: "We fix the low-quality lead problem through Lead Pre-Qualification and Messaging Alignment. Our campaigns target patients who are searching for solutions, not just prices. We use detailed pre-qualification forms and landing page copy that justifies your premium pricing and filters out \"tire-kickers\" before they ever reach your front desk."
+  }, {
+    question: "How does SEO help a cosmetic clinic compete in a saturated local market?",
+    answer: "Local SEO builds the authority and trust needed to compete. We focus on dominating local search results for high-value treatments (e.g., \"best laser resurfacing near me\"). This positions your clinic as the local expert, ensuring that when a patient is ready to book, they choose your premium service over a discounted competitor."
+  }, {
+    question: "What makes your PPC campaigns different from other agencies managing cosmetic clinic Google Ads?",
+    answer: "We build Treatment-Specific Landing Pages and use High-Intent Keyword Targeting. Instead of sending all clicks to your homepage, we create dedicated landing pages for each high-value treatment, optimizing for conversion. We also exclude price-focused keywords and instead focus on solution-based searches like \"best botox clinic for natural results.\""
+  }, {
+    question: "How long does it take to see results from SEO for a cosmetic clinic?",
+    answer: "SEO is a medium-term investment. You can expect to see measurable improvements in organic traffic and keyword rankings within 3-6 months. However, once established, SEO delivers compounding returns, driving qualified leads month after month without the ongoing ad spend required by PPC."
+  }, {
+    question: "Can you help us with social media advertising on Instagram and Facebook for our medispa?",
+    answer: "Absolutely. Meta Ads (Facebook and Instagram) are powerful channels for cosmetic clinics, especially for awareness-stage campaigns. We create TGA-compliant ad creatives and targeting strategies that build your brand and nurture leads through educational content, testimonials, and lifestyle imagery—all while adhering to strict advertising rules."
+  }, {
+    question: "Do you offer web design services specifically for cosmetic clinics and medispas?",
+    answer: "Yes. We design TGA-compliant, conversion-optimized websites tailored for cosmetic clinics. Our designs emphasize trust, authority, and premium positioning, with clear CTAs, treatment-specific landing pages, and seamless booking integration to maximize patient acquisition."
+  }, {
+    question: "What is your pricing structure? Do you require long-term contracts?",
+    answer: "We offer flexible, performance-based pricing with no lock-in contracts. You can cancel with 30 days' notice. We earn your business every month through results, not binding agreements. Our 95% retention rate proves we deliver consistent value."
+  }, {
+    question: "How do you measure ROI for cosmetic clinic marketing campaigns?",
+    answer: "We track every lead back to its source and measure Cost Per Acquisition (CPA), Patient Lifetime Value (LTV), and overall Return on Ad Spend (ROAS). You'll receive detailed monthly reports showing exactly where your marketing dollars go and what results they generate, including lead quality metrics and conversion rates."
+  }, {
+    question: "What is the typical ROI we can expect from working with Odin Digital?",
+    answer: "Our average client sees a 540% ROI, meaning for every $1 invested, they generate $5.40 in revenue. However, results vary based on your market, competition, and treatment mix. We focus on delivering qualified, high-value patients—not just vanity metrics like clicks or impressions."
+  }, {
+    question: "How do you handle the long sales cycle for high-ticket cosmetic treatments?",
+    answer: "We implement Lead Nurturing Campaigns using email automation, retargeting ads, and educational content to stay top-of-mind throughout the patient's decision-making journey. Most high-value cosmetic treatments require 3-6 touchpoints before conversion, so we build systems to nurture leads over time."
+  }, {
+    question: "Can you help us if we're a new cosmetic clinic with no existing patient base?",
+    answer: "Absolutely. We've helped numerous new clinics launch successfully. We focus on rapid brand awareness through PPC and social media ads while simultaneously building your long-term SEO foundation. This dual approach generates immediate patient inquiries while establishing sustainable growth."
+  }, {
+    question: "Do you work with cosmetic clinics outside of major cities?",
+    answer: "Yes. We work with cosmetic clinics and medispas across Australia, from major metro areas to regional markets. Our digital marketing strategies are tailored to your local competitive landscape, whether you're in Sydney, Melbourne, or a smaller regional hub."
+  }, {
+    question: "What industries do you specialize in besides cosmetic clinics?",
+    answer: "We specialize in high-value service industries including cosmetic surgeons, dermatologists, dentists, lawyers, real estate agents, and accounting firms. Our expertise in compliance-heavy, premium service industries makes us uniquely qualified to handle the nuanced marketing needs of cosmetic clinics."
+  }, {
+    question: "How do you ensure patient privacy and data security in your marketing campaigns?",
+    answer: "We adhere strictly to Australian Privacy Principles and implement secure data handling practices across all campaigns. Patient data is never shared with third parties, and all tracking and analytics are configured to maintain privacy compliance while still providing actionable insights."
+  }, {
+    question: "What happens if a campaign isn't performing as expected?",
+    answer: "We provide complete transparency through monthly reporting. If a campaign underperforms, we immediately analyze the data, identify the issue, and implement optimizations. Our no lock-in contract policy means you're never trapped in an underperforming relationship—we earn your business every single month."
+  }];
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://growth-conduit-central.lovable.app/#organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused digital marketing agency specializing in compliant, high-value patient acquisition for cosmetic clinics and medispas.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "url": "https://growth-conduit-central.lovable.app/contact"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.facebook.com/odindigital",
-          "https://twitter.com/odindigital"
-        ]
+    "@graph": [{
+      "@type": "Organization",
+      "@id": "https://growth-conduit-central.lovable.app/#organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused digital marketing agency specializing in compliant, high-value patient acquisition for cosmetic clinics and medispas.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#webpage",
-        "name": "Cosmetic Clinic Marketing Agency",
-        "url": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics",
-        "description": "The national hub page for compliant, high-value patient acquisition strategies for cosmetic clinics and medispas in Australia.",
-        "inLanguage": "en-AU",
-        "lastReviewed": "2025-10-30",
-        "isPartOf": {
-          "@id": "https://growth-conduit-central.lovable.app/#website"
-        }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://growth-conduit-central.lovable.app/contact"
       },
-      {
-        "@type": "Service",
-        "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#service",
-        "serviceType": "Digital Marketing for Cosmetic Clinics",
-        "provider": {
-          "@id": "https://growth-conduit-central.lovable.app/#organization"
-        },
-        "areaServed": "Australia",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Cosmetic Clinic Patient Acquisition Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "TGA Compliant Patient Acquisition Funnels"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "High-Value Patient PPC"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Medispa Authority SEO"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#faqpage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-          }
-        }))
-      },
-      {
-        "@type": "Review",
-        "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#review",
-        "itemReviewed": {
-          "@type": "Organization",
-          "name": "Odin Digital - Cosmetic Clinic Marketing Agency"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Liam C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Krush Organics"
-        }
+      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
+    }, {
+      "@type": "WebPage",
+      "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#webpage",
+      "name": "Cosmetic Clinic Marketing Agency",
+      "url": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics",
+      "description": "The national hub page for compliant, high-value patient acquisition strategies for cosmetic clinics and medispas in Australia.",
+      "inLanguage": "en-AU",
+      "lastReviewed": "2025-10-30",
+      "isPartOf": {
+        "@id": "https://growth-conduit-central.lovable.app/#website"
       }
-    ]
+    }, {
+      "@type": "Service",
+      "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#service",
+      "serviceType": "Digital Marketing for Cosmetic Clinics",
+      "provider": {
+        "@id": "https://growth-conduit-central.lovable.app/#organization"
+      },
+      "areaServed": "Australia",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cosmetic Clinic Patient Acquisition Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "TGA Compliant Patient Acquisition Funnels"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High-Value Patient PPC"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Medispa Authority SEO"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#faqpage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }, {
+      "@type": "Review",
+      "@id": "https://growth-conduit-central.lovable.app/industries/cosmetic-clinics#review",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "Odin Digital - Cosmetic Clinic Marketing Agency"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Liam C"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Krush Organics"
+      }
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Cosmetic Clinic Marketing Agency | TGA Compliant Patient Acquisition | Odin Digital</title>
         <meta name="description" content="The only Cosmetic Clinic Marketing Agency focused on TGA compliant, high-value patient acquisition. Stop attracting price-shoppers. Proven 540% ROI." />
@@ -211,14 +176,20 @@ const CosmeticClinics = () => {
           {/* Animated Background Blobs */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full blur-3xl animate-float"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-muted/15 rounded-full blur-3xl animate-float" style={{
+            animationDelay: '2s'
+          }}></div>
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-muted/10 rounded-full blur-3xl animate-float" style={{
+            animationDelay: '4s'
+          }}></div>
           </div>
           
           {/* Floating Particles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
-            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-accent/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-accent/30 rounded-full animate-float" style={{
+            animationDelay: '1s'
+          }}></div>
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
@@ -240,11 +211,7 @@ const CosmeticClinics = () => {
                 Tired of Tire-Kickers? We Deliver TGA Compliant, High-Value Patient Acquisition for Cosmetic Clinics with a Proven 540% ROI.
               </p>
 
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto whitespace-normal break-words"
-              >
+              <Button onClick={openForm} size="lg" className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto whitespace-normal break-words">
                 <span className="text-center">Get Your FREE Marketing Strategy</span>
               </Button>
             </div>
@@ -330,9 +297,7 @@ const CosmeticClinics = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <div className="p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
                   "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys."
@@ -343,9 +308,7 @@ const CosmeticClinics = () => {
 
               <div className="p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
                   "Finally, an agency that understands TGA compliance AND delivers results. Our lead quality has improved dramatically, and we're attracting patients who actually value our premium services."
@@ -356,9 +319,7 @@ const CosmeticClinics = () => {
 
               <div className="p-8 bg-card rounded-lg shadow-lg border">
                 <div className="flex mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 text-[#D91C5C] fill-current" />)}
                 </div>
                 <p className="text-muted-foreground mb-4 italic">
                   "The ROI speaks for itself. We've tripled our patient bookings for high-value treatments while maintaining complete compliance. Best marketing decision we've made."
@@ -403,11 +364,7 @@ const CosmeticClinics = () => {
                     <span className="text-sm">Local SEO domination</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white" asChild>
                   <a href="/seo-agency">Learn More</a>
                 </Button>
               </div>
@@ -434,11 +391,7 @@ const CosmeticClinics = () => {
                     <span className="text-sm">Treatment-specific landing pages</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white" asChild>
                   <a href="/ppc-agency">Learn More</a>
                 </Button>
               </div>
@@ -465,11 +418,7 @@ const CosmeticClinics = () => {
                     <span className="text-sm">Brand awareness strategies</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white" asChild>
                   <a href="/meta-ads-agency">Learn More</a>
                 </Button>
               </div>
@@ -496,11 +445,7 @@ const CosmeticClinics = () => {
                     <span className="text-sm">Mobile-optimized for conversions</span>
                   </li>
                 </ul>
-                <Button 
-                  variant="outline" 
-                  className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white"
-                  asChild
-                >
+                <Button variant="outline" className="w-full mt-auto border-[#D91C5C] text-[#D91C5C] hover:bg-[#D91C5C] hover:text-white" asChild>
                   <a href="/web-design-agency">Learn More</a>
                 </Button>
               </div>
@@ -705,11 +650,7 @@ const CosmeticClinics = () => {
               <p className="text-lg md:text-xl mb-8 opacity-90">
                 Get a FREE, no-obligation marketing strategy session tailored to your cosmetic clinic. Discover how we can deliver TGA-compliant, high-value patient acquisition starting today.
               </p>
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-white text-[#D91C5C] hover:bg-white/90 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full md:w-auto"
-              >
+              <Button onClick={openForm} size="lg" className="bg-white text-[#D91C5C] hover:bg-white/90 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 w-full md:w-auto">
                 <span className="text-center">Schedule Your FREE Strategy Session</span>
               </Button>
               <p className="text-sm mt-4 opacity-75">No lock-in contracts. Cancel anytime with 30 days' notice.</p>
@@ -718,49 +659,7 @@ const CosmeticClinics = () => {
         </section>
 
         {/* Section 10: Related Industry & Service Links */}
-        <section className="py-20 bg-secondary/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold mb-8 text-center">Explore More Industry Solutions</h2>
-              
-              <div className="mb-8">
-                <h3 className="text-xl font-semibold mb-4">Related Industries</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <a href="/industries" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">All Industries</span>
-                  </a>
-                  <a href="/industries/cosmetic-surgeons" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Cosmetic Surgeons</span>
-                  </a>
-                  <a href="/industries/real-estate-agents" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Real Estate Agents</span>
-                  </a>
-                  <a href="/industries/personal-injury-lawyers" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Personal Injury Lawyers</span>
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Core Services</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <a href="/seo-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">SEO Agency</span>
-                  </a>
-                  <a href="/ppc-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">PPC Agency</span>
-                  </a>
-                  <a href="/meta-ads-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Meta Ads Agency</span>
-                  </a>
-                  <a href="/web-design-agency" className="p-4 bg-card rounded-lg border hover:shadow-lg transition-all hover:border-[#D91C5C]">
-                    <span className="text-foreground hover:text-[#D91C5C]">Web Design Agency</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Section 11: FAQ Section */}
         <section className="py-20">
@@ -772,8 +671,7 @@ const CosmeticClinics = () => {
               </p>
 
               <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <Collapsible key={index} className="bg-card border rounded-lg">
+                {faqs.map((faq, index) => <Collapsible key={index} className="bg-card border rounded-lg">
                     <CollapsibleTrigger className="flex justify-between items-center w-full p-6 text-left hover:bg-secondary/50 transition-colors rounded-lg">
                       <span className="font-semibold pr-4">{faq.question}</span>
                       <ChevronDown className="w-5 h-5 flex-shrink-0 transition-transform duration-200" />
@@ -781,8 +679,7 @@ const CosmeticClinics = () => {
                     <CollapsibleContent className="px-6 pb-6">
                       <p className="text-muted-foreground">{faq.answer}</p>
                     </CollapsibleContent>
-                  </Collapsible>
-                ))}
+                  </Collapsible>)}
               </div>
             </div>
           </div>
@@ -790,11 +687,7 @@ const CosmeticClinics = () => {
 
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t shadow-lg md:hidden z-40">
-          <Button 
-            onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm"
-            size="lg"
-          >
+          <Button onClick={openForm} className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white text-sm" size="lg">
             <span className="text-center">Get FREE Strategy Session</span>
           </Button>
         </div>
@@ -802,8 +695,6 @@ const CosmeticClinics = () => {
         <Footer />
         <SideTab />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default CosmeticClinics;
