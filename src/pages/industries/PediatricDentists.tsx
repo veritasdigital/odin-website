@@ -396,13 +396,13 @@ const PediatricDentists = () => {
           </p>
 
           <div className="grid md:grid-cols-4 gap-8">
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300">
-              <CardContent className="p-8">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Search className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Trust-Based Web Design & UX</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-1">
                   Conversion-optimised websites that speak to both parents and children. Professional, trustworthy design with child-friendly visual elements. Fast-loading, mobile-responsive, and designed to convert visitors into booked appointments.
                 </p>
                 <Link to="/web-design-agency">
@@ -411,13 +411,13 @@ const PediatricDentists = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300">
-              <CardContent className="p-8">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Target className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">High-Intent SEO & PPC</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-1">
                   Dominate local search with SEO optimised for paediatric dentist keywords. Precision-targeted Google Ads that capture parents actively searching for a specialist, not just any dentist. Lower cost-per-acquisition and higher conversion rates.
                 </p>
                 <Link to="/seo-agency">
@@ -426,13 +426,13 @@ const PediatricDentists = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300">
-              <CardContent className="p-8">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <MessageSquare className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Social Proof & Reputation Management</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-1">
                   Build trust before the first appointment. Strategic review generation, testimonial showcasing, video content featuring happy patients, and reputation management to address negative feedback quickly and professionally.
                 </p>
                 <Link to="/meta-ads-agency">
@@ -441,13 +441,13 @@ const PediatricDentists = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-all duration-300">
-              <CardContent className="p-8">
+            <Card className="border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <CardContent className="p-8 flex flex-col flex-1">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Patient Retention & Email Marketing</h3>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 flex-1">
                   Maximise patient lifetime value with automated email campaigns. Appointment reminders, educational content for parents, seasonal promotions, and referral programs to turn satisfied parents into your biggest advocates.
                 </p>
                 <Link to="/email-marketing-agency">
