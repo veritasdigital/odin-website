@@ -203,10 +203,10 @@ export default function Services() {
         <div className="absolute bottom-20 right-20 w-24 h-24 border border-accent/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <h2 className="text-4xl md:text-6xl font-black text-charcoal mb-8">
+          <h2 className="text-4xl md:text-6xl font-black text-foreground mb-8">
             Ready to Transform Your Marketing?
           </h2>
-          <p className="text-xl text-charcoal/70 mb-12 leading-relaxed">
+          <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
             Let's discuss which services will drive the biggest impact for your business. Schedule your free strategy session today.
           </p>
           <Button variant="cta" size="xl" onClick={openForm} className="text-base md:text-lg px-6 md:px-12 w-full md:w-auto whitespace-normal break-words">
