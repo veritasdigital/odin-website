@@ -57,23 +57,41 @@ export default function SEO() {
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
         {/* Animated background blobs */}
         <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }} />
+        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1.5s'
+      }} />
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '3s'
+      }} />
         
         {/* Floating Particles */}
         <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{
+        animationDelay: '2s'
+      }}></div>
         
         {/* Floating Circles with white/glass effect */}
         <div className="absolute top-32 left-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
-        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.8s' }} />
+        <div className="absolute top-64 right-1/3 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '1s'
+      }} />
+        <div className="absolute bottom-48 left-1/2 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2s'
+      }} />
+        <div className="absolute top-1/3 right-1/5 w-14 h-14 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2.8s'
+      }} />
         
         {/* Geometric Shapes */}
-        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{ animationDelay: '0.5s' }} />
-        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
+        <div className="absolute top-40 right-1/4 w-24 h-24 bg-white/15 backdrop-blur-sm border border-white/30 rounded-lg rotate-45 animate-float shadow-lg" style={{
+        animationDelay: '0.5s'
+      }} />
+        <div className="absolute bottom-32 left-1/3 w-16 h-16 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full animate-float shadow-lg" style={{
+        animationDelay: '2.5s'
+      }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
@@ -81,10 +99,14 @@ export default function SEO() {
             <h1 className="text-5xl md:text-7xl font-black text-charcoal mb-8 animate-fade-in">
               SEO Services
             </h1>
-            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl md:text-2xl text-charcoal/70 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               Improve your organic search rankings and drive sustainable long-term traffic growth with proven SEO strategies.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               <Button variant="cta" size="xl" onClick={openForm}>
                 Get Free SEO Audit
               </Button>
@@ -179,20 +201,20 @@ export default function SEO() {
       {/* Case Study Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
         {/* Dark overlay for contrast */}
-        <div className="absolute inset-0 bg-black/70" aria-hidden="true" />
+        <div aria-hidden="true" className="absolute inset-0 bg-transparent" />
         
         {/* Background elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
+        <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float bg-pink-100" />
         <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
         animationDelay: '3s'
       }} />
         
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-black mb-6 text-slate-950">
               SEO Success Story
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-slate-950">
               How we transformed an e-commerce site's organic performance.
             </p>
           </div>
