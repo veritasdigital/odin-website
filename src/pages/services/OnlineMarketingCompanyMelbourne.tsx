@@ -6,289 +6,228 @@ import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  AlertCircle,
-  FileText,
-  MapPin,
-  Search,
-  TrendingUp,
-  Target,
-  Users,
-  Monitor,
-  Award,
-  Shield,
-  BarChart3,
-  Zap,
-  CheckCircle2,
-  ArrowRight,
-  Settings,
-  Clock,
-  DollarSign,
-  Share2,
-  Eye,
-  MousePointer,
-  Layers
-} from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { AlertCircle, FileText, MapPin, Search, TrendingUp, Target, Users, Monitor, Award, Shield, BarChart3, Zap, CheckCircle2, ArrowRight, Settings, Clock, DollarSign, Share2, Eye, MousePointer, Layers } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const OnlineMarketingCompanyMelbourne = () => {
-  const { openForm } = useMarketingForm();
-
+  const {
+    openForm
+  } = useMarketingForm();
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused digital marketing agency specializing in high-ROI integrated digital marketing in Melbourne.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "url": "https://growth-conduit-central.lovable.app/contact"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.facebook.com/odindigital",
-          "https://twitter.com/odindigital"
-        ]
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Performance-focused digital marketing agency specializing in high-ROI integrated digital marketing in Melbourne.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "LocalBusiness",
-        "name": "Odin Digital - Digital Marketing Company Melbourne",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Melbourne",
-          "addressRegion": "VIC",
-          "addressCountry": "AU"
-        },
-        "areaServed": {
-          "@type": "State",
-          "name": "VIC"
-        },
-        "url": "https://growth-conduit-central.lovable.app/online-marketing-company-melbourne",
-        "telephone": "+61-XXX-XXX-XXX",
-        "priceRange": "$$$",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "150"
-        }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://growth-conduit-central.lovable.app/contact"
       },
-      {
-        "@type": "Service",
-        "serviceType": "Integrated Digital Marketing Strategy",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Odin Digital - Digital Marketing Company Melbourne"
-        },
-        "areaServed": "Melbourne",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Melbourne Digital Marketing Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Performance SEO"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "High-ROI Paid Media"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Surgical Social Media Ads"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Conversion-Focused Web Design"
-              }
-            }
-          ]
-        }
+      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
+    }, {
+      "@type": "LocalBusiness",
+      "name": "Odin Digital - Digital Marketing Company Melbourne",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Melbourne",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
       },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "LocalBusiness",
-          "name": "Odin Digital - Digital Marketing Company Melbourne"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Liam C"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Krush Organics"
-        }
+      "areaServed": {
+        "@type": "State",
+        "name": "VIC"
+      },
+      "url": "https://growth-conduit-central.lovable.app/online-marketing-company-melbourne",
+      "telephone": "+61-XXX-XXX-XXX",
+      "priceRange": "$$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
       }
-    ]
+    }, {
+      "@type": "Service",
+      "serviceType": "Integrated Digital Marketing Strategy",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Odin Digital - Digital Marketing Company Melbourne"
+      },
+      "areaServed": "Melbourne",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Melbourne Digital Marketing Services",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Performance SEO"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High-ROI Paid Media"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Surgical Social Media Ads"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Conversion-Focused Web Design"
+          }
+        }]
+      }
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "LocalBusiness",
+        "name": "Odin Digital - Digital Marketing Company Melbourne"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Liam C"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Krush Organics"
+      }
+    }]
   };
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How is your digital marketing strategy different from other Melbourne agencies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We focus on a holistic, unified strategy. Most agencies specialize in one area (SEO or PPC). We integrate all four pillars—SEO, PPC, Social, and Web Design—into a single, cohesive system, ensuring maximum efficiency and a higher ROI."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you ensure my budget isn't wasted in Melbourne's competitive market?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We focus on Cost Per Qualified Lead (CPQL), not just clicks. Our strategies are built on radical transparency and surgical targeting, ensuring every dollar spent contributes directly to a measurable revenue goal."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you use lock-in contracts for your digital marketing services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We believe our value should be proven every month. Our No Lock-in Contracts policy is a testament to our confidence in delivering exceptional, predictable results, which is why we maintain a 95% client retention rate."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What results can I expect from your integrated digital marketing strategy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our clients see an average 540% ROI across their integrated campaigns. By aligning SEO, PPC, Social, and Web Design into one cohesive strategy, we eliminate inefficiencies and maximize every marketing dollar."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to see results from your digital marketing services in Melbourne?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SEO typically shows significant results in 3-6 months. PPC and Social Ads can deliver immediate results within days to weeks. Our integrated approach accelerates overall performance by creating synergy between all channels."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you work with businesses of all sizes in Melbourne?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We work with small businesses, mid-sized companies, and large enterprises across Melbourne. Our strategies scale to your business size and goals, ensuring ROI-focused campaigns regardless of budget."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you measure the success of your digital marketing campaigns?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We track Cost Per Qualified Lead (CPQL), conversion rates, revenue attribution, and overall ROI. You'll have access to real-time dashboards showing exactly how your marketing investment translates to business growth."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes your SEO strategy different for Melbourne businesses?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our SEO isn't siloed—it's integrated with your PPC and content strategy. We target high-intent keywords, optimize for conversions (not just rankings), and ensure your SEO efforts support your overall revenue goals."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do you handle Melbourne's high cost-per-click (CPC) for PPC?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We use surgical targeting, negative keyword strategies, and landing page optimization to maximize Quality Score and reduce wasted spend. Our integrated approach ensures PPC works in harmony with SEO and social for better overall efficiency."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you integrate with our existing marketing efforts?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. We audit your current marketing stack and integrate seamlessly, filling gaps and optimizing existing efforts. Our goal is to create a unified strategy that leverages what's working and fixes what isn't."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide transparent reporting for all your digital marketing services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Radical transparency is one of our core values. You'll receive detailed monthly reports and have 24/7 access to real-time dashboards showing performance across all channels—SEO, PPC, Social, and Web."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries do you specialize in for Melbourne digital marketing?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We work across all industries but have particular expertise in professional services, e-commerce, healthcare, legal, and B2B SaaS. Our integrated approach adapts to any industry's unique challenges and opportunities."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How often will I communicate with your team?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You'll have a dedicated account manager for regular communication. We provide monthly strategy reviews, weekly performance updates, and are available for ad-hoc calls as needed. Transparency and communication are paramount."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is your pricing structure for digital marketing in Melbourne?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our pricing is customized based on your goals, industry, and competition. We offer transparent, performance-based pricing with no hidden fees. Contact us for a free audit and personalized quote."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you offer website design as part of your digital marketing services?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Conversion-focused web design is the fourth pillar of our integrated strategy. We build websites optimized for conversions, speed, and SEO—ensuring your site works in perfect harmony with your marketing campaigns."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What sets your social media advertising apart from other Melbourne agencies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We don't run generic awareness campaigns. Our social ads are surgically targeted, data-driven, and integrated with your SEO and PPC strategy to create a cohesive customer journey that maximizes conversions and ROI."
-        }
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How is your digital marketing strategy different from other Melbourne agencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We focus on a holistic, unified strategy. Most agencies specialize in one area (SEO or PPC). We integrate all four pillars—SEO, PPC, Social, and Web Design—into a single, cohesive system, ensuring maximum efficiency and a higher ROI."
       }
-    ]
+    }, {
+      "@type": "Question",
+      "name": "How do you ensure my budget isn't wasted in Melbourne's competitive market?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We focus on Cost Per Qualified Lead (CPQL), not just clicks. Our strategies are built on radical transparency and surgical targeting, ensuring every dollar spent contributes directly to a measurable revenue goal."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do you use lock-in contracts for your digital marketing services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We believe our value should be proven every month. Our No Lock-in Contracts policy is a testament to our confidence in delivering exceptional, predictable results, which is why we maintain a 95% client retention rate."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What results can I expect from your integrated digital marketing strategy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our clients see an average 540% ROI across their integrated campaigns. By aligning SEO, PPC, Social, and Web Design into one cohesive strategy, we eliminate inefficiencies and maximize every marketing dollar."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How long does it take to see results from your digital marketing services in Melbourne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO typically shows significant results in 3-6 months. PPC and Social Ads can deliver immediate results within days to weeks. Our integrated approach accelerates overall performance by creating synergy between all channels."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do you work with businesses of all sizes in Melbourne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We work with small businesses, mid-sized companies, and large enterprises across Melbourne. Our strategies scale to your business size and goals, ensuring ROI-focused campaigns regardless of budget."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How do you measure the success of your digital marketing campaigns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We track Cost Per Qualified Lead (CPQL), conversion rates, revenue attribution, and overall ROI. You'll have access to real-time dashboards showing exactly how your marketing investment translates to business growth."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What makes your SEO strategy different for Melbourne businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our SEO isn't siloed—it's integrated with your PPC and content strategy. We target high-intent keywords, optimize for conversions (not just rankings), and ensure your SEO efforts support your overall revenue goals."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How do you handle Melbourne's high cost-per-click (CPC) for PPC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use surgical targeting, negative keyword strategies, and landing page optimization to maximize Quality Score and reduce wasted spend. Our integrated approach ensures PPC works in harmony with SEO and social for better overall efficiency."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Can you integrate with our existing marketing efforts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. We audit your current marketing stack and integrate seamlessly, filling gaps and optimizing existing efforts. Our goal is to create a unified strategy that leverages what's working and fixes what isn't."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do you provide transparent reporting for all your digital marketing services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Radical transparency is one of our core values. You'll receive detailed monthly reports and have 24/7 access to real-time dashboards showing performance across all channels—SEO, PPC, Social, and Web."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What industries do you specialize in for Melbourne digital marketing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We work across all industries but have particular expertise in professional services, e-commerce, healthcare, legal, and B2B SaaS. Our integrated approach adapts to any industry's unique challenges and opportunities."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How often will I communicate with your team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll have a dedicated account manager for regular communication. We provide monthly strategy reviews, weekly performance updates, and are available for ad-hoc calls as needed. Transparency and communication are paramount."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What is your pricing structure for digital marketing in Melbourne?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our pricing is customized based on your goals, industry, and competition. We offer transparent, performance-based pricing with no hidden fees. Contact us for a free audit and personalized quote."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Do you offer website design as part of your digital marketing services?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Conversion-focused web design is the fourth pillar of our integrated strategy. We build websites optimized for conversions, speed, and SEO—ensuring your site works in perfect harmony with your marketing campaigns."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What sets your social media advertising apart from other Melbourne agencies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We don't run generic awareness campaigns. Our social ads are surgically targeted, data-driven, and integrated with your SEO and PPC strategy to create a cohesive customer journey that maximizes conversions and ROI."
+      }
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Digital Marketing Company Melbourne | Holistic Strategy & 540% ROI | Odin Digital</title>
         <meta name="description" content="The leading Digital Marketing Company Melbourne. We provide a unified, high-ROI strategy across SEO, PPC, Meta Ads, and Web Design. No fragmentation, just performance." />
@@ -307,11 +246,7 @@ const OnlineMarketingCompanyMelbourne = () => {
 
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-background border-t border-border p-3 shadow-lg">
-          <Button 
-            onClick={openForm}
-            className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold py-4"
-            size="lg"
-          >
+          <Button onClick={openForm} className="w-full bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold py-4" size="lg">
             Get Your FREE Melbourne Audit →
           </Button>
         </div>
@@ -333,8 +268,12 @@ const OnlineMarketingCompanyMelbourne = () => {
         <section className="relative pt-12 sm:pt-16 md:pt-20 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 overflow-hidden bg-gradient-subtle">
           {/* Floating circles */}
           <div className="absolute top-20 left-10 w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 rounded-full bg-primary/10 blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-10 w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full bg-secondary/10 blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-36 sm:h-36 md:w-52 md:h-52 lg:w-80 lg:h-80 rounded-full bg-accent/10 blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-20 right-10 w-28 h-28 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full bg-secondary/10 blur-3xl animate-float" style={{
+          animationDelay: '1s'
+        }}></div>
+          <div className="absolute top-1/2 left-1/2 w-32 h-32 sm:w-36 sm:h-36 md:w-52 md:h-52 lg:w-80 lg:h-80 rounded-full bg-accent/10 blur-3xl animate-float" style={{
+          animationDelay: '2s'
+        }}></div>
           
           <div className="container mx-auto max-w-6xl relative z-10 px-3 sm:px-4 md:px-6">
             <div className="text-center space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8">
@@ -357,11 +296,7 @@ const OnlineMarketingCompanyMelbourne = () => {
               </div>
 
               <div className="pt-3 sm:pt-4 md:pt-6">
-                <Button 
-                  onClick={openForm}
-                  size="lg"
-                  className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 shadow-glow hover:shadow-primary/60 transition-all duration-300 hover:scale-105"
-                >
+                <Button onClick={openForm} size="lg" className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 shadow-glow hover:shadow-primary/60 transition-all duration-300 hover:scale-105">
                   Get Your FREE Melbourne Digital Marketing Audit <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </div>
@@ -432,11 +367,7 @@ const OnlineMarketingCompanyMelbourne = () => {
             </div>
 
             <div className="text-center mt-6 sm:mt-8 md:mt-10">
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
-              >
+              <Button onClick={openForm} size="lg" className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4">
                 <span className="hidden sm:inline">Stop Wasting Your Budget: Get Your FREE Integrated Strategy Audit →</span>
                 <span className="sm:hidden">Get FREE Audit →</span>
               </Button>
@@ -548,11 +479,7 @@ const OnlineMarketingCompanyMelbourne = () => {
             </div>
 
             <div className="text-center mt-6 sm:mt-8 md:mt-10">
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
-              >
+              <Button onClick={openForm} size="lg" className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4">
                 <span className="hidden sm:inline">See How We Integrate These 4 Pillars for Your Business →</span>
                 <span className="sm:hidden">See Our Strategy →</span>
               </Button>
@@ -671,11 +598,7 @@ const OnlineMarketingCompanyMelbourne = () => {
             </div>
 
             <div className="text-center mt-6 sm:mt-8 md:mt-10">
-              <Button 
-                onClick={openForm}
-                size="lg"
-                className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4"
-              >
+              <Button onClick={openForm} size="lg" className="bg-[#D91C5C] hover:bg-[#D91C5C]/90 text-white font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-8 py-3 sm:py-4">
                 <span className="hidden sm:inline">Start Your Integrated Strategy Today →</span>
                 <span className="sm:hidden">Start Today →</span>
               </Button>
@@ -749,42 +672,7 @@ const OnlineMarketingCompanyMelbourne = () => {
         </section>
 
         {/* Related City & Service Links */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20">
-          <div className="container mx-auto max-w-6xl px-3 sm:px-4 md:px-6">
-            <div className="text-center mb-6 sm:mb-8 md:mb-12">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-2 sm:mb-3 md:mb-4">
-                Explore Our Digital Marketing Services
-              </h2>
-            </div>
-
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-              <Link to="/ppc-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">PPC Agency</h3>
-              </Link>
-              <Link to="/seo-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">SEO Agency</h3>
-              </Link>
-              <Link to="/meta-ads-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Meta Ads Agency</h3>
-              </Link>
-              <Link to="/web-design-agency" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Web Design Agency</h3>
-              </Link>
-              <Link to="/google-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Google Ads Melbourne</h3>
-              </Link>
-              <Link to="/facebook-ads-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Facebook Ads Melbourne</h3>
-              </Link>
-              <Link to="/web-design-melbourne" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Web Design Melbourne</h3>
-              </Link>
-              <Link to="/online-marketing-company-sydney" className="bg-card p-3 sm:p-4 rounded-lg shadow-card border border-border hover:shadow-lg hover:border-primary/50 transition-all group text-center">
-                <h3 className="text-sm sm:text-base font-semibold group-hover:text-primary transition-colors">Sydney Digital Marketing</h3>
-              </Link>
-            </div>
-          </div>
-        </section>
+        
 
         {/* FAQ Section */}
         <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30 pb-16 sm:pb-20 md:pb-24">
@@ -953,11 +841,7 @@ const OnlineMarketingCompanyMelbourne = () => {
             <p className="text-sm sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 md:mb-8 leading-relaxed max-w-3xl mx-auto">
               Partner with Melbourne's leading integrated digital marketing agency. Get your free audit and discover how we can deliver 540% ROI for your business.
             </p>
-            <Button 
-              onClick={openForm}
-              size="lg"
-              className="bg-white text-[#D91C5C] hover:bg-white/90 font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 shadow-glow transition-all duration-300 hover:scale-105"
-            >
+            <Button onClick={openForm} size="lg" className="bg-white text-[#D91C5C] hover:bg-white/90 font-bold text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-10 py-3 sm:py-4 md:py-5 shadow-glow transition-all duration-300 hover:scale-105">
               Claim Your FREE Melbourne Digital Marketing Audit <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </Button>
           </div>
@@ -965,8 +849,6 @@ const OnlineMarketingCompanyMelbourne = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>;
 };
-
 export default OnlineMarketingCompanyMelbourne;
