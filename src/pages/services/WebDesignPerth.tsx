@@ -338,7 +338,7 @@ const WebDesignPerth = () => {
             <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 lg:gap-20 items-center min-h-screen py-24 lg:py-32">
               
               {/* Left Side - Text Content */}
-              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl">
+              <div className="space-y-8 lg:space-y-10 animate-slide-up max-w-2xl mx-auto text-center">
                 {/* Main Headline */}
                 <div className="space-y-6">
                   <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
@@ -365,7 +365,7 @@ const WebDesignPerth = () => {
                 </div>
                 
                 {/* Action Button */}
-                <div className="pt-2">
+                <div className="pt-2 flex justify-center">
                   <Button 
                     variant="hero" 
                     size="lg" 
