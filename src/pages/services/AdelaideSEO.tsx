@@ -366,6 +366,8 @@ const AdelaideSEO = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background">
+        <Header />
+        
         {/* Breadcrumb Navigation */}
         <div className="container mx-auto px-4 pt-4">
           <Breadcrumb>
