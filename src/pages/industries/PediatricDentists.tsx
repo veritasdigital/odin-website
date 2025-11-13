@@ -9,213 +9,175 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { Link } from "react-router-dom";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Users, Target, TrendingUp, Award, Search, Heart, Mail, MessageSquare } from "lucide-react";
-
 const PediatricDentists = () => {
-  const { openForm } = useMarketingForm();
-
-  const faqs = [
-    {
-      question: "How can I use digital marketing to clearly differentiate my practice from general dentists?",
-      answer: "We focus on your specialised value proposition. This includes creating content that highlights your unique training, showcasing your child-friendly environment, and targeting long-tail keywords that only parents seeking a specialist would use. We emphasise your expertise in child development, behaviour management, and preventative care that general dentists simply don't specialise in."
-    },
-    {
-      question: "What is the most effective platform for reaching parents of young children?",
-      answer: "A multi-channel approach is best. Google (SEO/PPC) captures high-intent parents actively searching for a dentist. Instagram and Facebook (Meta Ads) are crucial for building brand awareness and trust with parents aged 25-45. We also leverage email marketing for patient retention and referral generation."
-    },
-    {
-      question: "How do you address the 'scare-free' aspect of paediatric dentistry in marketing?",
-      answer: "Through visual design and messaging. Our web design emphasises a fun, welcoming environment, and our copy uses reassuring, positive language, focusing on comfort and long-term health, not procedures. We showcase your child-friendly amenities, gentle approach, and positive patient experiences to build trust before the first appointment."
-    },
-    {
-      question: "What kind of ROI can I expect from paediatric dentist marketing?",
-      answer: "Our paediatric dentist clients typically see a 3-5x ROI within 6-12 months. This includes increased new patient appointments, higher treatment acceptance rates, and improved patient lifetime value as children grow with your practice. We focus on metrics that matter: cost per acquisition, patient lifetime value, and retention rates."
-    },
-    {
-      question: "How do you help me compete against general dentists who offer paediatric services?",
-      answer: "We position you as the specialist authority. This includes creating content that educates parents on the difference between general dentistry and paediatric specialisation, highlighting your advanced training, showcasing your child-specific facility and equipment, and targeting parents who specifically search for paediatric specialists."
-    },
-    {
-      question: "How long does it take to see results from paediatric dentist marketing?",
-      answer: "SEO typically takes 3-6 months to gain traction. PPC and Meta Ads can generate leads within 2-4 weeks. Web design improvements can boost conversion rates immediately. We set realistic expectations and provide transparent reporting throughout the process."
-    },
-    {
-      question: "Do you work with paediatric dental practices of all sizes?",
-      answer: "Yes. Whether you're a solo practitioner, a multi-dentist practice, or a paediatric dental group, we tailor our strategies to your specific goals, budget, and market. Our systems scale with your practice growth."
-    },
-    {
-      question: "How do you build trust with protective parents online?",
-      answer: "We implement a comprehensive trust-building system: professional web design with patient testimonials, video tours of your child-friendly facility, educational content that demonstrates your expertise, online reputation management to highlight positive reviews, and social proof through before/after photos and case studies."
-    },
-    {
-      question: "Can you help with both new patient acquisition and patient retention?",
-      answer: "Absolutely. We build acquisition systems (SEO, PPC, Meta Ads) and retention systems (email marketing, patient portals, referral programs). Retaining patients as they grow is crucial for lifetime value in paediatric dentistry."
-    },
-    {
-      question: "What makes your approach different from general dental marketing agencies?",
-      answer: "We understand the dual-audience challenge unique to paediatric dentistry. We speak to both the decision-maker (parent) and the patient (child). We understand the importance of anxiety reduction, trust-building, and positioning you as the specialist authority, not just another dentist."
-    },
-    {
-      question: "How do you handle marketing for multiple locations?",
-      answer: "We implement location-specific landing pages, local SEO optimisation for each practice, and geo-targeted PPC and Meta Ads campaigns. Each location gets customised messaging while maintaining consistent brand standards across your practice group."
-    },
-    {
-      question: "What is your pricing structure?",
-      answer: "Our pricing is customised based on your goals, market competitiveness, and service mix. Monthly retainers typically range from $3,000 to $15,000+ for comprehensive campaigns. We focus on ROI, not just spending—our goal is to make you more money than you invest."
-    },
-    {
-      question: "Do you offer contracts or can I cancel anytime?",
-      answer: "We offer both fixed-term agreements (typically 6-12 months for best results) and month-to-month options. Most clients stay with us long-term because we deliver measurable results. No lock-in contracts—we earn your business every month."
-    },
-    {
-      question: "How do you measure success?",
-      answer: "We track metrics that matter to your bottom line: new patient appointments, cost per acquisition, patient lifetime value, treatment acceptance rates, and overall ROI. You get transparent, easy-to-understand monthly reports showing exactly how your marketing investment is performing."
-    },
-    {
-      question: "How do I get started?",
-      answer: "Schedule a free strategy session with our team. We'll audit your current marketing, identify opportunities, and provide a customised roadmap for growth. No pressure, no obligations—just actionable insights tailored to your paediatric dental practice."
-    }
-  ];
-
+  const {
+    openForm
+  } = useMarketingForm();
+  const faqs = [{
+    question: "How can I use digital marketing to clearly differentiate my practice from general dentists?",
+    answer: "We focus on your specialised value proposition. This includes creating content that highlights your unique training, showcasing your child-friendly environment, and targeting long-tail keywords that only parents seeking a specialist would use. We emphasise your expertise in child development, behaviour management, and preventative care that general dentists simply don't specialise in."
+  }, {
+    question: "What is the most effective platform for reaching parents of young children?",
+    answer: "A multi-channel approach is best. Google (SEO/PPC) captures high-intent parents actively searching for a dentist. Instagram and Facebook (Meta Ads) are crucial for building brand awareness and trust with parents aged 25-45. We also leverage email marketing for patient retention and referral generation."
+  }, {
+    question: "How do you address the 'scare-free' aspect of paediatric dentistry in marketing?",
+    answer: "Through visual design and messaging. Our web design emphasises a fun, welcoming environment, and our copy uses reassuring, positive language, focusing on comfort and long-term health, not procedures. We showcase your child-friendly amenities, gentle approach, and positive patient experiences to build trust before the first appointment."
+  }, {
+    question: "What kind of ROI can I expect from paediatric dentist marketing?",
+    answer: "Our paediatric dentist clients typically see a 3-5x ROI within 6-12 months. This includes increased new patient appointments, higher treatment acceptance rates, and improved patient lifetime value as children grow with your practice. We focus on metrics that matter: cost per acquisition, patient lifetime value, and retention rates."
+  }, {
+    question: "How do you help me compete against general dentists who offer paediatric services?",
+    answer: "We position you as the specialist authority. This includes creating content that educates parents on the difference between general dentistry and paediatric specialisation, highlighting your advanced training, showcasing your child-specific facility and equipment, and targeting parents who specifically search for paediatric specialists."
+  }, {
+    question: "How long does it take to see results from paediatric dentist marketing?",
+    answer: "SEO typically takes 3-6 months to gain traction. PPC and Meta Ads can generate leads within 2-4 weeks. Web design improvements can boost conversion rates immediately. We set realistic expectations and provide transparent reporting throughout the process."
+  }, {
+    question: "Do you work with paediatric dental practices of all sizes?",
+    answer: "Yes. Whether you're a solo practitioner, a multi-dentist practice, or a paediatric dental group, we tailor our strategies to your specific goals, budget, and market. Our systems scale with your practice growth."
+  }, {
+    question: "How do you build trust with protective parents online?",
+    answer: "We implement a comprehensive trust-building system: professional web design with patient testimonials, video tours of your child-friendly facility, educational content that demonstrates your expertise, online reputation management to highlight positive reviews, and social proof through before/after photos and case studies."
+  }, {
+    question: "Can you help with both new patient acquisition and patient retention?",
+    answer: "Absolutely. We build acquisition systems (SEO, PPC, Meta Ads) and retention systems (email marketing, patient portals, referral programs). Retaining patients as they grow is crucial for lifetime value in paediatric dentistry."
+  }, {
+    question: "What makes your approach different from general dental marketing agencies?",
+    answer: "We understand the dual-audience challenge unique to paediatric dentistry. We speak to both the decision-maker (parent) and the patient (child). We understand the importance of anxiety reduction, trust-building, and positioning you as the specialist authority, not just another dentist."
+  }, {
+    question: "How do you handle marketing for multiple locations?",
+    answer: "We implement location-specific landing pages, local SEO optimisation for each practice, and geo-targeted PPC and Meta Ads campaigns. Each location gets customised messaging while maintaining consistent brand standards across your practice group."
+  }, {
+    question: "What is your pricing structure?",
+    answer: "Our pricing is customised based on your goals, market competitiveness, and service mix. Monthly retainers typically range from $3,000 to $15,000+ for comprehensive campaigns. We focus on ROI, not just spending—our goal is to make you more money than you invest."
+  }, {
+    question: "Do you offer contracts or can I cancel anytime?",
+    answer: "We offer both fixed-term agreements (typically 6-12 months for best results) and month-to-month options. Most clients stay with us long-term because we deliver measurable results. No lock-in contracts—we earn your business every month."
+  }, {
+    question: "How do you measure success?",
+    answer: "We track metrics that matter to your bottom line: new patient appointments, cost per acquisition, patient lifetime value, treatment acceptance rates, and overall ROI. You get transparent, easy-to-understand monthly reports showing exactly how your marketing investment is performing."
+  }, {
+    question: "How do I get started?",
+    answer: "Schedule a free strategy session with our team. We'll audit your current marketing, identify opportunities, and provide a customised roadmap for growth. No pressure, no obligations—just actionable insights tailored to your paediatric dental practice."
+  }];
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Specialist marketing partner for Paediatric Dentists, building trust-based digital systems for predictable patient acquisition.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "url": "https://growth-conduit-central.lovable.app/contact"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.facebook.com/odindigital",
-          "https://twitter.com/odindigital"
-        ]
+    "@graph": [{
+      "@type": "Organization",
+      "name": "Odin Digital",
+      "url": "https://growth-conduit-central.lovable.app/",
+      "logo": "https://growth-conduit-central.lovable.app/logo.png",
+      "description": "Specialist marketing partner for Paediatric Dentists, building trust-based digital systems for predictable patient acquisition.",
+      "founder": {
+        "@type": "Person",
+        "name": "Lucas Durante"
       },
-      {
-        "@type": "WebPage",
-        "name": "Pediatric Dentists Marketing - Specialist Patient Acquisition",
-        "url": "https://growth-conduit-central.lovable.app/industries/pediatric-dentists",
-        "inLanguage": "en-AU",
-        "description": "Odin Digital is the specialist marketing partner for Paediatric Dentists. We build trust-based digital systems that convert anxious parents into loyal, high-value patients.",
-        "about": {
-          "@type": "Service",
-          "name": "Pediatric Dentists Marketing"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://growth-conduit-central.lovable.app/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Industries",
-              "item": "https://growth-conduit-central.lovable.app/industries"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Pediatric Dentists Marketing"
-            }
-          ]
-        }
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "url": "https://growth-conduit-central.lovable.app/contact"
       },
-      {
+      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
+    }, {
+      "@type": "WebPage",
+      "name": "Pediatric Dentists Marketing - Specialist Patient Acquisition",
+      "url": "https://growth-conduit-central.lovable.app/industries/pediatric-dentists",
+      "inLanguage": "en-AU",
+      "description": "Odin Digital is the specialist marketing partner for Paediatric Dentists. We build trust-based digital systems that convert anxious parents into loyal, high-value patients.",
+      "about": {
         "@type": "Service",
-        "serviceType": "Pediatric Dentists Marketing",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Australia"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Digital Marketing Services for Pediatric Dentists",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Trust-Based Web Design & UX"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "High-Intent SEO & PPC"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Social Proof & Reputation Management"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Patient Retention & Email Marketing"
-              }
-            }
-          ]
-        }
+        "name": "Pediatric Dentists Marketing"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-          }
-        }))
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Odin Digital - Pediatric Dentists Marketing"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Evan Tsaboukos"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "reviewBody": "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Imperial Wealth"
-        }
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://growth-conduit-central.lovable.app/"
+        }, {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://growth-conduit-central.lovable.app/industries"
+        }, {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pediatric Dentists Marketing"
+        }]
       }
-    ]
+    }, {
+      "@type": "Service",
+      "serviceType": "Pediatric Dentists Marketing",
+      "provider": {
+        "@type": "Organization",
+        "name": "Odin Digital"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Australia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Marketing Services for Pediatric Dentists",
+        "itemListElement": [{
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Trust-Based Web Design & UX"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High-Intent SEO & PPC"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Social Proof & Reputation Management"
+          }
+        }, {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Patient Retention & Email Marketing"
+          }
+        }]
+      }
+    }, {
+      "@type": "FAQPage",
+      "mainEntity": faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    }, {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "Odin Digital - Pediatric Dentists Marketing"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Evan Tsaboukos"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Imperial Wealth"
+      }
+    }]
   };
-
-  return (
-    <>
+  return <>
       <Helmet>
         <title>Pediatric Dentists Marketing | Specialist Patient Acquisition | Odin Digital</title>
         <meta name="description" content="Attract high-value patients who value your specialty. We build trust-based digital marketing systems for Paediatric Dentists to dominate search and grow predictably." />
@@ -250,10 +212,7 @@ const PediatricDentists = () => {
       </div>
 
       {/* Hero Section */}
-      <ServiceHero 
-        h1="Pediatric Dentists Marketing"
-        subheadline="Stop Competing with General Dentists. Start Dominating Your Specialty. We Build Trust-Based Digital Systems That Convert Anxious Parents into Loyal, High-Value Patients, Ensuring Your Practice Thrives for Generations."
-      />
+      <ServiceHero h1="Pediatric Dentists Marketing" subheadline="Stop Competing with General Dentists. Start Dominating Your Specialty. We Build Trust-Based Digital Systems That Convert Anxious Parents into Loyal, High-Value Patients, Ensuring Your Practice Thrives for Generations." />
 
       {/* Social Proof Metrics */}
       <section className="py-16 bg-muted/30">
@@ -336,9 +295,7 @@ const PediatricDentists = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month."
@@ -353,9 +310,7 @@ const PediatricDentists = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "Working with Odin Digital transformed our online presence. Within 6 months, we saw a 285% increase in qualified leads and our cost per acquisition dropped by 42%. They truly understand our market."
@@ -370,9 +325,7 @@ const PediatricDentists = () => {
             <Card className="flex flex-col">
               <CardContent className="p-8 flex flex-col flex-1">
                 <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Award key={i} className="w-5 h-5 fill-primary text-primary" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Award key={i} className="w-5 h-5 fill-primary text-primary" />)}
                 </div>
                 <p className="text-muted-foreground mb-4">
                   "The ROI speaks for itself. Odin Digital's strategic approach to PPC and SEO helped us dominate our local market. Our practice revenue increased by 310% in the first year. Highly recommended."
@@ -625,31 +578,7 @@ const PediatricDentists = () => {
 
       {/* Related Service & Industry Links */}
       <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Explore Our Services & Industry Solutions</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <h3 className="text-xl font-bold mb-4">Core Marketing Services</h3>
-              <div className="flex flex-wrap gap-3">
-                <Link to="/ppc-agency"><Button variant="outline">PPC Agency</Button></Link>
-                <Link to="/seo-agency"><Button variant="outline">SEO Agency</Button></Link>
-                <Link to="/meta-ads-agency"><Button variant="outline">Meta Ads Agency</Button></Link>
-                <Link to="/web-design-agency"><Button variant="outline">Web Design Agency</Button></Link>
-                <Link to="/email-marketing-agency"><Button variant="outline">Email Marketing Agency</Button></Link>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold mb-4">Related Industry Solutions</h3>
-              <div className="flex flex-wrap gap-3">
-                <Link to="/industries/cosmetic-surgeons"><Button variant="outline">Cosmetic Surgeons Marketing</Button></Link>
-                <Link to="/industries/cosmetic-clinics"><Button variant="outline">Cosmetic Clinics Marketing</Button></Link>
-                <Link to="/industries/orthodontists"><Button variant="outline">Orthodontists Marketing</Button></Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </section>
 
       {/* FAQ Section */}
@@ -659,16 +588,14 @@ const PediatricDentists = () => {
           
           <div className="max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
                   <AccordionTrigger className="text-left font-semibold hover:text-primary">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
 
@@ -688,8 +615,6 @@ const PediatricDentists = () => {
       </div>
 
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default PediatricDentists;
