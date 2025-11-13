@@ -608,17 +608,17 @@ const RoofingCompanies = () => {
           </div>
           
           <div className="max-w-4xl mx-auto px-4 md:px-6 text-center relative z-10">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 md:mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-charcoal mb-6 md:mb-8">
               Ready to Build a Predictable Lead Flow System?
             </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-6 md:mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-charcoal/90 mb-6 md:mb-8 leading-relaxed">
               Stop relying on unpredictable weather and start attracting high-quality leads on demand with a strategic digital blueprint.
             </p>
-            <p className="text-base md:text-lg text-white/80 mb-8 md:mb-12">
+            <p className="text-base md:text-lg text-charcoal/70 mb-8 md:mb-12">
               Schedule your free, no-obligation lead flow analysis today. We'll show you the exact roadmap to dominate your local service area.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-20 md:mb-0">
-              <Button size="lg" onClick={openForm} className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 text-base md:text-lg py-6 md:py-7 px-6 md:px-8">
+              <Button size="lg" onClick={openForm} className="w-full sm:w-auto bg-white text-primary hover:bg-white/90 text-base md:text-lg py-6 md:py-7 px-6 md:px-8 whitespace-normal break-words">
                 Schedule Your FREE Lead Flow Analysis →
               </Button>
             </div>
