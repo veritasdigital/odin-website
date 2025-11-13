@@ -11,6 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ConveyancingLawyers = () => {
   const { openForm } = useMarketingForm();
@@ -626,263 +627,257 @@ const ConveyancingLawyers = () => {
           </div>
         </section>
 
-        {/* Challenge Section */}
-        <section className="py-20 bg-muted/30">
+        {/* Challenge Section - Compressed */}
+        <section className="py-12 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">The Conveyancing Lawyer Challenge</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">The Conveyancing Lawyer Challenge</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
                 Conveyancers face unique marketing challenges that generic marketing agencies simply don't understand.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               {challenges.map((challenge, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <challenge.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-4">{challenge.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-4 hover-scale">
+                  <challenge.icon className="w-8 h-8 text-primary mb-3" />
+                  <h3 className="text-base font-bold mb-2">{challenge.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {challenge.description}
                   </p>
                 </Card>
               ))}
             </div>
-
-            <div className="text-center mt-12 px-4">
-              <p className="text-lg sm:text-xl font-semibold mb-4">
-                We're conveyancing marketing specialists who solve these exact challenges.
-              </p>
-            </div>
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
-        <section className="py-20 bg-background">
+        {/* Why Choose Us Section - Compressed */}
+        <section className="py-12 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Why Conveyancing Lawyers Choose Odin Digital</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                We're not just another marketing agency. We're conveyancing marketing specialists with proven results.
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Why Conveyancing Lawyers Choose Us</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+                Conveyancing marketing specialists with proven results: 190+ practices, 295% average client increase, 48% cost reduction.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               {whyChooseUs.map((item, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <CheckCircle className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-lg sm:text-xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                <Card key={index} className="p-4 hover-scale">
+                  <CheckCircle className="w-8 h-8 text-primary mb-3" />
+                  <h3 className="text-base font-bold mb-2">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     {item.description}
                   </p>
                 </Card>
               ))}
             </div>
-
-            <div className="text-center mt-12 px-4">
-              <Button 
-                variant="cta" 
-                size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
-                onClick={openForm}
-              >
-                Learn More About Our Approach <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-              </Button>
-            </div>
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="py-20 bg-muted/30">
+        {/* Services Section - Accordion Format */}
+        <section className="py-12 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Our Conveyancing Marketing Services</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Our Conveyancing Marketing Services</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
                 Comprehensive marketing services designed specifically for conveyancing practices.
               </p>
             </div>
 
-            <div className="space-y-8 px-4">
+            <Accordion type="single" collapsible className="w-full space-y-3 px-4">
               {services.map((service, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <div className="flex items-start gap-6">
-                    <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary flex-shrink-0 mt-1" />
-                    <div className="flex-1">
-                      <h3 className="text-xl sm:text-2xl font-bold mb-4">{service.title}</h3>
-                      <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
+                <AccordionItem key={index} value={`service-${index}`} className="border rounded-lg px-4">
+                  <AccordionTrigger className="text-left hover:no-underline">
+                    <div className="flex items-center gap-3">
+                      <service.icon className="w-6 h-6 text-primary flex-shrink-0" />
+                      <span className="text-sm sm:text-base font-bold">{service.title}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-3 space-y-3">
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                         {service.description}
                       </p>
-                      <div className="mb-4">
-                        <p className="font-semibold mb-2 text-sm sm:text-base">Key Features:</p>
-                        <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
+                      <div>
+                        <p className="font-semibold text-xs sm:text-sm mb-1">Key Features:</p>
+                        <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm text-muted-foreground">
                           {service.features.map((feature, idx) => (
                             <li key={idx}>{feature}</li>
                           ))}
                         </ul>
                       </div>
-                      <div className="bg-primary/5 p-4 rounded-lg">
-                        <p className="font-semibold mb-2 text-sm sm:text-base">Expected Results:</p>
-                        <p className="text-sm sm:text-base text-muted-foreground">{service.results}</p>
+                      <div className="bg-primary/5 p-3 rounded-lg">
+                        <p className="font-semibold text-xs sm:text-sm mb-1">Expected Results:</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{service.results}</p>
                       </div>
                     </div>
-                  </div>
-                </Card>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
 
-            <div className="text-center mt-12 px-4">
+            <div className="text-center mt-8 px-4">
               <Button 
                 variant="cta" 
-                size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                size="lg" 
+                className="text-sm px-4 sm:px-6 h-auto py-3 whitespace-normal break-words"
                 onClick={openForm}
               >
-                Discuss Your Marketing Needs <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                Discuss Your Marketing Needs <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </div>
           </div>
         </section>
 
-        {/* Process Section */}
-        <section className="py-20 bg-background">
+        {/* Process Section - Compact Grid */}
+        <section className="py-12 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Our Conveyancing Marketing Process</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                A proven 6-phase process that delivers consistent, quality client flow.
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Our 6-Phase Marketing Process</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+                A proven process that delivers consistent, quality client flow.
               </p>
             </div>
 
-            <div className="space-y-8 px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
               {process.map((step, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <div className="flex items-start gap-6">
-                    <div className="text-4xl sm:text-5xl font-black text-primary/20 flex-shrink-0">{step.number}</div>
-                    <div className="flex-1">
-                      <h3 className="text-xl sm:text-2xl font-bold mb-4">{step.title}</h3>
-                      <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
-                        {step.description}
-                      </p>
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div className="bg-primary/5 p-4 rounded-lg">
-                          <p className="font-semibold mb-2 text-sm sm:text-base">What We Do:</p>
-                          <p className="text-sm sm:text-base text-muted-foreground">{step.whatWeDo}</p>
-                        </div>
-                        <div className="bg-primary/5 p-4 rounded-lg">
-                          <p className="font-semibold mb-2 text-sm sm:text-base">What You Get:</p>
-                          <p className="text-sm sm:text-base text-muted-foreground">{step.whatYouGet}</p>
-                        </div>
+                <Card key={index} className="p-4 hover-scale">
+                  <div className="text-3xl font-black text-primary/20 mb-2">{step.number}</div>
+                  <h3 className="text-base font-bold mb-2">{step.title}</h3>
+                  <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+                    {step.description}
+                  </p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Practice Types Section - Tabs Format */}
+        <section className="py-12 bg-muted/30">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Marketing for Different Practice Types</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+                Tailored strategies for every type of conveyancing practice.
+              </p>
+            </div>
+
+            <Tabs defaultValue="0" className="w-full px-4">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-6">
+                {practiceTypes.map((type, index) => (
+                  <TabsTrigger key={index} value={String(index)} className="text-xs sm:text-sm">
+                    {type.title}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+              {practiceTypes.map((type, index) => (
+                <TabsContent key={index} value={String(index)}>
+                  <Card className="p-6">
+                    <div className="flex items-start gap-4 mb-4">
+                      <type.icon className="w-10 h-10 text-primary flex-shrink-0" />
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-bold mb-2">{type.title}</h3>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{type.description}</p>
                       </div>
                     </div>
-                  </div>
-                </Card>
+                    <div className="bg-primary/5 p-4 rounded-lg mb-3">
+                      <p className="font-semibold mb-1 text-xs sm:text-sm">Our Solution:</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">{type.solution}</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold mb-2 text-xs sm:text-sm">Key Benefits:</p>
+                      <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm text-muted-foreground">
+                        {type.benefits.map((benefit, idx) => (
+                          <li key={idx}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </Card>
+                </TabsContent>
               ))}
-            </div>
+            </Tabs>
           </div>
         </section>
 
-        {/* Practice Types Section */}
-        <section className="py-20 bg-muted/30">
+        {/* Services Marketing Section - Accordion Format */}
+        <section className="py-12 bg-background">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Conveyancing Marketing for Different Practice Types</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                Tailored marketing strategies for every type of conveyancing practice.
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Conveyancing Services Marketing</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
+                Specialized marketing strategies for each service you offer.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
-              {practiceTypes.map((type, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <type.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4">{type.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
-                    {type.description}
-                  </p>
-                  <div className="bg-primary/5 p-4 rounded-lg mb-4">
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Our Solution:</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{type.solution}</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Key Benefits:</p>
-                    <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
-                      {type.benefits.map((benefit, idx) => (
-                        <li key={idx}>{benefit}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Services Marketing Section */}
-        <section className="py-20 bg-background">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Conveyancing Services Marketing</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
-                Specialized marketing strategies for each conveyancing service you offer.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
+            <Accordion type="single" collapsible className="w-full space-y-3 px-4">
               {servicesMarketing.map((service, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale">
-                  <service.icon className="w-10 h-10 sm:w-12 sm:h-12 text-primary mb-4" />
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4">{service.title}</h3>
-                  <p className="text-sm sm:text-base text-muted-foreground mb-4 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="bg-primary/5 p-4 rounded-lg mb-4">
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Marketing Strategy:</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{service.strategy}</p>
-                  </div>
-                  <div>
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Key Benefits:</p>
-                    <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-muted-foreground">
-                      {service.benefits.map((benefit, idx) => (
-                        <li key={idx}>{benefit}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </Card>
+                <AccordionItem key={index} value={`service-marketing-${index}`} className="border rounded-lg px-4">
+                  <AccordionTrigger className="text-left hover:no-underline">
+                    <div className="flex items-center gap-3">
+                      <service.icon className="w-6 h-6 text-primary flex-shrink-0" />
+                      <span className="text-sm sm:text-base font-bold">{service.title}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-3 space-y-3">
+                      <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="bg-primary/5 p-3 rounded-lg">
+                        <p className="font-semibold text-xs sm:text-sm mb-1">Marketing Strategy:</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">{service.strategy}</p>
+                      </div>
+                      <div>
+                        <p className="font-semibold text-xs sm:text-sm mb-1">Key Benefits:</p>
+                        <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm text-muted-foreground">
+                          {service.benefits.map((benefit, idx) => (
+                            <li key={idx}>{benefit}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </section>
 
-        {/* Case Studies Section */}
-        <section className="py-20 bg-muted/30">
+        {/* Case Studies Section - Compact Cards */}
+        <section className="py-12 bg-muted/30">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center mb-12 px-4">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-black mb-4">Conveyancing Marketing Case Studies</h2>
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+            <div className="text-center mb-8 px-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-3">Client Success Stories</h2>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
                 Real results from conveyancing practices just like yours.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 sm:gap-8 px-4">
+            <div className="grid md:grid-cols-2 gap-4 px-4">
               {caseStudies.map((study, index) => (
-                <Card key={index} className="p-6 sm:p-8 hover-scale flex flex-col">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-4">{study.type}</h3>
-                  <div className="bg-destructive/10 p-4 rounded-lg mb-4 flex-grow-0">
-                    <p className="font-semibold mb-2 text-sm sm:text-base">The Challenge:</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{study.challenge}</p>
+                <Card key={index} className="p-4 hover-scale flex flex-col">
+                  <h3 className="text-base sm:text-lg font-bold mb-3">{study.type}</h3>
+                  <div className="space-y-2 mb-3 flex-grow">
+                    <div className="bg-destructive/10 p-3 rounded text-xs">
+                      <p className="font-semibold mb-1">Challenge:</p>
+                      <p className="text-muted-foreground">{study.challenge}</p>
+                    </div>
+                    <div className="bg-primary/5 p-3 rounded text-xs">
+                      <p className="font-semibold mb-1">Solution:</p>
+                      <p className="text-muted-foreground">{study.solution}</p>
+                    </div>
+                    <div className="bg-green-50 dark:bg-green-950 p-3 rounded text-xs">
+                      <p className="font-semibold mb-1">Results:</p>
+                      <p className="text-muted-foreground">{study.results}</p>
+                    </div>
                   </div>
-                  <div className="bg-primary/5 p-4 rounded-lg mb-4 flex-grow-0">
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Our Solution:</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{study.solution}</p>
-                  </div>
-                  <div className="bg-green-50 dark:bg-green-950 p-4 rounded-lg mb-4 flex-grow">
-                    <p className="font-semibold mb-2 text-sm sm:text-base">Results Achieved:</p>
-                    <p className="text-sm sm:text-base text-muted-foreground">{study.results}</p>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 mt-auto">
+                  <div className="grid grid-cols-2 gap-2 mt-auto">
                     {Object.entries(study.metrics).map(([key, value], idx) => (
-                      <div key={idx} className="text-center p-3 bg-background rounded-lg">
-                        <div className="text-xl sm:text-2xl font-black text-primary">{value}</div>
-                        <div className="text-xs sm:text-sm text-muted-foreground capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
+                      <div key={idx} className="text-center p-2 bg-background rounded">
+                        <div className="text-lg font-black text-primary">{value}</div>
+                        <div className="text-xs text-muted-foreground capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</div>
                       </div>
                     ))}
                   </div>
@@ -890,14 +885,14 @@ const ConveyancingLawyers = () => {
               ))}
             </div>
 
-            <div className="text-center mt-12 px-4">
+            <div className="text-center mt-6 px-4">
               <Button 
                 variant="cta" 
-                size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                size="lg" 
+                className="text-sm px-4 sm:px-6 h-auto py-3 whitespace-normal break-words"
                 onClick={openForm}
               >
-                View More Case Studies <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                Get Similar Results <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </div>
           </div>
@@ -926,45 +921,41 @@ const ConveyancingLawyers = () => {
               ))}
             </Accordion>
 
-            <div className="text-center mt-12 px-4">
+            <div className="text-center mt-8 px-4">
               <Button 
                 variant="cta" 
-                size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+                size="lg" 
+                className="text-sm px-4 sm:px-6 h-auto py-3 whitespace-normal break-words"
                 onClick={openForm}
               >
-                Get Your Questions Answered <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                Get Your Questions Answered <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </div>
           </div>
         </section>
 
-        {/* Final CTA Section */}
-        <section data-nav-contrast="dark" className="py-24 gradient-hero relative overflow-hidden">
+        {/* Final CTA Section - Compressed */}
+        <section data-nav-contrast="dark" className="py-16 gradient-hero relative overflow-hidden">
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
           
           <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-charcoal mb-6 sm:mb-8 px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-charcoal mb-4 px-4">
               Ready to Attract More Quality Conveyancing Clients?
             </h2>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/90 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-              Stop struggling with inconsistent client flow. Stop competing on price alone. Start attracting quality clients who value professional conveyancing services.
-            </p>
-
-            <p className="text-base sm:text-lg text-charcoal/80 mb-8 max-w-3xl mx-auto px-4">
-              Schedule your free, no-obligation conveyancing marketing consultation today. We'll analyse your current marketing, identify opportunities, and show you exactly how we can help you grow your practice.
+            <p className="text-sm sm:text-base md:text-lg text-charcoal/90 mb-6 max-w-4xl mx-auto leading-relaxed px-4">
+              Stop struggling with inconsistent client flow. Start attracting quality clients who value professional conveyancing services.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Button 
                 variant="cta" 
-                size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words w-full sm:w-auto"
+                size="lg" 
+                className="text-sm px-4 sm:px-6 h-auto py-3 whitespace-normal break-words w-full sm:w-auto"
                 onClick={openForm}
               >
-                Schedule Your Free Conveyancing Marketing Consultation <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                Schedule Free Consultation <ArrowRight className="ml-2 h-4 w-4 flex-shrink-0" />
               </Button>
             </div>
           </div>
