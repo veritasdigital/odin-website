@@ -283,16 +283,16 @@ const GoogleAdsBallarat = () => {
             {/* Trust Signals */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">$574M+</div>
-                <div className="text-white/80">Client Revenue Generated</div>
+                <div className="text-4xl font-black text-charcoal mb-2">$574M+</div>
+                <div className="text-charcoal/70">Client Revenue Generated</div>
               </Card>
               <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">540%</div>
-                <div className="text-white/80">Average ROI on Ad Spend</div>
+                <div className="text-4xl font-black text-charcoal mb-2">540%</div>
+                <div className="text-charcoal/70">Average ROI on Ad Spend</div>
               </Card>
               <Card className="p-6 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-4xl font-black text-white mb-2">95%</div>
-                <div className="text-white/80">Client Retention Rate</div>
+                <div className="text-4xl font-black text-charcoal mb-2">95%</div>
+                <div className="text-charcoal/70">Client Retention Rate</div>
               </Card>
             </div>
           </div>
