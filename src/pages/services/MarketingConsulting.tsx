@@ -431,7 +431,7 @@ export default function MarketingConsulting() {
             <Lightbulb className="w-5 h-5 mr-2" />
             Book My Strategic Session
           </Button>
-          <p className="text-sm text-white/70 mt-4">
+          <p className="text-sm mt-4 text-gray-900">
             No commitments. No pressure. Just honest strategic guidance and a clear path forward.
           </p>
         </div>
