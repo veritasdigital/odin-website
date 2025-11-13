@@ -431,19 +431,19 @@ const FamilyLawyers = () => {
 
           <div className="relative z-10 max-w-6xl mx-auto px-6">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-white mb-6 leading-tight mt-24 sm:mt-32">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-charcoal mb-6 leading-tight mt-24 sm:mt-32">
                 Digital Marketing for Family Lawyers
               </h1>
               
-              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white/95 mb-8 leading-tight max-w-5xl mx-auto px-4">
+              <p className="hero-sub-headline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-charcoal/95 mb-8 leading-tight max-w-5xl mx-auto px-4">
                 Stop Wasting Budget on Low-Value Leads. Attract High-Net-Worth, Complex Family Law Cases with a Predictable, Ethical Digital Strategy.
               </p>
 
               <div className="prose prose-lg max-w-4xl mx-auto mb-8 px-4">
-                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-charcoal/90 leading-relaxed">
                   In family law, every case is high-stakes. Your marketing must reflect the gravity, discretion, and professionalism your clients demand. We build digital ecosystems that filter out the noise and deliver high-value, pre-qualified clients ready to engage your firm.
                 </p>
-                <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-charcoal/90 leading-relaxed">
                   At Odin Digital, we understand the unique challenges of family law—from the extreme emotional weight of divorce and custody battles to the ethical constraints of legal advertising. Generic marketing agencies fail because they don't understand the difference between a high-net-worth property settlement and a simple consultation. Our integrated strategy—combining Discreet SEO, High-Value PPC, Trust-Building Meta Ads, and Anxiety-Reducing Web Design—is engineered to attract the most complex and profitable cases, ensuring your firm's reputation and bottom line are protected.
                 </p>
               </div>
@@ -451,7 +451,7 @@ const FamilyLawyers = () => {
               <Button 
                 variant="cta" 
                 size="xl" 
-                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal mb-8"
+                className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words mb-8"
                 onClick={openForm}
               >
                 Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
@@ -649,22 +649,22 @@ const FamilyLawyers = () => {
           <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
           
           <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-6 sm:mb-8 px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-charcoal mb-6 sm:mb-8 px-4">
               Ready to Build a Predictable High-Value Client Acquisition System?
             </h2>
             
-            <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-4 sm:mb-6 max-w-4xl mx-auto leading-relaxed px-4">
+            <p className="text-lg sm:text-xl md:text-2xl text-charcoal/90 mb-4 sm:mb-6 max-w-4xl mx-auto leading-relaxed px-4">
               Stop relying on referrals alone and start attracting complex, high-net-worth cases with a strategic digital blueprint built for the modern legal landscape.
             </p>
 
-            <p className="text-base sm:text-lg text-white/80 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg text-charcoal/85 mb-6 sm:mb-8 max-w-3xl mx-auto px-4">
               Schedule your free, no-obligation High-Value Case Acquisition Analysis today. We'll show you the exact roadmap to dominate your local market and maximize your firm's profitability.
             </p>
 
             <Button 
               variant="cta" 
               size="xl" 
-              className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal"
+              className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 h-auto py-3 sm:py-4 whitespace-normal break-words"
               onClick={openForm}
             >
               Schedule Your FREE High-Value Case Acquisition Analysis <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
