@@ -11,6 +11,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import melbourneSkyline from "@/assets/locations/melbourne-skyline.jpg";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
@@ -479,12 +480,23 @@ const MelbourneSEO = () => {
           </Breadcrumb>
         </div>
 
-        {/* Hero Section */}
+        {/* Hero Section with Melbourne Location Image */}
         <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Melbourne Skyline Background Image */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={melbourneSkyline} 
+              alt="SEO services Melbourne - Melbourne city skyline featuring Eureka Tower and Yarra River at sunset, representing digital marketing excellence in Victoria" 
+              className="w-full h-full object-cover opacity-10"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
+          </div>
+
           {/* Animated Background Blobs */}
-          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
-          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
+          <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse z-[1]" />
+          <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse z-[1]" style={{ animationDelay: "1.5s" }} />
+          <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse z-[1]" style={{ animationDelay: "3s" }} />
           
           {/* Floating Particles */}
           <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
