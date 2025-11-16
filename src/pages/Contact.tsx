@@ -257,10 +257,9 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <Label htmlFor="challenges" className="text-charcoal font-semibold">What are your biggest marketing challenges? *</Label>
+                  <Label htmlFor="challenges" className="text-charcoal font-semibold">What are your biggest marketing challenges?</Label>
                   <Textarea
                     id="challenges"
-                    required
                     value={formData.challenges}
                     onChange={(e) => setFormData({ ...formData, challenges: e.target.value })}
                     placeholder="Tell us about your current marketing challenges and goals..."
