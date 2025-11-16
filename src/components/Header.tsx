@@ -42,67 +42,25 @@ export const Header = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="z-50 w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2 max-h-[70vh] overflow-y-auto">
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/services/social-media" className="w-full">Social Media Marketing</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/google-ads" className="w-full">Google Ads</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/seo" className="w-full">SEO</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/facebook-ads" className="w-full">Facebook Ads</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/social-media" className="w-full">Social Media Marketing</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/social-media-advertising" className="w-full">Social Media Advertising</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/social-media" className="w-full">Social Media Marketing</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/website-design" className="w-full">Website Design</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/linkedin-advertising" className="w-full">LinkedIn Advertising</a>
+                  <a href="/services/seo" className="w-full">SEO</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/marketing-consulting" className="w-full">Marketing Consulting</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/industries" className="w-full">Industries We Serve</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/social-media-advertising-sydney" className="w-full">Social Media Ads Sydney</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/social-media-advertising-melbourne" className="w-full">Social Media Ads Melbourne</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/linkedin-advertising" className="w-full">LinkedIn Advertising</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/website-design-and-development" className="w-full">Website Design</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/web-design-melbourne" className="w-full">Web Design Melbourne</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/web-design-perth" className="w-full">Web Design Perth</a>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/website-design" className="w-full">Website Design (Old)</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/services/funnel-development" className="w-full">Funnel Development</a>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/services/marketing-consulting" className="w-full">Marketing Consulting</a>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/web-design-perth" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
-              Web Design
-            </a>
             <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               About
             </a>
@@ -141,15 +99,12 @@ export const Header = () => {
               <div>
                 <div className="text-charcoal font-medium py-2 mb-2">Services</div>
                 <div className="pl-4 space-y-2">
-                  <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
-                  <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
-                  <a href="/services/facebook-ads" className="block text-charcoal/70 hover:text-primary py-1">Facebook Ads</a>
-                  <a href="/services/social-media-advertising" className="block text-charcoal/70 hover:text-primary py-1">Social Media Advertising</a>
                   <a href="/services/social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
+                  <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
                   <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
-                  <a href="/linkedin-advertising" className="block text-charcoal/70 hover:text-primary py-1">LinkedIn Advertising</a>
+                  <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
                   <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
-                  <a href="/industries" className="block text-charcoal/70 hover:text-primary py-1">Industries We Serve</a>
+                  <a href="/services/funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
                 </div>
               </div>
               <a href="/our-clients" className="text-charcoal/70 hover:text-primary font-medium py-2">Our Clients</a>
