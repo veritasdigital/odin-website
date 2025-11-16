@@ -20,7 +20,6 @@ export default function Contact() {
     phone: "",
     companyName: "",
     website: "",
-    industry: "",
     revenue: "",
     challenges: ""
   });
@@ -38,7 +37,7 @@ export default function Contact() {
         phone: formData.phone,
         company: formData.companyName,
         monthly_budget: formData.revenue,
-        industry: formData.industry,
+        industry: "Not specified",
         primary_goal: "Contact form inquiry",
         target_audience: formData.website || "Not specified",
         current_challenges: formData.challenges
@@ -54,7 +53,6 @@ export default function Contact() {
         phone: "",
         companyName: "",
         website: "",
-        industry: "",
         revenue: "",
         challenges: ""
       });
@@ -235,31 +233,6 @@ export default function Contact() {
                     placeholder="https://yourcompany.com"
                     className="mt-2 border-border"
                   />
-                </div>
-
-                <div>
-                  <Label htmlFor="industry" className="text-charcoal font-semibold">Industry *</Label>
-                  <Select
-                    value={formData.industry}
-                    onValueChange={(value) => setFormData({ ...formData, industry: value })}
-                    required
-                  >
-                    <SelectTrigger id="industry" className="mt-2 border-border">
-                      <SelectValue placeholder="Select your industry" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="technology">Technology</SelectItem>
-                      <SelectItem value="healthcare">Healthcare</SelectItem>
-                      <SelectItem value="finance">Finance</SelectItem>
-                      <SelectItem value="retail">Retail</SelectItem>
-                      <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                      <SelectItem value="real-estate">Real Estate</SelectItem>
-                      <SelectItem value="legal">Legal</SelectItem>
-                      <SelectItem value="education">Education</SelectItem>
-                      <SelectItem value="hospitality">Hospitality</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
                 </div>
 
                 <div>
