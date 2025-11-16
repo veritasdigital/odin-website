@@ -19,15 +19,17 @@ import { useEffect, useRef, useState } from "react";
 
 // Count-up animation hook
 const useCountUp = (end: number, duration: number = 2000) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const countRef = useRef<HTMLDivElement>(null);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !isVisible) {
+        if (entry.isIntersecting && !hasAnimated.current) {
           setIsVisible(true);
+          hasAnimated.current = true;
         }
       },
       { threshold: 0.1 }
@@ -42,32 +44,39 @@ const useCountUp = (end: number, duration: number = 2000) => {
         observer.unobserve(countRef.current);
       }
     };
-  }, [isVisible]);
+  }, []);
 
   useEffect(() => {
     if (!isVisible) return;
 
-    let startTime: number;
-    let animationFrame: number;
-
-    const animate = (currentTime: number) => {
-      if (!startTime) startTime = currentTime;
-      const progress = Math.min((currentTime - startTime) / duration, 1);
+    const delayTimeout = setTimeout(() => {
+      setCount(0);
       
-      setCount(Math.floor(progress * end));
+      let startTime: number;
+      let animationFrame: number;
 
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
-    };
+      const animate = (currentTime: number) => {
+        if (!startTime) startTime = currentTime;
+        const progress = Math.min((currentTime - startTime) / duration, 1);
+        
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        setCount(Math.floor(easeOutQuart * end));
 
-    animationFrame = requestAnimationFrame(animate);
+        if (progress < 1) {
+          animationFrame = requestAnimationFrame(animate);
+        }
+      };
 
-    return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-    };
+      animationFrame = requestAnimationFrame(animate);
+
+      return () => {
+        if (animationFrame) {
+          cancelAnimationFrame(animationFrame);
+        }
+      };
+    }, 100);
+
+    return () => clearTimeout(delayTimeout);
   }, [end, duration, isVisible]);
 
   return { count, ref: countRef };
@@ -79,7 +88,7 @@ const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; l
   return (
     <Card className="p-4 sm:p-6 text-center">
       <div ref={ref} className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2 break-words">
-        ${count}{suffix}
+        {count !== null ? `$${count}${suffix}` : '\u00A0'}
       </div>
       <div className="text-xs sm:text-sm text-muted-foreground font-medium break-words">{label}</div>
     </Card>

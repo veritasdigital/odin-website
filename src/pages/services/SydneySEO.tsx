@@ -28,15 +28,17 @@ import {
 const SydneySEO = () => {
   // Count-up animation hook
   const useCountUp = (end: number, duration: number = 2000) => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState<number | null>(null);
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
+    const hasAnimated = useRef(false);
 
     useEffect(() => {
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && !hasAnimated.current) {
             setIsVisible(true);
+            hasAnimated.current = true;
           }
         },
         { threshold: 0.1 }
@@ -56,19 +58,26 @@ const SydneySEO = () => {
     useEffect(() => {
       if (!isVisible) return;
 
-      let startTime: number | null = null;
-      const animate = (currentTime: number) => {
-        if (!startTime) startTime = currentTime;
-        const progress = Math.min((currentTime - startTime) / duration, 1);
+      const delayTimeout = setTimeout(() => {
+        setCount(0);
         
-        setCount(Math.floor(progress * end));
+        let startTime: number | null = null;
+        const animate = (currentTime: number) => {
+          if (!startTime) startTime = currentTime;
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+          
+          const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+          setCount(Math.floor(easeOutQuart * end));
+          
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        };
         
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      };
-      
-      requestAnimationFrame(animate);
+        requestAnimationFrame(animate);
+      }, 100);
+
+      return () => clearTimeout(delayTimeout);
     }, [isVisible, end, duration]);
 
     return { count, ref };
@@ -88,7 +97,7 @@ const SydneySEO = () => {
     return (
       <div ref={ref} className="animate-fade-in">
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2">
-          {metric.prefix}{count}{metric.suffix}
+          {count !== null ? `${metric.prefix}${count}${metric.suffix}` : '\u00A0'}
         </div>
         <div className="text-xs sm:text-sm md:text-base text-muted-foreground px-2">
           {metric.label}
