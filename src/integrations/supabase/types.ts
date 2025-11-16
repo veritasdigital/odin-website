@@ -65,6 +65,63 @@ export type Database = {
         }
         Relationships: []
       }
+      strategy_session_submissions: {
+        Row: {
+          biggest_obstacle: string
+          business_description: string
+          business_type: string
+          commitment_level: number
+          created_at: string
+          current_marketing: string[]
+          current_revenue: string
+          email: string
+          id: string
+          marketing_budget: string
+          name: string
+          phone: string
+          status: string | null
+          target_revenue: string
+          timeline: string
+          website_url: string
+        }
+        Insert: {
+          biggest_obstacle: string
+          business_description: string
+          business_type: string
+          commitment_level: number
+          created_at?: string
+          current_marketing: string[]
+          current_revenue: string
+          email: string
+          id?: string
+          marketing_budget: string
+          name: string
+          phone: string
+          status?: string | null
+          target_revenue: string
+          timeline: string
+          website_url: string
+        }
+        Update: {
+          biggest_obstacle?: string
+          business_description?: string
+          business_type?: string
+          commitment_level?: number
+          created_at?: string
+          current_marketing?: string[]
+          current_revenue?: string
+          email?: string
+          id?: string
+          marketing_budget?: string
+          name?: string
+          phone?: string
+          status?: string | null
+          target_revenue?: string
+          timeline?: string
+          website_url?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
