@@ -164,32 +164,20 @@
     transition: var(--transition-bounce);
   }
 
-  /* Animation Keyframes */
-  @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(2deg); }
+  /* Subtle Professional Animations */
+  @keyframes fade-in {
+    from { 
+      opacity: 0; 
+      transform: translateY(8px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
   }
 
-  @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 15px hsl(var(--primary) / 0.2), 0 0 25px hsl(var(--primary) / 0.1); }
-    50% { box-shadow: 0 0 25px hsl(var(--primary) / 0.4), 0 0 40px hsl(var(--primary) / 0.2); }
-  }
-
-  @keyframes slide-up {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-pulse-glow {
-    animation: pulse-glow 8s ease-in-out infinite;
-  }
-
-  .animate-slide-up {
-    animation: slide-up 0.6s ease-out forwards;
+  .animate-fade-in {
+    animation: fade-in 0.4s ease-out;
   }
 }
 
@@ -242,83 +230,4 @@
     animation-play-state: paused;
   }
 
-  /* Decorative Circle Elements */
-  .decorative-circles {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .decorative-circles::before,
-  .decorative-circles::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .decorative-circles::before {
-    width: 200px;
-    height: 200px;
-    background: hsl(var(--primary) / 0.08);
-    top: -100px;
-    right: -50px;
-  }
-
-  .decorative-circles::after {
-    width: 120px;
-    height: 120px;
-    background: hsl(var(--accent) / 0.06);
-    bottom: -60px;
-    left: -30px;
-  }
-
-  .decorative-circles-alt {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .decorative-circles-alt::before,
-  .decorative-circles-alt::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .decorative-circles-alt::before {
-    width: 160px;
-    height: 160px;
-    background: hsl(var(--primary) / 0.05);
-    top: 20%;
-    left: -80px;
-  }
-
-  .decorative-circles-alt::after {
-    width: 100px;
-    height: 100px;
-    background: hsl(var(--accent) / 0.08);
-    bottom: 15%;
-    right: -50px;
-  }
-
-  .decorative-circles > *,
-  .decorative-circles-alt > * {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Floating Animation for Hero Circles */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
+  /* Removed excessive decorative animations */
