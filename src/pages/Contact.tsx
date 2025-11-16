@@ -14,8 +14,7 @@ import { toast } from "sonner";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     phone: "",
     companyName: "",
@@ -30,9 +29,13 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
+      const nameParts = formData.name.trim().split(' ');
+      const firstName = nameParts[0] || formData.name;
+      const lastName = nameParts.slice(1).join(' ') || '';
+      
       const { error } = await supabase.from("form_submissions").insert({
-        first_name: formData.firstName,
-        last_name: formData.lastName,
+        first_name: firstName,
+        last_name: lastName,
         email: formData.email,
         phone: formData.phone,
         company: formData.companyName,
@@ -47,8 +50,7 @@ export default function Contact() {
 
       toast.success("Thank you! We'll be in touch soon.");
       setFormData({
-        firstName: "",
-        lastName: "",
+        name: "",
         email: "",
         phone: "",
         companyName: "",
@@ -156,32 +158,17 @@ export default function Contact() {
             {/* Right Side - Contact Form */}
             <div id="contact-form" className="bg-white rounded-2xl shadow-lg p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <Label htmlFor="firstName" className="text-charcoal font-semibold">First Name *</Label>
-                    <Input
-                      id="firstName"
-                      type="text"
-                      required
-                      value={formData.firstName}
-                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                      placeholder="John"
-                      className="mt-2 border-border"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="lastName" className="text-charcoal font-semibold">Last Name *</Label>
-                    <Input
-                      id="lastName"
-                      type="text"
-                      required
-                      value={formData.lastName}
-                      onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                      placeholder="Smith"
-                      className="mt-2 border-border"
-                    />
-                  </div>
+                <div>
+                  <Label htmlFor="name" className="text-charcoal font-semibold">Name *</Label>
+                  <Input
+                    id="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    placeholder="John Smith"
+                    className="mt-2 border-border"
+                  />
                 </div>
 
                 <div>
