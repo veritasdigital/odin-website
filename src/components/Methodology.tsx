@@ -44,7 +44,7 @@ export const Methodology = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-charcoal mb-4">{step.title}</h3>
+                  <h3 className="text-lg font-bold text-charcoal mb-4">{step.title}</h3>
                   <p className="text-charcoal/70 leading-relaxed">{step.description}</p>
                 </div>
               </div>

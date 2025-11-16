@@ -43,7 +43,7 @@ export const Process = () => {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-charcoal mb-2">{phase.title}</h3>
+                <h3 className="text-lg font-bold text-charcoal mb-2">{phase.title}</h3>
                 <p className="text-primary font-medium mb-4">{phase.timeframe}</p>
                 <ul className="text-sm text-charcoal/70 space-y-2">
                   {phase.tasks.map((task, taskIndex) => (

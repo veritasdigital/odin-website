@@ -247,7 +247,7 @@ export const MarketingStrategyForm = ({
 
             {/* Step 1: Basic Information */}
             {currentStep === 1 && <div className="space-y-8">
-                <h3 className="text-xl md:text-2xl font-bold text-charcoal">Let's start with the basics</h3>
+                <h2 className="text-xl md:text-2xl font-bold text-charcoal">Let's start with the basics</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -283,7 +283,7 @@ export const MarketingStrategyForm = ({
 
             {/* Step 2: Business Details */}
             {currentStep === 2 && <div className="space-y-8">
-                <h3 className="text-xl md:text-2xl font-bold text-charcoal">Tell us about your business</h3>
+                <h2 className="text-xl md:text-2xl font-bold text-charcoal">Tell us about your business</h2>
                 
                 <div>
                   <Label htmlFor="industry">Industry *</Label>
@@ -335,7 +335,7 @@ export const MarketingStrategyForm = ({
 
             {/* Step 3: Goals & Challenges */}
             {currentStep === 3 && <div className="space-y-8">
-                <h3 className="text-xl md:text-2xl font-bold text-charcoal">What are your goals?</h3>
+                <h2 className="text-xl md:text-2xl font-bold text-charcoal">What are your goals?</h2>
                 
                 <div>
                   <Label htmlFor="primaryGoal">Primary Marketing Goal *</Label>

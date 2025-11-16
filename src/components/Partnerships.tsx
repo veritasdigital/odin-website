@@ -58,9 +58,9 @@ export const Partnerships = () => {
     <section className="py-8 bg-background border-y border-border">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-6">
-          <h3 className="text-lg font-bold text-muted-foreground mb-4">
+          <p className="text-lg font-bold text-muted-foreground mb-4">
             Certified Partners
-          </h3>
+          </p>
         </div>
 
         <div className="flex items-center justify-center gap-4 overflow-x-auto">

@@ -25,7 +25,7 @@ export const CTA = () => {
 
         <div className="flex justify-center mb-12">
           <Card className="p-8 bg-white/10 backdrop-blur-sm border-white/20 text-white max-w-md">
-            <h3 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h3>
+            <h2 className="text-2xl font-bold mb-4">Schedule Your Strategic Consultation</h2>
             <p className="text-white/80 mb-6">
               Meet with one of our senior digital marketing strategists to discuss your business objectives and explore how our services can contribute to your growth goals.
             </p>

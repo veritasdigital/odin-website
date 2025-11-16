@@ -45,7 +45,7 @@ export const Investment = () => {
                   Most Popular
                 </div>
               )}
-              <h3 className="text-2xl font-bold text-charcoal mb-2">{pkg.title}</h3>
+              <h3 className="text-xl font-bold text-charcoal mb-2">{pkg.title}</h3>
               <p className="text-charcoal/70 mb-6">{pkg.subtitle}</p>
               <div className="mb-8">
                 <p className="text-3xl font-black text-primary">{pkg.price}</p>
