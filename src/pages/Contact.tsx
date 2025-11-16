@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useState } from "react";
@@ -12,12 +14,15 @@ import { toast } from "sonner";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
+    firstName: "",
+    lastName: "",
     email: "",
+    phone: "",
     companyName: "",
     website: "",
-    budget: ""
+    industry: "",
+    revenue: "",
+    challenges: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -27,27 +32,31 @@ export default function Contact() {
 
     try {
       const { error } = await supabase.from("form_submissions").insert({
-        first_name: formData.name.split(" ")[0] || formData.name,
-        last_name: formData.name.split(" ").slice(1).join(" ") || "",
+        first_name: formData.firstName,
+        last_name: formData.lastName,
         email: formData.email,
         phone: formData.phone,
         company: formData.companyName,
-        monthly_budget: formData.budget,
-        industry: "Not specified",
+        monthly_budget: formData.revenue,
+        industry: formData.industry,
         primary_goal: "Contact form inquiry",
-        target_audience: formData.website || "Not specified"
+        target_audience: formData.website || "Not specified",
+        current_challenges: formData.challenges
       });
 
       if (error) throw error;
 
       toast.success("Thank you! We'll be in touch soon.");
       setFormData({
-        name: "",
-        phone: "",
+        firstName: "",
+        lastName: "",
         email: "",
+        phone: "",
         companyName: "",
         website: "",
-        budget: ""
+        industry: "",
+        revenue: "",
+        challenges: ""
       });
     } catch (error) {
       console.error("Error submitting form:", error);
@@ -156,11 +165,8 @@ export default function Contact() {
                       id="firstName"
                       type="text"
                       required
-                      value={formData.name.split(" ")[0] || ""}
-                      onChange={(e) => {
-                        const lastName = formData.name.split(" ").slice(1).join(" ");
-                        setFormData({ ...formData, name: `${e.target.value} ${lastName}`.trim() });
-                      }}
+                      value={formData.firstName}
+                      onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                       placeholder="John"
                       className="mt-2 border-border"
                     />
@@ -172,11 +178,8 @@ export default function Contact() {
                       id="lastName"
                       type="text"
                       required
-                      value={formData.name.split(" ").slice(1).join(" ") || ""}
-                      onChange={(e) => {
-                        const firstName = formData.name.split(" ")[0];
-                        setFormData({ ...formData, name: `${firstName} ${e.target.value}`.trim() });
-                      }}
+                      value={formData.lastName}
+                      onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                       placeholder="Smith"
                       className="mt-2 border-border"
                     />
@@ -235,15 +238,60 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <Label htmlFor="budget" className="text-charcoal font-semibold">Advertising Budget *</Label>
-                  <Input
-                    id="budget"
-                    type="text"
+                  <Label htmlFor="industry" className="text-charcoal font-semibold">Industry *</Label>
+                  <Select
+                    value={formData.industry}
+                    onValueChange={(value) => setFormData({ ...formData, industry: value })}
                     required
-                    value={formData.budget}
-                    onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    placeholder="e.g., $5,000 - $10,000/month"
-                    className="mt-2 border-border"
+                  >
+                    <SelectTrigger id="industry" className="mt-2 border-border">
+                      <SelectValue placeholder="Select your industry" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="technology">Technology</SelectItem>
+                      <SelectItem value="healthcare">Healthcare</SelectItem>
+                      <SelectItem value="finance">Finance</SelectItem>
+                      <SelectItem value="retail">Retail</SelectItem>
+                      <SelectItem value="manufacturing">Manufacturing</SelectItem>
+                      <SelectItem value="real-estate">Real Estate</SelectItem>
+                      <SelectItem value="legal">Legal</SelectItem>
+                      <SelectItem value="education">Education</SelectItem>
+                      <SelectItem value="hospitality">Hospitality</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <Label htmlFor="revenue" className="text-charcoal font-semibold">Annual Revenue *</Label>
+                  <Select
+                    value={formData.revenue}
+                    onValueChange={(value) => setFormData({ ...formData, revenue: value })}
+                    required
+                  >
+                    <SelectTrigger id="revenue" className="mt-2 border-border">
+                      <SelectValue placeholder="Select revenue range" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="0-500k">$0 - $500K</SelectItem>
+                      <SelectItem value="500k-1m">$500K - $1M</SelectItem>
+                      <SelectItem value="1m-5m">$1M - $5M</SelectItem>
+                      <SelectItem value="5m-10m">$5M - $10M</SelectItem>
+                      <SelectItem value="10m-50m">$10M - $50M</SelectItem>
+                      <SelectItem value="50m+">$50M+</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div>
+                  <Label htmlFor="challenges" className="text-charcoal font-semibold">What are your biggest marketing challenges? *</Label>
+                  <Textarea
+                    id="challenges"
+                    required
+                    value={formData.challenges}
+                    onChange={(e) => setFormData({ ...formData, challenges: e.target.value })}
+                    placeholder="Tell us about your current marketing challenges and goals..."
+                    className="mt-2 border-border min-h-[120px]"
                   />
                 </div>
 
