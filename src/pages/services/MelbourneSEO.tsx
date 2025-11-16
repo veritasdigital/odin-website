@@ -11,7 +11,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
-import melbourneSkyline from "@/assets/locations/melbourne-skyline.jpg";
+import { locationImages } from "@/utils/locationImages";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
@@ -484,12 +484,15 @@ const MelbourneSEO = () => {
         <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Melbourne Skyline Background Image */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src={melbourneSkyline} 
-              alt="SEO services Melbourne - Melbourne city skyline featuring Eureka Tower and Yarra River at sunset, representing digital marketing excellence in Victoria" 
-              className="w-full h-full object-cover opacity-10"
-              loading="eager"
-            />
+            <picture>
+              <source srcSet={locationImages.melbourne.webp} type="image/webp" />
+              <img 
+                src={locationImages.melbourne.jpg}
+                alt={locationImages.melbourne.alt}
+                className="w-full h-full object-cover opacity-10"
+                loading="eager"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>
 
