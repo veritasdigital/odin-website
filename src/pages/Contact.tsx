@@ -147,89 +147,112 @@ export default function Contact() {
             </div>
 
             {/* Right Side - Contact Form */}
-            <div id="contact-form" className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-glow p-8 border border-muted">
-              <h2 className="text-2xl font-bold text-charcoal mb-6">Get Your Free Strategy</h2>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <Label htmlFor="name" className="text-charcoal">Full Name *</Label>
-                  <Input
-                    id="name"
-                    type="text"
-                    required
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="mt-1.5"
-                  />
+            <div id="contact-form" className="bg-white rounded-2xl shadow-lg p-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="firstName" className="text-charcoal font-semibold">First Name *</Label>
+                    <Input
+                      id="firstName"
+                      type="text"
+                      required
+                      value={formData.name.split(" ")[0] || ""}
+                      onChange={(e) => {
+                        const lastName = formData.name.split(" ").slice(1).join(" ");
+                        setFormData({ ...formData, name: `${e.target.value} ${lastName}`.trim() });
+                      }}
+                      placeholder="John"
+                      className="mt-2 border-border"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="lastName" className="text-charcoal font-semibold">Last Name *</Label>
+                    <Input
+                      id="lastName"
+                      type="text"
+                      required
+                      value={formData.name.split(" ").slice(1).join(" ") || ""}
+                      onChange={(e) => {
+                        const firstName = formData.name.split(" ")[0];
+                        setFormData({ ...formData, name: `${firstName} ${e.target.value}`.trim() });
+                      }}
+                      placeholder="Smith"
+                      className="mt-2 border-border"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="email" className="text-charcoal">Email Address *</Label>
+                  <Label htmlFor="email" className="text-charcoal font-semibold">Business Email *</Label>
                   <Input
                     id="email"
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="mt-1.5"
+                    placeholder="john@company.com"
+                    className="mt-2 border-border"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="phone" className="text-charcoal">Phone Number *</Label>
+                  <Label htmlFor="phone" className="text-charcoal font-semibold">Phone Number *</Label>
                   <Input
                     id="phone"
                     type="tel"
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="mt-1.5"
+                    placeholder="+61 4XX XXX XXX"
+                    className="mt-2 border-border"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="companyName" className="text-charcoal">Company Name *</Label>
+                  <Label htmlFor="companyName" className="text-charcoal font-semibold">Company Name *</Label>
                   <Input
                     id="companyName"
                     type="text"
                     required
                     value={formData.companyName}
                     onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                    className="mt-1.5"
+                    placeholder="Your Company Pty Ltd"
+                    className="mt-2 border-border"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="website" className="text-charcoal">Company Website</Label>
+                  <Label htmlFor="website" className="text-charcoal font-semibold">Website</Label>
                   <Input
                     id="website"
                     type="url"
-                    placeholder="https://"
                     value={formData.website}
                     onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    className="mt-1.5"
+                    placeholder="https://yourcompany.com"
+                    className="mt-2 border-border"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="budget" className="text-charcoal">Monthly Advertising Budget *</Label>
+                  <Label htmlFor="budget" className="text-charcoal font-semibold">Advertising Budget *</Label>
                   <Input
                     id="budget"
                     type="text"
                     required
-                    placeholder="e.g., $5,000 - $10,000"
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                    className="mt-1.5"
+                    placeholder="e.g., $5,000 - $10,000/month"
+                    className="mt-2 border-border"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
-                  variant="cta" 
-                  className="w-full py-6 text-lg"
                   disabled={isSubmitting}
+                  className="w-full bg-gradient-primary text-white hover:shadow-glow transition-all duration-300 py-6 text-lg font-semibold"
                 >
-                  {isSubmitting ? "Sending..." : "Get My Free Strategy"}
+                  {isSubmitting ? "Sending..." : "Submit"}
                 </Button>
               </form>
             </div>
