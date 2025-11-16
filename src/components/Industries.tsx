@@ -48,7 +48,7 @@ export const Industries = () => {
           {industries.map((industry, index) => (
             <Card key={index} className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors group">
               <industry.icon className="h-12 w-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-bold text-charcoal mb-4">{industry.title}</h3>
+              <h3 className="text-lg font-bold text-charcoal mb-4">{industry.title}</h3>
               <p className="text-charcoal/70 leading-relaxed">{industry.description}</p>
             </Card>
           ))}

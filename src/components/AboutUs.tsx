@@ -55,9 +55,9 @@ export const AboutUs = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-3xl font-black text-charcoal mb-6">
+              <h2 className="text-3xl font-black text-charcoal mb-6">
                 A Message from Our CEO
-              </h3>
+              </h2>
               <blockquote className="text-lg text-charcoal/90 leading-relaxed mb-6 italic">
                 "At Odin Digital, we believe that every business deserves marketing that actually works. We're not here to sell you on fancy theories or complicated strategies that sound impressive but don't deliver results.
                 <br /><br />
@@ -74,10 +74,10 @@ export const AboutUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Text Content - Left Side */}
             <div>
-              <h3 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+              <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
                 182+ Years of Combined 
                 <span className="text-primary block">Digital Marketing Expertise</span>
-              </h3>
+              </h2>
               <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
                 <p>
                   Our team isn't just experienced - we're specialists who live and breathe digital marketing. With over 182 years of combined expertise across every aspect of digital advertising, we've seen every challenge, mastered every platform, and perfected every strategy.
@@ -122,9 +122,9 @@ export const AboutUs = () => {
         {/* Core Values */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
+            <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
               The Odin Philosophy: Our Core Values
-            </h3>
+            </h2>
             <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
               Our values are the operating system for every decision we make, every strategy we deploy, and every partnership we forge.
             </p>
@@ -137,7 +137,7 @@ export const AboutUs = () => {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-2xl font-black text-primary">{value.number}</span>
                   </div>
-                  <h4 className="text-xl font-bold text-charcoal mb-4">{value.title}</h4>
+                  <h3 className="text-xl font-bold text-charcoal mb-4">{value.title}</h3>
                   <p className="text-charcoal/80 leading-relaxed">
                     {value.description}
                   </p>

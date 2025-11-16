@@ -33,9 +33,9 @@ export const Hero = () => {
             
             {/* Subtitle and Description */}
             <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              <h2 className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
+              <p className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
                 Data-Driven Digital Marketing Solutions That Deliver Measurable Business Results
-              </h2>
+              </p>
               
               <p className="text-lg md:text-xl text-charcoal/70 leading-relaxed max-w-2xl font-light">
                 At Odin Digital, we partner with ambitious businesses to develop and execute comprehensive digital marketing strategies that drive sustainable growth. Our evidence-based approach and proven methodologies have contributed to generating over $574 million in client revenue across diverse industries.
@@ -57,9 +57,9 @@ export const Hero = () => {
             {/* As Seen In Media Logos */}
             <div className="pt-8 mt-8 border-t border-charcoal/10 animate-fade-in" style={{ animationDelay: "1s" }}>
               <div className="text-center mb-6">
-                <h3 className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
+                <p className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
                   As Featured In
-                </h3>
+                </p>
               </div>
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">

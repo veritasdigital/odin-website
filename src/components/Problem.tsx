@@ -46,7 +46,7 @@ export const Problem = () => {
           {challenges.slice(0, 3).map((challenge, index) => (
             <Card key={index} className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
               <challenge.icon className="h-12 w-12 text-primary mb-6" />
-              <h3 className="text-xl font-bold text-charcoal mb-4">{challenge.title}</h3>
+              <h3 className="text-lg font-bold text-charcoal mb-4">{challenge.title}</h3>
               <p className="text-charcoal/70 leading-relaxed">{challenge.description}</p>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export const Problem = () => {
           {challenges.slice(3).map((challenge, index) => (
             <Card key={index + 3} className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
               <challenge.icon className="h-12 w-12 text-primary mb-6" />
-              <h3 className="text-xl font-bold text-charcoal mb-4">{challenge.title}</h3>
+              <h3 className="text-lg font-bold text-charcoal mb-4">{challenge.title}</h3>
               <p className="text-charcoal/70 leading-relaxed">{challenge.description}</p>
             </Card>
           ))}

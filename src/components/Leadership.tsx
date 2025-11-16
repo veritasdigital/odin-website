@@ -84,7 +84,7 @@ export const Leadership = () => {
               <h2 className="text-3xl md:text-4xl font-black text-charcoal mb-4">
                 A Message from Our CEO
               </h2>
-              <h3 className="text-2xl font-bold text-primary mb-6">Lucas Durante</h3>
+              <p className="text-2xl font-bold text-primary mb-6">Lucas Durante</p>
             </div>
             
             <blockquote className="text-lg text-charcoal/80 leading-relaxed mb-8 italic">

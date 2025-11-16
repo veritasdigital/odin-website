@@ -33,7 +33,7 @@ export const Credibility = () => {
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-charcoal text-center mb-12">Our Performance Metrics:</h3>
+          <p className="text-xl font-bold text-charcoal text-center mb-12">Our Performance Metrics:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <Card key={index} className="p-8 text-center bg-white border border-charcoal/10 hover:border-primary/20 transition-colors">

@@ -77,7 +77,7 @@ export const Services = () => {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-charcoal mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-2">{service.title}</h3>
                   <p className="text-primary font-semibold mb-4 text-sm uppercase tracking-wider">
                     {service.subtitle}
                   </p>
