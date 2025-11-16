@@ -454,7 +454,7 @@ const NewcastleSEO = () => {
         <title>SEO Agency Newcastle | Proven 540% ROI SEO Services | Odin Digital</title>
         <meta name="description" content="Stop listening to excuses. Odin Digital is the SEO Agency Newcastle businesses trust for ethical, high-performance SEO services with no lock-in contracts. Get your free audit today." />
         <meta name="keywords" content="SEO agency Newcastle, Newcastle SEO, SEO services Newcastle, SEO company Newcastle, local SEO Newcastle" />
-        <link rel="canonical" href="https://growth-conduit-central.lovable.app/seo-newcastle" />
+        <link rel="canonical" href="https://odindigital.com.au/seo-newcastle" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

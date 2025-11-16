@@ -271,6 +271,7 @@ const GoogleAdsGoldCoast = () => {
       <Helmet>
         <title>Google Ads Agency Gold Coast: High-Value Lead PPC Experts | Odin Digital</title>
         <meta name="description" content="Stop settling for tire-kickers. Get high-value leads with senior Gold Coast PPC strategists. Transparent fees, no lock-in contracts, and 540% average ROI." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-gold-coast" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

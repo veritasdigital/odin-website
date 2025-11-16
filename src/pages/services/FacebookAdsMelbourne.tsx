@@ -398,6 +398,7 @@ const FacebookAdsMelbourne = () => {
           name="description"
           content="Melbourne's top Facebook Ads Agency focused on high-quality leads and sales. 540% average ROI. No lock-in contracts. Get your free audit today."
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-melbourne" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

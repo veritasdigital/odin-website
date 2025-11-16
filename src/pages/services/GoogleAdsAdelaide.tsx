@@ -249,7 +249,7 @@ const GoogleAdsAdelaide = () => {
       <Helmet>
         <title>Google Ads Agency Adelaide | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Adelaide trusts for maximum ROI. Precision targeting, transparent reporting, and no lock-in contracts. Get your free audit." />
-        <link rel="canonical" href="https://growth-conduit-central.lovable.app/google-ads-adelaide" />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-adelaide" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

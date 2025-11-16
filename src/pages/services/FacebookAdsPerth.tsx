@@ -307,6 +307,7 @@ const FacebookAdsPerth = () => {
           name="description"
           content="Perth's leading Facebook ads agency. We build high-converting, ROI-focused Facebook ad campaigns that generate leads and sales. Get your free Perth Facebook ads quote."
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-perth" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

@@ -278,6 +278,7 @@ const FacebookAdsDarwin = () => {
       <Helmet>
         <title>Facebook Ads Darwin | Stop Wasting Budget on Tourists - Odin Digital</title>
         <meta name="description" content="Attract high-value, local Territorian customers with Darwin's most precise Meta Ads strategy. We specialize in seasonal targeting and high-ROI campaigns." />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-darwin" />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>

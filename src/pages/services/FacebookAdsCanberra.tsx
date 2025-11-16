@@ -322,6 +322,7 @@ const FacebookAdsCanberra = () => {
       <Helmet>
         <title>Facebook Ads Agency Canberra | 540% ROI on Meta Ads | Odin Digital</title>
         <meta name="description" content="The performance-focused Facebook Ads Agency in Canberra. Stop wasting budget on ad fatigue and generalists. Get a proven 540% ROI on your Meta Ads spend." />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-canberra" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup.organization)}
         </script>

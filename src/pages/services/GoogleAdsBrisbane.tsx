@@ -310,6 +310,7 @@ const GoogleAdsBrisbane = () => {
       <Helmet>
         <title>Google Ads Agency Brisbane | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Brisbane trusts for maximum ROI. Precision targeting, competitive intelligence, and no lock-in contracts. Get your free audit." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-brisbane" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 

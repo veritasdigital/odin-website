@@ -298,6 +298,7 @@ export default function GoogleAdsHobart() {
       <Helmet>
         <title>Google Ads Agency Hobart | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Hobart trusts for maximum ROI. Local expertise, seasonal optimization, and no lock-in contracts. Get your free audit." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-hobart" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

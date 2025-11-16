@@ -218,6 +218,7 @@ const GoogleAdsBallarat = () => {
       <Helmet>
         <title>Google Ads Agency Ballarat: No Lock-In Contracts | Odin Digital</title>
         <meta name="description" content="Local Google Ads Management for Ballarat businesses. Stop wasting budget on generic strategies. Get a FREE local audit and 540% average ROI." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-ballarat" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

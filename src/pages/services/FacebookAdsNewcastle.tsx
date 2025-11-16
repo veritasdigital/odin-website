@@ -293,6 +293,7 @@ const FacebookAdsNewcastle = () => {
     <>
       <Helmet>
         <title>Facebook Ads Agency Newcastle | Generate ROI with Meta Ads - Odin Digital</title>
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-newcastle" />
         <meta name="description" content="Stop wasting money on Facebook Ads. Our Newcastle Meta Ads agency specializes in high-ROI campaigns, creative testing, and transparent reporting. No lock-in contracts." />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup.organization)}

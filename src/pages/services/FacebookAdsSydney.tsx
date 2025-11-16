@@ -480,6 +480,7 @@ const FacebookAdsSydney = () => {
           name="keywords"
           content="Facebook ads agency Sydney, Facebook ads management Sydney, Instagram ads Sydney, Meta ads Sydney, Facebook advertising Sydney"
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-sydney" />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>

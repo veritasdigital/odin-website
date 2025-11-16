@@ -348,6 +348,7 @@ const GoogleAdsSydney = () => {
       <Helmet>
         <title>Google Ads Agency Sydney | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop burning money on Google Ads. Odin Digital is the PPC agency Sydney trusts for maximum ROI in Australia's most competitive market. Precision targeting, daily optimization, no lock-in contracts." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-sydney" />
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
       </Helmet>
 

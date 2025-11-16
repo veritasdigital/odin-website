@@ -508,6 +508,7 @@ export default function GoogleAdsMelbourne() {
           name="description" 
           content="Melbourne's top Google Ads agency. Stop wasting budget and start converting. 540% average ROI. No lock-in contracts. Get your free audit today." 
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-melbourne" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
