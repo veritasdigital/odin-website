@@ -34,13 +34,13 @@ export const Step9TargetRevenue = () => {
         placeholder="$100,000"
         value={target}
         onChange={handleChange}
-        className="text-lg py-6"
+        className="text-base h-auto py-3.5 px-4"
         onKeyDown={(e) => e.key === "Enter" && handleContinue()}
       />
       <Button
         onClick={handleContinue}
         disabled={!target.trim()}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue

@@ -27,13 +27,13 @@ export const Step6WebsiteUrl = () => {
         placeholder="https://yourcompany.com.au"
         value={url}
         onChange={(e) => setUrl(e.target.value)}
-        className="text-lg py-6"
+        className="text-base h-auto py-3.5 px-4"
         onKeyDown={(e) => e.key === "Enter" && handleContinue()}
       />
       <Button
         onClick={handleContinue}
         disabled={!url.trim()}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue

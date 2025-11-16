@@ -28,13 +28,13 @@ export const Step2Email = () => {
         placeholder="your@email.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        className="text-lg py-6"
+        className="text-base h-auto py-3.5 px-4"
         onKeyDown={(e) => e.key === "Enter" && handleContinue()}
       />
       <Button
         onClick={handleContinue}
         disabled={!isValidEmail(email)}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue

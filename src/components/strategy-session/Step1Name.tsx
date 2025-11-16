@@ -17,24 +17,24 @@ export const Step1Name = () => {
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="space-y-3">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
+        <h2 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
           Before we dive in, what should we call you?
         </h2>
-        <p className="text-muted-foreground">We'll personalize your experience</p>
+        <p className="text-base text-muted-foreground">We'll personalize your experience</p>
       </div>
       <Input
         type="text"
         placeholder="Your name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="text-lg py-7 px-6 border-2 focus:border-primary transition-colors"
+        className="text-base h-auto py-3.5 px-4"
         onKeyDown={(e) => e.key === "Enter" && handleContinue()}
         autoFocus
       />
       <Button
         onClick={handleContinue}
         disabled={!name.trim()}
-        className="w-full py-7 text-lg font-semibold shadow-lg hover:shadow-xl transition-all"
+        className="w-full h-auto py-4 text-lg font-semibold"
         size="lg"
       >
         Continue →
