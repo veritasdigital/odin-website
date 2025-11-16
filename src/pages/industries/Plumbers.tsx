@@ -4,6 +4,7 @@ import { Wrench, TrendingUp, Target, Award, Search, MousePointerClick, Smartphon
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -360,6 +361,13 @@ const Plumbers = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={[
+          { label: "Industries", path: "/industries" },
+          { label: "Plumbers", path: "/industries/plumbers" }
+        ]} />
+      </div>
 
       <main className="min-h-screen">
         {/* Hero Section */}

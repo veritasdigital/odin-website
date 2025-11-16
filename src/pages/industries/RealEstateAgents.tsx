@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { 
   Home,
@@ -273,16 +274,11 @@ const RealEstateAgents = () => {
       <Header />
 
       {/* Breadcrumb Navigation */}
-      <div className="bg-background-subtle py-3 border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <nav className="flex items-center text-sm text-charcoal/60">
-            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <ChevronRight className="h-4 w-4 mx-2" />
-            <Link to="/industries" className="hover:text-primary transition-colors">Industries</Link>
-            <ChevronRight className="h-4 w-4 mx-2" />
-            <span className="text-charcoal font-medium">Real Estate Agents</span>
-          </nav>
-        </div>
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={[
+          { label: "Industries", path: "/industries" },
+          { label: "Real Estate Agents", path: "/industries/real-estate-agents" }
+        ]} />
       </div>
 
       {/* Mobile Sticky CTA */}
