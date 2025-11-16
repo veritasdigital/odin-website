@@ -96,8 +96,9 @@ const SydneySEO = () => {
     
     return (
       <div ref={ref} className="animate-fade-in">
-        <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2">
-          {count !== null ? `${metric.prefix}${count}${metric.suffix}` : '\u00A0'}
+      <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-primary mb-2 whitespace-nowrap [font-variant-numeric:tabular-nums]">
+          <span className="invisible">{`${metric.prefix}${metric.number}${metric.suffix}`}</span>
+          <span className="absolute inset-0">{count !== null ? `${metric.prefix}${count}${metric.suffix}` : '\u00A0'}</span>
         </div>
         <div className="text-xs sm:text-sm md:text-base text-muted-foreground px-2">
           {metric.label}
