@@ -523,7 +523,7 @@ const NewcastleSEO = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-8 sm:py-12 md:py-20 lg:py-32 overflow-hidden">
+        <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
           <div className="absolute inset-0 bg-grid-pattern opacity-5" />
           
