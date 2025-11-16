@@ -63,16 +63,16 @@ export const Partnerships = () => {
           </p>
         </div>
 
-        <div className="flex items-center justify-center gap-4 overflow-x-auto">
+        <div className="flex items-center justify-center gap-6 overflow-x-auto">
           {partners.slice(0, 6).map((partner, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-24 flex items-center justify-center h-14 p-2 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
+              className="flex-shrink-0 w-40 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
             >
               <img
                 src={partner.logo}
                 alt={partner.alt}
-                className="max-h-10 max-w-full object-contain"
+                className="max-h-16 max-w-full object-contain"
               />
             </div>
           ))}
