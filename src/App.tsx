@@ -8,6 +8,7 @@ import { MarketingFormModal } from "@/components/MarketingFormModal";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import OurIndustries from "./pages/OurIndustries";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
 import Blog from "./pages/Blog";
@@ -167,6 +168,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/our-clients" element={<OurClients />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/industries" element={<OurIndustries />} />
             <Route path="/services/google-ads" element={<GoogleAds />} />
             <Route path="/google-ads-management" element={<GoogleAdsManagement />} />
             <Route path="/google-ads-canberra" element={<GoogleAdsCanberra />} />

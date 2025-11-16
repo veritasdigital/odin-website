@@ -1,0 +1,29 @@
+# Redirect agency pages to their service equivalents
+/web-design-agency /services/website-design 301
+/meta-ads-agency /services/facebook-advertising 301
+
+# Redirect old paths to new paths (with /services prefix)
+/facebook-advertising /services/facebook-advertising 301
+/instagram-advertising /services/instagram-advertising 301
+/ppc-management /services/ppc-management 301
+/ppc-agency /services/ppc-agency 301
+/social-media-advertising /services/social-media-advertising 301
+/seo-agency /services/seo-agency 301
+/ecommerce-seo /services/ecommerce-seo 301
+/local-seo /services/local-seo 301
+/seo-brisbane /services/brisbane-seo 301
+/seo-perth /services/perth-seo 301
+/seo-sydney /services/sydney-seo 301
+/seo-adelaide /services/adelaide-seo 301
+/seo-hobart /services/hobart-seo 301
+/seo-melbourne /services/melbourne-seo 301
+/seo-darwin /services/darwin-seo 301
+/seo-launceston /services/launceston-seo 301
+/seo-ballarat /services/ballarat-seo 301
+/social-media-advertising-adelaide /services/social-media-advertising-adelaide 301
+/social-media-advertising-brisbane /services/social-media-advertising-brisbane 301
+/social-media-advertising-sydney /services/social-media-advertising-sydney 301
+/social-media-advertising-melbourne /services/social-media-advertising-melbourne 301
+
+# SPA fallback - must be last
+/* /index.html 200
