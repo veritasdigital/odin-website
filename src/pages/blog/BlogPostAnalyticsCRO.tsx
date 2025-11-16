@@ -83,7 +83,7 @@ const BlogPostAnalyticsCRO = () => {
         <Header />
 
         {/* Hero Section with Floating Circles */}
-        <section className="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        <section className="relative pt-32 pb-16 overflow-hidden bg-background">
           {/* Animated Background Blobs */}
           <div className="absolute top-20 left-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-[500px] h-[500px] bg-accent/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
@@ -133,7 +133,7 @@ const BlogPostAnalyticsCRO = () => {
 
                 <div className="relative animate-fade-in" style={{ animationDelay: "0.8s" }}>
                   {/* Gradient Ring around image */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
+                  <div className="absolute inset-0 rounded-lg"></div>
                   
                   <img
                     src={conversionOptimizationHero}
@@ -375,12 +375,12 @@ const BlogPostAnalyticsCRO = () => {
                 </section>
 
                 {/* Conclusion */}
-                <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg p-8 my-12 border border-primary/10 shadow-card">
+                <section className="relative bg-muted/30 rounded-lg p-8 my-12 border border-border shadow-card">
                   {/* Decorative corner elements */}
                   <div className="absolute top-0 left-0 w-16 h-16 bg-primary/10 rounded-br-full"></div>
                   <div className="absolute bottom-0 right-0 w-16 h-16 bg-secondary/10 rounded-tl-full"></div>
                   
-                  <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">The Bottom Line</h2>{/* ... keep existing code ... */}
+                  <h2 className="text-3xl font-bold mb-4 text-foreground">The Bottom Line</h2>{/* ... keep existing code ... */}
                   <p className="text-lg leading-relaxed">
                     Google Analytics 4 might seem intimidating at first, but it's a powerful tool that can help you understand your website's performance and make data-driven decisions to grow your Australian business.
                   </p>
@@ -415,7 +415,7 @@ const BlogPostAnalyticsCRO = () => {
               </section>{/* ... keep existing code ... */}
 
               {/* Author Bio */}
-              <section className="relative bg-gradient-to-br from-muted/40 to-muted/20 rounded-lg p-8 flex items-start space-x-6 border border-primary/10 shadow-card hover:shadow-glow transition-all duration-300">
+              <section className="relative bg-muted/30 rounded-lg p-8 flex items-start space-x-6 border border-border shadow-card transition-all duration-300">
                 {/* Decorative element */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-full blur-2xl"></div>
                 

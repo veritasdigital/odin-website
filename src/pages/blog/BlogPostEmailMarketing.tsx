@@ -100,7 +100,7 @@ export default function BlogPostEmailMarketing() {
         </script>
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
+      <div className="min-h-screen bg-background">
         <Header />
 
         {/* Breadcrumb Navigation */}
@@ -140,7 +140,7 @@ export default function BlogPostEmailMarketing() {
                   <span className="text-sm font-semibold">Email Marketing</span>
                 </div>
 
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-accent bg-clip-text text-transparent leading-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
                   How to Build an Email List from Scratch for Your Australian Business
                 </h1>
 
@@ -153,7 +153,7 @@ export default function BlogPostEmailMarketing() {
                 </div>
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 group">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                  <div className="absolute inset-0 z-10"></div>
                   <img 
                     src={heroImage} 
                     alt="Australian business owner building email marketing list" 
@@ -236,7 +236,7 @@ export default function BlogPostEmailMarketing() {
                 <div className="p-3 bg-gradient-primary rounded-xl shadow-glow">
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Why Email Marketing Still Matters
                 </h2>
               </div>
@@ -278,7 +278,7 @@ export default function BlogPostEmailMarketing() {
                 <div className="p-3 bg-gradient-primary rounded-xl shadow-glow">
                   <Gift className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Create a Lead Magnet People Actually Want
                 </h2>
               </div>
@@ -351,7 +351,7 @@ export default function BlogPostEmailMarketing() {
                 <div className="p-3 bg-gradient-primary rounded-xl shadow-glow">
                   <Target className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Optimise Your Website for Email Capture
                 </h2>
               </div>
@@ -388,7 +388,7 @@ export default function BlogPostEmailMarketing() {
                 <div className="p-3 bg-gradient-primary rounded-xl shadow-glow">
                   <Megaphone className="w-6 h-6 text-white" />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Use Pop-ups (the Right Way)
                 </h2>
               </div>
