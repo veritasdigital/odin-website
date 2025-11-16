@@ -439,6 +439,7 @@ const FacebookAdsBrisbane = () => {
           name="description"
           content="Professional Facebook and Instagram ads management in Brisbane. High-quality leads, transparent reporting, proven ROI. 283+ happy clients. Book your free consultation."
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-brisbane" />
         <meta
           name="keywords"
           content="Facebook ads agency Brisbane, Facebook ads management Brisbane, Instagram ads Brisbane, Meta ads Brisbane, Facebook advertising Brisbane"

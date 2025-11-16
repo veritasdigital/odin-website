@@ -397,6 +397,7 @@ const FacebookAdsAdelaide = () => {
           name="description"
           content="Adelaide's top Facebook Ads Agency focused on high-quality leads and sales. 540% average ROI. No lock-in contracts. Get your free audit today."
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-adelaide" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

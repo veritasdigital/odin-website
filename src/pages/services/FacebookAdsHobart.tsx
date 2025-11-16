@@ -370,7 +370,7 @@ const FacebookAdsHobart = () => {
         <title>Facebook Ads Agency Hobart | Proven 540% ROI Meta Ads | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on low-quality leads. Odin Digital is the Facebook Ads Agency Hobart businesses trust for high-performance Meta Ads with no lock-in contracts. Get your free audit today." />
         <meta name="keywords" content="Facebook Ads Agency Hobart, Meta Ads Hobart, Facebook advertising Hobart, Instagram Ads Hobart, social media advertising Hobart" />
-        <link rel="canonical" href="https://growth-conduit-central.lovable.app/facebook-ads-hobart" />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-hobart" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Facebook Ads Agency Hobart | Proven 540% ROI Meta Ads | Odin Digital" />

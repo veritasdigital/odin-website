@@ -183,7 +183,7 @@ const FacebookAdsLaunceston = () => {
           content="High-ROI Facebook Ads in Launceston to drive national growth. We help ambitious Tasmanian businesses acquire mainland customers profitably. No lock-in contracts." 
         />
         <meta name="keywords" content="Facebook Ads Launceston, Meta Ads Launceston, Facebook Advertising Launceston, Instagram Ads Launceston, Social Media Advertising Launceston" />
-        <link rel="canonical" href="https://growth-conduit-central.lovable.app/facebook-ads-launceston" />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-launceston" />
         
         {/* Organization Schema */}
         <script type="application/ld+json">

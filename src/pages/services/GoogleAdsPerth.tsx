@@ -422,6 +422,7 @@ export default function GoogleAdsPerth() {
           name="description" 
           content="Perth's top Google Ads agency. 540% average ROI. We maximize every dollar in a high-CPC market. No lock-in contracts. Get your free PPC strategy audit." 
         />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-perth" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

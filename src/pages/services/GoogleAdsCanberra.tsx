@@ -223,6 +223,7 @@ const GoogleAdsCanberra = () => {
       <Helmet>
         <title>Google Ads Agency Canberra | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Canberra trusts for maximum ROI. Precision targeting, transparent reporting, and no lock-in contracts. Get your free audit." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-canberra" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>

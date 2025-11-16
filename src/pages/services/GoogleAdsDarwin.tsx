@@ -226,6 +226,7 @@ const GoogleAdsDarwin = () => {
       <Helmet>
         <title>Google Ads Agency Darwin | PPC Management Experts | Odin Digital</title>
         <meta name="description" content="Stop wasting budget on Google Ads. Odin Digital is the PPC agency Darwin trusts for maximum ROI. Precision targeting, seasonal optimization, and no lock-in contracts. Get your free audit." />
+        <link rel="canonical" href="https://odindigital.com.au/services/google-ads-darwin" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
