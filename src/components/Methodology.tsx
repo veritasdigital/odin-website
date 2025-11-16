@@ -1,5 +1,6 @@
 import { Search, Settings, TrendingUp, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
 
 export const Methodology = () => {
   const steps = [
@@ -36,8 +37,13 @@ export const Methodology = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="p-8 bg-white border border-charcoal/10 hover:border-primary/20 transition-colors">
-              <div className="flex items-start space-x-6">
+            <Card key={index} className="group relative p-8 bg-white border border-charcoal/10 hover:border-primary/20 transition-all duration-300 overflow-hidden">
+              {/* Brand icon accent on hover */}
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
+                <img src={brandIconVibrant} alt="" className="w-full h-full" />
+              </div>
+              
+              <div className="relative z-10 flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                     <step.icon className="h-8 w-8 text-primary" />

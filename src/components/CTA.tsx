@@ -1,18 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
 export const CTA = () => {
   const { openForm } = useMarketingForm();
 
   return <section data-nav-contrast="dark" className="py-24 gradient-primary relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 border border-white/10 rounded-full animate-float" />
-      <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-lg animate-float" style={{
-      animationDelay: '3s'
-    }} />
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-lg animate-float" style={{
-      animationDelay: '1s'
-    }} />
+      {/* Background Brand Icons */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img 
+          src={brandIconVibrant} 
+          alt="" 
+          className="absolute top-10 left-10 w-40 h-40 opacity-10 animate-[spin_15s_linear_infinite]"
+        />
+        <img 
+          src={brandIconVibrant} 
+          alt="" 
+          className="absolute bottom-20 right-20 w-32 h-32 opacity-10 animate-[spin_20s_linear_infinite_reverse]"
+        />
+      </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-6xl font-black text-white mb-8">

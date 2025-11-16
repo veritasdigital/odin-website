@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
@@ -86,8 +87,13 @@ export const Results = () => {
   }, [carouselApi]);
 
   return (
-    <section id="results" className="py-24 bg-gradient-to-br from-accent/5 to-primary/5">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="results" className="relative py-24 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
+      {/* Decorative Brand Icon */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-5 pointer-events-none">
+        <img src={brandIconSubtle} alt="" className="w-full h-full animate-[spin_40s_linear_infinite]" />
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
             Client Success Stories
