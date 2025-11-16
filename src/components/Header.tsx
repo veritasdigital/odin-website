@@ -50,10 +50,22 @@ export const Header = () => {
                   <a href="/services/social-media" className="w-full">Social Media Marketing</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/social-media-advertising-adelaide" className="w-full">Social Media Ads Adelaide</a>
+                  <a href="/services/social-media-advertising" className="w-full">Social Media Advertising</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
-                  <a href="/social-media-advertising-brisbane" className="w-full">Social Media Ads Brisbane</a>
+                  <a href="/services/social-media" className="w-full">Social Media Marketing</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/services/website-design" className="w-full">Website Design</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/linkedin-advertising" className="w-full">LinkedIn Advertising</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/services/marketing-consulting" className="w-full">Marketing Consulting</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
+                  <a href="/industries" className="w-full">Industries We Serve</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
                   <a href="/social-media-advertising-sydney" className="w-full">Social Media Ads Sydney</a>
@@ -126,21 +138,14 @@ export const Header = () => {
                   <a href="/services/google-ads" className="block text-charcoal/70 hover:text-primary py-1">Google Ads</a>
                   <a href="/services/seo" className="block text-charcoal/70 hover:text-primary py-1">SEO</a>
                   <a href="/services/facebook-ads" className="block text-charcoal/70 hover:text-primary py-1">Facebook Ads</a>
+                  <a href="/services/social-media-advertising" className="block text-charcoal/70 hover:text-primary py-1">Social Media Advertising</a>
                   <a href="/services/social-media" className="block text-charcoal/70 hover:text-primary py-1">Social Media Marketing</a>
-                  <a href="/social-media-advertising-brisbane" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Brisbane</a>
-                  <a href="/social-media-advertising-sydney" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Sydney</a>
-                  <a href="/social-media-advertising-melbourne" className="block text-charcoal/70 hover:text-primary py-1">Social Media Ads Melbourne</a>
+                  <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
                   <a href="/linkedin-advertising" className="block text-charcoal/70 hover:text-primary py-1">LinkedIn Advertising</a>
-                  <a href="/website-design-and-development" className="block text-charcoal/70 hover:text-primary py-1">Website Design</a>
-                  <a href="/web-design-melbourne" className="block text-charcoal/70 hover:text-primary py-1">Web Design Melbourne</a>
-                  <a href="/web-design-perth" className="block text-charcoal/70 hover:text-primary py-1">Web Design Perth</a>
-                  <a href="/services/website-design" className="block text-charcoal/70 hover:text-primary py-1">Website Design (Old)</a>
-                  <a href="/services/funnel-development" className="block text-charcoal/70 hover:text-primary py-1">Funnel Development</a>
                   <a href="/services/marketing-consulting" className="block text-charcoal/70 hover:text-primary py-1">Marketing Consulting</a>
+                  <a href="/industries" className="block text-charcoal/70 hover:text-primary py-1">Industries We Serve</a>
                 </div>
               </div>
-              <a href="/web-design-perth" className="text-charcoal/70 hover:text-primary font-medium py-2">Web Design</a>
-              <a href="/about" className="text-charcoal/70 hover:text-primary font-medium py-2">About</a>
               <a href="/our-clients" className="text-charcoal/70 hover:text-primary font-medium py-2">Our Clients</a>
               <a href="/blog" className="text-charcoal/70 hover:text-primary font-medium py-2">Blog</a>
               <a href="/contact" className="text-charcoal/70 hover:text-primary font-medium py-2">Contact</a>
