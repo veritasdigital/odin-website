@@ -100,12 +100,15 @@ const useCountUp = (end: number, duration: number = 2000) => {
 const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; label: string }) => {
   const { count, ref } = useCountUp(value);
 
-  return (
+return (
     <Card className="p-4 sm:p-6 text-center">
-      <div ref={ref} className="text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2 break-words">
-        {count !== null ? (suffix === "M+" ? `$${count}${suffix}` : `${count}${suffix}`) : '\u00A0'}
+      <div ref={ref} className="relative text-3xl sm:text-4xl md:text-5xl font-black text-primary mb-2 whitespace-nowrap [font-variant-numeric:tabular-nums]">
+        <span className="invisible">{suffix === "M+" ? `$${value}${suffix}` : `${value}${suffix}`}</span>
+        <span className="absolute inset-0">
+          {count !== null ? (suffix === "M+" ? `$${count}${suffix}` : `${count}${suffix}`) : '\u00A0'}
+        </span>
       </div>
-      <div className="text-xs sm:text-sm text-muted-foreground font-medium break-words">{label}</div>
+      <div className="text-xs sm:text-sm text-muted-foreground font-medium">{label}</div>
     </Card>
   );
 };

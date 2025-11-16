@@ -435,11 +435,13 @@ const HobartSEO = () => {
 
   const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; label: string }) => {
     const { count, countRef } = useCountUp(value);
+    const finalText = suffix === "M+" ? `$${value}M+` : `${value}${suffix}`;
     
     return (
       <div ref={countRef} className="text-center">
-        <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-          {count !== null ? (suffix === "M+" ? `$${count}M+` : `${count}${suffix}`) : '\u00A0'}
+        <div className="relative text-4xl md:text-5xl font-bold text-primary mb-2 whitespace-nowrap [font-variant-numeric:tabular-nums]">
+          <span className="invisible">{finalText}</span>
+          <span className="absolute inset-0">{count !== null ? (suffix === "M+" ? `$${count}M+` : `${count}${suffix}`) : '\u00A0'}</span>
         </div>
         <div className="text-muted-foreground">{label}</div>
       </div>

@@ -548,8 +548,9 @@ const MelbourneSEO = () => {
                 const MetricCounter = () => {
                   const { count, countRef } = useCountUp(metric.value);
                   return (
-                    <div ref={countRef} className="text-3xl md:text-4xl font-bold text-primary mb-2 whitespace-nowrap">
-                      {count !== null ? `$${count}${metric.suffix}` : '\u00A0'}
+                    <div ref={countRef} className="relative text-3xl md:text-4xl font-bold text-primary mb-2 whitespace-nowrap [font-variant-numeric:tabular-nums]">
+                      <span className="invisible">{`$${metric.value}${metric.suffix}`}</span>
+                      <span className="absolute inset-0">{count !== null ? `$${count}${metric.suffix}` : '\u00A0'}</span>
                     </div>
                   );
                 };
