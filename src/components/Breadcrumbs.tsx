@@ -40,7 +40,7 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
         </script>
       </Helmet>
       
-      <nav aria-label="Breadcrumb" className="py-4">
+      <nav aria-label="Breadcrumb" className="py-2">
         <ol className="flex items-center space-x-2 text-sm">
           <li className="flex items-center">
             <Link 

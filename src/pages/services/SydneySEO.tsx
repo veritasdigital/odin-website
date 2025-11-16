@@ -388,7 +388,7 @@ const SydneySEO = () => {
         </div>
 
         {/* Hero Section with Sydney Location Image */}
-        <section className="relative isolate overflow-hidden pt-32 pb-24 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        <section className="relative isolate overflow-hidden pt-12 pb-16 px-6 bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Sydney Harbor Background Image */}
           <div className="absolute inset-0 z-0">
             <picture>

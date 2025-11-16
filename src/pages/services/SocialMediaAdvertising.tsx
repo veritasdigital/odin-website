@@ -553,7 +553,7 @@ const SocialMediaAdvertising = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="relative py-8 sm:py-12 md:py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+        <section className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Animated background blobs */}
           <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
