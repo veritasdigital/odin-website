@@ -71,8 +71,8 @@ const AISEOGuide = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-11-17",
+            "dateModified": "2025-11-17"
           })}
         </script>
         <script type="application/ld+json">
@@ -141,7 +141,7 @@ const AISEOGuide = () => {
             </div>
             <div className="flex items-center space-x-2">
               <Calendar className="w-4 h-4" />
-              <span>January 15, 2025</span>
+              <span>November 17, 2025</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock className="w-4 h-4" />

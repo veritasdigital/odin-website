@@ -36,8 +36,8 @@ const WillAIReplaceSEO = () => {
           "url": "https://odindigital.com.au/logo.png"
         }
       },
-      "datePublished": "2025-01-15",
-      "dateModified": "2025-01-15"
+      "datePublished": "2025-07-14",
+      "dateModified": "2025-07-14"
     },
     breadcrumb: {
       "@context": "https://schema.org",

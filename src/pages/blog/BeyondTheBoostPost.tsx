@@ -43,8 +43,8 @@ const BeyondTheBoostPost = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-11-10",
+            "dateModified": "2025-11-10"
           })}
         </script>
 
@@ -117,7 +117,7 @@ const BeyondTheBoostPost = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-5 h-5" />
-                    <time dateTime="2025-01-15">January 15, 2025</time>
+                    <time dateTime="2025-11-10">November 10, 2025</time>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-5 h-5" />

@@ -62,8 +62,8 @@ const DigitalMarketingStrategy2026 = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-09-01",
+            "dateModified": "2025-09-01"
           })}
         </script>
 

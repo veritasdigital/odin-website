@@ -75,8 +75,8 @@ export default function TikTokForBusiness() {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-07-21",
+            "dateModified": "2025-07-21"
           })}
         </script>
         
@@ -154,7 +154,7 @@ export default function TikTokForBusiness() {
                 <div className="flex items-center gap-4 mb-8 text-muted-foreground">
                   <span className="font-medium">Odin Digital Team</span>
                   <span>•</span>
-                  <span>January 15, 2025</span>
+                  <span>July 21, 2025</span>
                   <span>•</span>
                   <span>13 min read</span>
                 </div>

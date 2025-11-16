@@ -33,8 +33,8 @@ const BlogPostSocialMedia = () => {
         "url": "https://odindigital.com.au/logo.png"
       }
     },
-    "datePublished": "2025-01-15",
-    "dateModified": "2025-01-15"
+    "datePublished": "2025-10-20",
+    "dateModified": "2025-10-20"
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",

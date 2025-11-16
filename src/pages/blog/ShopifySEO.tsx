@@ -40,8 +40,8 @@ const ShopifySEO = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-07-28",
+            "dateModified": "2025-07-28"
           })}
         </script>
         <script type="application/ld+json">
@@ -112,7 +112,7 @@ const ShopifySEO = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Calendar className="w-4 h-4" />
-                  <span>January 15, 2025</span>
+                  <span>July 28, 2025</span>
                 </div>
                 <div className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                   5 min read

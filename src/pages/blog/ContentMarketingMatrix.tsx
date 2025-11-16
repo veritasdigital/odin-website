@@ -43,8 +43,8 @@ export default function ContentMarketingMatrix() {
           "url": "https://odindigital.com.au/logo.png"
         }
       },
-      "datePublished": "2025-01-15",
-      "dateModified": "2025-01-15"
+      "datePublished": "2025-09-29",
+      "dateModified": "2025-09-29"
     },
     breadcrumb: {
       "@context": "https://schema.org",

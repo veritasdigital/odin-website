@@ -38,8 +38,8 @@ const BlogPostAnalyticsCRO = () => {
         "url": "https://odindigital.com.au/logo.png"
       }
     },
-    "datePublished": "2025-01-15",
-    "dateModified": "2025-01-15"
+    "datePublished": "2025-11-03",
+    "dateModified": "2025-11-03"
   };
 
   const breadcrumbSchema = {
@@ -120,7 +120,7 @@ const BlogPostAnalyticsCRO = () => {
                     <span>5 min read</span>
                   </div>
                   <span>•</span>
-                  <time dateTime="2025-01-15">January 15, 2025</time>
+                  <time dateTime="2025-11-03">November 3, 2025</time>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>

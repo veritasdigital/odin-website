@@ -68,8 +68,8 @@ export default function BlogPostEmailMarketing() {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-10-27",
+            "dateModified": "2025-10-27"
           })}
         </script>
         
@@ -147,7 +147,7 @@ export default function BlogPostEmailMarketing() {
                 <div className="flex items-center gap-4 mb-8 text-muted-foreground">
                   <span className="font-medium">Odin Digital Team</span>
                   <span>•</span>
-                  <span>January 15, 2025</span>
+                  <span>October 27, 2025</span>
                   <span>•</span>
                   <span>5 min read</span>
                 </div>
