@@ -22,6 +22,7 @@ import {
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import {
   Accordion,
   AccordionContent,

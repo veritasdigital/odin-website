@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { 
   Calculator,
   TrendingDown,
@@ -226,6 +227,13 @@ const AccountingFirms = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={[
+          { label: "Industries", path: "/industries" },
+          { label: "Accounting Firms", path: "/industries/accounting-firms" }
+        ]} />
+      </div>
 
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-border shadow-lg p-4">

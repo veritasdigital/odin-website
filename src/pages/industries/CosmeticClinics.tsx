@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle2, Shield, TrendingUp, Users, Award, Target, Zap, Clock, BarChart3, FileCheck, Search, MousePointerClick, Share2, Palette } from "lucide-react";
