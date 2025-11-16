@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Search, TrendingUp, Globe, BarChart3, Users, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Helmet } from "react-helmet";
+
 export default function SEO() {
   const {
     openForm
@@ -49,7 +51,55 @@ export default function SEO() {
     solution: "Complete SEO overhaul including technical fixes, content optimization, and strategic link building",
     results: ["580% increase in organic traffic", "Top 3 rankings for 75+ keywords", "$2.3M additional revenue from organic search"]
   };
+
+  const faqs = [
+    {
+      question: "How long does SEO take to show results?",
+      answer: "SEO is a long-term strategy that requires patience and consistent effort. You'll typically see initial improvements within 3-4 months, with significant results appearing after 6-12 months of consistent optimization. The timeline depends on factors like your industry competitiveness, current website authority, and the scope of optimization needed."
+    },
+    {
+      question: "Do you guarantee first page rankings?",
+      answer: "While we can't guarantee specific rankings (no legitimate SEO company can, as Google's algorithm is constantly evolving), we guarantee improved visibility, traffic, and search performance based on our proven track record. We focus on sustainable, white-hat techniques that deliver long-term results rather than risky tactics that could harm your site."
+    },
+    {
+      question: "What's included in your SEO reporting?",
+      answer: "Monthly reports include keyword rankings tracking, organic traffic growth analysis, technical improvements implemented, content performance metrics, backlink profile updates, competitor analysis, and strategic recommendations for continued growth. We provide transparent, actionable insights so you can see exactly where your investment is going."
+    },
+    {
+      question: "What's the difference between on-page and off-page SEO?",
+      answer: "On-page SEO involves optimizations you make directly on your website, such as content quality, meta tags, internal linking, site speed, and mobile responsiveness. Off-page SEO refers to actions taken outside your website to improve rankings, primarily through building high-quality backlinks, brand mentions, and social signals. Both are essential for a comprehensive SEO strategy."
+    },
+    {
+      question: "How much should I budget for SEO services?",
+      answer: "SEO investment varies based on your industry, competition level, and business goals. Small businesses typically invest $2,000-$5,000 per month for professional SEO services, while competitive industries may require $5,000-$15,000+ monthly. Remember that SEO is an investment with compounding returns—the earlier you start and the more consistent you are, the better your long-term results."
+    },
+    {
+      question: "Will SEO work for my local business?",
+      answer: "Absolutely! Local SEO is one of the most effective marketing strategies for businesses serving specific geographic areas. We optimize your Google Business Profile, build local citations, create location-specific content, and implement schema markup to help you dominate local search results. Local SEO typically shows results faster than broader organic SEO campaigns."
+    }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>SEO Services Australia | Professional Search Engine Optimization | Odin Digital</title>
+        <meta name="description" content="Professional SEO services that deliver results. Increase organic traffic, dominate search rankings, and grow your business with data-driven SEO strategies from Odin Digital." />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
       <Header />
       <MarketingFormModal />
       <SideTab />
@@ -238,20 +288,16 @@ export default function SEO() {
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
-            <AccordionItem value="item-1">
-              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">How long does SEO take to show results?</AccordionTrigger>
-              <AccordionContent className="text-charcoal/70">SEO is a long-term strategy. You'll typically see initial improvements within 3-4 months, with significant results appearing after 6-12 months of consistent optimization.</AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-2">
-              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">Do you guarantee first page rankings?</AccordionTrigger>
-              <AccordionContent className="text-charcoal/70">While we can't guarantee specific rankings (no legitimate SEO company can), we guarantee improved visibility, traffic, and search performance based on our proven track record.</AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-3">
-              <AccordionTrigger className="text-left text-lg font-bold text-charcoal">What's included in your SEO reporting?</AccordionTrigger>
-              <AccordionContent className="text-charcoal/70">Monthly reports include keyword rankings, organic traffic growth, technical improvements implemented, content performance, and strategic recommendations for continued growth.</AccordionContent>
-            </AccordionItem>
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="text-left text-lg font-bold text-charcoal">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-charcoal/70">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
           </Accordion>
         </div>
       </section>
