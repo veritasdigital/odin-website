@@ -20,47 +20,50 @@ export const Footer = () => {
 
   const industries = [
     {
-      title: "High-End Lifestyle Services",
-      items: ["Private gyms & personal trainers"]
-    },
-    {
-      title: "Home Improvement & Trades",
+      title: "Healthcare & Medical",
       items: [
-        "Electricians",
-        "Plumbers",
-        "Roofers & builders",
-        "Landscapers",
-        "Pool builders",
-        "Renovation companies",
-        "Pest control"
+        { name: "Dentists", url: "/industries/dentists" },
+        { name: "Cosmetic Dentists", url: "/industries/cosmetic-dentists" },
+        { name: "Orthodontists", url: "/industries/orthodontists" },
+        { name: "Dental Implants", url: "/industries/dental-implants" },
+        { name: "Family Dentists", url: "/industries/family-dentists" },
+        { name: "Pediatric Dentists", url: "/industries/pediatric-dentists" },
+        { name: "Cosmetic Surgeons", url: "/industries/cosmetic-surgeons" },
+        { name: "Plastic Surgeons", url: "/industries/plastic-surgeons" },
+        { name: "Cosmetic Clinics", url: "/industries/cosmetic-clinics" },
+        { name: "Dermatologists", url: "/industries/dermatologists" },
+        { name: "Ophthalmologists", url: "/industries/ophthalmologists" },
+        { name: "Fertility Clinics", url: "/industries/fertility-clinics" }
       ]
     },
     {
-      title: "Legal & Professional Services",
+      title: "Legal Services",
       items: [
-        "Law firms (personal injury, family law, conveyancing, immigration)",
-        "Accounting firms & tax agents",
-        "Financial planners",
-        "Insurance brokers",
-        "Migration agents"
+        { name: "Lawyers", url: "/industries/lawyers" },
+        { name: "Personal Injury Lawyers", url: "/industries/personal-injury-lawyers" },
+        { name: "Family Lawyers", url: "/industries/family-lawyers" },
+        { name: "Criminal Defense Lawyers", url: "/industries/criminal-defense-lawyers" },
+        { name: "Immigration Lawyers", url: "/industries/immigration-lawyers" },
+        { name: "Conveyancing Lawyers", url: "/industries/conveyancing-lawyers" }
       ]
     },
     {
-      title: "Dentists",
+      title: "Home Services & Trades",
       items: [
-        "Cosmetic Dentists",
-        "Orthodontists",
-        "Dental Implants",
-        "General & Family Dentists"
+        { name: "Electricians", url: "/industries/electricians" },
+        { name: "Plumbers", url: "/industries/plumbers" },
+        { name: "Roofing Companies", url: "/industries/roofing-companies" },
+        { name: "Landscaping Companies", url: "/industries/landscaping-companies" },
+        { name: "HVAC Contractors", url: "/industries/hvac-contractors" }
       ]
     },
     {
-      title: "Allied Health",
+      title: "Professional Services",
       items: [
-        "Physiotherapists",
-        "Psychologists",
-        "Chiropractors",
-        "Podiatrists"
+        { name: "Accounting Firms", url: "/industries/accounting-firms" },
+        { name: "Architecture Firms", url: "/industries/architecture-firms" },
+        { name: "Insurance Agents", url: "/industries/insurance-agents" },
+        { name: "Real Estate Agents", url: "/industries/real-estate-agents" }
       ]
     }
   ];
@@ -235,9 +238,13 @@ export const Footer = () => {
                   </CollapsibleTrigger>
                   <CollapsibleContent className="mt-2 space-y-2 pl-2">
                     {industry.items.map((item, idx) => (
-                      <p key={idx} className="text-sm text-white/60">
-                        {item}
-                      </p>
+                      <a 
+                        key={idx} 
+                        href={item.url}
+                        className="block text-sm text-white/60 hover:text-white transition-smooth"
+                      >
+                        {item.name}
+                      </a>
                     ))}
                   </CollapsibleContent>
                 </Collapsible>
