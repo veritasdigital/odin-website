@@ -67,12 +67,12 @@ export const Partnerships = () => {
           {partners.slice(0, 6).map((partner, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-40 flex items-center justify-center h-24 p-4 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
+              className="flex-shrink-0 w-40 flex items-center justify-center h-24 p-2 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
             >
               <img
                 src={partner.logo}
                 alt={partner.alt}
-                className="max-h-16 max-w-full object-contain"
+                className="max-h-20 max-w-full object-contain"
               />
             </div>
           ))}
