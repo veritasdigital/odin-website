@@ -96,7 +96,8 @@ export default function SEO() {
   return <div className="min-h-screen bg-background">
       <Helmet>
         <title>SEO Services Australia | Professional Search Engine Optimization | Odin Digital</title>
-        <meta name="description" content="Professional SEO services that deliver results. Increase organic traffic, dominate search rankings, and grow your business with data-driven SEO strategies from Odin Digital." />
+        <meta name="description" content="Professional SEO services that deliver results. Increase organic traffic, dominate search rankings, and grow your business with data-driven SEO strategies." />
+        <link rel="canonical" href="https://odindigital.com.au/services/seo" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchema)}
         </script>
