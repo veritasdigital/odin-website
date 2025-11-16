@@ -16,37 +16,30 @@ export const Step11Timeline = () => {
   const { formData, updateFormData, nextStep } = useStrategySession();
   const [timeline, setTimeline] = useState(formData.timeline);
 
-  const handleContinue = () => {
-    updateFormData("timeline", timeline);
+  const handleSelect = (value: string) => {
+    setTimeline(value);
+    updateFormData("timeline", value);
     nextStep();
   };
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-        How soon are you looking to implement your growth strategy?
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+        How soon do you want to get started?
       </h2>
-      <RadioGroup value={timeline} onValueChange={setTimeline} className="space-y-4">
+      <div className="space-y-4">
         {timelineOptions.map((option) => (
           <div
             key={option}
-            className="flex items-center space-x-3 p-4 rounded-lg border border-border hover:bg-accent cursor-pointer transition-colors"
+            className="flex items-center space-x-3 p-4 rounded-lg bg-[#f9fafb] border-2 border-[#e5e7eb] hover:border-primary hover:bg-primary/5 cursor-pointer transition-all"
+            onClick={() => handleSelect(option)}
           >
-            <RadioGroupItem value={option} id={option} />
-            <Label htmlFor={option} className="text-lg cursor-pointer flex-1">
+            <Label className="text-lg cursor-pointer flex-1">
               {option}
             </Label>
           </div>
         ))}
-      </RadioGroup>
-      <Button
-        onClick={handleContinue}
-        disabled={!timeline}
-        className="w-full py-6 text-lg"
-        size="lg"
-      >
-        Continue
-      </Button>
+      </div>
     </div>
   );
 };

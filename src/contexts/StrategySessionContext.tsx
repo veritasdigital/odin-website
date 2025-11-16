@@ -30,7 +30,7 @@ interface StrategySessionContextType {
 const StrategySessionContext = createContext<StrategySessionContextType | undefined>(undefined);
 
 export const StrategySessionProvider = ({ children }: { children: ReactNode }) => {
-  const totalSteps = 13;
+  const totalSteps = 14;
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     name: "",

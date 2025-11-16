@@ -32,10 +32,10 @@ export const Step4CurrentMarketing = () => {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-        What marketing activities are you currently doing?
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+        What marketing are you doing right now?
       </h2>
-      <p className="text-base text-muted-foreground">(Select all that apply)</p>
+      <p className="text-base text-muted-foreground">Select all that apply</p>
       <div className="space-y-3">
         {options.map((option) => (
           <div

@@ -19,12 +19,14 @@ export const Step7BusinessDescription = () => {
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-        Briefly describe your business
-      </h2>
-      <p className="text-muted-foreground">
-        What do you sell, who is your target customer, and what are your price points?
-      </p>
+      <div className="space-y-3">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          Tell us about your business
+        </h2>
+        <p className="text-base text-muted-foreground">
+          What do you sell, who buys from you, and what are your price points?
+        </p>
+      </div>
       <div className="space-y-2">
         <Textarea
           placeholder="Tell us about your business..."
