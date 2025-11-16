@@ -9,6 +9,7 @@ import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbS
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { locationImages } from "@/utils/locationImages";
 const PerthSEO = () => {
   const {
     openForm
@@ -228,21 +229,35 @@ const PerthSEO = () => {
           </Breadcrumb>
         </div>
         
-        {/* Hero Section */}
+        {/* Hero Section with Perth Location Image */}
         <section className="relative pt-32 pb-24 px-6 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Perth Skyline Background Image */}
+          <div className="absolute inset-0 z-0">
+            <picture>
+              <source srcSet={locationImages.perth.webp} type="image/webp" />
+              <img 
+                src={locationImages.perth.jpg}
+                alt={locationImages.perth.alt}
+                className="w-full h-full object-cover opacity-10"
+                loading="eager"
+              />
+            </picture>
+            <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
+          </div>
+
           {/* Animated background blobs */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
-            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse" />
+            <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float z-[1]" />
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed z-[1]" />
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse z-[1]" />
           </div>
 
           {/* Floating circles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-32 right-20 w-32 h-32 border-2 border-primary/20 rounded-full animate-float" />
-            <div className="absolute bottom-40 left-16 w-24 h-24 border-2 border-accent/20 rounded-full animate-float-delayed" />
-            <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-primary/20 rounded-full animate-pulse" />
-            <div className="absolute bottom-1/3 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float" />
+            <div className="absolute top-32 right-20 w-32 h-32 border-2 border-primary/20 rounded-full animate-float z-[1]" />
+            <div className="absolute bottom-40 left-16 w-24 h-24 border-2 border-accent/20 rounded-full animate-float-delayed z-[1]" />
+            <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-primary/20 rounded-full animate-pulse z-[1]" />
+            <div className="absolute bottom-1/3 left-1/4 w-20 h-20 bg-accent/20 rounded-full animate-float z-[1]" />
           </div>
 
           {/* Geometric shapes */}
