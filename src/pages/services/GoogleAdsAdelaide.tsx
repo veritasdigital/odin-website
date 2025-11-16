@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ServiceHero } from "@/components/ServiceHero";
 import { Button } from "@/components/ui/button";

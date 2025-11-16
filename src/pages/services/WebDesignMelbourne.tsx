@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
@@ -381,15 +382,10 @@ const WebDesignMelbourne = () => {
 
         {/* Breadcrumb Navigation */}
         <div className="container mx-auto px-4 py-4">
-          <nav className="text-sm text-muted-foreground break-words overflow-wrap-anywhere">
-            <Link to="/" className="hover:text-primary">Home</Link>
-            <span className="mx-2">&gt;</span>
-            <Link to="/services" className="hover:text-primary">Services</Link>
-            <span className="mx-2">&gt;</span>
-            <Link to="/services/website-design" className="hover:text-primary">Web Design</Link>
-            <span className="mx-2">&gt;</span>
-            <span className="text-foreground">Melbourne</span>
-          </nav>
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "Melbourne Web Design", path: "/services/web-design-melbourne" }
+          ]} />
         </div>
 
         {/* Hero Section */}
