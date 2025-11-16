@@ -15,7 +15,7 @@ const HobartSEO = () => {
 
   // Count-up animation hook
   const useCountUp = (end: number, duration: number = 2000) => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState<number | null>(null);
     const countRef = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -24,16 +24,24 @@ const HobartSEO = () => {
         (entries) => {
           if (entries[0].isIntersecting && !hasAnimated) {
             setHasAnimated(true);
-            let startTime: number | null = null;
-            const animate = (currentTime: number) => {
-              if (!startTime) startTime = currentTime;
-              const progress = Math.min((currentTime - startTime) / duration, 1);
-              setCount(Math.floor(progress * end));
-              if (progress < 1) {
-                requestAnimationFrame(animate);
-              }
-            };
-            requestAnimationFrame(animate);
+            
+            setTimeout(() => {
+              setCount(0);
+              
+              let startTime: number | null = null;
+              const animate = (currentTime: number) => {
+                if (!startTime) startTime = currentTime;
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+                
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                setCount(Math.floor(easeOutQuart * end));
+                
+                if (progress < 1) {
+                  requestAnimationFrame(animate);
+                }
+              };
+              requestAnimationFrame(animate);
+            }, 100);
           }
         },
         { threshold: 0.1 }
@@ -431,7 +439,7 @@ const HobartSEO = () => {
     return (
       <div ref={countRef} className="text-center">
         <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-          {suffix === "M+" ? `$${count}M+` : `${count}${suffix}`}
+          {count !== null ? (suffix === "M+" ? `$${count}M+` : `${count}${suffix}`) : '\u00A0'}
         </div>
         <div className="text-muted-foreground">{label}</div>
       </div>
