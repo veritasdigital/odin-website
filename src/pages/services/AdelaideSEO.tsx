@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { locationImages } from "@/utils/locationImages";
 import {
   Accordion,
   AccordionContent,
@@ -27,7 +28,7 @@ import {
   Award, 
   Shield, 
   Sparkles, 
-  MessageSquare, 
+  MessageSquare,
   Search, 
   ShoppingCart, 
   CheckCircle,
@@ -396,17 +397,31 @@ const AdelaideSEO = () => {
           ]} />
         </div>
 
-        {/* Hero Section */}
+        {/* Hero Section with Adelaide Location Image */}
         <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
+          {/* Adelaide Cityscape Background Image */}
+          <div className="absolute inset-0 z-0">
+            <picture>
+              <source srcSet={locationImages.adelaide.webp} type="image/webp" />
+              <img 
+                src={locationImages.adelaide.jpg}
+                alt={locationImages.adelaide.alt}
+                className="w-full h-full object-cover opacity-10"
+                loading="eager"
+              />
+            </picture>
+            <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
+          </div>
+
           {/* Animated background blobs */}
-          <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }} />
+          <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float z-[1]" />
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float z-[1]" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-primary/15 rounded-full blur-3xl animate-float z-[1]" style={{ animationDelay: '4s' }} />
           
           {/* Floating circles */}
-          <div className="absolute top-32 right-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" />
-          <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }} />
-          <div className="absolute top-1/2 right-1/3 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg" style={{ animationDelay: '2.5s' }} />
+          <div className="absolute top-32 right-1/4 w-16 h-16 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg z-[1]" />
+          <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg z-[1]" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-1/2 right-1/3 w-12 h-12 bg-white/20 backdrop-blur-sm border border-white/40 rounded-full animate-float shadow-lg z-[1]" style={{ animationDelay: '2.5s' }} />
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
