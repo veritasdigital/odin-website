@@ -109,13 +109,14 @@ export default function Services() {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <div className="container mx-auto px-4">
-        <Breadcrumbs items={[
-          { label: "Services", path: "/services" }
-        ]} />
-      </div>
-      <MarketingFormModal />
-      <SideTab />
+      <main id="main-content">
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" }
+          ]} />
+        </div>
+        <MarketingFormModal />
+        <SideTab />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
@@ -212,6 +213,7 @@ export default function Services() {
           </Button>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

@@ -373,14 +373,15 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <div className="container mx-auto px-4">
-        <Breadcrumbs items={[
-          { label: "Blog", path: "/blog" }
-        ]} />
-      </div>
-      
-      <MarketingFormModal />
-      <SideTab />
+      <main id="main-content">
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Blog", path: "/blog" }
+          ]} />
+        </div>
+        
+        <MarketingFormModal />
+        <SideTab />
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-background overflow-hidden">
@@ -570,6 +571,7 @@ const Blog = () => {
           </Button>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

@@ -105,11 +105,12 @@ export default function Contact() {
       <Header />
       <SideTab />
       
-      <div className="max-w-7xl mx-auto px-6 pt-24">
-        <Breadcrumbs items={[
-          { label: "Contact Us", path: "/contact" }
-        ]} />
-      </div>
+      <main id="main-content">
+        <div className="max-w-7xl mx-auto px-6 pt-24">
+          <Breadcrumbs items={[
+            { label: "Contact Us", path: "/contact" }
+          ]} />
+        </div>
       
       {/* Hero Section with Form */}
       <section className="relative isolate overflow-hidden bg-gradient-to-br from-background via-background to-muted/10 pt-32 pb-24">
@@ -345,6 +346,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main>
+      <main id="main-content">
         {/* Hero Section */}
         <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-muted/10">
           

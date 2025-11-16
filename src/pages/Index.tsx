@@ -65,20 +65,22 @@ const Index = () => {
       </Helmet>
       
       <Header />
-      <Hero />
-      <ClientLogos />
-      <Credibility />
-      <Problem />
-      <Results />
-      <Services />
-      <Partnerships />
-      <AboutUs />
-      <Methodology />
-      <Industries />
-      <Team />
-      <Process />
-      <Assurance />
-      <CTA />
+      <main id="main-content">
+        <Hero />
+        <ClientLogos />
+        <Credibility />
+        <Problem />
+        <Results />
+        <Services />
+        <Partnerships />
+        <AboutUs />
+        <Methodology />
+        <Industries />
+        <Team />
+        <Process />
+        <Assurance />
+        <CTA />
+      </main>
       <Footer />
       <Closing />
       <SideTab />
