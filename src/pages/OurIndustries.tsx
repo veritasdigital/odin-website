@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -81,6 +82,12 @@ export default function OurIndustries() {
       
       <Header />
       <SideTab />
+
+      <div className="max-w-7xl mx-auto px-6 pt-24">
+        <Breadcrumbs items={[
+          { label: "Industries We Serve", path: "/industries" }
+        ]} />
+      </div>
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">

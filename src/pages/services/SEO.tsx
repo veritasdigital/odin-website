@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -103,6 +104,13 @@ export default function SEO() {
       <Header />
       <MarketingFormModal />
       <SideTab />
+      
+      <div className="max-w-7xl mx-auto px-6 pt-24">
+        <Breadcrumbs items={[
+          { label: "Services", path: "/services" },
+          { label: "SEO Services", path: "/services/seo" }
+        ]} />
+      </div>
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20">
