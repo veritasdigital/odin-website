@@ -16,13 +16,8 @@ export const Hero = () => {
   
   return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-background via-background to-muted/10">
       
-      {/* Decorative Brand Icons - Background */}
+      {/* Decorative Brand Icon - Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img 
-          src={brandIconSubtle} 
-          alt="" 
-          className="absolute -top-20 -left-20 w-96 h-96 opacity-30 animate-[spin_20s_linear_infinite]"
-        />
         <img 
           src={brandIconSubtle} 
           alt="" 
