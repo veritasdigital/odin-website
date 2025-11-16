@@ -15,15 +15,8 @@ const About = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative pt-40 pb-24 overflow-hidden">
-          {/* Subtle animated background blobs - fewer, more refined */}
-          <div className="absolute top-20 right-20 w-[400px] h-[400px] bg-gradient-to-br from-primary/8 to-secondary/8 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "0s" }} />
-          <div className="absolute bottom-10 left-10 w-[350px] h-[350px] bg-gradient-to-br from-accent/6 to-primary/6 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }} />
+        <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-br from-background via-background to-muted/10">
           
-          {/* Minimal floating elements */}
-          <div className="absolute top-32 right-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
-          <div className="absolute bottom-32 left-1/3 w-2 h-2 bg-secondary/30 rounded-full animate-float" style={{ animationDelay: "1.5s" }}></div>
-
           <div className="max-w-5xl mx-auto px-6 relative z-10">
             <div className="text-center space-y-8">
               {/* Main heading with sleek animation */}
