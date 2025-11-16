@@ -40,9 +40,9 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
         </script>
       </Helmet>
       
-      <nav aria-label="Breadcrumb" className="py-2 animate-fade-in">
+      <nav aria-label="Breadcrumb" className="py-2">
         <ol className="flex items-center space-x-2 text-sm">
-          <li className="flex items-center">
+          <li className="flex items-center animate-fade-in">
             <Link 
               to="/" 
               className="text-charcoal/60 hover:text-primary transition-colors flex items-center"
@@ -54,9 +54,10 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
           
           {items.map((item, index) => {
             const isLast = index === items.length - 1;
+            const delay = (index + 1) * 0.1; // Stagger delay for each item
             
             return (
-              <li key={item.path} className="flex items-center">
+              <li key={item.path} className="flex items-center animate-fade-in" style={{ animationDelay: `${delay}s` }}>
                 <ChevronRight className="w-4 h-4 text-charcoal/40 mx-1" />
                 {isLast ? (
                   <span className="text-charcoal font-medium" aria-current="page">
