@@ -38,8 +38,8 @@ const ConversionRateOptimisation = () => {
         "url": "https://odindigital.com.au/logo.png"
       }
     },
-    "datePublished": "2025-01-15",
-    "dateModified": "2025-01-15"
+    "datePublished": "2025-09-22",
+    "dateModified": "2025-09-22"
   };
 
   const breadcrumbSchema = {
@@ -120,7 +120,7 @@ const ConversionRateOptimisation = () => {
                     <span>13 min read</span>
                   </div>
                   <span>•</span>
-                  <time dateTime="2025-01-15">January 15, 2025</time>
+                  <time dateTime="2025-09-22">September 22, 2025</time>
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>

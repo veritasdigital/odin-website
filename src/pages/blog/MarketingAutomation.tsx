@@ -47,8 +47,8 @@ const MarketingAutomation = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-08-11",
+            "dateModified": "2025-08-11"
           })}
         </script>
         <script type="application/ld+json">
@@ -107,7 +107,7 @@ const MarketingAutomation = () => {
               <div className="flex items-center gap-4 mb-8 text-muted-foreground">
                 <span>By Odin Digital Team</span>
                 <span>•</span>
-                <span>January 15, 2025</span>
+                <span>August 11, 2025</span>
                 <span>•</span>
                 <span>14 min read</span>
               </div>

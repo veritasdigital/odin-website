@@ -39,8 +39,8 @@ const BlogPostWebDesign = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-10-13",
+            "dateModified": "2025-10-13"
           })}
         </script>
         <script type="application/ld+json">
@@ -104,7 +104,7 @@ const BlogPostWebDesign = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Calendar className="w-4 h-4" />
-                  <span>January 15, 2025</span>
+                  <span>October 13, 2025</span>
                 </div>
                 <div className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
                   5 min read

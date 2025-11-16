@@ -9,7 +9,7 @@ import heroImage from "@/assets/blog/local-seo-2026.jpg";
 import authorImage from "@/assets/odin-team-real.jpg";
 
 const LocalSEO2026 = () => {
-  const publishDate = "January 15, 2025";
+  const publishDate = "August 18, 2025";
   const readTime = "12 min read";
 
   const scrollToSection = (id: string) => {
@@ -51,8 +51,8 @@ const LocalSEO2026 = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-08-18",
+            "dateModified": "2025-08-18"
           })}
         </script>
         <script type="application/ld+json">

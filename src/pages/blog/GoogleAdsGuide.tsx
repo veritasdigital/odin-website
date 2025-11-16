@@ -44,8 +44,8 @@ const GoogleAdsGuide = () => {
                 "url": "https://odindigital.com.au/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-08-25",
+            "dateModified": "2025-08-25"
           })}
         </script>
         <script type="application/ld+json">

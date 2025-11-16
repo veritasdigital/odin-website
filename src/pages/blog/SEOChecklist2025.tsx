@@ -51,8 +51,8 @@ const SEOChecklist2025 = () => {
                 "url": "https://growth-conduit-central.lovable.app/logo.png"
               }
             },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2025-08-04",
+            "dateModified": "2025-08-04"
           })}
         </script>
 
@@ -128,7 +128,7 @@ const SEOChecklist2025 = () => {
                     SEO Strategy
                   </span>
                   <p className="text-muted-foreground mb-2">
-                    Published by <strong>Odin Digital Team</strong> • January 15, 2025 • 5 min read
+                    Published by <strong>Odin Digital Team</strong> • August 4, 2025 • 5 min read
                   </p>
                 </div>
 
