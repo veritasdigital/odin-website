@@ -71,14 +71,14 @@ export default function Contact() {
       icon: Phone,
       title: "Call Us",
       description: "03 9498 3170",
-      action: "Call Now",
+      action: "Call 03 9498 3170",
       href: "tel:0394983170"
     },
     {
       icon: Mail,
       title: "Email Us",
       description: "hello@odindigital.com.au",
-      action: "Send Email",
+      action: "Email hello@odindigital.com.au",
       href: "mailto:hello@odindigital.com.au"
     }
   ];
