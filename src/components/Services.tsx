@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, Search, TrendingUp, Zap } from "lucide-react";
+import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
+import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 
 export const Services = () => {
   const services = [
@@ -59,8 +61,22 @@ export const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white decorative-circles">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="relative py-24 bg-white overflow-hidden">
+      {/* Decorative Brand Icons */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img 
+          src={brandIconSubtle} 
+          alt="" 
+          className="absolute top-10 right-10 w-64 h-64 opacity-20 animate-[spin_30s_linear_infinite]"
+        />
+        <img 
+          src={brandIconSubtle} 
+          alt="" 
+          className="absolute bottom-20 left-10 w-48 h-48 opacity-15 animate-[spin_35s_linear_infinite_reverse]"
+        />
+      </div>
+      
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
             Comprehensive Digital Marketing Solutions
@@ -69,8 +85,13 @@ export const Services = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="p-8 border border-charcoal/10 hover:border-primary/20 transition-colors">
-              <div className="flex items-start space-x-6">
+            <Card key={index} className="group relative p-8 border border-charcoal/10 hover:border-primary/20 transition-all duration-300 overflow-hidden">
+              {/* Subtle brand icon on hover */}
+              <div className="absolute top-4 right-4 w-16 h-16 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
+                <img src={brandIconVibrant} alt="" className="w-full h-full animate-[spin_8s_linear_infinite]" />
+              </div>
+              
+              <div className="relative z-10 flex items-start space-x-6">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
                     <service.icon className="h-8 w-8 text-primary" />

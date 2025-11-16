@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroPerson from "@/assets/hero-person-optimized.webp";
+import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
+import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import fox40Logo from "@/assets/media/fox40-logo.png";
 import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
@@ -8,9 +10,25 @@ import businessInsiderLogo from "@/assets/media/business-insider-logo.png";
 import digitalJournalLogo from "@/assets/media/digital-journal-logo.png";
 import chronicleJournalLogo from "@/assets/media/chronicle-journal-logo.png";
 import ncnLogo from "@/assets/media/ncn-logo.png";
+
 export const Hero = () => {
   const { openForm } = useMarketingForm();
+  
   return <section className="relative isolate overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-background via-background to-muted/10">
+      
+      {/* Decorative Brand Icons - Background */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <img 
+          src={brandIconSubtle} 
+          alt="" 
+          className="absolute -top-20 -left-20 w-96 h-96 opacity-30 animate-[spin_20s_linear_infinite]"
+        />
+        <img 
+          src={brandIconSubtle} 
+          alt="" 
+          className="absolute -bottom-32 -right-32 w-[500px] h-[500px] opacity-20 animate-[spin_25s_linear_infinite_reverse]"
+        />
+      </div>
       
       {/* Split Screen Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-12 w-full">
