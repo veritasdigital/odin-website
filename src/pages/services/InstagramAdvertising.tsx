@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -261,6 +262,14 @@ const InstagramAdvertising = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        <SideTab />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "Instagram Advertising", path: "/services/instagram-advertising" }
+          ]} />
+        </div>
 
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-white py-12 md:py-24">

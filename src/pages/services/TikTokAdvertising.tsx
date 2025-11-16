@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
@@ -356,6 +357,13 @@ const TikTokAdvertising = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "TikTok Advertising", path: "/services/tiktok-advertising" }
+          ]} />
+        </div>
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-32 md:pb-24 px-4 sm:px-6 overflow-hidden bg-gradient-subtle">

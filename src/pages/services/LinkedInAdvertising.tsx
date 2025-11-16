@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -321,18 +322,11 @@ const LinkedInAdvertising = () => {
         <Header />
         
         {/* Breadcrumb Navigation */}
-        <div className="bg-muted/30 py-3 px-6">
-          <div className="max-w-7xl mx-auto">
-            <nav className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground">
-              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-              <span>/</span>
-              <Link to="/services" className="hover:text-primary transition-colors">Services</Link>
-              <span>/</span>
-              <Link to="/services/ppc" className="hover:text-primary transition-colors">PPC</Link>
-              <span>/</span>
-              <span className="text-foreground">LinkedIn Advertising</span>
-            </nav>
-          </div>
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "LinkedIn Advertising", path: "/services/linkedin-advertising" }
+          ]} />
         </div>
 
         {/* Hero Section */}
