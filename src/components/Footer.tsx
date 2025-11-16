@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import odinLogo from "@/assets/odin-logo-footer.png";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { Helmet } from "react-helmet";
 
 export const Footer = () => {
   const [openIndustries, setOpenIndustries] = useState<string[]>([]);
@@ -64,8 +65,84 @@ export const Footer = () => {
     }
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://odindigital.com.au/#organization",
+    "name": "Odin Digital",
+    "legalName": "Odin Digital Pty Ltd",
+    "url": "https://odindigital.com.au",
+    "logo": "https://odindigital.com.au/odin-logo.png",
+    "description": "Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.",
+    "telephone": "+61394983170",
+    "email": "hello@odindigital.com.au",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 Wilson Street",
+      "addressLocality": "South Yarra",
+      "addressRegion": "VIC",
+      "postalCode": "3141",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-37.8399",
+      "longitude": "144.9929"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "$$",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Melbourne"
+      },
+      {
+        "@type": "City",
+        "name": "Sydney"
+      },
+      {
+        "@type": "City",
+        "name": "Brisbane"
+      },
+      {
+        "@type": "City",
+        "name": "Perth"
+      },
+      {
+        "@type": "City",
+        "name": "Adelaide"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/odin-digital",
+      "https://www.facebook.com/odindigital",
+      "https://www.instagram.com/odindigital"
+    ],
+    "serviceType": [
+      "Digital Marketing Agency",
+      "SEO Services",
+      "Google Ads Management",
+      "Facebook Advertising",
+      "Social Media Marketing",
+      "Web Design",
+      "Email Marketing"
+    ]
+  };
+
   return (
     <footer data-nav-contrast="dark" id="contact" className="bg-accent text-white py-16">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
+      </Helmet>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
