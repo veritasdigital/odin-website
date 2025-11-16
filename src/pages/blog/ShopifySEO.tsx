@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import heroImage from "@/assets/blog/shopify-seo-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 
@@ -71,6 +72,13 @@ const ShopifySEO = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mx-auto px-4 pt-20">
+        <Breadcrumbs items={[
+          { label: "Blog", path: "/blog" },
+          { label: "Shopify SEO", path: "/blog/shopify-seo" }
+        ]} />
+      </div>
       
       <article className="min-h-screen bg-background pt-20">
         {/* Hero Section with Floating Elements */}

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Search, Target, BarChart3 } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -76,6 +77,13 @@ const GoogleAdsGuide = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        
+        <div className="container mx-auto px-4 pt-20">
+          <Breadcrumbs items={[
+            { label: "Blog", path: "/blog" },
+            { label: "Google Ads for Dummies", path: "/blog/google-ads-guide" }
+          ]} />
+        </div>
         
         {/* Animated Background Elements */}
         <div className="fixed inset-0 overflow-hidden pointer-events-none">

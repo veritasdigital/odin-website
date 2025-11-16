@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
