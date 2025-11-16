@@ -125,17 +125,7 @@ const CTASection = () => {
   const { openForm } = useMarketingForm();
   
   return (
-    <section className="py-24 bg-gradient-to-br from-white via-muted/30 to-muted/20 relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
-      </div>
-      
-      {/* Floating circles */}
-      <div className="absolute top-10 left-10 w-32 h-32 border border-primary/10 rounded-full animate-float" />
-      <div className="absolute bottom-20 right-20 w-24 h-24 border border-accent/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-      <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-primary/5 rounded-lg animate-float" style={{ animationDelay: '1s' }} />
+    <section className="py-24 bg-background relative overflow-hidden">
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-8">
         <CheckCircle2 className="w-20 h-20 text-primary mx-auto animate-pulse" />
