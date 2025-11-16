@@ -7,6 +7,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Target, TrendingUp, Users, DollarSign, Clock, BarChart3, AlertTriangle, Trophy, Zap } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Helmet } from "react-helmet";
+
 export default function GoogleAds() {
   const {
     openForm
@@ -72,7 +75,55 @@ export default function GoogleAds() {
     consequence: "High bounce rates and low conversion rates destroy your Quality Score and ROI",
     solution: "Optimized landing pages that match ad intent and drive conversions"
   }];
+
+  const faqs = [
+    {
+      question: "How much should I spend on Google Ads?",
+      answer: "Your Google Ads budget depends on your industry, competition, and business goals. Most Australian businesses see success with $3,000-$10,000 per month in ad spend. However, we can work with smaller budgets by focusing on high-intent keywords and optimizing for maximum ROI. During your free audit, we'll analyze your market and recommend a specific budget based on your cost-per-acquisition goals."
+    },
+    {
+      question: "What's the difference between Google Ads and SEO?",
+      answer: "Google Ads delivers immediate, paid traffic at the top of search results, while SEO is a long-term strategy that builds organic rankings. Google Ads gives you instant visibility and control over who sees your ads, making it perfect for testing offers and generating leads quickly. SEO takes 6-12 months but provides sustainable traffic. Most businesses benefit from using both strategies together."
+    },
+    {
+      question: "How long does it take to see results from Google Ads?",
+      answer: "Unlike SEO, Google Ads can drive traffic and leads within 24-48 hours of launching. However, optimal performance usually develops over 30-90 days as we gather data, test variations, and refine targeting. The learning phase allows our algorithms to optimize for your best-converting audiences and placements."
+    },
+    {
+      question: "Do you require long-term contracts?",
+      answer: "No. While Google Ads works best with consistent optimization over 6+ months, we don't lock you into long-term contracts. Most clients choose to continue because they see positive ROI, not because they're contractually obligated. We believe in earning your business every month through performance."
+    },
+    {
+      question: "What makes your Google Ads management different?",
+      answer: "Three things set us apart: 1) Aggressive daily optimization rather than set-and-forget management, 2) Complete transparency with full account access and detailed reporting, and 3) Strategic campaign architecture designed for scale. We don't just manage your ads—we actively hunt for opportunities to improve performance and reduce wasted spend."
+    },
+    {
+      question: "Can you guarantee a specific ROI?",
+      answer: "No reputable agency can guarantee specific ROI due to variables beyond our control (your offer, pricing, website conversion rate, market conditions). However, we do guarantee our commitment to strategic optimization, transparent reporting, and data-driven decisions. Our average client sees a 427% ROI, and we'll work tirelessly to achieve similar results for your business."
+    }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+  
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Google Ads Management Services Australia | PPC Experts | Odin Digital</title>
+        <meta name="description" content="Professional Google Ads management that delivers results. Stop wasting money on underperforming campaigns. Average 427% ROI with transparent reporting and expert optimization." />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
       <Header />
       <MarketingFormModal />
       <SideTab />
@@ -337,6 +388,33 @@ export default function GoogleAds() {
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-background">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
+              Google Ads FAQs
+            </h2>
+            <p className="text-xl text-charcoal/70">
+              Common questions about Google Ads management and pricing
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index + 1}`}>
+                <AccordionTrigger className="text-left text-lg font-bold text-charcoal">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-charcoal/70">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
