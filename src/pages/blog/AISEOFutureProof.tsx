@@ -91,7 +91,7 @@ const AISEOFutureProof = () => {
         <SideTab />
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-primary/20 via-primary/10 to-background">
+        <section className="relative pt-32 pb-20 overflow-hidden bg-background">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float" />
@@ -544,7 +544,7 @@ const AISEOFutureProof = () => {
                   The transition to AI SEO is not a threat; it is the single greatest opportunity for businesses willing to adapt. By 2026, the companies that succeed will be those that have fully embraced the principles of Answer Engine Optimization.
                 </p>
 
-                <Card className="p-8 my-8 bg-gradient-to-br from-primary/10 to-primary/5 border-primary/20">
+                <Card className="p-8 my-8 bg-muted/30 border-border">
                   <h3 className="text-2xl font-bold text-foreground mb-6">Your Key Takeaways for Future-Proofing Your Organic Strategy</h3>
                   <ol className="space-y-4 text-muted-foreground">
                     <li className="flex items-start space-x-3">

@@ -81,7 +81,7 @@ const BeyondTheBoostPost = () => {
         {/* Hero Section */}
         <section className="relative pt-32 pb-20 overflow-hidden">
           {/* Animated Background Elements */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent"></div>
+          <div className="absolute inset-0"></div>
           <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse-glow"></div>
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
           
@@ -283,7 +283,7 @@ const BeyondTheBoostPost = () => {
           </section>
 
           {/* Mid-Post CTA */}
-          <Card className="my-16 p-8 bg-gradient-to-br from-primary/5 to-accent/5 border-primary/20 shadow-elegant relative overflow-hidden">
+          <Card className="my-16 p-8 bg-muted/30 border-border shadow-elegant relative overflow-hidden">
             <div className="absolute top-4 right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-4 left-4 w-32 h-32 bg-accent/10 rounded-full blur-2xl"></div>
             
@@ -664,7 +664,7 @@ const BeyondTheBoostPost = () => {
           </Card>
 
           {/* Author Bio */}
-          <Card className="p-8 bg-gradient-to-br from-muted/30 to-muted/10 border-primary/10 shadow-card relative overflow-hidden backdrop-blur-sm">
+          <Card className="p-8 bg-muted/30 border-border shadow-card relative overflow-hidden">
             <div className="absolute top-4 right-4 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
             <div className="absolute bottom-4 left-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl"></div>
             

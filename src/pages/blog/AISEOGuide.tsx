@@ -117,7 +117,7 @@ const AISEOGuide = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="relative py-20 overflow-hidden bg-background">
         {/* Animated Background Blobs */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
@@ -151,7 +151,7 @@ const AISEOGuide = () => {
 
           {/* H1 with Gradient */}
           <h1 className="text-4xl md:text-6xl font-black text-center mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            <span className="text-primary">
               How AI SEO Works:
             </span>
             <br />
@@ -266,7 +266,7 @@ const AISEOGuide = () => {
           <section id="demystifying-ai" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -303,7 +303,7 @@ const AISEOGuide = () => {
           <section id="understanding-users" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <Users className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -387,7 +387,7 @@ const AISEOGuide = () => {
           <section id="practical-examples" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <BarChart className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -459,7 +459,7 @@ const AISEOGuide = () => {
 
           {/* Mid-Post CTA */}
           <section className="my-16">
-            <div className="bg-gradient-to-br from-primary to-accent rounded-2xl p-8 md:p-12 text-center shadow-2xl">
+            <div className="bg-primary rounded-2xl p-8 md:p-12 text-center shadow-2xl">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Ready to Harness the Power of AI for Your SEO?
               </h3>
@@ -482,7 +482,7 @@ const AISEOGuide = () => {
           <section id="eeat" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -558,7 +558,7 @@ const AISEOGuide = () => {
           <section id="creating-content" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -660,7 +660,7 @@ const AISEOGuide = () => {
           <section id="conclusion" className="mb-16 scroll-mt-24">
             <div className="flex items-start mb-6">
               <div className="flex-shrink-0 mr-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-primary flex items-center justify-center shadow-lg">
+                <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
               </div>
@@ -702,7 +702,7 @@ const AISEOGuide = () => {
       </article>
 
       {/* Final CTA */}
-      <section className="py-24 bg-gradient-to-br from-primary to-accent">
+      <section className="py-24 bg-primary">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
             Ready to Take Your Digital Marketing to the Next Level?
