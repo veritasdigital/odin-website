@@ -28,14 +28,14 @@ export const Step5MarketingBudget = () => {
       <p className="text-sm text-muted-foreground">
         This helps us understand which strategies will be most effective for you.
       </p>
-      <RadioGroup value={budget} onValueChange={setBudget} className="space-y-4">
+      <RadioGroup value={budget} onValueChange={setBudget} className="space-y-3">
         {budgetOptions.map((option) => (
           <div
             key={option}
-            className="flex items-center space-x-3 p-4 rounded-lg border border-border hover:bg-accent cursor-pointer transition-colors"
+            className="flex items-center space-x-3 p-4 rounded-lg bg-[#f9fafb] border-2 border-[#e5e7eb] hover:border-primary hover:bg-primary/5 cursor-pointer transition-all"
           >
             <RadioGroupItem value={option} id={option} />
-            <Label htmlFor={option} className="text-lg cursor-pointer flex-1">
+            <Label htmlFor={option} className="text-base cursor-pointer flex-1">
               {option}
             </Label>
           </div>
@@ -44,7 +44,7 @@ export const Step5MarketingBudget = () => {
       <Button
         onClick={handleContinue}
         disabled={!budget}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue

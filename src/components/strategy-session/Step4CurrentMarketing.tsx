@@ -35,26 +35,26 @@ export const Step4CurrentMarketing = () => {
       <h2 className="text-2xl md:text-3xl font-bold text-foreground">
         What marketing activities are you currently doing?
       </h2>
-      <p className="text-muted-foreground">(Select all that apply)</p>
-      <div className="space-y-4">
+      <p className="text-base text-muted-foreground">(Select all that apply)</p>
+      <div className="space-y-3">
         {options.map((option) => (
           <div
             key={option}
-            className="flex items-center space-x-3 p-4 rounded-lg border border-border hover:bg-accent cursor-pointer transition-colors"
+            className="flex items-center space-x-3 p-4 rounded-lg bg-[#f9fafb] border-2 border-[#e5e7eb] hover:border-primary hover:bg-primary/5 cursor-pointer transition-all"
             onClick={() => handleToggle(option)}
           >
             <Checkbox
               checked={selected.includes(option)}
               onCheckedChange={() => handleToggle(option)}
             />
-            <label className="text-lg cursor-pointer flex-1">{option}</label>
+            <label className="text-base cursor-pointer flex-1">{option}</label>
           </div>
         ))}
       </div>
       <Button
         onClick={handleContinue}
         disabled={selected.length === 0}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue

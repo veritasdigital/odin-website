@@ -27,7 +27,7 @@ export const Step10BiggestObstacle = () => {
           placeholder="Be specific - the more detail you provide, the better we can help"
           value={obstacle}
           onChange={(e) => setObstacle(e.target.value)}
-          className="min-h-[150px] text-lg"
+          className="min-h-[150px] text-base"
         />
         <p className="text-sm text-muted-foreground text-right">
           {characterCount} characters {!isValid && `(minimum 20 required)`}
@@ -36,7 +36,7 @@ export const Step10BiggestObstacle = () => {
       <Button
         onClick={handleContinue}
         disabled={!isValid}
-        className="w-full py-6 text-lg"
+        className="w-full h-auto py-4 text-lg"
         size="lg"
       >
         Continue
