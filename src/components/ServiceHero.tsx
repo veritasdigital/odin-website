@@ -8,7 +8,7 @@ interface ServiceHeroProps {
 
 export const ServiceHero = ({ h1, subheadline, className = "" }: ServiceHeroProps) => {
   return (
-    <section className={`relative isolate overflow-hidden py-24 sm:py-32 bg-gradient-to-br from-white via-muted/30 to-muted/20 ${className}`}>
+    <section className={`relative isolate overflow-hidden py-12 sm:py-16 md:py-24 bg-gradient-to-br from-white via-muted/30 to-muted/20 ${className}`}>
       {/* Animated Background Blobs - Using muted colors like homepage */}
       <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
