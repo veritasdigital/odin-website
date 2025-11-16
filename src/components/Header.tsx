@@ -19,7 +19,11 @@ export const Header = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-3">
+          <a 
+            href="/" 
+            className="flex items-center space-x-3 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg"
+            aria-label="Odin Digital - Home"
+          >
             <img 
               src={odinLogo} 
               alt="Odin Digital" 
@@ -30,11 +34,11 @@ export const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary">
+              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
                 <span>Services</span>
-                <ChevronDown size={16} />
+                <ChevronDown size={16} aria-hidden="true" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="z-50 w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2 max-h-[70vh] overflow-y-auto">
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
@@ -96,19 +100,19 @@ export const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="/web-design-perth" className="font-medium transition-colors text-foreground hover:text-primary">
+            <a href="/web-design-perth" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               Web Design
             </a>
-            <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary">
+            <a href="/about" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               About
             </a>
-            <a href="/our-clients" className="font-medium transition-colors text-foreground hover:text-primary">
+            <a href="/our-clients" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               Our Clients
             </a>
-            <a href="/blog" className="font-medium transition-colors text-foreground hover:text-primary">
+            <a href="/blog" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               Blog
             </a>
-            <a href="/contact" className="font-medium transition-colors text-foreground hover:text-primary">
+            <a href="/contact" className="font-medium transition-colors text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1">
               Contact
             </a>
           </nav>
@@ -122,7 +126,9 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 transition-colors text-foreground"
+            className="md:hidden p-2 transition-colors text-foreground focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -131,7 +137,7 @@ export const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-6 pb-6 border-t border-charcoal/10 pt-6">
-            <nav className="flex flex-col space-y-4">
+            <nav className="flex flex-col space-y-4" aria-label="Mobile navigation">
               <div>
                 <div className="text-charcoal font-medium py-2 mb-2">Services</div>
                 <div className="pl-4 space-y-2">

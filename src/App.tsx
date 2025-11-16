@@ -15,6 +15,7 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import SkipToContent from "./components/SkipToContent";
 import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
@@ -161,6 +162,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <SkipToContent />
         <MarketingFormProvider>
           <MarketingFormModal />
           <Routes>
