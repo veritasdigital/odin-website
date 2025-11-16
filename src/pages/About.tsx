@@ -280,7 +280,7 @@ const About = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+        <section className="py-20 bg-background">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
               Ready to Conquer Your Digital Landscape?

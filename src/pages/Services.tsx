@@ -198,17 +198,8 @@ export default function Services() {
       <AsSeenIn />
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-br from-white via-muted/30 to-muted/20 relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float-delayed" />
-        </div>
-
-        {/* Floating circles */}
-        <div className="absolute top-10 left-10 w-32 h-32 border border-primary/10 rounded-full animate-float" />
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-accent/10 rounded-lg animate-float" style={{ animationDelay: '3s' }} />
-
+      <section className="py-24 bg-background relative overflow-hidden">
+        
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-6xl font-black text-foreground mb-8">
             Ready to Transform Your Marketing?
