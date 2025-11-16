@@ -112,16 +112,7 @@ export default function Contact() {
       </div>
       
       {/* Hero Section with Form */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20 pt-32 pb-24">
-        {/* Animated Background Blobs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-muted/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 right-20 w-[500px] h-[500px] bg-muted/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }} />
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-muted/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "3s" }} />
-        
-        {/* Floating Particles */}
-        <div className="absolute top-32 left-1/4 w-2 h-2 bg-muted/20 rounded-full animate-float"></div>
-        <div className="absolute top-64 right-1/3 w-3 h-3 bg-muted/25 rounded-full animate-float" style={{ animationDelay: "1s" }}></div>
-        <div className="absolute bottom-48 left-1/2 w-2 h-2 bg-muted/15 rounded-full animate-float" style={{ animationDelay: "2s" }}></div>
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-background via-background to-muted/10 pt-32 pb-24">
         
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
