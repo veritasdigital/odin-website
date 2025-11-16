@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -316,7 +317,15 @@ const FacebookAdvertising = () => {
 
       <>
       <Header />
-      <div className="min-h-screen bg-background pt-20">
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-24">
+        <Breadcrumbs items={[
+          { label: "Services", path: "/services" },
+          { label: "Facebook Advertising", path: "/services/facebook-ads" }
+        ]} />
+      </div>
+      
+      <div className="min-h-screen bg-background">
         {/* Hero Section */}
         <section className="relative isolate overflow-hidden py-12 md:py-32 px-4 bg-gradient-to-br from-white via-muted/30 to-muted/20">
           {/* Animated background blobs */}
