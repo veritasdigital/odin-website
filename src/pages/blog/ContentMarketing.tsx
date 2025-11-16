@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Calendar, User, Clock, BookOpen, CheckCircle2, ArrowRight, Target, Lightbulb, Eye } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -83,6 +84,13 @@ const ContentMarketing = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Blog", path: "/blog" },
+            { label: "How to Write Blog Posts That Your Aussie Customers Will Actually Read", path: "/blog/blog-post-content-marketing" }
+          ]} />
+        </div>
 
         {/* Hero Section with Floating Circles */}
         <section className="relative bg-gradient-to-br from-primary/20 via-primary/10 to-background py-20 overflow-hidden">

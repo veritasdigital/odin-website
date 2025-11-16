@@ -5,6 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { 
   Search, 
   MousePointerClick, 
@@ -220,6 +221,13 @@ const Lawyers = () => {
       </Helmet>
 
       <Header />
+      
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={[
+          { label: "Industries", path: "/industries" },
+          { label: "Lawyers", path: "/industries/lawyers" }
+        ]} />
+      </div>
 
       {/* Mobile Sticky CTA */}
       <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">

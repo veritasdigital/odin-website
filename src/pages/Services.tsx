@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { AsSeenIn } from "@/components/AsSeenIn";
@@ -107,6 +108,12 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      
+      <div className="container mx-auto px-4">
+        <Breadcrumbs items={[
+          { label: "Services", path: "/services" }
+        ]} />
+      </div>
       <MarketingFormModal />
       <SideTab />
       
