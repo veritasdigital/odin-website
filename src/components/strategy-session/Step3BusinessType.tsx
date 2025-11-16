@@ -7,16 +7,15 @@ export const Step3BusinessType = () => {
 
   const handleSelect = (type: "products" | "services") => {
     updateFormData("businessType", type);
-    setTimeout(nextStep, 300);
+    nextStep();
   };
 
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="space-y-3">
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground leading-tight">
-          What does your business sell?
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+          Got it. So, what do you sell?
         </h2>
-        <p className="text-base text-muted-foreground">Help us understand your business model</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Card

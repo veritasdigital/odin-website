@@ -15,40 +15,35 @@ export const Step5MarketingBudget = () => {
   const { formData, updateFormData, nextStep } = useStrategySession();
   const [budget, setBudget] = useState(formData.marketingBudget);
 
-  const handleContinue = () => {
-    updateFormData("marketingBudget", budget);
+  const handleSelect = (value: string) => {
+    setBudget(value);
+    updateFormData("marketingBudget", value);
     nextStep();
   };
 
   return (
     <div className="space-y-6 animate-fade-in">
-      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-        What is your approximate monthly marketing budget?
-      </h2>
-      <p className="text-sm text-muted-foreground">
-        This helps us understand which strategies will be most effective for you.
-      </p>
-      <RadioGroup value={budget} onValueChange={setBudget} className="space-y-3">
+      <div className="space-y-3">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+          What's your monthly marketing budget?
+        </h2>
+        <p className="text-base text-muted-foreground">
+          We ask this to make sure we recommend strategies that are a good fit for your goals. No judgment! 😉
+        </p>
+      </div>
+      <div className="space-y-3">
         {budgetOptions.map((option) => (
           <div
             key={option}
             className="flex items-center space-x-3 p-4 rounded-lg bg-[#f9fafb] border-2 border-[#e5e7eb] hover:border-primary hover:bg-primary/5 cursor-pointer transition-all"
+            onClick={() => handleSelect(option)}
           >
-            <RadioGroupItem value={option} id={option} />
-            <Label htmlFor={option} className="text-base cursor-pointer flex-1">
+            <Label className="text-base cursor-pointer flex-1">
               {option}
             </Label>
           </div>
         ))}
-      </RadioGroup>
-      <Button
-        onClick={handleContinue}
-        disabled={!budget}
-        className="w-full h-auto py-4 text-lg"
-        size="lg"
-      >
-        Continue
-      </Button>
+      </div>
     </div>
   );
 };
