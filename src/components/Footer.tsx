@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import odinLogo from "@/assets/odin-logo-footer.png";
+import odinLogoWhite from "@/assets/odin-logo-white.png";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Helmet } from "react-helmet";
 
@@ -151,7 +151,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src={odinLogo} alt="Odin Digital - Strategic Digital Marketing Agency Australia" className="h-14 w-auto" />
+              <img src={odinLogoWhite} alt="Odin Digital - Strategic Digital Marketing Agency Australia" className="h-10 w-auto" />
             </div>
             <p className="text-white/80 mb-6 leading-relaxed">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
