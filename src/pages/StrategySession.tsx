@@ -1,5 +1,3 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { StrategySessionProvider, useStrategySession } from "@/contexts/StrategySessionContext";
 import { ProgressBar } from "@/components/strategy-session/ProgressBar";
 import { Step1Name } from "@/components/strategy-session/Step1Name";
@@ -50,7 +48,6 @@ const FormContent = () => {
           content="Claim your 100% FREE, no-obligation 30-minute growth strategy call. Get a custom roadmap to accelerate your business growth."
         />
       </Helmet>
-      <Header />
       
       <div className="container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-3xl mx-auto">
@@ -99,8 +96,6 @@ const FormContent = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
