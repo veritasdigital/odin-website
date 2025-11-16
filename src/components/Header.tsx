@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import odinLogo from "@/assets/odin-digital-logo.png";
+import odinLogoGradient from "@/assets/odin-logo-gradient.png";
 
 export const Header = () => {
   const { openForm } = useMarketingForm();
@@ -25,11 +25,11 @@ export const Header = () => {
             aria-label="Odin Digital - Home"
           >
             <img 
-              src={odinLogo} 
+              src={odinLogoGradient} 
               alt="Odin Digital" 
-              className="h-14 w-auto"
-              width="138"
-              height="56"
+              className="h-10 w-auto"
+              width="200"
+              height="40"
             />
           </a>
 
