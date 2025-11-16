@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -225,6 +226,14 @@ const EmailMarketing = () => {
 
       <>
       <Header />
+      
+      <div className="container mx-auto px-4 pt-20">
+        <Breadcrumbs items={[
+          { label: "Services", path: "/services" },
+          { label: "Email Marketing", path: "/services/email-marketing" }
+        ]} />
+      </div>
+      
       <div className="min-h-screen bg-background pt-20">
         {/* Hero Section */}
         <section className="relative isolate overflow-hidden py-12 md:py-32 px-4 bg-gradient-to-br from-white via-muted/30 to-muted/20">

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -514,6 +515,13 @@ const SocialMediaAdvertising = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <SideTab />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "Social Media Advertising", path: "/services/social-media-advertising" }
+          ]} />
+        </div>
 
         {/* Sticky Mobile CTA */}
         <div className="fixed bottom-0 left-0 right-0 z-40 p-3 bg-background/95 backdrop-blur-sm border-t md:hidden">

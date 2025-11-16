@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useNavigate } from "react-router-dom";
 import { 
   Target, 
@@ -402,6 +403,13 @@ const PPCManagement = () => {
 
       <div className="min-h-screen">
         <Header />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "PPC Management", path: "/services/ppc-management" }
+          ]} />
+        </div>
 
         {/* Hero Section */}
         <section className="relative isolate overflow-hidden min-h-[85vh] flex items-center bg-gradient-to-br from-white via-muted/30 to-muted/20">

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -256,6 +257,13 @@ const LocalSEO = () => {
 
       <div className="min-h-screen bg-background">
         <Header />
+        
+        <div className="container mx-auto px-4">
+          <Breadcrumbs items={[
+            { label: "Services", path: "/services" },
+            { label: "Local SEO", path: "/services/local-seo" }
+          ]} />
+        </div>
 
         {/* Hero Section */}
         <section className="relative py-20 md:py-32 bg-gradient-to-br from-white via-muted/30 to-muted/20 overflow-hidden">
