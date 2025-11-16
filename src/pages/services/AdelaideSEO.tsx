@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedServices } from "@/components/RelatedServices";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -37,6 +38,24 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
+
+  const relatedServices = [
+    {
+      title: "Google Ads Adelaide",
+      description: "Drive immediate results with targeted Google Ads campaigns while your SEO builds long-term authority.",
+      path: "/services/google-ads-adelaide"
+    },
+    {
+      title: "Facebook Ads Adelaide",
+      description: "Complement your organic traffic with precision-targeted social media advertising campaigns.",
+      path: "/services/facebook-ads-adelaide"
+    },
+    {
+      title: "Web Design Adelaide",
+      description: "Ensure your SEO-optimized site converts visitors into customers with conversion-focused web design.",
+      path: "/services/web-design-adelaide"
+    }
+  ];
 
   const metrics = [
     { number: "$574M+", label: "Verified Client Revenue" },
@@ -667,6 +686,8 @@ const AdelaideSEO = () => {
             </div>
           </div>
         </section>
+
+        <RelatedServices services={relatedServices} />
 
         {/* Section 11: FAQ */}
         <section className="py-16 md:py-24">

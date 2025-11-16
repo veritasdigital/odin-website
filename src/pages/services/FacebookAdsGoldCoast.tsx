@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { RelatedServices } from "@/components/RelatedServices";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -10,6 +11,24 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
 const FacebookAdsGoldCoast = () => {
   const { openForm } = useMarketingForm();
+  
+  const relatedServices = [
+    {
+      title: "Google Ads Gold Coast",
+      description: "Complement your Facebook campaigns with high-intent Google search advertising targeting ready-to-buy customers.",
+      path: "/services/google-ads-gold-coast"
+    },
+    {
+      title: "SEO Gold Coast",
+      description: "Build long-term organic visibility while your paid campaigns drive immediate results.",
+      path: "/services/gold-coast-seo"
+    },
+    {
+      title: "Web Design Gold Coast",
+      description: "Ensure your landing pages convert the traffic from your Facebook ad campaigns into customers.",
+      path: "/services/web-design-gold-coast"
+    }
+  ];
 
   const painPoints = [
     {
@@ -346,6 +365,7 @@ const FacebookAdsGoldCoast = () => {
       <Helmet>
         <title>Facebook Ads Gold Coast | Expert Management & ROAS | Odin Digital</title>
         <meta name="description" content="Stop wasting your Gold Coast business budget on Facebook ads that don't convert. Odin Digital provides expert facebook ads gold coast management for maximum ROAS and profitable growth. Tourism & local expertise." />
+        <link rel="canonical" href="https://odindigital.com.au/services/facebook-ads-gold-coast" />
         <script type="application/ld+json">
           {JSON.stringify(schemaMarkup)}
         </script>
@@ -636,6 +656,9 @@ const FacebookAdsGoldCoast = () => {
             </div>
           </div>
         </section>
+
+        {/* Related Services */}
+        <RelatedServices services={relatedServices} />
 
         {/* Mobile Sticky CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t z-40 md:hidden">
