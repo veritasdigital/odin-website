@@ -153,7 +153,7 @@ export const Leadership = () => {
           <div>
             <img
               src={marketingTeam}
-              alt="Odin Digital marketing team collaboration"
+              alt="Odin Digital marketing team collaborating on strategic campaigns and performance optimization"
               className="w-full rounded-lg shadow-card object-cover"
             />
           </div>
@@ -178,7 +178,7 @@ export const Leadership = () => {
                   <div className="relative mb-6">
                     <img
                       src={leader.image}
-                      alt={leader.name}
+                      alt={`${leader.name}, ${leader.title} at Odin Digital - Expert in digital marketing strategy`}
                       className="w-32 h-32 mx-auto rounded-full object-cover shadow-md group-hover:shadow-xl transition-shadow duration-300"
                     />
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">

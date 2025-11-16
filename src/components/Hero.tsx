@@ -65,7 +65,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={fox40Logo}
-                    alt="FOX40 News"
+                    alt="FOX40 News - As featured in national media outlet"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="92"
                     height="24"
@@ -75,7 +75,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={msnLogo}
-                    alt="MSN"
+                    alt="MSN - As featured in Microsoft news network"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="62"
                     height="24"
@@ -85,7 +85,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={yahooFinanceLogo}
-                    alt="Yahoo Finance"
+                    alt="Yahoo Finance - Featured business and finance news publication"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="65"
                     height="24"
@@ -95,7 +95,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={businessInsiderLogo}
-                    alt="Business Insider"
+                    alt="Business Insider - Leading global business news publication"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="75"
                     height="24"
@@ -105,7 +105,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={digitalJournalLogo}
-                    alt="Digital Journal"
+                    alt="Digital Journal - International digital news and media outlet"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="58"
                     height="24"
@@ -115,7 +115,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={chronicleJournalLogo}
-                    alt="The Chronicle Journal"
+                    alt="The Chronicle Journal - Canadian news publication"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="41"
                     height="24"
@@ -125,7 +125,7 @@ export const Hero = () => {
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
                   <img
                     src={ncnLogo}
-                    alt="NCN"
+                    alt="NCN News - National communications network"
                     className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                     width="52"
                     height="24"
@@ -146,7 +146,7 @@ export const Hero = () => {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
                 <img 
                   src={heroPerson} 
-                  alt="Alexa Blake, Odin Digital General Manager" 
+                  alt="Professional digital marketing strategist working on successful campaign analytics and performance metrics" 
                   className="w-full h-full object-cover object-center"
                   width="600"
                   height="800"

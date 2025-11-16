@@ -111,7 +111,7 @@ export const AboutUs = () => {
             <div className="relative">
               <img 
                 src={odinTeamProfessional}
-                alt="Odin Digital marketing team" 
+                alt="Odin Digital marketing team collaborating on strategic digital campaigns with 182+ years combined expertise" 
                 className="w-full rounded-lg shadow-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-lg"></div>
