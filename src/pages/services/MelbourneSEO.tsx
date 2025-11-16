@@ -10,9 +10,28 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedServices } from "@/components/RelatedServices";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
+
+  const relatedServices = [
+    {
+      title: "Google Ads Melbourne",
+      description: "Drive immediate Melbourne traffic with PPC while building long-term organic visibility through SEO.",
+      path: "/services/google-ads-melbourne"
+    },
+    {
+      title: "Facebook Ads Melbourne",
+      description: "Target Melbourne audiences with precision social media advertising to complement your SEO strategy.",
+      path: "/services/facebook-ads-melbourne"
+    },
+    {
+      title: "Web Design Melbourne",
+      description: "Convert your SEO traffic into customers with Melbourne-focused, high-converting web design.",
+      path: "/services/web-design-melbourne"
+    }
+  ];
 
   // Count-up animation hook
   const useCountUp = (end: number, duration: number = 2000) => {
@@ -716,6 +735,8 @@ const MelbourneSEO = () => {
             </Link>
           </Button>
         </div>
+
+        <RelatedServices services={relatedServices} />
 
         <Footer />
       </div>

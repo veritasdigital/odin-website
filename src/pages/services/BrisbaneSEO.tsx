@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedServices } from "@/components/RelatedServices";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -21,6 +22,24 @@ import { Link } from "react-router-dom";
 
 const BrisbaneSEO = () => {
   const { openForm } = useMarketingForm();
+
+  const relatedServices = [
+    {
+      title: "Google Ads Brisbane",
+      description: "Combine SEO with PPC for maximum visibility in Brisbane search results and immediate traffic.",
+      path: "/services/google-ads-brisbane"
+    },
+    {
+      title: "Facebook Ads Brisbane",
+      description: "Expand your Brisbane reach with targeted social media advertising alongside your organic strategy.",
+      path: "/services/facebook-ads-brisbane"
+    },
+    {
+      title: "Web Design Brisbane",
+      description: "Ensure your SEO traffic converts with Brisbane-focused, conversion-optimized web design.",
+      path: "/services/web-design-brisbane"
+    }
+  ];
 
   const metrics = [
     { number: "$574M+", label: "Client Revenue Generated" },
@@ -612,6 +631,8 @@ const BrisbaneSEO = () => {
             </div>
           </div>
         </section>
+
+        <RelatedServices services={relatedServices} />
 
         <Footer />
       </div>
