@@ -55,6 +55,30 @@ export default function SEO() {
     results: ["580% increase in organic traffic", "Top 3 rankings for 75+ keywords", "$2.3M additional revenue from organic search"]
   };
 
+  const featuredSnippets = [
+    {
+      question: "What is SEO?",
+      answer: "SEO (Search Engine Optimization) is the practice of optimizing your website to rank higher in search engine results pages (SERPs). It involves improving technical elements, creating quality content, building authoritative backlinks, and enhancing user experience to increase organic traffic from search engines like Google."
+    },
+    {
+      question: "How does SEO work?",
+      answer: "SEO works by making your website more attractive to search engines through: (1) Technical optimization ensuring fast load times and mobile-friendliness, (2) On-page optimization with keyword-rich, valuable content, (3) Off-page optimization through quality backlinks and brand mentions, (4) Continuous monitoring and adjustments based on performance data."
+    },
+    {
+      question: "What are the main types of SEO?",
+      answer: "The three main types of SEO are: (1) On-Page SEO focusing on content and HTML source code optimization, (2) Off-Page SEO involving backlink building and brand authority, (3) Technical SEO ensuring proper site architecture, speed, and crawlability for search engines."
+    }
+  ];
+
+  const seoComparison = [
+    { service: "SEO Strategy Development", timeline: "1-2 weeks", impact: "Foundation for long-term success" },
+    { service: "Technical SEO Audit", timeline: "2-3 weeks", impact: "Identify critical issues affecting rankings" },
+    { service: "On-Page Optimization", timeline: "4-6 weeks", impact: "Improved relevance and user engagement" },
+    { service: "Content Creation & Optimization", timeline: "Ongoing", impact: "Continuous traffic growth and authority building" },
+    { service: "Link Building Campaign", timeline: "Ongoing", impact: "Increased domain authority and rankings" },
+    { service: "Local SEO Implementation", timeline: "3-4 weeks", impact: "Enhanced visibility in local search results" }
+  ];
+
   const faqs = [
     {
       question: "How long does SEO take to show results?",
@@ -289,6 +313,82 @@ export default function SEO() {
         </div>
       </section>
 
+        {/* Featured Snippet Optimization */}
+        <section className="py-12 px-4 bg-muted/20">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-8 text-charcoal">SEO Essentials: Quick Answers</h2>
+              <div className="space-y-8">
+                {featuredSnippets.map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-border">
+                    <h2 className="text-2xl font-semibold mb-4 text-charcoal">{item.question}</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">SEO Services: Timeline & Impact Comparison</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full bg-white rounded-lg border border-border">
+                  <thead className="bg-muted/30">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">SEO Service</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Typical Timeline</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Business Impact</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {seoComparison.map((row, index) => (
+                      <tr key={index}>
+                        <td className="px-6 py-4 font-medium text-charcoal">{row.service}</td>
+                        <td className="px-6 py-4 text-charcoal/80">{row.timeline}</td>
+                        <td className="px-6 py-4 text-charcoal/80">{row.impact}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">How to Improve Your SEO: Essential Steps</h2>
+              <div className="bg-white p-8 rounded-lg border border-border">
+                <ol className="space-y-4">
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Conduct a comprehensive SEO audit to identify technical issues and opportunities</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Research and target high-value keywords relevant to your business</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Optimize on-page elements including title tags, meta descriptions, and header tags</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">4</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Create high-quality, valuable content that answers user search intent</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">5</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Build authoritative backlinks from reputable websites in your industry</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">6</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Improve site speed, mobile-friendliness, and overall user experience</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">7</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Monitor performance metrics and continuously optimize based on data insights</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* All SEO Services by Location */}
       <HubPageLocations 
