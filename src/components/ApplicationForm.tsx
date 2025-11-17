@@ -45,7 +45,9 @@ const ApplicationForm = memo(() => {
     const savedData = localStorage.getItem("applicationFormData");
     const savedLeadId = localStorage.getItem("applicationLeadId");
     if (savedData) {
-      setFormData(JSON.parse(savedData));
+      const parsed = JSON.parse(savedData);
+      // Merge with initial state to ensure all fields exist
+      setFormData(prev => ({ ...prev, ...parsed }));
     }
     if (savedLeadId) {
       setLeadId(savedLeadId);
@@ -67,26 +69,26 @@ const ApplicationForm = memo(() => {
   const validateCurrentStep = useCallback((): boolean => {
     switch (currentStep) {
       case 1:
-        return formData.firstName.trim().length > 0;
+        return (formData.firstName || "").trim().length > 0;
       case 2:
-        return formData.lastName.trim().length > 0;
+        return (formData.lastName || "").trim().length > 0;
       case 3:
-        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email || "");
       case 4:
-        const phoneDigits = formData.phone.replace(/\D/g, '');
+        const phoneDigits = (formData.phone || "").replace(/\D/g, '');
         return phoneDigits.length >= 9 && phoneDigits.length <= 12;
       case 5:
-        return formData.company.trim().length > 0;
+        return (formData.company || "").trim().length > 0;
       case 6:
         return true; // Website is optional
       case 7:
-        return formData.challenge.trim().length > 0;
+        return (formData.challenge || "").trim().length > 0;
       case 8:
-        return formData.timeline.length > 0;
+        return (formData.timeline || "").length > 0;
       case 9:
-        return formData.businessType.length > 0;
+        return (formData.businessType || "").length > 0;
       case 10:
-        return formData.investment.length > 0;
+        return (formData.investment || "").length > 0;
       default:
         return false;
     }
