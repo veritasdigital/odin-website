@@ -26,17 +26,14 @@ export default defineConfig(({ mode }) => ({
       },
     },
     cssCodeSplit: true,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: mode === 'production',
-        passes: 2,
-      },
-    },
+    minify: 'esbuild',
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
+  },
+  esbuild: {
+    drop: mode === 'production' ? ['console', 'debugger'] : [],
   },
 }));
