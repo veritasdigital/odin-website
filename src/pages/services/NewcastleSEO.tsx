@@ -3,8 +3,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import {
   Breadcrumb,
@@ -939,6 +941,12 @@ const NewcastleSEO = () => {
             </Accordion>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Newcastle", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

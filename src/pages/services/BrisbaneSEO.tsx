@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,6 +19,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
+import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -652,6 +654,12 @@ const BrisbaneSEO = () => {
         </section>
 
         <RelatedServices services={relatedServices} />
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Brisbane", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

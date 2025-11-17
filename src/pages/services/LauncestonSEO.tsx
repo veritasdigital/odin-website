@@ -12,8 +12,10 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Helmet } from "react-helmet";
 import { useNavigate, Link } from "react-router-dom";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { 
   TrendingUp, 
   Target, 
@@ -750,6 +752,12 @@ const LauncestonSEO = () => {
           </div>
         </div>
       </section>
+
+
+      <RelatedLocations 
+        locations={getRelatedLocations("Launceston", "SEO")}
+        title="SEO Services in Other Australian Cities"
+      />
 
       <Footer />
     </>

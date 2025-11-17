@@ -2,10 +2,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { 
   TrendingUp, 
   Target, 
@@ -942,6 +944,12 @@ const BallaratSEO = () => {
           </div>
         </div>
       </section>
+
+
+      <RelatedLocations 
+        locations={getRelatedLocations("Ballarat", "SEO")}
+        title="SEO Services in Other Australian Cities"
+      />
 
       <Footer />
     </>

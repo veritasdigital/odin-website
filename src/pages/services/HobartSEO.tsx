@@ -10,6 +10,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const HobartSEO = () => {
   const { openForm } = useMarketingForm();
@@ -779,6 +781,12 @@ const HobartSEO = () => {
           </Button>
         </div>
       </main>
+
+
+      <RelatedLocations 
+        locations={getRelatedLocations("Hobart", "SEO")}
+        title="SEO Services in Other Australian Cities"
+      />
 
       <Footer />
     </>
