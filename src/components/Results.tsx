@@ -112,15 +112,15 @@ export const Results = () => {
             <CarouselContent className="-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-4">
-                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group">
-                    <div className="flex flex-col lg:flex-row">
+                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group h-full">
+                    <div className="flex flex-col lg:flex-row h-full">
                       {/* Image Section */}
                       {testimonial.image && (
-                        <div className="lg:w-1/2 h-64 lg:h-auto relative overflow-hidden">
+                        <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center bg-muted/20">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
