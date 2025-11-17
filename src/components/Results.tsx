@@ -87,14 +87,14 @@ export const Results = () => {
   }, [carouselApi]);
 
   return (
-    <section id="results" className="relative py-16 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
+    <section id="results" className="relative pt-12 pb-6 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
       {/* Decorative Brand Icon */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-5 pointer-events-none">
         <img src={brandIconSubtle} alt="" className="w-full h-full animate-[spin_40s_linear_infinite]" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-black text-charcoal mb-6">
             Client Success Stories
           </h2>
@@ -180,7 +180,7 @@ export const Results = () => {
           </Carousel>
 
           {/* Enhanced Pagination Dots */}
-          <div className="flex justify-center mt-6 gap-3">
+          <div className="flex justify-center mt-3 gap-3">
             {testimonials.map((_, index) => (
               <button
                 key={index}
