@@ -10,6 +10,8 @@ import {
   Stethoscope, Briefcase, Building2, Home, Wrench, Scale,
   Heart, Smile, Eye, Users, HardHat, Zap, Shield, Target, TrendingUp
 } from "lucide-react";
+import { HubPageLocations } from "@/components/HubPageLocations";
+import { industriesCluster } from "@/utils/contentClusters";
 
 export default function OurIndustries() {
   const industries = [
@@ -180,6 +182,14 @@ export default function OurIndustries() {
           </div>
         </div>
       </section>
+
+
+      {/* All Industry Pages */}
+      <HubPageLocations 
+        spokes={industriesCluster.spokes}
+        title="All Industries We Serve"
+        description="Specialized digital marketing strategies for businesses across all major industries in Australia."
+      />
 
       {/* CTA */}
       <section className="py-24 bg-background">
