@@ -18,40 +18,13 @@ import { Footer } from "@/components/Footer";
 import { Closing } from "@/components/Closing";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
+import { getOrganizationSchema, getWebsiteSchema } from "@/utils/schemaMarkup";
 
 
 const Index = () => {
-  // Organization Schema for Homepage
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Odin Digital",
-    "url": "https://odindigital.com.au",
-    "logo": "https://odindigital.com.au/logo.png",
-    "description": "Australia's leading digital marketing agency specializing in SEO, Google Ads, Facebook Ads, and web design. 540% average ROI, 95% client retention rate.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "AU"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Sales",
-      "email": "hello@odindigital.com.au",
-      "availableLanguage": "English"
-    },
-    "sameAs": [
-      "https://www.facebook.com/odindigital",
-      "https://www.linkedin.com/company/odin-digital",
-      "https://www.instagram.com/odindigital"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "283",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
+  // Enhanced Schema Markup for Homepage
+  const organizationSchema = getOrganizationSchema();
+  const websiteSchema = getWebsiteSchema();
 
   return (
     <div className="min-h-screen">
@@ -59,8 +32,15 @@ const Index = () => {
         <title>Digital Marketing Agency Australia | SEO, Google Ads, Facebook Ads | Odin Digital</title>
         <meta name="description" content="Top-rated digital marketing agency in Australia. 540% average ROI. Expert SEO, Google Ads, Facebook Ads & web design. No lock-in contracts. Get your free quote today." />
         <link rel="canonical" href="https://odindigital.com.au/" />
+        
+        {/* Enhanced Organization Schema */}
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
+        </script>
+        
+        {/* Website Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify(websiteSchema)}
         </script>
       </Helmet>
       
