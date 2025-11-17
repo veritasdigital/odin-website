@@ -16,12 +16,12 @@ const LeadMagnetBooking = () => {
           </div>
         </header>
 
-        <main className="container mx-auto px-4 py-12">
+        <main className="container mx-auto px-4 py-12 pb-24">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-foreground mb-12">
             Last Step! Select A Meeting Time That Suits You Best
           </h1>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto mb-12">
             <iframe 
               src="https://api.leadconnectorhq.com/widget/booking/8tp0FEL5RNqYH0wwRjUN" 
               style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '600px' }} 
