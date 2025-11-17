@@ -18,6 +18,7 @@ import NotFound from "./pages/NotFound";
 import SkipToContent from "./components/SkipToContent";
 import StrategySession from "./pages/StrategySession";
 import Onboarding from "./pages/Onboarding";
+import LeadMagnetBooking from "./pages/LeadMagnetBooking";
 import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
@@ -316,6 +317,7 @@ const App = () => (
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/strategy-session" element={<StrategySession />} />
           <Route path="/onboarding" element={<Onboarding />} />
+          <Route path="/lead-magnet-booking" element={<LeadMagnetBooking />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
