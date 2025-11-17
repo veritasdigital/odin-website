@@ -397,9 +397,13 @@ const ApplicationForm = memo(() => {
                     localStorage.removeItem("applicationFormData");
                     localStorage.removeItem("applicationLeadId");
 
-                    // Redirect to thank you page
+                    // Redirect based on investment amount
                     setTimeout(() => {
-                      window.location.href = "/thank-you";
+                      if (option === "< $3k") {
+                        window.location.href = "/t2-ads-calendar";
+                      } else {
+                        window.location.href = "/ads-calendar";
+                      }
                     }, 500);
                   }}
                   className={`p-5 sm:p-6 text-left border-2 rounded-2xl transition-all duration-200 touch-manipulation active:scale-98 ${
