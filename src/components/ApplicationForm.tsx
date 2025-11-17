@@ -8,7 +8,6 @@ import { supabase } from "@/integrations/supabase/client";
 
 interface FormData {
   firstName: string;
-  lastName: string;
   email: string;
   phone: string;
   company: string;
@@ -25,7 +24,6 @@ const ApplicationForm = memo(() => {
   const [leadId, setLeadId] = useState<string | null>(null);
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
-    lastName: "",
     email: "",
     phone: "",
     company: "",
@@ -38,7 +36,7 @@ const ApplicationForm = memo(() => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const totalSteps = 10;
+  const totalSteps = 9;
 
   // Load from local storage on mount
   useEffect(() => {
@@ -71,23 +69,21 @@ const ApplicationForm = memo(() => {
       case 1:
         return (formData.firstName || "").trim().length > 0;
       case 2:
-        return (formData.lastName || "").trim().length > 0;
-      case 3:
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email || "");
-      case 4:
+      case 3:
         const phoneDigits = (formData.phone || "").replace(/\D/g, '');
         return phoneDigits.length >= 9 && phoneDigits.length <= 12;
-      case 5:
+      case 4:
         return (formData.company || "").trim().length > 0;
-      case 6:
+      case 5:
         return true; // Website is optional
-      case 7:
+      case 6:
         return (formData.challenge || "").trim().length > 0;
-      case 8:
+      case 7:
         return (formData.timeline || "").length > 0;
-      case 9:
+      case 8:
         return (formData.businessType || "").length > 0;
-      case 10:
+      case 9:
         return (formData.investment || "").length > 0;
       default:
         return false;
@@ -177,26 +173,6 @@ const ApplicationForm = memo(() => {
             {questionNumber}
             <div className="space-y-3 sm:space-y-4">
               <h2 className="text-[28px] leading-[1.2] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
-                And what's your <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-2 py-1 rounded -z-10">last name</span> {formData.firstName}?*
-              </h2>
-            </div>
-            <Input
-              value={formData.lastName}
-              onChange={(e) => handleInputChange("lastName", e.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder="Type your answer here..."
-              className="text-xl sm:text-2xl py-6 sm:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
-              autoFocus
-            />
-          </div>
-        );
-
-      case 3:
-        return (
-          <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
-            {questionNumber}
-            <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-[28px] leading-[1.2] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
                 What's your best contact <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-2 py-1 rounded -z-10">email address</span> {formData.firstName}?*
               </h2>
               <p className="text-lg sm:text-xl text-gray-700">So we can personally deliver you a custom, obligation free Marketing Plan ✨</p>
@@ -213,7 +189,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 4:
+      case 3:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -240,7 +216,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 5:
+      case 4:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -261,7 +237,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 6:
+      case 5:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -283,7 +259,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 7:
+      case 6:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -303,7 +279,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 8:
+      case 7:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -339,7 +315,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 9:
+      case 8:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -374,7 +350,7 @@ const ApplicationForm = memo(() => {
           </div>
         );
 
-      case 10:
+      case 9:
         return (
           <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
@@ -432,7 +408,7 @@ const ApplicationForm = memo(() => {
           {renderQuestion()}
 
           {/* Action Buttons - only show for non-multiple choice questions */}
-          {![8, 9, 10].includes(currentStep) && (
+          {![7, 8, 9].includes(currentStep) && (
             <div className="flex justify-between items-center mt-8 sm:mt-10 pt-4 border-t border-gray-100">
               <div className="text-sm sm:text-base text-gray-500 font-medium">
                 press <span className="font-bold text-gray-700">Enter ↵</span>
@@ -442,7 +418,7 @@ const ApplicationForm = memo(() => {
                 disabled={!validateCurrentStep() || isSubmitting}
                 className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 sm:px-12 py-6 sm:py-7 text-xl sm:text-2xl touch-manipulation shadow-xl hover:shadow-2xl transition-all duration-200 rounded-xl font-semibold active:scale-95"
               >
-                {currentStep === 4 ? "Next" : "OK"}
+                {currentStep === 3 ? "Next" : "OK"}
               </Button>
             </div>
           )}
