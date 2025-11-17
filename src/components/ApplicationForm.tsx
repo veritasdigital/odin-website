@@ -113,6 +113,7 @@ const ApplicationForm = memo(() => {
             email: formData.email,
             phone: formData.phone,
             timezone: formData.timezone,
+            timestamp: new Date().toISOString(),
           }),
         });
       } catch (error) {
