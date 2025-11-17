@@ -45,6 +45,9 @@ const Onboarding = () => {
       {/* Main content area with iframe */}
       <main className="min-h-screen pt-16 bg-background">
         <div className="container mx-auto px-4 py-8">
+          <h1 className="text-4xl font-bold text-center mb-8 text-foreground">
+            New Client Questionnaire
+          </h1>
           <iframe
             src="https://api.leadconnectorhq.com/widget/survey/lcHOsXy17xByWadFMpaI"
             style={{ border: "none", width: "100%" }}
