@@ -17,7 +17,7 @@ const LeadMagnetBooking = () => {
         </header>
 
         <main className="flex-1 w-full px-4 py-6 md:py-12">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-2xl mx-auto">
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-foreground mb-6 md:mb-12 px-2">
               Last Step! Select A Meeting Time That Suits You Best
             </h1>
