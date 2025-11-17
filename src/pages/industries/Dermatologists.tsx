@@ -31,194 +31,26 @@ import {
 const Dermatologists = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Full-service dermatology marketing agency specializing in SEO, Google Ads, Meta Ads, and Web Design for dermatologists. $574M+ in client revenue. No lock-in contracts.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+61-XXX-XXX-XXX",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://growth-conduit-central.lovable.app/industries/dermatologists",
-        "url": "https://growth-conduit-central.lovable.app/industries/dermatologists",
-        "name": "Dermatology Marketing Agency | Attract High-Value Cosmetic Patients | Odin Digital",
-        "description": "The dermatology marketing agency that fills your schedule with high-value cosmetic patients. SEO, Google Ads, Meta Ads, and Web Design for dermatologists. $574M+ in client revenue. No lock-in contracts.",
-        "isPartOf": {
-          "@id": "https://growth-conduit-central.lovable.app/#website"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Dermatology Marketing",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Australia"
-        },
-        "description": "Comprehensive digital marketing services for dermatology practices, including SEO, Google Ads, Meta Ads, and Web Design, focused on attracting high-value cosmetic patients.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Dermatology Marketing Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SEO for Dermatologists"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads for Dermatologists"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Meta Ads for Dermatologists"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Web Design for Dermatologists"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does dermatology marketing cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Our pricing is customized based on your goals, market competition, and the services you need. A typical comprehensive dermatology practice marketing strategy (SEO + Google Ads + Meta Ads + Website) ranges from $3,000 to $8,000 per month, depending on your market size and growth targets. We provide a transparent proposal during your free strategy session."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from dermatology marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Google Ads and Meta Ads deliver immediate results—you'll see traffic and leads within days. SEO is a longer-term investment, with initial improvements in 3-4 months and significant growth in 6-12 months. Our approach combines both for immediate leads and long-term dominance."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help me attract more cosmetic patients instead of just insurance patients?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. This is our specialty. We use advanced audience targeting, high-intent keywords, and strategic messaging to attract patients actively seeking Botox, fillers, laser treatments, and other high-margin cosmetic services. We help you shift your patient mix toward higher profitability."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you handle HIPAA compliance in your marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Absolutely. All of our campaigns, websites, and content are fully HIPAA-compliant. We understand the strict privacy regulations in healthcare and ensure all patient data and marketing materials meet legal standards."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you differentiate dermatologists from med spas in your marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We emphasize your medical training, board certification, and superior safety protocols. We create content that educates patients on the risks of non-medical providers and positions you as the trusted, expert choice for cosmetic procedures."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help with online reviews and reputation management?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We implement a proactive review generation strategy to flood your Google Business Profile with 5-star reviews. We also monitor your online reputation and provide guidance on responding to negative reviews professionally."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you build dermatology websites?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our dermatology website design service includes modern, mobile-first websites with before/after galleries, online booking integration, and SEO optimization. We build websites that convert visitors into booked appointments."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the ROI of dermatology marketing?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Our clients typically see a 3:1 to 10:1 return on their marketing investment, depending on their service mix and pricing. For example, if you invest $5,000/month and acquire 10 new Botox patients (average lifetime value $2,000 each), your ROI is 4:1 ($20,000 revenue / $5,000 spend)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer dermatology marketing for both medical and cosmetic services?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We create strategies that balance both. We ensure you maintain a steady flow of medical dermatology patients (for stability) while aggressively growing your high-margin cosmetic services (for profitability)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you help with social media marketing for dermatologists?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Our dermatology social media marketing service includes content creation, before/after showcases (HIPAA-compliant), and paid advertising on Instagram and Facebook to attract cosmetic patients and build your brand."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Marketing Services for Dermatologists",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
-      }
-    ]
+    "@type": "ProfessionalService",
+    "@id": "https://odindigital.com.au/industries/dermatologists#professionalservice",
+    "name": "Dermatology Marketing Agency",
+    "description": "The dermatology marketing agency that fills your schedule with high-value cosmetic patients. SEO, Google Ads, Meta Ads, and Web Design for dermatologists. $574M+ in client revenue. No lock-in contracts.",
+    "url": "https://odindigital.com.au/industries/dermatologists",
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$"
   };
 
   return (

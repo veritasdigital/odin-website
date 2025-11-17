@@ -201,7 +201,9 @@ export const getProfessionalServiceSchema = (
   serviceName: string,
   description: string,
   url: string,
-  areaServed?: string | { "@type": string; name: string }
+  areaServed?: string | { "@type": string; name: string },
+  ratingValue?: string,
+  reviewCount?: string
 ) => ({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -218,8 +220,8 @@ export const getProfessionalServiceSchema = (
   },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "283",
+    "ratingValue": ratingValue || "4.9",
+    "reviewCount": reviewCount || "283",
     "bestRating": "5",
     "worstRating": "1"
   },

@@ -31,69 +31,26 @@ const Dentists = () => {
 
   const jsonLdSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://odindigital.com.au/#organization",
-        "name": "Odin Digital",
-        "url": "https://odindigital.com.au",
-        "logo": "https://odindigital.com.au/logo.png",
-        "description": "Digital marketing agency specialising in dental practice marketing, SEO, Google Ads, Meta Ads, and web design.",
-        "sameAs": [
-          "https://www.facebook.com/odindigital",
-          "https://www.linkedin.com/company/odin-digital",
-          "https://www.instagram.com/odindigital"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "email": "hello@odindigital.com.au"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://odindigital.com.au/industries/dentists#webpage",
-        "url": "https://odindigital.com.au/industries/dentists",
-        "name": "Dental Practice Marketing Solutions | Odin Digital",
-        "description": "Dental marketing agency for growing practices. SEO, Google Ads, Meta Ads, web design. 540% average ROI, 95% retention, $574M+ client revenue.",
-        "isPartOf": { "@id": "https://odindigital.com.au/#website" },
-        "inLanguage": "en-AU",
-        "datePublished": "2024-01-01",
-        "dateModified": "2024-01-01"
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://odindigital.com.au/industries/dentists#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://odindigital.com.au/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Industries",
-            "item": "https://odindigital.com.au/industries"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Dentists",
-            "item": "https://odindigital.com.au/industries/dentists"
-          }
-        ]
-      },
-      {
-        "@type": "AggregateRating",
-        "@id": "https://odindigital.com.au/industries/dentists#rating",
-        "ratingValue": "4.9",
-        "ratingCount": "283",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    ]
+    "@type": "ProfessionalService",
+    "@id": "https://odindigital.com.au/industries/dentists#professionalservice",
+    "name": "Dental Practice Marketing Solutions",
+    "description": "Dental marketing agency for growing practices. SEO, Google Ads, Meta Ads, web design. 540% average ROI, 95% retention, $574M+ client revenue.",
+    "url": "https://odindigital.com.au/industries/dentists",
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$"
   };
 
   return (
