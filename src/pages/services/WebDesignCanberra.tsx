@@ -206,8 +206,8 @@ const WebDesignCanberra = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@graph": [{
-      "@type": "LocalBusiness",
-      "@id": "https://odindigital.com.au/#local-business",
+      "@type": "Organization",
+      "@id": "https://odindigital.com.au/#organization",
       "name": "Odin Digital",
       "url": "https://odindigital.com.au",
       "logo": "https://odindigital.com.au/logo.png",
@@ -230,18 +230,24 @@ const WebDesignCanberra = () => {
       "description": "Professional web design & development for Canberra businesses. Website design, e-commerce, WordPress, redesign, and support. 150+ Canberra clients.",
       "inLanguage": "en-AU"
     }, {
-      "@type": "Service",
-      "@id": "https://odindigital.com.au/web-design-canberra#web-design",
+      "@type": "ProfessionalService",
+      "@id": "https://odindigital.com.au/web-design-canberra#service",
       "name": "Web Design & Development",
       "description": "Professional web design and development services for Canberra businesses.",
       "provider": {
-        "@id": "https://odindigital.com.au/#local-business"
+        "@id": "https://odindigital.com.au/#organization"
       },
       "areaServed": {
         "@type": "City",
         "name": "Canberra"
       },
-      "serviceType": "Web Design"
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }, {
       "@type": "FAQPage",
       "mainEntity": faqs.map(faq => ({
@@ -252,13 +258,6 @@ const WebDesignCanberra = () => {
           "text": faq.answer
         }
       }))
-    }, {
-      "@type": "AggregateRating",
-      "@id": "https://odindigital.com.au/web-design-canberra#rating",
-      "ratingValue": "4.9",
-      "ratingCount": "150",
-      "bestRating": "5",
-      "worstRating": "1"
     }]
   };
   return <>

@@ -313,15 +313,21 @@ const TikTokAdvertising = () => {
         }
       },
       {
-        "@type": "Service",
-        "@id": "https://growth-conduit-central.lovable.app/tiktok-advertising#tiktok-ads",
+        "@type": "ProfessionalService",
+        "@id": "https://growth-conduit-central.lovable.app/tiktok-advertising#service",
         "name": "TikTok Advertising Services",
         "description": "TikTok ads management including campaign strategy, creative production, campaign management, and reporting.",
         "provider": {
           "@id": "https://growth-conduit-central.lovable.app/#organization"
         },
         "areaServed": "AU",
-        "serviceType": "Social Media Advertising"
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "283",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
       },
       {
         "@type": "FAQPage",
@@ -333,14 +339,6 @@ const TikTokAdvertising = () => {
             "text": faq.answer
           }
         }))
-      },
-      {
-        "@type": "AggregateRating",
-        "@id": "https://growth-conduit-central.lovable.app/tiktok-advertising#rating",
-        "ratingValue": "4.9",
-        "ratingCount": "283",
-        "bestRating": "5",
-        "worstRating": "1"
       }
     ]
   };
