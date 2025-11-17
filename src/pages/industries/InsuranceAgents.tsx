@@ -219,120 +219,26 @@ const InsuranceAgents = () => {
   }];
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [{
-      "@type": "Organization",
-      "@id": "https://growth-conduit-central.lovable.app/#organization",
-      "name": "Odin Digital",
-      "url": "https://growth-conduit-central.lovable.app/",
-      "logo": "https://growth-conduit-central.lovable.app/logo.png",
-      "description": "Performance-focused digital marketing agency specialising in compliant, high-ROI client acquisition for Insurance Agents and Brokerages in Australia.",
-      "founder": {
-        "@type": "Person",
-        "name": "Lucas Durante"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "url": "https://growth-conduit-central.lovable.app/contact"
-      },
-      "sameAs": ["https://www.linkedin.com/company/odin-digital", "https://www.facebook.com/odindigital", "https://twitter.com/odindigital"]
-    }, {
-      "@type": "WebPage",
-      "@id": "https://growth-conduit-central.lovable.app/industries/insurance-agents#webpage",
-      "url": "https://growth-conduit-central.lovable.app/industries/insurance-agents",
-      "name": "Insurance Agents Marketing National Industry Hub",
-      "inLanguage": "en-AU",
-      "description": "Comprehensive digital marketing strategies for Insurance Agents, focusing on compliance, trust-building, SEO, PPC, and lead generation across Australia.",
-      "about": {
-        "@type": "Thing",
-        "name": "Insurance Agents Marketing"
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://growth-conduit-central.lovable.app/"
-        }, {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Industries",
-          "item": "https://growth-conduit-central.lovable.app/industries"
-        }, {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Insurance Agents Marketing"
-        }]
-      }
-    }, {
-      "@type": "Service",
-      "serviceType": "Digital Marketing for Insurance Agents",
-      "provider": {
-        "@type": "Organization",
-        "name": "Odin Digital"
-      },
-      "areaServed": "Australia",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Insurance Agent Marketing Services",
-        "itemListElement": [{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Compliance-First SEO & Content Marketing"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Hyper-Targeted PPC & Meta Ads"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "High-Converting Web Design & UX"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "CRM & Automation Integration"
-          }
-        }]
-      }
-    }, {
-      "@type": "FAQPage",
-      "mainEntity": faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    }, {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Service",
-        "name": "Odin Digital - Digital Marketing for Insurance Agents"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Evan Tsaboukos"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "reviewBody": "Lucas is honestly one of the best things that ever happened to my business. When I first started working with him, I was doing $20k months on my own, then started working with Lucas on a new product launch...that year after I was averaging over $100k a month.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Imperial Wealth"
-      }
-    }]
+    "@type": "ProfessionalService",
+    "@id": "https://odindigital.com.au/industries/insurance-agents#professionalservice",
+    "name": "Insurance Agency Marketing Solutions",
+    "description": "Compliance-first digital marketing for insurance agencies. SEO, Google Ads, Meta Ads, web design. 340% average revenue growth, 250+ agencies helped.",
+    "url": "https://odindigital.com.au/industries/insurance-agents",
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "250",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$"
   };
   return <>
       <Helmet>

@@ -26,205 +26,30 @@ const GoogleAdsSydney = () => {
   }, []);
   const schemaMarkup = {
     "@context": "https://schema.org",
-    "@graph": [{
-      "@type": "Organization",
-      "name": "Odin Digital",
-      "url": "https://growth-conduit-central.lovable.app/",
-      "logo": "https://growth-conduit-central.lovable.app/logo.png",
-      "description": "Performance-focused Google Ads agency in Sydney. We specialize in PPC management for Sydney businesses, focusing on ROI and competitive intelligence in Australia's most expensive market. $574M+ in client revenue. No lock-in contracts.",
-      "founder": {
-        "@type": "Person",
-        "name": "Lucas Durante"
-      },
-      "slogan": "No Lock-In Contracts. Just Results.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+61-XXX-XXX-XXX",
-        "contactType": "Sales",
-        "areaServed": "AU",
-        "availableLanguage": "English"
-      },
-      "sameAs": []
-    }, {
-      "@type": "LocalBusiness",
-      "@id": "https://growth-conduit-central.lovable.app/google-ads-sydney",
-      "name": "Odin Digital - Google Ads Agency Sydney",
-      "description": "Sydney's top PPC management company. Expert Google Ads services focusing on local targeting, CPC reduction, and maximum ROI.",
-      "url": "https://growth-conduit-central.lovable.app/google-ads-sydney",
-      "telephone": "+61-XXX-XXX-XXX",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Sydney",
-        "addressRegion": "NSW",
-        "postalCode": "2000",
-        "addressCountry": "AU"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-33.8688",
-        "longitude": "151.2093"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Sydney",
-        "containedIn": {
-          "@type": "State",
-          "name": "New South Wales"
-        }
+    "@type": "ProfessionalService",
+    "@id": "https://odindigital.com.au/google-ads-sydney#professionalservice",
+    "name": "Google Ads Management Sydney",
+    "description": "Performance-focused Google Ads agency in Sydney. We specialize in PPC management for Sydney businesses, focusing on ROI and competitive intelligence in Australia's most expensive market. $574M+ in client revenue. No lock-in contracts.",
+    "url": "https://odindigital.com.au/google-ads-sydney",
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Sydney",
+      "containedIn": {
+        "@type": "State",
+        "name": "New South Wales"
       }
-    }, {
-      "@type": "Service",
-      "serviceType": "PPC Management",
-      "provider": {
-        "@type": "Organization",
-        "name": "Odin Digital"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Sydney"
-      },
-      "description": "Expert Pay-Per-Click (PPC) and Google Ads management services for businesses in Sydney, NSW, focusing on maximum Return on Ad Spend (ROAS) in Australia's most competitive market.",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "PPC Management Sydney Services",
-        "itemListElement": [{
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Google Ads Management"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "PPC Advertising Sydney"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Landing Page Optimization"
-          }
-        }, {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Competitive Intelligence"
-          }
-        }]
-      }
-    }, {
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How much budget do I need for Google Ads in Sydney?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The required budget depends on your industry competition and target CPA. For most Sydney businesses, we recommend starting with $3,000 - $6,000 per month to allow for sufficient data collection and optimization in this highly competitive market. Our ppc management sydney team will analyze your market during your free audit and recommend a precise, efficient budget."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How long does it take to see results from ppc sydney campaigns?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Unlike SEO, PPC delivers immediate results. You will see traffic and leads within days of launch. The first 4-6 weeks are dedicated to data collection and optimization. Significant improvements in CPA and ROAS typically occur within 2-3 months as our ppc experts sydney refine the campaigns."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What is the difference between Google Ads and adwords sydney?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Google Ads is the current name for the platform previously known as Google AdWords. They are the same thing. Whether you call it adwords sydney or Google Ads, we are the google ads agency sydney that manages it all."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Do you offer an adwords management sydney service with a performance guarantee?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We offer the best guarantee in the industry: No Lock-In Contracts. Our focus on ROAS is our guarantee. If we are not generating a positive return on your ad spend, you are free to leave at any time. We put the risk on us, not you."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Why should I choose Odin Digital over a large national google agency sydney?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Large national agencies often apply generic strategies and are slow to adapt. We are a lean team of ppc experts sydney who provide hyper-focused, personalized service. We understand the Sydney market, we monitor your competitors daily, and we focus on your ROAS, not our retainer."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Do you manage other pay per click sydney platforms like Meta Ads?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We are a full-service ppc agency sydney and manage campaigns across Google, Meta (Facebook/Instagram), LinkedIn, and other high-value platforms. We create a holistic ppc advertising sydney strategy for maximum reach and ROI."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do you prevent my budget from being wasted on clicks from outside my service area?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We use precise geographic targeting (radius targeting, suburb targeting, or region-wide targeting) to ensure your ads are only shown to people within your exact service area. We also use IP exclusions and location bid adjustments to maximize efficiency. This is especially critical in Sydney's large, diverse market."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can you help me with my landing pages?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Our service includes Landing Page Optimization (CRO). Your ad is only as good as the page it sends traffic to. We ensure your landing pages are perfectly aligned with your ad copy and designed to maximize conversions. In Sydney's expensive market, this is non-negotiable."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What metrics do you report on?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We report on the metrics that matter: Cost Per Acquisition (CPA), Return on Ad Spend (ROAS), Lead Quality, Revenue Generated, and Customer Lifetime Value (CLV). We move beyond vanity metrics like impressions and clicks to focus on what actually drives your business forward."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How is your adwords management company sydney different from others?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are obsessed with efficiency and ROI. We don't just manage your campaigns—we treat your budget like our own. We actively monitor your competitors daily and adjust your strategy to ensure you stay ahead. Our 95% client retention rate is proof that we consistently deliver value, month after month."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do you handle Sydney's high CPCs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We use a combination of strategies to reduce CPCs and improve ROI: Quality Score Optimization (reduce CPCs by 20-50%), Aggressive Negative Keywords (filter out low-intent traffic), Audience Layering (target high-intent buyers only), and Landing Page Optimization (improve conversion rates so you can afford higher CPCs and still maintain profitability)."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Do you offer ppc company reviews or case studies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. We have numerous case studies and client testimonials demonstrating our ability to deliver exceptional ROAS in competitive markets like Sydney. Contact us for specific examples relevant to your industry."
-        }
-      }]
-    }, {
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Service",
-        "name": "Google Ads Sydney Services",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Fabienne Costa"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      },
-      "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Odin Digital"
-      }
-    }]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$$"
   };
   const problemPoints = [{
     icon: DollarSign,

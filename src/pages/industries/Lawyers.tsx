@@ -35,183 +35,26 @@ const Lawyers = () => {
 
   const jsonLdSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://odindigital.com.au/",
-        "logo": "https://odindigital.com.au/logo.png",
-        "description": "Performance-focused digital marketing for lawyers and law firms in Australia. We specialize in SEO, Google Ads, Meta Ads, and website design for legal practices, focusing on high-value client acquisition and compliance. $574M+ in client revenue.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        },
-        "sameAs": []
-      },
-      {
-        "@type": "Service",
-        "serviceType": "Digital Marketing for Lawyers",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Australia"
-        },
-        "description": "Comprehensive digital marketing services for Australian law firms, including SEO, Google Ads, Meta Ads, and website design, focused on high-value client acquisition, compliance, and ROI.",
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Legal Marketing Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "SEO for Lawyers"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Google Ads for Law Firms"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Meta Ads for Law Firms"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Law Firm Website Design"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How much does law firm marketing cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Law firm marketing costs vary depending on your practice area, competition, and goals. Most Australian law firms invest $3,000 - $10,000 per month for comprehensive digital marketing (SEO, Google Ads, Meta Ads, website). Our team will provide a detailed quote during your free audit."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does it take to see results from SEO?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SEO is a long-term strategy. You will typically see initial improvements in rankings and traffic within 3-4 months, with significant results within 6-12 months. Google Ads delivers immediate results (within days)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you ensure compliance with Law Society advertising rules?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We have extensive experience with legal advertising regulations across all Australian states. All campaigns are reviewed to ensure compliance with Law Society rules and ACCC guidelines. We never make prohibited claims or breach client confidentiality."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you filter out low-quality leads?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use precise targeting (keywords, demographics, location) and qualification mechanisms (intake forms, call screening) to ensure you only receive high-quality case inquiries that match your practice area and ideal client profile."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you work with all practice areas?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We work with law firms across all practice areas, including family law, personal injury, commercial law, criminal defense, estate planning, conveyancing, immigration, and more. We tailor our strategies to your specific practice area."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can you track ROI and cost per case?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We implement advanced tracking to measure cost per case inquiry, cost per case acquisition, and revenue impact. You will know exactly how much each case costs to acquire and the ROI of your marketing investment."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer website design for law firms?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We specialize in lawyer website design that is high-converting, mobile-optimized, SEO-friendly, and compliant with legal advertising regulations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How is your legal marketing different from other agencies?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We are obsessed with results and compliance. We understand the unique challenges of legal marketing (compliance, lead quality, practice area specialization) and tailor our strategies accordingly. Our 95% client retention rate is proof that we consistently deliver value."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you work with small law firms or solo practitioners?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. We work with law firms of all sizes, from solo practitioners to large multi-partner firms, offering flexible pricing and strategies designed to maximize ROI."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer a performance guarantee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We offer the best guarantee in the industry: No Lock-In Contracts. If we are not delivering high-quality case inquiries and a positive ROI, you are free to leave at any time. We put the risk on us, not you."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "Marketing Services for Lawyers",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
-      }
-    ]
+    "@type": "ProfessionalService",
+    "@id": "https://odindigital.com.au/industries/lawyers#professionalservice",
+    "name": "Digital Marketing for Lawyers and Law Firms",
+    "description": "Performance-focused digital marketing for lawyers and law firms in Australia. We specialize in SEO, Google Ads, Meta Ads, and website design for legal practices, focusing on high-value client acquisition and compliance. $574M+ in client revenue.",
+    "url": "https://odindigital.com.au/industries/lawyers",
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$"
   };
 
   return (
