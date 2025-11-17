@@ -25,6 +25,8 @@ import {
   Shield,
   Zap,
 } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsPerth = () => {
   const { openForm } = useMarketingForm();
@@ -624,6 +626,12 @@ const FacebookAdsPerth = () => {
             Get Your Free Quote
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Perth", "facebook-ads")}
+          title="Facebook Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

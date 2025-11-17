@@ -8,6 +8,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AlertCircle, FileQuestion, TrendingDown, UserX, DollarSign, Smartphone, Target, MousePointer, Shield, Layout, Zap, Image as ImageIcon, Code, Globe, Search, FileText, MapPin, Settings, Activity, HeadphonesIcon, Briefcase, ShoppingCart, Palette, RefreshCw, FileCode, Award, Lock, Eye, Users, TrendingUp, ChevronDown } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const WebDesignNewcastle = () => {
   const {
     openForm
@@ -630,7 +632,10 @@ const WebDesignNewcastle = () => {
         </section>
 
         {/* Related Services and Cities */}
-        
+        <RelatedLocations 
+          locations={getRelatedLocations("Newcastle", "web-design")}
+          title="Web Design Services in Other Australian Cities"
+        />
 
         <Footer />
         <SideTab />

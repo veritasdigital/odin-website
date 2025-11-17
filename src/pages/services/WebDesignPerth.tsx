@@ -27,6 +27,8 @@ import {
 } from "lucide-react";
 import { AsSeenIn } from "@/components/AsSeenIn";
 import heroPerson from "@/assets/hero-person-new.png";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const WebDesignPerth = () => {
   const { openForm } = useMarketingForm();
@@ -663,6 +665,12 @@ const WebDesignPerth = () => {
             Get Your Free Quote
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Perth", "web-design")}
+          title="Web Design Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>
