@@ -258,7 +258,7 @@ const ContentMarketing = () => {
             </p>
 
             <p className="text-lg leading-relaxed mb-4">
-              How do you find these topics? Start by listening to your customers. What questions do they ask? What challenges do they face? You can also use tools like Google Keyword Planner, Answer the Public, and BuzzSumo to find popular topics in your industry.
+              How do you find these topics? Start by listening to your customers. What questions do they ask? What challenges do they face? You can also use tools like Google Keyword Planner, Answer the Public, and BuzzSumo to find popular topics in your industry. If you're looking to improve your overall content strategy, check out our comprehensive <Link to="/services/seo-agency" className="text-primary hover:underline font-semibold">SEO services</Link> to ensure your content ranks well in search engines.
             </p>
           </section>
 
@@ -269,7 +269,7 @@ const ContentMarketing = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Ready to Boost Your Content Marketing?</h3>
                   <p className="text-lg text-muted-foreground">
-                    Our team of digital marketing experts can help you create a content strategy that drives results. Get your free marketing strategy session today.
+                    Our team can help you create compelling content that drives traffic and converts. Explore our <Link to="/services/seo-agency" className="text-primary hover:underline font-semibold">SEO services</Link> to maximize your content's reach and our <Link to="/services/social-media" className="text-primary hover:underline font-semibold">social media marketing</Link> to amplify your message across all channels.
                   </p>
                 </div>
                 <Button asChild size="lg" className="gradient-cta whitespace-nowrap">
