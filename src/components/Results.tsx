@@ -116,11 +116,11 @@ export const Results = () => {
                     <div className="flex flex-col lg:flex-row h-full">
                       {/* Image Section */}
                       {testimonial.image && (
-                        <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center bg-muted/20">
+                        <div className="lg:w-1/2 relative overflow-hidden flex bg-muted/20">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
@@ -130,22 +130,22 @@ export const Results = () => {
                       )}
                       
                       {/* Content Section */}
-                      <div className={`p-8 ${testimonial.image ? 'lg:w-1/2' : 'w-full'} flex flex-col justify-center relative`}>
-                        <div className="absolute top-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
+                      <div className={`p-6 ${testimonial.image ? 'lg:w-1/2' : 'w-full'} flex flex-col justify-center relative`}>
+                        <div className="absolute top-3 right-3 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
                           <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 32 32">
                             <path d="M10 8v8l-4 8h6l4-8v-8zM22 8v8l-4 8h6l4-8v-8z"/>
                           </svg>
                         </div>
                         
-                        <div className="flex items-center mb-6">
+                        <div className="flex items-center mb-4">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                           ))}
                         </div>
                         
-                        <div className="mb-6">
+                        <div className="mb-4">
                           <h3 className="text-xl font-bold text-charcoal mb-2">{testimonial.company}</h3>
-                          <div className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-full font-bold text-sm mb-4">
+                          <div className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-full font-bold text-sm mb-3">
                             {testimonial.result}
                           </div>
                           <blockquote className="text-charcoal/80 leading-relaxed text-lg italic">
@@ -162,7 +162,7 @@ export const Results = () => {
                           </blockquote>
                         </div>
                         
-                        <div className="border-t border-charcoal/10 pt-6 mt-auto">
+                        <div className="border-t border-charcoal/10 pt-4 mt-auto">
                           <p className="font-bold text-charcoal text-lg">{testimonial.author}</p>
                           <p className="text-charcoal/60 mb-1">{testimonial.title}, {testimonial.company}</p>
                           {testimonial.location && (
