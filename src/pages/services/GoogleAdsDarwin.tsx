@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -536,6 +537,9 @@ const GoogleAdsDarwin = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Darwin" serviceType="Google Ads" />
 
         {/* FAQ Section */}
         <section className="py-20 mb-20 md:mb-0">
