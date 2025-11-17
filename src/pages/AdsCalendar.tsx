@@ -24,8 +24,8 @@ const AdsCalendar = () => {
           <div className="max-w-4xl mx-auto mb-12">
             <iframe 
               src="https://api.leadconnectorhq.com/widget/booking/9PlFVMdnbsdS5yOraVfe" 
-              style={{ width: '100%', border: 'none', overflow: 'hidden' }} 
-              scrolling="no" 
+              style={{ width: '100%', border: 'none', overflow: 'visible', height: '1000px' }} 
+              scrolling="yes" 
               id="XdtsI24khl150RzT0cUK_1763374948927"
             />
             <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
