@@ -2,15 +2,39 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { RelatedArticles } from "@/components/RelatedArticles";
+import { ROICalculator } from "@/components/ROICalculator";
+import { DownloadableResource } from "@/components/DownloadableResource";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, MapPin, Star, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, MapPin, Star, TrendingUp, Users, FileText, CheckSquare } from "lucide-react";
 import heroImage from "@/assets/blog/local-seo-2026.jpg";
 import authorImage from "@/assets/odin-team-real.jpg";
 
 const LocalSEO2026 = () => {
   const publishDate = "August 18, 2025";
   const readTime = "12 min read";
+
+  const relatedArticles = [
+    {
+      title: "Google Ads for Dummies: A Complete Guide",
+      description: "Learn how to set up and run successful Google Ads campaigns for your Australian small business.",
+      path: "/blog/google-ads-guide",
+      topic: "Paid Advertising"
+    },
+    {
+      title: "SEO Checklist 2025",
+      description: "Complete SEO checklist to ensure your website ranks well in search engines.",
+      path: "/blog/seo-checklist-2025",
+      topic: "SEO"
+    },
+    {
+      title: "Content Marketing Guide",
+      description: "Learn how to write blog posts that your Australian customers will actually read.",
+      path: "/blog/blog-post-content-marketing",
+      topic: "Content Marketing"
+    }
+  ];
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -612,9 +636,34 @@ const LocalSEO2026 = () => {
                 </div>
               </div>
             </Card>
-
           </div>
         </div>
+
+        {/* ROI Calculator */}
+        <ROICalculator />
+
+        {/* Downloadable Resources */}
+        <section className="py-16">
+          <div className="max-w-6xl mx-auto px-6">
+            <h2 className="text-3xl font-black mb-8 text-center">Free Local SEO Resources</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <DownloadableResource
+                title="Local SEO Checklist 2026"
+                description="Complete step-by-step checklist to optimize your business for local search in 2026. Includes GMB optimization, citation building, and review strategies."
+                resourceType="PDF Checklist"
+                icon={<CheckSquare className="h-6 w-6 text-primary" />}
+              />
+              <DownloadableResource
+                title="Local SEO Audit Template"
+                description="Comprehensive audit template to evaluate your current local SEO performance and identify improvement opportunities."
+                resourceType="Excel Template"
+                icon={<FileText className="h-6 w-6 text-primary" />}
+              />
+            </div>
+          </div>
+        </section>
+
+        <RelatedArticles articles={relatedArticles} />
       </article>
 
       <Footer />

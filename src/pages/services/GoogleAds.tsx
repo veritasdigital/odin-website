@@ -3,6 +3,8 @@ import { Footer } from "@/components/Footer";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ROICalculator } from "@/components/ROICalculator";
+import { VideoEmbed } from "@/components/VideoEmbed";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -506,6 +508,17 @@ export default function GoogleAds() {
         spokes={googleAdsCluster.spokes}
         title="Google Ads Services Across Australia"
         description="Expert Google Ads management in major cities across Australia. Find your local PPC specialists below."
+      />
+
+      {/* ROI Calculator */}
+      <ROICalculator />
+
+      {/* Video Section */}
+      <VideoEmbed 
+        videoId="dQw4w9WgXcQ"
+        title="See Our Google Ads Process in Action"
+        description="Learn how we build high-performing Google Ads campaigns that drive real results"
+        className="bg-background"
       />
 
       {/* FAQ Section */}

@@ -2,8 +2,10 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
+import { DownloadableResource } from "@/components/DownloadableResource";
 import { Link } from "react-router-dom";
-import { Calendar, User, Clock, BookOpen, CheckCircle2, ArrowRight, Target, Lightbulb, Eye } from "lucide-react";
+import { Calendar, User, Clock, BookOpen, CheckCircle2, ArrowRight, Target, Lightbulb, Eye, FileText, CheckSquare } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/blog/content-marketing-hero.jpg";
@@ -11,6 +13,27 @@ import heroImage from "@/assets/blog/content-marketing-hero.jpg";
 const ContentMarketing = () => {
   const publishDate = "15 January 2025";
   const readTime = "5 min read";
+
+  const relatedArticles = [
+    {
+      title: "Google Ads for Dummies: A Complete Guide",
+      description: "Learn how to set up and run successful Google Ads campaigns for your Australian small business.",
+      path: "/blog/google-ads-guide",
+      topic: "Paid Advertising"
+    },
+    {
+      title: "Local SEO in 2026: Complete Guide",
+      description: "Dominate your local market with proven SEO strategies for Australian businesses.",
+      path: "/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market",
+      topic: "SEO"
+    },
+    {
+      title: "Marketing Automation for Beginners",
+      description: "Discover how to save time and increase conversions with marketing automation.",
+      path: "/blog/marketing-automation",
+      topic: "Marketing Automation"
+    }
+  ];
 
   const schema = {
     blogPosting: {
@@ -494,7 +517,28 @@ const ContentMarketing = () => {
               </Card>
             </div>
           </section>
+
+          {/* Downloadable Resources */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-black mb-8 text-center">Free Content Marketing Resources</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <DownloadableResource
+                title="Blog Post Template & Checklist"
+                description="Get our proven blog post structure template and pre-publish checklist to ensure every post you write is engaging and SEO-optimized."
+                resourceType="PDF Guide"
+                icon={<FileText className="h-6 w-6 text-primary" />}
+              />
+              <DownloadableResource
+                title="Content Calendar Template"
+                description="Plan your content strategy with our comprehensive monthly content calendar template designed for Australian businesses."
+                resourceType="Excel Template"
+                icon={<CheckSquare className="h-6 w-6 text-primary" />}
+              />
+            </div>
+          </section>
         </article>
+
+        <RelatedArticles articles={relatedArticles} />
 
         <Footer />
       </div>
