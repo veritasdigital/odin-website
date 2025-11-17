@@ -18,6 +18,11 @@ const MelbourneSEO = () => {
 
   const relatedServices = [
     {
+      title: "Local SEO Services",
+      description: "Dominate local search across Australia with our proven local SEO strategies and Google Business Profile optimization.",
+      path: "/services/local-seo"
+    },
+    {
       title: "Google Ads Melbourne",
       description: "Drive immediate Melbourne traffic with PPC while building long-term organic visibility through SEO.",
       path: "/services/google-ads-melbourne"
@@ -32,6 +37,13 @@ const MelbourneSEO = () => {
       description: "Convert your SEO traffic into customers with Melbourne-focused, high-converting web design.",
       path: "/services/web-design-melbourne"
     }
+  ];
+
+  const cityCrossLinks = [
+    { city: "Sydney", url: "/services/sydney-seo" },
+    { city: "Brisbane", url: "/services/brisbane-seo" },
+    { city: "Perth", url: "/services/perth-seo" },
+    { city: "Adelaide", url: "/services/adelaide-seo" },
   ];
 
   // Count-up animation hook
@@ -759,6 +771,34 @@ const MelbourneSEO = () => {
             </Link>
           </Button>
         </div>
+
+        {/* Other Australian Cities - Cross Linking */}
+        <section className="py-16 bg-background">
+          <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-3xl md:text-4xl font-black mb-4 text-center">SEO Services in Other Australian Cities</h2>
+            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+              We provide expert SEO services across Australia's major cities
+            </p>
+            
+            <div className="grid md:grid-cols-4 gap-6">
+              {cityCrossLinks.map((link, index) => (
+                <Link key={index} to={link.url} className="group">
+                  <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center">
+                    <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
+                      SEO {link.city}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Expert SEO services in {link.city}
+                    </p>
+                    <div className="flex items-center justify-center text-primary font-semibold mt-4 group-hover:gap-2 transition-all">
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <RelatedServices services={relatedServices} />
 

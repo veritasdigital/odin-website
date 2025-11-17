@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Search, Target, BarChart3 } from "lucide-react";
 import { Card } from "@/components/ui/card";
@@ -12,6 +13,27 @@ import googleAdsResults from "@/assets/blog/google-ads-performance-results.jpg";
 import odinTeam from "@/assets/odin-team-professional.jpg";
 
 const GoogleAdsGuide = () => {
+  const relatedArticles = [
+    {
+      title: "TikTok For Business: The Complete Guide",
+      description: "Learn how to leverage TikTok's massive audience for business growth with proven advertising strategies.",
+      path: "/blog/tiktok-for-business",
+      topic: "Social Media Marketing"
+    },
+    {
+      title: "SEO Checklist 2025",
+      description: "Complete SEO checklist to ensure your website ranks well in search engines and drives organic traffic.",
+      path: "/blog/seo-checklist-2025",
+      topic: "SEO"
+    },
+    {
+      title: "Marketing Automation Guide",
+      description: "Discover how marketing automation can save time and increase conversion rates for your business.",
+      path: "/blog/marketing-automation",
+      topic: "Marketing Automation"
+    }
+  ];
+
   return (
     <>
       <Helmet>
@@ -483,6 +505,8 @@ const GoogleAdsGuide = () => {
           </div>
         </article>
         
+        <RelatedArticles articles={relatedArticles} />
+
         <Footer />
       </div>
     </>

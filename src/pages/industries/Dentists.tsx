@@ -6,6 +6,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Link } from "react-router-dom";
 import {
   Search,
   MousePointerClick,
@@ -21,7 +22,8 @@ import {
   BarChart,
   Zap,
   Clock,
-  Star
+  Star,
+  ArrowRight
 } from "lucide-react";
 
 const Dentists = () => {
@@ -584,6 +586,69 @@ const Dentists = () => {
           >
             Schedule Free Consultation
           </Button>
+        </div>
+      </section>
+
+      {/* Dental Marketing Services by City - Cross Linking */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-black mb-4 text-center text-charcoal">Dental Marketing Services by City</h2>
+          <p className="text-charcoal/70 text-center mb-12 max-w-2xl mx-auto">
+            We help dental practices grow across Australia's major cities with specialized local marketing strategies
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Link to="/services/sydney-seo" className="group">
+              <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors text-charcoal">
+                  Dental SEO Sydney
+                </h3>
+                <p className="text-charcoal/70 mb-4">
+                  Dominate Sydney's competitive dental market with expert local SEO and Google Business optimization.
+                </p>
+                <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/services/melbourne-seo" className="group">
+              <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors text-charcoal">
+                  Dental SEO Melbourne
+                </h3>
+                <p className="text-charcoal/70 mb-4">
+                  Attract high-value Melbourne patients with conversion-focused dental marketing and SEO.
+                </p>
+                <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Card>
+            </Link>
+
+            <Link to="/services/brisbane-seo" className="group">
+              <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors text-charcoal">
+                  Dental SEO Brisbane
+                </h3>
+                <p className="text-charcoal/70 mb-4">
+                  Grow your Brisbane dental practice with proven local SEO and Google Ads strategies.
+                </p>
+                <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all">
+                  Learn More
+                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Card>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <p className="text-charcoal/70 mb-4">
+              We also provide dental marketing in <Link to="/services/perth-seo" className="text-primary hover:underline font-semibold">Perth</Link>, <Link to="/services/adelaide-seo" className="text-primary hover:underline font-semibold">Adelaide</Link>, <Link to="/services/canberra-seo" className="text-primary hover:underline font-semibold">Canberra</Link>, and other Australian cities.
+            </p>
+          </div>
         </div>
       </section>
 
