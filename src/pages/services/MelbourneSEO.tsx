@@ -471,8 +471,8 @@ const MelbourneSEO = () => {
   return (
     <>
       <Helmet>
-        <title>SEO Melbourne: No Lock-In Contracts | SEO Company Melbourne | Odin Digital</title>
-        <meta name="description" content="Melbourne's top SEO company. $574M+ client revenue. Grow your business with performance-focused SEO. No lock-in contracts. Free strategy call." />
+        <title>SEO Melbourne | Dominate Google Search | Odin Digital</title>
+        <meta name="description" content="Melbourne SEO services that drive real revenue. $574M+ client results. Local SEO, technical audits & link building. 540% ROI. No contracts. Free strategy call today." />
         <link rel="canonical" href="https://odindigital.com.au/seo-melbourne/" />
         <script type="application/ld+json">
           {JSON.stringify(schemaOrgJsonLd)}
