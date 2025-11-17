@@ -8,6 +8,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Target, TrendingUp, Users, Lightbulb, BarChart3, Layout, MapPin, Sun, Zap, CheckCircle2, Shield, Trophy, MessageSquare, Plane, Home, Store, ShoppingCart, RotateCcw } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsGoldCoast = () => {
   const { openForm } = useMarketingForm();
@@ -671,6 +673,12 @@ const FacebookAdsGoldCoast = () => {
             Get FREE Audit →
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Gold Coast", "facebook-ads")}
+          title="Facebook Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

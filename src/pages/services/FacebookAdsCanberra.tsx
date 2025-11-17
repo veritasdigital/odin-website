@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, TrendingUp, Users, Target, Zap, Award, ArrowRight, MessageSquare } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsCanberra = () => {
   const { openForm } = useMarketingForm();
@@ -673,6 +675,12 @@ const FacebookAdsCanberra = () => {
             Get Free Meta Ads Audit
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Canberra", "facebook-ads")}
+          title="Facebook Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

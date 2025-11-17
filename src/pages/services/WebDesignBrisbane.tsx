@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, TrendingUp, Users, Award, Zap, Target, Search, Smartphone, CheckCircle2, Layers, ShoppingBag, Palette, Code2 } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const WebDesignBrisbane = () => {
   const metrics = [
@@ -673,6 +675,12 @@ const WebDesignBrisbane = () => {
             Get FREE Audit <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Brisbane", "web-design")}
+          title="Web Design Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>
