@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import LocationContent from "@/components/LocationContent";
 import { useEffect, useRef, useState } from "react";
 import { locationImages } from "@/utils/locationImages";
 import { 
@@ -686,6 +687,9 @@ const SydneySEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Sydney" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-16 md:py-24">

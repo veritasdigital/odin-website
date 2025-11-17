@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -908,6 +909,9 @@ const NewcastleSEO = () => {
             </p>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Newcastle" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-muted/30 mb-12 sm:mb-16 md:mb-20 lg:mb-24">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import LocationContent from "@/components/LocationContent";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
@@ -860,6 +861,9 @@ const BallaratSEO = () => {
           </div>
         </div>
       </section>
+
+      {/* Location-Specific Content */}
+      <LocationContent city="Ballarat" serviceType="SEO" />
 
       {/* FAQ Section */}
       <section className="relative py-20 md:py-24 bg-gradient-subtle">

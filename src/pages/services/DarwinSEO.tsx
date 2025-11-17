@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import LocationContent from "@/components/LocationContent";
 import { useNavigate, Link } from "react-router-dom";
 import { 
   Target, 
@@ -741,6 +742,9 @@ const DarwinSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Darwin" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-16 md:py-20 bg-muted/30">

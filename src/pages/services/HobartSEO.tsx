@@ -9,6 +9,7 @@ import { Helmet } from "react-helmet";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import LocationContent from "@/components/LocationContent";
 
 const HobartSEO = () => {
   const { openForm } = useMarketingForm();
@@ -740,6 +741,9 @@ const HobartSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Hobart" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-16 md:py-20">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import LocationContent from "@/components/LocationContent";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -668,6 +669,9 @@ const LauncestonSEO = () => {
           </div>
         </div>
       </section>
+
+      {/* Location-Specific Content */}
+      <LocationContent city="Launceston" serviceType="SEO" />
 
       {/* FAQ Section */}
       <section className="relative py-20 md:py-24 bg-gradient-to-br from-muted/20 via-background to-muted/10">
