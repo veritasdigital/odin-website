@@ -87,7 +87,7 @@ export const Results = () => {
   }, [carouselApi]);
 
   return (
-    <section id="results" className="relative py-24 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
+    <section id="results" className="relative py-16 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
       {/* Decorative Brand Icon */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-5 pointer-events-none">
         <img src={brandIconSubtle} alt="" className="w-full h-full animate-[spin_40s_linear_infinite]" />
@@ -180,7 +180,7 @@ export const Results = () => {
           </Carousel>
 
           {/* Enhanced Pagination Dots */}
-          <div className="flex justify-center mt-8 gap-3">
+          <div className="flex justify-center mt-6 gap-3">
             {testimonials.map((_, index) => (
               <button
                 key={index}
