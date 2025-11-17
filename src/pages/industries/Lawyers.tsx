@@ -6,6 +6,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Link } from "react-router-dom";
 import { 
   Search, 
   MousePointerClick, 
@@ -27,6 +28,7 @@ import {
   MapPin,
   Clock
 } from "lucide-react";
+import { industriesCluster } from "@/utils/contentClusters";
 
 const Lawyers = () => {
   const { openForm } = useMarketingForm();

@@ -8,9 +8,13 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle2, Target, Zap, TrendingUp, Users, Shield, Clock, Award, ChevronDown } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const WebDesignMelbourne = () => {
   const { openForm } = useMarketingForm();
+  const hub = getHubForService("Web Design");
+  const relatedLocationsList = getRelatedLocations("Melbourne", "Web Design");
 
   const metrics = [
     { number: "540%", label: "Average ROI" },
