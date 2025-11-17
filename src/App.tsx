@@ -317,7 +317,7 @@ const App = () => (
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/strategy-session" element={<StrategySession />} />
           <Route path="/onboarding" element={<Onboarding />} />
-          <Route path="/lead-magnet-booking" element={<LeadMagnetBooking />} />
+          <Route path="/free-trainings-booking" element={<LeadMagnetBooking />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
