@@ -11,6 +11,8 @@ import { Target, TrendingUp, Eye, MapPin, BarChart, DollarSign, Shield, RefreshC
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link } from "react-router-dom";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsBrisbane = () => {
   const {
     openForm
@@ -530,6 +532,12 @@ const GoogleAdsBrisbane = () => {
           </div>
         </section>
       </div>
+
+
+      <RelatedLocations 
+        locations={getRelatedLocations("Brisbane", "google-ads")}
+        title="Google Ads Services in Other Australian Cities"
+      />
 
       <Footer />
 

@@ -8,6 +8,8 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SideTab } from "@/components/SideTab";
 import { Target, Calendar, TrendingUp, Award, MapPin, BarChart3, Filter, Zap } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsDarwin = () => {
   const navigate = useNavigate();
   const schemaMarkup = {
@@ -589,6 +591,12 @@ const GoogleAdsDarwin = () => {
             </div>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Darwin", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

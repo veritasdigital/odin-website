@@ -33,6 +33,8 @@ import {
 } from "@/components/ui/accordion";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { SideTab } from "@/components/SideTab";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link } from "react-router-dom";
 
@@ -693,6 +695,12 @@ export default function GoogleAdsPerth() {
             </div>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Perth", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
         <MarketingFormModal />
