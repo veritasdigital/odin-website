@@ -100,6 +100,27 @@ const ApplicationForm = memo(() => {
       return;
     }
 
+    // Trigger webhook after phone number is entered (step 3)
+    if (currentStep === 3) {
+      try {
+        await fetch("https://hook.us1.make.com/fpgs49pokfjpxtg3hys59iiapbln531e", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.firstName,
+            email: formData.email,
+            phone: formData.phone,
+            timezone: formData.timezone,
+          }),
+        });
+      } catch (error) {
+        console.error("Webhook error:", error);
+        // Don't block user progression if webhook fails
+      }
+    }
+
     if (currentStep < totalSteps) {
       setCurrentStep(currentStep + 1);
     } else {
