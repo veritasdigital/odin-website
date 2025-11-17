@@ -1,30 +1,161 @@
-# Redirect agency pages to their service equivalents
+# ===================================
+# URL OPTIMIZATION & 301 REDIRECTS
+# ===================================
+
+# Uppercase to lowercase redirects
+/Services/* /services/:splat 301
+/Industries/* /industries/:splat 301
+/Blog/* /blog/:splat 301
+/About /about 301
+/Contact /contact 301
+/Privacy /privacy 301
+/Terms /terms 301
+
+# Underscore to hyphen redirects
+/strategy_session /strategy-session 301
+/thank_you /thank-you 301
+/not_found /not-found 301
+
+# Legacy agency pages to service equivalents
 /web-design-agency /services/website-design 301
 /meta-ads-agency /facebook-advertising 301
+/seo-agency /seo-agency 301
+/ppc-agency /ppc-agency 301
+/email-marketing-agency /email-marketing-agency 301
 
-# Add /services prefix route for Facebook Advertising
+# Service URL standardization (remove /services prefix for core services)
+/services/seo /seo-agency 301
+/services/google-ads /google-ads 301
 /services/facebook-advertising /facebook-advertising 301
 /services/facebook-ads /facebook-advertising 301
+/services/ppc /ppc-agency 301
 
-# Redirect old paths to new paths (with /services prefix)
-/ppc-management /services/ppc-management 301
-/ppc-agency /services/ppc-agency 301
-/social-media-advertising /services/social-media-advertising 301
-/seo-agency /services/seo-agency 301
-/ecommerce-seo /services/ecommerce-seo 301
-/local-seo /services/local-seo 301
-/seo-brisbane /services/brisbane-seo 301
-/seo-perth /services/perth-seo 301
-/seo-sydney /services/sydney-seo 301
-/seo-adelaide /services/adelaide-seo 301
-/seo-hobart /services/hobart-seo 301
-/seo-melbourne /services/melbourne-seo 301
-/seo-darwin /services/darwin-seo 301
-/seo-launceston /services/launceston-seo 301
-/seo-ballarat /services/ballarat-seo 301
-/seo-gold-coast /services/gold-coast-seo 301
-/seo-canberra /services/canberra-seo 301
-/seo-newcastle /services/seo-newcastle 301
+# Location-based SEO URL optimization (city-first format)
+/seo-brisbane /brisbane-seo 301
+/seo-perth /perth-seo 301
+/seo-sydney /sydney-seo 301
+/seo-adelaide /adelaide-seo 301
+/seo-hobart /hobart-seo 301
+/seo-melbourne /melbourne-seo 301
+/seo-darwin /darwin-seo 301
+/seo-launceston /launceston-seo 301
+/seo-ballarat /ballarat-seo 301
+/seo-gold-coast /gold-coast-seo 301
+/seo-canberra /canberra-seo 301
+/seo-newcastle /newcastle-seo 301
 
-# SPA fallback - must be last
+# Location-based Google Ads URL optimization
+/google-ads-sydney /sydney-google-ads 301
+/google-ads-melbourne /melbourne-google-ads 301
+/google-ads-brisbane /brisbane-google-ads 301
+/google-ads-perth /perth-google-ads 301
+/google-ads-adelaide /adelaide-google-ads 301
+/google-ads-canberra /canberra-google-ads 301
+/google-ads-hobart /hobart-google-ads 301
+/google-ads-darwin /darwin-google-ads 301
+/google-ads-newcastle /newcastle-google-ads 301
+/google-ads-launceston /launceston-google-ads 301
+/google-ads-ballarat /ballarat-google-ads 301
+/google-ads-gold-coast /gold-coast-google-ads 301
+
+# Location-based Facebook Ads URL optimization
+/facebook-ads-sydney /sydney-facebook-ads 301
+/facebook-ads-melbourne /melbourne-facebook-ads 301
+/facebook-ads-brisbane /brisbane-facebook-ads 301
+/facebook-ads-perth /perth-facebook-ads 301
+/facebook-ads-adelaide /adelaide-facebook-ads 301
+/facebook-ads-canberra /canberra-facebook-ads 301
+/facebook-ads-hobart /hobart-facebook-ads 301
+/facebook-ads-darwin /darwin-facebook-ads 301
+/facebook-ads-newcastle /newcastle-facebook-ads 301
+/facebook-ads-launceston /launceston-facebook-ads 301
+/facebook-ads-ballarat /ballarat-facebook-ads 301
+/facebook-ads-gold-coast /gold-coast-facebook-ads 301
+
+# Location-based Web Design URL optimization
+/web-design-sydney /sydney-web-design 301
+/web-design-melbourne /melbourne-web-design 301
+/web-design-brisbane /brisbane-web-design 301
+/web-design-perth /perth-web-design 301
+/web-design-adelaide /adelaide-web-design 301
+/web-design-canberra /canberra-web-design 301
+/web-design-hobart /hobart-web-design 301
+/web-design-darwin /darwin-web-design 301
+/web-design-newcastle /newcastle-web-design 301
+/web-design-launceston /launceston-web-design 301
+/web-design-ballarat /ballarat-web-design 301
+/web-design-gold-coast /gold-coast-web-design 301
+
+# Online Marketing Company URL shortening
+/online-marketing-company-sydney /sydney-digital-marketing 301
+/online-marketing-company-melbourne /melbourne-digital-marketing 301
+/online-marketing-company-brisbane /brisbane-digital-marketing 301
+/online-marketing-company-perth /perth-digital-marketing 301
+/online-marketing-company-adelaide /adelaide-digital-marketing 301
+/online-marketing-company-canberra /canberra-digital-marketing 301
+/online-marketing-company-hobart /hobart-digital-marketing 301
+/online-marketing-company-darwin /darwin-digital-marketing 301
+/online-marketing-company-newcastle /newcastle-digital-marketing 301
+/online-marketing-company-launceston /launceston-digital-marketing 301
+/online-marketing-company-gold-coast /gold-coast-digital-marketing 301
+
+# Social Media Advertising location pages
+/social-media-advertising-sydney /sydney-social-media-ads 301
+/social-media-advertising-melbourne /melbourne-social-media-ads 301
+/social-media-advertising-brisbane /brisbane-social-media-ads 301
+/social-media-advertising-adelaide /adelaide-social-media-ads 301
+
+# Blog URL optimization (shorten long titles)
+/blog/ai-seo-future-proof /blog/ai-seo-guide 301
+/blog/digital-marketing-mistakes /blog/marketing-mistakes 301
+/blog/content-marketing-matrix /blog/content-matrix 301
+/blog/conversion-rate-optimisation /blog/cro-guide 301
+/blog/local-seo-tradies /blog/tradie-seo 301
+/blog/marketing-automation /blog/automation-guide 301
+/blog/will-ai-replace-seo /blog/ai-vs-seo 301
+/blog/tiktok-for-business /blog/tiktok-marketing 301
+/blog/google-ads-guide /blog/google-ads 301
+/blog/shopify-seo /blog/ecommerce-seo 301
+/blog/email-marketing /blog/email-guide 301
+/blog/analytics-cro /blog/analytics 301
+/blog/social-media /blog/social-tips 301
+/blog/web-design /blog/web-design-tips 301
+
+# Industry URL optimization (shorter, keyword-rich)
+/industries/personal-injury-lawyers /industries/injury-lawyers 301
+/industries/criminal-defense-lawyers /industries/criminal-lawyers 301
+/industries/cosmetic-surgeons /industries/cosmetic-surgery 301
+/industries/plastic-surgeons /industries/plastic-surgery 301
+/industries/accounting-firms /industries/accountants 301
+/industries/real-estate-agents /industries/real-estate 301
+/industries/fertility-clinics /industries/fertility 301
+/industries/cosmetic-clinics /industries/aesthetics 301
+/industries/cosmetic-dentists /industries/cosmetic-dentistry 301
+/industries/dental-implants /industries/implants 301
+/industries/family-dentists /industries/family-dental 301
+/industries/family-lawyers /industries/family-law 301
+/industries/conveyancing-lawyers /industries/conveyancing 301
+/industries/immigration-lawyers /industries/immigration-law 301
+/industries/insurance-agents /industries/insurance 301
+/industries/architecture-firms /industries/architects 301
+/industries/hvac-contractors /industries/hvac 301
+/industries/roofing-companies /industries/roofing 301
+/industries/pediatric-dentists /industries/pediatric-dental 301
+/industries/landscaping-companies /industries/landscaping 301
+
+# Service URL optimization (remove redundancy)
+/services/website-design-and-development /services/web-development 301
+/services/social-media-advertising /social-ads 301
+/services/ppc-management /ppc-agency 301
+/services/google-ads-management /google-ads 301
+/services/email-marketing-agency /email-marketing 301
+/services/ecommerce-agency /ecommerce 301
+/services/influencer-agency /influencer-marketing 301
+
+# Specialty service pages
+/white-label-seo /white-label 301
+/ecommerce-seo /ecommerce 301
+/local-seo /local 301
+
+# SPA fallback - MUST BE LAST
 /* /index.html 200
