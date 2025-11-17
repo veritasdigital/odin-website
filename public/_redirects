@@ -30,74 +30,8 @@
 /services/facebook-ads /facebook-advertising 301
 /services/ppc /ppc-agency 301
 
-# Location-based SEO URL optimization (city-first format)
-/seo-brisbane /brisbane-seo 301
-/seo-perth /perth-seo 301
-/seo-sydney /sydney-seo 301
-/seo-adelaide /adelaide-seo 301
-/seo-hobart /hobart-seo 301
-/seo-melbourne /melbourne-seo 301
-/seo-darwin /darwin-seo 301
-/seo-launceston /launceston-seo 301
-/seo-ballarat /ballarat-seo 301
-/seo-gold-coast /gold-coast-seo 301
-/seo-canberra /canberra-seo 301
-/seo-newcastle /newcastle-seo 301
-
-# Location-based Google Ads URL optimization
-/google-ads-sydney /sydney-google-ads 301
-/google-ads-melbourne /melbourne-google-ads 301
-/google-ads-brisbane /brisbane-google-ads 301
-/google-ads-perth /perth-google-ads 301
-/google-ads-adelaide /adelaide-google-ads 301
-/google-ads-canberra /canberra-google-ads 301
-/google-ads-hobart /hobart-google-ads 301
-/google-ads-darwin /darwin-google-ads 301
-/google-ads-newcastle /newcastle-google-ads 301
-/google-ads-launceston /launceston-google-ads 301
-/google-ads-ballarat /ballarat-google-ads 301
-/google-ads-gold-coast /gold-coast-google-ads 301
-
-# Location-based Facebook Ads URL optimization
-/facebook-ads-sydney /sydney-facebook-ads 301
-/facebook-ads-melbourne /melbourne-facebook-ads 301
-/facebook-ads-brisbane /brisbane-facebook-ads 301
-/facebook-ads-perth /perth-facebook-ads 301
-/facebook-ads-adelaide /adelaide-facebook-ads 301
-/facebook-ads-canberra /canberra-facebook-ads 301
-/facebook-ads-hobart /hobart-facebook-ads 301
-/facebook-ads-darwin /darwin-facebook-ads 301
-/facebook-ads-newcastle /newcastle-facebook-ads 301
-/facebook-ads-launceston /launceston-facebook-ads 301
-/facebook-ads-ballarat /ballarat-facebook-ads 301
-/facebook-ads-gold-coast /gold-coast-facebook-ads 301
-
-# Location-based Web Design URL optimization
-/web-design-sydney /sydney-web-design 301
-/web-design-melbourne /melbourne-web-design 301
-/web-design-brisbane /brisbane-web-design 301
-/web-design-perth /perth-web-design 301
-/web-design-adelaide /adelaide-web-design 301
-/web-design-canberra /canberra-web-design 301
-/web-design-hobart /hobart-web-design 301
-/web-design-darwin /darwin-web-design 301
-/web-design-newcastle /newcastle-web-design 301
-/web-design-launceston /launceston-web-design 301
-/web-design-ballarat /ballarat-web-design 301
-/web-design-gold-coast /gold-coast-web-design 301
-
-# Online Marketing Company URL shortening
-/online-marketing-company-sydney /sydney-digital-marketing 301
-/online-marketing-company-melbourne /melbourne-digital-marketing 301
-/online-marketing-company-brisbane /brisbane-digital-marketing 301
-/online-marketing-company-perth /perth-digital-marketing 301
-/online-marketing-company-adelaide /adelaide-digital-marketing 301
-/online-marketing-company-canberra /canberra-digital-marketing 301
-/online-marketing-company-hobart /hobart-digital-marketing 301
-/online-marketing-company-darwin /darwin-digital-marketing 301
-/online-marketing-company-newcastle /newcastle-digital-marketing 301
-/online-marketing-company-launceston /launceston-digital-marketing 301
-/online-marketing-company-gold-coast /gold-coast-digital-marketing 301
+# Legacy redirects for old URL patterns (if any exist)
+# All current routes use service-first format: /seo-city, /google-ads-city, /facebook-ads-city, /web-design-city
 
 # Social Media Advertising location pages
 /social-media-advertising-sydney /sydney-social-media-ads 301
