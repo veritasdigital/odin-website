@@ -180,15 +180,15 @@ export const Results = () => {
           </Carousel>
 
           {/* Enhanced Pagination Dots */}
-          <div className="flex justify-center mt-3 gap-3">
+          <div className="flex justify-center mt-3 gap-2">
             {testimonials.map((_, index) => (
               <button
                 key={index}
                 onClick={() => carouselApi?.scrollTo(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
+                className={`h-1.5 rounded-full transition-all duration-300 ${
                   index === currentSlide 
-                    ? 'w-8 bg-primary shadow-glow' 
-                    : 'w-2 bg-charcoal/20 hover:bg-primary/50 hover:w-4'
+                    ? 'w-6 bg-primary shadow-glow' 
+                    : 'w-1.5 bg-charcoal/20 hover:bg-primary/50 hover:w-3'
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
