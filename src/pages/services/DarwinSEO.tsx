@@ -4,7 +4,9 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { useNavigate, Link } from "react-router-dom";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { 
   Target, 
   TrendingUp, 
@@ -783,6 +785,12 @@ const DarwinSEO = () => {
             Get Your FREE Darwin SEO Quote →
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Darwin", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

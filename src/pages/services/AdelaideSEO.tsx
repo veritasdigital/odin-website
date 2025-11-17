@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -37,6 +38,7 @@ import {
   BarChart
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
@@ -745,6 +747,12 @@ const AdelaideSEO = () => {
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Adelaide", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         {/* Footer */}
         <Footer />

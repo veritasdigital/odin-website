@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -17,6 +18,7 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import {
   CheckCircle, 
   TrendingUp, 
@@ -966,6 +968,12 @@ const CanberraSEO = () => {
             </Accordion>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Canberra", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

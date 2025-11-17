@@ -5,12 +5,14 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { locationImages } from "@/utils/locationImages";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const PerthSEO = () => {
   const {
     openForm
@@ -537,6 +539,12 @@ const PerthSEO = () => {
             </div>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Perth", "SEO")}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>
