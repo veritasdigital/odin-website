@@ -15,6 +15,7 @@ import { locationImages } from "@/utils/locationImages";
 import { getLocationData } from "@/utils/locationData";
 import LocationMap from "@/components/LocationMap";
 import { MapPin, TrendingUp as TrendingUpIcon, Building2, DollarSign } from "lucide-react";
+import { getOrganizationSchema, getLocalBusinessSchema, getServiceSchema, getFAQSchema, getBreadcrumbSchema, getWebPageSchema } from "@/utils/schemaMarkup";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
