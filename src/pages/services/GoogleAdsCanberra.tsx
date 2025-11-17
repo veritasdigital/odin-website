@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import LocationContent from "@/components/LocationContent";
 import { ArrowRight, Target, TrendingUp, Users, Award, DollarSign, BarChart3, Shield, Crosshair, CheckCircle2, AlertCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const GoogleAdsCanberra = () => {
@@ -464,6 +465,9 @@ const GoogleAdsCanberra = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Canberra" serviceType="Google Ads" />
 
         {/* Section 5: FAQ Section */}
         <section className="py-20 px-4 bg-gradient-to-br from-accent/5 to-primary/5">

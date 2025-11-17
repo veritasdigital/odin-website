@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Target, DollarSign, Shield, AlertCircle, Calendar, Eye, BarChart, MapPin, CheckCircle, Zap, Users, Map } from "lucide-react";
@@ -470,6 +471,9 @@ export default function GoogleAdsHobart() {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Hobart" serviceType="Google Ads" />
 
         {/* Section 5: FAQ */}
         <section className="py-12 md:py-20">

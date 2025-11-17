@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import LocationContent from "@/components/LocationContent";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
 import googleLogo from "@/assets/partners/google-logo.png";
@@ -805,6 +806,9 @@ const GoogleAdsNewcastle = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Newcastle" serviceType="Google Ads" />
 
         {/* Section 11: FAQ Section */}
         <section className="py-20">

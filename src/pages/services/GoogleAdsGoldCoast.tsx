@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import LocationContent from "@/components/LocationContent";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -613,6 +614,9 @@ const GoogleAdsGoldCoast = () => {
             </Button>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Gold Coast" serviceType="Google Ads" />
 
         {/* FAQ Section */}
         <section className="py-20 px-4">

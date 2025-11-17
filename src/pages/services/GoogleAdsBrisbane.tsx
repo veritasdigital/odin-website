@@ -4,6 +4,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { SideTab } from '@/components/SideTab';
 import { useMarketingForm } from '@/contexts/MarketingFormContext';
+import LocationContent from '@/components/LocationContent';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Target, TrendingUp, Eye, MapPin, BarChart, DollarSign, Shield, RefreshCw, Zap, Award } from 'lucide-react';
@@ -481,6 +482,9 @@ const GoogleAdsBrisbane = () => {
             </div>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Brisbane" serviceType="Google Ads" />
 
         {/* FAQ Section */}
         <section className="py-12 md:py-16 lg:py-20">
