@@ -196,6 +196,36 @@ export const getServiceSchema = (service: Service) => ({
   }
 });
 
+// ProfessionalService Schema for service pages with testimonials
+export const getProfessionalServiceSchema = (
+  serviceName: string,
+  description: string,
+  url: string,
+  areaServed?: string | { "@type": string; name: string }
+) => ({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `https://odindigital.com.au${url}#professionalservice`,
+  "name": serviceName,
+  "description": description,
+  "url": `https://odindigital.com.au${url}`,
+  "provider": {
+    "@id": "https://odindigital.com.au/#organization"
+  },
+  "areaServed": areaServed || {
+    "@type": "Country",
+    "name": "Australia"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "283",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "priceRange": "$$"
+});
+
 // FAQ Schema
 export const getFAQSchema = (faqs: FAQ[]) => ({
   "@context": "https://schema.org",

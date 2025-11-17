@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { getProfessionalServiceSchema, getFAQSchema, getOrganizationSchema } from "@/utils/schemaMarkup";
 import { 
   CheckCircle, 
   TrendingUp, 
@@ -232,72 +233,13 @@ const YouTubeAdvertising = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "name": "Odin Digital",
-        "url": "https://growth-conduit-central.lovable.app/",
-        "logo": "https://growth-conduit-central.lovable.app/logo.png",
-        "description": "Performance-focused YouTube advertising agency in Australia. We specialize in YouTube marketing services focused on revenue, not views. $574M+ in client revenue. No lock-in contracts.",
-        "founder": {
-          "@type": "Person",
-          "name": "Lucas Durante"
-        },
-        "slogan": "No Lock-In Contracts. Just Results.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Sales",
-          "areaServed": "AU",
-          "availableLanguage": "English"
-        }
-      },
-      {
-        "@type": "Service",
-        "serviceType": "YouTube Advertising Services",
-        "provider": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Australia"
-        },
-        "description": "Comprehensive YouTube advertising services for Australian businesses, including audience targeting, creative production, funnel strategy, and conversion tracking, focused on revenue and ROI."
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": faq.answer
-          }
-        }))
-      },
-      {
-        "@type": "Review",
-        "itemReviewed": {
-          "@type": "Service",
-          "name": "YouTube Advertising Services",
-          "provider": {
-            "@type": "Organization",
-            "name": "Odin Digital"
-          }
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Fabienne Costa"
-        },
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Since working with Lucas and the team, YCL's revenue has grown by over 292% and they have been a complete pleasure to work with.",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Odin Digital"
-        }
-      }
+      getOrganizationSchema(),
+      getProfessionalServiceSchema(
+        "YouTube Advertising Services - Odin Digital",
+        "Comprehensive YouTube advertising services for Australian businesses, including audience targeting, creative production, funnel strategy, and conversion tracking, focused on revenue and ROI.",
+        "/youtube-advertising"
+      ),
+      getFAQSchema(faqs)
     ]
   };
 
