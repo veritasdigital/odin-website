@@ -282,10 +282,10 @@ const SydneySEO = () => {
   return (
     <>
       <Helmet>
-        <title>SEO Sydney | SEO Agency Sydney | Odin Digital</title>
+        <title>SEO Sydney | Drive Sales with Expert SEO | Odin Digital</title>
         <meta 
           name="description" 
-          content="Sydney's top SEO agency. $574M+ client revenue. We deliver results, not excuses. No lock-in contracts. Get your free SEO strategy call today." 
+          content="Sydney SEO services that convert traffic to customers. $574M+ revenue generated. Technical SEO, local rankings & link building. 540% ROI. No contracts. Free audit today." 
         />
         <meta name="keywords" content="seo sydney, seo agency sydney, seo company sydney, sydney seo agency, sydney seo company, best seo company sydney, seo consultant sydney, search engine optimisation sydney, seo packages sydney, seo expert sydney, professional seo sydney, sydney search engine optimisation" />
         <link rel="canonical" href="https://odindigital.com.au/seo-sydney" />

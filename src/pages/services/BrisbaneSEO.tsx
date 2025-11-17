@@ -282,8 +282,8 @@ const BrisbaneSEO = () => {
   return (
     <>
       <Helmet>
-        <title>Best SEO Company Brisbane | SEO Services Brisbane | Odin Digital</title>
-        <meta name="description" content="Brisbane's top SEO company. $574M+ in client revenue. Expert SEO services Brisbane businesses trust. Local SEO, technical SEO, content & link building. No lock-in contracts." />
+        <title>SEO Brisbane | Rank #1 on Google | Odin Digital</title>
+        <meta name="description" content="Brisbane SEO experts delivering 540% ROI. Local SEO, technical audits, content & links. $574M+ client revenue. No lock-in contracts. Get your free Brisbane SEO audit today." />
         <meta name="keywords" content="seo brisbane, seo company brisbane, seo services brisbane, brisbane seo agency, local seo brisbane, seo expert brisbane, best seo brisbane" />
         <link rel="canonical" href="https://odindigital.com.au/seo-brisbane" />
       </Helmet>

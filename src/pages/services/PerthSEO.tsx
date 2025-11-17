@@ -191,8 +191,8 @@ const PerthSEO = () => {
   }];
   return <>
       <Helmet>
-        <title>Best SEO Company Perth | SEO Services Perth | Odin Digital</title>
-        <meta name="description" content="Perth's top SEO company. $574M+ in client revenue. Expert SEO services Perth businesses trust. Local SEO, technical SEO, content & link building. No lock-in contracts." />
+        <title>SEO Perth | Get More Customers Now | Odin Digital</title>
+        <meta name="description" content="Perth SEO services with proven results. 540% average ROI. Local SEO, technical optimization & link building. $574M+ revenue generated. No contracts. Free Perth SEO audit today." />
         <meta name="keywords" content="seo perth, seo company perth, seo services perth, perth seo agency, local seo perth" />
         <link rel="canonical" href="https://odindigital.com.au/seo-perth" />
       </Helmet>
