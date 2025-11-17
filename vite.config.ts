@@ -29,6 +29,8 @@ export default defineConfig(({ mode }) => ({
     minify: 'esbuild',
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
+    target: 'es2015',
+    cssMinify: true,
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
