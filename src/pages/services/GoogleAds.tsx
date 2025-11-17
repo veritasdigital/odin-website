@@ -10,6 +10,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Target, TrendingUp, Users, DollarSign, Clock, BarChart3, AlertTriangle, Trophy, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
+import { HubPageLocations } from "@/components/HubPageLocations";
+import { googleAdsCluster } from "@/utils/contentClusters";
 
 export default function GoogleAds() {
   const {
@@ -398,6 +400,14 @@ export default function GoogleAds() {
           </Card>
         </div>
       </section>
+
+
+      {/* All Google Ads Services by Location */}
+      <HubPageLocations 
+        spokes={googleAdsCluster.spokes}
+        title="Google Ads Services Across Australia"
+        description="Expert Google Ads management in major cities across Australia. Find your local PPC specialists below."
+      />
 
       {/* FAQ Section */}
       <section className="py-24 bg-background">

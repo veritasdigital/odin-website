@@ -10,6 +10,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Search, TrendingUp, Globe, BarChart3, Users, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Helmet } from "react-helmet";
+import { HubPageLocations } from "@/components/HubPageLocations";
+import { seoServicesCluster } from "@/utils/contentClusters";
 
 export default function SEO() {
   const {
@@ -286,6 +288,14 @@ export default function SEO() {
           </Card>
         </div>
       </section>
+
+
+      {/* All SEO Services by Location */}
+      <HubPageLocations 
+        spokes={seoServicesCluster.spokes}
+        title="SEO Services Across Australia"
+        description="We provide expert SEO services in major cities across Australia. Find your local SEO experts below."
+      />
 
       {/* FAQ Section */}
       <section className="py-24 bg-background">

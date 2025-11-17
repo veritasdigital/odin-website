@@ -11,15 +11,22 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { locationImages } from "@/utils/locationImages";
 import { getLocationData } from "@/utils/locationData";
 import LocationMap from "@/components/LocationMap";
 import { MapPin, TrendingUp as TrendingUpIcon, Building2, DollarSign } from "lucide-react";
 import { getOrganizationSchema, getLocalBusinessSchema, getServiceSchema, getFAQSchema, getBreadcrumbSchema, getWebPageSchema } from "@/utils/schemaMarkup";
+import { getRelatedLocations, getRelatedServices, getHubForService } from "@/utils/contentClusters";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
   const locationInfo = getLocationData("melbourne");
+  
+  // Content cluster data
+  const hub = getHubForService("SEO");
+  const relatedLocationsList = getRelatedLocations("Melbourne", "SEO");
+  const relatedServicesList = getRelatedServices("SEO", "Melbourne");
 
   const relatedServices = [
     {
@@ -929,33 +936,12 @@ const MelbourneSEO = () => {
           </Button>
         </div>
 
-        {/* Other Australian Cities - Cross Linking */}
-        <section className="py-16 bg-background">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl md:text-4xl font-black mb-4 text-center">SEO Services in Other Australian Cities</h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-              We provide expert SEO services across Australia's major cities
-            </p>
-            
-            <div className="grid md:grid-cols-4 gap-6">
-              {cityCrossLinks.map((link, index) => (
-                <Link key={index} to={link.url} className="group">
-                  <Card className="h-full p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 text-center">
-                    <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
-                      SEO {link.city}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Expert SEO services in {link.city}
-                    </p>
-                    <div className="flex items-center justify-center text-primary font-semibold mt-4 group-hover:gap-2 transition-all">
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+
+        {/* Related Locations - Using Content Clusters */}
+        <RelatedLocations 
+          locations={relatedLocationsList}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <RelatedServices services={relatedServices} />
 

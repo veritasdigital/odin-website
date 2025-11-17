@@ -7,6 +7,8 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Users, Heart, Share2, MessageSquare, Camera, TrendingUp } from "lucide-react";
+import { HubPageLocations } from "@/components/HubPageLocations";
+import { socialMediaCluster } from "@/utils/contentClusters";
 
 export default function SocialMedia() {
   const { openForm } = useMarketingForm();
@@ -267,6 +269,14 @@ export default function SocialMedia() {
           </div>
         </div>
       </section>
+
+
+      {/* All Social Media Services by Location */}
+      <HubPageLocations 
+        spokes={socialMediaCluster.spokes}
+        title="Social Media Advertising Across Australia"
+        description="Expert Facebook, Instagram, TikTok, and LinkedIn advertising services across major Australian cities."
+      />
 
       {/* CTA Section */}
       <section className="relative py-24 gradient-hero overflow-hidden">
