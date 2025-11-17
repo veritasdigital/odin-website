@@ -1,0 +1,61 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import odinLogo from "@/assets/odin-logo.png";
+
+const Onboarding = () => {
+  useEffect(() => {
+    // Load the form embed script
+    const script = document.createElement("script");
+    script.src = "https://link.msgsndr.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
+
+  return (
+    <>
+      <Helmet>
+        <title>Onboarding - Odin Digital</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+
+      {/* Simple header with logo only */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <Link to="/" className="flex items-center">
+              <img
+                src={odinLogo}
+                alt="Odin Digital"
+                className="h-8 w-auto"
+                loading="eager"
+              />
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {/* Main content area with iframe */}
+      <main className="min-h-screen pt-16 bg-background">
+        <div className="container mx-auto px-4 py-8">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/survey/lcHOsXy17xByWadFMpaI"
+            style={{ border: "none", width: "100%" }}
+            scrolling="no"
+            id="lcHOsXy17xByWadFMpaI"
+            title="survey"
+          />
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Onboarding;

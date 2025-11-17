@@ -17,6 +17,7 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import SkipToContent from "./components/SkipToContent";
 import StrategySession from "./pages/StrategySession";
+import Onboarding from "./pages/Onboarding";
 import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
@@ -312,8 +313,9 @@ const App = () => (
           <Route path="/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market" element={<LocalSEO2026 />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
-            <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/strategy-session" element={<StrategySession />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/strategy-session" element={<StrategySession />} />
+          <Route path="/onboarding" element={<Onboarding />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
