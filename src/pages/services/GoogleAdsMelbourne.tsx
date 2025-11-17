@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
@@ -33,10 +34,13 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link } from "react-router-dom";
+import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 export default function GoogleAdsMelbourne() {
   const { openForm } = useMarketingForm();
   const [showStickyButton, setShowStickyButton] = useState(false);
+  const hub = getHubForService("Google Ads");
+  const relatedLocationsList = getRelatedLocations("Melbourne", "Google Ads");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -815,6 +819,13 @@ export default function GoogleAdsMelbourne() {
             </div>
           </div>
         </section>
+
+
+        {/* Related Locations */}
+        <RelatedLocations 
+          locations={relatedLocationsList}
+          title="Google Ads Services in Other Cities"
+        />
 
         <Footer />
         <MarketingFormModal />

@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import {
   Accordion,
   AccordionContent,
@@ -29,9 +30,12 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { ServiceHero } from "@/components/ServiceHero";
+import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const FacebookAdsMelbourne = () => {
   const { openForm } = useMarketingForm();
+  const hub = getHubForService("Facebook Ads");
+  const relatedLocationsList = getRelatedLocations("Melbourne", "Facebook Ads");
 
   const metrics = [
     { icon: DollarSign, value: "$574M+", label: "Verified Client Revenue" },
@@ -745,6 +749,13 @@ const FacebookAdsMelbourne = () => {
             Get Your Free Audit
           </Button>
         </div>
+
+
+        {/* Related Locations */}
+        <RelatedLocations 
+          locations={relatedLocationsList}
+          title="Facebook Ads Services in Other Cities"
+        />
 
         <Footer />
       </div>

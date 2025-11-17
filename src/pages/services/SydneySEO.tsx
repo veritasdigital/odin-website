@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import LocationContent from "@/components/LocationContent";
+import { RelatedLocations } from "@/components/RelatedLocations";
 import { useEffect, useRef, useState } from "react";
 import { locationImages } from "@/utils/locationImages";
 import { 
@@ -25,8 +26,12 @@ import {
   BarChart3,
   Shield
 } from "lucide-react";
+import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const SydneySEO = () => {
+  const hub = getHubForService("SEO");
+  const relatedLocationsList = getRelatedLocations("Sydney", "SEO");
+  
   // Count-up animation hook
   const useCountUp = (end: number, duration: number = 2000) => {
     const [count, setCount] = useState<number | null>(null);
@@ -724,6 +729,13 @@ const SydneySEO = () => {
             </div>
           </div>
         </section>
+
+
+        {/* Related Locations */}
+        <RelatedLocations 
+          locations={relatedLocationsList}
+          title="SEO Services in Other Australian Cities"
+        />
 
         <Footer />
 
