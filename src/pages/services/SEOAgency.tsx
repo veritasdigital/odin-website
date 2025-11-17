@@ -42,6 +42,8 @@ import {
   Settings,
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { seoPackageComparison } from "@/utils/comparisonTables";
 
 const SEOAgency = () => {
   const { openForm } = useMarketingForm();
@@ -650,6 +652,37 @@ const SEOAgency = () => {
                 Talk to a Corporate SEO Expert
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 6.5: SEO Package Comparison */}
+        <section className="py-16 md:py-24 bg-muted/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4 text-charcoal">
+                  Compare Our SEO Packages
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+                  Choose the SEO package that aligns with your business goals and budget. All packages include our proven methodologies and transparent reporting.
+                </p>
+              </div>
+              <ComparisonTable
+                title={seoPackageComparison.title}
+                description={seoPackageComparison.description}
+                rows={seoPackageComparison.rows}
+              />
+              <div className="text-center mt-12">
+                <Button
+                  onClick={openForm}
+                  size="lg"
+                  className="bg-gradient-primary text-white shadow-primary hover:shadow-glow transition-all group whitespace-normal break-words py-3 px-6"
+                >
+                  Get Custom SEO Package Recommendations
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
             </div>
           </div>
         </section>

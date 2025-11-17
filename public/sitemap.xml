@@ -70,56 +70,74 @@
 
   <!-- SEO by City -->
   <url>
-    <loc>https://odindigital.com.au/services/sydney-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-sydney</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/melbourne-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-melbourne</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/brisbane-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-brisbane</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/perth-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-perth</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/adelaide-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-adelaide</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/canberra-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-canberra</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/hobart-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-hobart</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/gold-coast-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-darwin</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/newcastle-seo</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/seo-launceston</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/seo-ballarat</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/seo-gold-coast</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/seo-newcastle</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -138,74 +156,74 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-sydney</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-sydney</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-melbourne</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-melbourne</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-brisbane</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-brisbane</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-perth</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-perth</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-adelaide</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-adelaide</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-canberra</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-canberra</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-hobart</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-hobart</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-gold-coast</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-gold-coast</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-newcastle</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-newcastle</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-darwin</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-darwin</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-launceston</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-launceston</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/google-ads-ballarat</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/google-ads-ballarat</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -230,58 +248,76 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-sydney</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-sydney</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-melbourne</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-melbourne</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-brisbane</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-brisbane</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-perth</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-perth</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-adelaide</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-adelaide</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-canberra</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-canberra</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-hobart</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-hobart</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-gold-coast</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-gold-coast</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/facebook-ads-newcastle</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/facebook-ads-newcastle</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/facebook-ads-darwin</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/facebook-ads-launceston</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/facebook-ads-ballarat</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Web Design Services -->
@@ -300,56 +336,74 @@
 
   <!-- Web Design by City -->
   <url>
-    <loc>https://odindigital.com.au/services/web-design-sydney</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-sydney</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-melbourne</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-melbourne</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-brisbane</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-brisbane</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-perth</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-perth</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-adelaide</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-adelaide</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-canberra</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-canberra</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-hobart</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-hobart</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-gold-coast</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-gold-coast</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://odindigital.com.au/services/web-design-newcastle</loc>
-    <lastmod>2025-11-01</lastmod>
+    <loc>https://odindigital.com.au/web-design-newcastle</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/web-design-darwin</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/web-design-launceston</loc>
+    <lastmod>2025-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://odindigital.com.au/web-design-ballarat</loc>
+    <lastmod>2025-11-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
