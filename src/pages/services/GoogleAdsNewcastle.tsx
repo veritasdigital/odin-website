@@ -19,6 +19,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { CheckCircle2, Target, TrendingUp, Users, Zap, Clock, BarChart, Shield, Award, Lightbulb, LineChart, MousePointerClick, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 import { useState, useEffect } from "react";
 import krushOrganics from "@/assets/krush-organics.png";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
@@ -965,6 +967,12 @@ const GoogleAdsNewcastle = () => {
             </div>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Newcastle", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
         <SideTab />

@@ -8,6 +8,8 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { SideTab } from "@/components/SideTab";
 import { Target, MapPin, TrendingUp, Shield, Award, BarChart3, DollarSign, Users } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsLaunceston = () => {
   const navigate = useNavigate();
   const schemaMarkup = {
@@ -629,6 +631,12 @@ const GoogleAdsLaunceston = () => {
             </Button>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Launceston", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

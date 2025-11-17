@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button';
 import { Target, TrendingUp, Eye, MapPin, BarChart, DollarSign, Shield, RefreshCw, Zap, Award, FileText, Users } from 'lucide-react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { MarketingFormModal } from "@/components/MarketingFormModal";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsSydney = () => {
   const {
     openForm
@@ -581,6 +583,12 @@ const GoogleAdsSydney = () => {
           </div>
         </section>
       </main>
+
+
+      <RelatedLocations 
+        locations={getRelatedLocations("Sydney", "google-ads")}
+        title="Google Ads Services in Other Australian Cities"
+      />
 
       <Footer />
 

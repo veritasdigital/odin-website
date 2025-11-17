@@ -28,6 +28,10 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Card } from "@/components/ui/card";
+import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const GoogleAdsAdelaide = () => {
   const [showStickyButton, setShowStickyButton] = useState(false);
@@ -590,6 +594,12 @@ const GoogleAdsAdelaide = () => {
           </div>
         </section>
 
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Adelaide", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

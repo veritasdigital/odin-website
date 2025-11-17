@@ -8,6 +8,8 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { ArrowRight, Target, TrendingUp, Users, Award, CheckCircle, Shield, Zap, Filter, BarChart3, Calendar, Star } from "lucide-react";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsGoldCoast = () => {
   const {
     openForm
@@ -641,6 +643,12 @@ const GoogleAdsGoldCoast = () => {
             </Accordion>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Gold Coast", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
 

@@ -6,6 +6,8 @@ import { Header } from "@/components/Header";
 import LocationContent from "@/components/LocationContent";
 import { ArrowRight, Target, TrendingUp, Users, Award, DollarSign, BarChart3, Shield, Crosshair, CheckCircle2, AlertCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 const GoogleAdsCanberra = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -507,6 +509,12 @@ const GoogleAdsCanberra = () => {
             </Link>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Canberra", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
 

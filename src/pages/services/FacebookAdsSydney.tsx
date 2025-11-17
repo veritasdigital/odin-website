@@ -32,6 +32,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { ServiceHero } from "@/components/ServiceHero";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsSydney = () => {
   const { openForm } = useMarketingForm();
@@ -753,6 +755,12 @@ const FacebookAdsSydney = () => {
             Book Free Consultation
           </Button>
         </div>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Sydney", "facebook-ads")}
+          title="Facebook Ads Services in Other Australian Cities"
+        />
 
         <Footer />
       </div>

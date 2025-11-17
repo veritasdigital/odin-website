@@ -11,6 +11,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { SideTab } from "@/components/SideTab";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link, useNavigate } from "react-router-dom";
+import { RelatedLocations } from "@/components/RelatedLocations";
+import { getRelatedLocations } from "@/utils/contentClusters";
 export default function GoogleAdsHobart() {
   const {
     openForm
@@ -517,6 +519,12 @@ export default function GoogleAdsHobart() {
             </div>
           </div>
         </section>
+
+
+        <RelatedLocations 
+          locations={getRelatedLocations("Hobart", "google-ads")}
+          title="Google Ads Services in Other Australian Cities"
+        />
 
         <Footer />
         <MarketingFormModal />
