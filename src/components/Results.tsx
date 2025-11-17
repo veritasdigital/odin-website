@@ -112,15 +112,15 @@ export const Results = () => {
             <CarouselContent className="-ml-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="pl-4">
-                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group h-full">
-                    <div className="flex flex-col lg:flex-row h-full">
+                  <Card className="relative overflow-hidden bg-white border border-charcoal/10 hover:border-primary/30 transition-all duration-500 hover:shadow-elegant group">
+                    <div className="flex flex-col lg:flex-row">
                       {/* Image Section */}
                       {testimonial.image && (
-                        <div className="lg:w-1/2 relative overflow-hidden flex bg-muted/20">
+                        <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
@@ -137,15 +137,15 @@ export const Results = () => {
                           </svg>
                         </div>
                         
-                        <div className="flex items-center mb-4">
+                        <div className="flex items-center mb-3">
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                           ))}
                         </div>
                         
-                        <div className="mb-4">
-                          <h3 className="text-xl font-bold text-charcoal mb-2">{testimonial.company}</h3>
-                          <div className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-full font-bold text-sm mb-3">
+                        <div className="mb-3">
+                          <h3 className="text-xl font-bold text-charcoal mb-1.5">{testimonial.company}</h3>
+                          <div className="inline-block bg-gradient-to-r from-primary to-primary/80 text-white px-4 py-2 rounded-full font-bold text-sm mb-2.5">
                             {testimonial.result}
                           </div>
                           <blockquote className="text-charcoal/80 leading-relaxed text-lg italic">
@@ -162,7 +162,7 @@ export const Results = () => {
                           </blockquote>
                         </div>
                         
-                        <div className="border-t border-charcoal/10 pt-4 mt-auto">
+                        <div className="border-t border-charcoal/10 pt-3 mt-auto">
                           <p className="font-bold text-charcoal text-lg">{testimonial.author}</p>
                           <p className="text-charcoal/60 mb-1">{testimonial.title}, {testimonial.company}</p>
                           {testimonial.location && (
