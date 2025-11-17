@@ -12,9 +12,13 @@ import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
 import { locationImages } from "@/utils/locationImages";
+import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
+import { MapPin, TrendingUp as TrendingUpIcon, Building2, DollarSign } from "lucide-react";
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("melbourne");
 
   const relatedServices = [
     {
@@ -762,6 +766,158 @@ const MelbourneSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Melbourne-Specific Statistics */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                Melbourne Digital Marketing Landscape
+              </h2>
+              <p className="text-lg text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+                Understanding Melbourne's dynamic business environment
+              </p>
+              
+              <div className="grid md:grid-cols-4 gap-6 mb-12">
+                <Card className="text-center">
+                  <CardContent className="pt-6">
+                    <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-charcoal mb-2">{locationInfo.statistics.population}</div>
+                    <div className="text-sm text-muted-foreground">Population</div>
+                  </CardContent>
+                </Card>
+                <Card className="text-center">
+                  <CardContent className="pt-6">
+                    <Building2 className="w-8 h-8 text-primary mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-charcoal mb-2">{locationInfo.statistics.businesses}</div>
+                    <div className="text-sm text-muted-foreground">Active Businesses</div>
+                  </CardContent>
+                </Card>
+                <Card className="text-center">
+                  <CardContent className="pt-6">
+                    <DollarSign className="w-8 h-8 text-primary mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-charcoal mb-2">{locationInfo.statistics.gdp}</div>
+                    <div className="text-sm text-muted-foreground">GDP</div>
+                  </CardContent>
+                </Card>
+                <Card className="text-center">
+                  <CardContent className="pt-6">
+                    <TrendingUpIcon className="w-8 h-8 text-primary mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-charcoal mb-2">{locationInfo.statistics.growthRate}</div>
+                    <div className="text-sm text-muted-foreground">Annual Growth</div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Key Business Districts</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {locationInfo.businessDistricts.map((district, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span>{district}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Melbourne Landmarks</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2">
+                      {locationInfo.landmarks.map((landmark, index) => (
+                        <li key={index} className="flex items-center gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                          <span>{landmark}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Melbourne Case Study */}
+        {locationInfo?.caseStudy && (
+          <section className="py-20">
+            <div className="container mx-auto px-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Melbourne Success Story
+              </h2>
+              
+              <Card className="max-w-4xl mx-auto border-2 border-primary/20">
+                <CardHeader className="bg-primary/5">
+                  <CardTitle className="text-2xl">{locationInfo.caseStudy.business}</CardTitle>
+                  <CardDescription className="text-base">{locationInfo.caseStudy.industry}</CardDescription>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-charcoal">The Challenge</h3>
+                      <p className="text-muted-foreground">{locationInfo.caseStudy.challenge}</p>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-charcoal">Our Solution</h3>
+                      <p className="text-muted-foreground">{locationInfo.caseStudy.solution}</p>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-charcoal">The Results</h3>
+                      <ul className="space-y-3">
+                        {locationInfo.caseStudy.results.map((result, index) => (
+                          <li key={index} className="flex items-start gap-3">
+                            <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-charcoal font-medium">{result}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        )}
+
+        {/* Melbourne Service Area Map */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <LocationMap 
+                  city={locationInfo.city}
+                  coordinates={locationInfo.coordinates}
+                  address={locationInfo.citations.address}
+                />
+                
+                <Card className="mt-8">
+                  <CardHeader>
+                    <CardTitle>Local Business Citation</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <h3 className="font-semibold text-lg mb-2">{locationInfo.citations.name}</h3>
+                    <p className="text-muted-foreground mb-3">{locationInfo.citations.description}</p>
+                    <div className="space-y-1 text-sm">
+                      <p><strong>Address:</strong> {locationInfo.citations.address}</p>
+                      <p><strong>Phone:</strong> <a href={`tel:${locationInfo.citations.phone}`} className="text-primary hover:underline">{locationInfo.citations.phone}</a></p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+        )}
+
 
         {/* Sticky Mobile CTA */}
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t md:hidden z-50">
