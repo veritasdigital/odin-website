@@ -120,7 +120,7 @@ export const Results = () => {
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
