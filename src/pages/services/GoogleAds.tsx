@@ -56,6 +56,29 @@ export default function GoogleAds() {
     description: "As performance improves, we systematically scale winning campaigns while maintaining profitability.",
     details: ["Budget scaling strategies", "New keyword opportunities", "Additional campaign types", "Performance forecasting"]
   }];
+  const featuredSnippets = [
+    {
+      question: "What is Google Ads?",
+      answer: "Google Ads is an online advertising platform where businesses pay to display ads on Google search results and across the Google Display Network. Advertisers bid on keywords to show ads to users searching for related products or services, paying only when someone clicks their ad (pay-per-click or PPC)."
+    },
+    {
+      question: "How does Google Ads work?",
+      answer: "Google Ads works through an auction system: (1) You bid on keywords relevant to your business, (2) Google determines ad rank based on your bid and quality score, (3) Your ad appears when users search for those keywords, (4) You pay only when someone clicks your ad. Higher quality ads with better relevance get better positions at lower costs."
+    },
+    {
+      question: "Is Google Ads worth it?",
+      answer: "Google Ads is worth it for most businesses when managed properly. It delivers immediate visibility, highly targeted traffic, and measurable ROI. Our clients average 427% ROI, meaning they earn $4.27 for every $1 spent. However, success requires strategic management, continuous optimization, and proper conversion tracking."
+    }
+  ];
+
+  const googleAdsVsSEO = [
+    { factor: "Time to Results", googleAds: "Immediate (hours to days)", seo: "Long-term (3-12 months)" },
+    { factor: "Cost Structure", googleAds: "Pay per click (ongoing)", seo: "Upfront investment + maintenance" },
+    { factor: "Traffic Control", googleAds: "Instant on/off control", seo: "Gradual, long-lasting" },
+    { factor: "Targeting Precision", googleAds: "Highly precise (keywords, demographics, location)", seo: "Broader organic reach" },
+    { factor: "Best For", googleAds: "Immediate leads, promotions, testing", seo: "Long-term brand building, authority" }
+  ];
+
   const caseStudy = {
     client: "Local Legal Firm",
     industry: "Legal Services",
@@ -401,6 +424,82 @@ export default function GoogleAds() {
         </div>
       </section>
 
+        {/* Featured Snippet Optimization */}
+        <section className="py-12 px-4 bg-muted/20">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-8 text-charcoal">Google Ads: Quick Answers</h2>
+              <div className="space-y-8">
+                {featuredSnippets.map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-border">
+                    <h2 className="text-2xl font-semibold mb-4 text-charcoal">{item.question}</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">Google Ads vs SEO: Which is Right for Your Business?</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full bg-white rounded-lg border border-border">
+                  <thead className="bg-muted/30">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Factor</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Google Ads (PPC)</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">SEO (Organic)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {googleAdsVsSEO.map((row, index) => (
+                      <tr key={index}>
+                        <td className="px-6 py-4 font-medium text-charcoal">{row.factor}</td>
+                        <td className="px-6 py-4 text-charcoal/80">{row.googleAds}</td>
+                        <td className="px-6 py-4 text-charcoal/80">{row.seo}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">How to Set Up Google Ads: Step-by-Step</h2>
+              <div className="bg-white p-8 rounded-lg border border-border">
+                <ol className="space-y-4">
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">1</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Create a Google Ads account and set up billing information</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">2</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Research and select high-intent keywords relevant to your products or services</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">3</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Create campaign structure with organized ad groups targeting specific themes</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">4</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Write compelling ad copy with clear value propositions and strong calls-to-action</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">5</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Set up conversion tracking to measure leads, sales, and ROI accurately</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">6</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Launch campaigns with proper budget allocation and bidding strategies</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">7</span>
+                    <p className="text-lg text-charcoal/80 pt-1">Monitor performance daily and optimize based on conversion data and cost metrics</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
 
       {/* All Google Ads Services by Location */}
       <HubPageLocations 

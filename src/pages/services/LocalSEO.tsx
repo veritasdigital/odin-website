@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowRight, MapPin, Phone, AlertTriangle, Link2, TrendingDown, Globe, Star, Shield, CheckCircle2, Building } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -77,6 +78,32 @@ const LocalSEO = () => {
       title: "Corporate Local SEO Experts",
       description: "Scalable local SEO solutions for multi-location and franchise businesses."
     }
+  ];
+
+  const featuredSnippets = [
+    {
+      question: "What is Local SEO?",
+      answer: "Local SEO is the process of optimizing your online presence to attract more business from relevant local searches. It includes optimizing your Google Business Profile, building local citations, and creating location-specific content to improve visibility in local search results and Google Maps."
+    },
+    {
+      question: "How does Local SEO work?",
+      answer: "Local SEO works by optimizing three key ranking factors: (1) Google Business Profile optimization with accurate NAP data, photos, and reviews, (2) Building consistent citations across local directories and platforms, (3) Creating location-specific website content that targets local keywords and search intent."
+    },
+    {
+      question: "What are the benefits of Local SEO?",
+      answer: "Local SEO delivers 78% higher conversion rates than traditional advertising, helps you appear in the Local 3-Pack for high-intent searches, increases foot traffic to physical locations, and builds trust through verified reviews and consistent online presence."
+    }
+  ];
+
+  const howToSteps = [
+    "Claim and verify your Google Business Profile",
+    "Optimize your business information with accurate NAP (Name, Address, Phone) data",
+    "Add high-quality photos and videos of your business",
+    "Collect and respond to customer reviews regularly",
+    "Build citations on relevant local directories",
+    "Create location-specific content on your website",
+    "Ensure your website is mobile-friendly and fast",
+    "Monitor and maintain consistent NAP data across all platforms"
   ];
 
   const faqs = [
@@ -387,6 +414,81 @@ const LocalSEO = () => {
                 <span className="sm:hidden">Contact Us Today</span>
                 <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Snippet Optimization */}
+        <section className="py-12 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-8 text-charcoal">Local SEO Questions Answered</h2>
+              <div className="space-y-8">
+                {featuredSnippets.map((item, index) => (
+                  <div key={index} className="bg-white p-6 rounded-lg border border-border">
+                    <h2 className="text-2xl font-semibold mb-4 text-charcoal">{item.question}</h2>
+                    <p className="text-lg text-charcoal/80 leading-relaxed">{item.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">How to Do Local SEO: Step-by-Step Guide</h2>
+              <div className="bg-white p-8 rounded-lg border border-border">
+                <ol className="space-y-4">
+                  {howToSteps.map((step, index) => (
+                    <li key={index} className="flex items-start gap-4">
+                      <span className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">
+                        {index + 1}
+                      </span>
+                      <p className="text-lg text-charcoal/80 pt-1">{step}</p>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-charcoal">Local SEO vs Traditional SEO: Key Differences</h2>
+              <div className="overflow-x-auto">
+                <table className="w-full bg-white rounded-lg border border-border">
+                  <thead className="bg-muted/30">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Feature</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Local SEO</th>
+                      <th className="px-6 py-4 text-left text-charcoal font-semibold">Traditional SEO</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-charcoal">Target Audience</td>
+                      <td className="px-6 py-4 text-charcoal/80">Local customers in specific geographic area</td>
+                      <td className="px-6 py-4 text-charcoal/80">National or global audience</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-charcoal">Primary Platform</td>
+                      <td className="px-6 py-4 text-charcoal/80">Google Business Profile + Website</td>
+                      <td className="px-6 py-4 text-charcoal/80">Website only</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-charcoal">Key Ranking Factors</td>
+                      <td className="px-6 py-4 text-charcoal/80">Proximity, NAP consistency, Reviews</td>
+                      <td className="px-6 py-4 text-charcoal/80">Content quality, Backlinks, Authority</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-charcoal">Citation Building</td>
+                      <td className="px-6 py-4 text-charcoal/80">Essential for rankings</td>
+                      <td className="px-6 py-4 text-charcoal/80">Not a primary factor</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-charcoal">Results Timeline</td>
+                      <td className="px-6 py-4 text-charcoal/80">2-3 months for initial improvement</td>
+                      <td className="px-6 py-4 text-charcoal/80">6-12 months for significant results</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
