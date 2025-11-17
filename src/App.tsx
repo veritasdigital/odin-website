@@ -20,6 +20,7 @@ import StrategySession from "./pages/StrategySession";
 import Onboarding from "./pages/Onboarding";
 import LeadMagnetBooking from "./pages/LeadMagnetBooking";
 import Application from "./pages/Application";
+import AdsCalendar from "./pages/AdsCalendar";
 import TikTokForBusiness from "./pages/blog/TikTokForBusiness";
 import GoogleAds from "./pages/services/GoogleAds";
 import GoogleAdsManagement from "./pages/services/GoogleAdsManagement";
@@ -320,6 +321,7 @@ const App = () => (
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/free-trainings-booking" element={<LeadMagnetBooking />} />
           <Route path="/application" element={<Application />} />
+          <Route path="/ads-calendar" element={<AdsCalendar />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
