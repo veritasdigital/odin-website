@@ -4,6 +4,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
+import LocationContent from "@/components/LocationContent";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
@@ -503,6 +504,9 @@ const PerthSEO = () => {
             </p>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Perth" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-24 bg-muted/30">

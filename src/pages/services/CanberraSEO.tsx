@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -935,6 +936,9 @@ const CanberraSEO = () => {
             </p>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Canberra" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-12 sm:py-16 md:py-20 bg-muted/30 mb-16 sm:mb-20 md:mb-24">

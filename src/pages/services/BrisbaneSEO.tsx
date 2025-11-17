@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -616,6 +617,9 @@ const BrisbaneSEO = () => {
             </p>
           </div>
         </section>
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Brisbane" serviceType="SEO" />
 
         {/* FAQ Section */}
         <section className="py-20 px-4 bg-white">

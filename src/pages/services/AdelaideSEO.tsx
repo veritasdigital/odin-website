@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
+import LocationContent from "@/components/LocationContent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -703,6 +704,9 @@ const AdelaideSEO = () => {
         </section>
 
         <RelatedServices services={relatedServices} />
+
+        {/* Location-Specific Content */}
+        <LocationContent city="Adelaide" serviceType="SEO" />
 
         {/* Section 11: FAQ */}
         <section className="py-16 md:py-24">
