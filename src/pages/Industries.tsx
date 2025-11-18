@@ -387,10 +387,11 @@ const Industries = () => {
         </section>
 
         {/* Our Approach Section */}
-        <section className="relative py-12 md:py-20 bg-white">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-white via-muted/20 to-muted/30 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full animate-float" />
             <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent/5 rounded-full animate-float animation-delay-2000" />
+            <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-muted/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float animation-delay-1000" />
           </div>
 
           <div className="container relative z-10 mx-auto px-4">
@@ -506,21 +507,21 @@ const Industries = () => {
                     <Card key={index} className="border-muted/40 hover:shadow-lg transition-shadow">
                       <CardContent className="p-6">
                         <div className="flex items-start gap-4 mb-4">
-                          <div className="p-3 bg-gradient-to-r from-[#D91C5C] to-[#8B1538] rounded-lg">
+                          <div className="p-3 bg-gradient-to-r from-[#D91C5C] to-[#8B1538] rounded-lg flex-shrink-0">
                             <Icon className="h-6 w-6 text-white" />
                           </div>
-                          <div className="flex-1">
-                            <h3 className="text-xl font-semibold text-charcoal mb-2">{industry.name}</h3>
+                          <div className="flex-1 min-w-0">
+                            <h3 className="text-lg md:text-xl font-semibold text-charcoal mb-2 break-words">{industry.name}</h3>
                           </div>
                         </div>
                         <div className="space-y-3 mb-4">
                           <div>
                             <p className="text-sm font-semibold text-charcoal/80 mb-1">Core Pain Point:</p>
-                            <p className="text-charcoal/70">{industry.painPoint}</p>
+                            <p className="text-sm md:text-base text-charcoal/70 break-words">{industry.painPoint}</p>
                           </div>
                           <div>
                             <p className="text-sm font-semibold text-charcoal/80 mb-1">Key Service Focus:</p>
-                            <p className="text-charcoal/70">{industry.focus}</p>
+                            <p className="text-sm md:text-base text-charcoal/70 break-words">{industry.focus}</p>
                           </div>
                         </div>
                         <Button
@@ -554,10 +555,15 @@ const Industries = () => {
         </section>
 
         {/* Why Choose Odin Digital */}
-        <section className="relative py-12 md:py-20 bg-white">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-muted/20 via-white to-muted/30 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-primary/5 rounded-full animate-float" />
             <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-accent/5 rounded-full animate-float animation-delay-2000" />
+            <div className="absolute top-1/2 left-1/4 w-56 h-56 bg-muted/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-float animation-delay-1000" />
+            
+            {/* Floating circles with borders */}
+            <div className="absolute top-20 right-1/4 w-48 h-48 border border-primary/10 rounded-full animate-float" />
+            <div className="absolute bottom-20 left-1/3 w-64 h-64 border border-accent/10 rounded-full animate-float animation-delay-2000" />
           </div>
 
           <div className="container relative z-10 mx-auto px-4">
