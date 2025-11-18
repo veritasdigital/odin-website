@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { getArticleSchema } from "@/utils/schemaMarkup";
+import { blogArticles } from "@/utils/blogSchemaData";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { Button } from "@/components/ui/button";
@@ -9,7 +11,6 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, User, ArrowRight, TrendingUp, Target, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/blog/ai-seo-future-proof.jpg";
-import { blogArticles } from "@/utils/blogSchemaData";
 
 const AISEOFutureProof = () => {
   const { openForm } = useMarketingForm();

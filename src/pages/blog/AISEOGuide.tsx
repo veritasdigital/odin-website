@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Helmet } from "react-helmet";
+import { getArticleSchema } from "@/utils/schemaMarkup";
+import { blogArticles } from "@/utils/blogSchemaData";
 import { Link } from "react-router-dom";
 import { 
   List, 
@@ -35,7 +37,6 @@ import {
 } from "@/components/ui/breadcrumb";
 import aiSeoHeroImage from "@/assets/blog/ai-seo-hero.jpg";
 import odinTeamImage from "@/assets/odin-team-real.jpg";
-import { blogArticles } from "@/utils/blogSchemaData";
 
 const AISEOGuide = () => {
   const { openForm } = useMarketingForm();

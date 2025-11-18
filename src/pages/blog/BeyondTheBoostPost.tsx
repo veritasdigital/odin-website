@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { getArticleSchema } from "@/utils/schemaMarkup";
+import { blogArticles } from "@/utils/blogSchemaData";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -10,7 +12,6 @@ import heroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import strategicTeam from "@/assets/blog/strategic-advertising-team.jpg";
 import platformComparison from "@/assets/blog/platform-comparison.jpg";
 import roiMetrics from "@/assets/blog/roi-metrics.jpg";
-import { blogArticles } from "@/utils/blogSchemaData";
 
 const BeyondTheBoostPost = () => {
   return (

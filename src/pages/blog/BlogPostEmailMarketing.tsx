@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { getArticleSchema } from "@/utils/schemaMarkup";
+import { blogArticles } from "@/utils/blogSchemaData";
 import { Link } from "react-router-dom";
 import { 
   Mail, 
@@ -16,7 +18,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroImage from "@/assets/blog/email-list-building-hero.jpg";
-import { blogArticles } from "@/utils/blogSchemaData";
 
 export default function BlogPostEmailMarketing() {
   const { openForm } = useMarketingForm();

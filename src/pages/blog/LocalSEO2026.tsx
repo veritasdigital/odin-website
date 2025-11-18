@@ -11,6 +11,7 @@ import { ArrowRight, MapPin, Star, TrendingUp, Users, FileText, CheckSquare } fr
 import heroImage from "@/assets/blog/local-seo-2026.jpg";
 import authorImage from "@/assets/odin-team-real.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const LocalSEO2026 = () => {
   const publishDate = "August 18, 2025";

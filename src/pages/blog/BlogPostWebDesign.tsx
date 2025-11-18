@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import heroImage from "@/assets/blog/website-redesign-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 import { blogArticles } from "@/utils/blogSchemaData";
 
 const BlogPostWebDesign = () => {

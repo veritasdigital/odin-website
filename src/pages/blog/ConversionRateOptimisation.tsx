@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import croHero from "@/assets/blog/cro-conversion-optimization.jpg";
 import odinTeamPhoto from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const ConversionRateOptimisation = () => {
   const scrollToSection = (id: string) => {

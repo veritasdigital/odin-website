@@ -14,6 +14,7 @@ import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 export default function ContentMarketingMatrix() {
   const { openForm } = useMarketingForm();
