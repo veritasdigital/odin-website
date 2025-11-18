@@ -127,10 +127,10 @@ export default function OurIndustries() {
                       <li key={itemIdx}>
                         <Link 
                           to={item.path}
-                          className="text-sm text-charcoal/70 hover:text-primary transition-colors flex items-start group"
+                          className="text-sm text-charcoal/70 hover:text-primary transition-colors flex items-center group"
                         >
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform" />
-                          <span className="break-words">{item.name}</span>
+                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2.5 flex-shrink-0 group-hover:scale-125 transition-transform" />
+                          <span className="break-words text-left">{item.name}</span>
                         </Link>
                       </li>
                     ))}
