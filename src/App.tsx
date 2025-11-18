@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import OurIndustries from "./pages/OurIndustries";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
+import FreeTrainingsThankYou from "./pages/FreeTrainingsThankYou";
 import AdsThankYou from "./pages/AdsThankYou";
 import T2AdsThankYou from "./pages/T2AdsThankYou";
 import Blog from "./pages/Blog";
@@ -337,6 +338,7 @@ const App = () => (
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/free-trainings-thank-you" element={<FreeTrainingsThankYou />} />
           <Route path="/ads-thank-you" element={<AdsThankYou />} />
           <Route path="/t2-ads-thank-you" element={<T2AdsThankYou />} />
           <Route path="/strategy-session" element={<StrategySession />} />
