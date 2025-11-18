@@ -227,21 +227,39 @@ const PharmaceuticalCompanies = () => {
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-muted/30 to-muted/20 mt-20">
         {/* Animated Background Blobs */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-muted/15 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute -bottom-8 left-20 w-72 h-72 bg-muted/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"></div>
+          <div className="absolute top-40 right-10 w-96 h-96 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute -bottom-8 left-20 w-80 h-80 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '4s' }}></div>
+          <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-20 w-56 h-56 bg-accent/5 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float" style={{ animationDelay: '3s' }}></div>
         </div>
 
         {/* Floating Particles */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/20 rounded-full animate-ping"></div>
-          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/20 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/20 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-ping"></div>
+          <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent/30 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/30 rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-1/2 left-1/3 w-2 h-2 bg-accent/30 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-primary/30 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
+          <div className="absolute top-2/3 right-1/2 w-2 h-2 bg-accent/30 rounded-full animate-ping" style={{ animationDelay: '2.5s' }}></div>
         </div>
 
         {/* Floating Circles */}
         <div className="absolute top-20 right-20 w-32 h-32 border-2 border-primary/10 rounded-full animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-accent/10 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/3 left-10 w-40 h-40 border-2 border-primary/5 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-1/3 right-10 w-28 h-28 border-2 border-accent/5 rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/2 right-1/3 w-20 h-20 border border-primary/10 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+
+        {/* Geometric Shapes */}
+        <div className="absolute top-32 left-1/4 w-16 h-16 border-2 border-primary/10 rotate-12 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 right-1/4 w-20 h-20 border-2 border-accent/10 rotate-45 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 left-1/3 w-12 h-12 border border-primary/10 rounded-lg rotate-6 animate-pulse" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute bottom-1/4 right-1/3 w-14 h-14 border border-accent/10 rounded-lg -rotate-12 animate-pulse" style={{ animationDelay: '1.8s' }}></div>
+
+        {/* Additional Decorative Elements */}
+        <div className="absolute top-40 left-1/2 w-1 h-16 bg-gradient-to-b from-primary/20 to-transparent rotate-12"></div>
+        <div className="absolute bottom-40 right-1/2 w-1 h-20 bg-gradient-to-t from-accent/20 to-transparent -rotate-12"></div>
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
