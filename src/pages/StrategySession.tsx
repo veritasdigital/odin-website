@@ -13,6 +13,8 @@ import { Step9FinalBooking } from "@/components/strategy-session/Step9FinalBooki
 import { Star, ArrowLeft, Shield, CreditCard, Tag, CheckCircle2, TrendingUp, Target, BarChart3, Zap, ChevronDown, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const FormContent = () => {
   const { currentStep, prevStep } = useStrategySession();
@@ -63,38 +65,40 @@ const FormContent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5">
-      {/* Scroll Progress Bar */}
-      {!quizStarted && (
-        <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-muted">
-          <div 
-            className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-300"
-            style={{ width: `${scrollProgress}%` }}
+    <>
+      <Header />
+      <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5 pt-20">
+        {/* Scroll Progress Bar */}
+        {!quizStarted && (
+          <div className="fixed top-20 left-0 right-0 z-50 h-1 bg-muted">
+            <div 
+              className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-300"
+              style={{ width: `${scrollProgress}%` }}
+            />
+          </div>
+        )}
+
+        {/* Scroll to Top Button */}
+        {!quizStarted && showScrollTop && (
+          <button
+            onClick={scrollToTop}
+            className="fixed bottom-8 right-8 z-50 p-4 bg-primary text-primary-foreground rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 animate-fade-in"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp className="w-6 h-6" />
+          </button>
+        )}
+
+        <Helmet>
+          <title>Get Your Free Digital Growth Blueprint ($1,000 Value) | Odin Digital</title>
+          <meta
+            name="description"
+            content="Get a custom, actionable digital growth plan in a 100% free 30-minute strategy call. Proven strategies that have generated over $574 million for our clients."
           />
-        </div>
-      )}
-
-      {/* Scroll to Top Button */}
-      {!quizStarted && showScrollTop && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-4 bg-primary text-primary-foreground rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 animate-fade-in"
-          aria-label="Scroll to top"
-        >
-          <ArrowUp className="w-6 h-6" />
-        </button>
-      )}
-
-      <Helmet>
-        <title>Get Your Free Digital Growth Blueprint ($1,000 Value) | Odin Digital</title>
-        <meta
-          name="description"
-          content="Get a custom, actionable digital growth plan in a 100% free 30-minute strategy call. Proven strategies that have generated over $574 million for our clients."
-        />
-      </Helmet>
-      
-      {!quizStarted ? (
-        <div className="min-h-screen">
+        </Helmet>
+        
+        {!quizStarted ? (
+          <div className="min-h-screen">{/* Hero Section */}
           {/* Hero Section */}
           <section className="relative py-20 md:py-32 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5" />
@@ -577,6 +581,8 @@ const FormContent = () => {
               </div>
             </div>
           </section>
+          
+          <Footer />
         </div>
       ) : (
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20">
@@ -600,7 +606,8 @@ const FormContent = () => {
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   );
 };
 
