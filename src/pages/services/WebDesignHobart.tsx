@@ -7,6 +7,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle2, Target, TrendingUp, Zap, Search, ShoppingCart, Smartphone, BarChart3, Award, Clock, Shield, Users, ArrowRight, AlertCircle, XCircle, DollarSign } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const WebDesignHobart = () => {
   const {
     openForm
@@ -674,7 +676,18 @@ const WebDesignHobart = () => {
           </div>
         </section>
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Hobart"
+            coordinates={getLocationData("Hobart")?.coordinates || { lat: -42.8821, lng: 147.3272 }}
+            address={getLocationData("Hobart")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
         <SideTab />
 
         {/* Mobile Sticky CTA */}

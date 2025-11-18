@@ -10,6 +10,9 @@ import { useState } from "react";
 import { AlertCircle, FileQuestion, TrendingDown, UserX, DollarSign, Smartphone, Target, MousePointer, Shield, Layout, Zap, Image as ImageIcon, Code, Globe, Search, FileText, MapPin, Settings, Activity, HeadphonesIcon, Briefcase, ShoppingCart, Palette, RefreshCw, FileCode, Award, Lock, Eye, Users, TrendingUp, ChevronDown } from "lucide-react";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
+
 const WebDesignNewcastle = () => {
   const {
     openForm
@@ -637,7 +640,18 @@ const WebDesignNewcastle = () => {
           title="Web Design Services in Other Australian Cities"
         />
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Newcastle"
+            coordinates={getLocationData("Newcastle")?.coordinates || { lat: -32.9283, lng: 151.7817 }}
+            address={getLocationData("Newcastle")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
         <SideTab />
 
         {/* Mobile Sticky CTA */}

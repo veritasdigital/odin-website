@@ -682,7 +682,18 @@ const FacebookAdsGoldCoast = () => {
           title="Facebook Ads Services in Other Australian Cities"
         />
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Gold Coast"
+            coordinates={getLocationData("Gold Coast")?.coordinates || { lat: -28.0167, lng: 153.4000 }}
+            address={getLocationData("Gold Coast")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

@@ -599,7 +599,18 @@ const WebDesignBallarat = () => {
           </Button>
         </div>
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Ballarat"
+            coordinates={getLocationData("Ballarat")?.coordinates || { lat: -37.5622, lng: 143.8503 }}
+            address={getLocationData("Ballarat")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

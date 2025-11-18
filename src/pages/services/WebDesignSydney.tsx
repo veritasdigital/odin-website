@@ -8,6 +8,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowRight, TrendingUp, Users, Award, Zap, Target, Search, Smartphone, CheckCircle2, Layers, ShoppingBag, Code2, Palette, Gauge, Globe } from "lucide-react";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
+
 
 const WebDesignSydney = () => {
   const stats = [
@@ -628,7 +631,18 @@ const WebDesignSydney = () => {
           title="Web Design Services in Other Australian Cities"
         />
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Sydney"
+            coordinates={getLocationData("Sydney")?.coordinates || { lat: -33.8688, lng: 151.2093 }}
+            address={getLocationData("Sydney")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

@@ -674,7 +674,18 @@ const WebDesignPerth = () => {
           title="Web Design Services in Other Australian Cities"
         />
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Perth"
+            coordinates={getLocationData("Perth")?.coordinates || { lat: -31.9505, lng: 115.8605 }}
+            address={getLocationData("Perth")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

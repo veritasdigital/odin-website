@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Link } from "react-router-dom";
 import { TrendingUp, Users, Award, Target, Zap, AlertCircle, Palette, Search, ShoppingCart, Settings, ClipboardCheck, Code, Rocket, MapPin, Lightbulb, Shield, DollarSign, CheckCircle2, ArrowRight } from "lucide-react";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const WebDesignGoldCoast = () => {
   const {
     openForm
@@ -598,7 +600,18 @@ const WebDesignGoldCoast = () => {
         {/* Related Services and Cities */}
         
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Gold Coast"
+            coordinates={getLocationData("Gold Coast")?.coordinates || { lat: -28.0167, lng: 153.4000 }}
+            address={getLocationData("Gold Coast")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
         <SideTab />
 
         {/* Mobile Sticky CTA */}

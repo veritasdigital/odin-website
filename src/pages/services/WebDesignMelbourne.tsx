@@ -696,7 +696,18 @@ const WebDesignMelbourne = () => {
           </Button>
         </div>
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Melbourne"
+            coordinates={getLocationData("Melbourne")?.coordinates || { lat: -37.8136, lng: 144.9631 }}
+            address={getLocationData("Melbourne")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

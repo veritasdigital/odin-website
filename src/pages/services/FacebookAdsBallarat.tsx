@@ -11,6 +11,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Target, Palette, Settings, TrendingUp, DollarSign, BarChart3, Users, Zap, ShoppingCart, Coffee, Briefcase, Heart, Home } from "lucide-react";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
+
 
 const FacebookAdsBallarat = () => {
   const jsonLdSchema = {
@@ -904,7 +907,18 @@ const FacebookAdsBallarat = () => {
           </div>
         </div>
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Ballarat"
+            coordinates={getLocationData("Ballarat")?.coordinates || { lat: -37.5622, lng: 143.8503 }}
+            address={getLocationData("Ballarat")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

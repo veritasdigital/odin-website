@@ -735,6 +735,17 @@ const FacebookAdsHobart = () => {
         </div>
       </main>
 
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Hobart"
+            coordinates={getLocationData("Hobart")?.coordinates || { lat: -42.8821, lng: 147.3272 }}
+            address={getLocationData("Hobart")?.citations.address}
+          />
+        </div>
+      </section>
+
       <Footer />
     </>
   );

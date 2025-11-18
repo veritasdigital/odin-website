@@ -578,6 +578,17 @@ const FacebookAdsDarwin = () => {
         </div>
       </main>
 
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Darwin"
+            coordinates={getLocationData("Darwin")?.coordinates || { lat: -12.4634, lng: 130.8456 }}
+            address={getLocationData("Darwin")?.citations.address}
+          />
+        </div>
+      </section>
+
       <Footer />
     </>
   );
