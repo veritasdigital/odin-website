@@ -14,6 +14,7 @@ import goalsKpisImage from "@/assets/blog/goals-kpis-dashboard.jpg";
 import budgetAllocationImage from "@/assets/blog/budget-allocation.jpg";
 import channelSynergyImage from "@/assets/blog/channel-synergy.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const DigitalMarketingStrategy2026 = () => {
   const { openForm } = useMarketingForm();

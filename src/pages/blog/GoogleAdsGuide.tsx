@@ -12,6 +12,7 @@ import googleAdsTeam from "@/assets/blog/google-ads-team-strategy.jpg";
 import googleAdsResults from "@/assets/blog/google-ads-performance-results.jpg";
 import odinTeam from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const GoogleAdsGuide = () => {
   const relatedArticles = [

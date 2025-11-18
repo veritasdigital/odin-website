@@ -8,6 +8,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 import { 
   MapPin, 
   Star, 

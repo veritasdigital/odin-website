@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import conversionOptimizationHero from "@/assets/blog/conversion-optimization.jpg";
 import odinTeamPhoto from "@/assets/odin-team-professional.jpg";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 import { blogArticles } from "@/utils/blogSchemaData";
 
 const BlogPostAnalyticsCRO = () => {

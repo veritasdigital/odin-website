@@ -12,6 +12,7 @@ import heroImage from "@/assets/marketing-team-expertise.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import emailAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const MarketingAutomation = () => {
   const { openForm } = useMarketingForm();

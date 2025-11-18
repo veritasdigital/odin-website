@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle, Target, TrendingUp, Users, Zap, BarChart3, Mou
 import heroImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { getArticleSchema } from "@/utils/schemaMarkup";
 
 const DigitalMarketingMistakes = () => {
   const { openForm } = useMarketingForm();
