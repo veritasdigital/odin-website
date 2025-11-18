@@ -62,6 +62,14 @@ const AdsThankYou = () => {
         <meta name="description" content="Your meeting is confirmed. Follow these important steps to ensure you can attend your scheduled call with Odin Digital." />
         <meta name="keywords" content="booking confirmation, sales call, Odin Digital meeting" />
         <link rel="canonical" href="https://odindigital.com.au/ads-thank-you" />
+        <script type="text/javascript">
+          {`
+            fbq('trackCustom', 'call_scheduled_t1', {
+              lead_type: 'qualified',
+              source: 'meta_ads'
+            });
+          `}
+        </script>
       </Helmet>
       
       {/* Hero Section */}
