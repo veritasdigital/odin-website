@@ -7,6 +7,7 @@ import { MarketingFormProvider } from "@/contexts/MarketingFormContext";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import Index from "./pages/Index";
 import OurEthos from "./pages/OurEthos";
+import FreeTrainings from "./pages/FreeTrainings";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import OurIndustries from "./pages/OurIndustries";
@@ -187,6 +188,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/our-ethos" element={<OurEthos />} />
+            <Route path="/free-trainings" element={<FreeTrainings />} />
             <Route path="/our-clients" element={<OurClients />} />
             <Route path="/services" element={<Services />} />
             <Route path="/industries" element={<OurIndustries />} />
