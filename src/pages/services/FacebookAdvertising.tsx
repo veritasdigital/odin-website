@@ -11,6 +11,9 @@ import {
   Lightbulb, BarChart3, Repeat, Zap, PieChart, ShoppingCart,
   Mail, Video, Trophy, Lock, Shield, Store
 } from "lucide-react";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { socialMediaComparison } from "@/utils/serviceComparisonTables";
 
 const FacebookAdvertising = () => {
   const painPoints = [
@@ -562,6 +565,39 @@ const FacebookAdvertising = () => {
             </div>
           </div>
         </section>
+
+        {/* Comparison Table */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-black mb-4 text-charcoal">
+                  Compare Our Facebook Ads Packages
+                </h2>
+                <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+                  Choose the Facebook advertising package that aligns with your business goals and budget.
+                </p>
+              </div>
+              <ComparisonTable
+                title={socialMediaComparison.title}
+                description={socialMediaComparison.description}
+                rows={socialMediaComparison.rows}
+              />
+              <div className="text-center mt-12">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-primary text-white shadow-primary hover:shadow-glow transition-all whitespace-normal break-words py-3 px-6"
+                >
+                  <Link to="/contact">Schedule Free Facebook Ads Consultation →</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI Calculator */}
+        <ROICalculator />
       </div>
       <Footer />
       </>

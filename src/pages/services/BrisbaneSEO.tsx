@@ -29,6 +29,7 @@ import { Link } from "react-router-dom";
 const BrisbaneSEO = () => {
   const { openForm } = useMarketingForm();
   const locationInfo = getLocationData("brisbane");
+  const brisbaneCoordinates = { lat: -27.4698, lng: 153.0251 };
 
   const relatedServices = [
     {
@@ -658,6 +659,16 @@ const BrisbaneSEO = () => {
 
         <RelatedServices services={relatedServices} />
 
+        {/* Google Maps Integration */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-6">
+            <LocationMap
+              city="Brisbane"
+              coordinates={brisbaneCoordinates}
+              address="Queen Street, Brisbane QLD 4000"
+            />
+          </div>
+        </section>
 
         <RelatedLocations 
           locations={getRelatedLocations("Brisbane", "SEO")}
