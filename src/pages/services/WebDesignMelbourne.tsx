@@ -13,6 +13,7 @@ import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const WebDesignMelbourne = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("melbourne");
   const hub = getHubForService("Web Design");
   const relatedLocationsList = getRelatedLocations("Melbourne", "Web Design");
 

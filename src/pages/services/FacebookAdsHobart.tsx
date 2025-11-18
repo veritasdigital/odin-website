@@ -19,6 +19,7 @@ import {
 
 const FacebookAdsHobart = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("hobart");
 
   const metrics = [
     { icon: TrendingUp, stat: "540%", label: "Average ROI" },

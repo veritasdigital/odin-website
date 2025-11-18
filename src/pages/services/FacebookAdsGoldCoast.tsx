@@ -13,6 +13,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsGoldCoast = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("gold-coast");
   
   const relatedServices = [
     {

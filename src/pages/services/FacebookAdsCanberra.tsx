@@ -11,6 +11,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsCanberra = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("canberra");
 
   const socialProof = [
     { number: "540%", label: "Average ROI on Meta Ads" },

@@ -11,6 +11,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 
 const WebDesignAdelaide = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("adelaide");
 
   const metrics = [
     { label: "Verified Client Revenue", value: "$574M+", icon: TrendingUp },

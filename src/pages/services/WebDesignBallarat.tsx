@@ -22,6 +22,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const WebDesignBallarat = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("ballarat");
 
   const metrics = [
     { value: "$574M+", label: "Verified Client Revenue" },

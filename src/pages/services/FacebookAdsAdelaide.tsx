@@ -33,6 +33,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const FacebookAdsAdelaide = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("adelaide");
 
   const metrics = [
     { icon: DollarSign, value: "$574M+", label: "Verified Client Revenue" },

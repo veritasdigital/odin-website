@@ -10,6 +10,7 @@ import { Target, TrendingUp, Users, Calendar, RefreshCw, BarChart3, MapPin, Zap,
 
 const FacebookAdsLaunceston = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("launceston");
 
   const metrics = [
     { label: "Verified Client Revenue", value: "$574M+", icon: TrendingUp },
