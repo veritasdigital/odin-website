@@ -129,8 +129,26 @@ const ApplicationForm = memo(() => {
       setIsSubmitting(true);
       
       try {
-        // You can add actual Supabase submission here
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        // Trigger webhook with all form data
+        await fetch("https://hook.us1.make.com/uesax43jouwtqy0u9zgl912kl5j0cbx6", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            timestamp: new Date().toISOString(),
+            Name: formData.firstName,
+            Email: formData.email,
+            Phone: formData.phone,
+            "Company Name": formData.company,
+            Website: formData.website,
+            Challenge: formData.challenge,
+            Timeline: formData.timeline,
+            "Business Type": formData.businessType,
+            Investment: formData.investment,
+            Timezone: formData.timezone,
+          }),
+        });
         
         // Clear local storage
         localStorage.removeItem("applicationFormData");
@@ -141,6 +159,7 @@ const ApplicationForm = memo(() => {
           window.location.href = "/thank-you";
         }, 500);
       } catch (error) {
+        console.error("Submission error:", error);
         toast.error("Something went wrong. Please try again.");
         setIsSubmitting(false);
       }
