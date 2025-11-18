@@ -32,6 +32,8 @@ import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 
 const GoogleAdsAdelaide = () => {
   const [showStickyButton, setShowStickyButton] = useState(false);

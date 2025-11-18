@@ -10,6 +10,8 @@ import { SideTab } from "@/components/SideTab";
 import { Target, Calendar, TrendingUp, Award, MapPin, BarChart3, Filter, Zap } from "lucide-react";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const GoogleAdsDarwin = () => {
   const navigate = useNavigate();
   const schemaMarkup = {

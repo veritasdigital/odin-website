@@ -21,6 +21,8 @@ import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { useState, useEffect } from "react";
 import krushOrganics from "@/assets/krush-organics.png";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";

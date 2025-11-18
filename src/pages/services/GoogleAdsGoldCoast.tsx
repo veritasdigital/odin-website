@@ -10,6 +10,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { ArrowRight, Target, TrendingUp, Users, Award, CheckCircle, Shield, Zap, Filter, BarChart3, Calendar, Star } from "lucide-react";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const GoogleAdsGoldCoast = () => {
   const {
     openForm
