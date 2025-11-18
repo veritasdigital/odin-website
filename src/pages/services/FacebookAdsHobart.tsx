@@ -16,6 +16,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsHobart = () => {
   const { openForm } = useMarketingForm();

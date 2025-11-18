@@ -34,6 +34,7 @@ import {
 import { ServiceHero } from "@/components/ServiceHero";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsSydney = () => {
   const { openForm } = useMarketingForm();

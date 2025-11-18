@@ -29,6 +29,7 @@ import { AsSeenIn } from "@/components/AsSeenIn";
 import heroPerson from "@/assets/hero-person-new.png";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const WebDesignPerth = () => {
   const { openForm } = useMarketingForm();

@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { getLocationData } from "@/utils/locationData";
 import { CheckCircle2, Target, Zap, TrendingUp, Users, Shield, Clock, Award, ChevronDown } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";

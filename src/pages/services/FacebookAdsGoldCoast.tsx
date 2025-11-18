@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsGoldCoast = () => {
   const { openForm } = useMarketingForm();
