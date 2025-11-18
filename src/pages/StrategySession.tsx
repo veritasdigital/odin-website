@@ -103,8 +103,8 @@ const FormContent = () => {
               {/* Funny Wait Meme GIF */}
               <div className="flex justify-center my-6">
                 <img 
-                  src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" 
-                  alt="Wait meme"
+                  src="https://media.giphy.com/media/tW7VNl0RMRaKlrsaHZ/giphy.gif" 
+                  alt="Wait wait wait meme"
                   className="rounded-xl shadow-lg max-w-md w-full"
                 />
               </div>
