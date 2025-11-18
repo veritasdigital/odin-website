@@ -15,7 +15,6 @@ declare global {
     }
   }
 }
-
 const ThankYou = () => {
   useEffect(() => {
     const fbq = (window as any).fbq;
@@ -23,19 +22,16 @@ const ThankYou = () => {
       fbq("track", "Schedule");
     }
   }, []);
-
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://fast.wistia.com/player.js";
     script.async = true;
     document.head.appendChild(script);
-
     const moduleScript = document.createElement("script");
     moduleScript.src = "https://fast.wistia.com/embed/rg5p77crh0.js";
     moduleScript.async = true;
     moduleScript.type = "module";
     document.head.appendChild(moduleScript);
-
     const style = document.createElement("style");
     style.textContent = `
       wistia-player[media-id='rg5p77crh0']:not(:defined) {
@@ -46,16 +42,13 @@ const ThankYou = () => {
       }
     `;
     document.head.appendChild(style);
-
     return () => {
       document.head.removeChild(script);
       document.head.removeChild(moduleScript);
       document.head.removeChild(style);
     };
   }, []);
-
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       <Helmet>
         <title>You Are Booked! | Odin Digital</title>
         <meta name="description" content="Your meeting is confirmed. Follow these important steps to ensure you can attend your scheduled call with Odin Digital." />
@@ -79,7 +72,11 @@ const ThankYou = () => {
           
           {/* Video Section */}
           <div className="mt-12 max-w-3xl mx-auto">
-            <wistia-player media-id="rg5p77crh0" aspect="1.7777777777777777" style={{ width: '100%', borderRadius: '0.5rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }} />
+            <wistia-player media-id="rg5p77crh0" aspect="1.7777777777777777" style={{
+            width: '100%',
+            borderRadius: '0.5rem',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+          }} />
           </div>
         </div>
       </section>
@@ -130,7 +127,7 @@ const ThankYou = () => {
                     We sent you a calendar invite, email confirmation, SMS confirmation and Zoom Link.
                   </p>
                   <p className="text-muted-foreground">
-                    Please email <a href="mailto:hello@odindigital.com" className="text-accent hover:text-accent/80 underline">hello@odindigital.com</a> if you didn't receive that email.
+                    Please email <a href="mailto:hello@odindigital.com" className="text-accent hover:text-accent/80 underline">matteo@odindigital.com</a> if you didn't receive that email.
                   </p>
                   <p className="text-muted-foreground">
                     Please be in a quiet area with a good internet connection.
@@ -194,8 +191,6 @@ const ThankYou = () => {
 
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ThankYou;
