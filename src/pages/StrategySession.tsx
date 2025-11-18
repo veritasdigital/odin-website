@@ -10,17 +10,33 @@ import { Step6BiggestChallenge } from "@/components/strategy-session/Step6Bigges
 import { Step7CurrentMarketing } from "@/components/strategy-session/Step7CurrentMarketing";
 import { Step8Timeline } from "@/components/strategy-session/Step8Timeline";
 import { Step9FinalBooking } from "@/components/strategy-session/Step9FinalBooking";
-import { Star, ArrowLeft, Shield, CreditCard, Tag, CheckCircle2, TrendingUp, Target, BarChart3, Zap, ChevronDown, ArrowUp } from "lucide-react";
+import { Star, ArrowLeft, Shield, CreditCard, Tag, CheckCircle2, TrendingUp, Target, BarChart3, Zap, ChevronDown, ArrowUp, Gift, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useExitIntent } from "@/hooks/useExitIntent";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const FormContent = () => {
   const { currentStep, prevStep } = useStrategySession();
   const [quizStarted, setQuizStarted] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const { shouldShow, resetExitIntent } = useExitIntent({ threshold: 20, maxDisplays: 1 });
+  const [showExitPopup, setShowExitPopup] = useState(false);
+
+  useEffect(() => {
+    if (shouldShow && !quizStarted) {
+      setShowExitPopup(true);
+    }
+  }, [shouldShow, quizStarted]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,9 +56,15 @@ const FormContent = () => {
 
   const scrollToForm = () => {
     setQuizStarted(true);
+    setShowExitPopup(false);
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 100);
+  };
+
+  const handleExitPopupClaim = () => {
+    setShowExitPopup(false);
+    scrollToForm();
   };
 
   const scrollToTop = () => {
@@ -66,6 +88,81 @@ const FormContent = () => {
 
   return (
     <>
+      {/* Exit Intent Popup */}
+      <Dialog open={showExitPopup} onOpenChange={setShowExitPopup}>
+        <DialogContent className="max-w-2xl">
+          <DialogHeader>
+            <div className="flex justify-center mb-4">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <Gift className="w-10 h-10 text-primary" />
+              </div>
+            </div>
+            <DialogTitle className="text-3xl md:text-4xl font-bold text-center">
+              Wait! Don't Miss Out on This Exclusive Bonus
+            </DialogTitle>
+            <DialogDescription className="text-center text-lg space-y-6 pt-4">
+              <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-6 space-y-4">
+                <div className="flex items-center justify-center gap-3 text-primary font-bold text-xl">
+                  <Clock className="w-6 h-6" />
+                  <span>Limited Time Offer</span>
+                </div>
+                <p className="text-2xl font-bold text-foreground">
+                  Book Your Strategy Session in the Next 10 Minutes and Get:
+                </p>
+                <div className="space-y-3 text-left">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">
+                      <span className="font-bold">FREE Competitive Analysis Report</span> ($500 value) - See exactly how you stack up against your top 3 competitors
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">
+                      <span className="font-bold">Priority Scheduling</span> - Get a call slot within 48 hours instead of the standard 5-7 day wait
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">
+                      <span className="font-bold">Extended 45-Minute Session</span> - Extra 15 minutes to dive deeper into your specific challenges
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-muted-foreground">
+                  We only offer these bonuses to serious business owners who are ready to take action. This offer expires when you close this window.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+                  <Button
+                    onClick={handleExitPopupClaim}
+                    size="lg"
+                    className="px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                  >
+                    Yes! Claim My Bonus & Book Now →
+                  </Button>
+                  <Button
+                    onClick={() => setShowExitPopup(false)}
+                    variant="ghost"
+                    size="lg"
+                    className="px-10 py-6 text-lg"
+                  >
+                    No thanks, I'll pass on the bonuses
+                  </Button>
+                </div>
+
+                <p className="text-xs text-muted-foreground italic">
+                  This popup won't appear again. Your bonuses will be waiting when you complete the form.
+                </p>
+              </div>
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
+
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5 pt-20">
         {/* Scroll Progress Bar */}
