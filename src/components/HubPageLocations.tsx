@@ -83,7 +83,7 @@ export const HubPageLocations = ({ spokes, title, description }: HubPageLocation
             <h3 className="text-2xl font-bold text-charcoal mb-8 text-center">
               Specialized Services
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {serviceSpokes.map((spoke, index) => (
                 <Link key={index} to={spoke.url} className="group">
                   <Card className="relative p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col bg-white border-muted/40 overflow-hidden">
