@@ -11,6 +11,7 @@ import Services from "./pages/Services";
 import OurIndustries from "./pages/OurIndustries";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
+import AdsThankYou from "./pages/AdsThankYou";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -319,6 +320,7 @@ const App = () => (
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/ads-thank-you" element={<AdsThankYou />} />
           <Route path="/strategy-session" element={<StrategySession />} />
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/free-trainings-booking" element={<LeadMagnetBooking />} />
