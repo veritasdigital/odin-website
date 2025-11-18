@@ -8,6 +8,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowRight, ShoppingCart, TrendingUp, Search, Zap, Shield, Target, CheckCircle2, Star } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { seoPackageComparison } from "@/utils/comparisonTables";
 
 const EcommerceSEO = () => {
   const navigate = useNavigate();
@@ -568,6 +571,37 @@ const EcommerceSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Comparison Table */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4 text-charcoal">
+                Compare Our E-commerce SEO Packages
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+                Choose the e-commerce SEO package that drives maximum organic revenue for your online store.
+              </p>
+            </div>
+            <ComparisonTable
+              title={seoPackageComparison.title}
+              description={seoPackageComparison.description}
+              rows={seoPackageComparison.rows}
+            />
+            <div className="text-center mt-12">
+              <Button
+                onClick={handleCTAClick}
+                size="lg"
+                className="bg-gradient-primary text-white shadow-primary hover:shadow-glow transition-all whitespace-normal break-words py-3 px-6"
+              >
+                Schedule Free E-commerce SEO Consultation →
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI Calculator */}
+        <ROICalculator />
 
         <Footer />
 
