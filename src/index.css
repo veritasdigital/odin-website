@@ -49,7 +49,7 @@
     --radius: 0.75rem;
 
     /* Brand Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(338 85% 50%), hsl(0 100% 24%));
+    --gradient-primary: linear-gradient(135deg, hsl(0 85% 45%), hsl(0 100% 24%));
     --gradient-hero: linear-gradient(135deg, hsl(0 0% 96%) 0%, hsl(331 20% 95%) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 96%));
 
