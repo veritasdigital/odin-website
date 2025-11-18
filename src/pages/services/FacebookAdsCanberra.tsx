@@ -8,6 +8,7 @@ import { CheckCircle, TrendingUp, Users, Target, Zap, Award, ArrowRight, Message
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsCanberra = () => {
   const { openForm } = useMarketingForm();

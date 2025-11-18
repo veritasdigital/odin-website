@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import { ServiceHero } from "@/components/ServiceHero";
 import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsMelbourne = () => {
   const { openForm } = useMarketingForm();

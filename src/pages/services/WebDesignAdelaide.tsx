@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, TrendingUp, Users, Award, Zap, Target, Layout, ShoppingCart, Code, CheckCircle2, Search, Smartphone, Sparkles } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { getLocationData } from "@/utils/locationData";
 
 const WebDesignAdelaide = () => {
   const { openForm } = useMarketingForm();

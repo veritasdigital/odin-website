@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, TrendingUp, Users, Target, Zap, Award, ArrowRight, MessageSquare, Video, BarChart3, RefreshCw } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsNewcastle = () => {
   const { openForm } = useMarketingForm();

@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { getLocationData } from "@/utils/locationData";
 
 const FacebookAdsPerth = () => {
   const { openForm } = useMarketingForm();
