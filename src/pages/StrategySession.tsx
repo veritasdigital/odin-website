@@ -90,13 +90,13 @@ const FormContent = () => {
     <>
       {/* Exit Intent Popup */}
       <Dialog open={showExitPopup} onOpenChange={setShowExitPopup}>
-        <DialogContent className="max-w-2xl">
-          <DialogHeader>
-            <DialogTitle className="text-2xl sm:text-4xl md:text-5xl font-black text-center mb-4 sm:mb-6" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
+        <DialogContent className="max-w-2xl p-4 sm:p-6 gap-2 sm:gap-4">
+          <DialogHeader className="space-y-2 sm:space-y-4">
+            <DialogTitle className="text-xl leading-tight sm:text-4xl md:text-5xl font-black text-center mb-2 sm:mb-6" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
               HOLD UP THERE, TIGER.
             </DialogTitle>
-            <DialogDescription className="text-center text-base sm:text-lg space-y-4 sm:space-y-6">
-              <p className="text-muted-foreground text-base sm:text-xl">
+            <DialogDescription className="text-center text-sm sm:text-lg space-y-3 sm:space-y-6">
+              <p className="text-muted-foreground text-sm sm:text-xl leading-snug sm:leading-normal">
                 Alright let's try this again, shall we? Look, it takes less than 2-minutes to fill out this form...*focus*... and then you'll get your hot little hands on a free marketing blueprint ($1,000 value).
               </p>
 
@@ -109,15 +109,15 @@ const FormContent = () => {
                 />
               </div>
 
-              <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-4 sm:p-6 space-y-3 sm:space-y-4">
-                <div className="flex items-center justify-center gap-2 sm:gap-3 text-primary font-bold text-lg sm:text-xl">
-                  <Gift className="w-5 h-5 sm:w-6 sm:h-6" />
-                  <span className="text-center">SPECIAL BONUS FOR ACTING NOW</span>
+              <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-3 sm:p-6 space-y-2 sm:space-y-4">
+                <div className="flex items-center justify-center gap-2 sm:gap-3 text-primary font-bold text-base sm:text-xl">
+                  <Gift className="w-4 h-4 sm:w-6 sm:h-6" />
+                  <span className="text-center">SPECIAL BONUS</span>
                 </div>
                 <div className="space-y-2 sm:space-y-3 text-left">
                   <div className="flex items-start gap-2 sm:gap-3">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
-                    <p className="text-foreground text-sm sm:text-base">
+                    <CheckCircle2 className="w-4 h-4 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-0.5 sm:mt-1" />
+                    <p className="text-foreground text-xs sm:text-base leading-tight sm:leading-normal">
                       <span className="font-bold">FREE Competitive Analysis Report</span> ($500 value)
                       <span className="hidden sm:inline"> - See exactly how you stack up against your top 3 competitors</span>
                     </p>
@@ -137,17 +137,17 @@ const FormContent = () => {
                 </div>
               </div>
 
-              <div className="space-y-3 sm:space-y-4 pt-3 sm:pt-4">
+              <div className="space-y-2 sm:space-y-4 pt-2 sm:pt-4">
                 <Button
                   onClick={handleExitPopupClaim}
                   size="lg"
-                  className="w-full px-6 sm:px-10 py-6 sm:py-8 text-lg sm:text-2xl font-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                  className="w-full px-4 sm:px-10 py-5 sm:py-8 text-base sm:text-2xl font-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                   style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}
                 >
                   GIVE ME THE $1,000 STRATEGY FOR FREE
                 </Button>
 
-                <p className="text-xs text-muted-foreground italic">
+                <p className="text-[10px] sm:text-xs text-muted-foreground italic leading-tight">
                   Privacy Policy: There is a special place in hell for spammers and we never wanna visit.
                 </p>
               </div>
