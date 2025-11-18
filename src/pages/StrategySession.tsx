@@ -92,23 +92,28 @@ const FormContent = () => {
       <Dialog open={showExitPopup} onOpenChange={setShowExitPopup}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <div className="flex justify-center mb-4">
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                <Gift className="w-10 h-10 text-primary" />
-              </div>
-            </div>
-            <DialogTitle className="text-3xl md:text-4xl font-bold text-center">
-              Wait! Don't Miss Out on This Exclusive Bonus
+            <DialogTitle className="text-4xl md:text-5xl font-black text-center mb-6" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
+              HOLD UP THERE, TIGER.
             </DialogTitle>
-            <DialogDescription className="text-center text-lg space-y-6 pt-4">
+            <DialogDescription className="text-center text-lg space-y-6">
+              <p className="text-muted-foreground text-xl">
+                Alright let's try this again, shall we? Look, it takes less than 2-minutes to fill out this form...*focus*... and then you'll get your hot little hands on a free marketing blueprint ($1,000 value).
+              </p>
+
+              {/* Funny Wait Meme GIF */}
+              <div className="flex justify-center my-6">
+                <img 
+                  src="https://media.giphy.com/media/l0IypeKl9NJhPFMrK/giphy.gif" 
+                  alt="Wait meme"
+                  className="rounded-xl shadow-lg max-w-md w-full"
+                />
+              </div>
+
               <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-6 space-y-4">
                 <div className="flex items-center justify-center gap-3 text-primary font-bold text-xl">
-                  <Clock className="w-6 h-6" />
-                  <span>Limited Time Offer</span>
+                  <Gift className="w-6 h-6" />
+                  <span>SPECIAL BONUS FOR ACTING NOW</span>
                 </div>
-                <p className="text-2xl font-bold text-foreground">
-                  Book Your Strategy Session in the Next 10 Minutes and Get:
-                </p>
                 <div className="space-y-3 text-left">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
@@ -131,31 +136,18 @@ const FormContent = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <p className="text-muted-foreground">
-                  We only offer these bonuses to serious business owners who are ready to take action. This offer expires when you close this window.
-                </p>
-                
-                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <Button
-                    onClick={handleExitPopupClaim}
-                    size="lg"
-                    className="px-10 py-6 text-lg font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                  >
-                    Yes! Claim My Bonus & Book Now →
-                  </Button>
-                  <Button
-                    onClick={() => setShowExitPopup(false)}
-                    variant="ghost"
-                    size="lg"
-                    className="px-10 py-6 text-lg"
-                  >
-                    No thanks, I'll pass on the bonuses
-                  </Button>
-                </div>
+              <div className="space-y-4 pt-4">
+                <Button
+                  onClick={handleExitPopupClaim}
+                  size="lg"
+                  className="w-full px-10 py-8 text-2xl font-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                  style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}
+                >
+                  GIVE ME THE $1,000 STRATEGY FOR FREE
+                </Button>
 
                 <p className="text-xs text-muted-foreground italic">
-                  This popup won't appear again. Your bonuses will be waiting when you complete the form.
+                  Privacy Policy: There is a special place in hell for spammers and we never wanna visit.
                 </p>
               </div>
             </DialogDescription>
