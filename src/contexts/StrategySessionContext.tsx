@@ -3,16 +3,12 @@ import { createContext, useContext, useState, ReactNode } from "react";
 interface FormData {
   name: string;
   email: string;
-  businessType: "products" | "services" | "";
-  currentMarketing: string[];
-  marketingBudget: string;
+  businessGoal: string;
+  monthlyRevenue: string;
   websiteUrl: string;
-  businessDescription: string;
-  currentRevenue: string;
-  targetRevenue: string;
-  biggestObstacle: string;
+  biggestChallenge: string;
+  currentMarketing: string[];
   timeline: string;
-  commitmentLevel: number;
   phone: string;
 }
 
@@ -30,21 +26,17 @@ interface StrategySessionContextType {
 const StrategySessionContext = createContext<StrategySessionContextType | undefined>(undefined);
 
 export const StrategySessionProvider = ({ children }: { children: ReactNode }) => {
-  const totalSteps = 14;
+  const totalSteps = 9;
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
-    businessType: "",
-    currentMarketing: [],
-    marketingBudget: "",
+    businessGoal: "",
+    monthlyRevenue: "",
     websiteUrl: "",
-    businessDescription: "",
-    currentRevenue: "",
-    targetRevenue: "",
-    biggestObstacle: "",
+    biggestChallenge: "",
+    currentMarketing: [],
     timeline: "",
-    commitmentLevel: 0,
     phone: "",
   });
 
