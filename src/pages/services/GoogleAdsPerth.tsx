@@ -35,6 +35,8 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { SideTab } from "@/components/SideTab";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link } from "react-router-dom";
 

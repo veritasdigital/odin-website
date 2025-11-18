@@ -13,6 +13,8 @@ import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link, useNavigate } from "react-router-dom";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 export default function GoogleAdsHobart() {
   const {
     openForm

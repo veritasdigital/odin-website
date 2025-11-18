@@ -13,6 +13,8 @@ import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { Link } from "react-router-dom";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const GoogleAdsBrisbane = () => {
   const {
     openForm

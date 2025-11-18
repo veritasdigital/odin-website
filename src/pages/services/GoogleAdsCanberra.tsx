@@ -8,6 +8,8 @@ import { ArrowRight, Target, TrendingUp, Users, Award, DollarSign, BarChart3, Sh
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const GoogleAdsCanberra = () => {
   const schemaMarkup = {
     "@context": "https://schema.org",
