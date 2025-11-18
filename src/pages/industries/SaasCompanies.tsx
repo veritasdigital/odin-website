@@ -229,8 +229,18 @@ const SaasCompanies = () => {
         />
 
         {/* Pain Points Section */}
-        <section className="py-12 md:py-20 bg-muted/20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-white via-muted/30 to-muted/20 overflow-hidden">
+          {/* Animated background blobs */}
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-muted/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '4s' }}></div>
+          
+          {/* Floating particles */}
+          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-float"></div>
+          <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-primary/20 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute bottom-1/4 left-1/2 w-2 h-2 bg-primary/25 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Why Most Marketing Agencies Fail SaaS Companies
@@ -242,7 +252,7 @@ const SaasCompanies = () => {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {painPoints.map((point, index) => (
-                <Card key={index} className="border-primary/10 hover:border-primary/30 transition-all">
+                <Card key={index} className="border-primary/10 hover:border-primary/30 transition-all bg-white/80 backdrop-blur-sm hover:shadow-lg">
                   <CardContent className="p-6">
                     <div className="mb-4">{point.icon}</div>
                     <h3 className="text-xl font-semibold text-charcoal mb-2">{point.title}</h3>
@@ -265,8 +275,16 @@ const SaasCompanies = () => {
         </section>
 
         {/* SaaS SEO Section */}
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-white via-muted/20 to-white overflow-hidden">
+          {/* Floating circles */}
+          <div className="absolute top-20 right-20 w-32 h-32 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
+          <div className="absolute bottom-20 left-20 w-40 h-40 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
+          
+          {/* Geometric shapes */}
+          <div className="absolute top-1/3 left-10 w-16 h-16 border-2 border-primary/10 rounded-lg rotate-12 animate-float"></div>
+          <div className="absolute bottom-1/3 right-10 w-20 h-20 border-2 border-accent/10 rounded-full animate-float" style={{ animationDelay: '4s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 SaaS SEO Agency: Driving Organic Sign-Ups and Reducing CAC
@@ -277,7 +295,7 @@ const SaasCompanies = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <Card className="border-primary/10">
+              <Card className="border-primary/10 hover:border-primary/30 transition-all bg-white/80 backdrop-blur-sm hover:shadow-lg">
                 <CardContent className="p-6">
                   <Zap className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-semibold text-charcoal mb-3">Technical SEO Mastery: Optimising for Speed and Scale</h3>
@@ -287,7 +305,7 @@ const SaasCompanies = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-primary/10">
+              <Card className="border-primary/10 hover:border-primary/30 transition-all bg-white/80 backdrop-blur-sm hover:shadow-lg">
                 <CardContent className="p-6">
                   <FileText className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-semibold text-charcoal mb-3">Content Strategy: Targeting Every Stage of the Funnel</h3>
@@ -297,7 +315,7 @@ const SaasCompanies = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-primary/10">
+              <Card className="border-primary/10 hover:border-primary/30 transition-all bg-white/80 backdrop-blur-sm hover:shadow-lg">
                 <CardContent className="p-6">
                   <Monitor className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-semibold text-charcoal mb-3">Product-Led SEO: Optimising Feature and Documentation Pages</h3>
@@ -307,7 +325,7 @@ const SaasCompanies = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-primary/10">
+              <Card className="border-primary/10 hover:border-primary/30 transition-all bg-white/80 backdrop-blur-sm hover:shadow-lg">
                 <CardContent className="p-6">
                   <Link2 className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-semibold text-charcoal mb-3">Link Building for Authority: Earning High-Value Backlinks</h3>
@@ -331,8 +349,15 @@ const SaasCompanies = () => {
         </section>
 
         {/* PPC for SaaS Section */}
-        <section className="py-12 md:py-20 bg-muted/20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Animated background elements */}
+          <div className="absolute top-10 left-1/4 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-10 right-1/4 w-64 h-64 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+          
+          {/* Floating particles */}
+          <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-primary/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 PPC for SaaS: Qualified Sign-Ups and Low CAC
@@ -397,8 +422,12 @@ const SaasCompanies = () => {
         </section>
 
         {/* Meta Ads Section */}
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-white via-muted/20 to-white overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-20 left-1/3 w-48 h-48 bg-primary/15 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
+          <div className="absolute bottom-20 right-1/3 w-48 h-48 bg-accent/15 rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '3s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Meta Ads for SaaS: Visualising the Solution and Retargeting
@@ -453,8 +482,12 @@ const SaasCompanies = () => {
         </section>
 
         {/* Website Design Section */}
-        <section className="py-12 md:py-20 bg-muted/20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Background decorations */}
+          <div className="absolute top-10 right-10 w-56 h-56 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-10 left-10 w-56 h-56 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 SaaS Website Design: Your Conversion Engine
@@ -519,8 +552,12 @@ const SaasCompanies = () => {
         </section>
 
         {/* Why Choose Section */}
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-white via-muted/30 to-muted/20 overflow-hidden">
+          {/* Animated blobs */}
+          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-20 right-10 w-64 h-64 bg-accent/10 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 Why SaaS Companies Choose Odin Digital
@@ -555,8 +592,11 @@ const SaasCompanies = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 md:py-20 bg-muted/20">
-          <div className="container mx-auto px-6">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-muted/30 via-white to-muted/20 overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-1/4 right-1/4 w-40 h-40 bg-primary/10 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
+          
+          <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
                 FAQs: Your Questions About SaaS Marketing Answered
@@ -564,7 +604,7 @@ const SaasCompanies = () => {
             </div>
 
             <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-4 bg-white/80 backdrop-blur-sm rounded-lg">
                 {faqs.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="border border-primary/10 rounded-lg px-6 bg-white">
                     <AccordionTrigger className="text-left font-semibold text-charcoal hover:text-primary">
@@ -581,8 +621,13 @@ const SaasCompanies = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-12 md:py-20 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5">
-          <div className="container mx-auto px-6 text-center">
+        <section className="relative py-12 md:py-20 bg-gradient-to-br from-primary/5 via-accent/5 to-muted/20 overflow-hidden">
+          {/* Background elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
+          <div className="absolute top-10 left-10 w-64 h-64 bg-primary/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute bottom-10 right-10 w-64 h-64 bg-accent/20 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" style={{ animationDelay: '2s' }}></div>
+          
+          <div className="container mx-auto px-6 text-center relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal mb-4">
               Ready to Stop Wasting Money and Start Scaling Your MRR?
             </h2>
