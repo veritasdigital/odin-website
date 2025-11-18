@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MarketingFormProvider } from "@/contexts/MarketingFormContext";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import Index from "./pages/Index";
+import OurEthos from "./pages/OurEthos";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import OurIndustries from "./pages/OurIndustries";
@@ -184,6 +185,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/our-ethos" element={<OurEthos />} />
             <Route path="/our-clients" element={<OurClients />} />
             <Route path="/services" element={<Services />} />
             <Route path="/industries" element={<OurIndustries />} />
