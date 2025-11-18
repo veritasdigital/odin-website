@@ -9,6 +9,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, User, ArrowRight, TrendingUp, Target, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/blog/ai-seo-future-proof.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const AISEOFutureProof = () => {
   const { openForm } = useMarketingForm();
@@ -27,6 +28,34 @@ const AISEOFutureProof = () => {
         <meta name="description" content="Discover how AI is transforming SEO with Answer Engine Optimization (AEO). Learn practical strategies to future-proof your organic traffic in the age of Google AI Overviews." />
         <link rel="canonical" href="https://odindigital.com.au/blog/ai-seo-future-proof-organic-strategy-2026" />
         
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": blogArticles['ai-seo-future-proof'].headline,
+            "description": blogArticles['ai-seo-future-proof'].description,
+            "image": blogArticles['ai-seo-future-proof'].image,
+            "author": {
+              "@type": "Person",
+              "name": blogArticles['ai-seo-future-proof'].author
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Odin Digital",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://odindigital.com.au/odin-logo.png"
+              }
+            },
+            "datePublished": blogArticles['ai-seo-future-proof'].datePublished,
+            "dateModified": blogArticles['ai-seo-future-proof'].dateModified,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": blogArticles['ai-seo-future-proof'].url
+            }
+          })}
+        </script>
         {/* BlogPosting Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

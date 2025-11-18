@@ -10,6 +10,7 @@ import heroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import strategicTeam from "@/assets/blog/strategic-advertising-team.jpg";
 import platformComparison from "@/assets/blog/platform-comparison.jpg";
 import roiMetrics from "@/assets/blog/roi-metrics.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const BeyondTheBoostPost = () => {
   return (
@@ -19,6 +20,34 @@ const BeyondTheBoostPost = () => {
         <meta name="description" content="Learn about beyond the boost post: a small business guide to strategic paid advertising with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency." />
         <link rel="canonical" href="https://odindigital.com.au/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising" />
         
+        {/* Article Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": blogArticles['beyond-the-boost-post'].headline,
+            "description": blogArticles['beyond-the-boost-post'].description,
+            "image": blogArticles['beyond-the-boost-post'].image,
+            "author": {
+              "@type": "Person",
+              "name": blogArticles['beyond-the-boost-post'].author
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Odin Digital",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://odindigital.com.au/odin-logo.png"
+              }
+            },
+            "datePublished": blogArticles['beyond-the-boost-post'].datePublished,
+            "dateModified": blogArticles['beyond-the-boost-post'].dateModified,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": blogArticles['beyond-the-boost-post'].url
+            }
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -23,6 +23,7 @@ import strategyImage from "@/assets/blog/tiktok-strategy.jpg";
 import contentCreationImage from "@/assets/blog/tiktok-content-creation.jpg";
 import adsMetricsImage from "@/assets/blog/tiktok-ads-metrics.jpg";
 import odinTeam from "@/assets/odin-team-professional.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 export default function TikTokForBusiness() {
   const { openForm } = useMarketingForm();

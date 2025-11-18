@@ -11,6 +11,7 @@ import { Mail, Target, Zap, TrendingUp, Settings, CheckCircle, Clock, Users } fr
 import heroImage from "@/assets/marketing-team-expertise.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import emailAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const MarketingAutomation = () => {
   const { openForm } = useMarketingForm();

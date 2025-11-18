@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/blog/will-ai-replace-seo-hero.jpg";
 import partnershipImage from "@/assets/blog/human-ai-seo-partnership.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const WillAIReplaceSEO = () => {
   const publishDate = "15 January 2025";

@@ -12,6 +12,7 @@ import heroImage from "@/assets/blog/data-privacy-2026-hero.jpg";
 import cookielessFutureImage from "@/assets/blog/cookieless-future-visual.jpg";
 import firstPartyDataImage from "@/assets/blog/first-party-data-strategy.jpg";
 import privacyPrinciplesImage from "@/assets/blog/australian-privacy-principles.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 const DataPrivacy2026 = () => {
   const {
     openForm
