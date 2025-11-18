@@ -57,7 +57,7 @@ const ThankYou = () => {
       </Helmet>
       
       {/* Hero Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-primary via-primary/90 to-primary/60">
+      <section className="py-16 px-6 bg-gradient-to-br from-primary via-primary/95 to-primary/70">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
             <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-4" />
