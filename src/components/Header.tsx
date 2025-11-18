@@ -36,9 +36,11 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8" aria-label="Main navigation">
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1 bg-transparent border-0">
-                <span>Services</span>
-                <ChevronDown size={16} aria-hidden="true" />
+              <DropdownMenuTrigger asChild>
+                <button className="inline-flex items-center space-x-1 font-medium transition-colors cursor-pointer text-foreground hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg px-2 py-1 bg-transparent border-0">
+                  <span>Services</span>
+                  <ChevronDown size={16} aria-hidden="true" />
+                </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="z-50 w-56 bg-background border border-border shadow-xl rounded-lg p-2 mt-2 max-h-[70vh] overflow-y-auto">
                 <DropdownMenuItem className="px-4 py-3 text-sm font-medium text-foreground hover:bg-accent hover:text-accent-foreground rounded-md cursor-pointer transition-colors duration-200 focus:bg-accent focus:text-accent-foreground">
