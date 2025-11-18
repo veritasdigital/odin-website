@@ -7,6 +7,14 @@ const AdsCalendar = () => {
       <Helmet>
         <title>Book Your Ads Strategy Session | Odin Digital</title>
         <meta name="description" content="Select a meeting time that suits you best for your ads strategy session with Odin Digital." />
+        <script type="text/javascript">
+          {`
+            fbq('trackCustom', 'application_t1', {
+              lead_type: 'qualified',
+              source: 'meta_ads'
+            });
+          `}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
