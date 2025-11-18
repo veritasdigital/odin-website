@@ -92,16 +92,16 @@ const FormContent = () => {
       <Dialog open={showExitPopup} onOpenChange={setShowExitPopup}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle className="text-4xl md:text-5xl font-black text-center mb-6" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
+            <DialogTitle className="text-2xl sm:text-4xl md:text-5xl font-black text-center mb-4 sm:mb-6" style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}>
               HOLD UP THERE, TIGER.
             </DialogTitle>
-            <DialogDescription className="text-center text-lg space-y-6">
-              <p className="text-muted-foreground text-xl">
+            <DialogDescription className="text-center text-base sm:text-lg space-y-4 sm:space-y-6">
+              <p className="text-muted-foreground text-base sm:text-xl">
                 Alright let's try this again, shall we? Look, it takes less than 2-minutes to fill out this form...*focus*... and then you'll get your hot little hands on a free marketing blueprint ($1,000 value).
               </p>
 
-              {/* Funny Wait Meme GIF */}
-              <div className="flex justify-center my-6">
+              {/* Funny Wait Meme GIF - Hidden on mobile */}
+              <div className="hidden sm:flex justify-center my-6">
                 <img 
                   src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmszMTJtbnNsanJuY2k5cW9wem1jaXdkZXE4emM3NzZhbWJxbDliMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/k6r6lTYIL9j9ZeRT51/giphy.gif" 
                   alt="Wait wait wait meme"
@@ -109,25 +109,26 @@ const FormContent = () => {
                 />
               </div>
 
-              <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-6 space-y-4">
-                <div className="flex items-center justify-center gap-3 text-primary font-bold text-xl">
-                  <Gift className="w-6 h-6" />
-                  <span>SPECIAL BONUS FOR ACTING NOW</span>
+              <div className="bg-primary/10 border-2 border-primary/30 rounded-xl p-4 sm:p-6 space-y-3 sm:space-y-4">
+                <div className="flex items-center justify-center gap-2 sm:gap-3 text-primary font-bold text-lg sm:text-xl">
+                  <Gift className="w-5 h-5 sm:w-6 sm:h-6" />
+                  <span className="text-center">SPECIAL BONUS FOR ACTING NOW</span>
                 </div>
-                <div className="space-y-3 text-left">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                    <p className="text-foreground">
-                      <span className="font-bold">FREE Competitive Analysis Report</span> ($500 value) - See exactly how you stack up against your top 3 competitors
+                <div className="space-y-2 sm:space-y-3 text-left">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground text-sm sm:text-base">
+                      <span className="font-bold">FREE Competitive Analysis Report</span> ($500 value)
+                      <span className="hidden sm:inline"> - See exactly how you stack up against your top 3 competitors</span>
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2 sm:gap-3 hidden sm:flex">
                     <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <p className="text-foreground">
                       <span className="font-bold">Priority Scheduling</span> - Get a call slot within 48 hours instead of the standard 5-7 day wait
                     </p>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-2 sm:gap-3 hidden sm:flex">
                     <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <p className="text-foreground">
                       <span className="font-bold">Extended 45-Minute Session</span> - Extra 15 minutes to dive deeper into your specific challenges
@@ -136,11 +137,11 @@ const FormContent = () => {
                 </div>
               </div>
 
-              <div className="space-y-4 pt-4">
+              <div className="space-y-3 sm:space-y-4 pt-3 sm:pt-4">
                 <Button
                   onClick={handleExitPopupClaim}
                   size="lg"
-                  className="w-full px-10 py-8 text-2xl font-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                  className="w-full px-6 sm:px-10 py-6 sm:py-8 text-lg sm:text-2xl font-black shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
                   style={{ fontFamily: 'Impact, Arial Black, sans-serif' }}
                 >
                   GIVE ME THE $1,000 STRATEGY FOR FREE
