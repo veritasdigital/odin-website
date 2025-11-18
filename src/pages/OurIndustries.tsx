@@ -114,23 +114,23 @@ export default function OurIndustries() {
             {industries.map((category, idx) => {
               const IconComponent = category.icon;
               return (
-                <Card key={idx} className="p-8 hover:shadow-glow transition-all duration-300">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-primary flex items-center justify-center mr-4">
-                      <IconComponent className="w-6 h-6 text-white" />
+                <Card key={idx} className="p-6 hover:shadow-glow transition-all duration-300 h-full flex flex-col">
+                  <div className="flex flex-col items-center text-center mb-6">
+                    <div className="w-14 h-14 rounded-lg bg-gradient-primary flex items-center justify-center mb-3">
+                      <IconComponent className="w-7 h-7 text-white" />
                     </div>
-                    <h2 className="text-2xl font-bold text-charcoal">{category.category}</h2>
+                    <h2 className="text-lg font-bold text-charcoal leading-tight">{category.category}</h2>
                   </div>
                   
-                  <ul className="space-y-3">
+                  <ul className="space-y-2.5 flex-1">
                     {category.items.map((item, itemIdx) => (
                       <li key={itemIdx}>
                         <Link 
                           to={item.path}
-                          className="text-charcoal/70 hover:text-primary transition-colors flex items-center group"
+                          className="text-sm text-charcoal/70 hover:text-primary transition-colors flex items-start group"
                         >
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3 group-hover:scale-125 transition-transform" />
-                          {item.name}
+                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform" />
+                          <span className="break-words">{item.name}</span>
                         </Link>
                       </li>
                     ))}
