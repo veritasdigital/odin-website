@@ -4,6 +4,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import LocationContent from "@/components/LocationContent";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet";
@@ -42,6 +44,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("adelaide");
 
   const relatedServices = [
     {
@@ -748,6 +751,21 @@ const AdelaideSEO = () => {
           </Button>
         </div>
 
+
+        {/* Adelaide Service Area Map */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <LocationMap 
+                  city={locationInfo.city}
+                  coordinates={locationInfo.coordinates}
+                  address={locationInfo.citations.address}
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         <RelatedLocations 
           locations={getRelatedLocations("Adelaide", "SEO")}

@@ -5,6 +5,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import LocationContent from "@/components/LocationContent";
 import { RelatedLocations } from "@/components/RelatedLocations";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { useNavigate, Link } from "react-router-dom";
 import { getRelatedLocations } from "@/utils/contentClusters";
 import { 
@@ -45,6 +47,7 @@ import {
 
 const DarwinSEO = () => {
   const navigate = useNavigate();
+  const locationInfo = getLocationData("darwin");
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -786,6 +789,21 @@ const DarwinSEO = () => {
           </Button>
         </div>
 
+
+        {/* Darwin Service Area Map */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <LocationMap 
+                  city={locationInfo.city}
+                  coordinates={locationInfo.coordinates}
+                  address={locationInfo.citations.address}
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         <RelatedLocations 
           locations={getRelatedLocations("Darwin", "SEO")}

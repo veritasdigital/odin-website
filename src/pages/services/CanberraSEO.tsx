@@ -5,6 +5,8 @@ import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import LocationContent from "@/components/LocationContent";
 import { RelatedLocations } from "@/components/RelatedLocations";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -123,6 +125,7 @@ const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; l
 };
 
 const CanberraSEO = () => {
+  const locationInfo = getLocationData("canberra");
   const metrics = [
     { value: 574, suffix: "M+", label: "Verified Client Revenue" },
     { value: 540, suffix: "%", label: "Average Client ROI" },
@@ -969,6 +972,21 @@ const CanberraSEO = () => {
           </div>
         </section>
 
+
+        {/* Canberra Service Area Map */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <LocationMap 
+                  city={locationInfo.city}
+                  coordinates={locationInfo.coordinates}
+                  address={locationInfo.citations.address}
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         <RelatedLocations 
           locations={getRelatedLocations("Canberra", "SEO")}
