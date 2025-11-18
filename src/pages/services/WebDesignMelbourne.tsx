@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
 import { CheckCircle2, Target, Zap, TrendingUp, Users, Shield, Clock, Award, ChevronDown } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";

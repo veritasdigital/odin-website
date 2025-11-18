@@ -9,6 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowRight, TrendingUp, Users, Award, Zap, Target, Layout, ShoppingCart, Code, CheckCircle2, Search, Smartphone, Sparkles } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
 
 const WebDesignAdelaide = () => {
   const { openForm } = useMarketingForm();
