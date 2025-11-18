@@ -167,6 +167,7 @@ import InfluencerAgency from "./pages/services/InfluencerAgency";
 import PediatricDentists from "./pages/industries/PediatricDentists";
 import LandscapingCompanies from "./pages/industries/LandscapingCompanies";
 import PharmaceuticalCompanies from "./pages/industries/PharmaceuticalCompanies";
+import CommercialRealEstate from "./pages/industries/CommercialRealEstate";
 
 const queryClient = new QueryClient();
 
@@ -264,6 +265,7 @@ const App = () => (
           <Route path="/industries/luxury-real-estate" element={<LuxuryRealEstate />} />
           <Route path="/industries/franchise-businesses" element={<FranchiseBusinesses />} />
           <Route path="/industries/pharmaceutical-companies" element={<PharmaceuticalCompanies />} />
+          <Route path="/industries/commercial-real-estate" element={<CommercialRealEstate />} />
           <Route path="/industries/pediatric-dentists" element={<PediatricDentists />} />
           <Route path="/industries/landscaping-companies" element={<LandscapingCompanies />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
