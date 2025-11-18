@@ -9,6 +9,7 @@ import { Calendar, User, Clock, BookOpen, CheckCircle2, ArrowRight, Target, Ligh
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/blog/content-marketing-hero.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const ContentMarketing = () => {
   const publishDate = "15 January 2025";

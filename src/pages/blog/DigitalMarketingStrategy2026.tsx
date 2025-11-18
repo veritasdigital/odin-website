@@ -13,6 +13,7 @@ import coreComponentsImage from "@/assets/blog/core-components-strategy.jpg";
 import goalsKpisImage from "@/assets/blog/goals-kpis-dashboard.jpg";
 import budgetAllocationImage from "@/assets/blog/budget-allocation.jpg";
 import channelSynergyImage from "@/assets/blog/channel-synergy.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const DigitalMarketingStrategy2026 = () => {
   const { openForm } = useMarketingForm();

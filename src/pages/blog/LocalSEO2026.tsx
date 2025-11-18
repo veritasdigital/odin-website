@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, MapPin, Star, TrendingUp, Users, FileText, CheckSquare } from "lucide-react";
 import heroImage from "@/assets/blog/local-seo-2026.jpg";
 import authorImage from "@/assets/odin-team-real.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const LocalSEO2026 = () => {
   const publishDate = "August 18, 2025";

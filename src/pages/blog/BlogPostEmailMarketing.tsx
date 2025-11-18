@@ -16,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroImage from "@/assets/blog/email-list-building-hero.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 export default function BlogPostEmailMarketing() {
   const { openForm } = useMarketingForm();

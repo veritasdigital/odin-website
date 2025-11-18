@@ -8,6 +8,7 @@ import strategyImage from "@/assets/blog/facebook-ads-strategy-realistic.jpg";
 import foodVisualsImage from "@/assets/blog/facebook-ads-food-visuals.jpg";
 import successMetricsImage from "@/assets/blog/facebook-ads-success-metrics.jpg";
 import odinTeamImage from "@/assets/odin-team-professional.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 const BlogPostSocialMedia = () => {
   const publishDate = "15 January 2025";
   const blogPostingSchema = {

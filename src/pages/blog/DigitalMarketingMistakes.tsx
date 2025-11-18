@@ -7,6 +7,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { ArrowRight, CheckCircle, Target, TrendingUp, Users, Zap, BarChart3, MousePointerClick } from "lucide-react";
 import heroImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const DigitalMarketingMistakes = () => {
   const { openForm } = useMarketingForm();

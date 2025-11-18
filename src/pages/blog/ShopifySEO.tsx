@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import heroImage from "@/assets/blog/shopify-seo-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const ShopifySEO = () => {
   return (

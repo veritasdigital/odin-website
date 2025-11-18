@@ -13,6 +13,7 @@ import roiImage from "@/assets/blog/measuring-roi.jpg";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 export default function ContentMarketingMatrix() {
   const { openForm } = useMarketingForm();

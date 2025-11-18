@@ -14,6 +14,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const SEOChecklist2025 = () => {
   return (
