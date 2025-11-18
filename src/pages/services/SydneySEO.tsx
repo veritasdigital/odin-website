@@ -10,6 +10,8 @@ import { SideTab } from "@/components/SideTab";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import LocationContent from "@/components/LocationContent";
 import { RelatedLocations } from "@/components/RelatedLocations";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { useEffect, useRef, useState } from "react";
 import { locationImages } from "@/utils/locationImages";
 import { 
@@ -27,6 +29,9 @@ import {
   Shield
 } from "lucide-react";
 import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
+
+const SydneySEO = () => {
+  const locationInfo = getLocationData("sydney");
 
 const SydneySEO = () => {
   const hub = getHubForService("SEO");

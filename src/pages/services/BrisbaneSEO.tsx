@@ -6,6 +6,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedServices } from "@/components/RelatedServices";
 import { RelatedLocations } from "@/components/RelatedLocations";
 import LocationContent from "@/components/LocationContent";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -26,6 +28,7 @@ import { Link } from "react-router-dom";
 
 const BrisbaneSEO = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("brisbane");
 
   const relatedServices = [
     {
