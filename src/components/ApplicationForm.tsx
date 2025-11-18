@@ -135,7 +135,6 @@ const ApplicationForm = memo(() => {
           headers: {
             "Content-Type": "application/json",
           },
-          mode: "no-cors",
           body: JSON.stringify({
             timestamp: new Date().toISOString(),
             name: formData.firstName,
@@ -419,7 +418,6 @@ const ApplicationForm = memo(() => {
                         headers: {
                           "Content-Type": "application/json",
                         },
-                        mode: "no-cors",
                         body: JSON.stringify({
                           timestamp: new Date().toISOString(),
                           name: formData.firstName,
