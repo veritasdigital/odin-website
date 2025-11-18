@@ -8,6 +8,9 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowRight, MapPin, Phone, AlertTriangle, Link2, TrendingDown, Globe, Star, Shield, CheckCircle2, Building } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { localSEOComparison } from "@/utils/serviceComparisonTables";
 
 const LocalSEO = () => {
   const navigate = useNavigate();
@@ -538,6 +541,37 @@ const LocalSEO = () => {
             </div>
           </div>
         </section>
+
+        {/* Comparison Table */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4 text-charcoal">
+                Compare Our Local SEO Packages
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+                Choose the local SEO package that aligns with your business goals and budget.
+              </p>
+            </div>
+            <ComparisonTable
+              title={localSEOComparison.title}
+              description={localSEOComparison.description}
+              rows={localSEOComparison.rows}
+            />
+            <div className="text-center mt-12">
+              <Button
+                onClick={handleCTAClick}
+                size="lg"
+                className="bg-gradient-primary text-white shadow-primary hover:shadow-glow transition-all whitespace-normal break-words py-3 px-6"
+              >
+                Schedule Free Local SEO Consultation →
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI Calculator */}
+        <ROICalculator />
 
         <Footer />
 

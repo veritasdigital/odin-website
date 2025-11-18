@@ -5,6 +5,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { useNavigate } from "react-router-dom";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { ppcComparison } from "@/utils/serviceComparisonTables";
 import { 
   Target, 
   TrendingUp, 
@@ -720,6 +723,37 @@ const PPCManagement = () => {
             </div>
           </div>
         </section>
+
+        {/* Comparison Table */}
+        <section className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-black mb-4 text-charcoal">
+                Compare Our PPC Management Packages
+              </h2>
+              <p className="text-lg text-charcoal/70 max-w-3xl mx-auto">
+                Select the PPC management package that delivers maximum ROI for your advertising budget.
+              </p>
+            </div>
+            <ComparisonTable
+              title={ppcComparison.title}
+              description={ppcComparison.description}
+              rows={ppcComparison.rows}
+            />
+            <div className="text-center mt-12">
+              <Button
+                onClick={() => navigate('/contact')}
+                size="lg"
+                className="bg-gradient-primary text-white shadow-primary hover:shadow-glow transition-all whitespace-normal break-words py-3 px-6"
+              >
+                Schedule Free PPC Consultation →
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI Calculator */}
+        <ROICalculator />
 
         <Footer />
       </div>
