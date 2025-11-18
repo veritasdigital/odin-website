@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { Link } from "react-router-dom";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { ArrowRight, CheckCircle2, TrendingUp, Target, Zap, Users } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
@@ -15,6 +17,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const HobartSEO = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("hobart");
 
   // Count-up animation hook
   const useCountUp = (end: number, duration: number = 2000) => {
@@ -782,6 +785,21 @@ const HobartSEO = () => {
         </div>
       </main>
 
+
+      {/* Hobart Service Area Map */}
+      {locationInfo && (
+        <section className="py-20 bg-muted/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <LocationMap 
+                city={locationInfo.city}
+                coordinates={locationInfo.coordinates}
+                address={locationInfo.citations.address}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <RelatedLocations 
         locations={getRelatedLocations("Hobart", "SEO")}

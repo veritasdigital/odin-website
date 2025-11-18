@@ -3,6 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import LocationContent from "@/components/LocationContent";
 import { RelatedLocations } from "@/components/RelatedLocations";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet";
@@ -31,6 +33,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 const BallaratSEO = () => {
   const navigate = useNavigate();
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("ballarat");
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -945,6 +948,21 @@ const BallaratSEO = () => {
         </div>
       </section>
 
+
+      {/* Ballarat Service Area Map */}
+      {locationInfo && (
+        <section className="py-20 bg-muted/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <LocationMap 
+                city={locationInfo.city}
+                coordinates={locationInfo.coordinates}
+                address={locationInfo.citations.address}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <RelatedLocations 
         locations={getRelatedLocations("Ballarat", "SEO")}

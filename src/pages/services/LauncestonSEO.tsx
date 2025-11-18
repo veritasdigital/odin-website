@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import LocationContent from "@/components/LocationContent";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -37,6 +39,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 const LauncestonSEO = () => {
   const navigate = useNavigate();
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("launceston");
 
   const schemaMarkup = {
     "@context": "https://schema.org",
@@ -753,6 +756,21 @@ const LauncestonSEO = () => {
         </div>
       </section>
 
+
+      {/* Launceston Service Area Map */}
+      {locationInfo && (
+        <section className="py-20 bg-muted/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <LocationMap 
+                city={locationInfo.city}
+                coordinates={locationInfo.coordinates}
+                address={locationInfo.citations.address}
+              />
+            </div>
+          </div>
+        </section>
+      )}
 
       <RelatedLocations 
         locations={getRelatedLocations("Launceston", "SEO")}

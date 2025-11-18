@@ -4,6 +4,8 @@ import { Footer } from "@/components/Footer";
 import { SideTab } from "@/components/SideTab";
 import LocationContent from "@/components/LocationContent";
 import { RelatedLocations } from "@/components/RelatedLocations";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { getRelatedLocations } from "@/utils/contentClusters";
@@ -103,6 +105,7 @@ const MetricCard = ({ value, suffix, label }: { value: number; suffix: string; l
 };
 
 const GoldCoastSEO = () => {
+  const locationInfo = getLocationData("gold-coast");
   const metrics = [
     { value: 574, suffix: "M+", label: "Verified Client Revenue" },
     { value: 540, suffix: "%", label: "Average Client ROI" },
@@ -689,6 +692,21 @@ const GoldCoastSEO = () => {
           </div>
         </section>
 
+
+        {/* Gold Coast Service Area Map */}
+        {locationInfo && (
+          <section className="py-20 bg-muted/20">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <LocationMap 
+                  city={locationInfo.city}
+                  coordinates={locationInfo.coordinates}
+                  address={locationInfo.citations.address}
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         <RelatedLocations 
           locations={getRelatedLocations("Gold Coast", "SEO")}
