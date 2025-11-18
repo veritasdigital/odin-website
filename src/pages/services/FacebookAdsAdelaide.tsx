@@ -738,6 +738,17 @@ const FacebookAdsAdelaide = () => {
           </div>
         </section>
 
+        {/* Location Map */}
+        <section className="py-16 sm:py-20">
+          <div className="container mx-auto px-4">
+            <LocationMap 
+              city="Adelaide"
+              coordinates={getLocationData("Adelaide")?.coordinates || { lat: -34.9285, lng: 138.6007 }}
+              address={getLocationData("Adelaide")?.citations.address}
+            />
+          </div>
+        </section>
+
         {/* Mobile Sticky CTA */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-background/95 backdrop-blur-sm border-t z-50">
           <Button

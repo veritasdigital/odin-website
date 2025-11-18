@@ -639,7 +639,18 @@ const FacebookAdsNewcastle = () => {
           </Button>
         </div>
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Newcastle"
+            coordinates={getLocationData("Newcastle")?.coordinates || { lat: -32.9283, lng: 151.7817 }}
+            address={getLocationData("Newcastle")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

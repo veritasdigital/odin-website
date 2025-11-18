@@ -764,7 +764,18 @@ const FacebookAdsSydney = () => {
           title="Facebook Ads Services in Other Australian Cities"
         />
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Sydney"
+            coordinates={getLocationData("Sydney")?.coordinates || { lat: -33.8688, lng: 151.2093 }}
+            address={getLocationData("Sydney")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
       </div>
     </>
   );

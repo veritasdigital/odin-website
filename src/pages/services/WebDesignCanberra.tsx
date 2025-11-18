@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Link } from "react-router-dom";
 import { Palette, ShoppingCart, Code, RefreshCw, Settings, Lightbulb, CheckCircle2, Target, MapPin, Shield, TrendingUp, Users, Clock, FileText, Rocket, HeadphonesIcon, Briefcase, Building, Store, Coffee, Stethoscope, Home } from "lucide-react";
+import LocationMap from "@/components/LocationMap";
+import { getLocationData } from "@/utils/locationData";
 const WebDesignCanberra = () => {
   const {
     openForm
@@ -558,7 +560,18 @@ const WebDesignCanberra = () => {
         {/* Related Services and Cities */}
         
 
-        <Footer />
+      {/* Location Map */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4">
+          <LocationMap 
+            city="Canberra"
+            coordinates={getLocationData("Canberra")?.coordinates || { lat: -35.2809, lng: 149.1300 }}
+            address={getLocationData("Canberra")?.citations.address}
+          />
+        </div>
+      </section>
+
+      <Footer />
         <SideTab />
 
         {/* Mobile Sticky CTA */}
