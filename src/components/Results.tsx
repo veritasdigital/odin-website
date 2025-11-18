@@ -116,11 +116,11 @@ export const Results = () => {
                     <div className="flex flex-col lg:flex-row">
                       {/* Image Section */}
                       {testimonial.image && (
-                        <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center">
+                        <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center min-h-[200px]">
                           <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
-                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                            className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
