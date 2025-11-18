@@ -75,6 +75,7 @@ import RoofingCompanies from "./pages/industries/RoofingCompanies";
 import SaasCompanies from "./pages/industries/SaasCompanies";
 import EnterpriseSoftware from "./pages/industries/EnterpriseSoftware";
 import LuxuryRealEstate from "./pages/industries/LuxuryRealEstate";
+import FranchiseBusinesses from "./pages/industries/FranchiseBusinesses";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -260,6 +261,7 @@ const App = () => (
             <Route path="/industries/saas-companies" element={<SaasCompanies />} />
           <Route path="/industries/enterprise-software" element={<EnterpriseSoftware />} />
           <Route path="/industries/luxury-real-estate" element={<LuxuryRealEstate />} />
+          <Route path="/industries/franchise-businesses" element={<FranchiseBusinesses />} />
           <Route path="/industries/pediatric-dentists" element={<PediatricDentists />} />
           <Route path="/industries/landscaping-companies" element={<LandscapingCompanies />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
