@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { StrategySessionProvider, useStrategySession } from "@/contexts/StrategySessionContext";
 import { DotProgressIndicator } from "@/components/strategy-session/DotProgressIndicator";
 import { Step1Name } from "@/components/strategy-session/Step1Name";
@@ -10,13 +10,42 @@ import { Step6BiggestChallenge } from "@/components/strategy-session/Step6Bigges
 import { Step7CurrentMarketing } from "@/components/strategy-session/Step7CurrentMarketing";
 import { Step8Timeline } from "@/components/strategy-session/Step8Timeline";
 import { Step9FinalBooking } from "@/components/strategy-session/Step9FinalBooking";
-import { Star, ArrowLeft, Shield, CreditCard, Tag, CheckCircle2, TrendingUp, Target, BarChart3, Zap, Users, Award } from "lucide-react";
+import { Star, ArrowLeft, Shield, CreditCard, Tag, CheckCircle2, TrendingUp, Target, BarChart3, Zap, ChevronDown, ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet";
 
 const FormContent = () => {
   const { currentStep, prevStep } = useStrategySession();
   const [quizStarted, setQuizStarted] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+      const scrollableHeight = documentHeight - windowHeight;
+      const progress = (scrollTop / scrollableHeight) * 100;
+      
+      setScrollProgress(progress);
+      setShowScrollTop(scrollTop > 500);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToForm = () => {
+    setQuizStarted(true);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const renderStep = () => {
     switch (currentStep) {
@@ -33,15 +62,29 @@ const FormContent = () => {
     }
   };
 
-  const scrollToForm = () => {
-    setQuizStarted(true);
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/5">
+      {/* Scroll Progress Bar */}
+      {!quizStarted && (
+        <div className="fixed top-0 left-0 right-0 z-50 h-1 bg-muted">
+          <div 
+            className="h-full bg-gradient-to-r from-primary to-accent transition-all duration-300"
+            style={{ width: `${scrollProgress}%` }}
+          />
+        </div>
+      )}
+
+      {/* Scroll to Top Button */}
+      {!quizStarted && showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 p-4 bg-primary text-primary-foreground rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 animate-fade-in"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="w-6 h-6" />
+        </button>
+      )}
+
       <Helmet>
         <title>Get Your Free Digital Growth Blueprint ($1,000 Value) | Odin Digital</title>
         <meta
@@ -113,6 +156,14 @@ const FormContent = () => {
                   <div className="flex flex-col items-center gap-2 p-4 rounded-xl bg-card/50 border border-border/50">
                     <CreditCard className="w-6 h-6 text-primary" />
                     <span className="text-sm font-medium text-center">No Credit Card</span>
+                  </div>
+                </div>
+
+                {/* Animated Scroll Indicator */}
+                <div className="flex flex-col items-center gap-2 pt-12 animate-fade-in">
+                  <span className="text-sm text-muted-foreground">Scroll to learn more</span>
+                  <div className="animate-bounce">
+                    <ChevronDown className="w-6 h-6 text-primary" />
                   </div>
                 </div>
               </div>
