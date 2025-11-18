@@ -17,7 +17,7 @@ declare global {
   }
 }
 
-const AdsThankYou = () => {
+const T2AdsThankYou = () => {
   useEffect(() => {
     const fbq = (window as any).fbq;
     if (typeof fbq === "function") {
@@ -61,7 +61,7 @@ const AdsThankYou = () => {
         <title>You Are Booked! | Odin Digital</title>
         <meta name="description" content="Your meeting is confirmed. Follow these important steps to ensure you can attend your scheduled call with Odin Digital." />
         <meta name="keywords" content="booking confirmation, sales call, Odin Digital meeting" />
-        <link rel="canonical" href="https://odindigital.com.au/ads-thank-you" />
+        <link rel="canonical" href="https://odindigital.com.au/t2-ads-thank-you" />
       </Helmet>
       
       {/* Hero Section */}
@@ -200,4 +200,4 @@ const AdsThankYou = () => {
   );
 };
 
-export default AdsThankYou;
+export default T2AdsThankYou;
