@@ -412,8 +412,33 @@ const ApplicationForm = memo(() => {
                     setFormData(prev => ({ ...prev, investment: option }));
                     setIsSubmitting(true);
                     
-                    // You can add actual Supabase submission here
-                    await new Promise(resolve => setTimeout(resolve, 1000));
+                    try {
+                      // Trigger webhook with all form data including investment
+                      const webhookResponse = await fetch("https://hook.us1.make.com/uesax43jouwtqy0u9zgl912kl5j0cbx6", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                        },
+                        mode: "no-cors",
+                        body: JSON.stringify({
+                          timestamp: new Date().toISOString(),
+                          Name: formData.firstName,
+                          Email: formData.email,
+                          Phone: formData.phone,
+                          "Company Name": formData.company,
+                          Website: formData.website,
+                          Challenge: formData.challenge,
+                          Timeline: formData.timeline,
+                          "Business Type": formData.businessType,
+                          Investment: option,
+                          Timezone: formData.timezone,
+                        }),
+                      });
+
+                      console.log("Webhook triggered successfully for:", formData.email);
+                    } catch (error) {
+                      console.error("Webhook error:", error);
+                    }
                     
                     // Clear local storage
                     localStorage.removeItem("applicationFormData");
