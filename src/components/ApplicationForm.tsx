@@ -130,11 +130,12 @@ const ApplicationForm = memo(() => {
       
       try {
         // Trigger webhook with all form data
-        await fetch("https://hook.us1.make.com/uesax43jouwtqy0u9zgl912kl5j0cbx6", {
+        const webhookResponse = await fetch("https://hook.us1.make.com/uesax43jouwtqy0u9zgl912kl5j0cbx6", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
+          mode: "no-cors",
           body: JSON.stringify({
             timestamp: new Date().toISOString(),
             Name: formData.firstName,
@@ -149,6 +150,8 @@ const ApplicationForm = memo(() => {
             Timezone: formData.timezone,
           }),
         });
+
+        console.log("Webhook triggered successfully for:", formData.email);
         
         // Clear local storage
         localStorage.removeItem("applicationFormData");
