@@ -153,7 +153,7 @@ export const Hero = () => {
           <div className="relative flex items-center justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="relative w-full max-w-lg">
               {/* Gradient Ring */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
               
               {/* Person Image */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
