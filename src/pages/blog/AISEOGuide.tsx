@@ -35,6 +35,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import aiSeoHeroImage from "@/assets/blog/ai-seo-hero.jpg";
 import odinTeamImage from "@/assets/odin-team-real.jpg";
+import { blogArticles } from "@/utils/blogSchemaData";
 
 const AISEOGuide = () => {
   const { openForm } = useMarketingForm();
@@ -47,6 +48,33 @@ const AISEOGuide = () => {
           name="description" 
           content="Learn about how ai seo works: a non-technical guide for business leaders with this comprehensive guide from Odin Digital, Australia's leading digital marketing agency." 
         />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": blogArticles['ai-seo-guide'].headline,
+            "description": blogArticles['ai-seo-guide'].description,
+            "image": blogArticles['ai-seo-guide'].image,
+            "author": {
+              "@type": "Person",
+              "name": blogArticles['ai-seo-guide'].author
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Odin Digital",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://odindigital.com.au/odin-logo.png"
+              }
+            },
+            "datePublished": blogArticles['ai-seo-guide'].datePublished,
+            "dateModified": blogArticles['ai-seo-guide'].dateModified,
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": blogArticles['ai-seo-guide'].url
+            }
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
