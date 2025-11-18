@@ -713,7 +713,6 @@ const FormContent = () => {
         </div>
       ) : (
         <div className="min-h-screen flex flex-col items-center justify-center px-4 py-20">
-          <DotProgressIndicator />
           
           <div className="w-full max-w-[600px] mx-auto">
             {currentStep > 1 && currentStep < 9 && (
