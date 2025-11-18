@@ -10,6 +10,7 @@ import { Target, TrendingUp, Users, Calendar, RefreshCw, BarChart3, MapPin, Zap,
 
 const FacebookAdsDarwin = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("darwin");
 
   const metrics = [
     { label: "Verified Client Revenue", value: "$574M+", icon: TrendingUp },

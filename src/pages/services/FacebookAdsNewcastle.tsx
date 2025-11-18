@@ -9,6 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const FacebookAdsNewcastle = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("newcastle");
 
   const socialProof = [
     { number: "$574M+", label: "Verified Client Revenue" },

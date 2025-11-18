@@ -32,6 +32,7 @@ import { getRelatedLocations } from "@/utils/contentClusters";
 
 const WebDesignPerth = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("perth");
 
   const metrics = [
     { icon: DollarSign, value: "$574M+", label: "Verified Client Revenue" },

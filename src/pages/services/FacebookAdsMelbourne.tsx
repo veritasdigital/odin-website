@@ -34,6 +34,7 @@ import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const FacebookAdsMelbourne = () => {
   const { openForm } = useMarketingForm();
+  const locationInfo = getLocationData("melbourne");
   const hub = getHubForService("Facebook Ads");
   const relatedLocationsList = getRelatedLocations("Melbourne", "Facebook Ads");
 
