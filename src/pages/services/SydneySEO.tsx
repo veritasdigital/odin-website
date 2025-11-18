@@ -32,8 +32,6 @@ import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 
 const SydneySEO = () => {
   const locationInfo = getLocationData("sydney");
-
-const SydneySEO = () => {
   const hub = getHubForService("SEO");
   const relatedLocationsList = getRelatedLocations("Sydney", "SEO");
   
