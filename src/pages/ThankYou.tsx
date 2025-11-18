@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Video, Users, BarChart3 } from "lucide-react";
+import odinLogo from "@/assets/odin-digital-logo.png";
 
 // Declare custom element for Wistia player
 declare global {
@@ -57,14 +58,15 @@ const ThankYou = () => {
       </Helmet>
       
       {/* Hero Section */}
-      <section className="py-16 px-6 bg-gradient-to-br from-primary via-accent/80 to-primary/85">
+      <section className="py-16 px-6 bg-background">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <CheckCircle className="h-16 w-16 text-green-400 mx-auto mb-4" />
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <img src={odinLogo} alt="Odin Digital" className="h-16 mx-auto mb-8" />
+            <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               You Are Booked!
             </h1>
-            <p className="text-xl text-primary-foreground/90">
+            <p className="text-xl text-muted-foreground">
               Follow The Steps Below,<br />
               Or You Won't Be Able To Attend The Meeting!
             </p>
