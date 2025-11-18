@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Target, TrendingUp, Users, Calendar, RefreshCw, BarChart3, MapPin, Zap, Shield, Award, Phone, Globe, DollarSign, Megaphone, PenTool } from "lucide-react";
 import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
 
 const FacebookAdsLaunceston = () => {
   const { openForm } = useMarketingForm();

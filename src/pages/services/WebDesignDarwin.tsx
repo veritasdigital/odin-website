@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {

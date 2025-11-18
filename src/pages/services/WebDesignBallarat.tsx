@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { getLocationData } from "@/utils/locationData";
+import LocationMap from "@/components/LocationMap";
 
 const WebDesignBallarat = () => {
   const { openForm } = useMarketingForm();
