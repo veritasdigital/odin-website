@@ -177,26 +177,63 @@ const FormContent = () => {
           {/* Problem & Agitation Section */}
           <section className="py-20 md:py-24 bg-muted/30">
             <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center space-y-6">
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground">
-                  Are You Tired of Marketing That Doesn't Deliver?
+              <div className="max-w-5xl mx-auto space-y-12">
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground text-center leading-tight">
+                  Are You Tired of Marketing<br />That Doesn't Deliver?
                 </h2>
                 
-                <div className="text-lg md:text-xl text-muted-foreground leading-relaxed space-y-4 text-left">
-                  <p>
-                    Many ambitious businesses we talk to are stuck in the same frustrating cycle. They're running campaigns across multiple platforms, but they're not seeing the growth they expected. Marketing feels fragmented. There's no clear strategy. And worst of all, they have no idea what's actually working and what's just burning cash.
-                  </p>
+                <div className="grid md:grid-cols-2 gap-6">
+                  {/* Pain Point Cards */}
+                  <div className="bg-card p-8 rounded-xl border border-border space-y-4">
+                    <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                      <span className="text-2xl">😤</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">Running Campaigns, Seeing No Growth</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      You're running campaigns across multiple platforms, but you're not seeing the growth you expected. Marketing feels fragmented with no clear strategy.
+                    </p>
+                  </div>
+
+                  <div className="bg-card p-8 rounded-xl border border-border space-y-4">
+                    <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                      <span className="text-2xl">🔥</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">Burning Cash, No Clear ROI</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      You have no idea what's actually working and what's just burning cash. Every day without clarity is another day of wasted ad spend.
+                    </p>
+                  </div>
+
+                  <div className="bg-card p-8 rounded-xl border border-border space-y-4">
+                    <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                      <span className="text-2xl">📉</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">Missed Growth Opportunities</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Without a data-driven plan, you're missing critical opportunities to scale. Lost revenue and lost momentum compound every single day.
+                    </p>
+                  </div>
+
+                  <div className="bg-card p-8 rounded-xl border border-border space-y-4">
+                    <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                      <span className="text-2xl">😵</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">Constant Frustration & Uncertainty</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      The constant frustration of not knowing how to scale to the next level is holding you back from achieving your true potential.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="text-center space-y-6 pt-8">
+                  <div className="inline-block px-8 py-4 bg-primary/10 border-2 border-primary/30 rounded-xl">
+                    <p className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      Does this sound familiar?
+                    </p>
+                  </div>
                   
-                  <p>
-                    This leads to <span className="font-semibold text-foreground">wasted ad spend, missed growth opportunities</span>, and the constant frustration of not knowing how to scale to the next level. Every day without a clear plan is another day of lost revenue and lost momentum.
-                  </p>
-                  
-                  <p className="text-xl font-semibold text-foreground text-center pt-4">
-                    Does this sound familiar?
-                  </p>
-                  
-                  <p className="text-center">
-                    If you're ready to break free from this cycle and finally get the clarity and results you deserve, you're in the right place.
+                  <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                    If you're ready to <span className="font-semibold text-foreground">break free from this cycle</span> and finally get the clarity and results you deserve, you're in the right place.
                   </p>
                 </div>
               </div>
