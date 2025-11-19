@@ -45,7 +45,7 @@ const OptIn = () => {
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="py-2 md:py-4 px-4">
+      <header className="py-4 md:py-6 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
@@ -58,24 +58,27 @@ const OptIn = () => {
 
 
       {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4 py-4 md:py-8">
+      <main className="flex-1 flex items-center justify-center px-4 py-2 md:py-6">
         {!showForm ? (
-          <div className="max-w-3xl w-full text-center">
+          <div className="max-w-3xl w-full text-center font-montserrat">
             {/* Waving Emoji */}
-            <div className="text-4xl md:text-5xl mb-3 md:mb-4 animate-fade-in">
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 animate-fade-in">
               👋
             </div>
 
             {/* Serving Clients Banner */}
-            <div className="mb-4 md:mb-6 animate-fade-in">
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                Servicing clients in: <span className="text-foreground">{userCity}</span>
-              </p>
+            <div className="mb-6 md:mb-8 animate-fade-in">
+              <div className="inline-block px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-red-500 to-orange-500">
+                <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-white">
+                  Servicing clients in: {userCity}
+                </p>
+              </div>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-3 md:mb-4 animate-fade-in">
-              FREE 30-MINUTE SCALING GROWTH MAP SESSION
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-4 md:mb-6 animate-fade-in">
+              FREE MARKETING{" "}
+              <span className="text-primary">GROWTH SESSION</span>
             </h1>
 
             {/* Sub-Headline */}
