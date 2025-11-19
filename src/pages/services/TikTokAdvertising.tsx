@@ -352,10 +352,36 @@ const TikTokAdvertising = () => {
       <Helmet>
         <title>TikTok Advertising Services | Odin Digital</title>
         <meta name="description" content="TikTok ads management for businesses. Campaign strategy, creative production, optimisation, and reporting. 540% average ROI, 95% retention." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="TikTok Advertising Services Australia"
+        serviceType="TikTok Ads Management"
+        description="High-impact TikTok advertising services reaching younger demographics with viral content and authentic storytelling. Strategic in-feed ads, branded hashtag challenges, TopView campaigns, Spark ads, creative production, and trend capitalization to maximize engagement and drive business results on the fastest-growing social platform."
+        url="/services/tiktok-advertising"
+        benefits={["Viral Reach Potential", "Youth Demographic Access", "Creative Engagement", "Trend Capitalization"]}
+        features={[
+          "In-Feed Ads",
+          "Branded Hashtag Challenges",
+          "TopView Campaigns",
+          "Spark Ads",
+          "Creative Production",
+          "Trend Analysis & Capitalization",
+          "Influencer Partnerships",
+          "Performance Analytics"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "TikTok Advertising", url: "/services/tiktok-advertising" }
+        ]}
+        pricing={{
+          minPrice: "2000",
+          maxPrice: "6000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

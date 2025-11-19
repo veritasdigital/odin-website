@@ -205,122 +205,36 @@ const LinkedInAdvertising = () => {
         />
         <meta name="keywords" content="linkedin advertising agency, linked advertising company, linkedin ads, b2b lead generation, sales qualified leads" />
         <link rel="canonical" href="https://growth-conduit-central.lovable.app/linkedin-advertising" />
-        
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Odin Digital",
-            "url": "https://growth-conduit-central.lovable.app/",
-            "logo": "https://growth-conduit-central.lovable.app/logo.png",
-            "description": "Performance-focused digital marketing agency specializing in PPC, Meta Ads, Web Design, and SEO with no lock-in contracts.",
-            "founder": {
-              "@type": "Person",
-              "name": "Lucas Durante"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "Customer Service",
-              "url": "https://growth-conduit-central.lovable.app/contact"
-            },
-            "sameAs": [
-              "https://www.linkedin.com/company/odin-digital",
-              "https://www.facebook.com/odindigital",
-              "https://twitter.com/odindigital"
-            ]
-          })}
-        </script>
-
-        {/* Service Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "LinkedIn Advertising Agency",
-            "provider": {
-              "@type": "Organization",
-              "name": "Odin Digital"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Australia"
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "LinkedIn Advertising Services",
-              "itemListElement": [
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Full-Service LinkedIn Campaign Management",
-                    "description": "B2B-focused campaign management for generating Sales Qualified Leads (SQLs)."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "B2B Conversion Tracking & CRM Integration",
-                    "description": "Integration with CRM systems (Salesforce, HubSpot) to track pipeline value."
-                  }
-                },
-                {
-                  "@type": "Offer",
-                  "itemOffered": {
-                    "@type": "Service",
-                    "name": "Budget Trap Prevention & Optimization",
-                    "description": "Proactive management to avoid LinkedIn's hidden features that waste budget."
-                  }
-                }
-              ]
-            }
-          })}
-        </script>
-
-        {/* FAQPage Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-
-        {/* Review Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Review",
-            "itemReviewed": {
-              "@type": "Organization",
-              "name": "Odin Digital"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Liam C"
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "reviewBody": "We started marketing with Odin when we were just launching our brand and we did $157K in our first month together at a 5x ROI and things have only improved in the 18 months since. I literally refer all of my friends to these guys.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Krush Organics"
-            }
-          })}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="LinkedIn Advertising Services Australia"
+        serviceType="LinkedIn Ads Management"
+        description="B2B-focused LinkedIn advertising services targeting decision-makers and professionals. Strategic sponsored content, InMail campaigns, lead generation forms, account-based marketing, and professional targeting designed to generate high-quality Sales Qualified Leads (SQLs) and drive B2B business growth."
+        url="/services/linkedin-advertising"
+        benefits={["87% Lead Quality Improvement", "B2B Decision-Maker Targeting", "Professional Network Reach", "SQL Generation"]}
+        features={[
+          "Sponsored Content Campaigns",
+          "InMail Campaigns",
+          "Lead Gen Forms",
+          "Account-Based Marketing",
+          "Professional Targeting",
+          "B2B Conversion Tracking",
+          "CRM Integration",
+          "LinkedIn Analytics"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "LinkedIn Advertising", url: "/services/linkedin-advertising" }
+        ]}
+        pricing={{
+          minPrice: "2000",
+          maxPrice: "7000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

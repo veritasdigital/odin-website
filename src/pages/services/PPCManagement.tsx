@@ -400,10 +400,36 @@ const PPCManagement = () => {
         <title>PPC Management Agency | Odin Digital</title>
         <meta name="description" content="Australia's leading PPC management agency. We build high-converting, ROI-focused PPC campaigns that generate leads and sales. Get your free PPC quote." />
         <link rel="canonical" href="https://odindigital.com.au/ppc-management" />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="PPC Management Services Australia"
+        serviceType="Pay-Per-Click Advertising Management"
+        description="Expert PPC management services across Google Ads, Microsoft Ads, and social platforms. Strategic campaign development, advanced bid optimization, comprehensive conversion tracking, landing page optimization, and ROI-focused management to maximize your advertising investment and drive profitable business growth."
+        url="/services/ppc-management"
+        benefits={["427% Average ROI", "Lower Cost Per Acquisition", "Higher Conversion Rates", "Multi-Platform Excellence"]}
+        features={[
+          "Multi-Platform PPC Management",
+          "Strategic Bid Management",
+          "Conversion Tracking & Analytics",
+          "Ad Copy Testing & Optimization",
+          "Landing Page Optimization",
+          "Negative Keyword Management",
+          "Quality Score Improvement",
+          "Comprehensive Reporting"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "PPC Management", url: "/services/ppc-management" }
+        ]}
+        pricing={{
+          minPrice: "3000",
+          maxPrice: "12000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen">
         <Header />

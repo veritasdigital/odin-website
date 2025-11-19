@@ -252,10 +252,36 @@ const YouTubeAdvertising = () => {
       <Helmet>
         <title>YouTube Advertising Agency | YouTube Marketing Services | Odin Digital</title>
         <meta name="description" content="Stop wasting money on YouTube ads that don't convert. Odin Digital provides YouTube advertising services focused on revenue, not views. No lock-in contracts. Get your free audit today." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="YouTube Advertising Services Australia"
+        serviceType="YouTube Ads Management"
+        description="Strategic YouTube advertising services leveraging video marketing power to drive brand awareness and conversions. Expert management of TrueView ads, bumper ads, discovery campaigns, video remarketing, creative production, and audience targeting to maximize your video advertising ROI and reach engaged audiences at scale."
+        url="/services/youtube-advertising"
+        benefits={["Video Engagement", "Brand Awareness Growth", "Cost-Effective Reach", "Remarketing Power"]}
+        features={[
+          "TrueView In-Stream Ads",
+          "Bumper Ads",
+          "Discovery Campaigns",
+          "Video Remarketing",
+          "Creative Production",
+          "Audience Targeting",
+          "YouTube SEO",
+          "Performance Analytics"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "YouTube Advertising", url: "/services/youtube-advertising" }
+        ]}
+        pricing={{
+          minPrice: "2000",
+          maxPrice: "8000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />
