@@ -10,7 +10,8 @@ interface LocationMapProps {
 }
 
 const LocationMap = ({ city, coordinates, address }: LocationMapProps) => {
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tuwX_JO3KD7jYqPdXg&q=${coordinates.lat},${coordinates.lng}&zoom=13`;
+  // Using Google Maps link instead of embed due to API key requirements
+  const mapsUrl = `https://www.google.com/maps?q=${coordinates.lat},${coordinates.lng}&z=13`;
 
   return (
     <div className="w-full">
@@ -18,17 +19,17 @@ const LocationMap = ({ city, coordinates, address }: LocationMapProps) => {
         <MapPin className="w-5 h-5 text-primary" />
         <h3 className="text-xl font-semibold text-charcoal">Our {city} Service Area</h3>
       </div>
-      <div className="relative w-full h-[400px] rounded-lg overflow-hidden border border-border shadow-sm">
-        <iframe
-          title={`${city} Location Map`}
-          src={mapUrl}
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+      <div className="relative w-full h-[400px] rounded-lg overflow-hidden border border-border shadow-sm bg-muted/10">
+        <a 
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center h-full hover:bg-muted/20 transition-colors"
+        >
+          <MapPin className="w-16 h-16 text-primary mb-4" />
+          <p className="text-lg font-semibold text-charcoal mb-2">View {city} Service Area</p>
+          <p className="text-sm text-muted-foreground">Click to open in Google Maps</p>
+        </a>
       </div>
       {address && (
         <p className="mt-4 text-sm text-muted-foreground flex items-center gap-2">
