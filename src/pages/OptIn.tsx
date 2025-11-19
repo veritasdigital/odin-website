@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { Star } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 import odinLogo from "@/assets/odin-digital-logo-new.png";
+
+// Australian cities for geolocation fallback
+const AUSTRALIAN_CITIES = [
+  "Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide",
+  "Gold Coast", "Newcastle", "Canberra", "Hobart", "Darwin",
+  "Launceston", "Ballarat"
+];
 
 // Form validation schema
 const optInSchema = z.object({
@@ -34,6 +41,29 @@ const OptIn = () => {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [userCity, setUserCity] = useState<string>("Australia");
+
+  // Detect user's city on mount
+  useEffect(() => {
+    const detectCity = async () => {
+      try {
+        // Try to get location from IP geolocation API
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        
+        if (data.city && AUSTRALIAN_CITIES.includes(data.city)) {
+          setUserCity(data.city);
+        } else if (data.country === 'AU') {
+          // If in Australia but city not in our list, use a default major city
+          setUserCity("Australia");
+        }
+      } catch (error) {
+        console.log("Could not detect location, using default");
+      }
+    };
+
+    detectCity();
+  }, []);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -92,15 +122,15 @@ const OptIn = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Free Training - Odin Digital</title>
-        <meta name="description" content="Get instant access to our free training on digital marketing strategies." />
+        <title>Free Marketing Growth Session - Odin Digital</title>
+        <meta name="description" content="Claim your 100% FREE no-obligation 30-minute scaling growth map call ($997 value)." />
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="bg-gradient-to-r from-[#0A1128] to-[#1A2642] py-4 px-4">
+      <header className="bg-charcoal py-4 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
@@ -112,9 +142,9 @@ const OptIn = () => {
       </header>
 
       {/* Top Banner */}
-      <div className="bg-gradient-to-r from-[#4CAF50] to-[#45a049] text-white py-3 px-4 text-center">
+      <div className="bg-primary text-primary-foreground py-3 px-4 text-center">
         <p className="text-sm md:text-base font-bold uppercase tracking-wide">
-          NO STRINGS ATTACHED... 100% FREE TRAINING
+          Serving clients in: {userCity}
         </p>
       </div>
 
@@ -123,25 +153,26 @@ const OptIn = () => {
         <div className="max-w-2xl w-full">
           
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-center text-[#0A1128] leading-tight mb-4">
-            How We Use{" "}
-            <span className="text-[#4CAF50]">Beginner-Friendly A.I.</span>{" "}
-            To Make Online
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-center text-charcoal leading-tight mb-4">
+            Free Marketing{" "}
+            <span className="text-primary">Growth Session</span>
           </h1>
 
           {/* Sub-Headline */}
-          <p className="text-lg md:text-xl text-center text-[#0A1128]/80 font-medium mb-8">
-            From home, with no experience & no tech skills required.
+          <p className="text-lg md:text-xl text-center text-foreground font-medium mb-8">
+            Claim your <span className="font-bold text-primary">100% FREE</span> no-obligation 30-minute scaling growth map call{" "}
+            <span className="font-bold">($997 value)</span>. This is strictly for business owners who want to grow. 
+            If that's you, then let's scale your biz to the moon! 🚀🌙
           </p>
 
           {/* Lead Form */}
-          <div className="bg-white border-2 border-[#0A1128] rounded-lg p-6 md:p-8 shadow-xl mb-6">
+          <div className="bg-card border-2 border-charcoal rounded-lg p-6 md:p-8 shadow-card mb-6">
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* First Name */}
               <div>
                 <Label 
                   htmlFor="firstName" 
-                  className="text-[#0A1128] font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-base mb-2 block"
                 >
                   First Name *
                 </Label>
@@ -151,12 +182,12 @@ const OptIn = () => {
                   type="text"
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-[#0A1128]/20 focus:border-[#4CAF50] rounded-md"
+                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your first name"
                   required
                 />
                 {errors.firstName && (
-                  <p className="text-red-600 text-sm mt-1">{errors.firstName}</p>
+                  <p className="text-destructive text-sm mt-1">{errors.firstName}</p>
                 )}
               </div>
 
@@ -164,7 +195,7 @@ const OptIn = () => {
               <div>
                 <Label 
                   htmlFor="email" 
-                  className="text-[#0A1128] font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-base mb-2 block"
                 >
                   Email Address *
                 </Label>
@@ -174,12 +205,12 @@ const OptIn = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-[#0A1128]/20 focus:border-[#4CAF50] rounded-md"
+                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your email address"
                   required
                 />
                 {errors.email && (
-                  <p className="text-red-600 text-sm mt-1">{errors.email}</p>
+                  <p className="text-destructive text-sm mt-1">{errors.email}</p>
                 )}
               </div>
 
@@ -187,7 +218,7 @@ const OptIn = () => {
               <div>
                 <Label 
                   htmlFor="mobile" 
-                  className="text-[#0A1128] font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-base mb-2 block"
                 >
                   Mobile Number *
                 </Label>
@@ -197,12 +228,12 @@ const OptIn = () => {
                   type="tel"
                   value={formData.mobile}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-[#0A1128]/20 focus:border-[#4CAF50] rounded-md"
+                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your mobile number"
                   required
                 />
                 {errors.mobile && (
-                  <p className="text-red-600 text-sm mt-1">{errors.mobile}</p>
+                  <p className="text-destructive text-sm mt-1">{errors.mobile}</p>
                 )}
               </div>
 
@@ -210,9 +241,13 @@ const OptIn = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full h-14 text-lg font-bold bg-gradient-to-r from-[#4CAF50] to-[#45a049] hover:from-[#45a049] hover:to-[#3d8b40] text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-md"
+                className="w-full h-14 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary hover:shadow-glow transition-all duration-300 rounded-md group"
               >
-                {isSubmitting ? "Processing..." : "Get Instant Access Now"}
+                {isSubmitting ? "Processing..." : (
+                  <>
+                    Get Started <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
@@ -223,26 +258,17 @@ const OptIn = () => {
               {[...Array(5)].map((_, i) => (
                 <Star 
                   key={i} 
-                  className="w-6 h-6 fill-[#FFD700] text-[#FFD700]"
+                  className="w-5 h-5 fill-primary text-primary"
                 />
               ))}
             </div>
-            <p className="text-[#0A1128]/70 font-semibold text-base">
-              5 Star Reviews On Trustpilot
+            <p className="text-muted-foreground font-semibold text-base">
+              4.9 stars out of 678 reviews
             </p>
           </div>
 
         </div>
       </main>
-
-      {/* Minimal Footer */}
-      <footer className="bg-gradient-to-r from-[#0A1128] to-[#1A2642] text-white/70 py-4 px-4 text-center">
-        <p className="text-xs md:text-sm">
-          © {new Date().getFullYear()} Odin Digital. All rights reserved. |{" "}
-          <a href="/privacy" className="hover:text-white underline">Privacy Policy</a> |{" "}
-          <a href="/terms" className="hover:text-white underline">Terms of Service</a>
-        </p>
-      </footer>
     </div>
   );
 };
