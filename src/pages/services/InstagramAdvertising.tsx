@@ -11,6 +11,7 @@ import { CheckCircle2, TrendingUp, Users, Zap, Camera, Video, ShoppingBag, Award
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { socialMediaComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const InstagramAdvertising = () => {
   const { openForm } = useMarketingForm();

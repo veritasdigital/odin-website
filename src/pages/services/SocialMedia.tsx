@@ -12,6 +12,8 @@ import { socialMediaCluster } from "@/utils/contentClusters";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { socialMediaComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
+import { Helmet } from "react-helmet";
 
 export default function SocialMedia() {
   const { openForm } = useMarketingForm();

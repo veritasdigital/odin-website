@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { ppcComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 import { 
   Target, 
   TrendingUp, 

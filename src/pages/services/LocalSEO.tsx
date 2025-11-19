@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { localSEOComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const LocalSEO = () => {
   const navigate = useNavigate();

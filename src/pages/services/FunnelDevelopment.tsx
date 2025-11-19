@@ -12,6 +12,8 @@ import { useNavigate } from "react-router-dom";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { webDesignComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
+import { Helmet } from "react-helmet";
 export default function FunnelDevelopment() {
   const {
     openForm

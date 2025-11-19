@@ -11,6 +11,7 @@ import { useState } from "react";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { seoPackageComparison } from "@/utils/comparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const EcommerceSEO = () => {
   const navigate = useNavigate();

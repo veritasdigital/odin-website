@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { ServiceSchema } from "@/components/ServiceSchema";
 import { 
   CheckCircle, 
   TrendingUp, 
