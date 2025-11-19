@@ -1,5 +1,7 @@
+import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
-import ApplicationForm from "@/components/ApplicationForm";
+
+const ApplicationForm = lazy(() => import("@/components/ApplicationForm"));
 
 const Application = () => {
 
@@ -15,7 +17,13 @@ const Application = () => {
         <link rel="dns-prefetch" href="https://qrpyukrdkajotbjlaacg.supabase.co" />
       </Helmet>
       
-      <ApplicationForm />
+      <Suspense fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+        </div>
+      }>
+        <ApplicationForm />
+      </Suspense>
     </>
   );
 };
