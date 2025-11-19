@@ -22,6 +22,18 @@ interface FormData {
 const ApplicationForm = memo(() => {
   const [currentStep, setCurrentStep] = useState(1);
   const [leadId, setLeadId] = useState<string | null>(null);
+  // Helper function to format timezone with GMT offset
+  const getFormattedTimezone = useCallback(() => {
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const now = new Date();
+    const offset = -now.getTimezoneOffset();
+    const hours = Math.floor(Math.abs(offset) / 60);
+    const minutes = Math.abs(offset) % 60;
+    const sign = offset >= 0 ? '+' : '-';
+    const formattedOffset = `${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+    return `(GMT${formattedOffset}) ${timezone}`;
+  }, []);
+
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     email: "",
@@ -32,7 +44,7 @@ const ApplicationForm = memo(() => {
     timeline: "",
     businessType: "",
     investment: "",
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    timezone: getFormattedTimezone(),
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
