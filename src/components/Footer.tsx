@@ -263,64 +263,46 @@ export const Footer = () => {
         </script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center space-x-3 mb-6">
               <img src={odinLogoWhite} alt="Odin Digital - Strategic Digital Marketing Agency Australia" className="h-10 w-auto" />
             </div>
-            <p className="text-white/80 mb-6 leading-relaxed">
+            <p className="text-white/80 mb-6 leading-relaxed text-sm">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
             </p>
-            <Button variant="hero" size="lg" onClick={openForm} className="text-sm md:text-base px-4 md:px-8 w-full md:w-auto whitespace-normal h-auto min-h-[3rem] md:min-h-0">
+            <Button variant="hero" size="lg" onClick={openForm} className="text-sm px-6 w-full whitespace-normal h-auto min-h-[3rem]">
               Get Your Free Strategy Session
             </Button>
             
             {/* Contact Info */}
             <div className="mt-8">
-              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
-              <div className="space-y-3 text-white/80 text-sm">
+              <h3 className="text-base font-bold mb-3">Contact Us</h3>
+              <div className="space-y-2 text-white/80 text-sm">
                 <div>
-                  <p className="font-semibold text-white">Phone:</p>
-                  <p>03 9498 3170</p>
+                  <p className="font-semibold text-white text-xs">Phone:</p>
+                  <p className="text-xs">03 9498 3170</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-white">Email:</p>
-                  <p>hello@odindigital.com.au</p>
+                  <p className="font-semibold text-white text-xs">Email:</p>
+                  <p className="text-xs">hello@odindigital.com.au</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-white">Address:</p>
-                  <p>11 Wilson Street<br />South Yarra VIC 3141</p>
+                  <p className="font-semibold text-white text-xs">Address:</p>
+                  <p className="text-xs">11 Wilson Street<br />South Yarra VIC 3141</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-white">Hours:</p>
-                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                  <p className="font-semibold text-white text-xs">Hours:</p>
+                  <p className="text-xs">Mon-Fri: 8:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Services Columns */}
-          {services.map((serviceGroup, idx) => (
-            <div key={serviceGroup.title} className={idx < 2 ? "lg:col-span-1" : "hidden lg:block"}>
-              <h3 className="text-lg font-bold mb-4">{serviceGroup.title}</h3>
-              <div className="space-y-2">
-                {serviceGroup.items.map((item, itemIdx) => (
-                  <a 
-                    key={itemIdx} 
-                    href={item.url}
-                    className="block text-sm text-white/70 hover:text-white transition-smooth"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-
           {/* Company Links */}
-          <div className="hidden lg:block">
-            <h3 className="text-lg font-bold mb-4">Company</h3>
+          <div>
+            <h3 className="text-base font-bold mb-4">Company</h3>
             <div className="space-y-2">
               {companyLinks.map((link, idx) => (
                 <a 
@@ -334,15 +316,26 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Industries */}
-          <div className="hidden lg:block">
-            <h3 className="text-lg font-bold mb-4">Industries</h3>
-            <div className="space-y-2">
-              {industries.slice(0, 2).map((industry) => (
-                <div key={industry.title} className="mb-4">
-                  <p className="font-semibold text-white/90 text-sm mb-2">{industry.title}</p>
-                  <div className="space-y-1 pl-2">
-                    {industry.items.slice(0, 6).map((item, idx) => (
+          {/* Services with Dropdowns */}
+          <div>
+            <h3 className="text-base font-bold mb-4">Our Services</h3>
+            <div className="space-y-3">
+              {services.map((serviceGroup) => (
+                <Collapsible
+                  key={serviceGroup.title}
+                  open={openIndustries.includes(serviceGroup.title)}
+                  onOpenChange={() => toggleIndustry(serviceGroup.title)}
+                >
+                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth group">
+                    <span className="font-semibold text-sm">{serviceGroup.title}</span>
+                    <ChevronDown 
+                      className={`h-4 w-4 transition-transform ${
+                        openIndustries.includes(serviceGroup.title) ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="mt-2 space-y-1.5 pl-3 bg-white/5 rounded-md p-2">
+                    {serviceGroup.items.map((item, idx) => (
                       <a 
                         key={idx} 
                         href={item.url}
@@ -351,98 +344,45 @@ export const Footer = () => {
                         {item.name}
                       </a>
                     ))}
-                  </div>
-                </div>
+                  </CollapsibleContent>
+                </Collapsible>
               ))}
             </div>
           </div>
-        </div>
 
-        {/* Mobile Collapsible Sections */}
-        <div className="lg:hidden mb-12 space-y-4">
-          {/* Services Mobile */}
-          {services.map((serviceGroup) => (
-            <Collapsible
-              key={serviceGroup.title}
-              open={openIndustries.includes(serviceGroup.title)}
-              onOpenChange={() => toggleIndustry(serviceGroup.title)}
-            >
-              <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
-                <span className="font-semibold">{serviceGroup.title}</span>
-                <ChevronDown 
-                  className={`h-4 w-4 transition-transform ${
-                    openIndustries.includes(serviceGroup.title) ? 'rotate-180' : ''
-                  }`}
-                />
-              </CollapsibleTrigger>
-              <CollapsibleContent className="mt-2 space-y-2 pl-2">
-                {serviceGroup.items.map((item, idx) => (
-                  <a 
-                    key={idx} 
-                    href={item.url}
-                    className="block text-sm text-white/60 hover:text-white transition-smooth"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </CollapsibleContent>
-            </Collapsible>
-          ))}
-
-          {/* Company Links Mobile */}
-          <Collapsible
-            open={openIndustries.includes("Company")}
-            onOpenChange={() => toggleIndustry("Company")}
-          >
-            <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
-              <span className="font-semibold">Company</span>
-              <ChevronDown 
-                className={`h-4 w-4 transition-transform ${
-                  openIndustries.includes("Company") ? 'rotate-180' : ''
-                }`}
-              />
-            </CollapsibleTrigger>
-            <CollapsibleContent className="mt-2 space-y-2 pl-2">
-              {companyLinks.map((link, idx) => (
-                <a 
-                  key={idx} 
-                  href={link.url}
-                  className="block text-sm text-white/60 hover:text-white transition-smooth"
+          {/* Industries with Dropdowns */}
+          <div>
+            <h3 className="text-base font-bold mb-4">Industries We Serve</h3>
+            <div className="space-y-3">
+              {industries.map((industry) => (
+                <Collapsible
+                  key={industry.title}
+                  open={openIndustries.includes(industry.title)}
+                  onOpenChange={() => toggleIndustry(industry.title)}
                 >
-                  {link.name}
-                </a>
+                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth group">
+                    <span className="font-semibold text-sm">{industry.title}</span>
+                    <ChevronDown 
+                      className={`h-4 w-4 transition-transform ${
+                        openIndustries.includes(industry.title) ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="mt-2 space-y-1.5 pl-3 bg-white/5 rounded-md p-2">
+                    {industry.items.map((item, idx) => (
+                      <a 
+                        key={idx} 
+                        href={item.url}
+                        className="block text-xs text-white/60 hover:text-white transition-smooth"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </CollapsibleContent>
+                </Collapsible>
               ))}
-            </CollapsibleContent>
-          </Collapsible>
-
-          {/* Industries Mobile */}
-          {industries.map((industry) => (
-            <Collapsible
-              key={industry.title}
-              open={openIndustries.includes(industry.title)}
-              onOpenChange={() => toggleIndustry(industry.title)}
-            >
-              <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
-                <span className="font-semibold">{industry.title}</span>
-                <ChevronDown 
-                  className={`h-4 w-4 transition-transform ${
-                    openIndustries.includes(industry.title) ? 'rotate-180' : ''
-                  }`}
-                />
-              </CollapsibleTrigger>
-              <CollapsibleContent className="mt-2 space-y-2 pl-2">
-                {industry.items.map((item, idx) => (
-                  <a 
-                    key={idx} 
-                    href={item.url}
-                    className="block text-sm text-white/60 hover:text-white transition-smooth"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </CollapsibleContent>
-            </Collapsible>
-          ))}
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}
