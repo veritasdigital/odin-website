@@ -59,7 +59,6 @@ export const LazyImage = ({
       loading={loading}
       decoding={decoding}
       className={className}
-      fetchPriority="low"
       {...props}
     />
   );

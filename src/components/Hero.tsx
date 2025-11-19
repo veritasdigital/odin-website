@@ -160,7 +160,7 @@ export const Hero = () => {
                   className="w-full h-full object-cover object-center"
                   width="600"
                   height="800"
-                  fetchPriority="high"
+                  loading="eager"
                 />
               </div>
               
