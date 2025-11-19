@@ -25,6 +25,7 @@ import StrategySession from "./pages/StrategySession";
 import Onboarding from "./pages/Onboarding";
 import LeadMagnetBooking from "./pages/LeadMagnetBooking";
 import Application from "./pages/Application";
+import OptIn from "./pages/OptIn";
 import AdsCalendar from "./pages/AdsCalendar";
 import YtCalendar from "./pages/YtCalendar";
 import T2AdsCalendar from "./pages/T2AdsCalendar";
@@ -347,6 +348,7 @@ const App = () => (
           <Route path="/onboarding" element={<Onboarding />} />
           <Route path="/free-trainings-booking" element={<LeadMagnetBooking />} />
           <Route path="/application" element={<Application />} />
+          <Route path="/opt-in" element={<OptIn />} />
             <Route path="/ads-calendar" element={<AdsCalendar />} />
             <Route path="/yt-calendar" element={<YtCalendar />} />
             <Route path="/t2-ads-calendar" element={<T2AdsCalendar />} />
