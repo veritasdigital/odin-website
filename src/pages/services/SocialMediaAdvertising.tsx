@@ -31,6 +31,9 @@ import {
   Megaphone
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { socialMediaComparison } from "@/utils/serviceComparisonTables";
 
 // Count-up animation hook
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -818,6 +821,26 @@ const SocialMediaAdvertising = () => {
                 </AccordionItem>
               ))}
             </Accordion>
+          </div>
+        </section>
+
+        {/* Comparison Table Section */}
+        <section className="py-20 px-6 bg-muted/20">
+          <div className="max-w-5xl mx-auto">
+            <ComparisonTable
+              title={socialMediaComparison.title}
+              description={socialMediaComparison.description}
+              rows={socialMediaComparison.rows}
+            />
+          </div>
+        </section>
+
+        {/* ROI Calculator Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your Social Media Advertising ROI</h2>
+            <p className="text-xl text-center text-charcoal/70 mb-12">See how social media advertising could generate revenue for your business.</p>
+            <ROICalculator />
           </div>
         </section>
 

@@ -7,6 +7,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArrowRight, Zap, Smartphone, TrendingUp, Code, Shield, Target, LayoutTemplate, Loader, Banknote, Award, Users, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { webDesignComparison } from "@/utils/serviceComparisonTables";
 
 const WebsiteDesignAndDevelopment = () => {
   const { openForm } = useMarketingForm();
@@ -619,6 +622,26 @@ const WebsiteDesignAndDevelopment = () => {
           </Button>
         </div>
       </div>
+
+      {/* Comparison Table Section */}
+      <section className="py-20 px-6 bg-muted/20">
+        <div className="max-w-5xl mx-auto">
+          <ComparisonTable
+            title={webDesignComparison.title}
+            description={webDesignComparison.description}
+            rows={webDesignComparison.rows}
+          />
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your Website ROI</h2>
+          <p className="text-xl text-center text-charcoal/70 mb-12">See how a professional website could generate revenue for your business.</p>
+          <ROICalculator />
+        </div>
+      </section>
 
       <Footer />
     </>

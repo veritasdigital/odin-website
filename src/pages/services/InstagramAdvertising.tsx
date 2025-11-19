@@ -8,6 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle2, TrendingUp, Users, Zap, Camera, Video, ShoppingBag, Award, Target, BarChart3, Sparkles } from "lucide-react";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { socialMediaComparison } from "@/utils/serviceComparisonTables";
 
 const InstagramAdvertising = () => {
   const { openForm } = useMarketingForm();
@@ -552,6 +555,26 @@ const InstagramAdvertising = () => {
         <div className="hidden md:block">
           <SideTab />
         </div>
+
+        {/* Comparison Table Section */}
+        <section className="py-20 px-6 bg-muted/20">
+          <div className="max-w-5xl mx-auto">
+            <ComparisonTable
+              title={socialMediaComparison.title}
+              description={socialMediaComparison.description}
+              rows={socialMediaComparison.rows}
+            />
+          </div>
+        </section>
+
+        {/* ROI Calculator Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your Instagram Advertising ROI</h2>
+            <p className="text-xl text-center text-charcoal/70 mb-12">See how much revenue Instagram ads could generate for your business.</p>
+            <ROICalculator />
+          </div>
+        </section>
 
         {/* Mobile Sticky CTA */}
         <div className="md:hidden fixed bottom-0 left-0 right-0 p-3 bg-white border-t shadow-lg z-50">
