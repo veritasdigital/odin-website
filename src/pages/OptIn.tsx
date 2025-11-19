@@ -143,8 +143,8 @@ const OptIn = () => {
 
       {/* Top Banner */}
       <div className="px-4 py-2.5 md:py-3 text-center">
-        <div className="inline-block bg-primary text-primary-foreground px-6 md:px-8 py-2.5 md:py-3 rounded-lg">
-          <p className="text-xs md:text-sm font-bold uppercase tracking-wide">
+        <div className="inline-block bg-muted/50 border border-border px-4 md:px-6 py-1.5 md:py-2 rounded-sm">
+          <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             Serving clients in: {userCity}
           </p>
         </div>
