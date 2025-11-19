@@ -10,6 +10,8 @@ import { CheckCircle, Globe, Smartphone, Zap, BarChart3, Users, Monitor } from "
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { webDesignComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
+import { Helmet } from "react-helmet";
 export default function WebsiteDesign() {
   const {
     openForm
@@ -59,7 +61,32 @@ export default function WebsiteDesign() {
     description: "Deploy your website and continuously optimize for better performance."
   }];
   const technologies = ["WordPress", "Shopify", "React", "HTML5/CSS3", "JavaScript", "PHP", "WooCommerce", "Custom CMS"];
+  
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Website Design & Development Australia | Custom Web Design | Odin Digital</title>
+        <meta name="description" content="Professional website design and development services. Custom responsive designs, e-commerce solutions, and conversion-focused websites that drive business growth." />
+      </Helmet>
+
+      <ServiceSchema
+        serviceName="Website Design & Development Australia"
+        serviceType="Web Design & Development"
+        description="Professional website design and development services delivering stunning, high-converting websites. We specialize in custom responsive design, e-commerce development, user experience optimization, and performance-focused web solutions that drive business growth and deliver measurable results."
+        url="/services/website-design"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Website Design", url: "/services/website-design" }
+        ]}
+        pricing={{
+          minPrice: "5000",
+          maxPrice: "25000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />

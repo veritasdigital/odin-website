@@ -14,6 +14,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Helmet } from "react-helmet";
 import { HubPageLocations } from "@/components/HubPageLocations";
 import { googleAdsCluster } from "@/utils/contentClusters";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 export default function GoogleAds() {
   const {
@@ -148,10 +149,28 @@ export default function GoogleAds() {
       <Helmet>
         <title>Google Ads Management Services Australia | PPC Experts | Odin Digital</title>
         <meta name="description" content="Professional Google Ads management that delivers results. Stop wasting money on underperforming campaigns. Average 427% ROI with transparent reporting and expert optimization." />
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
       </Helmet>
+      
+      <ServiceSchema
+        serviceName="Google Ads Management Services Australia"
+        serviceType="Pay-Per-Click Advertising Management"
+        description="Professional Google Ads management delivering measurable ROI. Strategic keyword research, compelling ad copy, advanced bid optimization, and comprehensive conversion tracking. Our data-driven approach has generated an average 427% ROI for clients with 67% lower cost per lead and 3x higher conversion rates."
+        url="/services/google-ads"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Google Ads Management", url: "/services/google-ads" }
+        ]}
+        pricing={{
+          minPrice: "3000",
+          maxPrice: "10000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />
