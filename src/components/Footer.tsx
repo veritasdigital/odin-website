@@ -18,6 +18,96 @@ export const Footer = () => {
     );
   };
 
+  const services = [
+    {
+      title: "Core Services",
+      items: [
+        { name: "SEO Services", url: "/services/seo" },
+        { name: "Google Ads Management", url: "/services/google-ads" },
+        { name: "Facebook Advertising", url: "/services/facebook-advertising" },
+        { name: "Social Media Marketing", url: "/services/social-media" },
+        { name: "Website Design & Development", url: "/services/website-design" },
+        { name: "Email Marketing", url: "/services/email-marketing" }
+      ]
+    },
+    {
+      title: "SEO by Location",
+      items: [
+        { name: "SEO Sydney", url: "/services/sydney-seo" },
+        { name: "SEO Melbourne", url: "/services/melbourne-seo" },
+        { name: "SEO Brisbane", url: "/services/brisbane-seo" },
+        { name: "SEO Perth", url: "/services/perth-seo" },
+        { name: "SEO Adelaide", url: "/services/adelaide-seo" },
+        { name: "SEO Canberra", url: "/services/canberra-seo" },
+        { name: "SEO Gold Coast", url: "/services/gold-coast-seo" },
+        { name: "SEO Newcastle", url: "/services/newcastle-seo" },
+        { name: "SEO Hobart", url: "/services/hobart-seo" },
+        { name: "SEO Launceston", url: "/services/launceston-seo" },
+        { name: "SEO Darwin", url: "/services/darwin-seo" },
+        { name: "SEO Ballarat", url: "/services/ballarat-seo" }
+      ]
+    },
+    {
+      title: "Google Ads by Location",
+      items: [
+        { name: "Google Ads Sydney", url: "/services/google-ads-sydney" },
+        { name: "Google Ads Melbourne", url: "/services/google-ads-melbourne" },
+        { name: "Google Ads Brisbane", url: "/services/google-ads-brisbane" },
+        { name: "Google Ads Perth", url: "/services/google-ads-perth" },
+        { name: "Google Ads Adelaide", url: "/services/google-ads-adelaide" },
+        { name: "Google Ads Canberra", url: "/services/google-ads-canberra" },
+        { name: "Google Ads Gold Coast", url: "/services/google-ads-gold-coast" },
+        { name: "Google Ads Newcastle", url: "/services/google-ads-newcastle" },
+        { name: "Google Ads Hobart", url: "/services/google-ads-hobart" },
+        { name: "Google Ads Launceston", url: "/services/google-ads-launceston" },
+        { name: "Google Ads Darwin", url: "/services/google-ads-darwin" },
+        { name: "Google Ads Ballarat", url: "/services/google-ads-ballarat" }
+      ]
+    },
+    {
+      title: "Facebook Ads by Location",
+      items: [
+        { name: "Facebook Ads Sydney", url: "/services/facebook-ads-sydney" },
+        { name: "Facebook Ads Melbourne", url: "/services/facebook-ads-melbourne" },
+        { name: "Facebook Ads Brisbane", url: "/services/facebook-ads-brisbane" },
+        { name: "Facebook Ads Perth", url: "/services/facebook-ads-perth" },
+        { name: "Facebook Ads Adelaide", url: "/services/facebook-ads-adelaide" },
+        { name: "Facebook Ads Canberra", url: "/services/facebook-ads-canberra" },
+        { name: "Facebook Ads Gold Coast", url: "/services/facebook-ads-gold-coast" },
+        { name: "Facebook Ads Newcastle", url: "/services/facebook-ads-newcastle" },
+        { name: "Facebook Ads Hobart", url: "/services/facebook-ads-hobart" },
+        { name: "Facebook Ads Launceston", url: "/services/facebook-ads-launceston" },
+        { name: "Facebook Ads Darwin", url: "/services/facebook-ads-darwin" },
+        { name: "Facebook Ads Ballarat", url: "/services/facebook-ads-ballarat" }
+      ]
+    },
+    {
+      title: "Web Design by Location",
+      items: [
+        { name: "Web Design Sydney", url: "/services/web-design-sydney" },
+        { name: "Web Design Melbourne", url: "/services/web-design-melbourne" },
+        { name: "Web Design Brisbane", url: "/services/web-design-brisbane" },
+        { name: "Web Design Perth", url: "/services/web-design-perth" },
+        { name: "Web Design Adelaide", url: "/services/web-design-adelaide" },
+        { name: "Web Design Newcastle", url: "/services/web-design-newcastle" }
+      ]
+    },
+    {
+      title: "Specialized Services",
+      items: [
+        { name: "Local SEO", url: "/services/local-seo" },
+        { name: "Ecommerce SEO", url: "/services/ecommerce-seo" },
+        { name: "PPC Management", url: "/services/ppc-management" },
+        { name: "Instagram Advertising", url: "/services/instagram-advertising" },
+        { name: "LinkedIn Advertising", url: "/services/linkedin-advertising" },
+        { name: "TikTok Advertising", url: "/services/tiktok-advertising" },
+        { name: "YouTube Advertising", url: "/services/youtube-advertising" },
+        { name: "Marketing Consulting", url: "/services/marketing-consulting" },
+        { name: "Funnel Development", url: "/services/funnel-development" }
+      ]
+    }
+  ];
+
   const industries = [
     {
       title: "Healthcare & Medical",
@@ -63,9 +153,35 @@ export const Footer = () => {
         { name: "Accounting Firms", url: "/industries/accounting-firms" },
         { name: "Architecture Firms", url: "/industries/architecture-firms" },
         { name: "Insurance Agents", url: "/industries/insurance-agents" },
-        { name: "Real Estate Agents", url: "/industries/real-estate-agents" }
+        { name: "Real Estate Agents", url: "/industries/real-estate-agents" },
+        { name: "Commercial Real Estate", url: "/industries/commercial-real-estate" },
+        { name: "Luxury Real Estate", url: "/industries/luxury-real-estate" }
+      ]
+    },
+    {
+      title: "Technology & SaaS",
+      items: [
+        { name: "SaaS Companies", url: "/industries/saas-companies" },
+        { name: "Enterprise Software", url: "/industries/enterprise-software" },
+        { name: "Pharmaceutical Companies", url: "/industries/pharmaceutical-companies" }
+      ]
+    },
+    {
+      title: "Other Industries",
+      items: [
+        { name: "Ecommerce Businesses", url: "/services/ecommerce-agency" },
+        { name: "Franchise Businesses", url: "/industries/franchise-businesses" }
       ]
     }
+  ];
+
+  const companyLinks = [
+    { name: "About Us", url: "/about" },
+    { name: "Our Ethos", url: "/our-ethos" },
+    { name: "Our Clients", url: "/our-clients" },
+    { name: "Our Industries", url: "/our-industries" },
+    { name: "Blog", url: "/blog" },
+    { name: "Contact", url: "/contact" }
   ];
 
   const schemaData = {
@@ -147,9 +263,9 @@ export const Footer = () => {
         </script>
       </Helmet>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Company Info */}
-          <div>
+          <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img src={odinLogoWhite} alt="Odin Digital - Strategic Digital Marketing Agency Australia" className="h-10 w-auto" />
             </div>
@@ -159,98 +275,174 @@ export const Footer = () => {
             <Button variant="hero" size="lg" onClick={openForm} className="text-sm md:text-base px-4 md:px-8 w-full md:w-auto whitespace-normal h-auto min-h-[3rem] md:min-h-0">
               Get Your Free Strategy Session
             </Button>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Connect with Our Digital Marketing Experts</h3>
-            <div className="space-y-4 text-white/80">
-              <div>
-                <p className="font-semibold text-white">Phone:</p>
-                <p>03 9498 3170</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">Email:</p>
-                <p>hello@odindigital.com.au</p>
-              </div>
-              <div>
-                <p className="font-semibold text-white">Address:</p>
-                <p>11 Wilson Street<br />South Yarra VIC 3141</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Business Hours */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Business Hours</h3>
-            <div className="space-y-2 text-white/80">
-              <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-              <p>Saturday - Sunday: Closed</p>
-            </div>
             
+            {/* Contact Info */}
             <div className="mt-8">
-              <h4 className="font-semibold text-white mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                <Collapsible
-                  open={openIndustries.includes("Services")}
-                  onOpenChange={() => toggleIndustry("Services")}
-                >
-                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth">
-                    <span>Services</span>
-                    <ChevronDown 
-                      className={`h-4 w-4 transition-transform ${
-                        openIndustries.includes("Services") ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="mt-2 space-y-2 pl-2">
-                    <a href="/services/google-ads" className="block text-sm text-white/60 hover:text-white transition-smooth">Google Ads</a>
-                    <a href="/services/seo" className="block text-sm text-white/60 hover:text-white transition-smooth">SEO</a>
-                    <a href="/services/social-media" className="block text-sm text-white/60 hover:text-white transition-smooth">Social Media</a>
-                    <a href="/services/website-design" className="block text-sm text-white/60 hover:text-white transition-smooth">Website Design</a>
-                  </CollapsibleContent>
-                </Collapsible>
-                <a href="/#results" className="block text-white/80 hover:text-white transition-smooth">Results</a>
-                <a href="/#methodology" className="block text-white/80 hover:text-white transition-smooth">Methodology</a>
-                <a href="/about" className="block text-white/80 hover:text-white transition-smooth">About</a>
-                <a href="/blog" className="block text-white/80 hover:text-white transition-smooth">Blog</a>
+              <h3 className="text-lg font-bold mb-4">Contact Us</h3>
+              <div className="space-y-3 text-white/80 text-sm">
+                <div>
+                  <p className="font-semibold text-white">Phone:</p>
+                  <p>03 9498 3170</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Email:</p>
+                  <p>hello@odindigital.com.au</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Address:</p>
+                  <p>11 Wilson Street<br />South Yarra VIC 3141</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-white">Hours:</p>
+                  <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                </div>
               </div>
+            </div>
+          </div>
+
+          {/* Services Columns */}
+          {services.map((serviceGroup, idx) => (
+            <div key={serviceGroup.title} className={idx < 2 ? "lg:col-span-1" : "hidden lg:block"}>
+              <h3 className="text-lg font-bold mb-4">{serviceGroup.title}</h3>
+              <div className="space-y-2">
+                {serviceGroup.items.map((item, itemIdx) => (
+                  <a 
+                    key={itemIdx} 
+                    href={item.url}
+                    className="block text-sm text-white/70 hover:text-white transition-smooth"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {/* Company Links */}
+          <div className="hidden lg:block">
+            <h3 className="text-lg font-bold mb-4">Company</h3>
+            <div className="space-y-2">
+              {companyLinks.map((link, idx) => (
+                <a 
+                  key={idx} 
+                  href={link.url}
+                  className="block text-sm text-white/70 hover:text-white transition-smooth"
+                >
+                  {link.name}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Industries */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">Industries we work with</h3>
-            <div className="space-y-4">
-              {industries.map((industry) => (
-                <Collapsible
-                  key={industry.title}
-                  open={openIndustries.includes(industry.title)}
-                  onOpenChange={() => toggleIndustry(industry.title)}
-                >
-                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth">
-                    <span className="font-semibold">{industry.title}</span>
-                    <ChevronDown 
-                      className={`h-4 w-4 transition-transform ${
-                        openIndustries.includes(industry.title) ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="mt-2 space-y-2 pl-2">
-                    {industry.items.map((item, idx) => (
+          <div className="hidden lg:block">
+            <h3 className="text-lg font-bold mb-4">Industries</h3>
+            <div className="space-y-2">
+              {industries.slice(0, 2).map((industry) => (
+                <div key={industry.title} className="mb-4">
+                  <p className="font-semibold text-white/90 text-sm mb-2">{industry.title}</p>
+                  <div className="space-y-1 pl-2">
+                    {industry.items.slice(0, 6).map((item, idx) => (
                       <a 
                         key={idx} 
                         href={item.url}
-                        className="block text-sm text-white/60 hover:text-white transition-smooth"
+                        className="block text-xs text-white/60 hover:text-white transition-smooth"
                       >
                         {item.name}
                       </a>
                     ))}
-                  </CollapsibleContent>
-                </Collapsible>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Mobile Collapsible Sections */}
+        <div className="lg:hidden mb-12 space-y-4">
+          {/* Services Mobile */}
+          {services.map((serviceGroup) => (
+            <Collapsible
+              key={serviceGroup.title}
+              open={openIndustries.includes(serviceGroup.title)}
+              onOpenChange={() => toggleIndustry(serviceGroup.title)}
+            >
+              <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
+                <span className="font-semibold">{serviceGroup.title}</span>
+                <ChevronDown 
+                  className={`h-4 w-4 transition-transform ${
+                    openIndustries.includes(serviceGroup.title) ? 'rotate-180' : ''
+                  }`}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="mt-2 space-y-2 pl-2">
+                {serviceGroup.items.map((item, idx) => (
+                  <a 
+                    key={idx} 
+                    href={item.url}
+                    className="block text-sm text-white/60 hover:text-white transition-smooth"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </CollapsibleContent>
+            </Collapsible>
+          ))}
+
+          {/* Company Links Mobile */}
+          <Collapsible
+            open={openIndustries.includes("Company")}
+            onOpenChange={() => toggleIndustry("Company")}
+          >
+            <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
+              <span className="font-semibold">Company</span>
+              <ChevronDown 
+                className={`h-4 w-4 transition-transform ${
+                  openIndustries.includes("Company") ? 'rotate-180' : ''
+                }`}
+              />
+            </CollapsibleTrigger>
+            <CollapsibleContent className="mt-2 space-y-2 pl-2">
+              {companyLinks.map((link, idx) => (
+                <a 
+                  key={idx} 
+                  href={link.url}
+                  className="block text-sm text-white/60 hover:text-white transition-smooth"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </CollapsibleContent>
+          </Collapsible>
+
+          {/* Industries Mobile */}
+          {industries.map((industry) => (
+            <Collapsible
+              key={industry.title}
+              open={openIndustries.includes(industry.title)}
+              onOpenChange={() => toggleIndustry(industry.title)}
+            >
+              <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth py-2">
+                <span className="font-semibold">{industry.title}</span>
+                <ChevronDown 
+                  className={`h-4 w-4 transition-transform ${
+                    openIndustries.includes(industry.title) ? 'rotate-180' : ''
+                  }`}
+                />
+              </CollapsibleTrigger>
+              <CollapsibleContent className="mt-2 space-y-2 pl-2">
+                {industry.items.map((item, idx) => (
+                  <a 
+                    key={idx} 
+                    href={item.url}
+                    className="block text-sm text-white/60 hover:text-white transition-smooth"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </CollapsibleContent>
+            </Collapsible>
+          ))}
         </div>
 
         {/* Bottom Bar */}
