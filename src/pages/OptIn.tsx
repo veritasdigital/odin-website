@@ -45,7 +45,7 @@ const OptIn = () => {
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="py-4 md:py-6 px-4 mb-5">
+      <header className="py-4 md:py-6 px-4 mb-2">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
@@ -63,7 +63,7 @@ const OptIn = () => {
           <div className="max-w-3xl w-full text-center font-montserrat">
             {/* Serving Clients Banner */}
             <div className="mb-4 md:mb-6 animate-fade-in">
-              <div className="inline-block px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-red-500 to-orange-500">
+              <div className="inline-block px-6 md:px-8 py-1 md:py-1.5 bg-gradient-to-r from-red-500 to-orange-500">
                 <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-white">
                   Servicing clients in: {userCity}
                 </p>
