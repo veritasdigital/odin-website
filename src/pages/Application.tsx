@@ -13,7 +13,7 @@ const Application = () => {
         <meta name="keywords" content="growth session, marketing audit, Odin Digital" />
         <link rel="canonical" href="https://odindigital.com.au/application" />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="preconnect" href="https://qrpyukrdkajotbjlaacg.supabase.co" />
+        <link rel="dns-prefetch" href="https://hook.us1.make.com" />
         <link rel="dns-prefetch" href="https://qrpyukrdkajotbjlaacg.supabase.co" />
       </Helmet>
       
