@@ -130,7 +130,7 @@ const OptIn = () => {
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="bg-charcoal py-3 md:py-4 px-4">
+      <header className="py-3 md:py-4 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
@@ -142,10 +142,12 @@ const OptIn = () => {
       </header>
 
       {/* Top Banner */}
-      <div className="bg-primary text-primary-foreground py-2.5 md:py-3 px-4 text-center">
-        <p className="text-xs md:text-sm font-bold uppercase tracking-wide">
-          Serving clients in: {userCity}
-        </p>
+      <div className="px-4 py-2.5 md:py-3 text-center">
+        <div className="inline-block bg-primary text-primary-foreground px-6 md:px-8 py-2.5 md:py-3 rounded-lg">
+          <p className="text-xs md:text-sm font-bold uppercase tracking-wide">
+            Serving clients in: {userCity}
+          </p>
+        </div>
       </div>
 
       {/* Main Content - Above the Fold */}
