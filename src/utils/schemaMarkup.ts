@@ -406,3 +406,182 @@ export const getWebsiteSchema = () => ({
     "query-input": "required name=search_term_string"
   }
 });
+
+// Comprehensive Service Page Schema Generator
+export const getCompleteServiceSchema = (params: {
+  serviceName: string;
+  serviceType: string;
+  description: string;
+  url: string;
+  city?: string;
+  benefits?: string[];
+  features?: string[];
+  pricing?: {
+    minPrice?: string;
+    maxPrice?: string;
+    priceCurrency?: string;
+  };
+}) => {
+  const {
+    serviceName,
+    serviceType,
+    description,
+    url,
+    city,
+    benefits = [],
+    features = [],
+    pricing
+  } = params;
+
+  const locationData = city ? getLocationData(city) : null;
+  
+  // Build area served
+  const areaServed = locationData ? {
+    "@type": "City",
+    "name": locationData.city,
+    "containedIn": {
+      "@type": "State",
+      "name": locationData.state
+    }
+  } : {
+    "@type": "Country",
+    "name": "Australia"
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `https://odindigital.com.au${url}#service`,
+    "name": serviceName,
+    "serviceType": serviceType,
+    "description": description,
+    "url": `https://odindigital.com.au${url}`,
+    "image": "https://odindigital.com.au/odin-logo.png",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://odindigital.com.au/#organization",
+      "name": "Odin Digital",
+      "telephone": "+61394983170",
+      "email": "hello@odindigital.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "11 Wilson Street",
+        "addressLocality": "South Yarra",
+        "addressRegion": "VIC",
+        "postalCode": "3141",
+        "addressCountry": "AU"
+      }
+    },
+    "areaServed": areaServed,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "priceRange": "$$",
+    ...(pricing && {
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": pricing.priceCurrency || "AUD",
+        "price": pricing.minPrice,
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": pricing.minPrice,
+          "maxPrice": pricing.maxPrice,
+          "priceCurrency": pricing.priceCurrency || "AUD"
+        },
+        "availability": "https://schema.org/InStock",
+        "url": `https://odindigital.com.au${url}`
+      }
+    }),
+    ...(benefits.length > 0 && {
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": `${serviceName} Benefits`,
+        "itemListElement": benefits.map((benefit, index) => ({
+          "@type": "Offer",
+          "position": index + 1,
+          "itemOffered": {
+            "@type": "Service",
+            "name": benefit
+          }
+        }))
+      }
+    }),
+    ...(features.length > 0 && {
+      "additionalProperty": features.map(feature => ({
+        "@type": "PropertyValue",
+        "name": "Service Feature",
+        "value": feature
+      }))
+    })
+  };
+};
+
+// Location-based Service Schema
+export const getLocationServiceSchema = (params: {
+  serviceName: string;
+  serviceType: string;
+  city: string;
+  description: string;
+  url: string;
+}) => {
+  const { serviceName, serviceType, city, description, url } = params;
+  const locationData = getLocationData(city);
+  
+  if (!locationData) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": `https://odindigital.com.au${url}#service`,
+    "name": `${serviceName} ${city}`,
+    "alternateName": `${city} ${serviceName}`,
+    "serviceType": serviceType,
+    "description": description,
+    "url": `https://odindigital.com.au${url}`,
+    "image": `https://odindigital.com.au/locations/${city.toLowerCase().replace(/\s+/g, '-')}.jpg`,
+    "provider": {
+      "@id": "https://odindigital.com.au/#organization"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": locationData.city,
+      "addressRegion": locationData.state,
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": locationData.coordinates.lat,
+      "longitude": locationData.coordinates.lng
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": locationData.city,
+      "containedIn": {
+        "@type": "State",
+        "name": locationData.state
+      }
+    },
+    "telephone": "+61394983170",
+    "email": "hello@odindigital.com.au",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "283",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ]
+  };
+};

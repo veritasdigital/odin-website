@@ -13,6 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Helmet } from "react-helmet";
 import { HubPageLocations } from "@/components/HubPageLocations";
 import { seoServicesCluster } from "@/utils/contentClusters";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 export default function SEO() {
   const {
@@ -125,10 +126,29 @@ export default function SEO() {
         <title>SEO Services Australia | Professional Search Engine Optimization | Odin Digital</title>
         <meta name="description" content="Professional SEO services that deliver results. Increase organic traffic, dominate search rankings, and grow your business with data-driven SEO strategies." />
         <link rel="canonical" href="https://odindigital.com.au/services/seo" />
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
       </Helmet>
+      
+      {/* Comprehensive Service Schema */}
+      <ServiceSchema
+        serviceName="SEO Services Australia"
+        serviceType="Search Engine Optimization"
+        description="Professional SEO services that deliver measurable results. Our data-driven approach increases organic traffic, improves search rankings, and drives qualified leads to your business. We specialize in technical SEO, content optimization, link building, and local SEO strategies across Australia."
+        url="/services/seo"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "SEO Services", url: "/services/seo" }
+        ]}
+        pricing={{
+          minPrice: "2000",
+          maxPrice: "15000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />

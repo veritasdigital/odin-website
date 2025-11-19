@@ -29,6 +29,7 @@ import {
   Shield
 } from "lucide-react";
 import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const SydneySEO = () => {
   const locationInfo = getLocationData("sydney");
@@ -297,92 +298,23 @@ const SydneySEO = () => {
         />
         <meta name="keywords" content="seo sydney, seo agency sydney, seo company sydney, sydney seo agency, sydney seo company, best seo company sydney, seo consultant sydney, search engine optimisation sydney, seo packages sydney, seo expert sydney, professional seo sydney, sydney search engine optimisation" />
         <link rel="canonical" href="https://odindigital.com.au/seo-sydney" />
-        
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Odin Digital",
-            "url": "https://odindigital.com.au",
-            "logo": "https://odindigital.com.au/logo.png",
-            "description": "Sydney's leading SEO agency specializing in revenue-driven search engine optimization",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Sydney",
-              "addressRegion": "NSW",
-              "addressCountry": "AU"
-            }
-          })}
-        </script>
-
-        {/* LocalBusiness Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Odin Digital - SEO Sydney",
-            "image": "https://odindigital.com.au/logo.png",
-            "description": "Sydney's top SEO agency delivering measurable results and revenue growth",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Sydney",
-              "addressRegion": "NSW",
-              "addressCountry": "AU"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "283"
-            }
-          })}
-        </script>
-
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-
-        {/* Service Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "SEO Services",
-            "provider": {
-              "@type": "Organization",
-              "name": "Odin Digital"
-            },
-            "areaServed": {
-              "@type": "City",
-              "name": "Sydney"
-            },
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "SEO Services",
-              "itemListElement": services.map(service => ({
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": service.title,
-                  "description": service.description
-                }
-              }))
-            }
-          })}
-        </script>
       </Helmet>
+
+      {/* Comprehensive Location Service Schema */}
+      <ServiceSchema
+        serviceName="SEO Services Sydney"
+        serviceType="Search Engine Optimization"
+        city="Sydney"
+        description="Expert SEO services in Sydney delivering measurable results. We specialize in technical SEO, local search optimization, content strategy, and link building to drive qualified traffic and revenue growth for Sydney businesses. Our data-driven approach has generated $574M+ in client revenue."
+        url="/services/sydney-seo"
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "SEO", url: "/services/seo" },
+          { name: "Sydney SEO", url: "/services/sydney-seo" }
+        ]}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />
