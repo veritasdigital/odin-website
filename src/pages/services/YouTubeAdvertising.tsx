@@ -24,6 +24,9 @@ import {
   RefreshCw
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { socialMediaComparison } from "@/utils/serviceComparisonTables";
 
 const YouTubeAdvertising = () => {
   const { openForm } = useMarketingForm();
@@ -588,6 +591,26 @@ const YouTubeAdvertising = () => {
             >
               Claim Your FREE YouTube Advertising Audit <ArrowRight className="ml-2 inline-block" />
             </Button>
+          </div>
+        </section>
+
+        {/* Comparison Table Section */}
+        <section className="py-20 px-6 bg-muted/20">
+          <div className="max-w-5xl mx-auto">
+            <ComparisonTable
+              title={socialMediaComparison.title}
+              description={socialMediaComparison.description}
+              rows={socialMediaComparison.rows}
+            />
+          </div>
+        </section>
+
+        {/* ROI Calculator Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your YouTube Advertising ROI</h2>
+            <p className="text-xl text-center text-charcoal/70 mb-12">See how much revenue YouTube ads could generate for your business.</p>
+            <ROICalculator />
           </div>
         </section>
 

@@ -43,6 +43,7 @@ import {
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
 import { seoPackageComparison } from "@/utils/comparisonTables";
 
 const SEOAgency = () => {
@@ -751,6 +752,15 @@ const SEOAgency = () => {
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </div>
+
+        {/* ROI Calculator Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your SEO ROI</h2>
+            <p className="text-xl text-center text-charcoal/70 mb-12">See how much revenue professional SEO could generate for your business.</p>
+            <ROICalculator />
+          </div>
+        </section>
 
         {/* Footer */}
         <Footer />

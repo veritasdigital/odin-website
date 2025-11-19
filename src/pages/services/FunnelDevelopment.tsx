@@ -9,6 +9,9 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, ArrowRight, TrendingUp, Target, BarChart3, Users, Zap, AlertTriangle, Trophy, DollarSign } from "lucide-react";
 import { AsSeenIn } from "@/components/AsSeenIn";
 import { useNavigate } from "react-router-dom";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { webDesignComparison } from "@/utils/serviceComparisonTables";
 export default function FunnelDevelopment() {
   const {
     openForm
@@ -429,6 +432,26 @@ export default function FunnelDevelopment() {
           <p className="text-sm text-white/70 mt-4">
             No commitments. No pressure. Just a clear roadmap to turning your traffic into revenue.
           </p>
+        </div>
+      </section>
+
+      {/* Comparison Table Section */}
+      <section className="py-20 px-6 bg-muted/20">
+        <div className="max-w-5xl mx-auto">
+          <ComparisonTable
+            title={webDesignComparison.title}
+            description={webDesignComparison.description}
+            rows={webDesignComparison.rows}
+          />
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your Funnel Development ROI</h2>
+          <p className="text-xl text-center text-charcoal/70 mb-12">See how an optimized sales funnel could increase your conversion revenue.</p>
+          <ROICalculator />
         </div>
       </section>
 

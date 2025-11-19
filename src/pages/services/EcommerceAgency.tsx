@@ -32,6 +32,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { ecommerceComparison } from "@/utils/serviceComparisonTables";
 
 const EcommerceAgency = () => {
   const { openForm } = useMarketingForm();
@@ -903,6 +906,26 @@ const EcommerceAgency = () => {
           </Button>
         </div>
       </div>
+
+      {/* Comparison Table Section */}
+      <section className="py-20 px-6 bg-muted/20">
+        <div className="max-w-5xl mx-auto">
+          <ComparisonTable
+            title={ecommerceComparison.title}
+            description={ecommerceComparison.description}
+            rows={ecommerceComparison.rows}
+          />
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your E-commerce Marketing ROI</h2>
+          <p className="text-xl text-center text-charcoal/70 mb-12">See how professional e-commerce marketing could grow your online revenue.</p>
+          <ROICalculator />
+        </div>
+      </section>
 
       <Footer />
     </>

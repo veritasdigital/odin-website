@@ -7,6 +7,9 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { CheckCircle, Lightbulb, TrendingUp, Target, BarChart3, Users, Brain, AlertTriangle, Trophy, Zap, Clock } from "lucide-react";
+import { ComparisonTable } from "@/components/ComparisonTable";
+import { ROICalculator } from "@/components/ROICalculator";
+import { socialMediaComparison } from "@/utils/serviceComparisonTables";
 export default function MarketingConsulting() {
   const {
     openForm
@@ -434,6 +437,26 @@ export default function MarketingConsulting() {
           <p className="text-sm mt-4 text-gray-900">
             No commitments. No pressure. Just honest strategic guidance and a clear path forward.
           </p>
+        </div>
+      </section>
+
+      {/* Comparison Table Section */}
+      <section className="py-20 px-6 bg-muted/20">
+        <div className="max-w-5xl mx-auto">
+          <ComparisonTable
+            title={socialMediaComparison.title}
+            description={socialMediaComparison.description}
+            rows={socialMediaComparison.rows}
+          />
+        </div>
+      </section>
+
+      {/* ROI Calculator Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-black mb-4 text-center text-charcoal">Calculate Your Marketing Consulting ROI</h2>
+          <p className="text-xl text-center text-charcoal/70 mb-12">See how strategic consulting could transform your business revenue.</p>
+          <ROICalculator />
         </div>
       </section>
 
