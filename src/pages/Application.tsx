@@ -25,9 +25,15 @@ const Application = () => {
         
         {/* Performance optimizations */}
         <link rel="preconnect" href="https://hook.us1.make.com" />
-        <link rel="preconnect" href="https://qrpyukrdkajotbjlaacg.supabase.co" />
         <link rel="dns-prefetch" href="https://hook.us1.make.com" />
-        <link rel="dns-prefetch" href="https://qrpyukrdkajotbjlaacg.supabase.co" />
+        
+        {/* Prefetch next page */}
+        <link rel="prefetch" href="/thank-you" />
+        <link rel="prerender" href="/thank-you" />
+        
+        {/* Font optimizations */}
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </Helmet>
       
       <Suspense fallback={<LoadingSpinner />}>
