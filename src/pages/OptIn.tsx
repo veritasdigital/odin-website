@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
-import odinLogo from "@/assets/odin-digital-logo-new.png";
+import odinLogo from "@/assets/odin-logo-gradient.webp";
 import ApplicationForm from "@/components/ApplicationForm";
 
 // Australian cities for geolocation fallback
