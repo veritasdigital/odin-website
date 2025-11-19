@@ -58,7 +58,7 @@ const OptIn = () => {
 
 
       {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4">
+      <main className="flex-1 flex items-center justify-center px-4 pt-2 md:pt-4">
         {!showForm ? (
           <div className="max-w-3xl w-full text-center font-montserrat">
             {/* Serving Clients Banner */}
