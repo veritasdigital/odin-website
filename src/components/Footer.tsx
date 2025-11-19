@@ -18,93 +18,140 @@ export const Footer = () => {
     );
   };
 
+  const locationsByState = [
+    {
+      state: "New South Wales",
+      cities: [
+        { name: "Sydney", slug: "sydney" },
+        { name: "Newcastle", slug: "newcastle" }
+      ]
+    },
+    {
+      state: "Victoria",
+      cities: [
+        { name: "Melbourne", slug: "melbourne" },
+        { name: "Ballarat", slug: "ballarat" }
+      ]
+    },
+    {
+      state: "Queensland",
+      cities: [
+        { name: "Brisbane", slug: "brisbane" },
+        { name: "Gold Coast", slug: "gold-coast" }
+      ]
+    },
+    {
+      state: "Western Australia",
+      cities: [
+        { name: "Perth", slug: "perth" }
+      ]
+    },
+    {
+      state: "South Australia",
+      cities: [
+        { name: "Adelaide", slug: "adelaide" }
+      ]
+    },
+    {
+      state: "Australian Capital Territory",
+      cities: [
+        { name: "Canberra", slug: "canberra" }
+      ]
+    },
+    {
+      state: "Tasmania",
+      cities: [
+        { name: "Hobart", slug: "hobart" },
+        { name: "Launceston", slug: "launceston" }
+      ]
+    },
+    {
+      state: "Northern Territory",
+      cities: [
+        { name: "Darwin", slug: "darwin" }
+      ]
+    }
+  ];
+
   const services = [
     {
-      title: "Core Services",
-      items: [
-        { name: "SEO Services", url: "/services/seo" },
-        { name: "Google Ads Management", url: "/services/google-ads" },
-        { name: "Facebook Advertising", url: "/services/facebook-advertising" },
-        { name: "Social Media Marketing", url: "/services/social-media" },
-        { name: "Website Design & Development", url: "/services/website-design" },
-        { name: "Email Marketing", url: "/services/email-marketing" }
-      ]
+      title: "SEO",
+      url: "/services/seo",
+      hasLocations: true,
+      serviceSlug: "seo"
     },
     {
-      title: "SEO by Location",
-      items: [
-        { name: "SEO Sydney", url: "/services/sydney-seo" },
-        { name: "SEO Melbourne", url: "/services/melbourne-seo" },
-        { name: "SEO Brisbane", url: "/services/brisbane-seo" },
-        { name: "SEO Perth", url: "/services/perth-seo" },
-        { name: "SEO Adelaide", url: "/services/adelaide-seo" },
-        { name: "SEO Canberra", url: "/services/canberra-seo" },
-        { name: "SEO Gold Coast", url: "/services/gold-coast-seo" },
-        { name: "SEO Newcastle", url: "/services/newcastle-seo" },
-        { name: "SEO Hobart", url: "/services/hobart-seo" },
-        { name: "SEO Launceston", url: "/services/launceston-seo" },
-        { name: "SEO Darwin", url: "/services/darwin-seo" },
-        { name: "SEO Ballarat", url: "/services/ballarat-seo" }
-      ]
+      title: "Google Ads",
+      url: "/services/google-ads",
+      hasLocations: true,
+      serviceSlug: "google-ads"
     },
     {
-      title: "Google Ads by Location",
-      items: [
-        { name: "Google Ads Sydney", url: "/services/google-ads-sydney" },
-        { name: "Google Ads Melbourne", url: "/services/google-ads-melbourne" },
-        { name: "Google Ads Brisbane", url: "/services/google-ads-brisbane" },
-        { name: "Google Ads Perth", url: "/services/google-ads-perth" },
-        { name: "Google Ads Adelaide", url: "/services/google-ads-adelaide" },
-        { name: "Google Ads Canberra", url: "/services/google-ads-canberra" },
-        { name: "Google Ads Gold Coast", url: "/services/google-ads-gold-coast" },
-        { name: "Google Ads Newcastle", url: "/services/google-ads-newcastle" },
-        { name: "Google Ads Hobart", url: "/services/google-ads-hobart" },
-        { name: "Google Ads Launceston", url: "/services/google-ads-launceston" },
-        { name: "Google Ads Darwin", url: "/services/google-ads-darwin" },
-        { name: "Google Ads Ballarat", url: "/services/google-ads-ballarat" }
-      ]
+      title: "Facebook Advertising",
+      url: "/services/facebook-advertising",
+      hasLocations: true,
+      serviceSlug: "facebook-ads"
     },
     {
-      title: "Facebook Ads by Location",
-      items: [
-        { name: "Facebook Ads Sydney", url: "/services/facebook-ads-sydney" },
-        { name: "Facebook Ads Melbourne", url: "/services/facebook-ads-melbourne" },
-        { name: "Facebook Ads Brisbane", url: "/services/facebook-ads-brisbane" },
-        { name: "Facebook Ads Perth", url: "/services/facebook-ads-perth" },
-        { name: "Facebook Ads Adelaide", url: "/services/facebook-ads-adelaide" },
-        { name: "Facebook Ads Canberra", url: "/services/facebook-ads-canberra" },
-        { name: "Facebook Ads Gold Coast", url: "/services/facebook-ads-gold-coast" },
-        { name: "Facebook Ads Newcastle", url: "/services/facebook-ads-newcastle" },
-        { name: "Facebook Ads Hobart", url: "/services/facebook-ads-hobart" },
-        { name: "Facebook Ads Launceston", url: "/services/facebook-ads-launceston" },
-        { name: "Facebook Ads Darwin", url: "/services/facebook-ads-darwin" },
-        { name: "Facebook Ads Ballarat", url: "/services/facebook-ads-ballarat" }
-      ]
+      title: "Web Design",
+      url: "/services/website-design",
+      hasLocations: true,
+      serviceSlug: "web-design"
     },
     {
-      title: "Web Design by Location",
-      items: [
-        { name: "Web Design Sydney", url: "/services/web-design-sydney" },
-        { name: "Web Design Melbourne", url: "/services/web-design-melbourne" },
-        { name: "Web Design Brisbane", url: "/services/web-design-brisbane" },
-        { name: "Web Design Perth", url: "/services/web-design-perth" },
-        { name: "Web Design Adelaide", url: "/services/web-design-adelaide" },
-        { name: "Web Design Newcastle", url: "/services/web-design-newcastle" }
-      ]
+      title: "Local SEO",
+      url: "/services/local-seo",
+      hasLocations: false
     },
     {
-      title: "Specialized Services",
-      items: [
-        { name: "Local SEO", url: "/services/local-seo" },
-        { name: "Ecommerce SEO", url: "/services/ecommerce-seo" },
-        { name: "PPC Management", url: "/services/ppc-management" },
-        { name: "Instagram Advertising", url: "/services/instagram-advertising" },
-        { name: "LinkedIn Advertising", url: "/services/linkedin-advertising" },
-        { name: "TikTok Advertising", url: "/services/tiktok-advertising" },
-        { name: "YouTube Advertising", url: "/services/youtube-advertising" },
-        { name: "Marketing Consulting", url: "/services/marketing-consulting" },
-        { name: "Funnel Development", url: "/services/funnel-development" }
-      ]
+      title: "Social Media Marketing",
+      url: "/services/social-media",
+      hasLocations: false
+    },
+    {
+      title: "Email Marketing",
+      url: "/services/email-marketing",
+      hasLocations: false
+    },
+    {
+      title: "PPC Management",
+      url: "/services/ppc-management",
+      hasLocations: false
+    },
+    {
+      title: "Ecommerce SEO",
+      url: "/services/ecommerce-seo",
+      hasLocations: false
+    },
+    {
+      title: "Instagram Advertising",
+      url: "/services/instagram-advertising",
+      hasLocations: false
+    },
+    {
+      title: "LinkedIn Advertising",
+      url: "/services/linkedin-advertising",
+      hasLocations: false
+    },
+    {
+      title: "TikTok Advertising",
+      url: "/services/tiktok-advertising",
+      hasLocations: false
+    },
+    {
+      title: "YouTube Advertising",
+      url: "/services/youtube-advertising",
+      hasLocations: false
+    },
+    {
+      title: "Marketing Consulting",
+      url: "/services/marketing-consulting",
+      hasLocations: false
+    },
+    {
+      title: "Funnel Development",
+      url: "/services/funnel-development",
+      hasLocations: false
     }
   ];
 
@@ -316,36 +363,64 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Services with Dropdowns */}
+          {/* Services with Location Dropdowns */}
           <div>
             <h3 className="text-base font-bold mb-4">Our Services</h3>
-            <div className="space-y-3">
-              {services.map((serviceGroup) => (
-                <Collapsible
-                  key={serviceGroup.title}
-                  open={openIndustries.includes(serviceGroup.title)}
-                  onOpenChange={() => toggleIndustry(serviceGroup.title)}
-                >
-                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth group">
-                    <span className="font-semibold text-sm">{serviceGroup.title}</span>
-                    <ChevronDown 
-                      className={`h-4 w-4 transition-transform ${
-                        openIndustries.includes(serviceGroup.title) ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="mt-2 space-y-1.5 pl-3 bg-white/5 rounded-md p-2">
-                    {serviceGroup.items.map((item, idx) => (
-                      <a 
-                        key={idx} 
-                        href={item.url}
-                        className="block text-xs text-white/60 hover:text-white transition-smooth"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </CollapsibleContent>
-                </Collapsible>
+            <div className="space-y-2">
+              {services.map((service) => (
+                service.hasLocations ? (
+                  <Collapsible
+                    key={service.title}
+                    open={openIndustries.includes(service.title)}
+                    onOpenChange={() => toggleIndustry(service.title)}
+                  >
+                    <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/70 hover:text-white transition-smooth group">
+                      <a href={service.url} className="text-sm hover:text-white">{service.title}</a>
+                      <ChevronDown 
+                        className={`h-4 w-4 transition-transform ${
+                          openIndustries.includes(service.title) ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="mt-2 space-y-2 pl-3">
+                      {locationsByState.map((state) => (
+                        <Collapsible
+                          key={state.state}
+                          open={openIndustries.includes(`${service.title}-${state.state}`)}
+                          onOpenChange={() => toggleIndustry(`${service.title}-${state.state}`)}
+                        >
+                          <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/60 hover:text-white transition-smooth group">
+                            <span className="text-xs font-medium">{state.state}</span>
+                            <ChevronDown 
+                              className={`h-3 w-3 transition-transform ${
+                                openIndustries.includes(`${service.title}-${state.state}`) ? 'rotate-180' : ''
+                              }`}
+                            />
+                          </CollapsibleTrigger>
+                          <CollapsibleContent className="mt-1.5 space-y-1 pl-3 bg-white/5 rounded-md p-2">
+                            {state.cities.map((city) => (
+                              <a 
+                                key={city.slug} 
+                                href={`/services/${service.serviceSlug}-${city.slug}`}
+                                className="block text-xs text-white/50 hover:text-white transition-smooth"
+                              >
+                                {city.name}
+                              </a>
+                            ))}
+                          </CollapsibleContent>
+                        </Collapsible>
+                      ))}
+                    </CollapsibleContent>
+                  </Collapsible>
+                ) : (
+                  <a 
+                    key={service.title}
+                    href={service.url}
+                    className="block text-sm text-white/70 hover:text-white transition-smooth"
+                  >
+                    {service.title}
+                  </a>
+                )
               ))}
             </div>
           </div>
