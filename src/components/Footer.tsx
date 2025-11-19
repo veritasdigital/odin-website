@@ -1,22 +1,11 @@
-import { Button } from "@/components/ui/button";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import odinLogoWhite from "@/assets/odin-logo-white.png";
-import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Helmet } from "react-helmet";
 
 export const Footer = () => {
-  const [openIndustries, setOpenIndustries] = useState<string[]>([]);
-  const { openForm } = useMarketingForm();
-
-  const toggleIndustry = (industry: string) => {
-    setOpenIndustries(prev => 
-      prev.includes(industry) 
-        ? prev.filter(i => i !== industry)
-        : [...prev, industry]
-    );
-  };
+  const [locationsOpen, setLocationsOpen] = useState(false);
 
   const locationsByState = [
     {
@@ -73,151 +62,40 @@ export const Footer = () => {
     }
   ];
 
-  const services = [
+  const serviceCategories = [
     {
-      title: "SEO",
-      url: "/services/seo",
-      hasLocations: true,
-      serviceSlug: "seo"
-    },
-    {
-      title: "Google Ads",
-      url: "/services/google-ads",
-      hasLocations: true,
-      serviceSlug: "google-ads"
-    },
-    {
-      title: "Facebook Advertising",
-      url: "/services/facebook-advertising",
-      hasLocations: true,
-      serviceSlug: "facebook-ads"
-    },
-    {
-      title: "Web Design",
-      url: "/services/website-design",
-      hasLocations: true,
-      serviceSlug: "web-design"
-    },
-    {
-      title: "Local SEO",
-      url: "/services/local-seo",
-      hasLocations: false
-    },
-    {
-      title: "Social Media Marketing",
-      url: "/services/social-media",
-      hasLocations: false
-    },
-    {
-      title: "Email Marketing",
-      url: "/services/email-marketing",
-      hasLocations: false
-    },
-    {
-      title: "PPC Management",
-      url: "/services/ppc-management",
-      hasLocations: false
-    },
-    {
-      title: "Ecommerce SEO",
-      url: "/services/ecommerce-seo",
-      hasLocations: false
-    },
-    {
-      title: "Instagram Advertising",
-      url: "/services/instagram-advertising",
-      hasLocations: false
-    },
-    {
-      title: "LinkedIn Advertising",
-      url: "/services/linkedin-advertising",
-      hasLocations: false
-    },
-    {
-      title: "TikTok Advertising",
-      url: "/services/tiktok-advertising",
-      hasLocations: false
-    },
-    {
-      title: "YouTube Advertising",
-      url: "/services/youtube-advertising",
-      hasLocations: false
-    },
-    {
-      title: "Marketing Consulting",
-      url: "/services/marketing-consulting",
-      hasLocations: false
-    },
-    {
-      title: "Funnel Development",
-      url: "/services/funnel-development",
-      hasLocations: false
-    }
-  ];
-
-  const industries = [
-    {
-      title: "Healthcare & Medical",
-      items: [
-        { name: "Dentists", url: "/industries/dentists" },
-        { name: "Cosmetic Dentists", url: "/industries/cosmetic-dentists" },
-        { name: "Orthodontists", url: "/industries/orthodontists" },
-        { name: "Dental Implants", url: "/industries/dental-implants" },
-        { name: "Family Dentists", url: "/industries/family-dentists" },
-        { name: "Pediatric Dentists", url: "/industries/pediatric-dentists" },
-        { name: "Cosmetic Surgeons", url: "/industries/cosmetic-surgeons" },
-        { name: "Plastic Surgeons", url: "/industries/plastic-surgeons" },
-        { name: "Cosmetic Clinics", url: "/industries/cosmetic-clinics" },
-        { name: "Dermatologists", url: "/industries/dermatologists" },
-        { name: "Ophthalmologists", url: "/industries/ophthalmologists" },
-        { name: "Fertility Clinics", url: "/industries/fertility-clinics" }
+      title: "Primary Services",
+      services: [
+        { name: "Google Ads", url: "/services/google-ads" },
+        { name: "Facebook Advertising", url: "/services/facebook-advertising" },
+        { name: "TikTok Advertising", url: "/services/tiktok-advertising" },
+        { name: "Instagram Advertising", url: "/services/instagram-advertising" },
+        { name: "LinkedIn Advertising", url: "/services/linkedin-advertising" },
+        { name: "YouTube Advertising", url: "/services/youtube-advertising" },
+        { name: "PPC Management", url: "/services/ppc-management" }
       ]
     },
     {
-      title: "Legal Services",
-      items: [
-        { name: "Lawyers", url: "/industries/lawyers" },
-        { name: "Personal Injury Lawyers", url: "/industries/personal-injury-lawyers" },
-        { name: "Family Lawyers", url: "/industries/family-lawyers" },
-        { name: "Criminal Defense Lawyers", url: "/industries/criminal-defense-lawyers" },
-        { name: "Immigration Lawyers", url: "/industries/immigration-lawyers" },
-        { name: "Conveyancing Lawyers", url: "/industries/conveyancing-lawyers" }
+      title: "SEO Services",
+      services: [
+        { name: "SEO", url: "/services/seo" },
+        { name: "Local SEO", url: "/services/local-seo" },
+        { name: "Ecommerce SEO", url: "/services/ecommerce-seo" }
       ]
     },
     {
-      title: "Home Services & Trades",
-      items: [
-        { name: "Electricians", url: "/industries/electricians" },
-        { name: "Plumbers", url: "/industries/plumbers" },
-        { name: "Roofing Companies", url: "/industries/roofing-companies" },
-        { name: "Landscaping Companies", url: "/industries/landscaping-companies" },
-        { name: "HVAC Contractors", url: "/industries/hvac-contractors" }
+      title: "Web & Funnel Services",
+      services: [
+        { name: "Web Design", url: "/services/website-design" },
+        { name: "Funnel Development", url: "/services/funnel-development" }
       ]
     },
     {
-      title: "Professional Services",
-      items: [
-        { name: "Accounting Firms", url: "/industries/accounting-firms" },
-        { name: "Architecture Firms", url: "/industries/architecture-firms" },
-        { name: "Insurance Agents", url: "/industries/insurance-agents" },
-        { name: "Real Estate Agents", url: "/industries/real-estate-agents" },
-        { name: "Commercial Real Estate", url: "/industries/commercial-real-estate" },
-        { name: "Luxury Real Estate", url: "/industries/luxury-real-estate" }
-      ]
-    },
-    {
-      title: "Technology & SaaS",
-      items: [
-        { name: "SaaS Companies", url: "/industries/saas-companies" },
-        { name: "Enterprise Software", url: "/industries/enterprise-software" },
-        { name: "Pharmaceutical Companies", url: "/industries/pharmaceutical-companies" }
-      ]
-    },
-    {
-      title: "Other Industries",
-      items: [
-        { name: "Ecommerce Businesses", url: "/services/ecommerce-agency" },
-        { name: "Franchise Businesses", url: "/industries/franchise-businesses" }
+      title: "Marketing Services",
+      services: [
+        { name: "Social Media Marketing", url: "/services/social-media" },
+        { name: "Email Marketing", url: "/services/email-marketing" },
+        { name: "Marketing Consulting", url: "/services/marketing-consulting" }
       ]
     }
   ];
@@ -240,242 +118,141 @@ export const Footer = () => {
     "url": "https://odindigital.com.au",
     "logo": "https://odindigital.com.au/odin-logo.png",
     "description": "Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.",
-    "telephone": "+61394983170",
-    "email": "hello@odindigital.com.au",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "11 Wilson Street",
+      "streetAddress": "Level 1, 12 River Street",
       "addressLocality": "South Yarra",
       "addressRegion": "VIC",
       "postalCode": "3141",
       "addressCountry": "AU"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "-37.8399",
-      "longitude": "144.9929"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
-      }
-    ],
-    "priceRange": "$$",
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Melbourne"
-      },
-      {
-        "@type": "City",
-        "name": "Sydney"
-      },
-      {
-        "@type": "City",
-        "name": "Brisbane"
-      },
-      {
-        "@type": "City",
-        "name": "Perth"
-      },
-      {
-        "@type": "City",
-        "name": "Adelaide"
-      }
-    ],
+    "telephone": "+61-1300-858-250",
+    "email": "hello@odindigital.com.au",
     "sameAs": [
-      "https://www.linkedin.com/company/odin-digital",
-      "https://www.facebook.com/odindigital",
+      "https://www.facebook.com/odindigitalau",
+      "https://www.linkedin.com/company/odindigital",
       "https://www.instagram.com/odindigital"
     ],
-    "serviceType": [
-      "Digital Marketing Agency",
-      "SEO Services",
-      "Google Ads Management",
-      "Facebook Advertising",
-      "Social Media Marketing",
-      "Web Design",
-      "Email Marketing"
-    ]
+    "areaServed": {
+      "@type": "Country",
+      "name": "Australia"
+    }
   };
 
   return (
-    <footer data-nav-contrast="dark" id="contact" className="bg-accent text-white py-16">
+    <footer className="bg-charcoal text-white pt-16 pb-8">
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
       </Helmet>
+
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <img src={odinLogoWhite} alt="Odin Digital - Strategic Digital Marketing Agency Australia" className="h-10 w-auto" />
-            </div>
-            <p className="text-white/80 mb-6 leading-relaxed text-sm">
-              Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth through data-driven strategies and proven methodologies.
+          <div className="space-y-6">
+            <img 
+              src={odinLogoWhite} 
+              alt="Odin Digital Logo" 
+              className="h-8 w-auto mb-6"
+            />
+            <p className="text-white/80 text-sm leading-relaxed">
+              Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth.
             </p>
-            <Button variant="hero" size="lg" onClick={openForm} className="text-sm px-6 w-full whitespace-normal h-auto min-h-[3rem]">
-              Get Your Free Strategy Session
-            </Button>
-            
-            {/* Contact Info */}
-            <div className="mt-8">
-              <h3 className="text-base font-bold mb-3">Contact Us</h3>
-              <div className="space-y-2 text-white/80 text-sm">
-                <div>
-                  <p className="font-semibold text-white text-xs">Phone:</p>
-                  <p className="text-xs">03 9498 3170</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white text-xs">Email:</p>
-                  <p className="text-xs">hello@odindigital.com.au</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white text-xs">Address:</p>
-                  <p className="text-xs">11 Wilson Street<br />South Yarra VIC 3141</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-white text-xs">Hours:</p>
-                  <p className="text-xs">Mon-Fri: 8:00 AM - 6:00 PM</p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              <p className="text-white/80 text-sm">Level 1, 12 River Street</p>
+              <p className="text-white/80 text-sm">South Yarra, VIC 3141</p>
+              <p className="text-white/80 text-sm">Australia</p>
+              <a href="tel:1300858250" className="text-white/80 text-sm hover:text-white transition-colors block">
+                Phone: 1300 858 250
+              </a>
             </div>
           </div>
 
           {/* Company Links */}
           <div>
-            <h3 className="text-base font-bold mb-4">Company</h3>
-            <div className="space-y-2">
-              {companyLinks.map((link, idx) => (
-                <a 
-                  key={idx} 
-                  href={link.url}
-                  className="block text-sm text-white/70 hover:text-white transition-smooth"
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Services with Location Dropdowns */}
-          <div>
-            <h3 className="text-base font-bold mb-4">Our Services</h3>
-            <div className="space-y-2">
-              {services.map((service) => (
-                service.hasLocations ? (
-                  <Collapsible
-                    key={service.title}
-                    open={openIndustries.includes(service.title)}
-                    onOpenChange={() => toggleIndustry(service.title)}
-                  >
-                    <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/70 hover:text-white transition-smooth group">
-                      <a href={service.url} className="text-sm hover:text-white">{service.title}</a>
-                      <ChevronDown 
-                        className={`h-4 w-4 transition-transform ${
-                          openIndustries.includes(service.title) ? 'rotate-180' : ''
-                        }`}
-                      />
-                    </CollapsibleTrigger>
-                    <CollapsibleContent className="mt-2 space-y-2 pl-3">
-                      {locationsByState.map((state) => (
-                        <Collapsible
-                          key={state.state}
-                          open={openIndustries.includes(`${service.title}-${state.state}`)}
-                          onOpenChange={() => toggleIndustry(`${service.title}-${state.state}`)}
-                        >
-                          <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/60 hover:text-white transition-smooth group">
-                            <span className="text-xs font-medium">{state.state}</span>
-                            <ChevronDown 
-                              className={`h-3 w-3 transition-transform ${
-                                openIndustries.includes(`${service.title}-${state.state}`) ? 'rotate-180' : ''
-                              }`}
-                            />
-                          </CollapsibleTrigger>
-                          <CollapsibleContent className="mt-1.5 space-y-1 pl-3 bg-white/5 rounded-md p-2">
-                            {state.cities.map((city) => (
-                              <a 
-                                key={city.slug} 
-                                href={`/services/${service.serviceSlug}-${city.slug}`}
-                                className="block text-xs text-white/50 hover:text-white transition-smooth"
-                              >
-                                {city.name}
-                              </a>
-                            ))}
-                          </CollapsibleContent>
-                        </Collapsible>
-                      ))}
-                    </CollapsibleContent>
-                  </Collapsible>
-                ) : (
+            <h3 className="text-lg font-bold mb-6">Company</h3>
+            <ul className="space-y-3">
+              {companyLinks.map((link) => (
+                <li key={link.url}>
                   <a 
-                    key={service.title}
-                    href={service.url}
-                    className="block text-sm text-white/70 hover:text-white transition-smooth"
+                    href={link.url} 
+                    className="text-white/80 hover:text-white transition-colors text-sm"
                   >
-                    {service.title}
+                    {link.name}
                   </a>
-                )
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          {/* Industries with Dropdowns */}
-          <div>
-            <h3 className="text-base font-bold mb-4">Industries We Serve</h3>
-            <div className="space-y-3">
-              {industries.map((industry) => (
-                <Collapsible
-                  key={industry.title}
-                  open={openIndustries.includes(industry.title)}
-                  onOpenChange={() => toggleIndustry(industry.title)}
-                >
-                  <CollapsibleTrigger className="flex items-center justify-between w-full text-left text-white/80 hover:text-white transition-smooth group">
-                    <span className="font-semibold text-sm">{industry.title}</span>
-                    <ChevronDown 
-                      className={`h-4 w-4 transition-transform ${
-                        openIndustries.includes(industry.title) ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="mt-2 space-y-1.5 pl-3 bg-white/5 rounded-md p-2">
-                    {industry.items.map((item, idx) => (
-                      <a 
-                        key={idx} 
-                        href={item.url}
-                        className="block text-xs text-white/60 hover:text-white transition-smooth"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </CollapsibleContent>
-                </Collapsible>
-              ))}
+          {/* Service Categories - Spanning 3 columns */}
+          {serviceCategories.map((category, idx) => (
+            <div key={idx}>
+              <h3 className="text-lg font-bold mb-6">{category.title}</h3>
+              <ul className="space-y-3">
+                {category.services.map((service) => (
+                  <li key={service.url}>
+                    <a 
+                      href={service.url} 
+                      className="text-white/80 hover:text-white transition-colors text-sm"
+                    >
+                      {service.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
+          ))}
+        </div>
+
+        {/* Collapsible Locations by State */}
+        <div className="border-t border-white/10 pt-8 mb-8">
+          <Collapsible open={locationsOpen} onOpenChange={setLocationsOpen}>
+            <CollapsibleTrigger className="w-full flex items-center justify-between py-4 hover:text-white/90 transition-colors group">
+              <h3 className="text-xl font-bold">Service Locations Across Australia</h3>
+              <ChevronDown className="w-5 h-5 transition-transform group-data-[state=open]:rotate-180" />
+            </CollapsibleTrigger>
+            <CollapsibleContent>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 pt-6 pb-4">
+                {locationsByState.map((location) => (
+                  <div key={location.state}>
+                    <h4 className="font-semibold mb-3 text-white text-sm">{location.state}</h4>
+                    <ul className="space-y-2">
+                      {location.cities.map((city) => (
+                        <li key={city.slug}>
+                          <a 
+                            href={`/services/${city.slug}-seo`} 
+                            className="text-white/70 hover:text-white transition-colors text-sm"
+                          >
+                            {city.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </CollapsibleContent>
+          </Collapsible>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-              <p className="text-white/60 text-sm">
-                © 2024 Odin Digital. All rights reserved.
-              </p>
-              <div className="flex space-x-4 text-sm">
-                <a href="/privacy" className="text-white/60 hover:text-white transition-smooth">Privacy Policy</a>
-                <a href="/terms" className="text-white/60 hover:text-white transition-smooth">Terms of Service</a>
-              </div>
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div className="text-white/60 text-sm text-center md:text-left">
+              <p>&copy; {new Date().getFullYear()} Odin Digital Pty Ltd. All rights reserved.</p>
             </div>
-            <p className="text-white/60 text-sm text-center md:text-right max-w-md">
-              Results vary based on industry, market conditions, and implementation of recommended strategies. 
-              All performance metrics represent verified client data and collaborative achievements.
-            </p>
+            
+            <div className="flex gap-6 text-sm">
+              <a href="/privacy" className="text-white/60 hover:text-white transition-colors">
+                Privacy Policy
+              </a>
+              <a href="/terms" className="text-white/60 hover:text-white transition-colors">
+                Terms of Service
+              </a>
+            </div>
           </div>
         </div>
       </div>
