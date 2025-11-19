@@ -38,7 +38,14 @@ const ApplicationForm = () => {
       const savedData = localStorage.getItem("applicationFormData");
       if (savedData) {
         try {
-          const parsed = JSON.parse(savedData);
+          // Try decompression first, fallback to direct parse
+          let parsed;
+          try {
+            const decompressed = atob(savedData);
+            parsed = JSON.parse(decodeURIComponent(decompressed));
+          } catch {
+            parsed = JSON.parse(savedData);
+          }
           setFormData(prev => ({ ...prev, ...parsed, timezone: getFormattedTimezone() }));
         } catch (error) {
           console.error("Failed to parse saved data:", error);
@@ -49,10 +56,17 @@ const ApplicationForm = () => {
     });
   }, []);
 
-  // Debounced save to localStorage
+  // Debounced save to localStorage with compression
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      localStorage.setItem("applicationFormData", JSON.stringify(formData));
+      try {
+        const jsonString = JSON.stringify(formData);
+        const compressed = btoa(encodeURIComponent(jsonString));
+        localStorage.setItem("applicationFormData", compressed);
+      } catch (error) {
+        // Fallback to uncompressed if compression fails
+        localStorage.setItem("applicationFormData", JSON.stringify(formData));
+      }
     }, 300);
     return () => clearTimeout(timeoutId);
   }, [formData]);
