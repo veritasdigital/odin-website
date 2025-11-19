@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { socialMediaComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const LinkedInAdvertising = () => {
   const { openForm } = useMarketingForm();

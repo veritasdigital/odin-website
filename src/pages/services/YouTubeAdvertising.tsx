@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { getProfessionalServiceSchema, getFAQSchema, getOrganizationSchema } from "@/utils/schemaMarkup";
+import { ServiceSchema } from "@/components/ServiceSchema";
 import { 
   CheckCircle, 
   TrendingUp, 
