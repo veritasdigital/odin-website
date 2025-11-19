@@ -166,7 +166,7 @@ const OptIn = () => {
           </p>
 
           {/* Lead Form */}
-          <div className="bg-card rounded-lg p-4 sm:p-6 md:p-8 shadow-card mb-4 md:mb-6">
+          <div className="p-4 sm:p-6 md:p-8 mb-4 md:mb-6">
             <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
               {/* First Name */}
               <div>
