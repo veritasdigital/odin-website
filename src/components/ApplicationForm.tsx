@@ -176,9 +176,9 @@ const ApplicationForm = memo(() => {
   }, [handleNext]);
 
   const questionNumber = useMemo(() => (
-    <div className="flex items-center gap-2 text-base sm:text-lg text-gray-400 mb-6 font-medium">
-      <span className="bg-gray-100 px-3 py-1 rounded-full">{currentStep}</span>
-      <ArrowRight className="h-5 w-5" />
+    <div className="flex items-center gap-2 text-sm sm:text-base text-gray-400 mb-4 sm:mb-6 font-medium">
+      <span className="bg-gray-100 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full text-sm">{currentStep}</span>
+      <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
     </div>
   ), [currentStep]);
 
@@ -186,17 +186,17 @@ const ApplicationForm = memo(() => {
     switch (currentStep) {
       case 1:
         return (
-          <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
-            <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-[28px] leading-[1.2] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
-                Hey there! 👋 What's your <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-2 py-1 rounded -z-10">name</span>?*
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
+              <h2 className="text-[26px] leading-[1.15] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
+                Hey there! 👋 What's your <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded -z-10">name</span>?*
               </h2>
-              <div className="space-y-2">
-                <p className="text-lg sm:text-xl text-gray-700 leading-relaxed">
+              <div className="space-y-1.5 sm:space-y-2">
+                <p className="text-base leading-snug sm:text-lg md:text-xl text-gray-700">
                   Claim a free zero-obligation "A.I Performance Marketing Plan" for your business (valued at $2,500) tailor made by Australia's #1 Boutique Marketing Firm.
                 </p>
-                <p className="text-lg sm:text-xl text-gray-700">⭐⭐⭐⭐⭐ 4.9/5 stars by 346 clients, $325M generated. 🚀</p>
+                <p className="text-base sm:text-lg md:text-xl text-gray-700">⭐⭐⭐⭐⭐ 4.9/5 stars by 346 clients, $325M generated. 🚀</p>
               </div>
             </div>
             <Input
@@ -204,7 +204,7 @@ const ApplicationForm = memo(() => {
               onChange={(e) => handleInputChange("firstName", e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your answer here..."
-              className="text-xl sm:text-2xl py-6 sm:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
+              className="text-lg sm:text-xl md:text-2xl py-4 sm:py-6 md:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
               autoFocus
             />
           </div>
@@ -212,21 +212,21 @@ const ApplicationForm = memo(() => {
 
       case 2:
         return (
-          <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
-            <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-[28px] leading-[1.2] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
-                What's your best contact <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-2 py-1 rounded -z-10">email address</span> {formData.firstName}?*
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
+              <h2 className="text-[26px] leading-[1.15] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
+                What's your best contact <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded -z-10">email address</span> {formData.firstName}?*
               </h2>
-              <p className="text-lg sm:text-xl text-gray-700">So we can personally deliver you a custom, obligation free Marketing Plan ✨</p>
+              <p className="text-base sm:text-lg md:text-xl text-gray-700">So we can personally deliver you a custom, obligation free Marketing Plan ✨</p>
             </div>
             <Input
               type="email"
               value={formData.email}
               onChange={(e) => handleInputChange("email", e.target.value)}
               onKeyPress={handleKeyPress}
-              placeholder="Type your answer here..."
-              className="text-xl sm:text-2xl py-6 sm:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
+              placeholder="your@email.com"
+              className="text-lg sm:text-xl md:text-2xl py-4 sm:py-6 md:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
               autoFocus
             />
           </div>
@@ -234,17 +234,17 @@ const ApplicationForm = memo(() => {
 
       case 3:
         return (
-          <div className="space-y-6 sm:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
+          <div className="space-y-4 sm:space-y-6 md:space-y-8 animate-in fade-in slide-in-from-right-5 duration-300">
             {questionNumber}
-            <div className="space-y-3 sm:space-y-4">
-              <h2 className="text-[28px] leading-[1.2] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
-                Almost done {formData.firstName}! What's your best contact <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-2 py-1 rounded -z-10">mobile number</span>?*
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
+              <h2 className="text-[26px] leading-[1.15] sm:text-4xl lg:text-5xl font-bold tracking-tight isolate">
+                Almost done {formData.firstName}! What's your best contact <span className="relative inline bg-gradient-to-r from-green-200 to-green-300 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded -z-10">mobile number</span>?*
               </h2>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <div className="flex items-center gap-3 px-4 sm:px-5 py-5 border-2 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-sm">
-                <span className="text-2xl sm:text-3xl">🇦🇺</span>
-                <span className="text-lg sm:text-xl text-gray-700 font-medium">+61</span>
+            <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+              <div className="flex items-center gap-2.5 sm:gap-3 px-3.5 sm:px-5 py-4 sm:py-5 border-2 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 shadow-sm w-fit">
+                <span className="text-xl sm:text-2xl md:text-3xl">🇦🇺</span>
+                <span className="text-base sm:text-lg md:text-xl text-gray-700 font-medium">+61</span>
               </div>
               <Input
                 type="tel"
@@ -252,7 +252,7 @@ const ApplicationForm = memo(() => {
                 onChange={(e) => handleInputChange("phone", e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="0412 345 678"
-                className="flex-1 text-xl sm:text-2xl py-6 sm:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
+                className="flex-1 text-lg sm:text-xl md:text-2xl py-4 sm:py-6 md:py-7 focus:border-blue-500 focus:bg-blue-50/30 border-2 focus:border-3 focus:ring-4 focus:ring-blue-100 transition-all duration-200 rounded-xl shadow-sm"
                 autoFocus
               />
             </div>
@@ -474,20 +474,20 @@ const ApplicationForm = memo(() => {
   return (
     <div className="min-h-screen min-h-[100dvh] bg-gradient-to-b from-white to-gray-50 flex flex-col overflow-hidden">
       {/* Main Content */}
-      <div className="flex-1 flex items-center justify-center px-6 sm:px-8 md:px-12 py-4 sm:py-12 md:py-16">
+      <div className="flex-1 flex items-start sm:items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 py-6 sm:py-8 md:py-12 lg:py-16 pt-8 sm:pt-12">
         <div className="w-full max-w-4xl transition-all duration-300 ease-out animate-in fade-in slide-in-from-bottom-4">
           {renderQuestion()}
 
           {/* Action Buttons - only show for non-multiple choice questions */}
           {![7, 8, 9].includes(currentStep) && (
-            <div className="flex justify-between items-center mt-8 sm:mt-10 pt-4 border-t border-gray-100">
-              <div className="text-sm sm:text-base text-gray-500 font-medium">
+            <div className="flex justify-between items-center mt-6 sm:mt-8 md:mt-10 pt-3 sm:pt-4 border-t border-gray-100">
+              <div className="text-xs sm:text-sm md:text-base text-gray-500 font-medium hidden sm:block">
                 press <span className="font-bold text-gray-700">Enter ↵</span>
               </div>
               <Button
                 onClick={handleNext}
                 disabled={!validateCurrentStep() || isSubmitting}
-                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 sm:px-12 py-6 sm:py-7 text-xl sm:text-2xl touch-manipulation shadow-xl hover:shadow-2xl transition-all duration-200 rounded-xl font-semibold active:scale-95"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 sm:px-10 md:px-12 py-4 sm:py-5 md:py-6 lg:py-7 text-lg sm:text-xl md:text-2xl touch-manipulation shadow-xl hover:shadow-2xl transition-all duration-200 rounded-xl font-semibold active:scale-95 w-full sm:w-auto min-h-[48px]"
               >
                 {currentStep === 3 ? "Next" : "OK"}
               </Button>
@@ -495,12 +495,12 @@ const ApplicationForm = memo(() => {
           )}
 
           {/* Progress indicator */}
-          <div className="mt-10 sm:mt-14 flex items-center justify-center gap-2">
+          <div className="mt-8 sm:mt-10 md:mt-14 flex items-center justify-center gap-1.5 sm:gap-2">
             {Array.from({ length: totalSteps }).map((_, idx) => (
               <div
                 key={idx}
-                className={`h-2 sm:h-2.5 rounded-full transition-all duration-300 ${
-                  idx + 1 <= currentStep ? "w-10 sm:w-12 bg-gradient-to-r from-blue-600 to-blue-700" : "w-8 sm:w-10 bg-gray-200"
+                className={`h-1.5 sm:h-2 md:h-2.5 rounded-full transition-all duration-300 ${
+                  idx + 1 <= currentStep ? "w-8 sm:w-10 md:w-12 bg-gradient-to-r from-blue-600 to-blue-700" : "w-6 sm:w-8 md:w-10 bg-gray-200"
                 }`}
               />
             ))}
