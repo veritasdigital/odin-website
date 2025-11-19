@@ -1,12 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 import odinLogo from "@/assets/odin-digital-logo-new.png";
 import ApplicationForm from "@/components/ApplicationForm";
 
+// Australian cities for geolocation fallback
+const AUSTRALIAN_CITIES = [
+  "Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide",
+  "Gold Coast", "Newcastle", "Canberra", "Hobart", "Darwin",
+  "Launceston", "Ballarat"
+];
+
 const OptIn = () => {
   const [showForm, setShowForm] = useState(false);
+  const [userCity, setUserCity] = useState<string>("Australia");
+
+  // Detect user's city on mount
+  useEffect(() => {
+    const detectCity = async () => {
+      try {
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        
+        if (data.city && AUSTRALIAN_CITIES.includes(data.city)) {
+          setUserCity(data.city);
+        } else if (data.country === 'AU') {
+          setUserCity("Australia");
+        }
+      } catch (error) {
+        console.log("Could not detect location, using default");
+      }
+    };
+
+    detectCity();
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -30,32 +58,58 @@ const OptIn = () => {
 
 
       {/* Main Content */}
-      <main className="flex-1 flex items-start md:items-center justify-center px-4 py-3 md:py-12">
+      <main className="flex-1 flex items-center justify-center px-4 py-4 md:py-8">
         {!showForm ? (
-          <div className="max-w-2xl w-full text-center">
+          <div className="max-w-3xl w-full text-center">
+            {/* Waving Emoji */}
+            <div className="text-4xl md:text-5xl mb-3 md:mb-4 animate-fade-in">
+              👋
+            </div>
+
+            {/* Serving Clients Banner */}
+            <div className="mb-4 md:mb-6 animate-fade-in">
+              <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+                Servicing clients in: <span className="text-foreground">{userCity}</span>
+              </p>
+            </div>
+
             {/* Main Headline */}
-            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-charcoal leading-tight mb-2 md:mb-4">
-              Free Marketing{" "}
-              <span className="text-primary">Growth Session</span>
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-foreground leading-tight mb-3 md:mb-4 animate-fade-in">
+              FREE 30-MINUTE SCALING GROWTH MAP SESSION
             </h1>
 
             {/* Sub-Headline */}
-            <p className="text-sm sm:text-lg md:text-xl text-foreground font-medium mb-6 md:mb-8 px-2">
-              Claim your <span className="font-bold text-primary">100% FREE</span> no-obligation 30-minute scaling growth map call{" "}
-              <span className="font-bold">($997 value)</span>. This is strictly for business owners who want to grow. 
-              If that's you, then let's scale your biz to the moon! 🚀🌙
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground font-medium mb-6 md:mb-8 px-2 max-w-2xl mx-auto animate-fade-in">
+              Claim your <span className="font-bold text-foreground">100% FREE</span> no-obligation 30-minute scaling growth map call{" "}
+              <span className="font-bold text-foreground">($1,000 value)</span>. This is strictly for people who are hungry for growth. 
+              If that&apos;s you, then let&apos;s scale your biz to the moon! 🚀🌙
             </p>
 
             {/* CTA Button */}
             <Button
               onClick={() => setShowForm(true)}
-              className="w-full max-w-md mx-auto h-12 md:h-14 text-base md:text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary hover:shadow-glow transition-all duration-300 rounded-md group"
+              className="w-full max-w-md mx-auto h-12 md:h-14 text-base md:text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary hover:shadow-glow transition-all duration-300 rounded-md group mb-6 md:mb-8 animate-fade-in"
             >
               Get Started <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
+
+            {/* Reviews */}
+            <div className="flex items-center justify-center gap-2 animate-fade-in">
+              <div className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star 
+                    key={i} 
+                    className="w-4 h-4 md:w-5 md:h-5 fill-primary text-primary"
+                  />
+                ))}
+              </div>
+              <p className="text-sm md:text-base text-muted-foreground font-medium">
+                4.9 stars out of 127 reviews
+              </p>
+            </div>
           </div>
         ) : (
-          <div className="w-full">
+          <div className="w-full animate-fade-in">
             <ApplicationForm />
           </div>
         )}
