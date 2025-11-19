@@ -130,49 +130,49 @@ const OptIn = () => {
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="bg-charcoal py-4 px-4">
+      <header className="bg-charcoal py-3 md:py-4 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
             alt="Odin Digital" 
-            className="h-8 mx-auto"
+            className="h-6 md:h-8 mx-auto"
             loading="eager"
           />
         </div>
       </header>
 
       {/* Top Banner */}
-      <div className="bg-primary text-primary-foreground py-3 px-4 text-center">
-        <p className="text-sm md:text-base font-bold uppercase tracking-wide">
+      <div className="bg-primary text-primary-foreground py-2.5 md:py-3 px-4 text-center">
+        <p className="text-xs md:text-sm font-bold uppercase tracking-wide">
           Serving clients in: {userCity}
         </p>
       </div>
 
       {/* Main Content - Above the Fold */}
-      <main className="flex-1 flex items-center justify-center px-4 py-8 md:py-12">
+      <main className="flex-1 flex items-center justify-center px-4 py-6 md:py-12">
         <div className="max-w-2xl w-full">
           
           {/* Main Headline */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-center text-charcoal leading-tight mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-center text-charcoal leading-tight mb-3 md:mb-4">
             Free Marketing{" "}
             <span className="text-primary">Growth Session</span>
           </h1>
 
           {/* Sub-Headline */}
-          <p className="text-lg md:text-xl text-center text-foreground font-medium mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-center text-foreground font-medium mb-6 md:mb-8 px-2">
             Claim your <span className="font-bold text-primary">100% FREE</span> no-obligation 30-minute scaling growth map call{" "}
             <span className="font-bold">($997 value)</span>. This is strictly for business owners who want to grow. 
             If that's you, then let's scale your biz to the moon! 🚀🌙
           </p>
 
           {/* Lead Form */}
-          <div className="bg-card border-2 border-charcoal rounded-lg p-6 md:p-8 shadow-card mb-6">
-            <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="bg-card border-2 border-charcoal rounded-lg p-4 sm:p-6 md:p-8 shadow-card mb-4 md:mb-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
               {/* First Name */}
               <div>
                 <Label 
                   htmlFor="firstName" 
-                  className="text-charcoal font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-sm md:text-base mb-1.5 md:mb-2 block"
                 >
                   First Name *
                 </Label>
@@ -182,7 +182,7 @@ const OptIn = () => {
                   type="text"
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
+                  className="h-12 md:h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your first name"
                   required
                 />
@@ -195,7 +195,7 @@ const OptIn = () => {
               <div>
                 <Label 
                   htmlFor="email" 
-                  className="text-charcoal font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-sm md:text-base mb-1.5 md:mb-2 block"
                 >
                   Email Address *
                 </Label>
@@ -205,7 +205,7 @@ const OptIn = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
+                  className="h-12 md:h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your email address"
                   required
                 />
@@ -218,7 +218,7 @@ const OptIn = () => {
               <div>
                 <Label 
                   htmlFor="mobile" 
-                  className="text-charcoal font-semibold text-base mb-2 block"
+                  className="text-charcoal font-semibold text-sm md:text-base mb-1.5 md:mb-2 block"
                 >
                   Mobile Number *
                 </Label>
@@ -228,7 +228,7 @@ const OptIn = () => {
                   type="tel"
                   value={formData.mobile}
                   onChange={handleInputChange}
-                  className="h-12 text-base border-2 border-border focus:border-primary rounded-md"
+                  className="h-12 md:h-12 text-base border-2 border-border focus:border-primary rounded-md"
                   placeholder="Enter your mobile number"
                   required
                 />
@@ -241,11 +241,11 @@ const OptIn = () => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full h-14 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary hover:shadow-glow transition-all duration-300 rounded-md group"
+                className="w-full h-12 md:h-14 text-base md:text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-primary hover:shadow-glow transition-all duration-300 rounded-md group"
               >
                 {isSubmitting ? "Processing..." : (
                   <>
-                    Get Started <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    Get Started <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </Button>
@@ -254,15 +254,15 @@ const OptIn = () => {
 
           {/* Social Proof */}
           <div className="text-center">
-            <div className="flex items-center justify-center gap-1 mb-2">
+            <div className="flex items-center justify-center gap-0.5 md:gap-1 mb-1.5 md:mb-2">
               {[...Array(5)].map((_, i) => (
                 <Star 
                   key={i} 
-                  className="w-5 h-5 fill-primary text-primary"
+                  className="w-4 h-4 md:w-5 md:h-5 fill-primary text-primary"
                 />
               ))}
             </div>
-            <p className="text-muted-foreground font-semibold text-base">
+            <p className="text-muted-foreground font-semibold text-sm md:text-base">
               4.9 stars out of 678 reviews
             </p>
           </div>
