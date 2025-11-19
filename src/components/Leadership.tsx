@@ -17,6 +17,70 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
+    name: "Matteo Banzon",
+    title: "Co-Founder",
+    image: matteoBanzon,
+    bio: "Matteo co-founded Odin Digital with a vision to revolutionize digital marketing for Australian businesses. With over 5 years of experience working with multi-national brands, he brings particular expertise in top-level marketing strategy and business development.",
+    email: "matteo@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Jake Dimo",
+    title: "Co-Founder",
+    image: alexaBlake,
+    bio: "Jake co-founded Odin Digital with a commitment to delivering performance-driven marketing solutions. His strategic vision and hands-on approach have been instrumental in building Odin Digital into a leading Australian digital marketing agency.",
+    email: "jake@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Logan Van De Geest",
+    title: "Head of Client Success",
+    image: sarahMitchell,
+    bio: "Logan leads our client success initiatives, ensuring every client achieves their growth objectives. With a passion for building lasting relationships and delivering exceptional results, Logan ensures our clients receive world-class service and support.",
+    email: "logan@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Alfonso Banzon",
+    title: "Partner",
+    image: alfonsoRodriguez,
+    bio: "Alfonso is a strategic partner at Odin Digital, bringing deep expertise in digital marketing and business growth. His innovative approach and industry knowledge help drive the agency's continued success and expansion.",
+    email: "alfonso@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Kai Kellert",
+    title: "Digital Strategist",
+    image: emilyPlatt,
+    bio: "Kai develops comprehensive digital strategies that drive measurable results for our clients. With expertise in multi-channel marketing and data analytics, Kai crafts campaigns that maximize ROI and accelerate business growth.",
+    email: "kai@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Tamuka Bangi",
+    title: "Digital Strategist",
+    image: alexaBlake,
+    bio: "Tamuka specializes in creating data-driven digital strategies that deliver exceptional performance. With a keen eye for emerging trends and consumer behavior, Tamuka helps our clients stay ahead in the competitive digital landscape.",
+    email: "tamuka@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Abraham",
+    title: "Content Director",
+    image: sarahMitchell,
+    bio: "Abraham leads our content strategy and creation efforts, crafting compelling narratives that engage audiences and drive conversions. With expertise in SEO, copywriting, and content marketing, Abraham ensures every piece of content delivers value.",
+    email: "abraham@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Bede Alexander",
+    title: "Partner",
+    image: emilyPlatt,
+    bio: "Bede is a valued partner at Odin Digital, contributing strategic insights and expertise that enhance our service offerings. His collaborative approach and industry experience help shape the agency's direction and client success.",
+    email: "bede@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
     name: "Sarah Mitchell",
     title: "Chief Marketing Officer",
     image: sarahMitchell,
@@ -38,22 +102,6 @@ const leadershipTeam = [
     image: alfonsoRodriguez,
     bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
     email: "emily@odindigital.com.au",
-    linkedin: "#"
-  },
-  {
-    name: "Alfonso Rodriguez",
-    title: "Technical Director",
-    image: emilyPlatt,
-    bio: "Alfonso oversees all technical implementations, from advanced tracking setups to website optimization. His expertise ensures our campaigns are technically sound and performance-focused.",
-    email: "alfonso@odindigital.com.au",
-    linkedin: "#"
-  },
-  {
-    name: "Matteo Banzon",
-    title: "Head Of Partnerships",
-    image: matteoBanzon,
-    bio: "Matteo has over 5 years in digital marketing experience working with multi-national brands with particular expertise in top level marketing strategy.",
-    email: "matteo@odindigital.com.au",
     linkedin: "#"
   }
 ];
