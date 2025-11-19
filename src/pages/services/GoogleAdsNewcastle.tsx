@@ -489,16 +489,16 @@ const GoogleAdsNewcastle = () => {
             
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {testimonials.map((testimonial, index) => (
-                <div key={index} className="p-8 rounded-xl bg-card border border-primary/20 hover:shadow-glow transition-all duration-300">
+                <div key={index} className="flex flex-col p-8 rounded-xl bg-card border border-primary/20 hover:shadow-glow transition-all duration-300">
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                     ))}
                   </div>
-                  <div className="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full font-bold text-sm mb-4">
+                  <div className="inline-block bg-gradient-primary text-white px-4 py-2 rounded-full font-bold text-sm mb-4 w-fit">
                     {testimonial.result}
                   </div>
-                  <p className="text-lg mb-6 italic">
+                  <p className="text-lg mb-6 italic flex-grow">
                     "{testimonial.quote}"
                   </p>
                   <div className="mb-4">
@@ -506,7 +506,7 @@ const GoogleAdsNewcastle = () => {
                     <div className="text-sm text-muted-foreground">{testimonial.company}</div>
                   </div>
                   {testimonial.image && (
-                    <div className="h-32 rounded-lg overflow-hidden">
+                    <div className="mt-auto h-32 rounded-lg overflow-hidden bg-white/50">
                       <img 
                         src={testimonial.image} 
                         alt={`${testimonial.company} product`}
