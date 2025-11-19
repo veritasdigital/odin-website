@@ -51,9 +51,25 @@ const leadershipTeam = [
   {
     name: "Emily Platt",
     title: "Creative Director",
-    image: alfonsoRodriguez,
+    image: emilyPlatt,
     bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
     email: "emily@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Alfonso Rodriguez",
+    title: "Senior Marketing Strategist",
+    image: alfonsoRodriguez,
+    bio: "Alfonso brings extensive experience in strategic marketing and campaign development. His analytical approach and creative problem-solving help clients achieve breakthrough results in competitive markets.",
+    email: "alfonso.rodriguez@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Liam Christopher",
+    title: "Head of Google",
+    image: "/placeholder.svg",
+    bio: "Liam leads our Google Ads division, specializing in high-performance search, shopping, and display campaigns. With deep expertise in Google's advertising ecosystem, Liam drives exceptional ROI for our clients through data-driven optimization.",
+    email: "liam@odindigital.com.au",
     linkedin: "#"
   },
   {
