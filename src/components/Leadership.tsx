@@ -33,6 +33,30 @@ const leadershipTeam = [
     linkedin: "#"
   },
   {
+    name: "Sarah Mitchell",
+    title: "Chief Marketing Officer",
+    image: sarahMitchell,
+    bio: "Sarah brings 12+ years of strategic marketing expertise, specializing in data-driven campaigns that deliver exceptional ROI. She oversees all client strategy and campaign optimization.",
+    email: "sarah@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Alexa Blake",
+    title: "Head of Operations",
+    image: alexaBlake,
+    bio: "Alexa ensures our operations run smoothly and efficiently. With a background in project management and digital systems, she keeps our team and clients on track for success.",
+    email: "alexa@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
+    name: "Emily Platt",
+    title: "Creative Director",
+    image: alfonsoRodriguez,
+    bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
+    email: "emily@odindigital.com.au",
+    linkedin: "#"
+  },
+  {
     name: "Logan Van De Geest",
     title: "Head of Client Success",
     image: "/placeholder.svg",
@@ -78,30 +102,6 @@ const leadershipTeam = [
     image: "/placeholder.svg",
     bio: "Bede is a valued partner at Odin Digital, contributing strategic insights and expertise that enhance our service offerings. His collaborative approach and industry experience help shape the agency's direction and client success.",
     email: "bede@odindigital.com.au",
-    linkedin: "#"
-  },
-  {
-    name: "Sarah Mitchell",
-    title: "Chief Marketing Officer",
-    image: sarahMitchell,
-    bio: "Sarah brings 12+ years of strategic marketing expertise, specializing in data-driven campaigns that deliver exceptional ROI. She oversees all client strategy and campaign optimization.",
-    email: "sarah@odindigital.com.au",
-    linkedin: "#"
-  },
-  {
-    name: "Alexa Blake",
-    title: "Head of Operations",
-    image: alexaBlake,
-    bio: "Alexa ensures our operations run smoothly and efficiently. With a background in project management and digital systems, she keeps our team and clients on track for success.",
-    email: "alexa@odindigital.com.au",
-    linkedin: "#"
-  },
-  {
-    name: "Emily Platt",
-    title: "Creative Director",
-    image: alfonsoRodriguez,
-    bio: "Emily leads our creative team in developing compelling campaigns that capture attention and drive engagement. Her innovative approach has helped countless brands stand out.",
-    email: "emily@odindigital.com.au",
     linkedin: "#"
   }
 ];
