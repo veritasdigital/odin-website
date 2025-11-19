@@ -14,6 +14,7 @@ import { RelatedLocations } from "@/components/RelatedLocations";
 import { getRelatedLocations } from "@/utils/contentClusters";
 import LocationMap from "@/components/LocationMap";
 import { getLocationData } from "@/utils/locationData";
+import { ServiceSchema } from "@/components/ServiceSchema";
 const GoogleAdsSydney = () => {
   const {
     openForm

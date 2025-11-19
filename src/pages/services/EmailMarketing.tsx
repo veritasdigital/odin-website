@@ -10,6 +10,7 @@ import { Mail, Target, BarChart3, Palette, Workflow, Shield, FlaskConical, LineC
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { socialMediaComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 const EmailMarketing = () => {
   const services = [{
     icon: Target,
@@ -216,16 +217,27 @@ const EmailMarketing = () => {
           Odin Digital
         </title>
         <meta name="description" content="Professional email marketing services in Australia. Strategic planning, professional design, automation, compliance. 283+ happy clients. 540% average ROI. Book your free consultation." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup.service)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup.organization)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup.faq)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="Email Marketing Services Australia"
+        serviceType="Email Marketing & Automation"
+        description="Strategic email marketing services delivering measurable ROI. We provide comprehensive email strategy, list building, professional design, advanced automation workflows, and full compliance with Australian privacy regulations. Our data-driven approach focuses on engagement, conversions, and long-term customer relationships."
+        url="/services/email-marketing"
+        benefits={["540% Average ROI", "High Engagement Rates", "Automated Customer Journeys"]}
+        features={services.map(s => s.title)}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Email Marketing", url: "/services/email-marketing" }
+        ]}
+        pricing={{
+          minPrice: "1500",
+          maxPrice: "4000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <>
       <Header />

@@ -14,6 +14,7 @@ import {
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { ROICalculator } from "@/components/ROICalculator";
 import { socialMediaComparison } from "@/utils/serviceComparisonTables";
+import { ServiceSchema } from "@/components/ServiceSchema";
 
 const FacebookAdvertising = () => {
   const painPoints = [
@@ -313,10 +314,36 @@ const FacebookAdvertising = () => {
       <Helmet>
         <title>Facebook Ads Services Australia | Expert Management & ROAS | Odin Digital</title>
         <meta name="description" content="Stop wasting money on Facebook ads that don't convert. Odin Digital provides expert facebook ads services focused on maximum ROAS, profitable scaling, and predictable growth. No lock-in contracts." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="Facebook Advertising Services Australia"
+        serviceType="Social Media Advertising Management"
+        description="Expert Facebook and Instagram ads management delivering maximum return on ad spend. Strategic audience targeting, creative optimization, conversion funnel development, and aggressive retargeting campaigns designed to turn your ad budget into predictable revenue."
+        url="/services/facebook-advertising"
+        benefits={["Maximum ROAS", "Profitable Scaling", "Strategic Audience Targeting"]}
+        features={[
+          "Facebook & Instagram Ads Management",
+          "E-Commerce Campaign Optimization",
+          "Lead Generation Campaigns",
+          "Video Ads & Storytelling",
+          "Retargeting & Custom Audiences",
+          "Landing Page Optimization (CRO)",
+          "Advanced Conversion Tracking",
+          "Creative Testing & Optimization"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Facebook Advertising", url: "/services/facebook-advertising" }
+        ]}
+        pricing={{
+          minPrice: "1500",
+          maxPrice: "5000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <>
       <Header />
