@@ -4,8 +4,8 @@ import { QuestionNumber } from "./QuestionNumber";
 import { StepProps } from "./types";
 
 const businessTypes = [
-  { value: "b2b", label: "B2B (Business to Business)" },
-  { value: "b2c", label: "B2C (Business to Consumer)" },
+  { value: "b2b", label: "B2B" },
+  { value: "b2c", label: "B2C" },
   { value: "both", label: "Both B2B & B2C" },
   { value: "ecommerce", label: "E-commerce" }
 ];
