@@ -4,7 +4,7 @@ import { QuestionNumber } from "./QuestionNumber";
 import { StepProps } from "./types";
 
 const timelineOptions = [
-  { value: "immediately", label: "I need this yesterday! (ASAP)" },
+  { value: "immediately", label: "ASAP" },
   { value: "1-3months", label: "Within 1-3 months" },
   { value: "3-6months", label: "Within 3-6 months" },
   { value: "6months+", label: "6+ months (just exploring)" }
