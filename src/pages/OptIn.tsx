@@ -45,7 +45,7 @@ const OptIn = () => {
       </Helmet>
 
       {/* Minimal Header with Logo */}
-      <header className="py-4 md:py-6 px-4">
+      <header className="py-4 md:py-6 px-4 mb-5">
         <div className="max-w-4xl mx-auto text-center">
           <img 
             src={odinLogo} 
@@ -58,21 +58,21 @@ const OptIn = () => {
 
 
       {/* Main Content */}
-      <main className="flex-1 flex items-center justify-center px-4 py-2 md:py-6">
+      <main className="flex-1 flex items-center justify-center px-4">
         {!showForm ? (
           <div className="max-w-3xl w-full text-center font-montserrat">
-            {/* Waving Emoji */}
-            <div className="text-4xl md:text-5xl mb-4 md:mb-6 animate-fade-in">
-              👋
-            </div>
-
             {/* Serving Clients Banner */}
-            <div className="mb-6 md:mb-8 animate-fade-in">
+            <div className="mb-4 md:mb-6 animate-fade-in">
               <div className="inline-block px-6 md:px-8 py-2 md:py-3 bg-gradient-to-r from-red-500 to-orange-500">
                 <p className="text-xs md:text-sm font-semibold uppercase tracking-wide text-white">
                   Servicing clients in: {userCity}
                 </p>
               </div>
+            </div>
+
+            {/* Waving Emoji */}
+            <div className="text-4xl md:text-5xl mb-4 md:mb-6 animate-fade-in">
+              👋
             </div>
 
             {/* Main Headline */}
