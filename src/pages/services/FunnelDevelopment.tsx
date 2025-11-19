@@ -97,6 +97,30 @@ export default function FunnelDevelopment() {
     solution: "Comprehensive follow-up sequences and retargeting campaigns that bring prospects back"
   }];
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Funnel Development Services Australia | Conversion Funnel Development | Odin Digital</title>
+        <meta name="description" content="Strategic sales funnel development transforming visitors into customers. Complete funnel mapping, landing page design, email automation, CRO optimization, and conversion tracking." />
+      </Helmet>
+
+      <ServiceSchema
+        serviceName="Funnel Development Services Australia"
+        serviceType="Conversion Funnel Development"
+        description="Strategic sales funnel development and optimization transforming website visitors into paying customers. Complete funnel mapping, high-converting landing page design, email automation sequences, conversion rate optimization, A/B testing, and comprehensive conversion tracking to maximize revenue from your traffic."
+        url="/services/funnel-development"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Funnel Development", url: "/services/funnel-development" }
+        ]}
+        pricing={{
+          minPrice: "3000",
+          maxPrice: "15000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />

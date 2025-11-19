@@ -253,16 +253,36 @@ const InstagramAdvertising = () => {
       <Helmet>
         <title>Instagram Ads Agency | Instagram Advertising Services | Odin Digital</title>
         <meta name="description" content="Australia's leading Instagram ads agency. We deliver a 540% average ROI by turning your Instagram ad spend into profit. Get your free Instagram strategy audit." />
-        <script type="application/ld+json">
-          {JSON.stringify(organizationSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="Instagram Advertising Services Australia"
+        serviceType="Instagram Ads Management"
+        description="Professional Instagram advertising services delivering visual storytelling, brand engagement, and measurable ROI. Strategic ad campaigns including Feed ads, Stories advertising, Reels promotion, Shopping ads, influencer partnerships, and creative optimization designed to turn your Instagram presence into a profitable marketing channel."
+        url="/services/instagram-advertising"
+        benefits={["Visual Brand Growth", "High Engagement Rates", "Shopping Integration", "Influencer Reach"]}
+        features={[
+          "Instagram Feed Ads",
+          "Stories Advertising",
+          "Reels Promotion",
+          "Shopping Ads & Product Tags",
+          "Influencer Partnerships",
+          "Creative Testing & Optimization",
+          "Audience Targeting",
+          "Performance Analytics"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Instagram Advertising", url: "/services/instagram-advertising" }
+        ]}
+        pricing={{
+          minPrice: "1500",
+          maxPrice: "5000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

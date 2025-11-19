@@ -298,10 +298,36 @@ const EcommerceSEO = () => {
       <Helmet>
         <title>E-commerce SEO Agency | E-commerce SEO Services | Odin Digital</title>
         <meta name="description" content="E-commerce SEO Agency focused on revenue. $574M+ client revenue. Stop driving traffic, start driving sales. No lock-in contracts. Free strategy call." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="E-commerce SEO Services Australia"
+        serviceType="E-commerce Search Optimization"
+        description="Specialized e-commerce SEO services driving transactional traffic and online revenue. Our comprehensive approach includes product page optimization, technical e-commerce SEO audits, category structure optimization, product schema markup implementation, and conversion-focused strategies specifically designed for online stores to maximize ROI."
+        url="/services/ecommerce-seo"
+        benefits={["Increased Online Revenue", "Higher Product Rankings", "Better Conversion Rates", "Technical Excellence"]}
+        features={[
+          "Product Page Optimization",
+          "Technical E-commerce SEO",
+          "Category Architecture Strategy",
+          "Product Schema Markup",
+          "Conversion Rate Optimization",
+          "Shopping Feed Optimization",
+          "Content Strategy for E-commerce",
+          "Platform-Specific Optimization"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "E-commerce SEO", url: "/services/ecommerce-seo" }
+        ]}
+        pricing={{
+          minPrice: "3000",
+          maxPrice: "20000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

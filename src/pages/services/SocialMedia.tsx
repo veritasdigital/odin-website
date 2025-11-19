@@ -83,6 +83,30 @@ export default function SocialMedia() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Social Media Marketing Services Australia | Strategic Social Media Management | Odin Digital</title>
+        <meta name="description" content="Professional social media marketing services delivering engagement and growth. Strategic content creation, community management, and paid social advertising across all platforms." />
+      </Helmet>
+
+      <ServiceSchema
+        serviceName="Social Media Marketing Services Australia"
+        serviceType="Social Media Management & Strategy"
+        description="Strategic social media marketing delivering engagement, follower growth, and measurable ROI across all platforms. Our comprehensive services include content strategy development, creative production, community management, paid social advertising, and data-driven optimization to build your brand authority and drive business results."
+        url="/services/social-media"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Social Media Marketing", url: "/services/social-media" }
+        ]}
+        pricing={{
+          minPrice: "2000",
+          maxPrice: "6000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />

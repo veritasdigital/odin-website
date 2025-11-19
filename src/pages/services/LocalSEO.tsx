@@ -281,10 +281,36 @@ const LocalSEO = () => {
       <Helmet>
         <title>Local SEO Services Australia | Dominate Google Maps & Local Search</title>
         <meta name="description" content="Stop losing customers on Google Maps. Odin Digital is the local SEO company Australia trusts to secure the Local 3-Pack and drive foot traffic. Local SEO Management, GBP Optimization, No Lock-In Contracts." />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaMarkup)}
-        </script>
       </Helmet>
+
+      <ServiceSchema
+        serviceName="Local SEO Services Australia"
+        serviceType="Local Search Engine Optimization"
+        description="Dominate local search results and Google Maps with our comprehensive local SEO services. Expert Google Business Profile optimization, local citations building, review management, NAP consistency, and location-specific content strategy to drive local customers to your business and secure the coveted Local 3-Pack rankings."
+        url="/services/local-seo"
+        benefits={["Local Pack Rankings", "Increased Foot Traffic", "Review Growth", "NAP Consistency"]}
+        features={[
+          "Google Business Profile Optimization",
+          "Local Citations Building",
+          "Review Management & Generation",
+          "NAP Consistency Management",
+          "Location-Specific Content",
+          "Local Link Building",
+          "Google Maps Optimization",
+          "Multi-Location SEO Management"
+        ]}
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Local SEO", url: "/services/local-seo" }
+        ]}
+        pricing={{
+          minPrice: "1500",
+          maxPrice: "5000",
+          priceCurrency: "AUD"
+        }}
+      />
 
       <div className="min-h-screen bg-background">
         <Header />

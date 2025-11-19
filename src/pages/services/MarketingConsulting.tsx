@@ -101,6 +101,30 @@ export default function MarketingConsulting() {
     testimonial: "The strategic clarity and execution framework we got from Odin Digital completely transformed our business. We went from struggling to find customers to having more qualified leads than we could handle."
   };
   return <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Marketing Consulting Services Australia | Strategic Marketing Consulting | Odin Digital</title>
+        <meta name="description" content="Expert marketing consulting providing strategic direction and breakthrough growth strategies. Comprehensive analysis, competitive intelligence, growth roadmaps, and executive-level marketing guidance." />
+      </Helmet>
+
+      <ServiceSchema
+        serviceName="Marketing Consulting Services Australia"
+        serviceType="Strategic Marketing Consulting"
+        description="Expert marketing consulting providing strategic direction, competitive intelligence, and data-driven growth strategies. Comprehensive market analysis, custom strategy development, team training, capability building, and executive-level guidance to help ambitious businesses achieve breakthrough growth and sustainable competitive advantage."
+        url="/services/marketing-consulting"
+        benefits={benefits.map(b => b.title)}
+        features={features}
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Marketing Consulting", url: "/services/marketing-consulting" }
+        ]}
+        pricing={{
+          minPrice: "5000",
+          maxPrice: "20000",
+          priceCurrency: "AUD"
+        }}
+      />
+      
       <Header />
       <MarketingFormModal />
       <SideTab />
