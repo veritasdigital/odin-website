@@ -11,7 +11,6 @@ import successMetricsImage from "@/assets/blog/facebook-ads-success-metrics.jpg"
 import odinTeamImage from "@/assets/odin-team-professional.jpg";
 import { getArticleSchema } from "@/utils/schemaMarkup";
 import { blogArticles } from "@/utils/blogSchemaData";
-import { OptimizedImage } from '@/components/OptimizedImage';
 const BlogPostSocialMedia = () => {
   const publishDate = "15 January 2025";
   const blogPostingSchema = {

@@ -113,9 +113,9 @@ export const ClientLogos = () => {
                         alt={client.alt}
                         className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                         loading="lazy"
-                        width="96"
-                        height="48"
-                       sizes="(max-width: 768px) 100vw, 50vw" />
+                        width={96}
+                        height={48}
+                        sizes="(max-width: 768px) 100vw, 50vw" />
                     </div>
                   </Card>
                 ))}
@@ -128,9 +128,9 @@ export const ClientLogos = () => {
                         alt={client.alt}
                         className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                         loading="lazy"
-                        width="96"
-                        height="48"
-                       sizes="(max-width: 768px) 100vw, 50vw" />
+                        width={96}
+                        height={48}
+                        sizes="(max-width: 768px) 100vw, 50vw" />
                     </div>
                   </Card>
                 ))}

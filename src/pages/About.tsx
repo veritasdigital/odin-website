@@ -9,7 +9,6 @@ import veritasLogo from "@/assets/logos/veritas-logo.png";
 import agentConquestLogo from "@/assets/logos/agent-conquest.png";
 import practiceConquestLogo from "@/assets/logos/practice-conquest.png";
 import conqueredLeadsLogo from "@/assets/logos/conquered-leads.webp";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 const About = () => {
   return (

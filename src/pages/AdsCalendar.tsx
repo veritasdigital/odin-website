@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import { OptimizedImage } from '@/components/OptimizedImage';
 import odinLogo from "@/assets/odin-logo-lead-magnet.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 const AdsCalendar = () => {
   return (

@@ -453,7 +453,11 @@ const OurEthos = () => {
               <Card key={index} className="text-center border-border shadow-card hover:shadow-glow transition-shadow">
                 <CardContent className="pt-6">
                   <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
-                    <OptimizedImage src={member.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" alt={`${member.name} - ${member.role} at Odin Digital`} />
+                    <OptimizedImage 
+                      src={member.image} 
+                      alt={`${member.name} - ${member.role} at Odin Digital`} 
+                      sizes="(max-width: 768px) 100vw, 50vw" 
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" />
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-2">{member.name}</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">{member.role}</p>

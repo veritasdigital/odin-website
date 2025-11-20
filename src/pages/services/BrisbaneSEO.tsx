@@ -313,7 +313,12 @@ const BrisbaneSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.brisbane.webp} type="image/webp" />
-              <OptimizedImage src={locationImages.brisbane.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.brisbane.alt} />
+              <OptimizedImage 
+                src={locationImages.brisbane.jpg} 
+                alt={locationImages.brisbane.alt} 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                priority 
+                className="w-full h-full object-cover opacity-10" />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

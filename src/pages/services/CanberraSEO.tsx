@@ -638,7 +638,12 @@ const CanberraSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.canberra.webp} type="image/webp" />
-              <OptimizedImage src={locationImages.canberra.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.canberra.alt} />
+              <OptimizedImage 
+                src={locationImages.canberra.jpg} 
+                alt={locationImages.canberra.alt} 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                priority 
+                className="w-full h-full object-cover opacity-10" />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

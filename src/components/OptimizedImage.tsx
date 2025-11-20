@@ -1,12 +1,12 @@
-import { ImgHTMLAttributes } from 'react';
+import { ImgHTMLAttributes, forwardRef } from 'react';
 
 interface OptimizedImageProps extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'src'> {
   src: string;
   alt: string;
   sizes?: string;
   priority?: boolean;
-  width?: number;
-  height?: number;
+  width?: number | string;
+  height?: number | string;
   className?: string;
 }
 
@@ -14,7 +14,7 @@ interface OptimizedImageProps extends Omit<ImgHTMLAttributes<HTMLImageElement>, 
  * Optimized image component with automatic WebP support and srcset
  * Automatically generates picture elements with WebP sources and fallbacks
  */
-export const OptimizedImage = ({
+export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(({
   src,
   alt,
   sizes = '100vw',
@@ -23,7 +23,7 @@ export const OptimizedImage = ({
   height,
   className,
   ...props
-}: OptimizedImageProps) => {
+}, ref) => {
   // Extract base name and extension
   const ext = src.split('.').pop() || '';
   const basePath = src.replace(`.${ext}`, '');
@@ -61,6 +61,7 @@ export const OptimizedImage = ({
       
       {/* Fallback img element */}
       <img 
+        ref={ref}
         src={src} 
         alt={alt}
         width={width}
@@ -72,4 +73,4 @@ export const OptimizedImage = ({
         {...(priority && { fetchpriority: 'high' as any })} />
     </picture>
   );
-};
+});
