@@ -35,20 +35,20 @@ export const Hero = () => {
           {/* Left Side - Text Content */}
           <div className="space-y-8 lg:space-y-10 max-w-2xl">
             {/* Main Headline */}
-            <div className="space-y-6 animate-fade-in">
+            <div className="space-y-6">
               <h1 className="relative z-30 overflow-visible text-4xl md:text-5xl xl:text-6xl font-black text-charcoal leading-[0.95] tracking-tight">
-                <span className="block mb-3 lg:mb-4 animate-fade-in">Accelerate Your</span>
-                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                <span className="block mb-3 lg:mb-4">Accelerate Your</span>
+                <span className="block bg-gradient-to-r from-primary via-primary to-secondary bg-clip-text text-transparent pb-2">
                   Digital Growth
                 </span>
-                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                <span className="block mt-3 lg:mt-4 text-3xl md:text-4xl xl:text-5xl">
                   With Strategic Marketing Excellence
                 </span>
               </h1>
             </div>
             
             {/* Subtitle and Description */}
-            <div className="space-y-6 lg:space-y-8 animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <div className="space-y-6 lg:space-y-8">
               <p className="text-xl md:text-2xl lg:text-2xl text-charcoal/90 font-bold leading-tight max-w-2xl">
                 Data-Driven Digital Marketing Solutions That Deliver Measurable Business Results
               </p>
@@ -59,7 +59,7 @@ export const Hero = () => {
             </div>
             
             {/* Action Button */}
-            <div className="pt-2 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <div className="pt-2">
               <Button 
                 variant="hero" 
                 size="lg" 
@@ -71,7 +71,7 @@ export const Hero = () => {
             </div>
             
             {/* As Seen In Media Logos */}
-            <div className="pt-8 mt-8 border-t border-charcoal/10 animate-fade-in" style={{ animationDelay: "1s" }}>
+            <div className="pt-8 mt-8 border-t border-charcoal/10">
               <div className="text-center mb-6">
                 <p className="text-sm font-semibold text-charcoal/70 uppercase tracking-wider mb-4">
                   As Featured In
@@ -160,7 +160,7 @@ export const Hero = () => {
           </div>
           
           {/* Right Side - Person Image */}
-          <div className="relative flex items-center justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <div className="relative flex items-center justify-center lg:justify-end">
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
