@@ -1,0 +1,172 @@
+ID,Path,Component,Category
+1,/,Index,Core Pages
+2,/about,About,Core Pages
+3,/our-ethos,OurEthos,Core Pages
+4,/our-clients,OurClients,Core Pages
+5,/contact,Contact,Core Pages
+6,/services,Services,Service Hub Pages
+7,/services/google-ads,GoogleAds,Service Hub Pages
+8,/services/seo,SEO,Service Hub Pages
+9,/services/social-media,SocialMedia,Service Hub Pages
+10,/services/website-design,WebsiteDesign,Service Hub Pages
+11,/services/web-design,WebsiteDesign,Service Hub Pages
+12,/services/funnel-development,FunnelDevelopment,Service Hub Pages
+13,/services/marketing-consulting,MarketingConsulting,Service Hub Pages
+14,/services/email-marketing,EmailMarketing,Service Hub Pages
+15,/services/facebook-ads,FacebookAdvertising,Service Hub Pages
+16,/google-ads-management,GoogleAdsManagement,Google Ads Location Pages
+17,/google-ads-sydney,GoogleAdsSydney,Google Ads Location Pages
+18,/google-ads-melbourne,GoogleAdsMelbourne,Google Ads Location Pages
+19,/google-ads-brisbane,GoogleAdsBrisbane,Google Ads Location Pages
+20,/google-ads-perth,GoogleAdsPerth,Google Ads Location Pages
+21,/google-ads-adelaide,GoogleAdsAdelaide,Google Ads Location Pages
+22,/google-ads-canberra,GoogleAdsCanberra,Google Ads Location Pages
+23,/google-ads-hobart,GoogleAdsHobart,Google Ads Location Pages
+24,/google-ads-gold-coast,GoogleAdsGoldCoast,Google Ads Location Pages
+25,/google-ads-newcastle,GoogleAdsNewcastle,Google Ads Location Pages
+26,/google-ads-darwin,GoogleAdsDarwin,Google Ads Location Pages
+27,/google-ads-launceston,GoogleAdsLaunceston,Google Ads Location Pages
+28,/google-ads-ballarat,GoogleAdsBallarat,Google Ads Location Pages
+29,/seo-agency,SEOAgency,SEO Service & Location Pages
+30,/ecommerce-seo,EcommerceSEO,SEO Service & Location Pages
+31,/local-seo,LocalSEO,SEO Service & Location Pages
+32,/white-label-seo,WhiteLabelSEO,SEO Service & Location Pages
+33,/seo-sydney,SydneySEO,SEO Service & Location Pages
+34,/seo-melbourne,MelbourneSEO,SEO Service & Location Pages
+35,/seo-brisbane,BrisbaneSEO,SEO Service & Location Pages
+36,/seo-perth,PerthSEO,SEO Service & Location Pages
+37,/seo-adelaide,AdelaideSEO,SEO Service & Location Pages
+38,/seo-canberra,CanberraSEO,SEO Service & Location Pages
+39,/seo-hobart,HobartSEO,SEO Service & Location Pages
+40,/seo-gold-coast,GoldCoastSEO,SEO Service & Location Pages
+41,/seo-newcastle,SEONewcastle,SEO Service & Location Pages
+42,/seo-darwin,DarwinSEO,SEO Service & Location Pages
+43,/seo-launceston,LauncestonSEO,SEO Service & Location Pages
+44,/seo-ballarat,BallaratSEO,SEO Service & Location Pages
+45,/facebook-advertising,FacebookAdvertising,Facebook Ads Location Pages
+46,/facebook-ads-sydney,FacebookAdsSydney,Facebook Ads Location Pages
+47,/facebook-ads-melbourne,FacebookAdsMelbourne,Facebook Ads Location Pages
+48,/facebook-ads-brisbane,FacebookAdsBrisbane,Facebook Ads Location Pages
+49,/facebook-ads-perth,FacebookAdsPerth,Facebook Ads Location Pages
+50,/facebook-ads-adelaide,FacebookAdsAdelaide,Facebook Ads Location Pages
+51,/facebook-ads-canberra,FacebookAdsCanberra,Facebook Ads Location Pages
+52,/facebook-ads-hobart,FacebookAdsHobart,Facebook Ads Location Pages
+53,/facebook-ads-gold-coast,FacebookAdsGoldCoast,Facebook Ads Location Pages
+54,/facebook-ads-newcastle,FacebookAdsNewcastle,Facebook Ads Location Pages
+55,/facebook-ads-darwin,FacebookAdsDarwin,Facebook Ads Location Pages
+56,/facebook-ads-launceston,FacebookAdsLaunceston,Facebook Ads Location Pages
+57,/facebook-ads-ballarat,FacebookAdsBallarat,Facebook Ads Location Pages
+58,/website-design-and-development,WebsiteDesignAndDevelopment,Web Design Location Pages
+59,/web-design-sydney,WebDesignSydney,Web Design Location Pages
+60,/web-design-melbourne,WebDesignMelbourne,Web Design Location Pages
+61,/web-design-brisbane,WebDesignBrisbane,Web Design Location Pages
+62,/web-design-perth,WebDesignPerth,Web Design Location Pages
+63,/web-design-adelaide,WebDesignAdelaide,Web Design Location Pages
+64,/web-design-canberra,WebDesignCanberra,Web Design Location Pages
+65,/web-design-hobart,WebDesignHobart,Web Design Location Pages
+66,/web-design-gold-coast,WebDesignGoldCoast,Web Design Location Pages
+67,/web-design-newcastle,WebDesignNewcastle,Web Design Location Pages
+68,/web-design-darwin,WebDesignDarwin,Web Design Location Pages
+69,/web-design-launceston,WebDesignLaunceston,Web Design Location Pages
+70,/web-design-ballarat,WebDesignBallarat,Web Design Location Pages
+71,/online-marketing-company-sydney,OnlineMarketingCompanySydney,Online Marketing Company Location Pages
+72,/online-marketing-company-melbourne,OnlineMarketingCompanyMelbourne,Online Marketing Company Location Pages
+73,/online-marketing-company-brisbane,OnlineMarketingCompanyBrisbane,Online Marketing Company Location Pages
+74,/online-marketing-company-perth,OnlineMarketingCompanyPerth,Online Marketing Company Location Pages
+75,/online-marketing-company-adelaide,OnlineMarketingCompanyAdelaide,Online Marketing Company Location Pages
+76,/online-marketing-company-canberra,OnlineMarketingCompanyCanberra,Online Marketing Company Location Pages
+77,/online-marketing-company-hobart,OnlineMarketingCompanyHobart,Online Marketing Company Location Pages
+78,/online-marketing-company-gold-coast,OnlineMarketingCompanyGoldCoast,Online Marketing Company Location Pages
+79,/online-marketing-company-newcastle,OnlineMarketingCompanyNewcastle,Online Marketing Company Location Pages
+80,/online-marketing-company-darwin,OnlineMarketingCompanyDarwin,Online Marketing Company Location Pages
+81,/online-marketing-company-launceston,OnlineMarketingCompanyLaunceston,Online Marketing Company Location Pages
+82,/ppc-management,PPCManagement,PPC & Paid Advertising Pages
+83,/ppc-agency,PPCAgency,PPC & Paid Advertising Pages
+84,/instagram-advertising,InstagramAdvertising,PPC & Paid Advertising Pages
+85,/linkedin-advertising,LinkedInAdvertising,PPC & Paid Advertising Pages
+86,/tiktok-advertising,TikTokAdvertising,PPC & Paid Advertising Pages
+87,/youtube-advertising,YouTubeAdvertising,PPC & Paid Advertising Pages
+88,/social-media-advertising,SocialMediaAdvertising,Social Media Advertising Location Pages
+89,/social-media-advertising-sydney,SocialMediaAdvertisingSydney,Social Media Advertising Location Pages
+90,/social-media-advertising-melbourne,SocialMediaAdvertisingMelbourne,Social Media Advertising Location Pages
+91,/social-media-advertising-brisbane,SocialMediaAdvertisingBrisbane,Social Media Advertising Location Pages
+92,/social-media-advertising-adelaide,SocialMediaAdvertisingAdelaide,Social Media Advertising Location Pages
+93,/email-marketing-agency,EmailMarketingAgency,Other Service Pages
+94,/ecommerce-agency,EcommerceAgency,Other Service Pages
+95,/influencer-agency,InfluencerAgency,Other Service Pages
+96,/industries,Industries,Industries Hub
+97,/industries/dermatologists,Dermatologists,Medical & Healthcare Industry Pages
+98,/industries/dentists,Dentists,Medical & Healthcare Industry Pages
+99,/industries/pediatric-dentists,PediatricDentists,Medical & Healthcare Industry Pages
+100,/industries/cosmetic-dentists,CosmeticDentists,Medical & Healthcare Industry Pages
+101,/industries/family-dentists,FamilyDentists,Medical & Healthcare Industry Pages
+102,/industries/orthodontists,Orthodontists,Medical & Healthcare Industry Pages
+103,/industries/dental-implants,DentalImplants,Medical & Healthcare Industry Pages
+104,/industries/cosmetic-surgeons,CosmeticSurgeons,Medical & Healthcare Industry Pages
+105,/industries/plastic-surgeons,PlasticSurgeons,Medical & Healthcare Industry Pages
+106,/industries/cosmetic-clinics,CosmeticClinics,Medical & Healthcare Industry Pages
+107,/industries/fertility-clinics,FertilityClinics,Medical & Healthcare Industry Pages
+108,/industries/ophthalmologists,Ophthalmologists,Medical & Healthcare Industry Pages
+109,/industries/pharmaceutical-companies,PharmaceuticalCompanies,Medical & Healthcare Industry Pages
+110,/industries/healthcare,Healthcare,Medical & Healthcare Industry Pages
+111,/industries/lawyers,Lawyers,Legal Industry Pages
+112,/industries/family-lawyers,FamilyLawyers,Legal Industry Pages
+113,/industries/conveyancing-lawyers,ConveyancingLawyers,Legal Industry Pages
+114,/industries/immigration-lawyers,ImmigrationLawyers,Legal Industry Pages
+115,/industries/personal-injury-lawyers,PersonalInjuryLawyers,Legal Industry Pages
+116,/industries/criminal-defense-lawyers,CriminalDefenseLawyers,Legal Industry Pages
+117,/industries/real-estate-agents,RealEstateAgents,Real Estate & Finance Industry Pages
+118,/industries/luxury-real-estate,LuxuryRealEstate,Real Estate & Finance Industry Pages
+119,/industries/commercial-real-estate,CommercialRealEstate,Real Estate & Finance Industry Pages
+120,/industries/insurance-agents,InsuranceAgents,Real Estate & Finance Industry Pages
+121,/industries/accounting-firms,AccountingFirms,Real Estate & Finance Industry Pages
+122,/industries/architecture-firms,ArchitectureFirms,Home Services & Trades Industry Pages
+123,/industries/plumbers,Plumbers,Home Services & Trades Industry Pages
+124,/industries/electricians,Electricians,Home Services & Trades Industry Pages
+125,/industries/hvac-contractors,HVACContractors,Home Services & Trades Industry Pages
+126,/industries/roofing-companies,RoofingCompanies,Home Services & Trades Industry Pages
+127,/industries/landscaping-companies,LandscapingCompanies,Home Services & Trades Industry Pages
+128,/industries/saas-companies,SaasCompanies,Technology & Business Services Industry Pages
+129,/industries/enterprise-software,EnterpriseSoftware,Technology & Business Services Industry Pages
+130,/industries/franchise-businesses,FranchiseBusinesses,Technology & Business Services Industry Pages
+131,/industries/professional-services,ProfessionalServices,Technology & Business Services Industry Pages
+132,/blog,Blog,Blog Hub
+133,/blog/ai-seo-future-proof-organic-strategy-2026,AISEOFutureProof,Blog Posts
+134,/blog/will-ai-replace-seo-a-data-backed-answer-for-worried-marketers,WillAIReplaceSEO,Blog Posts
+135,/blog/blog-post-content-marketing,ContentMarketing,Blog Posts
+136,/blog/the-content-marketing-matrix-how-to-create-content-that-actually-converts,ContentMarketingMatrix,Blog Posts
+137,/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising,BeyondTheBoostPost,Blog Posts
+138,/blog/google-ads-guide,GoogleAdsGuide,Blog Posts
+139,/blog/blog-post-social-media,BlogPostSocialMedia,Blog Posts
+140,/blog/the-rise-of-tiktok-for-business-is-it-right-for-your-brand,TikTokForBusiness,Blog Posts
+141,/blog/blog-post-email-marketing,BlogPostEmailMarketing,Blog Posts
+142,/blog/blog-post-analytics-cro,BlogPostAnalyticsCRO,Blog Posts
+143,/blog/conversion-rate-optimisation-cro-secret-to-getting-more-from-existing-traffic,ConversionRateOptimisation,Blog Posts
+144,/blog/blog-post-web-design,BlogPostWebDesign,Blog Posts
+145,/blog/blog-post-ecommerce,ShopifySEO,Blog Posts
+146,/blog/marketing-automation-for-beginners,MarketingAutomation,Blog Posts
+147,/blog/the-5-most-common-digital-marketing-mistakes-small-businesses-make,DigitalMarketingMistakes,Blog Posts
+148,/blog/how-to-build-a-cohesive-digital-marketing-strategy-for-2026,DigitalMarketingStrategy2026,Blog Posts
+149,/blog/data-privacy-in-2026-australian-businesses,DataPrivacy2026,Blog Posts
+150,/blog/blog-post-seo-checklist,SEOChecklist2025,Blog Posts
+151,/blog/blog-post-local-seo,LocalSEOTradies,Blog Posts
+152,/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders,AISEOGuide,Blog Posts
+153,/blog/ai-seo-guide,AISEOGuide,Blog Posts
+154,/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market,LocalSEO2026,Blog Posts
+155,/blog/local-seo-2026,LocalSEO2026,Blog Posts
+156,/free-trainings,FreeTrainings,Lead Generation & Conversion Pages
+157,/strategy-session,StrategySession,Lead Generation & Conversion Pages
+158,/application,Application,Lead Generation & Conversion Pages
+159,/opt-in,OptIn,Lead Generation & Conversion Pages
+160,/onboarding,Onboarding,Lead Generation & Conversion Pages
+161,/thank-you,ThankYou,Thank You Pages
+162,/free-trainings-thank-you,FreeTrainingsThankYou,Thank You Pages
+163,/ads-thank-you,AdsThankYou,Thank You Pages
+164,/t2-ads-thank-you,T2AdsThankYou,Thank You Pages
+165,/free-trainings-booking,LeadMagnetBooking,Calendar/Booking Pages
+166,/ads-calendar,AdsCalendar,Calendar/Booking Pages
+167,/yt-calendar,YtCalendar,Calendar/Booking Pages
+168,/t2-ads-calendar,T2AdsCalendar,Calendar/Booking Pages
+169,/privacy,Privacy,Legal Pages
+170,/terms,Terms,Legal Pages
+171,*,NotFound,Error Page
