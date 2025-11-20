@@ -1,11 +1,10 @@
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import ErrorBoundary from "./components/ErrorBoundary";
+
 try {
   console.log('[DIAGNOSTIC] Step 1: main.tsx is executing.');
-  
-  const { createRoot } = await import("react-dom/client");
-  const { default: App } = await import("./App.tsx");
-  await import("./index.css");
-  const { default: ErrorBoundary } = await import("./components/ErrorBoundary");
-  
   console.log('[DIAGNOSTIC] Step 2: Imports are loaded.');
   
   // Wrap utility functions in try-catch for incognito/private browsing mode
