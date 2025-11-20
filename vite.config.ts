@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 // import { ViteImageOptimizer } from "vite-plugin-image-optimizer"; // DISABLED FOR DEBUGGING
 
 // https://vitejs.dev/config/
+// Force fresh build to regenerate vendor chunks
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
@@ -83,7 +84,6 @@ export default defineConfig(({ mode }) => ({
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
     exclude: ['@tanstack/react-query-devtools'],
-    force: true,
   },
   esbuild: {
     drop: mode === 'production' ? ['console', 'debugger'] : [],
