@@ -12,6 +12,7 @@ import heroImage from "@/assets/blog/local-seo-2026.jpg";
 import authorImage from "@/assets/odin-team-real.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const LocalSEO2026 = () => {
   const publishDate = "August 18, 2025";
@@ -195,11 +196,7 @@ const LocalSEO2026 = () => {
 
             {/* Featured Image */}
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={heroImage} 
-                alt="Local SEO in 2026: Complete Guide to Dominating Your Local Market" 
-                className="w-full h-auto"
-              />
+              <OptimizedImage src={heroImage} alt="Local SEO in 2026: Complete Guide to Dominating Your Local Market" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -622,11 +619,7 @@ const LocalSEO2026 = () => {
             {/* Author Bio */}
             <Card className="p-8 bg-primary/5 border-primary/20">
               <div className="flex flex-col md:flex-row gap-6 items-start">
-                <img 
-                  src={authorImage} 
-                  alt="Odin Digital Team" 
-                  className="w-24 h-24 rounded-full object-cover"
-                />
+                <OptimizedImage src={authorImage} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-24 h-24 rounded-full object-cover" />
                 <div>
                   <h3 className="text-xl font-bold mb-2 text-foreground">About the Author</h3>
                   <p className="text-lg text-muted-foreground mb-4">

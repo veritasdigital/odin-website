@@ -25,6 +25,7 @@ import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 import { CheckCircle2, TrendingUp, Target, Award, Shield, Users, Clock, Zap, Search, FileText, Link2, MapPin, BarChart3, Lightbulb } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const BrisbaneSEO = () => {
   const { openForm } = useMarketingForm();
@@ -312,12 +313,7 @@ const BrisbaneSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.brisbane.webp} type="image/webp" />
-              <img 
-                src={locationImages.brisbane.jpg}
-                alt={locationImages.brisbane.alt}
-                className="w-full h-full object-cover opacity-10"
-                loading="eager"
-              />
+              <OptimizedImage src={locationImages.brisbane.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.brisbane.alt} />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

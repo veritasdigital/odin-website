@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -52,14 +53,12 @@ export const LazyImage = ({
   }, [src, threshold, rootMargin]);
 
   return (
-    <img
-      ref={imgRef}
-      src={placeholder}
+    <OptimizedImage src={placeholder} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" ref={imgRef}
+      
       alt={alt}
       loading={loading}
       decoding={decoding}
       className={className}
-      {...props}
-    />
+      {...props} />
   );
 };

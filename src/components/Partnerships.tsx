@@ -1,4 +1,4 @@
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import googlePartner from "@/assets/partners/google-partner-2024.png";
 import metaPartner from "@/assets/partners/meta-partner-2024.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
@@ -7,6 +7,7 @@ import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
 import microsoftPartner from "@/assets/partners/microsoft-partner-2024.png";
 import tiktokPartner from "@/assets/partners/tiktok-partner.svg";
 import linkedinPartner from "@/assets/partners/linkedin-marketing-partner.svg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Partnerships = () => {
   const partners = [
@@ -70,12 +71,12 @@ export const Partnerships = () => {
               key={index}
               className="flex-shrink-0 w-40 flex items-center justify-center h-24 p-2 bg-white rounded-lg border border-border hover:shadow-elegant transition-all duration-300"
             >
-              <PictureImage
+              <OptimizedImage
                 src={partner.logo}
                 alt={partner.alt}
                 className="max-h-20 max-w-full object-contain"
                 loading="lazy"
-              />
+               sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
           ))}
         </div>

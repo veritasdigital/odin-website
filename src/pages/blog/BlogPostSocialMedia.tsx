@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, Coffee, Target, Camera, Users, BarChart3, TrendingUp, Zap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import heroImage from "@/assets/blog/facebook-ads-cafe-hero.jpg";
 import strategyImage from "@/assets/blog/facebook-ads-strategy-realistic.jpg";
 import foodVisualsImage from "@/assets/blog/facebook-ads-food-visuals.jpg";
@@ -11,6 +11,7 @@ import successMetricsImage from "@/assets/blog/facebook-ads-success-metrics.jpg"
 import odinTeamImage from "@/assets/odin-team-professional.jpg";
 import { getArticleSchema } from "@/utils/schemaMarkup";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { OptimizedImage } from '@/components/OptimizedImage';
 const BlogPostSocialMedia = () => {
   const publishDate = "15 January 2025";
   const blogPostingSchema = {
@@ -136,7 +137,7 @@ const BlogPostSocialMedia = () => {
                 {/* Gradient Ring around image */}
                 <div className="absolute -inset-1 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl blur-lg"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/20">
-                  <PictureImage src={heroImage} alt="Modern Australian cafe with customers enjoying food and coffee" className="w-full h-auto" loading="lazy" />
+                  <OptimizedImage src={heroImage} alt="Modern Australian cafe with customers enjoying food and coffee" className="w-full h-auto" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
               </div>
             </div>
@@ -263,7 +264,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 to-secondary/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <PictureImage src={strategyImage} alt="Marketing team discussing Facebook advertising strategy" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <OptimizedImage src={strategyImage} alt="Marketing team discussing Facebook advertising strategy" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
               </div>
             </section>
@@ -354,7 +355,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 to-primary/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <PictureImage src={foodVisualsImage} alt="Professional food photography of cafe dishes and coffee" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <OptimizedImage src={foodVisualsImage} alt="Professional food photography of cafe dishes and coffee" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
               </div>
             </section>
@@ -413,7 +414,7 @@ const BlogPostSocialMedia = () => {
               <div className="mt-10 rounded-2xl overflow-hidden shadow-2xl relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-secondary/50 to-accent/50 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative rounded-2xl overflow-hidden bg-white ring-1 ring-primary/10">
-                  <PictureImage src={successMetricsImage} alt="Cafe owner viewing successful Facebook ads campaign results" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <OptimizedImage src={successMetricsImage} alt="Cafe owner viewing successful Facebook ads campaign results" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-500" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
               </div>
             </section>

@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import lucasDuranteImage from "@/assets/lucas-durante-new.png";
 import odinTeamProfessional from "@/assets/odin-team-professional.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const AboutUs = () => {
   const values = [
@@ -38,11 +39,7 @@ export const AboutUs = () => {
         <div className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <img 
-                src={lucasDuranteImage} 
-                alt="Lucas Durante, CEO & Founder of Odin Digital" 
-                className="w-full rounded-lg shadow-lg"
-              />
+              <OptimizedImage src={lucasDuranteImage} alt="Lucas Durante, CEO & Founder of Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" className="w-full rounded-lg shadow-lg" />
               {/* Glassy signature bubble that runs off the picture */}
               <div className="absolute -bottom-6 -right-6 bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-6 shadow-2xl">
                 <div className="flex items-center">
@@ -109,11 +106,7 @@ export const AboutUs = () => {
             
             {/* Image - Right Side */}
             <div className="relative">
-              <img 
-                src={odinTeamProfessional}
-                alt="Odin Digital marketing team collaborating on strategic digital campaigns with 182+ years combined expertise" 
-                className="w-full rounded-lg shadow-xl"
-              />
+              <OptimizedImage src={odinTeamProfessional} alt="Odin Digital marketing team collaborating on strategic digital campaigns with 182+ years combined expertise" sizes="(max-width: 768px) 100vw, 50vw" className="w-full rounded-lg shadow-xl" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-lg"></div>
             </div>
           </div>

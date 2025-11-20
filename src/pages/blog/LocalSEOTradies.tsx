@@ -38,6 +38,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import localSeoImage from "@/assets/blog/local-seo-strategies.jpg";
 import odinTeamImage from "@/assets/odin-team-real.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const LocalSEOTradies = () => {
   const { openForm } = useMarketingForm();
@@ -165,11 +166,7 @@ const LocalSEOTradies = () => {
 
           {/* Featured Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 group">
-            <img 
-              src={localSeoImage} 
-              alt="Local SEO strategies for tradies to attract more customers"
-              className="w-full h-auto group-hover:scale-105 transition-transform duration-500"
-            />
+            <OptimizedImage src={localSeoImage} alt="Local SEO strategies for tradies to attract more customers" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto group-hover:scale-105 transition-transform duration-500" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
 
@@ -757,11 +754,7 @@ const LocalSEOTradies = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-background rounded-2xl p-8 border border-border shadow-lg">
             <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-              <img 
-                src={odinTeamImage} 
-                alt="Odin Digital Team"
-                className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
-              />
+              <OptimizedImage src={odinTeamImage} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-32 h-32 rounded-full object-cover border-4 border-primary/20" />
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Odin Digital Team</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">

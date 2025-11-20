@@ -12,6 +12,7 @@ import heroImage from "@/assets/blog/paid-advertising-hero.jpg";
 import strategicTeam from "@/assets/blog/strategic-advertising-team.jpg";
 import platformComparison from "@/assets/blog/platform-comparison.jpg";
 import roiMetrics from "@/assets/blog/roi-metrics.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const BeyondTheBoostPost = () => {
   return (
@@ -158,11 +159,7 @@ const BeyondTheBoostPost = () => {
 
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-primary opacity-20 blur-2xl rounded-3xl"></div>
-                <img 
-                  src={heroImage} 
-                  alt="Strategic Paid Advertising for Small Business"
-                  className="relative rounded-2xl shadow-2xl w-full h-auto ring-1 ring-primary/10"
-                />
+                <OptimizedImage src={heroImage} alt="Strategic Paid Advertising for Small Business" sizes="(max-width: 768px) 100vw, 50vw" className="relative rounded-2xl shadow-2xl w-full h-auto ring-1 ring-primary/10" />
               </div>
             </div>
           </div>
@@ -190,12 +187,7 @@ const BeyondTheBoostPost = () => {
               
               {/* Featured Image - Above headline */}
               <div className="relative rounded-2xl overflow-hidden mb-6 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={strategicTeam} 
-                  alt="Strategic Advertising Team Planning"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={strategicTeam} alt="Strategic Advertising Team Planning" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               {/* Section Header with Icon */}
@@ -426,12 +418,7 @@ const BeyondTheBoostPost = () => {
               
               {/* Featured Image - Above headline */}
               <div className="relative rounded-2xl overflow-hidden mb-6 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={platformComparison} 
-                  alt="Platform Comparison - Google Ads vs Facebook Ads"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={platformComparison} alt="Platform Comparison - Google Ads vs Facebook Ads" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               {/* Section Header with Icon */}
@@ -554,12 +541,7 @@ const BeyondTheBoostPost = () => {
               
               {/* Featured Image - Above headline */}
               <div className="relative rounded-2xl overflow-hidden mb-6 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={roiMetrics} 
-                  alt="Measuring ROI and Key Metrics"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={roiMetrics} alt="Measuring ROI and Key Metrics" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               {/* Section Header with Icon */}

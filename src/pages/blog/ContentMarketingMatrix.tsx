@@ -15,6 +15,7 @@ import { SideTab } from "@/components/SideTab";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export default function ContentMarketingMatrix() {
   const { openForm } = useMarketingForm();
@@ -97,11 +98,7 @@ export default function ContentMarketingMatrix() {
         <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-background via-muted/30 to-muted/20">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src={heroImage} 
-              alt="Content Marketing Matrix Strategy"
-              className="w-full h-full object-cover opacity-10"
-            />
+            <OptimizedImage src={heroImage} alt="Content Marketing Matrix Strategy" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover opacity-10" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background"></div>
           </div>
 
@@ -209,12 +206,7 @@ export default function ContentMarketingMatrix() {
               
               {/* Featured Image - Moved to headline */}
               <div className="relative rounded-2xl overflow-hidden mb-6 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={matrixVisual} 
-                  alt="Content Marketing Matrix Framework Presentation"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={matrixVisual} alt="Content Marketing Matrix Framework Presentation" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               {/* Section Header with Icon */}
@@ -303,12 +295,7 @@ export default function ContentMarketingMatrix() {
 
               {/* Featured Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={journeyTeam} 
-                  alt="Team Planning Customer Journey Content Strategy"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={journeyTeam} alt="Team Planning Customer Journey Content Strategy" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               <p className="text-lg leading-relaxed mb-6">
@@ -374,12 +361,7 @@ export default function ContentMarketingMatrix() {
 
               {/* Featured Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={repurposeImage} 
-                  alt="Repurposing Content Across Multiple Digital Platforms"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={repurposeImage} alt="Repurposing Content Across Multiple Digital Platforms" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               <p className="text-lg leading-relaxed mb-4">
@@ -436,12 +418,7 @@ export default function ContentMarketingMatrix() {
 
               {/* Featured Image */}
               <div className="relative rounded-2xl overflow-hidden mb-8 shadow-card ring-1 ring-primary/10">
-                <img 
-                  src={roiImage} 
-                  alt="Analytics Dashboard Showing Content Marketing ROI Metrics"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
+                <OptimizedImage src={roiImage} alt="Analytics Dashboard Showing Content Marketing ROI Metrics" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               <p className="text-lg leading-relaxed mb-6">

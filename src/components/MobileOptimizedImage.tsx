@@ -35,15 +35,12 @@ export const MobileOptimizedImage = ({
   // For priority images, load immediately without lazy loading
   if (priority) {
     return (
-      <img
-        src={imageSrc}
-        alt={alt}
+      <OptimizedImage src={imageSrc} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority alt={alt}
         className={className}
-        loading="eager"
+        
         decoding="async"
         fetchPriority="high"
-        {...props}
-      />
+        {...props} />
     );
   }
 

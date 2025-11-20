@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import odinLogo from "@/assets/odin-digital-logo-new.png";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const Onboarding = () => {
   useEffect(() => {
@@ -31,12 +32,7 @@ const Onboarding = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center h-16">
             <Link to="/" className="flex items-center">
-              <img
-                src={odinLogo}
-                alt="Odin Digital"
-                className="h-10 w-auto"
-                loading="eager"
-              />
+              <OptimizedImage src={odinLogo} alt="Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" priority className="h-10 w-auto" />
             </Link>
           </div>
         </div>

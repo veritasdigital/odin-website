@@ -10,6 +10,7 @@ import alfonsoRodriguezImg from "@/assets/alfonso-rodriguez.png";
 import matteoBanzonImg from "@/assets/matteo-banzon.png";
 import sarahMitchellImg from "@/assets/sarah-mitchell.png";
 import odinTeamImg from "@/assets/odin-team-professional.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const OurEthos = () => {
   const identityPillars = [
@@ -173,11 +174,7 @@ const OurEthos = () => {
               {/* Team Photo Section */}
               <div className="mb-8">
                 <div className="relative inline-block">
-                  <img 
-                    src={odinTeamImg}
-                    alt="Odin Digital Team"
-                    className="rounded-lg shadow-lg max-w-full h-auto"
-                  />
+                  <OptimizedImage src={odinTeamImg} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="rounded-lg shadow-lg max-w-full h-auto" />
                 </div>
               </div>
             </CardHeader>
@@ -456,12 +453,7 @@ const OurEthos = () => {
               <Card key={index} className="text-center border-border shadow-card hover:shadow-glow transition-shadow">
                 <CardContent className="pt-6">
                   <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full">
-                    <img 
-                      src={member.image} 
-                      alt={`${member.name} - ${member.role} at Odin Digital`} 
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" 
-                      loading="lazy" 
-                    />
+                    <OptimizedImage src={member.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300" alt={`${member.name} - ${member.role} at Odin Digital`} />
                   </div>
                   <h3 className="text-lg font-bold text-foreground mb-2">{member.name}</h3>
                   <p className="text-sm text-muted-foreground uppercase tracking-wide">{member.role}</p>

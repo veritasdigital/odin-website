@@ -18,6 +18,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroImage from "@/assets/blog/email-list-building-hero.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export default function BlogPostEmailMarketing() {
   const { openForm } = useMarketingForm();
@@ -156,11 +157,7 @@ export default function BlogPostEmailMarketing() {
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 group">
                   <div className="absolute inset-0 z-10"></div>
-                  <img 
-                    src={heroImage} 
-                    alt="Australian business owner building email marketing list" 
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <OptimizedImage src={heroImage} alt="Australian business owner building email marketing list" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
             </div>

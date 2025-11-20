@@ -41,6 +41,7 @@ import {
 } from "lucide-react";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { getRelatedLocations } from "@/utils/contentClusters";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const AdelaideSEO = () => {
   const { openForm } = useMarketingForm();
@@ -409,12 +410,7 @@ const AdelaideSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.adelaide.webp} type="image/webp" />
-              <img 
-                src={locationImages.adelaide.jpg}
-                alt={locationImages.adelaide.alt}
-                className="w-full h-full object-cover opacity-10"
-                loading="eager"
-              />
+              <OptimizedImage src={locationImages.adelaide.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.adelaide.alt} />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

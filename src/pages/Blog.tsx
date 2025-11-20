@@ -36,6 +36,7 @@ import marketingAutomationImage from "@/assets/blog/marketing-automation-hero.jp
 import digitalMarketingMistakesImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 import digitalMarketingStrategy2026Image from "@/assets/blog/digital-marketing-strategy-2026.jpg";
 import dataPrivacy2026Image from "@/assets/blog/data-privacy-2026-hero.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const Blog = () => {
   const { openForm } = useMarketingForm();
@@ -411,11 +412,7 @@ const Blog = () => {
             <Card className="overflow-hidden hover:shadow-glow transition-all duration-300">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover min-h-[300px]"
-                  />
+                  <OptimizedImage src={post.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover min-h-[300px]" alt={post.title} />
                   <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
                     {post.category}
                   </Badge>
@@ -484,11 +481,7 @@ const Blog = () => {
               >
                 <Card className="overflow-hidden hover:shadow-glow transition-all duration-300 group h-full">
                   <div className="relative">
-                    <img 
-                      src={post.image} 
-                      alt={post.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
+                    <OptimizedImage src={post.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" alt={post.title} />
                     <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
                       {post.category}
                     </Badge>

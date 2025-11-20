@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
 import odinLogo from "@/assets/odin-logo-gradient.webp";
 import ApplicationForm from "@/components/ApplicationForm";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 // Australian cities for geolocation fallback
 const AUSTRALIAN_CITIES = [
@@ -47,12 +48,7 @@ const OptIn = () => {
       {/* Minimal Header with Logo */}
       <header className="py-4 md:py-6 px-4 mb-2">
         <div className="max-w-4xl mx-auto text-center">
-          <img 
-            src={odinLogo} 
-            alt="Odin Digital" 
-            className="h-5 md:h-8 mx-auto"
-            loading="eager"
-          />
+          <OptimizedImage src={odinLogo} alt="Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" priority className="h-5 md:h-8 mx-auto" />
         </div>
       </header>
 

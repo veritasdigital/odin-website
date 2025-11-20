@@ -60,17 +60,14 @@ export const OptimizedImage = ({
       />
       
       {/* Fallback img element */}
-      <img
-        src={src}
-        alt={alt}
+      <OptimizedImage src={src} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" alt={alt}
         width={width}
         height={height}
         loading={loading}
         decoding="async"
         className={className}
         {...props}
-        {...(priority && { fetchpriority: 'high' as any })}
-      />
+        {...(priority && { fetchpriority: 'high' as any })} />
     </picture>
   );
 };

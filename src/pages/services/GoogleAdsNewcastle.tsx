@@ -5,7 +5,7 @@ import { SideTab } from "@/components/SideTab";
 import LocationContent from "@/components/LocationContent";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import googleLogo from "@/assets/partners/google-logo.png";
 import metaLogo from "@/assets/partners/meta-logo.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
@@ -28,6 +28,7 @@ import { useState, useEffect } from "react";
 import krushOrganics from "@/assets/krush-organics.png";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import willWrightMiningStore from "@/assets/will-wright-mining-store.webp";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const GoogleAdsNewcastle = () => {
   const { openForm } = useMarketingForm();
@@ -379,25 +380,25 @@ const GoogleAdsNewcastle = () => {
                 <p className="text-sm text-muted-foreground mb-4">Certified Partners</p>
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={metaLogo} alt="Meta" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={metaLogo} alt="Meta" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={hubspotPartner} alt="HubSpot Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={hubspotPartner} alt="HubSpot Partner" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={klaviyoPartner} alt="Klaviyo Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={klaviyoPartner} alt="Klaviyo Partner" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={microsoftLogo} alt="Microsoft" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={microsoftLogo} alt="Microsoft" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <PictureImage src={instagramLogo} alt="Instagram" className="max-h-8 max-w-full object-contain" loading="lazy" />
+                    <OptimizedImage src={instagramLogo} alt="Instagram" className="max-h-8 max-w-full object-contain" loading="lazy"  sizes="(max-width: 768px) 100vw, 50vw" />
                   </div>
                 </div>
               </div>
@@ -508,11 +509,7 @@ const GoogleAdsNewcastle = () => {
                   </div>
                   {testimonial.image && (
                     <div className="mt-auto h-32 rounded-lg overflow-hidden bg-white/50">
-                      <img 
-                        src={testimonial.image} 
-                        alt={`${testimonial.company} product`}
-                        className="w-full h-full object-contain"
-                      />
+                      <OptimizedImage src={testimonial.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" alt={`${testimonial.company} product`} />
                     </div>
                   )}
                 </div>

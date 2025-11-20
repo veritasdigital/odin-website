@@ -7,6 +7,7 @@ import heroImage from "@/assets/blog/website-redesign-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import { getArticleSchema } from "@/utils/schemaMarkup";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const BlogPostWebDesign = () => {
   return (
@@ -114,11 +115,7 @@ const BlogPostWebDesign = () => {
               </div>
 
               <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <img 
-                  src={heroImage} 
-                  alt="Website redesign concept showing modern web design on multiple devices" 
-                  className="w-full h-auto"
-                />
+                <OptimizedImage src={heroImage} alt="Website redesign concept showing modern web design on multiple devices" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
             </div>
           </div>
@@ -345,11 +342,7 @@ const BlogPostWebDesign = () => {
               {/* Author Bio */}
               <div className="mt-16 bg-gradient-to-br from-muted/50 to-muted/30 rounded-xl p-8 border border-border">
                 <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6">
-                  <img 
-                    src={teamImage} 
-                    alt="Odin Digital Team" 
-                    className="w-24 h-24 rounded-full object-cover shadow-lg"
-                  />
+                  <OptimizedImage src={teamImage} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-24 h-24 rounded-full object-cover shadow-lg" />
                   <div className="flex-1 text-center md:text-left">
                     <h3 className="text-xl font-bold mb-2 text-foreground">Odin Digital Team</h3>
                     <p className="text-muted-foreground leading-relaxed">

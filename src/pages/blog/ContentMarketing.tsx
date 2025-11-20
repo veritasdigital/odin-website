@@ -10,6 +10,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/blog/content-marketing-hero.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const ContentMarketing = () => {
   const publishDate = "15 January 2025";
@@ -140,11 +141,7 @@ const ContentMarketing = () => {
 
             {/* Hero Image */}
             <div className="mb-8 rounded-2xl overflow-hidden shadow-glow border border-primary/20">
-              <img 
-                src={heroImage} 
-                alt="Australian small business owners reading engaging blog content on laptop - professional workspace with marketing materials" 
-                className="w-full h-auto object-cover"
-              />
+              <OptimizedImage src={heroImage} alt="Australian small business owners reading engaging blog content on laptop - professional workspace with marketing materials" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-cover" />
             </div>
 
             <h1 className="text-4xl md:text-6xl font-black text-foreground mb-6 leading-tight">

@@ -9,6 +9,7 @@ import heroImage from "@/assets/blog/will-ai-replace-seo-hero.jpg";
 import partnershipImage from "@/assets/blog/human-ai-seo-partnership.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const WillAIReplaceSEO = () => {
   const publishDate = "15 January 2025";
@@ -111,11 +112,7 @@ const WillAIReplaceSEO = () => {
 
             {/* Hero Image */}
             <div className="mb-8 rounded-2xl overflow-hidden shadow-glow border border-primary/20">
-              <img 
-                src={heroImage} 
-                alt="AI and SEO merging together - futuristic digital illustration showing human working with AI technology" 
-                className="w-full h-auto object-cover"
-              />
+              <OptimizedImage src={heroImage} alt="AI and SEO merging together - futuristic digital illustration showing human working with AI technology" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-cover" />
             </div>
 
             <h1 className="text-4xl md:text-6xl font-black text-foreground mb-6 leading-tight">
@@ -419,11 +416,7 @@ const WillAIReplaceSEO = () => {
 
             {/* Partnership Image */}
             <div className="my-8 rounded-xl overflow-hidden shadow-card border border-border">
-              <img 
-                src={partnershipImage} 
-                alt="Human SEO specialist working in partnership with AI technology - professional workspace with analytics and digital dashboards" 
-                className="w-full h-auto object-cover"
-              />
+              <OptimizedImage src={partnershipImage} alt="Human SEO specialist working in partnership with AI technology - professional workspace with analytics and digital dashboards" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-cover" />
             </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8 flex items-center gap-2">

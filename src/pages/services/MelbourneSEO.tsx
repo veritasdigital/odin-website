@@ -19,6 +19,7 @@ import { MapPin, TrendingUp as TrendingUpIcon, Building2, DollarSign } from "luc
 import { getOrganizationSchema, getLocalBusinessSchema, getServiceSchema, getFAQSchema, getBreadcrumbSchema, getWebPageSchema } from "@/utils/schemaMarkup";
 import { getRelatedLocations, getRelatedServices, getHubForService } from "@/utils/contentClusters";
 import { ServiceSchema } from "@/components/ServiceSchema";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const MelbourneSEO = () => {
   const { openForm } = useMarketingForm();
@@ -519,12 +520,7 @@ const MelbourneSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.melbourne.webp} type="image/webp" />
-              <img 
-                src={locationImages.melbourne.jpg}
-                alt={locationImages.melbourne.alt}
-                className="w-full h-full object-cover opacity-10"
-                loading="eager"
-              />
+              <OptimizedImage src={locationImages.melbourne.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.melbourne.alt} />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

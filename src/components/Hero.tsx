@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import heroPerson from "@/assets/hero-person-compressed.webp";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import fox40Logo from "@/assets/media/fox40-logo.png";
@@ -10,6 +10,7 @@ import businessInsiderLogo from "@/assets/media/business-insider-logo.png";
 import digitalJournalLogo from "@/assets/media/digital-journal-logo.png";
 import chronicleJournalLogo from "@/assets/media/chronicle-journal-logo.png";
 import ncnLogo from "@/assets/media/ncn-logo.png";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Hero = () => {
   const { openForm } = useMarketingForm();
@@ -18,15 +19,12 @@ export const Hero = () => {
       
       {/* Decorative Brand Icon - Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <img 
-          src={brandIconSubtle} 
-          alt="" 
-          className="absolute -bottom-32 -right-32 w-[500px] h-[500px] opacity-20 animate-[spin_25s_linear_infinite_reverse]"
-          loading="lazy"
+        <OptimizedImage src={brandIconSubtle} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" width={"500"} height={"500"} className="absolute -bottom-32 -right-32 w-[500px] h-[500px] opacity-20 animate-[spin_25s_linear_infinite_reverse]" alt="" 
+          
+          
           decoding="async"
           width="500"
-          height="500"
-        />
+          height="500" />
       </div>
       
       {/* Split Screen Content */}
@@ -80,81 +78,46 @@ export const Hero = () => {
               </div>
               <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={fox40Logo}
-                    alt="FOX40 News - As featured in national media outlet"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="92"
+                  <OptimizedImage src={fox40Logo} alt="FOX40 News - As featured in national media outlet" sizes="(max-width: 768px) 100vw, 50vw" priority width={"92"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="92"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={msnLogo}
-                    alt="MSN - As featured in Microsoft news network"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="62"
+                  <OptimizedImage src={msnLogo} alt="MSN - As featured in Microsoft news network" sizes="(max-width: 768px) 100vw, 50vw" priority width={"62"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="62"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={yahooFinanceLogo}
-                    alt="Yahoo Finance - Featured business and finance news publication"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="65"
+                  <OptimizedImage src={yahooFinanceLogo} alt="Yahoo Finance - Featured business and finance news publication" sizes="(max-width: 768px) 100vw, 50vw" priority width={"65"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="65"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={businessInsiderLogo}
-                    alt="Business Insider - Leading global business news publication"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="75"
+                  <OptimizedImage src={businessInsiderLogo} alt="Business Insider - Leading global business news publication" sizes="(max-width: 768px) 100vw, 50vw" priority width={"75"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="75"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={digitalJournalLogo}
-                    alt="Digital Journal - International digital news and media outlet"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="58"
+                  <OptimizedImage src={digitalJournalLogo} alt="Digital Journal - International digital news and media outlet" sizes="(max-width: 768px) 100vw, 50vw" priority width={"58"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="58"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={chronicleJournalLogo}
-                    alt="The Chronicle Journal - Canadian news publication"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="41"
+                  <OptimizedImage src={chronicleJournalLogo} alt="The Chronicle Journal - Canadian news publication" sizes="(max-width: 768px) 100vw, 50vw" priority width={"41"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="41"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
                 <div className="flex items-center justify-center h-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
-                  <img
-                    src={ncnLogo}
-                    alt="NCN News - National communications network"
-                    className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    width="52"
+                  <OptimizedImage src={ncnLogo} alt="NCN News - National communications network" sizes="(max-width: 768px) 100vw, 50vw" priority width={"52"} height={"24"} className="h-6 w-auto max-w-[100px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300" width="52"
                     height="24"
-                    loading="eager"
-                    decoding="async"
-                  />
+                    
+                    decoding="async" />
                 </div>
               </div>
             </div>
@@ -165,7 +128,7 @@ export const Hero = () => {
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
-                <PictureImage 
+                <OptimizedImage 
                   src={heroPerson} 
                   alt="Professional digital marketing strategist working on successful campaign analytics and performance metrics" 
                   className="w-full h-full object-cover object-center"
@@ -173,7 +136,7 @@ export const Hero = () => {
                   height={800}
                   loading="eager"
                   fetchPriority="high"
-                />
+                 sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               
               {/* Floating Glassy Banner */}

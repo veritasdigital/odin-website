@@ -13,6 +13,7 @@ import teamImage from "@/assets/odin-team-professional.jpg";
 import emailAutomationImage from "@/assets/blog/marketing-automation-hero.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const MarketingAutomation = () => {
   const { openForm } = useMarketingForm();
@@ -114,11 +115,7 @@ const MarketingAutomation = () => {
                 <span>14 min read</span>
               </div>
 
-              <img 
-                src={heroImage} 
-                alt="Marketing automation dashboard showing automated workflows and lead nurturing" 
-                className="w-full h-[400px] object-cover rounded-lg shadow-elegant mb-8"
-              />
+              <OptimizedImage src={heroImage} alt="Marketing automation dashboard showing automated workflows and lead nurturing" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-[400px] object-cover rounded-lg shadow-elegant mb-8" />
             </div>
           </div>
         </section>
@@ -359,13 +356,7 @@ const MarketingAutomation = () => {
                   The welcome sequence (Workflow 1) is the perfect place to start. Here is a step-by-step guide to setting it up in most beginner-friendly platforms.
                 </p>
 
-                <img 
-                  src={emailAutomationImage} 
-                  alt="Professional marketing automation dashboard and email sequence builder"
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full h-auto object-cover rounded-lg shadow-elegant mb-8"
-                />
+                <OptimizedImage src={emailAutomationImage} alt="Professional marketing automation dashboard and email sequence builder" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto object-cover rounded-lg shadow-elegant mb-8" decoding="async" />
 
                 <h3 className="text-2xl font-bold mb-4">Step 1: Define Your Goal and Content</h3>
                 
@@ -689,11 +680,7 @@ const MarketingAutomation = () => {
 
               {/* Author Bio */}
               <div className="mt-12 p-6 bg-accent/10 rounded-lg border border-border flex flex-col md:flex-row gap-6 items-start">
-                <img 
-                  src={teamImage} 
-                  alt="Odin Digital Team" 
-                  className="w-32 h-32 rounded-full object-cover"
-                />
+                <OptimizedImage src={teamImage} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-32 h-32 rounded-full object-cover" />
                 <div>
                   <h3 className="text-xl font-bold mb-2">About the Author</h3>
                   <p className="text-muted-foreground">

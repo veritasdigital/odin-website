@@ -3,6 +3,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import odinLogoWhite from "@/assets/odin-logo-white.png";
 import { Helmet } from "react-helmet";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Footer = () => {
   const [locationsOpen, setLocationsOpen] = useState(false);
@@ -152,11 +153,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <img 
-              src={odinLogoWhite} 
-              alt="Odin Digital Logo" 
-              className="h-8 w-auto mb-6"
-            />
+            <OptimizedImage src={odinLogoWhite} alt="Odin Digital Logo" sizes="(max-width: 768px) 100vw, 50vw" className="h-8 w-auto mb-6" />
             <p className="text-white/80 text-sm leading-relaxed">
               Strategic Digital Marketing Excellence. Empowering ambitious businesses to achieve exponential growth.
             </p>

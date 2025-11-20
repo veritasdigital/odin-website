@@ -3,8 +3,9 @@ import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Video, Users, BarChart3 } from "lucide-react";
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import odinLogo from "@/assets/odin-digital-logo.png";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 // Declare custom element for Wistia player
 declare global {
@@ -69,7 +70,7 @@ const FreeTrainingsThankYou = () => {
       <section className="py-16 px-6 bg-background">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <PictureImage src={odinLogo} alt="Odin Digital" className="h-16 mx-auto mb-8" loading="eager" fetchPriority="high" />
+            <OptimizedImage src={odinLogo} alt="Odin Digital" className="h-16 mx-auto mb-8" loading="eager" fetchPriority="high"  sizes="(max-width: 768px) 100vw, 50vw" />
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               You Are Booked!

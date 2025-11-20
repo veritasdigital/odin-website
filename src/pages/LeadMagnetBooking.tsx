@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import odinLogo from "@/assets/odin-logo-lead-magnet.png";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const LeadMagnetBooking = () => {
   return (
@@ -13,7 +14,7 @@ const LeadMagnetBooking = () => {
       <div className="min-h-screen bg-background">
         <header className="border-b border-border py-6">
           <div className="container mx-auto px-4 flex justify-center">
-            <PictureImage src={odinLogo} alt="Odin Digital" className="h-16" loading="eager" fetchPriority="high" />
+            <OptimizedImage src={odinLogo} alt="Odin Digital" className="h-16" loading="eager" fetchPriority="high"  sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </header>
 

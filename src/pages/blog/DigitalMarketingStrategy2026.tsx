@@ -15,6 +15,7 @@ import budgetAllocationImage from "@/assets/blog/budget-allocation.jpg";
 import channelSynergyImage from "@/assets/blog/channel-synergy.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const DigitalMarketingStrategy2026 = () => {
   const { openForm } = useMarketingForm();
@@ -164,11 +165,7 @@ const DigitalMarketingStrategy2026 = () => {
 
           {/* Featured Image */}
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img 
-              src={heroImage} 
-              alt="Digital Marketing Strategy 2026 Planning" 
-              className="w-full h-auto"
-            />
+            <OptimizedImage src={heroImage} alt="Digital Marketing Strategy 2026 Planning" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -244,11 +241,7 @@ const DigitalMarketingStrategy2026 = () => {
 
               {/* Feature Image */}
               <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
-                <img 
-                  src={coreComponentsImage} 
-                  alt="Marketing team collaborating on the 5 core components of digital marketing strategy" 
-                  className="w-full h-auto"
-                />
+                <OptimizedImage src={coreComponentsImage} alt="Marketing team collaborating on the 5 core components of digital marketing strategy" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
             </div>
 
@@ -380,11 +373,7 @@ const DigitalMarketingStrategy2026 = () => {
 
               {/* Feature Image */}
               <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
-                <img 
-                  src={goalsKpisImage} 
-                  alt="Marketing analytics dashboard showing KPIs and performance metrics" 
-                  className="w-full h-auto"
-                />
+                <OptimizedImage src={goalsKpisImage} alt="Marketing analytics dashboard showing KPIs and performance metrics" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
             </div>
 
@@ -487,11 +476,7 @@ const DigitalMarketingStrategy2026 = () => {
 
               {/* Feature Image */}
               <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
-                <img 
-                  src={budgetAllocationImage} 
-                  alt="Marketing budget allocation planning with financial charts and pie graphs" 
-                  className="w-full h-auto"
-                />
+                <OptimizedImage src={budgetAllocationImage} alt="Marketing budget allocation planning with financial charts and pie graphs" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
             </div>
 
@@ -593,11 +578,7 @@ const DigitalMarketingStrategy2026 = () => {
 
               {/* Feature Image */}
               <div className="rounded-2xl overflow-hidden shadow-card mb-8 relative z-10">
-                <img 
-                  src={channelSynergyImage} 
-                  alt="Digital marketing channels working together in synergy - SEO, social media, email, and paid ads" 
-                  className="w-full h-auto"
-                />
+                <OptimizedImage src={channelSynergyImage} alt="Digital marketing channels working together in synergy - SEO, social media, email, and paid ads" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto" />
               </div>
 
               <p className="text-muted-foreground leading-relaxed mb-6 relative z-10">

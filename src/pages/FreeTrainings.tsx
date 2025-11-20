@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Star } from "lucide-react";
 import odinLogoWhite from "@/assets/odin-logo-white.png";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const FreeTrainings = () => {
   useEffect(() => {
@@ -35,11 +36,7 @@ const FreeTrainings = () => {
         <header className="bg-gradient-primary py-4 md:py-6">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex justify-center">
-              <img 
-                src={odinLogoWhite}
-                alt="Odin Digital" 
-                className="h-8 md:h-12"
-              />
+              <OptimizedImage src={odinLogoWhite} alt="Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" className="h-8 md:h-12" />
             </div>
           </div>
         </header>
@@ -127,11 +124,7 @@ const FreeTrainings = () => {
         <footer className="bg-gradient-primary py-6 md:py-8">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center gap-3 md:gap-4">
-              <img 
-                src={odinLogoWhite}
-                alt="Odin Digital" 
-                className="h-8 md:h-10"
-              />
+              <OptimizedImage src={odinLogoWhite} alt="Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" className="h-8 md:h-10" />
               <p className="text-white/80 text-xs md:text-sm">
                 Copyright © Odin Digital
               </p>

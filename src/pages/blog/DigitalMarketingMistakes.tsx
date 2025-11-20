@@ -9,6 +9,7 @@ import heroImage from "@/assets/blog/digital-marketing-mistakes-hero.jpg";
 import teamImage from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const DigitalMarketingMistakes = () => {
   const { openForm } = useMarketingForm();
@@ -152,13 +153,7 @@ const DigitalMarketingMistakes = () => {
 
             {/* Featured Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8">
-              <img 
-                src={heroImage} 
-                alt="Small business marketing team collaborating on digital marketing strategy" 
-                className="w-full h-auto object-cover"
-                loading="eager"
-                fetchPriority="high"
-              />
+              <OptimizedImage src={heroImage} alt="Small business marketing team collaborating on digital marketing strategy" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-auto object-cover" fetchPriority="high" />
             </div>
           </div>
         </section>
@@ -664,12 +659,7 @@ const DigitalMarketingMistakes = () => {
             <section className="mt-16 border-t border-border pt-12">
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-shrink-0">
-                  <img 
-                    src={teamImage} 
-                    alt="Odin Digital Team" 
-                    className="w-32 h-32 rounded-full object-cover shadow-card"
-                    loading="lazy"
-                  />
+                  <OptimizedImage src={teamImage} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-32 h-32 rounded-full object-cover shadow-card" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-charcoal mb-3">About the Odin Digital Team</h3>

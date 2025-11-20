@@ -1,4 +1,4 @@
-import { PictureImage } from "@/components/PictureImage";
+import { OptimizedImage } from '@/components/OptimizedImage';
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
 import matteoBanzon from "@/assets/matteo-banzon.png";
@@ -7,6 +7,7 @@ import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
 import emilyPlatt from "@/assets/emily-platt.png";
 import alexaBlake from "@/assets/hero-person-compressed.webp";
 import { Card } from "@/components/ui/card";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const leadershipTeam = [
   {
@@ -132,11 +133,11 @@ export const Leadership = () => {
           {/* Image - Left */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <PictureImage
+              <OptimizedImage
                 src={lucasDurante}
                 alt="Lucas Durante, CEO of Odin Digital"
                 className="w-full max-w-md mx-auto rounded-lg shadow-card object-cover"
-              />
+               sizes="(max-width: 768px) 100vw, 50vw" />
               <div className="absolute -bottom-4 -right-4 bg-white/20 backdrop-blur-md border border-white/30 text-primary px-6 py-3 rounded-lg font-bold text-sm shadow-xl">
                 Odin Digital CEO & Founder
               </div>
@@ -216,11 +217,11 @@ export const Leadership = () => {
 
           {/* Image - Right */}
           <div>
-            <PictureImage
+            <OptimizedImage
               src={marketingTeam}
               alt="Odin Digital marketing team collaborating on strategic campaigns and performance optimization"
               className="w-full rounded-lg shadow-card object-cover"
-            />
+             sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>
 
@@ -241,11 +242,11 @@ export const Leadership = () => {
                 <div className="text-center">
                   {/* Profile Image */}
                   <div className="relative mb-6">
-                    <PictureImage
+                    <OptimizedImage
                       src={leader.image}
                       alt={`${leader.name}, ${leader.title} at Odin Digital - Expert in digital marketing strategy`}
                       className="w-32 h-32 mx-auto rounded-full object-cover shadow-md group-hover:shadow-xl transition-shadow duration-300"
-                    />
+                     sizes="(max-width: 768px) 100vw, 50vw" />
                     <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
                       {leader.title.split(' ')[0]}
                     </div>

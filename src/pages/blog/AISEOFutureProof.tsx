@@ -11,6 +11,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, User, ArrowRight, TrendingUp, Target, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/blog/ai-seo-future-proof.jpg";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const AISEOFutureProof = () => {
   const { openForm } = useMarketingForm();
@@ -160,11 +161,7 @@ const AISEOFutureProof = () => {
               </div>
             </div>
 
-            <img 
-              src={heroImage} 
-              alt="AI SEO Future-Proof Strategy 2026" 
-              className="w-full h-[400px] object-cover rounded-lg shadow-2xl mb-8"
-            />
+            <OptimizedImage src={heroImage} alt="AI SEO Future-Proof Strategy 2026" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-[400px] object-cover rounded-lg shadow-2xl mb-8" />
 
             {/* Quick Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

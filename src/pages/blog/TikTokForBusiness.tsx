@@ -25,6 +25,7 @@ import adsMetricsImage from "@/assets/blog/tiktok-ads-metrics.jpg";
 import odinTeam from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 export default function TikTokForBusiness() {
   const { openForm } = useMarketingForm();
@@ -163,11 +164,7 @@ export default function TikTokForBusiness() {
 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 group">
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                  <img 
-                    src={heroImage} 
-                    alt="TikTok for business - small business owner creating content" 
-                    className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <OptimizedImage src={heroImage} alt="TikTok for business - small business owner creating content" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
             </div>
@@ -290,11 +287,7 @@ export default function TikTokForBusiness() {
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-8 group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                <img 
-                  src={demographicsImage} 
-                  alt="Diverse TikTok users in Australian cafe" 
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                />
+                <OptimizedImage src={demographicsImage} alt="Diverse TikTok users in Australian cafe" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
               </div>
 
               <h3 className="text-2xl font-bold mb-6 text-foreground">The Age Breakdown: Beyond Gen Z</h3>
@@ -406,11 +399,7 @@ export default function TikTokForBusiness() {
               </p>
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 group">
-                <img 
-                  src={strategyImage} 
-                  alt="Marketing team planning TikTok strategy" 
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                />
+                <OptimizedImage src={strategyImage} alt="Marketing team planning TikTok strategy" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
               </div>
 
               <div className="space-y-10">
@@ -505,11 +494,7 @@ export default function TikTokForBusiness() {
               </p>
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 group">
-                <img 
-                  src={contentCreationImage} 
-                  alt="Small business owner filming TikTok content" 
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                />
+                <OptimizedImage src={contentCreationImage} alt="Small business owner filming TikTok content" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
               </div>
 
               <div className="space-y-8">
@@ -674,11 +659,7 @@ export default function TikTokForBusiness() {
               </p>
 
               <div className="relative rounded-2xl overflow-hidden shadow-2xl mb-12 group">
-                <img 
-                  src={adsMetricsImage} 
-                  alt="Marketing professional reviewing TikTok ads metrics" 
-                  className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
-                />
+                <OptimizedImage src={adsMetricsImage} alt="Marketing professional reviewing TikTok ads metrics" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" />
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -951,11 +932,7 @@ export default function TikTokForBusiness() {
             <div className="max-w-4xl mx-auto">
               <div className="bg-card/50 backdrop-blur-sm border border-primary/10 rounded-2xl p-8 shadow-elegant">
                 <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-                  <img 
-                    src={odinTeam} 
-                    alt="Odin Digital Team" 
-                    className="w-32 h-32 rounded-full object-cover shadow-lg"
-                  />
+                  <OptimizedImage src={odinTeam} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-32 h-32 rounded-full object-cover shadow-lg" />
                   <div>
                     <h3 className="text-2xl font-bold text-foreground mb-3">About the Author</h3>
                     <p className="text-lg font-semibold text-primary mb-2">Odin Digital Team</p>

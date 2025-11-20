@@ -41,6 +41,7 @@ import {
   LineChart
 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 // Count-up animation hook
 const useCountUp = (end: number, duration: number = 2000) => {
@@ -637,12 +638,7 @@ const CanberraSEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.canberra.webp} type="image/webp" />
-              <img 
-                src={locationImages.canberra.jpg}
-                alt={locationImages.canberra.alt}
-                className="w-full h-full object-cover opacity-10"
-                loading="eager"
-              />
+              <OptimizedImage src={locationImages.canberra.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.canberra.alt} />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

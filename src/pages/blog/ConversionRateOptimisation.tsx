@@ -8,6 +8,7 @@ import croHero from "@/assets/blog/cro-conversion-optimization.jpg";
 import odinTeamPhoto from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const ConversionRateOptimisation = () => {
   const scrollToSection = (id: string) => {
@@ -137,11 +138,7 @@ const ConversionRateOptimisation = () => {
                   {/* Gradient Ring around image */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg blur-2xl transform scale-105 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
                   
-                  <img
-                    src={croHero}
-                    alt="Conversion Rate Optimisation dashboard showing business metrics and analytics data"
-                    className="relative w-full rounded-lg shadow-2xl ring-1 ring-primary/10 hover:scale-[1.02] transition-transform duration-500"
-                  />
+                  <OptimizedImage src={croHero} alt="Conversion Rate Optimisation dashboard showing business metrics and analytics data" sizes="(max-width: 768px) 100vw, 50vw" className="relative w-full rounded-lg shadow-2xl ring-1 ring-primary/10 hover:scale-[1.02] transition-transform duration-500" />
                 </div>
               </header>
 
@@ -590,11 +587,7 @@ const ConversionRateOptimisation = () => {
                 {/* Decorative element */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-full blur-2xl"></div>
                 
-                <img
-                  src={odinTeamPhoto}
-                  alt="Odin Digital Team"
-                  className="w-24 h-24 rounded-full object-cover ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300"
-                />
+                <OptimizedImage src={odinTeamPhoto} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-24 h-24 rounded-full object-cover ring-2 ring-primary/20 hover:ring-primary/40 transition-all duration-300" />
                 <div className="relative z-10">
                   <h3 className="text-xl font-bold mb-2">Odin Digital Team</h3>
                   <p className="text-muted-foreground leading-relaxed">

@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 import { getRelatedLocations, getHubForService } from "@/utils/contentClusters";
 import { ServiceSchema } from "@/components/ServiceSchema";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const SydneySEO = () => {
   const locationInfo = getLocationData("sydney");
@@ -334,12 +335,7 @@ const SydneySEO = () => {
           <div className="absolute inset-0 z-0">
             <picture>
               <source srcSet={locationImages.sydney.webp} type="image/webp" />
-              <img 
-                src={locationImages.sydney.jpg}
-                alt={locationImages.sydney.alt}
-                className="w-full h-full object-cover opacity-10"
-                loading="eager"
-              />
+              <OptimizedImage src={locationImages.sydney.jpg} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority className="w-full h-full object-cover opacity-10" alt={locationImages.sydney.alt} />
             </picture>
             <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/90 to-background/95" />
           </div>

@@ -13,6 +13,7 @@ import googleAdsResults from "@/assets/blog/google-ads-performance-results.jpg";
 import odinTeam from "@/assets/odin-team-professional.jpg";
 import { blogArticles } from "@/utils/blogSchemaData";
 import { getArticleSchema } from "@/utils/schemaMarkup";
+import { OptimizedImage } from '@/components/OptimizedImage';
 
 const GoogleAdsGuide = () => {
   const relatedArticles = [
@@ -153,11 +154,7 @@ const GoogleAdsGuide = () => {
                 <span>5 min read</span>
               </div>
 
-              <img 
-                src={googleAdsHero} 
-                alt="Google Ads dashboard showing performance metrics for Australian small business" 
-                className="w-full h-auto rounded-lg shadow-elegant mb-8"
-              />
+              <OptimizedImage src={googleAdsHero} alt="Google Ads dashboard showing performance metrics for Australian small business" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto rounded-lg shadow-elegant mb-8" />
             </div>
           </div>
         </section>
@@ -248,11 +245,7 @@ const GoogleAdsGuide = () => {
               <section id="is-google-ads-right" className="mb-16 relative">
                 <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-accent/5 blur-2xl animate-float-delayed" />
                 
-                <img 
-                  src={googleAdsTeam} 
-                  alt="Australian small business team collaborating on Google Ads strategy" 
-                  className="w-full h-auto rounded-lg shadow-elegant mb-8"
-                />
+                <OptimizedImage src={googleAdsTeam} alt="Australian small business team collaborating on Google Ads strategy" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto rounded-lg shadow-elegant mb-8" />
 
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center mr-4 shadow-glow">
@@ -390,11 +383,7 @@ const GoogleAdsGuide = () => {
               <section id="measuring-results" className="mb-16 relative">
                 <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-primary/5 blur-2xl animate-float" />
                 
-                <img 
-                  src={googleAdsResults} 
-                  alt="Google Ads performance dashboard showing positive ROI and conversion metrics" 
-                  className="w-full h-auto rounded-lg shadow-elegant mb-8"
-                />
+                <OptimizedImage src={googleAdsResults} alt="Google Ads performance dashboard showing positive ROI and conversion metrics" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-auto rounded-lg shadow-elegant mb-8" />
 
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center mr-4 shadow-glow">
@@ -490,11 +479,7 @@ const GoogleAdsGuide = () => {
                 <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-primary/5 blur-2xl" />
                 <div className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full bg-accent/5 blur-2xl" />
                 <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6 relative z-10">
-                  <img 
-                    src={odinTeam} 
-                    alt="Odin Digital Team" 
-                    className="w-32 h-32 rounded-full object-cover shadow-elegant"
-                  />
+                  <OptimizedImage src={odinTeam} alt="Odin Digital Team" sizes="(max-width: 768px) 100vw, 50vw" className="w-32 h-32 rounded-full object-cover shadow-elegant" />
                   <div>
                     <h3 className="text-2xl font-bold mb-2">Odin Digital Team</h3>
                     <p className="text-muted-foreground leading-relaxed">
