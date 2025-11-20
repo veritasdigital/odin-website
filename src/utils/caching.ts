@@ -83,18 +83,23 @@ export const getCDNUrl = (path: string, cdnDomain?: string): string => {
  * Clear expired cache entries
  */
 export const clearExpiredCache = () => {
-  const keys = Object.keys(localStorage);
-  keys.forEach((key) => {
-    try {
-      const itemStr = localStorage.getItem(key);
-      if (itemStr) {
-        const item = JSON.parse(itemStr);
-        if (item.expiry && Date.now() > item.expiry) {
-          localStorage.removeItem(key);
+  try {
+    const keys = Object.keys(localStorage);
+    keys.forEach((key) => {
+      try {
+        const itemStr = localStorage.getItem(key);
+        if (itemStr) {
+          const item = JSON.parse(itemStr);
+          if (item.expiry && Date.now() > item.expiry) {
+            localStorage.removeItem(key);
+          }
         }
+      } catch (error) {
+        // Skip invalid entries
       }
-    } catch (error) {
-      // Skip invalid entries
-    }
-  });
+    });
+  } catch (error) {
+    // localStorage not available (incognito mode, etc.)
+    console.warn('Cache clearing not available:', error);
+  }
 };
