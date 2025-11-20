@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { safeLocalStorage } from '@/utils/safeStorage';
 
 interface UseExitIntentOptions {
   threshold?: number;
@@ -18,15 +19,10 @@ export const useExitIntent = (options: UseExitIntentOptions = {}) => {
   useEffect(() => {
     const STORAGE_KEY = 'exit-intent-shown';
 
-    const isStorageAvailable = () =>
-      typeof window !== 'undefined' && 'localStorage' in window;
-
     // Check if we've already shown the popup
     const checkIfShown = () => {
-      if (!isStorageAvailable()) return false;
-
       try {
-        const stored = window.localStorage.getItem(STORAGE_KEY);
+        const stored = safeLocalStorage.getItem(STORAGE_KEY);
         if (!stored) return false;
 
         const data = JSON.parse(stored);
@@ -34,7 +30,7 @@ export const useExitIntent = (options: UseExitIntentOptions = {}) => {
 
         // Check if cookie expired
         if (now > data.expiry) {
-          window.localStorage.removeItem(STORAGE_KEY);
+          safeLocalStorage.removeItem(STORAGE_KEY);
           return false;
         }
 
@@ -53,14 +49,12 @@ export const useExitIntent = (options: UseExitIntentOptions = {}) => {
       if (e.clientY <= threshold && !checkIfShown()) {
         setShouldShow(true);
 
-        if (!isStorageAvailable()) return;
-
         try {
           // Update storage
-          const stored = window.localStorage.getItem(STORAGE_KEY);
+          const stored = safeLocalStorage.getItem(STORAGE_KEY);
           const data = stored ? JSON.parse(stored) : { count: 0 };
 
-          window.localStorage.setItem(
+          safeLocalStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({
               count: data.count + 1,
