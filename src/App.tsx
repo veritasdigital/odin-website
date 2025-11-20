@@ -81,6 +81,8 @@ import SaasCompanies from "./pages/industries/SaasCompanies";
 import EnterpriseSoftware from "./pages/industries/EnterpriseSoftware";
 import LuxuryRealEstate from "./pages/industries/LuxuryRealEstate";
 import FranchiseBusinesses from "./pages/industries/FranchiseBusinesses";
+import Healthcare from "./pages/industries/Healthcare";
+import ProfessionalServices from "./pages/industries/ProfessionalServices";
 import GoogleAdsSydney from "./pages/services/GoogleAdsSydney";
 import GoogleAdsMelbourne from "./pages/services/GoogleAdsMelbourne";
 import GoogleAdsPerth from "./pages/services/GoogleAdsPerth";
@@ -236,6 +238,7 @@ const App = () => (
             <Route path="/local-seo" element={<LocalSEO />} />
             <Route path="/services/social-media" element={<SocialMedia />} />
             <Route path="/services/website-design" element={<WebsiteDesign />} />
+            <Route path="/services/web-design" element={<WebsiteDesign />} />
             <Route path="/services/funnel-development" element={<FunnelDevelopment />} />
             <Route path="/services/marketing-consulting" element={<MarketingConsulting />} />
             <Route path="/seo-brisbane" element={<BrisbaneSEO />} />
@@ -283,6 +286,8 @@ const App = () => (
           <Route path="/industries" element={<Industries />} />
           <Route path="/industries/pediatric-dentists" element={<PediatricDentists />} />
           <Route path="/industries/landscaping-companies" element={<LandscapingCompanies />} />
+          <Route path="/industries/healthcare" element={<Healthcare />} />
+          <Route path="/industries/professional-services" element={<ProfessionalServices />} />
             <Route path="/facebook-advertising" element={<FacebookAdvertising />} />
             <Route path="/instagram-advertising" element={<InstagramAdvertising />} />
             <Route path="/social-media-advertising-adelaide" element={<SocialMediaAdvertisingAdelaide />} />
@@ -344,7 +349,9 @@ const App = () => (
             <Route path="/blog/blog-post-seo-checklist" element={<SEOChecklist2025 />} />
             <Route path="/blog/blog-post-local-seo" element={<LocalSEOTradies />} />
           <Route path="/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders" element={<AISEOGuide />} />
+          <Route path="/blog/ai-seo-guide" element={<AISEOGuide />} />
           <Route path="/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market" element={<LocalSEO2026 />} />
+          <Route path="/blog/local-seo-2026" element={<LocalSEO2026 />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
           <Route path="/thank-you" element={<ThankYou />} />
