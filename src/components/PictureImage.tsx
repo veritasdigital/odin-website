@@ -31,38 +31,29 @@ export const PictureImage = ({
   const webpSrc = src.replace(/\.(png|jpg|jpeg)$/i, '.webp');
   const shouldUseWebP = isProduction && webpSrc !== src;
 
+  // Convert fetchPriority to lowercase for the DOM attribute
+  const imgProps = {
+    src,
+    alt,
+    width,
+    height,
+    loading,
+    decoding: 'async' as const,
+    className,
+    ...props,
+    ...(fetchPriority !== 'auto' && { fetchpriority: fetchPriority as any })
+  };
+
   if (!shouldUseWebP) {
     // In development, just use the original image
-    return (
-      <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        loading={loading}
-        fetchPriority={fetchPriority}
-        decoding="async"
-        className={className}
-        {...props}
-      />
-    );
+    return <img {...imgProps} />;
   }
 
   // In production, use picture element with WebP source
   return (
     <picture>
       <source srcSet={webpSrc} type="image/webp" />
-      <img
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        loading={loading}
-        fetchPriority={fetchPriority}
-        decoding="async"
-        className={className}
-        {...props}
-      />
+      <img {...imgProps} />
     </picture>
   );
 };
