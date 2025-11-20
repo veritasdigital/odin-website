@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { PictureImage } from "@/components/PictureImage";
 import odinLogo from "@/assets/odin-logo-lead-magnet.png";
 
 const AdsCalendar = () => {
@@ -20,7 +21,7 @@ const AdsCalendar = () => {
       <div className="min-h-screen bg-background">
         <header className="border-b border-border py-6">
           <div className="container mx-auto px-4 flex justify-center">
-            <img src={odinLogo} alt="Odin Digital" className="h-16" />
+            <PictureImage src={odinLogo} alt="Odin Digital" className="h-16" loading="eager" fetchPriority="high" />
           </div>
         </header>
 

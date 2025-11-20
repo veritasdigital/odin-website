@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, Search, TrendingUp, Zap } from "lucide-react";
+import { PictureImage } from "@/components/PictureImage";
 import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 
@@ -88,7 +89,7 @@ export const Services = () => {
             <Card key={index} className="group relative p-8 border border-charcoal/10 hover:border-primary/20 transition-all duration-300 overflow-hidden">
               {/* Subtle brand icon on hover */}
               <div className="absolute top-4 right-4 w-16 h-16 opacity-0 group-hover:opacity-10 transition-opacity duration-500">
-                <img src={brandIconVibrant} alt="" className="w-full h-full animate-[spin_8s_linear_infinite]" />
+                <PictureImage src={brandIconVibrant} alt="" className="w-full h-full animate-[spin_8s_linear_infinite]" loading="lazy" />
               </div>
               
               <div className="relative z-10 flex items-start space-x-6">
