@@ -28,6 +28,12 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
   const loading = priority ? 'eager' : 'lazy';
   const fetchPriorityValue = priority ? 'high' : 'auto';
 
+  // Use fetchpriority attribute correctly (lowercase, not camelCase)
+  const imgProps = {
+    ...props,
+    ...(priority && { fetchpriority: fetchPriorityValue })
+  };
+
   return (
     <img 
       ref={ref}
@@ -39,8 +45,7 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
       decoding="async"
       className={className}
       sizes={sizes}
-      {...props}
-      {...(priority && { fetchpriority: fetchPriorityValue as any })}
+      {...imgProps}
     />
   );
 });
