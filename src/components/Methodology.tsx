@@ -2,7 +2,6 @@ import { Search, Settings, TrendingUp, FileText } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { OptimizedImage } from '@/components/OptimizedImage';
 import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Methodology = () => {
   const steps = [

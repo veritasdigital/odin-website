@@ -7,7 +7,6 @@ import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
 import emilyPlatt from "@/assets/emily-platt.png";
 import alexaBlake from "@/assets/hero-person-compressed.webp";
 import { Card } from "@/components/ui/card";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 const leadershipTeam = [
   {
