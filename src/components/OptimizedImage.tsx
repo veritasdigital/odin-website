@@ -60,7 +60,9 @@ export const OptimizedImage = ({
       />
       
       {/* Fallback img element */}
-      <OptimizedImage src={src} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" alt={alt}
+      <img 
+        src={src} 
+        alt={alt}
         width={width}
         height={height}
         loading={loading}
