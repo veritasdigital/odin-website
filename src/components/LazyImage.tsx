@@ -53,9 +53,11 @@ export const LazyImage = ({
   }, [src, threshold, rootMargin]);
 
   return (
-    <OptimizedImage src={placeholder} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" ref={imgRef}
-      
+    <OptimizedImage 
+      ref={imgRef}
+      src={placeholder}
       alt={alt}
+      sizes="(max-width: 768px) 100vw, 50vw"
       loading={loading}
       decoding={decoding}
       className={className}

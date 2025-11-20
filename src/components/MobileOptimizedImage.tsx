@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { LazyImage } from './LazyImage';
+import { OptimizedImage } from '@/components/OptimizedImage';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { getOptimizedImageSrc, getLazyLoadThreshold } from '@/utils/mobileOptimization';
 
@@ -35,11 +36,13 @@ export const MobileOptimizedImage = ({
   // For priority images, load immediately without lazy loading
   if (priority) {
     return (
-      <OptimizedImage src={imageSrc} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" priority alt={alt}
+      <OptimizedImage 
+        src={imageSrc}
+        alt={alt}
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
         className={className}
-        
         decoding="async"
-        fetchPriority="high"
         {...props} />
     );
   }

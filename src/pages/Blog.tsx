@@ -412,7 +412,11 @@ const Blog = () => {
             <Card className="overflow-hidden hover:shadow-glow transition-all duration-300">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative">
-                  <OptimizedImage src={post.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-cover min-h-[300px]" alt={post.title} />
+                  <OptimizedImage 
+                    src={post.image} 
+                    alt={post.title} 
+                    sizes="(max-width: 768px) 100vw, 50vw" 
+                    className="w-full h-full object-cover min-h-[300px]" />
                   <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
                     {post.category}
                   </Badge>
@@ -481,7 +485,11 @@ const Blog = () => {
               >
                 <Card className="overflow-hidden hover:shadow-glow transition-all duration-300 group h-full">
                   <div className="relative">
-                    <OptimizedImage src={post.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" alt={post.title} />
+                    <OptimizedImage 
+                      src={post.image} 
+                      alt={post.title} 
+                      sizes="(max-width: 768px) 100vw, 50vw" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
                     <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
                       {post.category}
                     </Badge>

@@ -28,7 +28,6 @@ import { useState, useEffect } from "react";
 import krushOrganics from "@/assets/krush-organics.png";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
 import willWrightMiningStore from "@/assets/will-wright-mining-store.webp";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 const GoogleAdsNewcastle = () => {
   const { openForm } = useMarketingForm();
@@ -509,7 +508,11 @@ const GoogleAdsNewcastle = () => {
                   </div>
                   {testimonial.image && (
                     <div className="mt-auto h-32 rounded-lg overflow-hidden bg-white/50">
-                      <OptimizedImage src={testimonial.image} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="w-full h-full object-contain" alt={`${testimonial.company} product`} />
+                      <OptimizedImage 
+                        src={testimonial.image} 
+                        alt={`${testimonial.company} product`} 
+                        sizes="(max-width: 768px) 100vw, 50vw" 
+                        className="w-full h-full object-contain" />
                     </div>
                   )}
                 </div>

@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Video, Users, BarChart3 } from "lucide-react";
 import { OptimizedImage } from '@/components/OptimizedImage';
 import odinLogo from "@/assets/odin-digital-logo.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 // Declare custom element for Wistia player
 declare global {
