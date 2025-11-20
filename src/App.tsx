@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MarketingFormProvider } from "@/contexts/MarketingFormContext";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
+import { useRoutePrefetch } from "@/hooks/useRoutePrefetch";
 import Index from "./pages/Index";
 import OurEthos from "./pages/OurEthos";
 import FreeTrainings from "./pages/FreeTrainings";
@@ -176,6 +177,11 @@ import Industries from "./pages/Industries";
 
 const queryClient = new QueryClient();
 
+const AppContent = () => {
+  useRoutePrefetch();
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -185,6 +191,7 @@ const App = () => (
         <SkipToContent />
         <MarketingFormProvider>
           <MarketingFormModal />
+          <AppContent />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
