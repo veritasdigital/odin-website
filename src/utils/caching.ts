@@ -1,3 +1,6 @@
+import heroPersonOptimized from "@/assets/hero-person-optimized.webp";
+import odinLogoGradient from "@/assets/odin-logo-gradient.png";
+
 /**
  * Browser caching and CDN utilities
  */
@@ -55,10 +58,7 @@ export const getCachedData = (key: string): any | null => {
  * Preload critical resources
  */
 export const preloadCriticalResources = () => {
-  const criticalImages = [
-    '/src/assets/hero-person-optimized.webp',
-    '/src/assets/odin-logo-gradient.png',
-  ];
+  const criticalImages = [heroPersonOptimized, odinLogoGradient];
 
   criticalImages.forEach((src) => {
     const link = document.createElement('link');

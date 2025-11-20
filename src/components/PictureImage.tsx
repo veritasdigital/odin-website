@@ -9,9 +9,9 @@ interface PictureImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 }
 
 /**
- * Picture component with WebP support and PNG/JPG fallback
- * In development: serves original images
- * In production: vite-plugin-image-optimizer automatically converts to WebP
+ * Picture component with optional fetchPriority support.
+ * It intentionally does NOT rewrite URLs to .webp to avoid 404s in production.
+ * Any WebP usage should be done via explicit imports.
  */
 export const PictureImage = ({
   src,
@@ -23,15 +23,8 @@ export const PictureImage = ({
   className,
   ...props
 }: PictureImageProps) => {
-  // In production builds, the vite-plugin-image-optimizer will automatically
-  // generate WebP versions and optimize all images
-  const isProduction = import.meta.env.PROD;
-  
-  // Only attempt WebP in production or if the source is already WebP
-  const webpSrc = src.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-  const shouldUseWebP = isProduction && webpSrc !== src;
-
-  // Convert fetchPriority to lowercase for the DOM attribute
+  // Build image props and map React's camelCase fetchPriority to a lowercase
+  // DOM attribute when explicitly set (avoids React unknown-prop warnings).
   const imgProps = {
     src,
     alt,
@@ -41,19 +34,8 @@ export const PictureImage = ({
     decoding: 'async' as const,
     className,
     ...props,
-    ...(fetchPriority !== 'auto' && { fetchpriority: fetchPriority as any })
+    ...(fetchPriority !== 'auto' && { fetchpriority: fetchPriority as any }),
   };
 
-  if (!shouldUseWebP) {
-    // In development, just use the original image
-    return <img {...imgProps} />;
-  }
-
-  // In production, use picture element with WebP source
-  return (
-    <picture>
-      <source srcSet={webpSrc} type="image/webp" />
-      <img {...imgProps} />
-    </picture>
-  );
+  return <img {...imgProps} />;
 };
