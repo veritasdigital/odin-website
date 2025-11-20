@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
+import { PictureImage } from "@/components/PictureImage";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
@@ -90,7 +91,7 @@ export const Results = () => {
     <section id="results" className="relative pt-12 pb-6 bg-gradient-to-br from-accent/5 to-primary/5 overflow-hidden">
       {/* Decorative Brand Icon */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-5 pointer-events-none">
-        <img src={brandIconSubtle} alt="" className="w-full h-full animate-[spin_40s_linear_infinite]" />
+        <PictureImage src={brandIconSubtle} alt="" className="w-full h-full animate-[spin_40s_linear_infinite]" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -117,14 +118,13 @@ export const Results = () => {
                       {/* Image Section */}
                       {testimonial.image && (
                       <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center min-h-[200px]">
-                          <img 
+                          <PictureImage 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
                             className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
                             width="511"
                             height="640"
-                            decoding="async"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>

@@ -1,3 +1,4 @@
+import { PictureImage } from "@/components/PictureImage";
 import lucasDurante from "@/assets/lucas-durante-real.jpg";
 import marketingTeam from "@/assets/odin-team-real.jpg";
 import matteoBanzon from "@/assets/matteo-banzon.png";
@@ -131,7 +132,7 @@ export const Leadership = () => {
           {/* Image - Left */}
           <div className="order-2 lg:order-1">
             <div className="relative">
-              <img
+              <PictureImage
                 src={lucasDurante}
                 alt="Lucas Durante, CEO of Odin Digital"
                 className="w-full max-w-md mx-auto rounded-lg shadow-card object-cover"
@@ -215,7 +216,7 @@ export const Leadership = () => {
 
           {/* Image - Right */}
           <div>
-            <img
+            <PictureImage
               src={marketingTeam}
               alt="Odin Digital marketing team collaborating on strategic campaigns and performance optimization"
               className="w-full rounded-lg shadow-card object-cover"
@@ -240,7 +241,7 @@ export const Leadership = () => {
                 <div className="text-center">
                   {/* Profile Image */}
                   <div className="relative mb-6">
-                    <img
+                    <PictureImage
                       src={leader.image}
                       alt={`${leader.name}, ${leader.title} at Odin Digital - Expert in digital marketing strategy`}
                       className="w-32 h-32 mx-auto rounded-full object-cover shadow-md group-hover:shadow-xl transition-shadow duration-300"

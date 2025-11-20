@@ -1,3 +1,4 @@
+import { PictureImage } from "@/components/PictureImage";
 import fox40Logo from "@/assets/media/fox40-logo.png";
 import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
@@ -51,10 +52,11 @@ export const AsSeenIn = () => {
               key={index}
               className="flex items-center justify-center h-16 opacity-60 hover:opacity-100 transition-opacity duration-300"
             >
-              <img
+              <PictureImage
                 src={media.logo}
                 alt={media.alt}
                 className="h-12 w-auto max-w-[150px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                loading="lazy"
               />
             </div>
           ))}
