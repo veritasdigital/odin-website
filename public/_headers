@@ -1,0 +1,62 @@
+# ===================================
+# CACHE CONTROL HEADERS
+# ===================================
+
+# Static assets with versioned filenames (JS, CSS bundles)
+# These have content hashes in filenames, so can be cached for 1 year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images - cache for 1 year (they rarely change)
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/*.gif
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts - cache for 1 year
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+/*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+/*.eot
+  Cache-Control: public, max-age=31536000, immutable
+
+# JavaScript and CSS files
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files - short cache (1 hour) with revalidation
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Service worker - no cache
+/sw.js
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Manifest and other config files
+/manifest.json
+  Cache-Control: public, max-age=86400, must-revalidate
+/robots.txt
+  Cache-Control: public, max-age=86400, must-revalidate
+/sitemap.xml
+  Cache-Control: public, max-age=86400, must-revalidate
+
+# Default for everything else
+/*
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
