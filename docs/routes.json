@@ -1,0 +1,1035 @@
+{
+  "metadata": {
+    "totalRoutes": 171,
+    "generatedDate": "2025-11-20",
+    "projectName": "Odin Digital"
+  },
+  "routes": [
+    {
+      "id": 1,
+      "path": "/",
+      "component": "Index",
+      "category": "Core Pages"
+    },
+    {
+      "id": 2,
+      "path": "/about",
+      "component": "About",
+      "category": "Core Pages"
+    },
+    {
+      "id": 3,
+      "path": "/our-ethos",
+      "component": "OurEthos",
+      "category": "Core Pages"
+    },
+    {
+      "id": 4,
+      "path": "/our-clients",
+      "component": "OurClients",
+      "category": "Core Pages"
+    },
+    {
+      "id": 5,
+      "path": "/contact",
+      "component": "Contact",
+      "category": "Core Pages"
+    },
+    {
+      "id": 6,
+      "path": "/services",
+      "component": "Services",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 7,
+      "path": "/services/google-ads",
+      "component": "GoogleAds",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 8,
+      "path": "/services/seo",
+      "component": "SEO",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 9,
+      "path": "/services/social-media",
+      "component": "SocialMedia",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 10,
+      "path": "/services/website-design",
+      "component": "WebsiteDesign",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 11,
+      "path": "/services/web-design",
+      "component": "WebsiteDesign",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 12,
+      "path": "/services/funnel-development",
+      "component": "FunnelDevelopment",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 13,
+      "path": "/services/marketing-consulting",
+      "component": "MarketingConsulting",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 14,
+      "path": "/services/email-marketing",
+      "component": "EmailMarketing",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 15,
+      "path": "/services/facebook-ads",
+      "component": "FacebookAdvertising",
+      "category": "Service Hub Pages"
+    },
+    {
+      "id": 16,
+      "path": "/google-ads-management",
+      "component": "GoogleAdsManagement",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 17,
+      "path": "/google-ads-sydney",
+      "component": "GoogleAdsSydney",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 18,
+      "path": "/google-ads-melbourne",
+      "component": "GoogleAdsMelbourne",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 19,
+      "path": "/google-ads-brisbane",
+      "component": "GoogleAdsBrisbane",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 20,
+      "path": "/google-ads-perth",
+      "component": "GoogleAdsPerth",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 21,
+      "path": "/google-ads-adelaide",
+      "component": "GoogleAdsAdelaide",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 22,
+      "path": "/google-ads-canberra",
+      "component": "GoogleAdsCanberra",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 23,
+      "path": "/google-ads-hobart",
+      "component": "GoogleAdsHobart",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 24,
+      "path": "/google-ads-gold-coast",
+      "component": "GoogleAdsGoldCoast",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 25,
+      "path": "/google-ads-newcastle",
+      "component": "GoogleAdsNewcastle",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 26,
+      "path": "/google-ads-darwin",
+      "component": "GoogleAdsDarwin",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 27,
+      "path": "/google-ads-launceston",
+      "component": "GoogleAdsLaunceston",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 28,
+      "path": "/google-ads-ballarat",
+      "component": "GoogleAdsBallarat",
+      "category": "Google Ads Location Pages"
+    },
+    {
+      "id": 29,
+      "path": "/seo-agency",
+      "component": "SEOAgency",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 30,
+      "path": "/ecommerce-seo",
+      "component": "EcommerceSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 31,
+      "path": "/local-seo",
+      "component": "LocalSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 32,
+      "path": "/white-label-seo",
+      "component": "WhiteLabelSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 33,
+      "path": "/seo-sydney",
+      "component": "SydneySEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 34,
+      "path": "/seo-melbourne",
+      "component": "MelbourneSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 35,
+      "path": "/seo-brisbane",
+      "component": "BrisbaneSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 36,
+      "path": "/seo-perth",
+      "component": "PerthSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 37,
+      "path": "/seo-adelaide",
+      "component": "AdelaideSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 38,
+      "path": "/seo-canberra",
+      "component": "CanberraSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 39,
+      "path": "/seo-hobart",
+      "component": "HobartSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 40,
+      "path": "/seo-gold-coast",
+      "component": "GoldCoastSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 41,
+      "path": "/seo-newcastle",
+      "component": "SEONewcastle",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 42,
+      "path": "/seo-darwin",
+      "component": "DarwinSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 43,
+      "path": "/seo-launceston",
+      "component": "LauncestonSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 44,
+      "path": "/seo-ballarat",
+      "component": "BallaratSEO",
+      "category": "SEO Service & Location Pages"
+    },
+    {
+      "id": 45,
+      "path": "/facebook-advertising",
+      "component": "FacebookAdvertising",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 46,
+      "path": "/facebook-ads-sydney",
+      "component": "FacebookAdsSydney",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 47,
+      "path": "/facebook-ads-melbourne",
+      "component": "FacebookAdsMelbourne",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 48,
+      "path": "/facebook-ads-brisbane",
+      "component": "FacebookAdsBrisbane",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 49,
+      "path": "/facebook-ads-perth",
+      "component": "FacebookAdsPerth",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 50,
+      "path": "/facebook-ads-adelaide",
+      "component": "FacebookAdsAdelaide",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 51,
+      "path": "/facebook-ads-canberra",
+      "component": "FacebookAdsCanberra",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 52,
+      "path": "/facebook-ads-hobart",
+      "component": "FacebookAdsHobart",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 53,
+      "path": "/facebook-ads-gold-coast",
+      "component": "FacebookAdsGoldCoast",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 54,
+      "path": "/facebook-ads-newcastle",
+      "component": "FacebookAdsNewcastle",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 55,
+      "path": "/facebook-ads-darwin",
+      "component": "FacebookAdsDarwin",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 56,
+      "path": "/facebook-ads-launceston",
+      "component": "FacebookAdsLaunceston",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 57,
+      "path": "/facebook-ads-ballarat",
+      "component": "FacebookAdsBallarat",
+      "category": "Facebook Ads Location Pages"
+    },
+    {
+      "id": 58,
+      "path": "/website-design-and-development",
+      "component": "WebsiteDesignAndDevelopment",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 59,
+      "path": "/web-design-sydney",
+      "component": "WebDesignSydney",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 60,
+      "path": "/web-design-melbourne",
+      "component": "WebDesignMelbourne",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 61,
+      "path": "/web-design-brisbane",
+      "component": "WebDesignBrisbane",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 62,
+      "path": "/web-design-perth",
+      "component": "WebDesignPerth",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 63,
+      "path": "/web-design-adelaide",
+      "component": "WebDesignAdelaide",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 64,
+      "path": "/web-design-canberra",
+      "component": "WebDesignCanberra",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 65,
+      "path": "/web-design-hobart",
+      "component": "WebDesignHobart",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 66,
+      "path": "/web-design-gold-coast",
+      "component": "WebDesignGoldCoast",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 67,
+      "path": "/web-design-newcastle",
+      "component": "WebDesignNewcastle",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 68,
+      "path": "/web-design-darwin",
+      "component": "WebDesignDarwin",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 69,
+      "path": "/web-design-launceston",
+      "component": "WebDesignLaunceston",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 70,
+      "path": "/web-design-ballarat",
+      "component": "WebDesignBallarat",
+      "category": "Web Design Location Pages"
+    },
+    {
+      "id": 71,
+      "path": "/online-marketing-company-sydney",
+      "component": "OnlineMarketingCompanySydney",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 72,
+      "path": "/online-marketing-company-melbourne",
+      "component": "OnlineMarketingCompanyMelbourne",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 73,
+      "path": "/online-marketing-company-brisbane",
+      "component": "OnlineMarketingCompanyBrisbane",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 74,
+      "path": "/online-marketing-company-perth",
+      "component": "OnlineMarketingCompanyPerth",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 75,
+      "path": "/online-marketing-company-adelaide",
+      "component": "OnlineMarketingCompanyAdelaide",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 76,
+      "path": "/online-marketing-company-canberra",
+      "component": "OnlineMarketingCompanyCanberra",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 77,
+      "path": "/online-marketing-company-hobart",
+      "component": "OnlineMarketingCompanyHobart",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 78,
+      "path": "/online-marketing-company-gold-coast",
+      "component": "OnlineMarketingCompanyGoldCoast",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 79,
+      "path": "/online-marketing-company-newcastle",
+      "component": "OnlineMarketingCompanyNewcastle",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 80,
+      "path": "/online-marketing-company-darwin",
+      "component": "OnlineMarketingCompanyDarwin",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 81,
+      "path": "/online-marketing-company-launceston",
+      "component": "OnlineMarketingCompanyLaunceston",
+      "category": "Online Marketing Company Location Pages"
+    },
+    {
+      "id": 82,
+      "path": "/ppc-management",
+      "component": "PPCManagement",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 83,
+      "path": "/ppc-agency",
+      "component": "PPCAgency",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 84,
+      "path": "/instagram-advertising",
+      "component": "InstagramAdvertising",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 85,
+      "path": "/linkedin-advertising",
+      "component": "LinkedInAdvertising",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 86,
+      "path": "/tiktok-advertising",
+      "component": "TikTokAdvertising",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 87,
+      "path": "/youtube-advertising",
+      "component": "YouTubeAdvertising",
+      "category": "PPC & Paid Advertising Pages"
+    },
+    {
+      "id": 88,
+      "path": "/social-media-advertising",
+      "component": "SocialMediaAdvertising",
+      "category": "Social Media Advertising Location Pages"
+    },
+    {
+      "id": 89,
+      "path": "/social-media-advertising-sydney",
+      "component": "SocialMediaAdvertisingSydney",
+      "category": "Social Media Advertising Location Pages"
+    },
+    {
+      "id": 90,
+      "path": "/social-media-advertising-melbourne",
+      "component": "SocialMediaAdvertisingMelbourne",
+      "category": "Social Media Advertising Location Pages"
+    },
+    {
+      "id": 91,
+      "path": "/social-media-advertising-brisbane",
+      "component": "SocialMediaAdvertisingBrisbane",
+      "category": "Social Media Advertising Location Pages"
+    },
+    {
+      "id": 92,
+      "path": "/social-media-advertising-adelaide",
+      "component": "SocialMediaAdvertisingAdelaide",
+      "category": "Social Media Advertising Location Pages"
+    },
+    {
+      "id": 93,
+      "path": "/email-marketing-agency",
+      "component": "EmailMarketingAgency",
+      "category": "Other Service Pages"
+    },
+    {
+      "id": 94,
+      "path": "/ecommerce-agency",
+      "component": "EcommerceAgency",
+      "category": "Other Service Pages"
+    },
+    {
+      "id": 95,
+      "path": "/influencer-agency",
+      "component": "InfluencerAgency",
+      "category": "Other Service Pages"
+    },
+    {
+      "id": 96,
+      "path": "/industries",
+      "component": "Industries",
+      "category": "Industries Hub"
+    },
+    {
+      "id": 97,
+      "path": "/industries/dermatologists",
+      "component": "Dermatologists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 98,
+      "path": "/industries/dentists",
+      "component": "Dentists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 99,
+      "path": "/industries/pediatric-dentists",
+      "component": "PediatricDentists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 100,
+      "path": "/industries/cosmetic-dentists",
+      "component": "CosmeticDentists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 101,
+      "path": "/industries/family-dentists",
+      "component": "FamilyDentists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 102,
+      "path": "/industries/orthodontists",
+      "component": "Orthodontists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 103,
+      "path": "/industries/dental-implants",
+      "component": "DentalImplants",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 104,
+      "path": "/industries/cosmetic-surgeons",
+      "component": "CosmeticSurgeons",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 105,
+      "path": "/industries/plastic-surgeons",
+      "component": "PlasticSurgeons",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 106,
+      "path": "/industries/cosmetic-clinics",
+      "component": "CosmeticClinics",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 107,
+      "path": "/industries/fertility-clinics",
+      "component": "FertilityClinics",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 108,
+      "path": "/industries/ophthalmologists",
+      "component": "Ophthalmologists",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 109,
+      "path": "/industries/pharmaceutical-companies",
+      "component": "PharmaceuticalCompanies",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 110,
+      "path": "/industries/healthcare",
+      "component": "Healthcare",
+      "category": "Medical & Healthcare Industry Pages"
+    },
+    {
+      "id": 111,
+      "path": "/industries/lawyers",
+      "component": "Lawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 112,
+      "path": "/industries/family-lawyers",
+      "component": "FamilyLawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 113,
+      "path": "/industries/conveyancing-lawyers",
+      "component": "ConveyancingLawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 114,
+      "path": "/industries/immigration-lawyers",
+      "component": "ImmigrationLawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 115,
+      "path": "/industries/personal-injury-lawyers",
+      "component": "PersonalInjuryLawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 116,
+      "path": "/industries/criminal-defense-lawyers",
+      "component": "CriminalDefenseLawyers",
+      "category": "Legal Industry Pages"
+    },
+    {
+      "id": 117,
+      "path": "/industries/real-estate-agents",
+      "component": "RealEstateAgents",
+      "category": "Real Estate & Finance Industry Pages"
+    },
+    {
+      "id": 118,
+      "path": "/industries/luxury-real-estate",
+      "component": "LuxuryRealEstate",
+      "category": "Real Estate & Finance Industry Pages"
+    },
+    {
+      "id": 119,
+      "path": "/industries/commercial-real-estate",
+      "component": "CommercialRealEstate",
+      "category": "Real Estate & Finance Industry Pages"
+    },
+    {
+      "id": 120,
+      "path": "/industries/insurance-agents",
+      "component": "InsuranceAgents",
+      "category": "Real Estate & Finance Industry Pages"
+    },
+    {
+      "id": 121,
+      "path": "/industries/accounting-firms",
+      "component": "AccountingFirms",
+      "category": "Real Estate & Finance Industry Pages"
+    },
+    {
+      "id": 122,
+      "path": "/industries/architecture-firms",
+      "component": "ArchitectureFirms",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 123,
+      "path": "/industries/plumbers",
+      "component": "Plumbers",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 124,
+      "path": "/industries/electricians",
+      "component": "Electricians",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 125,
+      "path": "/industries/hvac-contractors",
+      "component": "HVACContractors",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 126,
+      "path": "/industries/roofing-companies",
+      "component": "RoofingCompanies",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 127,
+      "path": "/industries/landscaping-companies",
+      "component": "LandscapingCompanies",
+      "category": "Home Services & Trades Industry Pages"
+    },
+    {
+      "id": 128,
+      "path": "/industries/saas-companies",
+      "component": "SaasCompanies",
+      "category": "Technology & Business Services Industry Pages"
+    },
+    {
+      "id": 129,
+      "path": "/industries/enterprise-software",
+      "component": "EnterpriseSoftware",
+      "category": "Technology & Business Services Industry Pages"
+    },
+    {
+      "id": 130,
+      "path": "/industries/franchise-businesses",
+      "component": "FranchiseBusinesses",
+      "category": "Technology & Business Services Industry Pages"
+    },
+    {
+      "id": 131,
+      "path": "/industries/professional-services",
+      "component": "ProfessionalServices",
+      "category": "Technology & Business Services Industry Pages"
+    },
+    {
+      "id": 132,
+      "path": "/blog",
+      "component": "Blog",
+      "category": "Blog Hub"
+    },
+    {
+      "id": 133,
+      "path": "/blog/ai-seo-future-proof-organic-strategy-2026",
+      "component": "AISEOFutureProof",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 134,
+      "path": "/blog/will-ai-replace-seo-a-data-backed-answer-for-worried-marketers",
+      "component": "WillAIReplaceSEO",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 135,
+      "path": "/blog/blog-post-content-marketing",
+      "component": "ContentMarketing",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 136,
+      "path": "/blog/the-content-marketing-matrix-how-to-create-content-that-actually-converts",
+      "component": "ContentMarketingMatrix",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 137,
+      "path": "/blog/beyond-the-boost-post-a-small-business-guide-to-strategic-paid-advertising",
+      "component": "BeyondTheBoostPost",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 138,
+      "path": "/blog/google-ads-guide",
+      "component": "GoogleAdsGuide",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 139,
+      "path": "/blog/blog-post-social-media",
+      "component": "BlogPostSocialMedia",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 140,
+      "path": "/blog/the-rise-of-tiktok-for-business-is-it-right-for-your-brand",
+      "component": "TikTokForBusiness",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 141,
+      "path": "/blog/blog-post-email-marketing",
+      "component": "BlogPostEmailMarketing",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 142,
+      "path": "/blog/blog-post-analytics-cro",
+      "component": "BlogPostAnalyticsCRO",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 143,
+      "path": "/blog/conversion-rate-optimisation-cro-secret-to-getting-more-from-existing-traffic",
+      "component": "ConversionRateOptimisation",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 144,
+      "path": "/blog/blog-post-web-design",
+      "component": "BlogPostWebDesign",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 145,
+      "path": "/blog/blog-post-ecommerce",
+      "component": "ShopifySEO",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 146,
+      "path": "/blog/marketing-automation-for-beginners",
+      "component": "MarketingAutomation",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 147,
+      "path": "/blog/the-5-most-common-digital-marketing-mistakes-small-businesses-make",
+      "component": "DigitalMarketingMistakes",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 148,
+      "path": "/blog/how-to-build-a-cohesive-digital-marketing-strategy-for-2026",
+      "component": "DigitalMarketingStrategy2026",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 149,
+      "path": "/blog/data-privacy-in-2026-australian-businesses",
+      "component": "DataPrivacy2026",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 150,
+      "path": "/blog/blog-post-seo-checklist",
+      "component": "SEOChecklist2025",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 151,
+      "path": "/blog/blog-post-local-seo",
+      "component": "LocalSEOTradies",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 152,
+      "path": "/blog/how-ai-seo-works-a-non-technical-guide-for-business-leaders",
+      "component": "AISEOGuide",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 153,
+      "path": "/blog/ai-seo-guide",
+      "component": "AISEOGuide",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 154,
+      "path": "/blog/local-seo-in-2026-complete-guide-to-dominating-your-local-market",
+      "component": "LocalSEO2026",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 155,
+      "path": "/blog/local-seo-2026",
+      "component": "LocalSEO2026",
+      "category": "Blog Posts"
+    },
+    {
+      "id": 156,
+      "path": "/free-trainings",
+      "component": "FreeTrainings",
+      "category": "Lead Generation & Conversion Pages"
+    },
+    {
+      "id": 157,
+      "path": "/strategy-session",
+      "component": "StrategySession",
+      "category": "Lead Generation & Conversion Pages"
+    },
+    {
+      "id": 158,
+      "path": "/application",
+      "component": "Application",
+      "category": "Lead Generation & Conversion Pages"
+    },
+    {
+      "id": 159,
+      "path": "/opt-in",
+      "component": "OptIn",
+      "category": "Lead Generation & Conversion Pages"
+    },
+    {
+      "id": 160,
+      "path": "/onboarding",
+      "component": "Onboarding",
+      "category": "Lead Generation & Conversion Pages"
+    },
+    {
+      "id": 161,
+      "path": "/thank-you",
+      "component": "ThankYou",
+      "category": "Thank You Pages"
+    },
+    {
+      "id": 162,
+      "path": "/free-trainings-thank-you",
+      "component": "FreeTrainingsThankYou",
+      "category": "Thank You Pages"
+    },
+    {
+      "id": 163,
+      "path": "/ads-thank-you",
+      "component": "AdsThankYou",
+      "category": "Thank You Pages"
+    },
+    {
+      "id": 164,
+      "path": "/t2-ads-thank-you",
+      "component": "T2AdsThankYou",
+      "category": "Thank You Pages"
+    },
+    {
+      "id": 165,
+      "path": "/free-trainings-booking",
+      "component": "LeadMagnetBooking",
+      "category": "Calendar/Booking Pages"
+    },
+    {
+      "id": 166,
+      "path": "/ads-calendar",
+      "component": "AdsCalendar",
+      "category": "Calendar/Booking Pages"
+    },
+    {
+      "id": 167,
+      "path": "/yt-calendar",
+      "component": "YtCalendar",
+      "category": "Calendar/Booking Pages"
+    },
+    {
+      "id": 168,
+      "path": "/t2-ads-calendar",
+      "component": "T2AdsCalendar",
+      "category": "Calendar/Booking Pages"
+    },
+    {
+      "id": 169,
+      "path": "/privacy",
+      "component": "Privacy",
+      "category": "Legal Pages"
+    },
+    {
+      "id": 170,
+      "path": "/terms",
+      "component": "Terms",
+      "category": "Legal Pages"
+    },
+    {
+      "id": 171,
+      "path": "*",
+      "component": "NotFound",
+      "category": "Error Page"
+    }
+  ]
+}
