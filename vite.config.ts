@@ -34,6 +34,8 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+    // Ensure a single React instance is used across all dependencies
+    dedupe: ["react", "react-dom", "react-router-dom"],
   },
   build: {
     rollupOptions: {
