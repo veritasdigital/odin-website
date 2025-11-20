@@ -46,15 +46,43 @@ export default defineConfig(({ mode }) => ({
           // Vendor chunk for node_modules
           if (id.includes('node_modules')) {
             // Separate React libraries
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+            if (id.includes('react') || id.includes('react-dom')) {
               return 'react-vendor';
             }
+            // React Router - separate chunk
+            if (id.includes('react-router')) {
+              return 'router-vendor';
+            }
             // Separate UI libraries (Radix, etc.)
-            if (id.includes('@radix-ui') || id.includes('lucide-react')) {
+            if (id.includes('@radix-ui')) {
               return 'ui-vendor';
+            }
+            // Icons
+            if (id.includes('lucide-react')) {
+              return 'icons-vendor';
+            }
+            // Form libraries
+            if (id.includes('react-hook-form') || id.includes('@hookform') || id.includes('zod')) {
+              return 'forms-vendor';
+            }
+            // Charts
+            if (id.includes('recharts')) {
+              return 'charts-vendor';
             }
             // Other third-party libraries
             return 'vendor';
+          }
+          // Split blog pages
+          if (id.includes('/pages/blog/')) {
+            return 'blog-pages';
+          }
+          // Split industry pages
+          if (id.includes('/pages/industries/')) {
+            return 'industry-pages';
+          }
+          // Split service pages
+          if (id.includes('/pages/services/')) {
+            return 'service-pages';
           }
         },
         assetFileNames: (assetInfo) => {
