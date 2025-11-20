@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    ViteImageOptimizer({
+    mode === "production" && ViteImageOptimizer({
       png: {
         quality: 85,
       },
@@ -96,6 +96,7 @@ export default defineConfig(({ mode }) => ({
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
     exclude: ['@tanstack/react-query-devtools'],
+    force: true,
   },
   esbuild: {
     drop: mode === 'production' ? ['console', 'debugger'] : [],
