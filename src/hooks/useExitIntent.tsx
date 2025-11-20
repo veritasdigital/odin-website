@@ -17,23 +17,33 @@ export const useExitIntent = (options: UseExitIntentOptions = {}) => {
 
   useEffect(() => {
     const STORAGE_KEY = 'exit-intent-shown';
-    
+
+    const isStorageAvailable = () =>
+      typeof window !== 'undefined' && 'localStorage' in window;
+
     // Check if we've already shown the popup
     const checkIfShown = () => {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (!stored) return false;
-      
-      const data = JSON.parse(stored);
-      const now = Date.now();
-      
-      // Check if cookie expired
-      if (now > data.expiry) {
-        localStorage.removeItem(STORAGE_KEY);
+      if (!isStorageAvailable()) return false;
+
+      try {
+        const stored = window.localStorage.getItem(STORAGE_KEY);
+        if (!stored) return false;
+
+        const data = JSON.parse(stored);
+        const now = Date.now();
+
+        // Check if cookie expired
+        if (now > data.expiry) {
+          window.localStorage.removeItem(STORAGE_KEY);
+          return false;
+        }
+
+        // Check if max displays reached
+        return data.count >= maxDisplays;
+      } catch (error) {
+        console.warn('[useExitIntent] localStorage check failed:', error);
         return false;
       }
-      
-      // Check if max displays reached
-      return data.count >= maxDisplays;
     };
 
     if (checkIfShown()) return;
@@ -42,23 +52,29 @@ export const useExitIntent = (options: UseExitIntentOptions = {}) => {
       // Only trigger if mouse is leaving from the top of the viewport
       if (e.clientY <= threshold && !checkIfShown()) {
         setShouldShow(true);
-        
-        // Update storage
-        const stored = localStorage.getItem(STORAGE_KEY);
-        const data = stored ? JSON.parse(stored) : { count: 0 };
-        
-        localStorage.setItem(
-          STORAGE_KEY,
-          JSON.stringify({
-            count: data.count + 1,
-            expiry: Date.now() + cookieExpiry,
-          })
-        );
+
+        if (!isStorageAvailable()) return;
+
+        try {
+          // Update storage
+          const stored = window.localStorage.getItem(STORAGE_KEY);
+          const data = stored ? JSON.parse(stored) : { count: 0 };
+
+          window.localStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify({
+              count: data.count + 1,
+              expiry: Date.now() + cookieExpiry,
+            })
+          );
+        } catch (error) {
+          console.warn('[useExitIntent] localStorage update failed:', error);
+        }
       }
     };
 
     document.addEventListener('mouseleave', handleMouseLeave);
-    
+
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
     };
