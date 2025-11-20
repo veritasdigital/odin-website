@@ -150,6 +150,21 @@ const ApplicationForm = () => {
     }
   }, [handleNext]);
 
+  const getProgressPercentage = (step: number): number => {
+    const progressMap: Record<number, number> = {
+      1: 35,
+      2: 55,
+      3: 70,
+      4: 80,
+      5: 87,
+      6: 92,
+      7: 96,
+      8: 98,
+      9: 100,
+    };
+    return progressMap[step] || 0;
+  };
+
   const renderStep = () => {
     const stepProps = {
       formData,
@@ -194,13 +209,10 @@ const ApplicationForm = () => {
         <div className="mb-6 sm:mb-8 md:mb-10">
           <div className="w-full bg-gray-100 rounded-full h-2 sm:h-2.5 overflow-hidden shadow-inner">
             <div
-              className="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-500 ease-out shadow-sm"
-              style={{ width: `${(currentStep / totalSteps) * 100}%` }}
+              className="bg-gradient-to-r from-blue-500 to-blue-600 h-full rounded-full transition-all duration-700 ease-out shadow-sm"
+              style={{ width: `${getProgressPercentage(currentStep)}%` }}
             />
           </div>
-          <p className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3 font-medium text-center">
-            Step {currentStep} of {totalSteps}
-          </p>
         </div>
 
         {renderStep()}
