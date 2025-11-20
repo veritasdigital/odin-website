@@ -5,7 +5,7 @@ import matteoBanzon from "@/assets/matteo-banzon.png";
 import sarahMitchell from "@/assets/sarah-mitchell.png";
 import alfonsoRodriguez from "@/assets/alfonso-rodriguez.png";
 import emilyPlatt from "@/assets/emily-platt.png";
-import alexaBlake from "@/assets/hero-person-optimized.webp";
+import alexaBlake from "@/assets/hero-person-compressed.webp";
 import { Card } from "@/components/ui/card";
 
 const leadershipTeam = [
