@@ -2,6 +2,8 @@
  * Performance monitoring utilities for Core Web Vitals
  */
 
+import { safeLocalStorage } from './safeStorage';
+
 declare global {
   interface Window {
     webVitals?: any;
@@ -85,7 +87,7 @@ export const saveToLocalStorage = (key: string, data: any): void => {
   try {
     const jsonString = JSON.stringify(data);
     const compressed = compressData(jsonString);
-    localStorage.setItem(key, compressed);
+    safeLocalStorage.setItem(key, compressed);
   } catch (error) {
     console.error('Failed to save to localStorage:', error);
   }
@@ -96,7 +98,7 @@ export const saveToLocalStorage = (key: string, data: any): void => {
  */
 export const loadFromLocalStorage = (key: string): any => {
   try {
-    const compressed = localStorage.getItem(key);
+    const compressed = safeLocalStorage.getItem(key);
     if (!compressed) return null;
     
     const decompressed = decompressData(compressed);
@@ -104,7 +106,7 @@ export const loadFromLocalStorage = (key: string): any => {
   } catch (error) {
     // Fallback: try parsing directly in case it's not compressed
     try {
-      const data = localStorage.getItem(key);
+      const data = safeLocalStorage.getItem(key);
       return data ? JSON.parse(data) : null;
     } catch (fallbackError) {
       console.error('Failed to load from localStorage:', error);

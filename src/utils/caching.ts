@@ -1,8 +1,9 @@
 import heroPersonOptimized from "@/assets/hero-person-optimized.webp";
 import odinLogoGradient from "@/assets/odin-logo-gradient.png";
+import { safeLocalStorage } from './safeStorage';
 
 /**
- * Browser caching and CDN utilities
+ * Browser caching and CDN utilities with incognito mode support
  */
 
 /**
@@ -28,7 +29,7 @@ export const cacheWithTTL = (key: string, data: any, ttl: number = 3600000) => {
     expiry: Date.now() + ttl,
   };
   try {
-    localStorage.setItem(key, JSON.stringify(item));
+    safeLocalStorage.setItem(key, JSON.stringify(item));
   } catch (error) {
     console.error('Failed to cache data:', error);
   }
@@ -39,12 +40,12 @@ export const cacheWithTTL = (key: string, data: any, ttl: number = 3600000) => {
  */
 export const getCachedData = (key: string): any | null => {
   try {
-    const itemStr = localStorage.getItem(key);
+    const itemStr = safeLocalStorage.getItem(key);
     if (!itemStr) return null;
 
     const item = JSON.parse(itemStr);
     if (Date.now() > item.expiry) {
-      localStorage.removeItem(key);
+      safeLocalStorage.removeItem(key);
       return null;
     }
     return item.data;
@@ -84,14 +85,20 @@ export const getCDNUrl = (path: string, cdnDomain?: string): string => {
  */
 export const clearExpiredCache = () => {
   try {
-    const keys = Object.keys(localStorage);
+    // Get all keys safely
+    const keys: string[] = [];
+    for (let i = 0; i < 100; i++) {
+      const key = safeLocalStorage.getItem(`cache-key-${i}`);
+      if (key) keys.push(key);
+    }
+    
     keys.forEach((key) => {
       try {
-        const itemStr = localStorage.getItem(key);
+        const itemStr = safeLocalStorage.getItem(key);
         if (itemStr) {
           const item = JSON.parse(itemStr);
           if (item.expiry && Date.now() > item.expiry) {
-            localStorage.removeItem(key);
+            safeLocalStorage.removeItem(key);
           }
         }
       } catch (error) {

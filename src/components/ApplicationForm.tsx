@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { FormData } from "./application-steps/types";
 import { validateStep, getFormattedTimezone } from "@/utils/formValidation";
+import { safeLocalStorage } from "@/utils/safeStorage";
 
 // Lazy load step components
 const Step1Name = lazy(() => import("./application-steps/Step1Name").then(m => ({ default: m.Step1Name })));
@@ -35,7 +36,7 @@ const ApplicationForm = () => {
   // Defer localStorage loading until after initial render
   useEffect(() => {
     requestIdleCallback(() => {
-      const savedData = localStorage.getItem("applicationFormData");
+      const savedData = safeLocalStorage.getItem("applicationFormData");
       if (savedData) {
         try {
           // Try decompression first, fallback to direct parse
@@ -62,10 +63,10 @@ const ApplicationForm = () => {
       try {
         const jsonString = JSON.stringify(formData);
         const compressed = btoa(encodeURIComponent(jsonString));
-        localStorage.setItem("applicationFormData", compressed);
+        safeLocalStorage.setItem("applicationFormData", compressed);
       } catch (error) {
-        // Fallback to uncompressed if compression fails
-        localStorage.setItem("applicationFormData", JSON.stringify(formData));
+        // Silently fail if storage unavailable
+        console.warn("Failed to save form data:", error);
       }
     }, 300);
     return () => clearTimeout(timeoutId);
@@ -129,8 +130,8 @@ const ApplicationForm = () => {
           }),
         });
 
-        localStorage.removeItem("applicationFormData");
-        localStorage.removeItem("applicationLeadId");
+        safeLocalStorage.removeItem("applicationFormData");
+        safeLocalStorage.removeItem("applicationLeadId");
 
         setTimeout(() => {
           window.location.href = "/thank-you";
