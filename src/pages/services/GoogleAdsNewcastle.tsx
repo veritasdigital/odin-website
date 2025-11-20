@@ -5,6 +5,7 @@ import { SideTab } from "@/components/SideTab";
 import LocationContent from "@/components/LocationContent";
 import { MarketingFormModal } from "@/components/MarketingFormModal";
 import { ClientLogos } from "@/components/ClientLogos";
+import { PictureImage } from "@/components/PictureImage";
 import googleLogo from "@/assets/partners/google-logo.png";
 import metaLogo from "@/assets/partners/meta-logo.png";
 import shopifyPartner from "@/assets/partners/shopify-partner.svg";
@@ -378,25 +379,25 @@ const GoogleAdsNewcastle = () => {
                 <p className="text-sm text-muted-foreground mb-4">Certified Partners</p>
                 <div className="flex items-center justify-center gap-4 flex-wrap">
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={googleLogo} alt="Google" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={metaLogo} alt="Meta" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={metaLogo} alt="Meta" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={shopifyPartner} alt="Shopify Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={hubspotPartner} alt="HubSpot Partner" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={hubspotPartner} alt="HubSpot Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={klaviyoPartner} alt="Klaviyo Partner" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={klaviyoPartner} alt="Klaviyo Partner" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={microsoftLogo} alt="Microsoft" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={microsoftLogo} alt="Microsoft" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                   <div className="flex-shrink-0 w-20 flex items-center justify-center h-12 p-2 bg-white/80 backdrop-blur-sm rounded-lg border border-border/50 hover:shadow-elegant transition-all duration-300">
-                    <img src={instagramLogo} alt="Instagram" className="max-h-8 max-w-full object-contain" />
+                    <PictureImage src={instagramLogo} alt="Instagram" className="max-h-8 max-w-full object-contain" loading="lazy" />
                   </div>
                 </div>
               </div>
