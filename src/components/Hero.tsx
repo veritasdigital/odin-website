@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import heroPerson from "@/assets/hero-person-new.png";
-import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import fox40Logo from "@/assets/media/fox40-logo.png";
 import msnLogo from "@/assets/media/msn-logo.png";
@@ -22,6 +21,10 @@ export const Hero = () => {
           src={brandIconSubtle} 
           alt="" 
           className="absolute -bottom-32 -right-32 w-[500px] h-[500px] opacity-20 animate-[spin_25s_linear_infinite_reverse]"
+          loading="lazy"
+          decoding="async"
+          width="500"
+          height="500"
         />
       </div>
       
