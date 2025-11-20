@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Leadership } from "@/components/Leadership";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { PictureImage } from "@/components/PictureImage";
 import newAgeMarketingLogo from "@/assets/logos/new-age-marketing.png";
 import veritasLogo from "@/assets/logos/veritas-logo.png";
 import agentConquestLogo from "@/assets/logos/agent-conquest.png";
@@ -149,7 +150,7 @@ const About = () => {
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src={agentConquestLogo} alt="Agent Conquest - Real estate lead generation platform" className="w-full h-full object-contain" />
+                    <PictureImage src={agentConquestLogo} alt="Agent Conquest - Real estate lead generation platform" className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Agent Conquest</h3>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -161,7 +162,7 @@ const About = () => {
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src={conqueredLeadsLogo} alt="Conquered Leads - Lead generation and marketing platform" className="w-full h-full object-contain" />
+                    <PictureImage src={conqueredLeadsLogo} alt="Conquered Leads - Lead generation and marketing platform" className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Conquered Leads</h3>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -173,7 +174,7 @@ const About = () => {
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src={practiceConquestLogo} alt="Practice Conquest - Healthcare practice growth platform" className="w-full h-full object-contain" />
+                    <PictureImage src={practiceConquestLogo} alt="Practice Conquest - Healthcare practice growth platform" className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Practice Conquest</h3>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -185,7 +186,7 @@ const About = () => {
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300">
                 <div className="mb-4">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src={newAgeMarketingLogo} alt="New Age Marketing - Modern digital marketing solutions" className="w-full h-full object-contain" />
+                    <PictureImage src={newAgeMarketingLogo} alt="New Age Marketing - Modern digital marketing solutions" className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">New Age Marketing</h3>
                   <p className="text-charcoal/80 leading-relaxed">
@@ -197,7 +198,7 @@ const About = () => {
               <Card className="p-6 bg-background border border-border hover:shadow-lg transition-all duration-300 md:col-span-2 lg:col-span-1">
                 <div className="mb-4">
                   <div className="w-20 h-20 flex items-center justify-center mb-4">
-                    <img src={veritasLogo} alt="Veritas Digital - Digital transformation and marketing services" className="w-full h-full object-contain" />
+                    <PictureImage src={veritasLogo} alt="Veritas Digital - Digital transformation and marketing services" className="w-full h-full object-contain" loading="lazy" />
                   </div>
                   <h3 className="text-xl font-bold text-charcoal mb-2">Veritas Digital</h3>
                   <p className="text-charcoal/80 leading-relaxed">

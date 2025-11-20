@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Video, Users, BarChart3 } from "lucide-react";
+import { PictureImage } from "@/components/PictureImage";
 import odinLogo from "@/assets/odin-digital-logo.png";
 
 // Declare custom element for Wistia player
@@ -61,7 +62,7 @@ const ThankYou = () => {
       <section className="py-16 px-6 bg-background">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <img src={odinLogo} alt="Odin Digital" className="h-16 mx-auto mb-8" />
+            <PictureImage src={odinLogo} alt="Odin Digital" className="h-16 mx-auto mb-8" loading="eager" fetchPriority="high" />
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               You Are Booked!
