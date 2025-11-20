@@ -26,40 +26,8 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            // Split vendor code into smaller chunks
-            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
-              return 'react-vendor';
-            }
-            if (id.includes('@radix-ui')) {
-              return 'ui-vendor';
-            }
-            if (id.includes('react-hook-form') || id.includes('zod')) {
-              return 'form-vendor';
-            }
-            if (id.includes('recharts')) {
-              return 'chart-vendor';
-            }
-            if (id.includes('react-helmet')) {
-              return 'helmet-vendor';
-            }
-            if (id.includes('sonner') || id.includes('lucide')) {
-              return 'util-vendor';
-            }
-            return 'vendor';
-          }
-          // Split large page components
-          if (id.includes('src/pages/blog/')) {
-            return 'blog-pages';
-          }
-          if (id.includes('src/pages/services/')) {
-            return 'service-pages';
-          }
-          if (id.includes('src/pages/industries/')) {
-            return 'industry-pages';
-          }
-        },
+        // manualChunks disabled to simplify vendor bundling during debugging
+
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name || 'asset';
           let extType = name.split('.').at(1) || 'misc';
