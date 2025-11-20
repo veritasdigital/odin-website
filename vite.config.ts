@@ -18,11 +18,39 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-tabs'],
-          'form-vendor': ['react-hook-form', '@hookform/resolvers', 'zod'],
-          'chart-vendor': ['recharts'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules')) {
+            // Split vendor code into smaller chunks
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
+            if (id.includes('@radix-ui')) {
+              return 'ui-vendor';
+            }
+            if (id.includes('react-hook-form') || id.includes('zod')) {
+              return 'form-vendor';
+            }
+            if (id.includes('recharts')) {
+              return 'chart-vendor';
+            }
+            if (id.includes('react-helmet')) {
+              return 'helmet-vendor';
+            }
+            if (id.includes('sonner') || id.includes('lucide')) {
+              return 'util-vendor';
+            }
+            return 'vendor';
+          }
+          // Split large page components
+          if (id.includes('src/pages/blog/')) {
+            return 'blog-pages';
+          }
+          if (id.includes('src/pages/services/')) {
+            return 'service-pages';
+          }
+          if (id.includes('src/pages/industries/')) {
+            return 'industry-pages';
+          }
         },
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name || 'asset';
@@ -39,10 +67,10 @@ export default defineConfig(({ mode }) => ({
     cssCodeSplit: true,
     minify: 'esbuild',
     reportCompressedSize: false,
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
     target: 'es2015',
     cssMinify: true,
-    assetsInlineLimit: 4096,
+    assetsInlineLimit: 2048,
     sourcemap: false,
   },
   optimizeDeps: {
