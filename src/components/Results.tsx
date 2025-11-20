@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
-import { OptimizedImage } from "@/components/OptimizedImage";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import yclJewelry from "@/assets/ycl-jewelry.jpg";
 import adriaticFurniture from "@/assets/adriatic-furniture.jpg";
@@ -118,13 +117,14 @@ export const Results = () => {
                       {/* Image Section */}
                       {testimonial.image && (
                       <div className="lg:w-1/2 relative overflow-hidden flex items-center justify-center min-h-[200px]">
-                          <OptimizedImage 
+                          <img 
                             src={testimonial.image} 
                             alt={`${testimonial.company} product`}
                             className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
-                            width={511}
-                            height={640}
+                            width="511"
+                            height="640"
+                            decoding="async"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
