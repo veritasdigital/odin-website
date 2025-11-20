@@ -8,6 +8,7 @@ import { useMarketingForm } from "@/contexts/MarketingFormContext";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { PictureImage } from "@/components/PictureImage";
 import heroImage from "@/assets/blog/data-privacy-2026-hero.jpg";
 import cookielessFutureImage from "@/assets/blog/cookieless-future-visual.jpg";
 import firstPartyDataImage from "@/assets/blog/first-party-data-strategy.jpg";
@@ -156,7 +157,7 @@ const DataPrivacy2026 = () => {
 
           {/* Featured Image */}
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <img src={heroImage} alt="Data Privacy in 2026 for Australian Businesses" className="w-full h-auto" />
+            <PictureImage src={heroImage} alt="Data Privacy in 2026 for Australian Businesses" className="w-full h-auto" loading="lazy" />
           </div>
         </div>
       </section>
@@ -266,7 +267,7 @@ const DataPrivacy2026 = () => {
 
             {/* Feature Image */}
             <div className="rounded-2xl overflow-hidden shadow-card mb-8">
-              <img src={cookielessFutureImage} alt="Visualization of the cookie-less future in digital marketing" className="w-full h-auto" />
+              <PictureImage src={cookielessFutureImage} alt="Visualization of the cookie-less future in digital marketing" className="w-full h-auto" loading="lazy" />
             </div>
 
             <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">
@@ -358,7 +359,7 @@ const DataPrivacy2026 = () => {
 
             {/* Feature Image */}
             <div className="rounded-2xl overflow-hidden shadow-card mb-8">
-              <img src={firstPartyDataImage} alt="First-party data strategy framework for Australian businesses" className="w-full h-auto" />
+              <PictureImage src={firstPartyDataImage} alt="First-party data strategy framework for Australian businesses" className="w-full h-auto" loading="lazy" />
             </div>
 
             <p className="text-muted-foreground leading-relaxed mb-6">
