@@ -88,7 +88,7 @@ export const OptimizedImage = forwardRef<HTMLImageElement, OptimizedImageProps>(
         decoding="async"
         className={className}
         {...props}
-        {...(priority && { fetchPriority: fetchPriorityValue as any })} />
+        {...(priority && { fetchpriority: fetchPriorityValue as any })} />
     </picture>
   );
 });
