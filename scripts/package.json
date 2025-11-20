@@ -1,11 +1,18 @@
 {
-  "name": "webp-converter-scripts",
-  "version": "1.0.0",
-  "description": "WebP image conversion utilities for optimizing website assets",
+  "name": "image-optimization-scripts",
+  "version": "2.0.0",
+  "description": "Comprehensive image optimization with WebP conversion, srcset generation, and automatic migration",
   "scripts": {
     "convert-to-webp": "node convert-to-webp.js",
     "convert-to-webp:quality90": "node convert-to-webp.js --quality 90",
-    "convert-to-webp:quality80": "node convert-to-webp.js --quality 80"
+    "convert-to-webp:quality80": "node convert-to-webp.js --quality 80",
+    "optimize:images": "node optimize-images.js",
+    "optimize:quality80": "node optimize-images.js --quality=80",
+    "optimize:quality90": "node optimize-images.js --quality=90",
+    "generate:manifest": "node generate-image-manifest.js",
+    "migrate:images": "node migrate-to-optimized-images.js",
+    "migrate:dry-run": "node migrate-to-optimized-images.js --dry-run",
+    "optimize:full": "npm run optimize:images && npm run generate:manifest"
   },
   "dependencies": {
     "sharp": "^0.33.0"
