@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { OptimizedImage } from "@/components/OptimizedImage";
 
 // Import actual client logos - Row 1
 import lifeInsuranceDirect from "@/assets/logos/life-insurance-direct.png";
@@ -108,13 +107,14 @@ export const ClientLogos = () => {
                 {row.map((client, index) => (
                   <Card key={`${rowIndex}-${index}`} className="flex-shrink-0 p-4 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[160px] h-20">
                     <div className="flex items-center justify-center h-full">
-                      <OptimizedImage 
+                      <img 
                         src={client.logo} 
                         alt={client.alt}
                         className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                         loading="lazy"
-                        width={96}
-                        height={48}
+                        width="96"
+                        height="48"
+                        decoding="async"
                       />
                     </div>
                   </Card>
@@ -123,13 +123,14 @@ export const ClientLogos = () => {
                 {row.map((client, index) => (
                   <Card key={`${rowIndex}-${index}-duplicate`} className="flex-shrink-0 p-4 bg-white/80 backdrop-blur-sm border border-charcoal/10 hover:border-primary/20 transition-all duration-300 hover:shadow-lg group min-w-[160px] h-20">
                     <div className="flex items-center justify-center h-full">
-                      <OptimizedImage 
+                      <img 
                         src={client.logo} 
                         alt={client.alt}
                         className="w-24 h-12 object-contain grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 transition-all duration-300"
                         loading="lazy"
-                        width={96}
-                        height={48}
+                        width="96"
+                        height="48"
+                        decoding="async"
                       />
                     </div>
                   </Card>

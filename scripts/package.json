@@ -1,0 +1,13 @@
+{
+  "name": "webp-converter-scripts",
+  "version": "1.0.0",
+  "description": "WebP image conversion utilities for optimizing website assets",
+  "scripts": {
+    "convert-to-webp": "node convert-to-webp.js",
+    "convert-to-webp:quality90": "node convert-to-webp.js --quality 90",
+    "convert-to-webp:quality80": "node convert-to-webp.js --quality 80"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
