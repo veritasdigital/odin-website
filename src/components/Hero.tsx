@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useMarketingForm } from "@/contexts/MarketingFormContext";
+import { PictureImage } from "@/components/PictureImage";
 import heroPerson from "@/assets/hero-person-new.png";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
 import fox40Logo from "@/assets/media/fox40-logo.png";
@@ -164,15 +165,14 @@ export const Hero = () => {
             <div className="relative w-full max-w-lg">
               {/* Person Image */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl ring-1 ring-primary/10 transform hover:scale-[1.02] transition-transform duration-500">
-                <img 
+                <PictureImage 
                   src={heroPerson} 
                   alt="Professional digital marketing strategist working on successful campaign analytics and performance metrics" 
                   className="w-full h-full object-cover object-center"
-                  width="600"
-                  height="800"
+                  width={600}
+                  height={800}
                   loading="eager"
                   fetchPriority="high"
-                  decoding="async"
                 />
               </div>
               
