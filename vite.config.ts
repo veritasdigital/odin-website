@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-// import { ViteImageOptimizer } from "vite-plugin-image-optimizer"; // DISABLED FOR DEBUGGING
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 // https://vitejs.dev/config/
 // Force fresh build to regenerate vendor chunks
@@ -14,7 +14,22 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    // ViteImageOptimizer DISABLED FOR DEBUGGING
+    mode === "production" && ViteImageOptimizer({
+      png: {
+        quality: 85,
+      },
+      jpeg: {
+        quality: 85,
+      },
+      jpg: {
+        quality: 85,
+      },
+      webp: {
+        lossless: false,
+        quality: 85,
+        effort: 4,
+      },
+    }),
   ].filter(Boolean),
   resolve: {
     alias: {
