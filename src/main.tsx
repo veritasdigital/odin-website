@@ -2,6 +2,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import { logWebVitals } from "./utils/performance";
 import { registerServiceWorker, preloadCriticalResources, clearExpiredCache } from "./utils/caching";
+import { initializeRoutePrefetch } from "./utils/routePrefetch";
 
 // Defer non-critical CSS loading for better FCP
 const loadStyles = () => {
@@ -26,5 +27,8 @@ preloadCriticalResources();
 
 // Clear expired cache on load
 clearExpiredCache();
+
+// Initialize intelligent route prefetching
+initializeRoutePrefetch();
 
 createRoot(document.getElementById("root")!).render(<App />);
