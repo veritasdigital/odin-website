@@ -10,7 +10,6 @@ import bulkBuysAustralia from "@/assets/bulk-buys-australia.jpg";
 import krushOrganics from "@/assets/krush-organics.png";
 import evanTsaboukos from "@/assets/evan-tsaboukos.webp";
 import willWrightMiningStore from "@/assets/will-wright-mining-store.webp";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Results = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

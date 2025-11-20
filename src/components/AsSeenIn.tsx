@@ -4,7 +4,6 @@ import msnLogo from "@/assets/media/msn-logo.png";
 import yahooFinanceLogo from "@/assets/media/yahoo-finance-logo.png";
 import businessInsiderLogo from "@/assets/media/business-insider-logo.png";
 import digitalJournalLogo from "@/assets/media/digital-journal-logo.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const AsSeenIn = () => {
   const mediaLogos = [

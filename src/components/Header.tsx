@@ -25,8 +25,13 @@ export const Header = () => {
             className="flex items-center space-x-3 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background rounded-lg"
             aria-label="Odin Digital - Home"
           >
-            <OptimizedImage src={odinLogoGradient} alt="Odin Digital" sizes="(max-width: 768px) 100vw, 50vw" width={"200"} height={"40"} className="h-10 w-auto" width="200"
-              height="40" />
+            <OptimizedImage 
+              src={odinLogoGradient} 
+              alt="Odin Digital" 
+              sizes="(max-width: 768px) 100vw, 50vw" 
+              width={200} 
+              height={40} 
+              className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

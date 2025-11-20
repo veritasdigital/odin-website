@@ -4,7 +4,6 @@ import { Target, Search, TrendingUp, Zap } from "lucide-react";
 import { OptimizedImage } from '@/components/OptimizedImage';
 import brandIconVibrant from "@/assets/brand-icon-vibrant.png";
 import brandIconSubtle from "@/assets/brand-icon-subtle.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Services = () => {
   const services = [
@@ -66,8 +65,16 @@ export const Services = () => {
     <section id="services" className="relative py-24 bg-white overflow-hidden">
       {/* Decorative Brand Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <OptimizedImage src={brandIconSubtle} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="absolute top-10 right-10 w-64 h-64 opacity-20 animate-[spin_30s_linear_infinite]" alt="" />
-        <OptimizedImage src={brandIconSubtle} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="absolute bottom-20 left-10 w-48 h-48 opacity-15 animate-[spin_35s_linear_infinite_reverse]" alt="" />
+        <OptimizedImage 
+          src={brandIconSubtle} 
+          alt="" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          className="absolute top-10 right-10 w-64 h-64 opacity-20 animate-[spin_30s_linear_infinite]" />
+        <OptimizedImage 
+          src={brandIconSubtle} 
+          alt="" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          className="absolute bottom-20 left-10 w-48 h-48 opacity-15 animate-[spin_35s_linear_infinite_reverse]" />
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">

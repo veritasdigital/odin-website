@@ -36,7 +36,6 @@ import gemcutterAnalytics from "@/assets/logos/gemcutter-analytics.png";
 import duttonGroup from "@/assets/logos/dutton-group.png";
 import poseidonEquine from "@/assets/logos/poseidon-equine.png";
 import birthBeat from "@/assets/logos/birth-beat.png";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const ClientLogos = () => {
   // Client logos with actual images

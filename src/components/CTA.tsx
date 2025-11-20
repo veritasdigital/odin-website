@@ -9,8 +9,16 @@ export const CTA = () => {
   return <section data-nav-contrast="dark" className="py-24 gradient-primary relative overflow-hidden">
       {/* Background Brand Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <OptimizedImage src={brandIconVibrant} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="absolute top-10 left-10 w-40 h-40 opacity-10 animate-[spin_15s_linear_infinite]" alt="" />
-        <OptimizedImage src={brandIconVibrant} alt="Image" sizes="(max-width: 768px) 100vw, 50vw" className="absolute bottom-20 right-20 w-32 h-32 opacity-10 animate-[spin_20s_linear_infinite_reverse]" alt="" />
+        <OptimizedImage 
+          src={brandIconVibrant} 
+          alt="" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          className="absolute top-10 left-10 w-40 h-40 opacity-10 animate-[spin_15s_linear_infinite]" />
+        <OptimizedImage 
+          src={brandIconVibrant} 
+          alt="" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          className="absolute bottom-20 right-20 w-32 h-32 opacity-10 animate-[spin_20s_linear_infinite_reverse]" />
       </div>
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">

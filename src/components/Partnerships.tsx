@@ -7,7 +7,6 @@ import klaviyoPartner from "@/assets/partners/klaviyo-partner.webp";
 import microsoftPartner from "@/assets/partners/microsoft-partner-2024.png";
 import tiktokPartner from "@/assets/partners/tiktok-partner.svg";
 import linkedinPartner from "@/assets/partners/linkedin-marketing-partner.svg";
-import { OptimizedImage } from '@/components/OptimizedImage';
 
 export const Partnerships = () => {
   const partners = [
