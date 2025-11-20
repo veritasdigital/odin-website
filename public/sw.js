@@ -10,10 +10,6 @@ const API_CACHE = 'api-v1';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
-  '/src/index.css',
-  '/src/assets/odin-logo-gradient.png',
-  '/application',
-  '/thank-you',
 ];
 
 // Font URLs to cache
