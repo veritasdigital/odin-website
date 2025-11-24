@@ -170,9 +170,8 @@ export const Hero = () => {
                   className="w-full h-full object-cover object-center"
                   width={600}
                   height={800}
-                  loading="eager"
-                  fetchPriority="high"
-                 sizes="(max-width: 768px) 100vw, 50vw" />
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw" />
               </div>
               
               {/* Floating Glassy Banner */}
