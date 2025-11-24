@@ -164,18 +164,12 @@ export const prefetchStrategy = {
  * Initialize intelligent prefetching
  */
 export const initializeRoutePrefetch = () => {
-  // Wait for page to be interactive
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        setupHoverPrefetch();
-        setupViewportPrefetch();
-      }, 1000);
-    });
-  } else {
-    setTimeout(() => {
+  // Only run in production and when browser is idle
+  if (process.env.NODE_ENV !== 'production') return;
+  
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => {
       setupHoverPrefetch();
-      setupViewportPrefetch();
-    }, 1000);
+    }, { timeout: 5000 });
   }
 };
