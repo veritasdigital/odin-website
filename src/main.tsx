@@ -7,32 +7,34 @@ try {
   console.log('[DIAGNOSTIC] Step 1: main.tsx is executing.');
   console.log('[DIAGNOSTIC] Step 2: Imports are loaded.');
   
-  // Wrap utility functions in try-catch for incognito/private browsing mode
-  const safeInit = () => {
-    try {
-      // Dynamically import performance utilities
-      import("./utils/performance").then(({ logWebVitals }) => {
-        logWebVitals();
-      }).catch(err => console.warn("Performance monitoring failed:", err));
+  // Deferred initialization - run after app is interactive
+  const deferredInit = () => {
+    // Wait until page is fully loaded and idle
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        // Performance monitoring (development only)
+        if (process.env.NODE_ENV === 'development') {
+          import("./utils/performance").then(({ logWebVitals }) => {
+            logWebVitals();
+          }).catch(() => {});
+        }
 
-      // Dynamically import caching utilities (may fail in incognito)
-      import("./utils/caching").then(({ registerServiceWorker, preloadCriticalResources, clearExpiredCache }) => {
-        registerServiceWorker();
-        preloadCriticalResources();
-        clearExpiredCache();
-      }).catch(err => console.warn("Caching utilities failed:", err));
-
-      // Dynamically import route prefetch
-      import("./utils/routePrefetch").then(({ initializeRoutePrefetch }) => {
-        initializeRoutePrefetch();
-      }).catch(err => console.warn("Route prefetch failed:", err));
-    } catch (error) {
-      console.warn("Initialization error:", error);
+        // Route prefetching (production only)
+        if (process.env.NODE_ENV === 'production') {
+          import("./utils/routePrefetch").then(({ initializeRoutePrefetch }) => {
+            initializeRoutePrefetch();
+          }).catch(() => {});
+        }
+      }, { timeout: 3000 });
     }
   };
 
-  // Initialize utilities after DOM is ready
-  safeInit();
+  // Run deferred init after window load
+  if (document.readyState === 'complete') {
+    deferredInit();
+  } else {
+    window.addEventListener('load', deferredInit, { once: true });
+  }
 
   const rootElement = document.getElementById("root");
   console.log('[DIAGNOSTIC] Step 3: Root element found:', rootElement);

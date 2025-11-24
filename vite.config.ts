@@ -36,54 +36,32 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
     // Ensure a single React instance is used across all dependencies
-    dedupe: ["react", "react-dom", "react-router-dom"],
+    dedupe: ["react", "react-dom"],
   },
   build: {
     rollupOptions: {
       output: {
         // Strategic code splitting to reduce unused JavaScript
         manualChunks: (id) => {
-          // Vendor chunk for node_modules
+          // Critical vendor chunks
           if (id.includes('node_modules')) {
-            // Separate React libraries
-            if (id.includes('react') || id.includes('react-dom')) {
+            // React core - keep together to avoid duplication
+            if (id.includes('react') || id.includes('react-dom') || id.includes('scheduler')) {
               return 'react-vendor';
             }
-            // React Router - separate chunk
-            if (id.includes('react-router')) {
-              return 'router-vendor';
-            }
-            // Separate UI libraries (Radix, etc.)
+            // UI libraries (Radix)
             if (id.includes('@radix-ui')) {
               return 'ui-vendor';
-            }
-            // Icons
-            if (id.includes('lucide-react')) {
-              return 'icons-vendor';
             }
             // Form libraries
             if (id.includes('react-hook-form') || id.includes('@hookform') || id.includes('zod')) {
               return 'forms-vendor';
             }
-            // Charts
-            if (id.includes('recharts')) {
-              return 'charts-vendor';
-            }
-            // Other third-party libraries
+            // All other vendors in one chunk
             return 'vendor';
           }
-          // Split blog pages
-          if (id.includes('/pages/blog/')) {
-            return 'blog-pages';
-          }
-          // Split industry pages
-          if (id.includes('/pages/industries/')) {
-            return 'industry-pages';
-          }
-          // Split service pages
-          if (id.includes('/pages/services/')) {
-            return 'service-pages';
-          }
+          
+          // Page-based code splitting (already done via lazy loading, no need to manually split here)
         },
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name || 'asset';
