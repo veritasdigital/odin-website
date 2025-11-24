@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+// App is dynamically imported below to provide better error handling in production
 import "./index.css";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -43,16 +43,31 @@ try {
   
   console.log('[DIAGNOSTIC] Step 4: Creating React root...');
   const root = createRoot(rootElement);
-  
-  console.log('[DIAGNOSTIC] Step 5: Rendering App component...');
-  root.render(
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
-  );
-  
-  console.log('[DIAGNOSTIC] Step 6: App rendered successfully!');
-  
+
+  // Dynamically load the App module so that any module-level errors
+  // don't prevent us from showing a helpful error message.
+  import("./App")
+    .then(({ default: App }) => {
+      console.log('[DIAGNOSTIC] Step 5: App module loaded, rendering...');
+      root.render(
+        <ErrorBoundary>
+          <App />
+        </ErrorBoundary>
+      );
+      console.log('[DIAGNOSTIC] Step 6: App rendered successfully!');
+    })
+    .catch((error) => {
+      console.error('[DIAGNOSTIC] FATAL ERROR LOADING APP MODULE:', error);
+      document.body.innerHTML =
+        '<div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', sans-serif; padding: 2rem; background: #fff0f0; color: #d00;">' +
+        '<h1>Application Error</h1>' +
+        '<p>Critical error while loading the application:</p>' +
+        '<pre style="white-space: pre-wrap;">' +
+        (error instanceof Error ? error.stack : String(error)) +
+        '</pre>' +
+        '</div>';
+    });
+
 } catch (error) {
   console.error('[DIAGNOSTIC] FATAL ERROR:', error);
   document.body.innerHTML = '<div style="font-family: sans-serif; padding: 2rem; background: #fff0f0; color: #d00;"><h1>Application Error</h1><p>Critical error during startup:</p><pre>' + (error instanceof Error ? error.stack : String(error)) + '</pre></div>';
