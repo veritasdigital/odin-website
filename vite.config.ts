@@ -45,33 +45,45 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    // Ensure a single React instance is used across all dependencies
-    dedupe: ["react", "react-dom"],
+    // CRITICAL: Ensure a single React instance across all chunks to prevent scheduler conflicts
+    dedupe: ["react", "react-dom", "react/jsx-runtime", "scheduler"],
   },
   build: {
     rollupOptions: {
       output: {
         // Strategic code splitting to reduce unused JavaScript
         manualChunks: (id) => {
-          // Critical vendor chunks
+          // CRITICAL: Prevent React duplication which causes scheduler errors
           if (id.includes('node_modules')) {
-            // React core - keep together to avoid duplication
-            if (id.includes('react') || id.includes('react-dom') || id.includes('scheduler')) {
-              return 'react-vendor';
+            // React MUST be in one chunk - including jsx-runtime and scheduler
+            if (id.includes('react') || id.includes('react-dom') || 
+                id.includes('scheduler') || id.includes('jsx-runtime') ||
+                id.includes('jsx-dev-runtime')) {
+              return 'react-core';
             }
-            // UI libraries (Radix)
+            // Router in separate chunk
+            if (id.includes('react-router')) {
+              return 'react-router';
+            }
+            // UI libraries (Radix) - heavy but used extensively
             if (id.includes('@radix-ui')) {
               return 'ui-vendor';
+            }
+            // Query libraries
+            if (id.includes('@tanstack/react-query')) {
+              return 'query-vendor';
             }
             // Form libraries
             if (id.includes('react-hook-form') || id.includes('@hookform') || id.includes('zod')) {
               return 'forms-vendor';
             }
-            // All other vendors in one chunk
+            // Utilities - separate chunk for better caching
+            if (id.includes('clsx') || id.includes('tailwind-merge') || id.includes('class-variance-authority')) {
+              return 'utils-vendor';
+            }
+            // Everything else
             return 'vendor';
           }
-          
-          // Page-based code splitting (already done via lazy loading, no need to manually split here)
         },
         assetFileNames: (assetInfo) => {
           const name = assetInfo.name || 'asset';
