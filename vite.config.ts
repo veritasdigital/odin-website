@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { visualizer } from "rollup-plugin-visualizer";
 
 // https://vitejs.dev/config/
 // Force fresh build to regenerate vendor chunks
@@ -29,6 +30,15 @@ export default defineConfig(({ mode }) => ({
         quality: 85,
         effort: 4,
       },
+    }),
+    // Bundle analyzer - generates stats.html after build
+    mode === "production" && visualizer({
+      filename: './dist/stats.html',
+      open: false,
+      gzipSize: true,
+      brotliSize: true,
+      template: 'treemap', // 'sunburst', 'treemap', 'network'
+      title: 'Odin Digital Bundle Analysis',
     }),
   ].filter(Boolean),
   resolve: {
